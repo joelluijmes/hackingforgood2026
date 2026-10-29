@@ -514,5 +514,16 @@
       "translate": "Traduire les versions manquantes",
       "openDownload": "Tout télécharger (zip)"
     }
+  },
+  "docStatus": {
+    "draft": "Brouillon",
+    "awaitingReview": "En attente de relecture PI",
+    "reviewed": "Relu par le PI",
+    "approvedAsIs": "Approuvé tel quel",
+    "translated": "Traduit",
+    "inEthics": "Envoyé au comité d'éthique",
+    "ethicsFeedback": "Retour du comité reçu",
+    "final": "Final",
+    "uploaded": "Téléversé"
   }
 }

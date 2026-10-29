@@ -514,5 +514,16 @@
       "translate": "Translate missing versions",
       "openDownload": "Download all (zip)"
     }
+  },
+  "docStatus": {
+    "draft": "Draft",
+    "awaitingReview": "Awaiting PI review",
+    "reviewed": "PI reviewed",
+    "approvedAsIs": "Approved as is",
+    "translated": "Translated",
+    "inEthics": "Sent to ethics",
+    "ethicsFeedback": "Ethics feedback in",
+    "final": "Final",
+    "uploaded": "Uploaded"
   }
 }

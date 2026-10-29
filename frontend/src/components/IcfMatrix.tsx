@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import type { IcfType, Lang, MatrixCell, ProjectProgress } from '../api';
+import type { IcfType, Lang, MatrixCell, ProjectProgress, Stage } from '../api';
+import { docStatus } from '../docStatus';
 
 const ALL_COLS: Lang[] = ['en', 'nl', 'fr'];
 
@@ -10,6 +11,7 @@ export const isReviewed = (c: MatrixCell | null) =>
 
 export default function IcfMatrix({
   matrix,
+  stage,
   showTranslations,
   busyLangs,
   onGenerate,
@@ -19,6 +21,7 @@ export default function IcfMatrix({
   matrix: ProjectProgress['matrix'];
   /** NL/FR columns only make sense once the English ICF is reviewed */
   showTranslations: boolean;
+  stage: Stage;
   /** doc ids currently translating, to disable buttons */
   busyLangs: Set<string>;
   onGenerate: (icf: IcfType) => void;
@@ -74,17 +77,17 @@ export default function IcfMatrix({
                     return (
                       <td key={l}>
                         <div className="cell">
-                          <span className={`chip src-${c.source}`}>
-                            {t('matrix.chip', {
-                              n: c.version_number,
-                              source: t(`sources.${c.source}`),
-                            })}
+                          {(() => {
+                            const st = docStatus(stage, { ...c, language: l });
+                            return (
+                              <span className={`chip st-${st.tone}`}>
+                                {t(`docStatus.${st.key}`)}
+                              </span>
+                            );
+                          })()}
+                          <span className="muted small">
+                            v{c.version_number}
                           </span>
-                          {c.approved && (
-                            <span className="chip ok">
-                              {t('project.approvedAsIs')}
-                            </span>
-                          )}
                           {c.comments_open > 0 && (
                             <span className="chip warn">
                               {t('project.countOpen', {

@@ -367,6 +367,7 @@ export default function Project() {
         <IcfMatrix
           matrix={progress.matrix}
           showTranslations={showTranslations}
+          stage={progress.stage}
           busyLangs={busy}
           onGenerate={(icf) => openGenerate({ icf, language: 'en' })}
           onTranslate={translate}
@@ -395,6 +396,7 @@ export default function Project() {
               <DocCard
                 key={d.id}
                 doc={d}
+                stage={progress.stage}
                 sourceTitle={docs.find((x) => x.id === d.source_doc_id)?.title}
                 onNewVersion={() => setVersionFor(d)}
                 onDelete={() => removeDoc(d)}

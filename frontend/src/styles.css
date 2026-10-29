@@ -1481,3 +1481,19 @@ a.btn {
     border-top: 1px solid var(--neutral-200);
   }
 }
+
+.chip.st-neutral {
+  background: var(--neutral-200);
+  color: var(--neutral-700);
+  border-color: transparent;
+}
+.chip.st-warn {
+  background: #fff4d6;
+  color: #6b4b00;
+  border-color: transparent;
+}
+.chip.st-ok {
+  background: #e3f5e8;
+  color: #1d6b34;
+  border-color: transparent;
+}

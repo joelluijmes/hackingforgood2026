@@ -514,5 +514,16 @@
       "translate": "Ontbrekende versies vertalen",
       "openDownload": "Alles downloaden (zip)"
     }
+  },
+  "docStatus": {
+    "draft": "Concept",
+    "awaitingReview": "Wacht op PI-review",
+    "reviewed": "PI-gereviewd",
+    "approvedAsIs": "Goedgekeurd zoals is",
+    "translated": "Vertaald",
+    "inEthics": "Naar ethisch comité",
+    "ethicsFeedback": "Feedback ethisch comité binnen",
+    "final": "Definitief",
+    "uploaded": "Geüpload"
   }
 }
