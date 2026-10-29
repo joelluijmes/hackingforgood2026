@@ -863,6 +863,8 @@
   .rv-bar {
     flex-wrap: wrap;
   }
+}
+
 /* ---- table of contents entries: internal links to headings ---- */
 .paper p.toc {
   margin: 2px 0;
