@@ -78,7 +78,9 @@ def _annotate(edits: list[dict], paragraphs: list[dict], icf_type, language) -> 
                 log.exception("could not read template %s", key)
     for e in edits:
         e["section"] = by_idx.get(e["idx"], {}).get("section", "")
-        e["mandatory"] = edit.mandatory_match(e["old"], mandatory) if mandatory else None
+        e["mandatory"] = (
+            edit.mandatory_match(edit.plain(e["old"]), mandatory) if mandatory else None
+        )
     return edits
 
 

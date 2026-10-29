@@ -20,7 +20,12 @@ SYSTEM = (
     "Make the smallest edits that satisfy the request; never rewrite paragraphs that do not need "
     "to change, never invent trial facts, numbers, drugs or names. Keep the document's language "
     "and register. Mandatory wording of the Belgian national template (CT-College) should stay "
-    "verbatim; if the request requires changing it, do it but say so in the reason."
+    "verbatim; if the request requires changing it, do it but say so in the reason.\n"
+    "Paragraph text marks Word formatting: **bold**, *italic*, ***bold italic***; a literal "
+    "asterisk is written \\*. Keep existing markers unless asked to change formatting. To make "
+    "text bold or italic (or remove it), add or remove these markers around exactly that text "
+    "and leave the words unchanged. Never use other Markdown (headings, lists, links, "
+    "underscores, backticks)."
 )
 
 
