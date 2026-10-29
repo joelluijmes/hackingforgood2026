@@ -23,6 +23,8 @@ class GenerateIn(BaseModel):
     sponsor_version_ids: list[int] = Field(default_factory=list)
     notes: str = ""
     title: str | None = None
+    # child / adolescent forms: add stock illustrations from the library next to the sections
+    illustrations: bool = False
 
 
 class TranslateIn(BaseModel):
@@ -151,7 +153,43 @@ def generate(pid: int, body: GenerateIn, user: User) -> dict:
                 icf_type=body.icf_type,
                 progress=report,
             )
+            if body.illustrations and body.icf_type in ("child", "adolescent"):
+                from .illustrations import illustrate_bytes
+
+                report("illustrations", 0, 1)
+                data, ill = illustrate_bytes(conn, data)
+                rep["illustrations"] = [p["name"] for p in ill["placed"]]
+                report("illustrations", 1, 1)
             title = (body.title or "").strip() or f"ICF {body.icf_type} ({body.language.upper()})"
+            sources = []
+            for vid in body.sponsor_version_ids:
+                vrow = conn.execute("SELECT * FROM versions WHERE id = ?", (vid,)).fetchone()
+                if vrow:
+                    pdoc = conn.execute(
+                        "SELECT * FROM project_docs WHERE id = ?", (vrow["doc_id"],)
+                    ).fetchone()
+                    sources.append(
+                        {
+                            "kind": "sponsor",
+                            "doc_id": vrow["doc_id"],
+                            "version_id": vrow["id"],
+                            "version_number": vrow["number"],
+                            "name": pdoc["title"] if pdoc else vrow["filename"],
+                            "filename": vrow["filename"],
+                        }
+                    )
+            if tpl:
+                sources.append(
+                    {
+                        "kind": "template",
+                        "template_id": tpl["id"],
+                        "doc_id": tpl["id"],
+                        "name": tpl["name"] if tpl["name"] else tpl["filename"],
+                        "filename": tpl["filename"],
+                        "version": tpl["version"],
+                        "language": tpl["language"],
+                    }
+                )
             doc = services.create_doc_with_version(
                 conn,
                 pid,
@@ -164,6 +202,7 @@ def generate(pid: int, body: GenerateIn, user: User) -> dict:
                 note="Generated from template",
                 source="generated",
                 user_name=user_name,
+                sources=sources,
             )
         report("saving", 1, 1)
         return {"docs": [doc], "reports": [rep]}
@@ -240,6 +279,36 @@ def translate(doc_id: int, body: TranslateIn, user: User) -> dict:
                 data, rep = results[i]
                 title = _translated_title(src["title"], lang)
                 note = f"Translated from {src_lang} v{ver['number']}"
+                from ..engine import trace as engine_trace
+
+                parent_sources = engine_trace.resolve_version_sources(conn, ver, src)
+                sponsor_sources = [s for s in parent_sources if s.get("kind") == "sponsor"]
+                sources = [
+                    *sponsor_sources,
+                    {
+                        "kind": "icf",
+                        "doc_id": src["id"],
+                        "version_id": ver["id"],
+                        "version_number": ver["number"],
+                        "name": src["title"],
+                        "filename": ver["filename"],
+                        "language": src["language"],
+                    },
+                ]
+                if tpls[lang]:
+                    sources.append(
+                        {
+                            "kind": "template",
+                            "template_id": tpls[lang]["id"],
+                            "doc_id": tpls[lang]["id"],
+                            "name": tpls[lang]["name"]
+                            if tpls[lang]["name"]
+                            else tpls[lang]["filename"],
+                            "filename": tpls[lang]["filename"],
+                            "version": tpls[lang]["version"],
+                            "language": tpls[lang]["language"],
+                        }
+                    )
                 existing = conn.execute(
                     "SELECT id FROM project_docs WHERE source_doc_id = ? AND language = ?"
                     " ORDER BY id LIMIT 1",
@@ -248,7 +317,14 @@ def translate(doc_id: int, body: TranslateIn, user: User) -> dict:
                 filename = f"{title}.docx".replace("/", "-")
                 if existing:
                     services.add_version(
-                        conn, existing["id"], filename, data, note, "generated", user_name
+                        conn,
+                        existing["id"],
+                        filename,
+                        data,
+                        note,
+                        "generated",
+                        user_name,
+                        sources=sources,
                     )
                     row = conn.execute(
                         "SELECT * FROM project_docs WHERE id = ?", (existing["id"],)
@@ -268,6 +344,7 @@ def translate(doc_id: int, body: TranslateIn, user: User) -> dict:
                         source="generated",
                         user_name=user_name,
                         source_doc_id=doc_id,
+                        sources=sources,
                     )
                 docs.append(doc)
                 reports.append(rep)

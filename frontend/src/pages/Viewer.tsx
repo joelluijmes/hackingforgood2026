@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { api, type DocHtml, type Document } from '../api';
 import { formatSize } from '../format';
+import { flashText } from '../highlight';
 
 type Color = 'purple' | 'black' | 'blue' | 'red';
 const LEGEND: Color[] = ['purple', 'black', 'blue', 'red'];
@@ -21,6 +22,12 @@ export default function Viewer() {
     red: false,
   });
   const [focus, setFocus] = useState<Color | null>(null);
+  const paperRef = useRef<HTMLDivElement>(null);
+  const find = useSearchParams()[0].get('find');
+  // opened from a source citation: scroll to the cited passage
+  useEffect(() => {
+    if (content && find) flashText(paperRef.current, find);
+  }, [content, find]);
 
   useEffect(() => {
     let live = true;
@@ -196,8 +203,11 @@ export default function Viewer() {
             </aside>
             {content ? (
               <div className={paperClass}>
-                {/* biome-ignore lint/security/noDangerouslySetInnerHtml: backend escapes all text */}
-                <div dangerouslySetInnerHTML={{ __html: content.html }} />
+                <div
+                  ref={paperRef}
+                  // biome-ignore lint/security/noDangerouslySetInnerHtml: backend escapes all text
+                  dangerouslySetInnerHTML={{ __html: content.html }}
+                />
               </div>
             ) : (
               <div className="paper muted">{t('viewer.rendering')}</div>

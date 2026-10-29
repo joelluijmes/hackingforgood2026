@@ -42,6 +42,8 @@ export default function GenerateDialog({
     new Set(sponsors.map((d) => d.versions[0].id)),
   );
   const [notes, setNotes] = useState('');
+  const [illustrate, setIllustrate] = useState(true);
+  const childForm = icf === 'child' || icf === 'adolescent';
   const [title, setTitle] = useState('');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
@@ -73,6 +75,7 @@ export default function GenerateDialog({
         sponsor_version_ids: [...picked],
         notes,
         title: title || undefined,
+        illustrations: childForm && illustrate,
       });
       onStarted({
         id: r.task_id,
@@ -111,6 +114,22 @@ export default function GenerateDialog({
             </select>
           </label>
         </div>
+        {childForm && (
+          <label className="check">
+            <input
+              type="checkbox"
+              checked={illustrate}
+              onChange={(e) => setIllustrate(e.target.checked)}
+            />
+            <span>
+              {t('illustrations.generateOption')}
+              <br />
+              <span className="muted small">
+                {t('illustrations.generateHint')}
+              </span>
+            </span>
+          </label>
+        )}
         <p className="muted small">{t('generate.englishOnly')}</p>
         <div className="tpl-line">
           {templates === null ? (

@@ -1,5 +1,6 @@
 """Colour-aware DOCX -> HTML renderer with Word comment ranges and tracked changes."""
 
+import base64
 import re
 from html import escape
 
@@ -9,6 +10,10 @@ from docx.text.run import Run
 from ._xml import q
 
 COLOR_CLASSES = {"7030A0": "purple", "FF0000": "red", "0000FF": "blue"}
+_A = "http://schemas.openxmlformats.org/drawingml/2006/main"
+_R = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+_WP = "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+_WEB_IMAGES = {"image/png", "image/jpeg", "image/gif", "image/bmp", "image/svg+xml"}
 _INLINE_WRAPPERS = {"hyperlink", "smartTag", "fldSimple", "sdt", "sdtContent", "customXml"}
 
 
@@ -75,6 +80,7 @@ class _Renderer:
         self.comment_ids: list[str] = []
         self.fills = 0
         self.fill_ids: set[str] = set()  # open icf_fill bookmarks
+        self._img_cache: dict[str, str] = {}  # rId -> base64
         self.active: list[str] = []  # comment ranges open at this point in the document
         self._num_cache: dict[tuple[str, str], str] = {}
         self.bm_anchor: dict[str, str] = {}  # _Toc bookmark name -> heading id
@@ -82,6 +88,30 @@ class _Renderer:
         self.toc_links: list[tuple[str, str]] = []  # (bookmark, normalised text) per TOC link
 
     # -- inline -------------------------------------------------------------
+    def _images(self, r_el) -> str:
+        """Pictures in a run (inline or floating) as <img>; skips formats browsers can't show."""
+        out = []
+        for drawing in r_el.iter(q("drawing")):
+            blip = next(drawing.iter(f"{{{_A}}}blip"), None)
+            rid = blip.get(f"{{{_R}}}embed") if blip is not None else None
+            part = self.doc.part.related_parts.get(rid) if rid else None
+            if part is None or part.content_type not in _WEB_IMAGES:
+                continue
+            if rid not in self._img_cache:
+                self._img_cache[rid] = base64.b64encode(part.blob).decode()
+            extent = next(drawing.iter(f"{{{_WP}}}extent"), None)
+            width = int(extent.get("cx", "0")) // 9525 if extent is not None else 0
+            pr = next(drawing.iter(f"{{{_WP}}}docPr"), None)
+            alt = (pr.get("descr") or pr.get("name") or "") if pr is not None else ""
+            style = f' style="width:{width}px"' if 0 < width < 2000 else ""
+            floating = next(drawing.iter(f"{{{_WP}}}anchor"), None) is not None
+            cls = "docx-img docx-float" if floating else "docx-img"
+            out.append(
+                f'<img class="{cls}" alt="{escape(alt, quote=True)}"{style}'
+                f' src="data:{part.content_type};base64,{self._img_cache[rid]}">'
+            )
+        return "".join(out)
+
     def _run_html(self, r_el, p, para_color) -> tuple[str, str]:
         """Return (html, plain visible text) for one w:r."""
         in_del = any(True for _ in r_el.iterancestors(q("del")))
@@ -96,8 +126,9 @@ class _Renderer:
                 text += "\n"
             elif tag == "noBreakHyphen":
                 text += "-"
+        pictures = "" if in_del else self._images(r_el)
         if not text:
-            return "", ""
+            return pictures, ""
         run = Run(r_el, p)
         try:
             color = _rgb(run.font) or _style_color(run.style) or para_color
@@ -119,7 +150,7 @@ class _Renderer:
         if change is not None:  # tracked formatting change (e.g. made bold)
             author = escape(change.get(q("author")) or "", quote=True)
             h = f'<span class="tc-fmt" data-author="{author}">{h}</span>'
-        return h, ("" if in_del else text)
+        return pictures + h, ("" if in_del else text)
 
     def _walk_inline(self, el, p, para_color, pieces: list, plain: list):
         for child in el:

@@ -9,6 +9,7 @@ from . import auth, convert, db, seed, storage, tasks
 from .routers import (
     editing,
     generate,
+    illustrations,
     interpreter,
     library,
     participant,
@@ -194,5 +195,6 @@ for r in (
     editing.router,
     interpreter.router,
     participant.router,
+    illustrations.router,
 ):
     app.include_router(r)
