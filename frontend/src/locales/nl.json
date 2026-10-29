@@ -793,7 +793,20 @@
       "insurance": "Verzekering"
     },
     "settingsTitle": "Algemene standaarden",
-    "settingsLead": "BSPHO-brede gegevens die elk project overneemt en in het studieprofiel kan overschrijven.",
-    "about": "Studieprofiel: gestructureerde project- en centrumgegevens (contacten, verzekeraar, DPO) met algemene BSPHO-standaarden, afgeleid uit sponsordocumenten en gebruikt bij ICF-generatie"
+    "settingsLead": "Waarden hier worden door elk project overgenomen. Een project kan ze overschrijven in zijn eigen studieprofiel (Project bewerken).",
+    "about": "Studieprofiel: gestructureerde project- en centrumgegevens (contacten, verzekeraar, DPO) met algemene BSPHO-standaarden, afgeleid uit sponsordocumenten en gebruikt bij ICF-generatie",
+    "edit": "Bewerken",
+    "saveBar": "Niet-opgeslagen wijzigingen",
+    "discard": "Negeren",
+    "empty": "Niet ingesteld",
+    "tabProject": "Project",
+    "tabContacts": "Contacten & site",
+    "tabStudy": "Studiegegevens",
+    "name": "Naam",
+    "study": "Studie",
+    "description": "Beschrijving",
+    "inheritHint": "Lege velden nemen de globale standaard over (grijs weergegeven).",
+    "allSaved": "Alle wijzigingen opgeslagen",
+    "editProject": "Project bewerken"
   }
 }

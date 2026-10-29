@@ -22,6 +22,9 @@ import {
 } from '../api';
 import { errMsg } from '../components/Dialog';
 import DocCard from '../components/DocCard';
+import EditProjectDialog, {
+  type EditTab,
+} from '../components/EditProjectDialog';
 import GenerateDialog from '../components/GenerateDialog';
 import IcfMatrix, { isReviewed } from '../components/IcfMatrix';
 import NextStepPanel from '../components/NextStepPanel';
@@ -86,7 +89,11 @@ export default function Project() {
   >();
   const [open, setOpen] = useState<Record<string, boolean>>({});
   const opened = useRef(false);
-  const [dialog, setDialog] = useState<'upload' | 'generate' | null>(null);
+  const [dialog, setDialog] = useState<'upload' | 'generate' | 'edit' | null>(
+    null,
+  );
+  const [editTab, setEditTab] = useState<EditTab>('project');
+  const [profileVer, setProfileVer] = useState(0);
   const [versionFor, setVersionFor] = useState<ProjectDoc | null>(null);
 
   const load = useCallback(async () => {
@@ -309,17 +316,29 @@ export default function Project() {
             <p className="muted desc">{project.description}</p>
           )}
         </div>
-        <details className="menu">
-          <summary className="btn">{t('project.addMenu')}</summary>
-          <div className="menu-list">
-            <button type="button" onClick={() => setDialog('upload')}>
-              {t('project.uploadDocument')}
-            </button>
-            <button type="button" onClick={() => openGenerate()}>
-              {t('project.generate')}
-            </button>
-          </div>
-        </details>
+        <div className="head-actions">
+          <button
+            type="button"
+            className="btn"
+            onClick={() => {
+              setEditTab('project');
+              setDialog('edit');
+            }}
+          >
+            {t('facts.editProject')}
+          </button>
+          <details className="menu">
+            <summary className="btn">{t('project.addMenu')}</summary>
+            <div className="menu-list">
+              <button type="button" onClick={() => setDialog('upload')}>
+                {t('project.uploadDocument')}
+              </button>
+              <button type="button" onClick={() => openGenerate()}>
+                {t('project.generate')}
+              </button>
+            </div>
+          </details>
+        </div>
       </div>
 
       <StageStepper progress={progress} onBack={backTo} />
@@ -340,8 +359,11 @@ export default function Project() {
 
       <StudyProfile
         projectId={projectId}
-        hasSponsorDocs={docs.some((d) => d.role === 'sponsor')}
-        onProjectChanged={load}
+        version={profileVer}
+        onEdit={() => {
+          setEditTab('contacts');
+          setDialog('edit');
+        }}
       />
 
       <TaskBanner
@@ -419,6 +441,18 @@ export default function Project() {
         );
       })}
 
+      {dialog === 'edit' && (
+        <EditProjectDialog
+          project={project}
+          initialTab={editTab}
+          hasSponsorDocs={docs.some((d) => d.role === 'sponsor')}
+          onClose={() => setDialog(null)}
+          onSaved={() => {
+            setProfileVer((v) => v + 1);
+            void load();
+          }}
+        />
+      )}
       {dialog === 'upload' && (
         <UploadDocDialog
           projectId={projectId}

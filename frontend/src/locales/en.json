@@ -793,7 +793,20 @@
       "insurance": "Insurance"
     },
     "settingsTitle": "Global defaults",
-    "settingsLead": "BSPHO-wide facts that every project inherits and can override in its study profile.",
-    "about": "Study profile: structured project and site facts (contacts, insurer, DPO) with global BSPHO defaults, inferred from sponsor documents and fed into ICF generation"
+    "settingsLead": "Values set here are inherited by every project. A project can override any of them in its own study profile (Edit project).",
+    "about": "Study profile: structured project and site facts (contacts, insurer, DPO) with global BSPHO defaults, inferred from sponsor documents and fed into ICF generation",
+    "edit": "Edit",
+    "saveBar": "Unsaved changes",
+    "discard": "Discard",
+    "empty": "Not set",
+    "tabProject": "Project",
+    "tabContacts": "Contacts & site",
+    "tabStudy": "Study details",
+    "name": "Name",
+    "study": "Study",
+    "description": "Description",
+    "inheritHint": "Empty fields inherit the global default (shown greyed).",
+    "allSaved": "All changes saved",
+    "editProject": "Edit project"
   }
 }

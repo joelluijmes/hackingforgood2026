@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
   api,
@@ -23,90 +23,120 @@ const INPUT_TYPE = {
   multiline: 'text',
 } as const;
 
-/** Grouped fact fields. `values` = own values (overrides), `inherited` = placeholder values. */
+type Block = { title: string; fields: FactDef[] };
+
+/** Split a group's facts into blocks by label prefix ("Contact: phone" -> title "Contact"). */
+function toBlocks(defs: FactDef[]): Block[] {
+  const out: Block[] = [];
+  for (const f of defs) {
+    const title = f.label.includes(': ') ? f.label.split(': ')[0] : '';
+    const last = out[out.length - 1];
+    if (last && last.title === title) last.fields.push(f);
+    else out.push({ title, fields: [f] });
+  }
+  return out;
+}
+const shortLabel = (l: string) => (l.includes(': ') ? l.split(': ')[1] : l);
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+
+/** Grouped fact fields as cards. `values` = own values (overrides), `inherited` = inherited values. */
 export function FactFields({
   schema,
   values,
   inherited,
   onChange,
   sources,
+  groups,
 }: {
   schema: FactDef[];
   values: Record<string, string>;
   inherited?: Record<string, string>;
   sources?: Record<string, string>;
+  groups?: readonly string[];
   onChange: (key: string, value: string) => void;
 }) {
   const { t } = useTranslation();
+  const field = (f: FactDef) => {
+    const own = values[f.key] ?? '';
+    const inh = inherited?.[f.key] ?? '';
+    const src = sources?.[f.key];
+    const state = own ? 'f-filled' : inh ? 'f-inh' : 'f-empty';
+    return (
+      <div
+        key={f.key}
+        className={`facts-field ${state}${f.kind === 'multiline' ? ' wide' : ''}`}
+      >
+        <span className="facts-label">
+          <label htmlFor={`fact-${f.key}`}>{cap(shortLabel(f.label))}</label>
+          {src === 'inferred' && own && (
+            <span className="chip st-neutral">{t('facts.src_inferred')}</span>
+          )}
+          {inh && !own && (
+            <span className="chip" title={t('facts.inherited')}>
+              {t('facts.src_global')}
+            </span>
+          )}
+          {inh && own && (
+            <button
+              type="button"
+              className="link-btn"
+              onClick={() => onChange(f.key, '')}
+            >
+              {t('facts.revert')}
+            </button>
+          )}
+        </span>
+        {f.kind === 'multiline' ? (
+          <textarea
+            id={`fact-${f.key}`}
+            rows={2}
+            value={own}
+            placeholder={inh}
+            onChange={(e) => onChange(f.key, e.target.value)}
+          />
+        ) : (
+          <input
+            id={`fact-${f.key}`}
+            type={INPUT_TYPE[f.kind]}
+            value={own}
+            placeholder={inh}
+            onChange={(e) => onChange(f.key, e.target.value)}
+          />
+        )}
+        {f.hint && <small className="facts-hint">{f.hint}</small>}
+      </div>
+    );
+  };
   return (
-    <>
-      {GROUPS.map((g) => {
+    <div className="facts-cards">
+      {(groups ?? GROUPS).map((g) => {
         const defs = schema.filter((f) => f.group === g);
         if (!defs.length) return null;
+        const filled = defs.filter(
+          (f) => (values[f.key] ?? '').trim() || inherited?.[f.key],
+        ).length;
         return (
-          <fieldset key={g} className="facts-group">
-            <legend>{t(`facts.group.${g}`)}</legend>
-            <div className="facts-grid">
-              {defs.map((f) => {
-                const own = values[f.key] ?? '';
-                const inh = inherited?.[f.key] ?? '';
-                const src = sources?.[f.key];
-                return (
-                  <div
-                    key={f.key}
-                    className={`facts-field${f.kind === 'multiline' ? ' wide' : ''}`}
-                  >
-                    <span className="facts-label">
-                      <label htmlFor={`fact-${f.key}`}>{f.label}</label>
-                      {src === 'inferred' && own && (
-                        <span className="chip st-neutral">
-                          {t('facts.src_inferred')}
-                        </span>
-                      )}
-                      {inh && !own && (
-                        <span className="chip" title={t('facts.inherited')}>
-                          {t('facts.src_global')}
-                        </span>
-                      )}
-                      {inh && own && (
-                        <button
-                          type="button"
-                          className="link-btn"
-                          onClick={() => onChange(f.key, '')}
-                        >
-                          {t('facts.revert')}
-                        </button>
-                      )}
-                    </span>
-                    {f.kind === 'multiline' ? (
-                      <textarea
-                        id={`fact-${f.key}`}
-                        rows={2}
-                        value={own}
-                        placeholder={inh || f.hint}
-                        onChange={(e) => onChange(f.key, e.target.value)}
-                      />
-                    ) : (
-                      <input
-                        id={`fact-${f.key}`}
-                        type={INPUT_TYPE[f.kind]}
-                        value={own}
-                        placeholder={inh || f.hint}
-                        onChange={(e) => onChange(f.key, e.target.value)}
-                      />
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </fieldset>
+          <section key={g} className="facts-card">
+            <header>
+              <h3>{t(`facts.group.${g}`)}</h3>
+              <span className="muted">
+                {filled}/{defs.length}
+              </span>
+            </header>
+            {toBlocks(defs).map((b) => (
+              <div key={b.fields[0].key} className="facts-block">
+                {b.title && <h4>{cap(b.title)}</h4>}
+                <div className="facts-grid">{b.fields.map(field)}</div>
+              </div>
+            ))}
+          </section>
         );
       })}
-    </>
+    </div>
   );
 }
 
-function ReviewDialog({
+export function ReviewDialog({
   pid,
   schema,
   suggestions,
@@ -193,139 +223,37 @@ function ReviewDialog({
   );
 }
 
+/** Slim summary row: completeness + Edit button (the dialog lives on the project page). */
 export default function StudyProfile({
   projectId,
-  hasSponsorDocs,
-  onProjectChanged,
+  version,
+  onEdit,
 }: {
   projectId: number;
-  hasSponsorDocs: boolean;
-  onProjectChanged?: () => void;
+  version: number;
+  onEdit: () => void;
 }) {
   const { t } = useTranslation();
   const [data, setData] = useState<ProjectFacts | null>(null);
-  const [draft, setDraft] = useState<Record<string, string>>({});
-  const [error, setError] = useState('');
-  const [busy, setBusy] = useState<'save' | 'infer' | ''>('');
-  const [saved, setSaved] = useState(false);
-  const [suggestions, setSuggestions] = useState<FactSuggestion[] | null>(null);
-
-  const apply = useCallback((f: ProjectFacts) => {
-    setData(f);
-    setDraft(
-      Object.fromEntries(
-        Object.entries(f.facts).map(([k, v]) => [
-          k,
-          v.source === 'global' ? '' : v.value,
-        ]),
-      ),
-    );
-  }, []);
   useEffect(() => {
-    api.getProjectFacts(projectId).then(apply, (e) => setError(errMsg(e)));
-  }, [projectId, apply]);
-
-  if (!data) return error ? <p className="error">{error}</p> : null;
-  const schema = data.schema.filter((f) => f.scope !== 'global');
-  const inherited = data.globals;
-  const sources = Object.fromEntries(
-    Object.entries(data.facts).map(([k, v]) => [k, v.source]),
-  );
-  const changed = Object.entries(draft).filter(([k, v]) => {
-    const cur = data.facts[k];
-    return v.trim() !== (cur.source === 'global' ? '' : cur.value);
-  });
-
-  async function save() {
-    setBusy('save');
-    setError('');
-    try {
-      apply(await api.putProjectFacts(projectId, Object.fromEntries(changed)));
-      setSaved(true);
-      setTimeout(() => setSaved(false), 2000);
-    } catch (e) {
-      setError(errMsg(e));
-    }
-    setBusy('');
-  }
-  async function infer() {
-    setBusy('infer');
-    setError('');
-    try {
-      setSuggestions((await api.inferProjectFacts(projectId)).suggestions);
-    } catch (e) {
-      const m = errMsg(e);
-      setError(
-        m.includes('no_sponsor')
-          ? t('facts.noSponsor')
-          : m.includes('ai_unavailable')
-            ? t('facts.aiOff')
-            : m.includes('ai_failed')
-              ? t('facts.aiFail')
-              : m,
-      );
-    }
-    setBusy('');
-  }
-
+    void version;
+    api.getProjectFacts(projectId).then(setData, () => setData(null));
+  }, [projectId, version]);
+  if (!data) return null;
   return (
-    <details className="group section study-profile">
-      <summary>
-        <span className="chev" aria-hidden="true" />
-        <h2>{t('facts.title')}</h2>
-        <span className="chip">
-          {t('facts.filled', { filled: data.filled, total: data.total })}
-        </span>
-      </summary>
-      <div className="stack">
-        <div className="facts-meter" aria-hidden="true">
-          <span
-            style={{
-              width: `${(100 * data.filled) / Math.max(1, data.total)}%`,
-            }}
-          />
-        </div>
-        <p className="muted">{t('facts.hint')}</p>
-        <div className="row">
-          <button
-            type="button"
-            className="btn"
-            disabled={busy !== '' || !hasSponsorDocs}
-            title={hasSponsorDocs ? undefined : t('facts.noSponsor')}
-            onClick={infer}
-          >
-            {busy === 'infer' ? t('facts.inferring') : t('facts.infer')}
-          </button>
-          <button
-            type="button"
-            className="btn primary"
-            disabled={busy !== '' || changed.length === 0}
-            onClick={save}
-          >
-            {saved ? t('facts.saved') : t('facts.save')}
-          </button>
-        </div>
-        {error && <p className="error">{error}</p>}
-        <FactFields
-          schema={schema}
-          values={draft}
-          inherited={inherited}
-          sources={sources}
-          onChange={(k, v) => setDraft((d) => ({ ...d, [k]: v }))}
+    <div className="study-profile-row">
+      <strong>{t('facts.title')}</strong>
+      <span className="facts-meter" aria-hidden="true">
+        <span
+          style={{ width: `${(100 * data.filled) / Math.max(1, data.total)}%` }}
         />
-      </div>
-      {suggestions && (
-        <ReviewDialog
-          pid={projectId}
-          schema={data.schema}
-          suggestions={suggestions}
-          onClose={() => setSuggestions(null)}
-          onSaved={(f) => {
-            apply(f);
-            onProjectChanged?.();
-          }}
-        />
-      )}
-    </details>
+      </span>
+      <span className="muted">
+        {t('facts.filled', { filled: data.filled, total: data.total })}
+      </span>
+      <button type="button" className="btn" onClick={onEdit}>
+        {t('facts.edit')}
+      </button>
+    </div>
   );
 }

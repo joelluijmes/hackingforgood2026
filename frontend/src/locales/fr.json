@@ -793,7 +793,20 @@
       "insurance": "Assurance"
     },
     "settingsTitle": "Valeurs par défaut",
-    "settingsLead": "Données communes à toute la BSPHO que chaque projet hérite et peut remplacer dans son profil d'étude.",
-    "about": "Profil de l'étude: données structurées du projet et du site (contacts, assureur, DPO) avec valeurs BSPHO par défaut, déduites des documents du promoteur et utilisées pour la génération des ICF"
+    "settingsLead": "Les valeurs saisies ici sont reprises par chaque projet. Un projet peut les remplacer dans son propre profil d'etude (Modifier le projet).",
+    "about": "Profil de l'étude: données structurées du projet et du site (contacts, assureur, DPO) avec valeurs BSPHO par défaut, déduites des documents du promoteur et utilisées pour la génération des ICF",
+    "edit": "Modifier",
+    "saveBar": "Modifications non enregistrees",
+    "discard": "Annuler",
+    "empty": "Non defini",
+    "tabProject": "Projet",
+    "tabContacts": "Contacts et site",
+    "tabStudy": "Details de l'etude",
+    "name": "Nom",
+    "study": "Etude",
+    "description": "Description",
+    "inheritHint": "Les champs vides reprennent la valeur globale (en grise).",
+    "allSaved": "Toutes les modifications sont enregistrees",
+    "editProject": "Modifier le projet"
   }
 }

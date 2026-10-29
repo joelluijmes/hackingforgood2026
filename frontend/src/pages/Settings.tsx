@@ -10,6 +10,7 @@ export default function Settings() {
   const [draft, setDraft] = useState<Record<string, string>>({});
   const [error, setError] = useState('');
   const [saved, setSaved] = useState(false);
+  const [busy, setBusy] = useState(false);
 
   const apply = useCallback((g: GlobalFacts) => {
     setData(g);
@@ -31,6 +32,7 @@ export default function Settings() {
 
   async function save() {
     setError('');
+    setBusy(true);
     try {
       apply(
         await api.putGlobalFacts(
@@ -38,27 +40,20 @@ export default function Settings() {
         ),
       );
       setSaved(true);
-      setTimeout(() => setSaved(false), 2000);
+      setTimeout(() => setSaved(false), 2500);
     } catch (e) {
       setError(errMsg(e));
     }
+    setBusy(false);
   }
 
   return (
     <div className="page settings-page">
       <div className="page-head">
-        <h1>{t('facts.settingsTitle')}</h1>
-        <p className="muted">{t('facts.settingsLead')}</p>
-      </div>
-      <div className="row">
-        <button
-          type="button"
-          className="btn primary"
-          disabled={changed.length === 0}
-          onClick={save}
-        >
-          {saved ? t('facts.saved') : t('facts.save')}
-        </button>
+        <div>
+          <h1>{t('facts.settingsTitle')}</h1>
+          <p className="muted">{t('facts.settingsLead')}</p>
+        </div>
       </div>
       {error && <p className="error">{error}</p>}
       <FactFields
@@ -66,6 +61,31 @@ export default function Settings() {
         values={draft}
         onChange={(k, v) => setDraft((d) => ({ ...d, [k]: v }))}
       />
+      <div className={`save-bar${changed.length ? ' dirty' : ''}`}>
+        <span className={saved ? 'saved-note' : 'muted'}>
+          {changed.length
+            ? t('facts.saveBar')
+            : saved
+              ? `✓ ${t('facts.saved')}`
+              : t('facts.allSaved')}
+        </span>
+        <button
+          type="button"
+          className="btn ghost"
+          disabled={changed.length === 0 || busy}
+          onClick={() => setDraft({ ...data.values })}
+        >
+          {t('facts.discard')}
+        </button>
+        <button
+          type="button"
+          className="btn primary"
+          disabled={changed.length === 0 || busy}
+          onClick={save}
+        >
+          {busy ? t('common.working') : t('facts.save')}
+        </button>
+      </div>
     </div>
   );
 }
