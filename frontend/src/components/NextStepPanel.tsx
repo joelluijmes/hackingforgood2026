@@ -276,14 +276,7 @@ export default function NextStepPanel({
                 });
                 return (
                   <tr key={d.id}>
-                    <td className="sc-doc-title">
-                      {d.title}
-                      {d.language && (
-                        <span className="chip lang">
-                          {d.language.toUpperCase()}
-                        </span>
-                      )}
-                    </td>
+                    <td className="sc-doc-title">{d.title}</td>
                     <td>
                       <span className={`chip ${st.tone}`}>
                         {t(`docStatus.${st.key}`)}
@@ -291,13 +284,13 @@ export default function NextStepPanel({
                     </td>
                     <td className="sc-doc-actions">
                       {v && (
-                        <Link className="btn primary" to={`/versions/${v.id}`}>
+                        <Link className="btn sm" to={`/versions/${v.id}`}>
                           {t('next.act.openForReview')}
                         </Link>
                       )}
                       <details className="menu">
                         <summary
-                          className="btn"
+                          className="btn sm ghost"
                           aria-label={t('next.act.more')}
                           title={t('next.act.more')}
                         >

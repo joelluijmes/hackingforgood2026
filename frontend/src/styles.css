@@ -1564,3 +1564,28 @@ table.sc-docs .sc-doc-title {
 .menu-list a:hover {
   background: var(--neutral-100);
 }
+
+table.sc-docs {
+  margin-bottom: 24px;
+}
+table.sc-docs td {
+  padding: 14px 12px;
+}
+table.sc-docs .sc-doc-title {
+  font-weight: 600;
+  color: var(--neutral-900);
+  white-space: nowrap;
+}
+table.sc-docs .chip {
+  white-space: nowrap;
+}
+.sc-doc-actions > * {
+  margin-left: 12px;
+}
+.btn.sm {
+  padding: 6px 14px;
+  font-size: 14px;
+}
+.step-card .sc-block {
+  padding: 32px 36px;
+}
