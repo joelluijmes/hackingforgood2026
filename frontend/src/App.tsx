@@ -89,6 +89,10 @@ export default function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/participant" element={<ParticipantPortal />} />
       <Route
+        path="/participant/preview/:projectId"
+        element={<ParticipantPortal />}
+      />
+      <Route
         path="/participant/invite/:token"
         element={<ParticipantPortal />}
       />

@@ -143,3 +143,12 @@ Frontend client mirroring this file: `frontend/src/api.ts` (single source of typ
 ## Approve as is (v3.1)
 - `POST /api/project-documents/{id}/approve` -> `ProjectDoc` : records that the latest version needs no changes (stores approved_version_id/by/at on the doc; additive migration). Counts as "reviewed" for the `pi_review` gate. A new version upload makes `approved` false again.
 - `DELETE /api/project-documents/{id}/approve` -> `ProjectDoc` : withdraw the approval.
+
+## Participant portal (staff preview and invitations)
+
+Staff-only (`role=staff`), mirror of the participant endpoints without membership:
+
+- `GET /api/projects/{pid}/portal-preview/documents?persona=adult|parent_guardian|adolescent|child&lang=en|nl|fr` -> `{trial:{id,name,study}, demo:boolean, documents:ParticipantDocument[]}`. Published versions; if none are published, `demo=true` and the latest version of each ICF of the persona's type (adult/parent/adolescent/child), preferring `lang`.
+- `GET /api/projects/{pid}/portal-preview/documents/{doc_id}?persona=&lang=` -> `ParticipantDocumentContent`.
+- `POST /api/projects/{pid}/portal-preview/ask` body = participant ask body -> same reply as `/api/participant/trials/{pid}/ask`.
+- `GET /api/projects/{pid}/participant-invitations` -> `[{email, expires_at, status: pending|accepted|expired}]` (newest first; tokens are never returned after creation).

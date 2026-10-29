@@ -1,0 +1,333 @@
+/* Participant portal + staff admin panel. Uses the tokens from styles.css. */
+
+/* ---- portal ---- */
+.participant-portal {
+  max-width: 1180px;
+}
+.participant-layout {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.75fr) minmax(360px, 1.25fr);
+  gap: 20px;
+  align-items: start;
+}
+.participant-layout > .panel,
+.participant-reader {
+  padding: 24px;
+}
+.participant-reader {
+  margin-top: 20px;
+}
+.participant-doc {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  gap: 5px;
+  padding: 14px 10px;
+  border: 0;
+  border-top: 1px solid var(--border);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+.participant-doc:hover,
+.citation-link:hover {
+  background: var(--surface-2);
+}
+.participant-doc span {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.participant-chat form {
+  margin-top: 4px;
+}
+.participant-chat form label {
+  display: flex;
+  margin: 0 0 12px;
+}
+.chat-turn {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+  white-space: pre-wrap;
+}
+.chat-turn.user {
+  background: var(--primary-100);
+}
+.participant-answer {
+  border-top: 1px solid var(--border);
+  margin-top: 8px;
+  padding-top: 14px;
+}
+.citation-link {
+  display: block;
+  border: 0;
+  background: transparent;
+  color: var(--primary-900);
+  text-align: left;
+  padding: 7px 4px;
+  cursor: pointer;
+}
+.participant-section {
+  padding: 16px;
+  scroll-margin-top: 90px;
+  border-radius: var(--radius-md);
+}
+.participant-section:target {
+  background: #fff4cf;
+}
+.participant-section p {
+  white-space: pre-wrap;
+  line-height: 1.65;
+}
+.pp-choice {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.pp-choice legend {
+  padding: 0;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--neutral-900);
+}
+.pp-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.btn.pp-pill {
+  border: 1px solid var(--neutral-300);
+  background: var(--surface);
+  color: var(--neutral-700);
+  border-radius: var(--radius-pill);
+  min-height: 34px;
+  padding: 4px 14px;
+  font-size: 14px;
+}
+.btn.pp-pill:hover {
+  background: var(--primary-100);
+}
+.btn.pp-pill.on {
+  background: var(--primary-1000);
+  border-color: var(--primary-1000);
+  color: #fff;
+}
+.pp-inline {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  width: auto;
+}
+.pp-inline select {
+  width: auto;
+}
+.pp-banner {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 16px;
+  padding: 10px 16px;
+  border-radius: var(--radius-card);
+  background: #fff4cf;
+  border: 1px solid #e8c95a;
+  color: var(--neutral-900);
+}
+.pp-demo {
+  margin: 0 0 16px;
+  padding: 8px 14px;
+  border-radius: var(--radius-control);
+  background: var(--primary-100);
+  border: 1px dashed var(--primary-900);
+  color: var(--primary-1100);
+  font-size: 14px;
+}
+
+/* ---- staff admin panel ---- */
+.pp-admin {
+  margin: 24px 0;
+  padding: 24px;
+  gap: 0;
+}
+.pp-admin h2,
+.pp-admin h3,
+.pp-admin p {
+  margin: 0;
+}
+.pp-admin header {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+.pp-admin .pp-section {
+  display: grid;
+  gap: 12px;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+}
+.pp-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.pp-preview {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  border-radius: var(--radius-card);
+  background: var(--primary-100);
+  border: 1px solid var(--primary-200);
+}
+.pp-preview h3 {
+  margin-bottom: 2px;
+}
+.pp-preview-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+/* switch row: checkbox left, label + hint right, single line */
+.pp-switch {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+}
+.pp-switch input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 3px 0 0;
+  flex: none;
+}
+.pp-switch > span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.pp-switch small {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+.pp-fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  max-width: 640px;
+}
+
+/* published versions table: fixed column widths so selects line up */
+.pp-table {
+  display: grid;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+.pp-tr {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px 150px;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 16px;
+  border-top: 1px solid var(--border);
+}
+.pp-tr:first-child {
+  border-top: 0;
+}
+.pp-th {
+  background: var(--surface-2);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding-block: 8px;
+}
+.pp-doc {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+.pp-doc strong {
+  overflow-wrap: anywhere;
+  color: var(--neutral-900);
+}
+.pp-tr .btn {
+  width: 100%;
+}
+
+.pp-invite-form {
+  display: flex;
+  gap: 8px;
+  max-width: 640px;
+}
+.pp-invite-form input {
+  flex: 1;
+}
+.pp-newlink {
+  display: grid;
+  gap: 6px;
+  max-width: 640px;
+  padding: 12px;
+  border-radius: var(--radius-control);
+  background: var(--surface-2);
+  font-size: 14px;
+}
+.pp-newlink .pp-row input {
+  flex: 1;
+  font-size: 13px;
+}
+.pp-invites {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+}
+.pp-invites li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto 110px;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 16px;
+  border-top: 1px solid var(--border);
+}
+.pp-invites li:first-child {
+  border-top: 0;
+}
+.pp-invites .chip {
+  justify-self: start;
+  text-align: center;
+}
+.pp-invite-mail {
+  overflow-wrap: anywhere;
+  color: var(--neutral-900);
+}
+
+@media (max-width: 760px) {
+  .participant-layout {
+    grid-template-columns: 1fr;
+  }
+  .pp-tr {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .pp-th {
+    display: none;
+  }
+  .pp-invites li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}

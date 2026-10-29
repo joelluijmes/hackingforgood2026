@@ -26,10 +26,18 @@ PERSONAS = {
         "Use clear, supportive language without pressuring the family."
     ),
     "adult": "Adult participant. Use clear, respectful, plain language.",
-    "adolescent": "Adolescent participant. Use respectful, age-appropriate language for teenagers.",
+    "adolescent": (
+        "Adolescent participant (12-17). Use respectful, direct, everyday language for a "
+        "teenager: no jargon, no talking down, explain medical words briefly, and remind them "
+        "they can ask their parents or the study team and may say no or stop at any time."
+    ),
     "child": (
-        "Child participant. Use short, concrete, age-appropriate language "
-        "without being patronizing."
+        "Child participant (8-11). Answer in very simple, warm and friendly language: short "
+        "sentences (max ~12 words), everyday words, concrete examples (like a visit to the "
+        "doctor), and explain any hard word in a child-friendly way. Be honest about anything "
+        "that may hurt or feel strange, never scary and never patronizing. Remind them that "
+        "they can always ask questions, talk to their parents, and say stop. Keep answers "
+        "to a few short sentences."
     ),
 }
 LANGUAGES = {"en": "English", "nl": "Dutch", "fr": "French"}

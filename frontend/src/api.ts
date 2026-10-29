@@ -34,6 +34,40 @@ export interface ParticipantPortalSettings {
   urgent_guidance: string;
   publications: { doc_id: number; version_id: number; number: number }[];
 }
+export type ParticipantPersona =
+  | 'adult'
+  | 'parent_guardian'
+  | 'adolescent'
+  | 'child';
+export interface ParticipantAskBody {
+  question: string;
+  persona: ParticipantPersona;
+  language: Language;
+  history: { role: 'user' | 'assistant'; text: string }[];
+}
+export interface ParticipantReply {
+  explanation: string;
+  source_references: {
+    doc_id: number;
+    title: string;
+    version_id: number;
+    section_id: string;
+    heading: string;
+  }[];
+  unanswered_questions: string[];
+  requires_human_followup: boolean;
+}
+export interface ParticipantInvitation {
+  email: string;
+  expires_at: string;
+  status: 'pending' | 'accepted' | 'expired';
+}
+/** Staff preview: `demo` is true when nothing is published and the latest ICF versions are shown. */
+export interface PortalPreview {
+  trial: { id: number; name: string; study: string };
+  demo: boolean;
+  documents: ParticipantDocument[];
+}
 export interface ParticipantDocument {
   id: number;
   title: string;
@@ -620,27 +654,32 @@ export const api = {
     req<ParticipantDocumentContent>(
       `/participant/trials/${projectId}/documents/${docId}`,
     ),
-  participantAsk: (
+  participantAsk: (projectId: number, b: ParticipantAskBody) =>
+    req<ParticipantReply>(`/participant/trials/${projectId}/ask`, json('POST', b)),
+  participantInvitations: (projectId: number) =>
+    req<ParticipantInvitation[]>(`/projects/${projectId}/participant-invitations`),
+  portalPreviewDocuments: (
     projectId: number,
-    b: {
-      question: string;
-      persona: 'adult' | 'parent_guardian' | 'adolescent' | 'child';
-      language: Language;
-      history: { role: 'user' | 'assistant'; text: string }[];
-    },
+    persona: ParticipantPersona,
+    lang: Language,
   ) =>
-    req<{
-      explanation: string;
-      source_references: {
-        doc_id: number;
-        title: string;
-        version_id: number;
-        section_id: string;
-        heading: string;
-      }[];
-      unanswered_questions: string[];
-      requires_human_followup: boolean;
-    }>(`/participant/trials/${projectId}/ask`, json('POST', b)),
+    req<PortalPreview>(
+      `/projects/${projectId}/portal-preview/documents?persona=${persona}&lang=${lang}`,
+    ),
+  portalPreviewDocument: (
+    projectId: number,
+    docId: number,
+    persona: ParticipantPersona,
+    lang: Language,
+  ) =>
+    req<ParticipantDocumentContent>(
+      `/projects/${projectId}/portal-preview/documents/${docId}?persona=${persona}&lang=${lang}`,
+    ),
+  portalPreviewAsk: (projectId: number, b: ParticipantAskBody) =>
+    req<ParticipantReply>(
+      `/projects/${projectId}/portal-preview/ask`,
+      json('POST', b),
+    ),
 
   // template library
   listDocuments: (kind?: Kind) =>
