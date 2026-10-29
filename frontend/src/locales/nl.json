@@ -461,7 +461,8 @@
     "comments_decided_one": "Beslis over alle openstaande opmerkingen ({{count}} open)",
     "comments_decided_other": "Beslis over alle openstaande opmerkingen ({{count}} open)",
     "translations_complete": "Maak NL- en FR-versies (ontbreekt: {{list}})",
-    "ethics_reviewed": "Upload de beoordeling van het ethisch comité en beslis over de opmerkingen"
+    "ethics_reviewed": "Upload de beoordeling van het ethisch comité en beslis over de opmerkingen",
+    "profile_complete": "Contactgegevens van de studie zijn niet compleet ({{filled}} van {{total}} sleutelgegevens ingevuld)"
   },
   "tracker": {
     "toMoveOn": "Om door te gaan van {{stage}}",
@@ -619,7 +620,8 @@
       "download": "Downloaden",
       "approveAll": "Alles goedkeuren ({{count}})",
       "withdrawApproval": "Goedkeuring intrekken",
-      "downloadLang": "Download {{lang}}"
+      "downloadLang": "Download {{lang}}",
+      "completeProfile": "Contactgegevens aanvullen"
     },
     "participants": {
       "what": "Delen met deelnemers",
@@ -807,6 +809,8 @@
     "description": "Beschrijving",
     "inheritHint": "Lege velden nemen de globale standaard over (grijs weergegeven).",
     "allSaved": "Alle wijzigingen opgeslagen",
-    "editProject": "Project bewerken"
+    "editProject": "Project bewerken",
+    "stub": "Lege velden vullen met demowaarden",
+    "stubHint": "Vult alleen lege velden met duidelijk valse demowaarden (stub / .example). Echte waarden worden nooit overschreven."
   }
 }

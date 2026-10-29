@@ -461,7 +461,8 @@
     "comments_decided_one": "Decide all open comments ({{count}} open)",
     "comments_decided_other": "Decide all open comments ({{count}} open)",
     "translations_complete": "Create NL and FR versions (missing: {{list}})",
-    "ethics_reviewed": "Upload the ethics committee review and decide its comments"
+    "ethics_reviewed": "Upload the ethics committee review and decide its comments",
+    "profile_complete": "Study contact details are not complete ({{filled}} of {{total}} key facts filled)"
   },
   "tracker": {
     "toMoveOn": "To move on from {{stage}}",
@@ -619,7 +620,8 @@
       "download": "Download",
       "approveAll": "Approve all ({{count}})",
       "withdrawApproval": "Withdraw approval",
-      "downloadLang": "Download {{lang}}"
+      "downloadLang": "Download {{lang}}",
+      "completeProfile": "Complete contact details"
     },
     "participants": {
       "what": "Share with participants",
@@ -807,6 +809,8 @@
     "description": "Description",
     "inheritHint": "Empty fields inherit the global default (shown greyed).",
     "allSaved": "All changes saved",
-    "editProject": "Edit project"
+    "editProject": "Edit project",
+    "stub": "Fill empty fields with demo values",
+    "stubHint": "Fills only empty fields with clearly fake demo values (marked stub / .example). Real values are never overwritten."
   }
 }

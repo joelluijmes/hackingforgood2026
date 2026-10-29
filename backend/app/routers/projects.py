@@ -7,7 +7,7 @@ from fastapi import APIRouter, Depends, File, Form, HTTPException, Response, Upl
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
-from .. import db, progress, seed, services, storage
+from .. import db, facts, progress, seed, services, storage
 from ..auth import User, current_staff
 
 router = APIRouter(prefix="/api", dependencies=[Depends(current_staff)], tags=["projects"])
@@ -92,7 +92,12 @@ def _progress_docs(conn, pid: int) -> list[dict]:
 def project_progress(pid: int) -> dict:
     with db.connect() as conn:
         row = _project_row(conn, pid)
-        return progress.compute(row["stage"], _progress_docs(conn, pid))
+        eff = facts.effective(conn, pid)
+        profile = {
+            "filled": sum(1 for k in facts.KEY_FACTS if eff[k]["value"]),
+            "total": len(facts.KEY_FACTS),
+        }
+        return progress.compute(row["stage"], _progress_docs(conn, pid), profile)
 
 
 @router.get("/projects/{pid}/export")

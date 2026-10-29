@@ -161,3 +161,6 @@ Fixed fact schema in `backend/app/facts.py` (`key,label,group,kind text|phone|em
 - `POST /api/projects/{pid}/facts/infer` -> `{suggestions: [{key, value, current, current_source}]}` (AI from sponsor docs; nothing saved). 422 `no_sponsor_documents`, 503 `ai_unavailable`, 502 `ai_failed`.
 - Admin: full reset wipes facts; "clear generated" keeps them. Project delete removes its facts. Generic Belgian DPA defaults are seeded into `global_facts` at startup when the table is empty.
 - Frontend: Study profile card on `/projects/:id`; `/settings` global defaults.
+
+- `POST /api/global-facts/stub` (auth) -> same payload as `GET /api/global-facts`. Fills every EMPTY global default with a clearly fake demo value (`facts.DEMO_STUBS`: names marked `(stub)`, `.example` e-mails, `+32 2 000 00 xx` phones); never overwrites existing values.
+- Progress: the `pi_review` stage has a non-blocking requirement `profile_complete` (detail `filled/total` key facts of the study profile); it flags incomplete contact details but never blocks leaving the stage.

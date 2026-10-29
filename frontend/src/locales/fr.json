@@ -461,7 +461,8 @@
     "comments_decided_one": "Statuez sur tous les commentaires ouverts ({{count}} ouvert)",
     "comments_decided_other": "Statuez sur tous les commentaires ouverts ({{count}} ouverts)",
     "translations_complete": "Créez les versions NL et FR (manquant : {{list}})",
-    "ethics_reviewed": "Téléversez l'avis du comité d'éthique et statuez sur ses commentaires"
+    "ethics_reviewed": "Téléversez l'avis du comité d'éthique et statuez sur ses commentaires",
+    "profile_complete": "Les coordonnées de l'étude ne sont pas complètes ({{filled}} sur {{total}} informations clés renseignées)"
   },
   "tracker": {
     "toMoveOn": "Pour passer de {{stage}}",
@@ -619,7 +620,8 @@
       "download": "Télécharger",
       "approveAll": "Tout approuver ({{count}})",
       "withdrawApproval": "Retirer l'approbation",
-      "downloadLang": "Télécharger {{lang}}"
+      "downloadLang": "Télécharger {{lang}}",
+      "completeProfile": "Compléter les coordonnées"
     },
     "participants": {
       "what": "Partager avec les participants",
@@ -807,6 +809,8 @@
     "description": "Description",
     "inheritHint": "Les champs vides reprennent la valeur globale (en grise).",
     "allSaved": "Toutes les modifications sont enregistrees",
-    "editProject": "Modifier le projet"
+    "editProject": "Modifier le projet",
+    "stub": "Remplir les champs vides avec des valeurs de démo",
+    "stubHint": "Ne remplit que les champs vides avec des valeurs de démonstration clairement factices (stub / .example). Les vraies valeurs ne sont jamais écrasées."
   }
 }

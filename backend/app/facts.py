@@ -80,6 +80,27 @@ def seed_global_defaults() -> None:
             )
 
 
+# Clearly fake demo values (".example" domains, "(stub)") to try the app without real data.
+DEMO_STUBS = {
+    "sponsor_name": "Demo Sponsor Institute (stub)",
+    "sponsor_address": "Rue de l'Exemple 1, 1000 Brussels, Belgium (stub)",
+    "site_name": "Demo University Hospital (stub)",
+    "site_address": "Avenue de l'Hopital 1, 1200 Brussels, Belgium (stub)",
+    "site_accreditation_number": "STUB-0000",
+    "ombudsperson_phone": "+32 2 000 00 01",
+    "ombudsperson_email": "ombudsperson@demo-hospital.example",
+    "dpo_name": "Demo Data Protection Officer (stub)",
+    "dpo_phone": "+32 2 000 00 02",
+    "dpo_email": "dpo@demo-hospital.example",
+    "ethics_committee_name": "Demo Ethics Committee (stub)",
+    "ethics_committee_contact": "ethics@demo-hospital.example, +32 2 000 00 03",
+    "insurer_name": "Demo Insurance NV (stub)",
+    "insurer_address": "Insurance Street 1, 1000 Brussels, Belgium (stub)",
+    "insurer_phone": "+32 2 000 00 04",
+    "insurer_email": "claims@demo-insurance.example",
+}
+
+
 def global_values(conn) -> dict[str, str]:
     return {r["key"]: r["value"] for r in conn.execute("SELECT key, value FROM global_facts")}
 

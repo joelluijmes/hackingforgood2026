@@ -47,6 +47,17 @@ export default function Settings() {
     setBusy(false);
   }
 
+  async function stub() {
+    setError('');
+    setBusy(true);
+    try {
+      apply(await api.stubGlobalFacts());
+    } catch (e) {
+      setError(errMsg(e));
+    }
+    setBusy(false);
+  }
+
   return (
     <div className="page settings-page">
       <div className="page-head">
@@ -54,6 +65,15 @@ export default function Settings() {
           <h1>{t('facts.settingsTitle')}</h1>
           <p className="muted">{t('facts.settingsLead')}</p>
         </div>
+        <button
+          type="button"
+          className="btn"
+          disabled={busy}
+          title={t('facts.stubHint')}
+          onClick={stub}
+        >
+          {t('facts.stub')}
+        </button>
       </div>
       {error && <p className="error">{error}</p>}
       <FactFields

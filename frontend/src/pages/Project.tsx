@@ -354,6 +354,10 @@ export default function Project() {
         onGenerateAll={generateAll}
         onTranslateAll={translateAll}
         onNewVersion={setVersionFor}
+        onEditProfile={() => {
+          setEditTab('contacts');
+          setDialog('edit');
+        }}
         onError={setError}
       />
 

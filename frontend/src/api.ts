@@ -761,6 +761,8 @@ export const api = {
   getGlobalFacts: () => req<GlobalFacts>('/global-facts'),
   putGlobalFacts: (values: Record<string, string | null>) =>
     req<GlobalFacts>('/global-facts', json('PUT', { values })),
+  stubGlobalFacts: () =>
+    req<GlobalFacts>('/global-facts/stub', { method: 'POST' }),
   getProjectFacts: (pid: number) => req<ProjectFacts>(`/projects/${pid}/facts`),
   putProjectFacts: (
     pid: number,

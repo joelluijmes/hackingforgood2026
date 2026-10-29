@@ -63,6 +63,21 @@ def put_global_facts(body: FactsPatch, user: User) -> dict:
         return _global_payload(conn)
 
 
+@router.post("/global-facts/stub")
+def stub_global_facts(user: User) -> dict:
+    """Fill every EMPTY global default with a clearly fake demo value (never overwrites)."""
+    with db.connect() as conn:
+        have = facts.global_values(conn)
+        for k, v in facts.DEMO_STUBS.items():
+            if not have.get(k):
+                conn.execute(
+                    "INSERT OR REPLACE INTO global_facts (key, value, updated_at, updated_by)"
+                    " VALUES (?,?,?,?)",
+                    (k, v, db.now_iso(), user["name"]),
+                )
+        return _global_payload(conn)
+
+
 @router.get("/projects/{pid}/facts")
 def get_project_facts(pid: int) -> dict:
     with db.connect() as conn:

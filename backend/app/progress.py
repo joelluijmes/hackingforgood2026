@@ -27,7 +27,7 @@ def _icf_type(d: dict) -> str:
     return d.get("icf_type") or "adult"
 
 
-def _requirements(stage: str, docs: list[dict]) -> list[dict]:
+def _requirements(stage: str, docs: list[dict], profile: dict | None = None) -> list[dict]:
     sponsor = [d for d in docs if d["role"] == "sponsor"]
     icfs = [d for d in docs if d["role"] == "icf"]
     en = [d for d in icfs if d["language"] == "en"]
@@ -49,13 +49,23 @@ def _requirements(stage: str, docs: list[dict]) -> list[dict]:
             for lang in ("nl", "fr"):
                 if not _cell(icfs, _icf_type(d), lang, d["id"]):
                     missing.append(f"{_icf_type(d)}:{lang}")
-        return [
+        reqs = [
             _req("has_reviewed_version", bool(en) and not pending),
             _req("comments_decided", n == 0 and bool(en), True, str(n)),
             _req(
                 "translations_complete", bool(en) and not missing, True, ",".join(missing) or None
             ),
         ]
+        if profile is not None:  # flagged, never blocking: contact details are not ready yet
+            reqs.append(
+                _req(
+                    "profile_complete",
+                    profile["filled"] >= profile["total"],
+                    False,
+                    f"{profile['filled']}/{profile['total']}",
+                )
+            )
+        return reqs
     if stage == "ethics_review":
         reviewed = bool(translated) and all(_reviewed(d) for d in translated)
         n = _open_comments(translated)
@@ -98,13 +108,13 @@ def _matrix(docs: list[dict]) -> list[dict]:
     return rows
 
 
-def compute(stage: str, docs: list[dict]) -> dict:
+def compute(stage: str, docs: list[dict], profile: dict | None = None) -> dict:
     """``docs``: dicts with id, role, icf_type, language, source_doc_id, versions[{id, number,
     source, comments_open}]."""
     cur = STAGES.index(stage)
     stages = []
     for i, key in enumerate(STAGES):
-        reqs = _requirements(key, docs)
+        reqs = _requirements(key, docs, profile)
         stages.append(
             {
                 "key": key,

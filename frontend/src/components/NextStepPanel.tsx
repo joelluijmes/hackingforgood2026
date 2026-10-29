@@ -26,6 +26,10 @@ function useReqLabel() {
         });
       case 'comments_decided':
         return t('req.comments_decided', { count: Number(d) || 0 });
+      case 'profile_complete': {
+        const [filled, total] = d.split('/');
+        return t('req.profile_complete', { filled, total });
+      }
       case 'translations_complete':
         return t('req.translations_complete', {
           list: d
@@ -56,6 +60,7 @@ export default function NextStepPanel({
   onGenerateAll,
   onTranslateAll,
   onNewVersion,
+  onEditProfile,
   onError,
 }: {
   projectId: number;
@@ -67,6 +72,7 @@ export default function NextStepPanel({
   onGenerateAll: () => void;
   onTranslateAll: () => void;
   onNewVersion: (doc: ProjectDoc) => void;
+  onEditProfile: () => void;
   onError: (msg: string) => void;
 }) {
   const { t } = useTranslation();
@@ -416,6 +422,15 @@ export default function NextStepPanel({
                     {r.met ? '✓' : r.blocking ? '✗' : 'i'}
                   </span>
                   <span>{reqLabel(r.key, r.detail)}</span>
+                  {r.key === 'profile_complete' && !r.met && (
+                    <button
+                      type="button"
+                      className="link"
+                      onClick={onEditProfile}
+                    >
+                      {t('next.act.completeProfile')}
+                    </button>
+                  )}
                 </li>
               );
             })}
