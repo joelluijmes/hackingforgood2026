@@ -188,11 +188,7 @@ function Decide({
               {t('comments.provideText')}
             </button>
             {onFix && (
-              <button
-                type="button"
-                className="btn outline"
-                onClick={() => onFix(c)}
-              >
+              <button type="button" className="btn" onClick={() => onFix(c)}>
                 {t('comments.fixWithAi')}
               </button>
             )}

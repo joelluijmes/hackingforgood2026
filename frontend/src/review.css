@@ -35,7 +35,7 @@
 }
 .rv-cols {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 380px;
+  grid-template-columns: minmax(0, 1fr) clamp(380px, 34vw, 520px);
   gap: 24px;
   align-items: start;
 }
@@ -151,9 +151,11 @@
 .rv-list {
   padding: 12px;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 10px;
 }
 .rv-card {
+  min-width: 0;
   border: 1px solid var(--neutral-300);
   border-radius: var(--radius-card);
   padding: 12px;
@@ -380,6 +382,7 @@
 
 /* ---- side panel tabs + "Edit with AI" ---- */
 .rv-side {
+  min-width: 0;
   position: sticky;
   top: 76px; /* below the sticky topbar */
   display: flex;
@@ -743,4 +746,9 @@
 }
 .rv-tray-what input {
   width: 100%;
+}
+
+.rv-panel {
+  min-width: 0;
+  overflow-x: hidden;
 }
