@@ -269,31 +269,36 @@ export default function VersionViewer() {
           <Link to={`/projects/${project.id}`}>{project.name}</Link> ›{' '}
           {doc.title}
         </div>
-        <h1>{doc.title}</h1>
-        <select
-          aria-label={t('versionViewer.versionLabel')}
-          value={vid}
-          onChange={(e) => nav(`/versions/${e.target.value}`)}
-        >
-          {versions.map((v) => (
-            <option key={v.id} value={v.id}>
-              v{v.number} · {t(`sources.${v.source}`)}
-            </option>
-          ))}
-        </select>
-        <a className="btn" href={api.versionFileUrl(vid)}>
-          {t('common.download')}
-        </a>
-        {prev && (
-          <Link className="btn" to={`/diff?from=${prev.id}&to=${vid}`}>
-            {t('versionViewer.compareWithPrevious')}
-          </Link>
-        )}
-        {comments.length > 0 && (
-          <a className="btn" href={api.ecResponseUrl(vid, lang)}>
-            {t('versionViewer.ecResponse')}
-          </a>
-        )}
+        <div className="rv-title-row">
+          <h1>{doc.title}</h1>
+          <select
+            className="rv-ver"
+            aria-label={t('versionViewer.versionLabel')}
+            value={vid}
+            onChange={(e) => nav(`/versions/${e.target.value}`)}
+          >
+            {versions.map((v) => (
+              <option key={v.id} value={v.id}>
+                v{v.number} · {t(`sources.${v.source}`)}
+              </option>
+            ))}
+          </select>
+          <div className="rv-head-actions">
+            {prev && (
+              <Link className="btn" to={`/diff?from=${prev.id}&to=${vid}`}>
+                {t('versionViewer.compareWithPrevious')}
+              </Link>
+            )}
+            {comments.length > 0 && (
+              <a className="btn" href={api.ecResponseUrl(vid, lang)}>
+                {t('versionViewer.ecResponse')}
+              </a>
+            )}
+            <a className="btn" href={api.versionFileUrl(vid)}>
+              {t('common.download')}
+            </a>
+          </div>
+        </div>
       </div>
       {error && <p className="error">{error}</p>}
       {saved && (
@@ -343,7 +348,20 @@ export default function VersionViewer() {
       <div className="rv-cols">
         <div>
           <div className="rv-doc-tools">
-            <label>
+            <span className="rv-doc-name" title={version.filename}>
+              {version.filename} · v{version.number}
+            </span>
+            {(html?.fill_count ?? 0) > 0 && (
+              <label className="rv-toggle">
+                <input
+                  type="checkbox"
+                  checked={showFills}
+                  onChange={(e) => setShowFills(e.target.checked)}
+                />
+                {t('comments.fillsSummary', { count: html?.fill_count ?? 0 })}
+              </label>
+            )}
+            <label className="rv-toggle">
               <input
                 type="checkbox"
                 checked={showTc}
@@ -351,9 +369,6 @@ export default function VersionViewer() {
               />
               {t('versionViewer.showTrackedChanges')}
             </label>
-            <span className="muted">
-              {version.filename} · v{version.number}
-            </span>
           </div>
           {htmlErr && <div className="empty">{htmlErr}</div>}
           {noRender && (
@@ -417,9 +432,6 @@ export default function VersionViewer() {
               lang={lang}
               activeId={activeId}
               onActivate={activate}
-              fillCount={html?.fill_count ?? 0}
-              showFills={showFills}
-              onToggleFills={setShowFills}
               onFix={(c) => {
                 activate(c);
                 setFixing(c);

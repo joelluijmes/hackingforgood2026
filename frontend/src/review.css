@@ -1118,10 +1118,7 @@
   background: var(--surface, #fff);
   border: 1px solid var(--neutral-300, #ccc);
   border-radius: 0 0 var(--radius-card, 12px) var(--radius-card, 12px);
-  /* white cap above hides document text scrolling between topbar and bar */
-  box-shadow:
-    0 -24px 0 0 var(--bg, #fff),
-    0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .rv-back {
   font-weight: 600;
@@ -1244,4 +1241,291 @@
 .paper p.toc-title {
   font-weight: 700;
   margin: 12px 0 6px;
+}
+
+/* ---- review page polish (header, bar, panel) ---- */
+:root {
+  --topbar-h: 61px;
+  --rv-bar-h: 56px;
+}
+.rv-head {
+  display: block;
+  margin-bottom: 12px;
+}
+.rv-crumb {
+  margin-bottom: 4px;
+}
+.rv-title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+.rv-head h1 {
+  flex: 0 1 auto;
+  min-width: 0;
+  font-size: 26px;
+  line-height: 1.25;
+}
+.rv-head select.rv-ver {
+  width: auto;
+  min-height: 32px;
+  padding: 2px 28px 2px 10px;
+  font-size: 14px;
+}
+.rv-head-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-left: auto;
+}
+.rv-head .btn {
+  min-height: 32px;
+  padding: 2px 12px;
+  font-size: 14px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.rv-bar {
+  top: calc(var(--topbar-h) - 1px);
+  min-height: var(--rv-bar-h);
+  box-sizing: border-box;
+  padding: 8px 16px;
+  margin-bottom: 12px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 16px;
+}
+.rv-bar .rv-back {
+  font-size: 14px;
+  text-decoration: none;
+}
+.rv-bar .rv-back:hover {
+  text-decoration: underline;
+}
+.rv-bar-info {
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+.rv-bar-count {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--neutral-900);
+  white-space: nowrap;
+}
+.rv-bar-info progress {
+  appearance: none;
+  -webkit-appearance: none;
+  width: clamp(80px, 18vw, 220px);
+  height: 6px;
+  border: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--neutral-200);
+}
+.rv-bar-info progress::-webkit-progress-bar {
+  background: var(--neutral-200);
+}
+.rv-bar-info progress::-webkit-progress-value {
+  background: var(--primary-1000);
+  border-radius: 6px;
+}
+.rv-bar-info progress::-moz-progress-bar {
+  background: var(--primary-1000);
+}
+.rv-badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--primary-200);
+  color: var(--primary-1100);
+  white-space: nowrap;
+}
+.rv-linkbtn {
+  font: 600 13px / 20px var(--font-body);
+  padding: 2px 4px;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.rv-linkbtn:hover:not(:disabled) {
+  text-decoration: underline;
+}
+.rv-linkbtn:disabled {
+  color: var(--neutral-500);
+  cursor: default;
+}
+.rv-bar .btn {
+  min-height: 36px;
+}
+@media (max-width: 800px) {
+  .rv-bar {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+  .rv-bar-info {
+    grid-column: 1 / -1;
+    order: 3;
+  }
+}
+
+/* document toolbar */
+.rv-doc-tools {
+  gap: 16px;
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  background: var(--neutral-100);
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-control);
+}
+.rv-doc-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  color: var(--neutral-700);
+}
+.rv-doc-tools label.rv-toggle,
+label.rv-toggle {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.rv-toggle input {
+  margin: 0;
+}
+
+/* side column sits flush below the bar */
+.rv-side {
+  top: calc(var(--topbar-h) + var(--rv-bar-h) + 12px);
+  max-height: calc(100vh - var(--topbar-h) - var(--rv-bar-h) - 24px);
+  gap: 8px;
+}
+.rv-panel {
+  top: 0;
+  max-height: none;
+}
+.rv-panel-head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #fff;
+  padding: 10px 12px;
+  display: grid;
+  gap: 8px;
+}
+.rv-seg {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3px;
+  gap: 2px;
+  background: var(--neutral-100);
+  border-radius: var(--radius-control);
+}
+.rv-seg button {
+  font: 600 13px / 20px var(--font-body);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 6px;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  color: var(--neutral-700);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.rv-seg button[aria-pressed="true"] {
+  background: #fff;
+  color: var(--primary-1100);
+  box-shadow: var(--shadow);
+}
+.rv-seg-n {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--neutral-500);
+}
+.rv-panel-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.rv-menu {
+  position: relative;
+}
+.rv-menu summary {
+  list-style: none;
+  cursor: pointer;
+  font: 600 13px / 20px var(--font-body);
+  color: var(--accent);
+  padding: 2px 4px;
+}
+.rv-menu summary::-webkit-details-marker {
+  display: none;
+}
+.rv-menu-list {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4px);
+  z-index: 5;
+  min-width: 240px;
+  display: grid;
+  padding: 4px;
+  background: #fff;
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--radius-control);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 16%);
+}
+.rv-menu-list button {
+  font: 500 14px / 20px var(--font-body);
+  text-align: left;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  color: var(--neutral-900);
+  cursor: pointer;
+}
+.rv-menu-list button:hover {
+  background: var(--primary-100);
+}
+
+/* cards: tighter, gap actions on one row */
+.rv-list {
+  padding: 10px;
+  gap: 8px;
+}
+.rv-actions {
+  gap: 6px 8px;
+  margin-top: 8px;
+}
+.rv-actions .btn {
+  min-height: 32px;
+  padding: 3px 12px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.rv-actions .btn.ghost {
+  padding: 3px 6px;
+  color: var(--accent);
+  font-weight: 600;
+}
+@media (max-width: 900px) {
+  .rv-side {
+    top: auto;
+  }
 }

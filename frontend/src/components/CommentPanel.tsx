@@ -260,18 +260,12 @@ export default function CommentPanel({
   activeId,
   onActivate,
   onFix,
-  fillCount = 0,
-  showFills = false,
-  onToggleFills,
 }: {
   /** staged review changes; owned by the page, applied from the review bar */
   staged: Record<number, Staged>;
   setStaged: (
     f: (prev: Record<number, Staged>) => Record<number, Staged>,
   ) => void;
-  fillCount?: number;
-  showFills?: boolean;
-  onToggleFills?: (v: boolean) => void;
   comments: ReviewComment[];
   lang: Lang;
   activeId: number | null;
@@ -309,7 +303,6 @@ export default function CommentPanel({
       c.status === filter ||
       repliesOf(c.id).some((r) => r.status === filter),
   );
-  const reviewed = counts.approved + counts.declined;
 
   const stage = (c: ReviewComment, s: Staged | null) =>
     setStaged((all) => {
@@ -372,18 +365,7 @@ export default function CommentPanel({
   return (
     <aside className="rv-panel" aria-label={t('comments.title')}>
       <div className="rv-panel-head">
-        <h2>{t('comments.title')}</h2>
-        <div className="muted">
-          {t('comments.reviewed', { done: reviewed, total: list.length })}
-        </div>
-        <div className="rv-progress">
-          <div
-            style={{
-              width: `${list.length ? (reviewed / list.length) * 100 : 0}%`,
-            }}
-          />
-        </div>
-        <div className="rv-filters">
+        <div className="rv-seg">
           {(['all', 'open', 'approved', 'declined'] as Filter[]).map((f) => (
             <button
               key={f}
@@ -391,41 +373,56 @@ export default function CommentPanel({
               aria-pressed={filter === f}
               onClick={() => setFilter(f)}
             >
-              {t(`comments.filters.${f}`)} ({counts[f]})
+              {t(`comments.filters.${f}`)}
+              <span className="rv-seg-n">{counts[f]}</span>
             </button>
           ))}
-          <button type="button" onClick={nextOpen} disabled={!counts.open}>
-            {t('comments.nextOpen')}
-          </button>
         </div>
-        {(openOthers.length > 0 || openGaps.length > 0) && (
-          <div className="rv-filters">
-            {openOthers.length > 0 && (
-              <button type="button" onClick={() => bulk(openOthers)}>
-                {t('comments.resolveAll', { count: openOthers.length })}
-              </button>
-            )}
-            {openGaps.length > 0 && (
-              <button
-                type="button"
-                onClick={() => bulk(openGaps, t('comments.leftAsPlaceholder'))}
-              >
-                {t('comments.leaveAll', { count: openGaps.length })}
-              </button>
-            )}
-          </div>
-        )}
-        {fillCount > 0 && onToggleFills && (
-          <label className="rv-gen">
-            <input
-              type="checkbox"
-              checked={showFills}
-              onChange={(e) => onToggleFills(e.target.checked)}
-            />
-            {t('comments.fillsSummary', { count: fillCount })} ·{' '}
-            {t('comments.showFills')}
-          </label>
-        )}
+        <div className="rv-panel-actions">
+          <button
+            type="button"
+            className="rv-linkbtn"
+            onClick={nextOpen}
+            disabled={!counts.open}
+          >
+            {t('comments.nextOpen')} →
+          </button>
+          {(openOthers.length > 0 || openGaps.length > 0) && (
+            <details className="rv-menu">
+              <summary aria-label={t('comments.moreActions')}>
+                {t('comments.moreActions')} ▾
+              </summary>
+              <div className="rv-menu-list">
+                {openOthers.length > 0 && (
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      bulk(openOthers);
+                      e.currentTarget
+                        .closest('details')
+                        ?.removeAttribute('open');
+                    }}
+                  >
+                    {t('comments.resolveAll', { count: openOthers.length })}
+                  </button>
+                )}
+                {openGaps.length > 0 && (
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      bulk(openGaps, t('comments.leftAsPlaceholder'));
+                      e.currentTarget
+                        .closest('details')
+                        ?.removeAttribute('open');
+                    }}
+                  >
+                    {t('comments.leaveAll', { count: openGaps.length })}
+                  </button>
+                )}
+              </div>
+            </details>
+          )}
+        </div>
       </div>
       <div className="rv-list">
         {shown.length === 0 && (
