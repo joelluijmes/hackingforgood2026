@@ -159,6 +159,16 @@ export default function VersionViewer() {
   }, [activeId, html, comments, spansFor]);
 
   const onDocClick = (e: React.MouseEvent) => {
+    const toc = (e.target as HTMLElement).closest<HTMLAnchorElement>(
+      'a.toc-link',
+    );
+    if (toc) {
+      e.preventDefault();
+      const id = toc.getAttribute('href')?.slice(1);
+      const target = id ? paper.current?.querySelector(`[id="${id}"]`) : null;
+      target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      return;
+    }
     const el = (e.target as HTMLElement).closest<HTMLElement>('span.cmt');
     if (!el) return;
     const ids = (el.dataset.cid ?? '').split(/\s+/);
