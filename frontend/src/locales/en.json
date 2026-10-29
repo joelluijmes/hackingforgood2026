@@ -420,7 +420,9 @@
       "comments": "Adding review comments",
       "saving": "Saving the document",
       "done": "Done"
-    }
+    },
+    "runningMany": "Working on {{total}} documents · {{done}} of {{total}} done",
+    "details": "Details"
   },
   "edit": {
     "title": "Edit with AI",
@@ -512,7 +514,10 @@
       "approveAsIs": "Approve as is",
       "reviewComments": "Decide comments",
       "translate": "Translate missing versions",
-      "openDownload": "Download all (zip)"
+      "openDownload": "Download all (zip)",
+      "openForReview": "Open for review",
+      "more": "More actions",
+      "download": "Download"
     }
   },
   "docStatus": {

@@ -8,6 +8,7 @@ import {
   type ProjectProgress,
   type Stage,
 } from '../api';
+import { docStatus } from '../docStatus';
 import Dialog, { errMsg } from './Dialog';
 import { STAGES } from './StageStepper';
 
@@ -264,34 +265,74 @@ export default function NextStepPanel({
         </h2>
         <p className="sc-status">{status}</p>
         {docRows.length > 0 && (
-          <ul className="sc-docs">
-            {docRows.map((d) => (
-              <li key={d.id}>
-                <span className="sc-doc-title">{d.title}</span>
-                {d.language && (
-                  <span className="chip lang">{d.language.toUpperCase()}</span>
-                )}
-                <button
-                  type="button"
-                  className="btn"
-                  disabled={busy}
-                  onClick={() => onNewVersion(d)}
-                >
-                  {t('next.act.uploadReviewed')}
-                </button>
-                {withApprove && (
-                  <button
-                    type="button"
-                    className="btn primary"
-                    disabled={busy}
-                    onClick={() => run(() => api.approveDoc(d.id))}
-                  >
-                    {t('next.act.approveAsIs')}
-                  </button>
-                )}
-              </li>
-            ))}
-          </ul>
+          <table className="sc-docs">
+            <tbody>
+              {docRows.map((d) => {
+                const v = latest(d);
+                const st = docStatus(stage, {
+                  source: v?.source ?? 'generated',
+                  approved: d.approved,
+                  language: d.language,
+                });
+                return (
+                  <tr key={d.id}>
+                    <td className="sc-doc-title">
+                      {d.title}
+                      {d.language && (
+                        <span className="chip lang">
+                          {d.language.toUpperCase()}
+                        </span>
+                      )}
+                    </td>
+                    <td>
+                      <span className={`chip ${st.tone}`}>
+                        {t(`docStatus.${st.key}`)}
+                      </span>
+                    </td>
+                    <td className="sc-doc-actions">
+                      {v && (
+                        <Link className="btn primary" to={`/versions/${v.id}`}>
+                          {t('next.act.openForReview')}
+                        </Link>
+                      )}
+                      <details className="menu">
+                        <summary
+                          className="btn"
+                          aria-label={t('next.act.more')}
+                          title={t('next.act.more')}
+                        >
+                          ⋯
+                        </summary>
+                        <div className="menu-list">
+                          <button
+                            type="button"
+                            disabled={busy}
+                            onClick={() => onNewVersion(d)}
+                          >
+                            {t('next.act.uploadReviewed')}
+                          </button>
+                          {withApprove && (
+                            <button
+                              type="button"
+                              disabled={busy}
+                              onClick={() => run(() => api.approveDoc(d.id))}
+                            >
+                              {t('next.act.approveAsIs')}
+                            </button>
+                          )}
+                          {v && (
+                            <a href={api.versionFileUrl(v.id)} download>
+                              {t('next.act.download')}
+                            </a>
+                          )}
+                        </div>
+                      </details>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         )}
         {(primary || secondary.length > 0) && (
           <div className="row sc-actions">

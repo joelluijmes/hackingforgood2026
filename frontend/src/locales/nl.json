@@ -420,7 +420,9 @@
       "comments": "Opmerkingen toevoegen",
       "saving": "Document opslaan",
       "done": "Klaar"
-    }
+    },
+    "runningMany": "Bezig met {{total}} documenten · {{done}} van {{total}} klaar",
+    "details": "Details"
   },
   "edit": {
     "title": "Bewerken met AI",
@@ -512,7 +514,10 @@
       "approveAsIs": "Ongewijzigd goedkeuren",
       "reviewComments": "Opmerkingen beslissen",
       "translate": "Ontbrekende versies vertalen",
-      "openDownload": "Alles downloaden (zip)"
+      "openDownload": "Alles downloaden (zip)",
+      "openForReview": "Openen voor review",
+      "more": "Meer acties",
+      "download": "Downloaden"
     }
   },
   "docStatus": {

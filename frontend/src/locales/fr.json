@@ -420,7 +420,9 @@
       "comments": "Ajout des commentaires de relecture",
       "saving": "Enregistrement du document",
       "done": "Terminé"
-    }
+    },
+    "runningMany": "Traitement de {{total}} documents · {{done}} sur {{total}} terminés",
+    "details": "Détails"
   },
   "edit": {
     "title": "Modifier avec l'IA",
@@ -512,7 +514,10 @@
       "approveAsIs": "Approuver tel quel",
       "reviewComments": "Décider des commentaires",
       "translate": "Traduire les versions manquantes",
-      "openDownload": "Tout télécharger (zip)"
+      "openDownload": "Tout télécharger (zip)",
+      "openForReview": "Ouvrir pour relecture",
+      "more": "Plus d'actions",
+      "download": "Télécharger"
     }
   },
   "docStatus": {

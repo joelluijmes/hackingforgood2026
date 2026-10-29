@@ -14,140 +14,10 @@ export interface TaskMeta {
   targets?: string[];
 }
 
-function TaskCard({
-  meta,
-  onFinished,
-  onDismiss,
-}: {
-  meta: TaskMeta;
-  onFinished: () => void;
-  onDismiss: () => void;
-}) {
-  const { t } = useTranslation();
-  const [task, setTask] = useState<Task | null>(null);
-  const [lost, setLost] = useState(false);
-  const finished = useRef(onFinished);
-  finished.current = onFinished;
+type Entry = Task | 'lost';
 
-  useEffect(() => {
-    let stop = false;
-    let timer: ReturnType<typeof setTimeout>;
-    const tick = async () => {
-      try {
-        const r = await api.task(meta.id);
-        if (stop) return;
-        setTask(r);
-        if (r.status === 'running') {
-          timer = setTimeout(tick, 1500);
-        } else {
-          finished.current();
-        }
-      } catch {
-        if (stop) return;
-        setLost(true);
-      }
-    };
-    tick();
-    return () => {
-      stop = true;
-      clearTimeout(timer);
-    };
-  }, [meta.id]);
-
-  const icf = meta.icfType ? t(`icfTypes.${meta.icfType}`) : '';
-  const title =
-    meta.kind === 'generate'
-      ? t('task.titleGenerate', { lang: t(`languages.${meta.langs}`), icf })
-      : t('task.titleTranslate', { langs: meta.langs.toUpperCase() });
-
-  if (lost)
-    return (
-      <div className="task-card failed">
-        <b>{title}</b>
-        <p className="error">{t('task.lost')}</p>
-        <button type="button" className="link" onClick={onDismiss}>
-          {t('task.dismiss')}
-        </button>
-      </div>
-    );
-
-  const running = !task || task.status === 'running';
-  const pct = Math.round((task?.progress ?? 0) * 100);
-  const secs = Math.floor(task?.elapsed_s ?? 0);
-  const elapsed = `${Math.floor(secs / 60)}:${String(secs % 60).padStart(2, '0')}`;
-
-  if (task?.status === 'failed')
-    return (
-      <div className="task-card failed" role="alert">
-        <b>{title}</b>
-        <p className="error">{task.error ?? t('task.failed')}</p>
-        <button type="button" className="link" onClick={onDismiss}>
-          {t('task.dismiss')}
-        </button>
-      </div>
-    );
-
-  if (task?.status === 'done') {
-    const reports = task.result?.reports ?? [];
-    const filled = reports.reduce((a, r) => a + r.filled, 0);
-    const flagged = reports.reduce((a, r) => a + r.flagged, 0);
-    const docs = task.result?.docs ?? [];
-    return (
-      <div className="task-card done">
-        <b>{title}</b>
-        <p>{t('task.ready', { filled, flagged })}</p>
-        <div className="row">
-          {docs.map((d) => {
-            const v = d.versions[0];
-            return v ? (
-              <Link key={d.id} className="btn" to={`/versions/${v.id}`}>
-                {t('task.open')}
-                {docs.length > 1 && d.language
-                  ? ` ${d.language.toUpperCase()}`
-                  : ''}
-              </Link>
-            ) : null;
-          })}
-          <button type="button" className="link" onClick={onDismiss}>
-            {t('task.dismiss')}
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  const step = task?.step ?? 'queued';
-  return (
-    <div className="task-card" aria-live="polite">
-      <div className="task-head">
-        <b>{title}</b>
-        <span className="muted">{elapsed}</span>
-      </div>
-      <div
-        className="bar"
-        role="progressbar"
-        aria-valuenow={pct}
-        aria-valuemin={0}
-        aria-valuemax={100}
-      >
-        <i style={{ width: `${pct}%` }} />
-      </div>
-      <div className="task-step">
-        <span>
-          {t(`task.step.${step}`, {
-            done: task?.done ?? 0,
-            total: task?.total ?? 0,
-          })}
-          {meta.kind === 'translate' && task?.language && running
-            ? ` · ${t('task.producing', { lang: task.language.toUpperCase() })}`
-            : ''}
-        </span>
-        <b>{pct}%</b>
-      </div>
-      <p className="muted small">{t('task.hint')}</p>
-    </div>
-  );
-}
+const fmtElapsed = (secs: number) =>
+  `${Math.floor(secs / 60)}:${String(Math.floor(secs % 60)).padStart(2, '0')}`;
 
 export default function TaskBanner({
   tasks,
@@ -158,16 +28,182 @@ export default function TaskBanner({
   onFinished: () => void;
   onDismiss: (id: string) => void;
 }) {
+  const { t } = useTranslation();
+  const [entries, setEntries] = useState<Record<string, Entry>>({});
+  const finishedIds = useRef(new Set<string>());
+  const dismissTimers = useRef(
+    new Map<string, ReturnType<typeof setTimeout>>(),
+  );
+  const cb = useRef({ onFinished, onDismiss });
+  cb.current = { onFinished, onDismiss };
+  const idKey = tasks.map((m) => m.id).join(',');
+
+  // Poll every task that is not finished yet, from one loop.
+  useEffect(() => {
+    let stop = false;
+    let timer: ReturnType<typeof setTimeout>;
+    const tick = async () => {
+      const pending = idKey
+        .split(',')
+        .filter((id) => id && !finishedIds.current.has(id));
+      await Promise.all(
+        pending.map(async (id) => {
+          let entry: Entry;
+          try {
+            entry = await api.task(id);
+          } catch {
+            entry = 'lost';
+          }
+          if (stop) return;
+          setEntries((cur) => ({ ...cur, [id]: entry }));
+          if (entry === 'lost' || entry.status !== 'running') {
+            finishedIds.current.add(id);
+            cb.current.onFinished();
+            if (entry !== 'lost' && entry.status === 'done') {
+              dismissTimers.current.set(
+                id,
+                setTimeout(() => cb.current.onDismiss(id), 4000),
+              );
+            }
+          }
+        }),
+      );
+      const stillRunning = idKey
+        .split(',')
+        .some((id) => id && !finishedIds.current.has(id));
+      if (!stop && stillRunning) timer = setTimeout(tick, 1500);
+    };
+    tick();
+    return () => {
+      stop = true;
+      clearTimeout(timer);
+    };
+  }, [idKey]);
+
+  useEffect(
+    () => () => {
+      for (const h of dismissTimers.current.values()) clearTimeout(h);
+    },
+    [],
+  );
+
   if (tasks.length === 0) return null;
+
+  const titleOf = (m: TaskMeta) =>
+    m.kind === 'generate'
+      ? t('task.titleGenerate', {
+          lang: t(`languages.${m.langs}`),
+          icf: m.icfType ? t(`icfTypes.${m.icfType}`) : '',
+        })
+      : t('task.titleTranslate', { langs: m.langs.toUpperCase() });
+
+  const failed: { m: TaskMeta; msg: string }[] = [];
+  const done: { m: TaskMeta; task: Task }[] = [];
+  const active: { m: TaskMeta; task: Task | null }[] = [];
+  for (const m of tasks) {
+    const e = entries[m.id];
+    if (e === 'lost') failed.push({ m, msg: t('task.lost') });
+    else if (e?.status === 'failed')
+      failed.push({ m, msg: e.error ?? t('task.failed') });
+    else if (e?.status === 'done') done.push({ m, task: e });
+    else active.push({ m, task: e ?? null });
+  }
+
+  const total = active.length + done.length;
+  const pct = Math.round(
+    ((done.length + active.reduce((a, x) => a + (x.task?.progress ?? 0), 0)) /
+      Math.max(total, 1)) *
+      100,
+  );
+  const elapsed = Math.max(0, ...active.map((x) => x.task?.elapsed_s ?? 0));
+  const summary =
+    active.length === 1 && done.length === 0
+      ? titleOf(active[0].m)
+      : t('task.runningMany', { total, done: done.length });
+
   return (
     <div className="tasks">
-      {tasks.map((m) => (
-        <TaskCard
-          key={m.id}
-          meta={m}
-          onFinished={onFinished}
-          onDismiss={() => onDismiss(m.id)}
-        />
+      {active.length > 0 && (
+        <div className="task-card compact" aria-live="polite">
+          <div className="task-head">
+            <b>{summary}</b>
+            <span className="muted">
+              {pct}% · {fmtElapsed(elapsed)}
+            </span>
+          </div>
+          <div
+            className="bar"
+            role="progressbar"
+            aria-valuenow={pct}
+            aria-valuemin={0}
+            aria-valuemax={100}
+          >
+            <i style={{ width: `${pct}%` }} />
+          </div>
+          <details className="task-details">
+            <summary>{t('task.details')}</summary>
+            <ul>
+              {tasks.map((m) => {
+                const e = entries[m.id];
+                const task = e && e !== 'lost' ? e : null;
+                const isDone = task?.status === 'done';
+                return (
+                  <li key={m.id}>
+                    <span>{titleOf(m)}</span>
+                    <span className="muted small">
+                      {isDone
+                        ? t('task.step.done')
+                        : t(`task.step.${task?.step ?? 'queued'}`, {
+                            done: task?.done ?? 0,
+                            total: task?.total ?? 0,
+                          })}
+                      {m.kind === 'translate' && task?.language && !isDone
+                        ? ` · ${t('task.producing', { lang: task.language.toUpperCase() })}`
+                        : ''}
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
+          </details>
+        </div>
+      )}
+      {done.map(({ m, task }) => {
+        const reports = task.result?.reports ?? [];
+        const filled = reports.reduce((a, r) => a + r.filled, 0);
+        const flagged = reports.reduce((a, r) => a + r.flagged, 0);
+        const docs = task.result?.docs ?? [];
+        return (
+          <div key={m.id} className="task-toast" role="status">
+            <span>
+              <b>{titleOf(m)}</b> · {t('task.ready', { filled, flagged })}
+            </span>
+            {docs.map((d) => {
+              const v = d.versions[0];
+              return v ? (
+                <Link key={d.id} className="link" to={`/versions/${v.id}`}>
+                  {t('task.open')}
+                  {docs.length > 1 && d.language
+                    ? ` ${d.language.toUpperCase()}`
+                    : ''}
+                </Link>
+              ) : null;
+            })}
+          </div>
+        );
+      })}
+      {failed.map(({ m, msg }) => (
+        <div key={m.id} className="task-card failed" role="alert">
+          <b>{titleOf(m)}</b>
+          <p className="error">{msg}</p>
+          <button
+            type="button"
+            className="link"
+            onClick={() => onDismiss(m.id)}
+          >
+            {t('task.dismiss')}
+          </button>
+        </div>
       ))}
     </div>
   );
