@@ -4,7 +4,9 @@
 
 BLOOM Studio turns sponsor documents into **Belgian-compliant informed consent forms (ICFs)**: four ICF types (adult, parent, adolescent 12-17, child 8-11) in English, Dutch and French, as Word files. AI fills the mandatory national template, flags every gap and every edit to mandatory text for human review, and the app carries the documents through PI review, translation and ethics-committee review up to a participant portal.
 
-![BLOOM Studio home](docs/screenshots/01-home.png)
+![BLOOM Studio walkthrough](docs/screenshots/walkthrough.gif)
+
+*A 25-second walkthrough: projects, drafting, PI review, ethics review, participant portal, project data and templates.*
 
 ## How a study moves through BLOOM Studio
 
