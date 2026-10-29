@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import type { IcfType, Lang, MatrixCell, ProjectProgress } from '../api';
 
-const COLS: Lang[] = ['en', 'nl', 'fr'];
+const ALL_COLS: Lang[] = ['en', 'nl', 'fr'];
 
 /** One place for the translation gate (later: doc-level approved flag). */
 export const isReviewed = (c: MatrixCell | null) =>
@@ -10,12 +10,15 @@ export const isReviewed = (c: MatrixCell | null) =>
 
 export default function IcfMatrix({
   matrix,
+  showTranslations,
   busyLangs,
   onGenerate,
   onTranslate,
   onUpdate,
 }: {
   matrix: ProjectProgress['matrix'];
+  /** NL/FR columns only make sense once the English ICF is reviewed */
+  showTranslations: boolean;
   /** doc ids currently translating, to disable buttons */
   busyLangs: Set<string>;
   onGenerate: (icf: IcfType) => void;
@@ -28,6 +31,7 @@ export default function IcfMatrix({
   onUpdate: (cell: MatrixCell, icf: IcfType, lang: Lang) => void;
 }) {
   const { t } = useTranslation();
+  const COLS = showTranslations ? ALL_COLS : ALL_COLS.slice(0, 1);
   return (
     <div className="matrix-wrap">
       <table className="matrix">
@@ -48,7 +52,7 @@ export default function IcfMatrix({
               <tr key={row.icf_type}>
                 <th scope="row">
                   {t(`icfTypes.${row.icf_type}`)}
-                  {en && both && (
+                  {showTranslations && en && both && (
                     <div>
                       <button
                         type="button"
@@ -120,26 +124,22 @@ export default function IcfMatrix({
                     );
                   return (
                     <td key={l}>
-                      <button
-                        type="button"
-                        className="btn ghost"
-                        disabled={
-                          !en || !ok || busyLangs.has(`${en.doc_id}:${l}`)
-                        }
-                        title={
-                          !en
-                            ? t('matrix.needEn')
-                            : ok
-                              ? undefined
-                              : t('matrix.needReview')
-                        }
-                        onClick={() =>
-                          en &&
-                          onTranslate(en, row.icf_type, [l as 'nl' | 'fr'])
-                        }
-                      >
-                        {t('matrix.translateFromEn')}
-                      </button>
+                      {en && ok ? (
+                        <button
+                          type="button"
+                          className="btn ghost"
+                          disabled={busyLangs.has(`${en.doc_id}:${l}`)}
+                          onClick={() =>
+                            onTranslate(en, row.icf_type, [l as 'nl' | 'fr'])
+                          }
+                        >
+                          {t('matrix.translateFromEn')}
+                        </button>
+                      ) : (
+                        <span className="muted small">
+                          {en ? t('matrix.needReview') : t('matrix.needEn')}
+                        </span>
+                      )}
                       {en && !ok && (
                         <button
                           type="button"
@@ -164,7 +164,7 @@ export default function IcfMatrix({
           })}
         </tbody>
       </table>
-      <p className="muted small">{t('matrix.note')}</p>
+      {showTranslations && <p className="muted small">{t('matrix.note')}</p>}
     </div>
   );
 }

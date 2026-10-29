@@ -258,6 +258,15 @@ export default function Project() {
     }
   }
 
+  const anyReviewed = (progress?.matrix ?? []).some((r) =>
+    isReviewed(r.languages.en),
+  );
+  // NL/FR only after PI review (or when such ICFs already exist, e.g. uploaded)
+  const showTranslations =
+    !!progress &&
+    (['pi_review', 'ethics_review', 'approved'].includes(progress.stage) ||
+      progress.matrix.some((r) => r.languages.nl || r.languages.fr));
+
   const done = () => {
     setDialog(null);
     setVersionFor(null);
@@ -333,36 +342,31 @@ export default function Project() {
       />
 
       <Section
-        title={t('matrix.title')}
+        title={showTranslations ? t('matrix.title') : t('matrix.draftsTitle')}
         count={progress.matrix.length}
         open={open.matrix ?? true}
         onToggle={(o) => setOpen((x) => ({ ...x, matrix: o }))}
       >
-        <div className="row">
-          <button
-            type="button"
-            className="btn"
-            title={t('matrix.generateAllTitle')}
-            onClick={generateAll}
-          >
-            {t('matrix.generateAll')}
-          </button>
-          <button
-            type="button"
-            className="btn"
-            disabled={!progress.matrix.some((r) => isReviewed(r.languages.en))}
-            title={
-              progress.matrix.some((r) => isReviewed(r.languages.en))
-                ? t('matrix.translateAllTitle')
-                : t('matrix.needReview')
-            }
-            onClick={translateAll}
-          >
-            {t('matrix.translateAll')}
-          </button>
-        </div>
+        {showTranslations && (
+          <div className="row">
+            <button
+              type="button"
+              className="btn"
+              disabled={!anyReviewed}
+              title={
+                anyReviewed
+                  ? t('matrix.translateAllTitle')
+                  : t('matrix.needReview')
+              }
+              onClick={translateAll}
+            >
+              {t('matrix.translateAll')}
+            </button>
+          </div>
+        )}
         <IcfMatrix
           matrix={progress.matrix}
+          showTranslations={showTranslations}
           busyLangs={busy}
           onGenerate={(icf) => openGenerate({ icf, language: 'en' })}
           onTranslate={translate}
