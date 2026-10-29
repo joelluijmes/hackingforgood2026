@@ -26,6 +26,21 @@ export interface User {
   email: string;
   name: string;
   language: Language;
+  role: 'staff' | 'participant';
+}
+
+export interface ParticipantPortalSettings {
+  enabled: boolean;
+  contact: string;
+  urgent_guidance: string;
+  publications: { doc_id: number; version_id: number; number: number }[];
+}
+export interface ParticipantDocument {
+  id: number; title: string; icf_type: IcfType | null; language: Language | null;
+  role: Role; version_id: number; version_number: number;
+}
+export interface ParticipantDocumentContent extends ParticipantDocument {
+  sections: { section_id: string; heading: string; text: string; anchor: string | null }[];
 }
 
 export interface Document {
@@ -540,6 +555,16 @@ export const api = {
   me: () => req<User>('/auth/me'),
   updateMe: (b: { name?: string; language?: Language }) =>
     req<User>('/auth/me', json('PATCH', b)),
+  participantPortal: (projectId: number) => req<ParticipantPortalSettings>(`/projects/${projectId}/participant-portal`),
+  saveParticipantPortal: (projectId: number, body: Omit<ParticipantPortalSettings, 'publications'>) => req<{ok:boolean}>(`/projects/${projectId}/participant-portal`,json('PUT',body)),
+  inviteParticipant: (projectId: number,email:string) => req<{email:string;token:string;expires_at:string}>(`/projects/${projectId}/participant-invitations`,json('POST',{email})),
+  publishParticipantVersion: (docId:number,versionId:number) => req<{published:boolean;version_id:number}>(`/project-documents/${docId}/participant-publication`,json('PUT',{version_id:versionId})),
+  unpublishParticipantVersion: (docId:number) => req<{published:boolean}>(`/project-documents/${docId}/participant-publication`,{method:'DELETE'}),
+  acceptParticipantInvite: (token:string,b:{name:string;password:string;language:Language}) => req<{token:string;user:User}>(`/participant/invitations/${encodeURIComponent(token)}/accept`,json('POST',b)),
+  participantTrials: () => req<{id:number;name:string;study:string}[]>('/participant/trials'),
+  participantDocuments: (projectId:number) => req<ParticipantDocument[]>(`/participant/trials/${projectId}/documents`),
+  participantDocument: (projectId:number,docId:number) => req<ParticipantDocumentContent>(`/participant/trials/${projectId}/documents/${docId}`),
+  participantAsk: (projectId:number,b:{question:string;persona:'adult'|'parent_guardian'|'adolescent'|'child';language:Language;history:{role:'user'|'assistant';text:string}[]}) => req<{explanation:string;source_references:{doc_id:number;title:string;version_id:number;section_id:string;heading:string}[];unanswered_questions:string[];requires_human_followup:boolean}>(`/participant/trials/${projectId}/ask`,json('POST',b)),
 
   // template library
   listDocuments: (kind?: Kind) =>

@@ -29,6 +29,7 @@ CREATE TABLE IF NOT EXISTS users (
     name TEXT NOT NULL,
     language TEXT NOT NULL DEFAULT 'en',
     pw_hash TEXT NOT NULL,
+    role TEXT NOT NULL DEFAULT 'staff',
     created_at TEXT NOT NULL
 );
 CREATE TABLE IF NOT EXISTS sessions (
@@ -103,6 +104,21 @@ CREATE TABLE IF NOT EXISTS changes (
 );
 CREATE INDEX IF NOT EXISTS idx_versions_doc ON versions(doc_id);
 CREATE INDEX IF NOT EXISTS idx_comments_version ON comments(version_id);
+CREATE TABLE IF NOT EXISTS participant_memberships (
+    user_id INTEGER NOT NULL, project_id INTEGER NOT NULL,
+    PRIMARY KEY(user_id, project_id)
+);
+CREATE TABLE IF NOT EXISTS participant_invites (
+    token_hash TEXT PRIMARY KEY, email TEXT NOT NULL, project_id INTEGER NOT NULL,
+    expires_at TEXT NOT NULL, used_at TEXT
+);
+CREATE TABLE IF NOT EXISTS participant_portals (
+    project_id INTEGER PRIMARY KEY, enabled INTEGER NOT NULL DEFAULT 0,
+    contact TEXT NOT NULL DEFAULT '', urgent_guidance TEXT NOT NULL DEFAULT ''
+);
+CREATE TABLE IF NOT EXISTS participant_publications (
+    doc_id INTEGER PRIMARY KEY, version_id INTEGER NOT NULL, updated_at TEXT NOT NULL
+);
 """
 
 PDF_EXT = ".pdf"
@@ -120,6 +136,9 @@ def init() -> None:
     with connect() as conn:
         conn.execute(SCHEMA)
         conn.executescript(SCHEMA_V2)
+        ucols = {r["name"] for r in conn.execute("PRAGMA table_info(users)")}
+        if "role" not in ucols:
+            conn.execute("ALTER TABLE users ADD COLUMN role TEXT NOT NULL DEFAULT 'staff'")
         dcols = {r["name"] for r in conn.execute("PRAGMA table_info(documents)")}
         if "released" not in dcols:
             conn.execute("ALTER TABLE documents ADD COLUMN released TEXT")

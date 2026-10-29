@@ -5,9 +5,9 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
 from .. import db, progress, seed, services, storage
-from ..auth import User, current_user
+from ..auth import User, current_staff
 
-router = APIRouter(prefix="/api", dependencies=[Depends(current_user)], tags=["projects"])
+router = APIRouter(prefix="/api", dependencies=[Depends(current_staff)], tags=["projects"])
 
 Stage = Literal["intake", "drafting", "pi_review", "translation", "ethics_review", "approved"]
 

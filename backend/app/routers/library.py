@@ -5,7 +5,7 @@ from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
 from fastapi.responses import JSONResponse, Response
 
 from .. import db, seed, services, storage
-from ..auth import User, current_user
+from ..auth import User, current_staff
 from ..models import (
     Audience,
     CreationJob,
@@ -18,7 +18,7 @@ from ..models import (
     UpdateJob,
 )
 
-router = APIRouter(prefix="/api", dependencies=[Depends(current_user)], tags=["library"])
+router = APIRouter(prefix="/api", dependencies=[Depends(current_staff)], tags=["library"])
 
 
 def _check(value: str | None, allowed: tuple, field: str) -> str | None:

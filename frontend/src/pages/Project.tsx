@@ -28,6 +28,7 @@ import {
 } from '../components/ProjectDialogs';
 import StageTracker from '../components/StageStepper';
 import TaskBanner, { type TaskMeta } from '../components/TaskBanner';
+import ParticipantAdminPanel from '../components/ParticipantAdminPanel';
 
 const GROUPS: Role[] = ['sponsor', 'icf', 'other'];
 
@@ -243,6 +244,8 @@ export default function Project() {
         onFinished={load}
         onDismiss={(id) => saveTasks(tasks.filter((x) => x.id !== id))}
       />
+
+      <ParticipantAdminPanel projectId={projectId} docs={docs} approved={project.stage === 'approved'} />
 
       <section className="group">
         <h2>{t('matrix.title')}</h2>

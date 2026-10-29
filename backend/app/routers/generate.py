@@ -7,10 +7,10 @@ from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, Field
 
 from .. import db, services, storage, tasks
-from ..auth import User, current_user
+from ..auth import User, current_staff
 from .projects import _doc_row, _project_row
 
-router = APIRouter(prefix="/api", dependencies=[Depends(current_user)], tags=["generate"])
+router = APIRouter(prefix="/api", dependencies=[Depends(current_staff)], tags=["generate"])
 
 LANG_NAMES = {"en": "English", "nl": "Dutch", "fr": "French"}
 

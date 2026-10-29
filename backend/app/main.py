@@ -4,7 +4,7 @@ from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from . import auth, convert, db
-from .routers import editing, generate, interpreter, library, projects, review
+from .routers import editing, generate, interpreter, library, participant, projects, review
 
 app = FastAPI(title="ICF Studio API")
 app.add_middleware(
@@ -26,7 +26,7 @@ def health() -> dict:
     return {"status": "ok"}
 
 
-@app.get("/api/admin/status", dependencies=[Depends(auth.current_user)])
+@app.get("/api/admin/status", dependencies=[Depends(auth.current_staff)])
 def admin_status() -> dict:
     from .engine import ai
 
@@ -64,5 +64,6 @@ for r in (
     generate.router,
     editing.router,
     interpreter.router,
+    participant.router,
 ):
     app.include_router(r)

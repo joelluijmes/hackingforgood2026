@@ -10,12 +10,14 @@ import Projects from './pages/Projects';
 import Templates from './pages/Templates';
 import VersionViewer from './pages/VersionViewer';
 import Viewer from './pages/Viewer';
+import ParticipantPortal from './pages/ParticipantPortal';
 
 function Shell() {
   const { t } = useTranslation();
   const { user, loading, signOut, setLanguage } = useAuth();
   if (loading) return <div className="page muted">{t('common.loading')}</div>;
   if (!user) return <Navigate to="/login" replace />;
+  if (user.role === 'participant') return <Navigate to="/participant" replace />;
   return (
     <>
       <header className="topbar">
@@ -63,6 +65,8 @@ export default function App() {
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
+      <Route path="/participant" element={<ParticipantPortal />} />
+      <Route path="/participant/invite/:token" element={<ParticipantPortal />} />
       <Route element={<Shell />}>
         <Route path="/" element={<Projects />} />
         <Route path="/projects/:id" element={<Project />} />

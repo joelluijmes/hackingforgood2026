@@ -16,11 +16,11 @@ from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 
 from .. import db, services, storage
-from ..auth import User, current_user
+from ..auth import User, current_staff
 from .projects import _doc_row, _project_row, _version_row
 
 log = logging.getLogger("icf.editing")
-router = APIRouter(prefix="/api", dependencies=[Depends(current_user)], tags=["editing"])
+router = APIRouter(prefix="/api", dependencies=[Depends(current_staff)], tags=["editing"])
 
 GUARDED_TYPES = ("adult", "parent")  # forms that follow the national template verbatim
 

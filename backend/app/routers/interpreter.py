@@ -8,18 +8,16 @@ from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, Field
 
 from .. import db, storage
-from ..auth import current_user
+from ..auth import current_staff
 from ..engine import interpreter as interpreter_engine
 from ..routers.projects import _doc_row
 
 log = logging.getLogger("icf.interpreter")
 router = APIRouter(
-    prefix="/api/interpreter", dependencies=[Depends(current_user)], tags=["interpreter"]
+    prefix="/api/interpreter", dependencies=[Depends(current_staff)], tags=["interpreter"]
 )
 
-Persona = Literal[
-    "pi", "ethical_reviewer", "parent_guardian", "adult", "adolescent", "child"
-]
+Persona = Literal["pi", "ethical_reviewer", "parent_guardian", "adult", "adolescent", "child"]
 Language = Literal["en", "nl", "fr"]
 AgeGroup = Literal["8-11", "12-17", "adult"]
 
@@ -142,12 +140,14 @@ def _context(conn, doc, selected_ids: list[int] | None = None) -> dict:
                 "Could not build version diff %s -> %s", old["version_id"], new["version_id"]
             )
             continue
-        version_diffs.append({
-            "from_version_id": old["version_id"],
-            "to_version_id": new["version_id"],
-            "stats": diff["stats"],
-            "blocks": diff["blocks"],
-        })
+        version_diffs.append(
+            {
+                "from_version_id": old["version_id"],
+                "to_version_id": new["version_id"],
+                "stats": diff["stats"],
+                "blocks": diff["blocks"],
+            }
+        )
     return {
         "icf": {
             "id": doc["id"],
@@ -239,7 +239,8 @@ def _interpret(operation: str, body: InterpretRequest) -> dict:
     for version in context["versions"]:
         if version["version_id"] in selected_ids:
             selected_sections.extend(
-                section for section in version["sections"]
+                section
+                for section in version["sections"]
                 if not body.section_id or section["section_id"] == body.section_id
             )
     if body.section_id and not selected_sections:

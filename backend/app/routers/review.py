@@ -4,9 +4,9 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from pydantic import BaseModel
 
 from .. import db, services, storage
-from ..auth import User, current_user
+from ..auth import User, current_staff
 
-router = APIRouter(prefix="/api", dependencies=[Depends(current_user)], tags=["review"])
+router = APIRouter(prefix="/api", dependencies=[Depends(current_staff)], tags=["review"])
 
 
 def _lang(lang: str | None, user: dict) -> str:
