@@ -211,11 +211,11 @@ function PublishTable({
       {rows.length === 0 ? (
         <p className="muted">{t('pp.admin.noDocs')}</p>
       ) : (
-        <div className="pp-table" role="table">
-          <div className="pp-tr pp-th" role="row">
-            <span role="columnheader">{t('pp.admin.colDoc')}</span>
-            <span role="columnheader">{t('pp.admin.colVersion')}</span>
-            <span role="columnheader">{t('pp.admin.colAction')}</span>
+        <div className="pp-table">
+          <div className="pp-tr pp-th">
+            <span>{t('pp.admin.colDoc')}</span>
+            <span>{t('pp.admin.colVersion')}</span>
+            <span>{t('pp.admin.colAction')}</span>
           </div>
           {rows.map((d) => {
             const options = d.versions.filter(
@@ -226,8 +226,8 @@ function PublishTable({
               null;
             const latest = options[options.length - 1];
             return (
-              <div className="pp-tr" role="row" key={d.id}>
-                <div className="pp-doc" role="cell">
+              <div className="pp-tr" key={d.id}>
+                <div className="pp-doc">
                   <strong>{d.title}</strong>
                   <span className="chips">
                     {d.language && (
@@ -236,7 +236,9 @@ function PublishTable({
                       </span>
                     )}
                     {d.icf_type && (
-                      <span className="chip">{t(`icfTypes.${d.icf_type}`)}</span>
+                      <span className="chip">
+                        {t(`icfTypes.${d.icf_type}`)}
+                      </span>
                     )}
                     {current !== null && (
                       <span className="chip ok">
@@ -245,13 +247,16 @@ function PublishTable({
                     )}
                   </span>
                 </div>
-                <div role="cell">
+                <div>
                   <select
                     aria-label={`${t('pp.admin.colVersion')}: ${d.title}`}
                     disabled={!canPublish}
                     value={current ?? ''}
                     onChange={(e) =>
-                      onChange(d, e.target.value ? Number(e.target.value) : null)
+                      onChange(
+                        d,
+                        e.target.value ? Number(e.target.value) : null,
+                      )
                     }
                   >
                     <option value="">{t('pp.admin.notPublished')}</option>
@@ -262,7 +267,7 @@ function PublishTable({
                     ))}
                   </select>
                 </div>
-                <div role="cell">
+                <div>
                   {current !== null ? (
                     <button
                       type="button"
@@ -359,8 +364,16 @@ function Invitations({
         <div className="pp-newlink">
           <span>{t('pp.admin.newLink', { email: link.email })}</span>
           <div className="pp-row">
-            <input readOnly value={link.url} onFocus={(e) => e.target.select()} />
-            <button type="button" className="btn" onClick={() => copy(link.url)}>
+            <input
+              readOnly
+              value={link.url}
+              onFocus={(e) => e.target.select()}
+            />
+            <button
+              type="button"
+              className="btn"
+              onClick={() => copy(link.url)}
+            >
               {copied ? t('pp.admin.copied') : t('pp.admin.copy')}
             </button>
           </div>
@@ -371,6 +384,7 @@ function Invitations({
       ) : (
         <ul className="pp-invites">
           {invites.map((i, n) => (
+            // biome-ignore lint/suspicious/noArrayIndexKey: invites may repeat an email
             <li key={`${i.email}-${i.expires_at}-${n}`}>
               <span className="pp-invite-mail">{i.email}</span>
               <span className="muted">

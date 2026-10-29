@@ -12,9 +12,7 @@ from ..auth import User, current_staff
 
 router = APIRouter(prefix="/api", dependencies=[Depends(current_staff)], tags=["projects"])
 
-Stage = Literal[
-    "intake", "drafting", "pi_review", "ethics_review", "approved", "participants"
-]
+Stage = Literal["intake", "drafting", "pi_review", "ethics_review", "approved", "participants"]
 
 
 class ProjectIn(BaseModel):

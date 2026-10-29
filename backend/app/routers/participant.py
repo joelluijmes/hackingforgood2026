@@ -289,7 +289,6 @@ def participant_trials(user=Participant):
         ]
 
 
-
 class AskBody(BaseModel):
     question: str = Field(min_length=1, max_length=3000)
     persona: Literal["adult", "parent_guardian", "adolescent", "child"] = "adult"

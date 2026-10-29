@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
+import {
+  Link,
+  useNavigate,
+  useParams,
+  useSearchParams,
+} from 'react-router-dom';
 import {
   api,
   type Language,
@@ -243,8 +248,7 @@ function RealPortal() {
       .catch((e) => setError(errText(e)));
   }, [user]);
 
-  if (user?.role !== 'participant')
-    return <StaffAccountNotice />;
+  if (user?.role !== 'participant') return <StaffAccountNotice />;
   const current = trials.find((x) => x.id === trial);
   return (
     <>
@@ -346,6 +350,11 @@ function PortalView({
     setDoc(null);
   }
 
+  function exitPreview(id: number) {
+    if (window.opener) window.close();
+    navigate(`/projects/${id}`);
+  }
+
   const title = trialName || previewTrial || t('pp.portal.yourTrials');
   return (
     <main className="page participant-portal">
@@ -361,12 +370,7 @@ function PortalView({
           <button
             type="button"
             className="btn"
-            onClick={() =>
-              window.history.length > 1 && !window.opener
-                ? navigate(-1)
-                : window.close() ||
-                  navigate(`/projects/${preview.projectId}`)
-            }
+            onClick={() => exitPreview(preview.projectId)}
           >
             {t('pp.preview.exit')}
           </button>

@@ -656,9 +656,14 @@ export const api = {
       `/participant/trials/${projectId}/documents/${docId}`,
     ),
   participantAsk: (projectId: number, b: ParticipantAskBody) =>
-    req<ParticipantReply>(`/participant/trials/${projectId}/ask`, json('POST', b)),
+    req<ParticipantReply>(
+      `/participant/trials/${projectId}/ask`,
+      json('POST', b),
+    ),
   participantInvitations: (projectId: number) =>
-    req<ParticipantInvitation[]>(`/projects/${projectId}/participant-invitations`),
+    req<ParticipantInvitation[]>(
+      `/projects/${projectId}/participant-invitations`,
+    ),
   portalPreviewDocuments: (
     projectId: number,
     persona: ParticipantPersona,
