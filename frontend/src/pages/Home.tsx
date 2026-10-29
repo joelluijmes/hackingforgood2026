@@ -53,7 +53,7 @@ export default function Home() {
 
       <p className="landing-foot">
         4 ICF types · English, Dutch and French · Word in, Word out · answers
-        for participants · answers for participants
+        for participants
       </p>
     </div>
   );
