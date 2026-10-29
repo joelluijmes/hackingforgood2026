@@ -1,13 +1,7 @@
 import type { TFunction } from 'i18next';
 import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import {
-  api,
-  type CommentStatus,
-  type Lang,
-  type ReviewComment,
-  type Version,
-} from '../api';
+import type { CommentStatus, Lang, ReviewComment } from '../api';
 import { formatDate } from '../format';
 import '../review.css';
 
@@ -15,7 +9,7 @@ type Filter = 'all' | CommentStatus;
 const trunc = (s: string, n = 140) => (s.length > n ? `${s.slice(0, n)}…` : s);
 
 /** Legacy drafts carried one "filled, please verify" comment per fill; those are fill markers now. */
-const isLegacyFill = (c: ReviewComment) =>
+export const isLegacyFill = (c: ReviewComment) =>
   c.author === 'ICF Studio' && c.text.startsWith('Filled from sponsor');
 
 /** Read-only comment body: author, language, quote and text in the user's language. */
@@ -75,7 +69,7 @@ export type Staged =
   | { kind: 'text'; text: string };
 
 /** Generator gap comments ("Missing: ... - please add this information"). */
-const isGap = (c: ReviewComment) =>
+export const isGap = (c: ReviewComment) =>
   c.author === 'ICF Studio' && c.text.startsWith('Missing:');
 
 const stop = (e: React.SyntheticEvent) => e.stopPropagation();
@@ -248,7 +242,7 @@ function Decide({
   );
 }
 
-function describe(t: TFunction, s: Staged, gap: boolean, n: number) {
+export function describe(t: TFunction, s: Staged, gap: boolean, n: number) {
   if (s.kind === 'text')
     return t('comments.stagedText', { text: trunc(s.text, n) });
   if (s.status === 'open') return t('comments.stagedReopen');
@@ -259,37 +253,33 @@ function describe(t: TFunction, s: Staged, gap: boolean, n: number) {
 }
 
 export default function CommentPanel({
-  vid,
   comments,
-  setComments,
+  staged,
+  setStaged,
   lang,
   activeId,
   onActivate,
   onFix,
-  onApplied,
   fillCount = 0,
   showFills = false,
   onToggleFills,
 }: {
-  vid: number;
+  /** staged review changes; owned by the page, applied from the review bar */
+  staged: Record<number, Staged>;
+  setStaged: (
+    f: (prev: Record<number, Staged>) => Record<number, Staged>,
+  ) => void;
   fillCount?: number;
   showFills?: boolean;
   onToggleFills?: (v: boolean) => void;
   comments: ReviewComment[];
-  setComments: (f: (prev: ReviewComment[]) => ReviewComment[]) => void;
   lang: Lang;
   activeId: number | null;
   onActivate: (c: ReviewComment) => void;
   onFix?: (c: ReviewComment) => void;
-  /** a batch with text replacements created a new version */
-  onApplied?: (v: Version) => void;
 }) {
   const { t } = useTranslation();
   const [filter, setFilter] = useState<Filter>('all');
-  const [error, setError] = useState('');
-  const [staged, setStaged] = useState<Record<number, Staged>>({});
-  const [tray, setTray] = useState(false);
-  const [busy, setBusy] = useState(false);
   // staged changes are shown instantly as if already saved
   const list = useMemo(
     () =>
@@ -304,7 +294,6 @@ export default function CommentPanel({
         }),
     [comments, staged],
   );
-  const stagedIds = Object.keys(staged).map(Number);
 
   const counts = useMemo(() => {
     const n = { all: list.length, open: 0, approved: 0, declined: 0 };
@@ -338,36 +327,6 @@ export default function CommentPanel({
         next[c.id] = { kind: 'decision', status: 'approved', note };
       return next;
     });
-
-  const apply = async () => {
-    setBusy(true);
-    setError('');
-    try {
-      const decisions = stagedIds.flatMap((id) => {
-        const s = staged[id];
-        return s.kind === 'decision'
-          ? [{ comment_id: id, status: s.status, note: s.note }]
-          : [];
-      });
-      const replacements = stagedIds.flatMap((id) => {
-        const s = staged[id];
-        return s.kind === 'text' ? [{ comment_id: id, text: s.text }] : [];
-      });
-      const r = await api.commentBatch(vid, { decisions, replacements });
-      setStaged({});
-      setTray(false);
-      if (r.version && onApplied) return onApplied(r.version);
-      setComments(() => []);
-      setComments(() => []);
-      const fresh = await api.listComments(vid, lang);
-      setComments(() => fresh);
-      if (r.skipped.length) setError(r.skipped.map((x) => x.why).join('; '));
-    } catch (e) {
-      setError(e instanceof Error ? e.message : String(e));
-    } finally {
-      setBusy(false);
-    }
-  };
 
   const nextOpen = () => {
     const open = roots.filter((c) => c.status === 'open');
@@ -467,7 +426,6 @@ export default function CommentPanel({
             {t('comments.showFills')}
           </label>
         )}
-        {error && <div className="rv-err">{error}</div>}
       </div>
       <div className="rv-list">
         {shown.length === 0 && (
@@ -479,78 +437,6 @@ export default function CommentPanel({
         )}
         {shown.map((c) => card(c))}
       </div>
-      {stagedIds.length > 0 && (
-        <div className="rv-tray">
-          {tray && (
-            <ul className="rv-tray-list">
-              {stagedIds.map((id) => {
-                const c = comments.find((x) => x.id === id);
-                const s = staged[id];
-                return (
-                  <li key={id}>
-                    <div className="rv-tray-what">
-                      <strong>
-                        {trunc(c?.anchor_text || c?.text || '', 50)}
-                      </strong>
-                      {s.kind === 'text' ? (
-                        <input
-                          value={s.text}
-                          aria-label={t('comments.provideText')}
-                          onChange={(e) =>
-                            setStaged((all) => ({
-                              ...all,
-                              [id]: { kind: 'text', text: e.target.value },
-                            }))
-                          }
-                        />
-                      ) : (
-                        <span className="muted">
-                          {describe(t, s, !!c && isGap(c), 80)}
-                        </span>
-                      )}
-                    </div>
-                    <button
-                      type="button"
-                      className="rv-undo"
-                      onClick={() => c && stage(c, null)}
-                    >
-                      {t('comments.unstage')}
-                    </button>
-                  </li>
-                );
-              })}
-            </ul>
-          )}
-          <div className="rv-tray-bar">
-            <strong>
-              {t('comments.stagedCount', { count: stagedIds.length })}
-            </strong>
-            <button
-              type="button"
-              className="btn outline"
-              onClick={() => setTray(!tray)}
-            >
-              {t('comments.reviewApply')}
-            </button>
-            <button
-              type="button"
-              className="btn primary"
-              disabled={busy}
-              onClick={apply}
-            >
-              {busy ? t('common.loading') : t('comments.applyAll')}
-            </button>
-            <button
-              type="button"
-              className="btn ghost"
-              disabled={busy}
-              onClick={() => setStaged({})}
-            >
-              {t('comments.discard')}
-            </button>
-          </div>
-        </div>
-      )}
     </aside>
   );
 }

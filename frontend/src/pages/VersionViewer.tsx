@@ -9,9 +9,10 @@ import {
   type VersionDetail,
   type VersionHtml,
 } from '../api';
-import CommentPanel from '../components/CommentPanel';
+import CommentPanel, { type Staged } from '../components/CommentPanel';
 import EditPanel from '../components/EditPanel';
 import PropagateDialog from '../components/PropagateDialog';
+import ReviewBar from '../components/ReviewBar';
 import { isLang } from '../i18n';
 import '../review.css';
 
@@ -27,10 +28,17 @@ export default function VersionViewer() {
   const [tab, setTab] = useState<'comments' | 'edit'>('comments');
   const [fixing, setFixing] = useState<ReviewComment | null>(null);
   const [changeId, setChangeId] = useState<number | null>(null);
+  const [staged, setStaged] = useState<Record<number, Staged>>({});
+  // confirmation after "Finish review" (also carried over via navigation state)
+  const [saved, setSaved] = useState<{ number: number | null } | null>(null);
   // after "apply", the new version is opened with the change id to offer propagation
   useEffect(() => {
     const id = (location.state as { changeId?: number } | null)?.changeId;
     if (id) setChangeId(id);
+    const rs = (
+      location.state as { reviewSaved?: { number: number | null } } | null
+    )?.reviewSaved;
+    if (rs) setSaved(rs);
   }, [location.state]);
   const [detail, setDetail] = useState<VersionDetail | null>(null);
   const [html, setHtml] = useState<VersionHtml | null>(null);
@@ -64,6 +72,7 @@ export default function VersionViewer() {
     setActiveId(null);
     setError('');
     setFixing(null);
+    setStaged({});
     (async () => {
       try {
         const d = await api.getVersion(vid);
@@ -251,6 +260,50 @@ export default function VersionViewer() {
         )}
       </div>
       {error && <p className="error">{error}</p>}
+      {saved && (
+        <div className="rv-saved" role="status">
+          <span>
+            {saved.number !== null
+              ? t('review.savedVersion', { number: saved.number })
+              : t('review.savedDecisions')}{' '}
+            {t('review.nextStep')}
+          </span>
+          <Link className="btn" to={`/projects/${project.id}`}>
+            {t('review.backToProject')}
+          </Link>
+          {prev && saved.number !== null && (
+            <Link className="btn" to={`/diff?from=${prev.id}&to=${vid}`}>
+              {t('versionViewer.compareWithPrevious')}
+            </Link>
+          )}
+          <button
+            type="button"
+            className="btn ghost"
+            onClick={() => setSaved(null)}
+          >
+            {t('review.continue')}
+          </button>
+        </div>
+      )}
+      <ReviewBar
+        vid={vid}
+        doc={doc}
+        project={project}
+        comments={comments}
+        staged={staged}
+        setStaged={setStaged}
+        lang={lang}
+        onSaved={(v, fresh) => {
+          if (v)
+            nav(`/versions/${v.id}`, {
+              state: { reviewSaved: { number: v.number } },
+            });
+          else {
+            if (fresh) setComments(() => fresh);
+            setSaved({ number: null });
+          }
+        }}
+      />
       <div className="rv-cols">
         <div>
           <div className="rv-doc-tools">
@@ -309,10 +362,9 @@ export default function VersionViewer() {
           </div>
           {tab === 'comments' ? (
             <CommentPanel
-              vid={vid}
-              onApplied={(v) => nav(`/versions/${v.id}`)}
+              staged={staged}
+              setStaged={setStaged}
               comments={comments}
-              setComments={setComments}
               lang={lang}
               activeId={activeId}
               onActivate={activate}

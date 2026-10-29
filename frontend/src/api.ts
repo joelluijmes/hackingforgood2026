@@ -581,6 +581,7 @@ export const api = {
     b: {
       decisions: { comment_id: number; status: CommentStatus; note?: string }[];
       replacements: { comment_id: number; text: string }[];
+      note?: string;
     },
   ) =>
     req<{

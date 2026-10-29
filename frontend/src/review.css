@@ -384,11 +384,11 @@
 .rv-side {
   min-width: 0;
   position: sticky;
-  top: 76px; /* below the sticky topbar */
+  top: 136px; /* below the sticky topbar and review bar */
   display: flex;
   flex-direction: column;
   gap: 8px;
-  max-height: calc(100vh - 92px);
+  max-height: calc(100vh - 152px);
 }
 .rv-side .rv-panel {
   position: static;
@@ -751,4 +751,116 @@
 .rv-panel {
   min-width: 0;
   overflow-x: hidden;
+}
+
+/* ---- GitHub-style review bar ---- */
+.rv-bar {
+  position: sticky;
+  top: 64px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  background: var(--surface, #fff);
+  border: 1px solid var(--neutral-300, #ccc);
+  border-radius: var(--radius-control, 8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.rv-back {
+  font-weight: 600;
+  white-space: nowrap;
+}
+.rv-bar-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+.rv-bar-info progress {
+  width: 120px;
+}
+.rv-finish {
+  position: relative;
+}
+.rv-pop {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  width: min(420px, 92vw);
+  max-height: 80vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+  background: var(--surface, #fff);
+  border: 1px solid var(--neutral-300, #ccc);
+  border-radius: var(--radius-control, 8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+.rv-pop h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.rv-pop textarea {
+  width: 100%;
+  font: inherit;
+  box-sizing: border-box;
+}
+.rv-sum {
+  margin: 0;
+  padding-left: 18px;
+}
+.rv-opts {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.rv-opt {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.rv-opt.on {
+  background: var(--neutral-100, #f3f4f6);
+}
+.rv-opt span {
+  display: flex;
+  flex-direction: column;
+}
+.rv-warn {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: var(--accent, #b45309);
+  font-size: 0.9em;
+}
+.rv-saved {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  background: #ecfdf3;
+  border: 1px solid #86d9a8;
+  border-radius: var(--radius-control, 8px);
+}
+.rv-saved span {
+  flex: 1 1 260px;
+}
+.rv-saved .btn {
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .rv-bar {
+    flex-wrap: wrap;
+  }
 }

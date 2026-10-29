@@ -115,6 +115,7 @@ class BatchReplacement(BaseModel):
 class BatchIn(BaseModel):
     decisions: list[BatchDecision] = []
     replacements: list[BatchReplacement] = []
+    note: str | None = None  # review summary, appended to the new version's note
 
 
 @router.post("/versions/{vid}/comments/batch")
@@ -188,9 +189,10 @@ def batch(vid: int, body: BatchIn, user: User) -> dict:
                 (user["name"], db.now_iso(), cid),
             )
         conn.commit()
-    new_vid, sk = editing._write_version(
-        vid, edits, f"Review: {len(done)} text(s) provided", "edited", user
-    )
+    vnote = f"Review: {len(done)} text(s) provided"
+    if (body.note or "").strip():
+        vnote += f" - {body.note.strip()}"
+    new_vid, sk = editing._write_version(vid, edits, vnote, "edited", user)
     skipped += [{"comment_id": 0, "why": f"paragraph {x['idx']}: {x['why']}"} for x in sk]
     with db.connect() as conn:
         return {
