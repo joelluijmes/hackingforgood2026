@@ -116,6 +116,15 @@ CREATE TABLE IF NOT EXISTS participant_portals (
     project_id INTEGER PRIMARY KEY, enabled INTEGER NOT NULL DEFAULT 0,
     contact TEXT NOT NULL DEFAULT '', urgent_guidance TEXT NOT NULL DEFAULT ''
 );
+CREATE TABLE IF NOT EXISTS global_facts (
+    key TEXT PRIMARY KEY, value TEXT NOT NULL DEFAULT '',
+    updated_at TEXT NOT NULL, updated_by TEXT NOT NULL DEFAULT ''
+);
+CREATE TABLE IF NOT EXISTS project_facts (
+    project_id INTEGER NOT NULL, key TEXT NOT NULL, value TEXT NOT NULL DEFAULT '',
+    source TEXT NOT NULL DEFAULT 'manual', updated_at TEXT NOT NULL,
+    updated_by TEXT NOT NULL DEFAULT '', PRIMARY KEY(project_id, key)
+);
 CREATE TABLE IF NOT EXISTS participant_publications (
     doc_id INTEGER PRIMARY KEY, version_id INTEGER NOT NULL, updated_at TEXT NOT NULL
 );

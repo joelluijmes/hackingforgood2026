@@ -1638,3 +1638,89 @@ table.sc-docs td {
 .btn.sm.outline:hover {
   background: var(--neutral-100);
 }
+
+/* Study profile */
+.facts-group {
+  border: 1px solid var(--border, #d9dde3);
+  border-radius: var(--radius-card);
+  padding: 0.5rem 1rem 1rem;
+  margin: 0 0 1rem;
+}
+.facts-group legend {
+  font-weight: 600;
+  padding: 0 0.4rem;
+}
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.75rem 1rem;
+}
+.facts-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.facts-field.wide {
+  grid-column: 1 / -1;
+}
+.facts-label {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+}
+.facts-field textarea {
+  font: inherit;
+  padding: 0.5rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--border, #c7ccd4);
+  background: transparent;
+  color: inherit;
+}
+.facts-field input::placeholder,
+.facts-field textarea::placeholder {
+  font-style: italic;
+  opacity: 0.6;
+}
+.facts-meter {
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(127, 127, 127, 0.2);
+  overflow: hidden;
+}
+.facts-meter span {
+  display: block;
+  height: 100%;
+  background: var(--accent, #2563eb);
+}
+.link-btn {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--accent, #2563eb);
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-left: auto;
+}
+.facts-suggest {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+  display: grid;
+  gap: 0.6rem;
+}
+.facts-suggest-row {
+  flex-direction: row;
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+.facts-suggest-row > span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.facts-suggest-value {
+  white-space: pre-wrap;
+}

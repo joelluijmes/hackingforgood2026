@@ -30,6 +30,7 @@ import {
   UploadDocDialog,
 } from '../components/ProjectDialogs';
 import StageStepper from '../components/StageStepper';
+import StudyProfile from '../components/StudyProfile';
 import TaskBanner, { type TaskMeta } from '../components/TaskBanner';
 
 const GROUPS: Role[] = ['sponsor', 'icf', 'other'];
@@ -335,6 +336,12 @@ export default function Project() {
         onTranslateAll={translateAll}
         onNewVersion={setVersionFor}
         onError={setError}
+      />
+
+      <StudyProfile
+        projectId={projectId}
+        hasSponsorDocs={docs.some((d) => d.role === 'sponsor')}
+        onProjectChanged={load}
       />
 
       <TaskBanner

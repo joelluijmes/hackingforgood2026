@@ -58,7 +58,8 @@
     "projects": "Projets",
     "templates": "Modèles",
     "language": "Votre langue",
-    "admin": "Admin"
+    "admin": "Admin",
+    "settings": "Valeurs par défaut"
   },
   "projects": {
     "title": "Projets",
@@ -758,5 +759,41 @@
       "publishedVersion": "Version publiée {{n}}",
       "close": "Fermer"
     }
+  },
+  "facts": {
+    "title": "Profil de l'étude",
+    "filled": "{{filled}} données clés sur {{total}} renseignées",
+    "infer": "Déduire des documents du promoteur",
+    "inferring": "Lecture des documents du promoteur…",
+    "save": "Enregistrer",
+    "saved": "Enregistré",
+    "override": "Remplacer",
+    "inherited": "Hérité des valeurs par défaut globales",
+    "revert": "Utiliser la valeur globale",
+    "src_inferred": "déduit",
+    "src_global": "global",
+    "src_manual": "manuel",
+    "reviewTitle": "Données suggérées depuis les documents du promoteur",
+    "reviewHint": "Vérifiez chaque suggestion; seules celles acceptées sont enregistrées (marquées comme déduites).",
+    "accept": "Accepter",
+    "reject": "Ignorer",
+    "acceptSelected": "Enregistrer les acceptées ({{n}})",
+    "none": "Aucune nouvelle donnée trouvée dans les documents du promoteur.",
+    "current": "Actuel",
+    "noSponsor": "Téléversez d'abord un document du promoteur.",
+    "aiOff": "L'IA n'est pas disponible.",
+    "aiFail": "L'appel à l'IA a échoué, réessayez.",
+    "hint": "Réutilisé à chaque génération d'ICF: les données renseignées sont utilisées telles quelles, les manquantes génèrent un commentaire renvoyant ici.",
+    "group": {
+      "study": "Étude",
+      "site": "Site",
+      "contacts": "Contacts",
+      "privacy": "Protection des données",
+      "ethics": "Comité d'éthique",
+      "insurance": "Assurance"
+    },
+    "settingsTitle": "Valeurs par défaut",
+    "settingsLead": "Données communes à toute la BSPHO que chaque projet hérite et peut remplacer dans son profil d'étude.",
+    "about": "Profil de l'étude: données structurées du projet et du site (contacts, assureur, DPO) avec valeurs BSPHO par défaut, déduites des documents du promoteur et utilisées pour la génération des ICF"
   }
 }

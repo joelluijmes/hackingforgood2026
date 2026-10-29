@@ -29,6 +29,35 @@ export interface User {
   role: 'staff' | 'participant';
 }
 
+// --- Study profile (docs/api-contract.md "Study profile") ---
+export interface FactDef {
+  key: string;
+  label: string;
+  group: 'study' | 'site' | 'contacts' | 'privacy' | 'ethics' | 'insurance';
+  kind: 'text' | 'phone' | 'email' | 'multiline';
+  scope: 'global' | 'project' | 'both';
+  hint: string;
+}
+export type FactSource = 'manual' | 'inferred' | 'global' | '';
+export interface ProjectFacts {
+  schema: FactDef[];
+  facts: Record<string, { value: string; source: FactSource }>;
+  globals: Record<string, string>;
+  key_facts: string[];
+  filled: number;
+  total: number;
+}
+export interface GlobalFacts {
+  schema: FactDef[];
+  values: Record<string, string>;
+}
+export interface FactSuggestion {
+  key: string;
+  value: string;
+  current: string;
+  current_source: FactSource;
+}
+
 export interface ParticipantPortalSettings {
   enabled: boolean;
   contact: string;
@@ -727,6 +756,25 @@ export const api = {
   ) => req<Project>(`/projects/${id}`, json('PATCH', b)),
   deleteProject: (id: number) =>
     req<void>(`/projects/${id}`, { method: 'DELETE' }),
+
+  // study profile (project facts + global defaults)
+  getGlobalFacts: () => req<GlobalFacts>('/global-facts'),
+  putGlobalFacts: (values: Record<string, string | null>) =>
+    req<GlobalFacts>('/global-facts', json('PUT', { values })),
+  getProjectFacts: (pid: number) => req<ProjectFacts>(`/projects/${pid}/facts`),
+  putProjectFacts: (
+    pid: number,
+    values: Record<string, string | null>,
+    source: 'manual' | 'inferred' = 'manual',
+  ) =>
+    req<ProjectFacts>(
+      `/projects/${pid}/facts`,
+      json('PUT', { values, source }),
+    ),
+  inferProjectFacts: (pid: number) =>
+    req<{ suggestions: FactSuggestion[] }>(`/projects/${pid}/facts/infer`, {
+      method: 'POST',
+    }),
 
   // project documents + versions
   listProjectDocs: (projectId: number) =>

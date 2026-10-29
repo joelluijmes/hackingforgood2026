@@ -171,7 +171,13 @@ def _context(ph: dict) -> str:
 
 
 def _fill_batch(
-    batch: list[dict], sponsor: str, notes: str, language: str, icf_type: str, thinking: int
+    batch: list[dict],
+    sponsor: str,
+    notes: str,
+    language: str,
+    icf_type: str,
+    thinking: int,
+    facts: str = "",
 ):
     items = [
         {
@@ -186,6 +192,7 @@ def _fill_batch(
         f"Target language: {LANG_NAMES.get(language, 'English')} - write every replacement in this "
         "language even if the sponsor documents are in another language. Audience: "
         f"{ICF_AUDIENCE.get(icf_type, 'adult participants')}.\n\n"
+        f"{facts + chr(10) * 2 if facts else ''}"
         f"SPONSOR DOCUMENTS:\n{sponsor}\n\nRESEARCHER NOTES:\n{notes or '(none)'}\n\n"
         "PLACEHOLDERS (JSON). In each 'context' the placeholder to replace is wrapped in << >>. "
         "Your answer replaces exactly the wrapped text.\n"
@@ -252,6 +259,8 @@ def generate_icf(
     icf_type: str,
     progress: Callable[[str, int, int], None] | None = None,
     thinking_budget: int = 1024,
+    facts: str = "",
+    missing_hint: Callable[[str], str] | None = None,
 ) -> dict:
     def report(step: str, done: int, total: int) -> None:
         if progress:
@@ -268,6 +277,7 @@ def generate_icf(
 
     report("reading", 1, 1)
     answers: dict[str, str] = {}
+    missing_keys: dict[str, str] = {}  # placeholder id -> study-profile fact key (MISSING:<key>)
     ai_used = False
     if placeholders and ai.ai_status()["enabled"]:
         sponsor = (sponsor_text or "")[:SPONSOR_CHARS]
@@ -278,7 +288,9 @@ def generate_icf(
             max_workers=max(1, len(batches))
         )  # ai._slots caps in-flight calls
         futs = {
-            pool.submit(_fill_batch, b, sponsor, notes, language, icf_type, thinking_budget): b
+            pool.submit(
+                _fill_batch, b, sponsor, notes, language, icf_type, thinking_budget, facts
+            ): b
             for b in batches
         }
         report("filling", 0, len(batches))
@@ -306,6 +318,8 @@ def generate_icf(
                 ans = _valid(data.get(ph["id"]))
                 if ans:
                     answers[ph["id"]] = ans
+                elif isinstance(data.get(ph["id"]), str) and ":" in data[ph["id"]]:
+                    missing_keys[ph["id"]] = data[ph["id"]].split(":", 1)[1].strip()
 
     filled = flagged = 0
     report("comments", 0, len(placeholders))
@@ -330,7 +344,12 @@ def generate_icf(
             shown = ph["text"] if len(ph["text"]) <= 200 else ph["text"][:200] + "..."
             doc.add_comment(
                 runs,
-                text=f"Missing: {shown} - please add this information",
+                text=f"Missing: {shown} - please add this information"
+                + (
+                    " in the study profile" + missing_hint(missing_keys[ph["id"]])
+                    if missing_hint and ph["id"] in missing_keys
+                    else ""
+                ),
                 author=AUTHOR,
                 initials="ICF",
             )
