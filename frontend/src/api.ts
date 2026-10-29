@@ -136,6 +136,82 @@ export interface VersionDetail {
   project: Project;
 }
 
+export type InterpreterPersona =
+  | 'pi'
+  | 'ethical_reviewer'
+  | 'parent_guardian'
+  | 'adult'
+  | 'adolescent'
+  | 'child';
+export type InterpreterOperation =
+  | 'explain'
+  | 'simplify'
+  | 'translate'
+  | 'ask'
+  | 'compare'
+  | 'clarify';
+export interface InterpreterReference {
+  version_id: number;
+  version_number: number;
+  section_id: string;
+  heading: string;
+  anchor: string | null;
+}
+export interface InterpreterReply {
+  explanation: string;
+  source_references: InterpreterReference[];
+  unanswered_questions: string[];
+  requires_human_followup: boolean;
+}
+export interface InterpreterVersionContext {
+  version_id: number;
+  version_number: number;
+  uploaded_at: string;
+  source: VersionSource;
+  note: string;
+  sections: {
+    section_id: string;
+    heading: string;
+    text: string;
+    anchor: string | null;
+  }[];
+  comments: {
+    author: string;
+    text: string;
+    anchor_text: string;
+    status: CommentStatus;
+    decision_note: string | null;
+    parent_id: number | null;
+  }[];
+  content_available: boolean;
+}
+export interface InterpreterContext {
+  icf: {
+    id: number;
+    project_id: number;
+    title: string;
+    icf_type: string | null;
+    language: Language | null;
+  };
+  latest_version_id: number;
+  selected_version_ids: number[];
+  versions: InterpreterVersionContext[];
+  version_diffs: {
+    from_version_id: number;
+    to_version_id: number;
+    stats: Record<string, number>;
+    blocks: DiffBlock[];
+  }[];
+  change_history: {
+    source_version_id: number;
+    result_version_id: number;
+    instruction: string;
+    created_by: string;
+    created_at: string;
+    edits: unknown[];
+  }[];
+}
+
 export interface ReviewComment {
   id: number;
   version_id: number;
@@ -544,6 +620,28 @@ export const api = {
   getVersion: (vid: number) => req<VersionDetail>(`/versions/${vid}`),
   versionFileUrl: (vid: number) => withToken(`/api/versions/${vid}/file`),
   getVersionHtml: (vid: number) => req<VersionHtml>(`/versions/${vid}/html`),
+
+  // read-only ICF Interpreter
+  interpreterContext: (icfId: number, versionId?: number) =>
+    req<InterpreterContext>(
+      `/interpreter/context/${icfId}${versionId ? `?version_id=${versionId}` : ''}`,
+    ),
+  interpret: (
+    operation: InterpreterOperation,
+    body: {
+      icf_id: number;
+      version_id?: number;
+      compare_version_id?: number;
+      persona: InterpreterPersona;
+      age_group?: '8-11' | '12-17' | 'adult';
+      language: Language;
+      question?: string;
+      text?: string;
+      term?: string;
+      source_language?: Language;
+      history?: { role: 'user' | 'assistant'; text: string }[];
+    },
+  ) => req<InterpreterReply>(`/interpreter/${operation}`, json('POST', body)),
 
   // comments
   listComments: (vid: number, lang?: Lang) =>

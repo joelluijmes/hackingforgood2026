@@ -48,6 +48,14 @@ Frontend client mirroring this file: `frontend/src/api.ts` (single source of typ
 - `GET /api/versions/{vid}/comments?lang=<Lang>` -> Comment[] in document order (replies follow parents; `parent_id` links replies). `lang` defaults to the caller's language. If a comment's language differs from `lang` and AI is available, `translated_text` holds the translation (cached in SQLite table `comment_translations`) and `translated_to` = lang; otherwise both null.
 - `POST /api/comments/{id}/decision` `{status:"open"|"approved"|"declined", note?}` -> Comment (records user + timestamp)
 
+## ICF Interpreter (read-only)
+- Authenticated routes live under `/api/interpreter`; they interpret an existing project document with `role="icf"` and never mutate documents, comments, templates, or project state.
+- Personas: `pi|ethical_reviewer|parent_guardian|adult|adolescent|child`; age groups: `8-11|12-17|adult`; response languages: `en|nl|fr`.
+- `GET /api/interpreter/context/{icf_id}?version_id=<id>` returns document metadata, the complete version history, readable DOCX sections, review comments and decisions, tracked-edit history, adjacent-version diffs, and the default latest version. A selected version ID must belong to this ICF.
+- `POST /api/interpreter/{explain|simplify|translate|ask|compare|clarify}` accepts `{icf_id, section_id?, version_id?, compare_version_id?, persona, age_group?, language, question?, text?, term?, source_language?, history?:[{role,text}]}`. Latest is used if `version_id` is omitted. For `compare`, `version_id` is the newer/to version and `compare_version_id` is the older/from version; when the latter is omitted the immediately previous version is used. History is limited to 12 chat messages and provides dialogue continuity, not evidence.
+- Responses are `{explanation, source_references:[{version_id, version_number, section_id, heading, anchor}], unanswered_questions:string[], requires_human_followup:boolean}`. References identify the supporting version and section; citations in the UI navigate to the matching document heading when one exists. Historical questions can use the full history even when latest is the default; returned references identify the actual cited versions.
+- The Interpreter uses Vertex AI and returns 503 when it is unavailable. It returns 502 if it cannot produce a structured grounded response. It treats document content as data, preserves risks and rights, and flags answers without source references or with unanswered questions for human follow-up.
+
 ## Diff (new reviewed version vs previous)
 - `GET /api/diff?from=<vid>&to=<vid>` ->
   `{from: Version, to: Version, stats:{inserted,deleted,changed,unchanged,tracked_changes}, blocks: DiffBlock[], comments:{added: Comment[], removed: Comment[]}}`

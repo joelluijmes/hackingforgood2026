@@ -11,6 +11,7 @@ import {
 } from '../api';
 import CommentPanel from '../components/CommentPanel';
 import EditPanel from '../components/EditPanel';
+import InterpreterPanel from '../components/InterpreterPanel';
 import PropagateDialog from '../components/PropagateDialog';
 import { isLang } from '../i18n';
 import '../review.css';
@@ -24,7 +25,10 @@ export default function VersionViewer() {
   const vid = Number(useParams().vid);
   const nav = useNavigate();
   const location = useLocation();
-  const [tab, setTab] = useState<'comments' | 'edit'>('comments');
+  const [tab, setTab] = useState<'comments' | 'edit' | 'interpreter'>(
+    'comments',
+  );
+  const [interpreterOpen, setInterpreterOpen] = useState(false);
   const [fixing, setFixing] = useState<ReviewComment | null>(null);
   const [changeId, setChangeId] = useState<number | null>(null);
   // after "apply", the new version is opened with the change id to offer propagation
@@ -78,6 +82,28 @@ export default function VersionViewer() {
       live = false;
     };
   }, [vid]);
+
+  useEffect(() => {
+    if (!html || !location.hash) return;
+    const anchor = decodeURIComponent(location.hash.slice(1));
+    requestAnimationFrame(() => {
+      document.getElementById(anchor)?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
+    });
+  }, [html, location.hash]);
+
+  useEffect(() => {
+    if (!html || !location.hash) return;
+    const anchor = decodeURIComponent(location.hash.slice(1));
+    requestAnimationFrame(() => {
+      document.getElementById(anchor)?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
+    });
+  }, [html, location.hash]);
 
   // Comments are translated into the UI language, so reload them when it changes.
   useEffect(() => {
@@ -249,6 +275,19 @@ export default function VersionViewer() {
             >
               {t('versionViewer.tabEdit')}
             </button>
+            {doc.role === 'icf' && (
+              <button
+                type="button"
+                role="tab"
+                aria-selected={tab === 'interpreter'}
+                onClick={() => {
+                  setInterpreterOpen(true);
+                  setTab('interpreter');
+                }}
+              >
+                {t('versionViewer.tabInterpreter')}
+              </button>
+            )}
           </div>
           {tab === 'comments' ? (
             <CommentPanel
@@ -263,7 +302,7 @@ export default function VersionViewer() {
                 setTab('edit');
               }}
             />
-          ) : (
+          ) : tab === 'edit' ? (
             <EditPanel
               key={vid}
               vid={vid}
@@ -278,6 +317,14 @@ export default function VersionViewer() {
                 })
               }
             />
+          ) : null}
+          {doc.role === 'icf' && interpreterOpen && (
+            <div
+              className="rv-interpreter-holder"
+              hidden={tab !== 'interpreter'}
+            >
+              <InterpreterPanel key={doc.id} icfId={doc.id} uiLanguage={lang} />
+            </div>
           )}
         </div>
       </div>

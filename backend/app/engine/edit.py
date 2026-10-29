@@ -18,7 +18,7 @@ from lxml import etree
 
 from . import _xml
 from ._xml import q
-from .render import COLOR_CLASSES, _rgb, _style_color
+from .render import COLOR_CLASSES, _heading_level, _rgb, _slug, _style_color
 
 AUTHOR = "ICF Studio"
 # runs carrying these are kept as-is when a paragraph is rewritten (comment anchors, notes, fields)
@@ -131,15 +131,32 @@ def list_paragraphs(path: str) -> list[dict]:
     doc = Document(path)
     out: list[dict] = []
     section = ""
+    used_anchors: set[str] = set()
     for i, p_el in enumerate(doc.element.body.iter(q("p"))):
         text = para_marked(p_el).strip()
         if not plain(text).strip():
             continue
-        name = _style_name(Paragraph(p_el, doc._body)).lower()
+        style_name = _style_name(Paragraph(p_el, doc._body))
+        name = style_name.lower()
         heading = name.startswith(("heading", "titre", "kop"))
+        anchor = None
         if heading:
             section = plain(text)[:120]
-        out.append({"idx": i, "text": text, "section": section, "heading": heading})
+            if _heading_level(style_name) is not None:
+                base = _slug(plain(text))
+                anchor, n = base, 2
+                while anchor in used_anchors:
+                    anchor, n = f"{base}-{n}", n + 1
+                used_anchors.add(anchor)
+        out.append(
+            {
+                "idx": i,
+                "text": text,
+                "section": section,
+                "heading": heading,
+                "anchor": anchor,
+            }
+        )
     return out
 
 

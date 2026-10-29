@@ -4,7 +4,7 @@ from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from . import auth, convert, db
-from .routers import editing, generate, library, projects, review
+from .routers import editing, generate, interpreter, library, projects, review
 
 app = FastAPI(title="ICF Studio API")
 app.add_middleware(
@@ -63,5 +63,6 @@ for r in (
     review.router,
     generate.router,
     editing.router,
+    interpreter.router,
 ):
     app.include_router(r)
