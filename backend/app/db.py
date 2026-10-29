@@ -65,7 +65,8 @@ CREATE TABLE IF NOT EXISTS versions (
     note TEXT NOT NULL DEFAULT '',
     source TEXT NOT NULL DEFAULT 'upload',
     uploaded_by TEXT NOT NULL DEFAULT '',
-    uploaded_at TEXT NOT NULL
+    uploaded_at TEXT NOT NULL,
+    sources_json TEXT
 );
 CREATE TABLE IF NOT EXISTS comments (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -169,6 +170,9 @@ def init() -> None:
             cols = {r["name"] for r in conn.execute(f"PRAGMA table_info({table})")}
             if "checksum_sha256" not in cols:
                 conn.execute(f"ALTER TABLE {table} ADD COLUMN checksum_sha256 TEXT")  # noqa: S608
+        vcols = {r["name"] for r in conn.execute("PRAGMA table_info(versions)")}
+        if "sources_json" not in vcols:
+            conn.execute("ALTER TABLE versions ADD COLUMN sources_json TEXT")
 
 
 def now_iso() -> str:

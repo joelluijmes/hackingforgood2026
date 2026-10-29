@@ -329,3 +329,33 @@ def version_html(vid: int) -> dict:
         raise HTTPException(404, "File missing from storage") from None
     except Exception as exc:
         raise HTTPException(422, f"Could not read this .docx: {exc}") from exc
+
+
+@router.get("/versions/{vid}/trace")
+def version_trace(vid: int) -> dict:
+    from ..engine import trace
+
+    with db.connect() as conn:
+        _version_row(conn, vid)
+        try:
+            return trace.build_version_trace(conn, vid)
+        except Exception as exc:
+            raise HTTPException(422, f"Could not compute source trace: {exc}") from exc
+
+
+class CiteIn(BaseModel):
+    text: str
+
+
+@router.post("/versions/{vid}/cite")
+def version_cite(vid: int, body: CiteIn) -> dict:
+    from ..engine import trace
+
+    if not body.text.strip():
+        raise HTTPException(422, "Select some text first")
+    with db.connect() as conn:
+        _version_row(conn, vid)
+        try:
+            return trace.cite(conn, vid, body.text)
+        except Exception as exc:
+            raise HTTPException(422, f"Could not find the source: {exc}") from exc

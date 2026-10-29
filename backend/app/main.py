@@ -10,6 +10,7 @@ from .routers import (
     editing,
     facts,
     generate,
+    illustrations,
     interpreter,
     library,
     participant,
@@ -199,5 +200,6 @@ for r in (
     facts.router,
     interpreter.router,
     participant.router,
+    illustrations.router,
 ):
     app.include_router(r)

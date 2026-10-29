@@ -1883,3 +1883,56 @@ table.sc-docs td {
 .facts-suggest-value {
   white-space: pre-wrap;
 }
+
+/* ---- illustrations: in the rendered document and the library ---- */
+.paper img.docx-img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+/* floating pictures (icons next to the questions of children's forms): text wraps on the right */
+.paper img.docx-float {
+  float: left;
+  margin: 2px 14px 6px 0;
+}
+.paper :is(h1, h2, h3, h4) {
+  clear: both;
+}
+.ill-lib {
+  margin-top: 40px;
+}
+.ill-add {
+  display: grid;
+  gap: 10px;
+  max-width: 560px;
+  margin-bottom: 16px;
+}
+.ill-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+}
+.ill-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+.ill-item {
+  display: grid;
+  gap: 4px;
+  justify-items: start;
+  padding: 10px;
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--radius-card);
+  background: #fff;
+  font-size: 13px;
+}
+.ill-item img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}

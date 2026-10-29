@@ -1529,3 +1529,338 @@ label.rv-toggle {
     top: auto;
   }
 }
+
+/* ---- Sources tab / source traceability (merged from origin/main) ---- */
+/* ---- Sources tab: where the text comes from ---- */
+.tr-panel {
+  overflow: auto;
+}
+.tr-pad {
+  padding: 12px 16px;
+}
+.tr-body {
+  display: grid;
+  gap: 14px;
+  padding: 12px;
+}
+.tr-body h3,
+.tr-citation h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+.tr-sources ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+  font-size: 13px;
+}
+.tr-note {
+  margin: 8px 0 0;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: #fff8e6;
+  color: #6b4b00;
+}
+.src-badge {
+  font-size: 11px;
+  padding: 1px 8px;
+}
+.src-badge-sponsor {
+  background: #ece9fe;
+  color: #3f33a8;
+  border-color: transparent;
+}
+.src-badge-template {
+  background: #f3e9fb;
+  color: var(--purple);
+  border-color: transparent;
+}
+.src-badge-icf {
+  background: var(--primary-200);
+  color: var(--primary-1100);
+  border-color: transparent;
+}
+.ver-sources {
+  margin-top: 4px;
+}
+/* paragraph kinds: one colour per source, used by the bar, legend, cards and the document */
+.k-template {
+  --k: #b9b2c9;
+}
+.k-template_changed {
+  --k: #8b5cf6;
+}
+.k-ai_fill {
+  --k: #3aa55d;
+}
+.k-other {
+  --k: #8c99a8;
+}
+.k-gap {
+  --k: #e0a100;
+}
+.k-mandatory {
+  --k: var(--purple);
+}
+.tr-bar {
+  display: flex;
+  height: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--neutral-200);
+}
+.tr-bar > span {
+  background: var(--k);
+  min-width: 3px;
+}
+.tr-bar.mini {
+  height: 6px;
+  width: 90px;
+  flex: none;
+}
+.tr-legend {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 8px 0 4px;
+  padding: 0;
+  font-size: 12px;
+}
+.tr-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--k);
+  margin-right: 4px;
+}
+.tr-toggle {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.tr-views {
+  margin: 0;
+}
+.tr-list {
+  display: grid;
+  gap: 8px;
+}
+.tr-group {
+  margin: 8px 0 0;
+  font-size: 13px;
+}
+.tr-card {
+  border: 1px solid var(--neutral-300);
+  border-left: 4px solid var(--k);
+  border-radius: var(--radius-control);
+  padding: 10px;
+  background: #fff;
+  font-size: 13px;
+}
+.tr-kind {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--k);
+}
+.tr-section {
+  color: var(--neutral-700);
+  font-size: 12px;
+  margin-top: 2px;
+}
+.tr-why {
+  margin-top: 6px;
+  font-weight: 600;
+}
+.tr-text {
+  margin: 6px 0 0;
+  white-space: pre-wrap;
+}
+.tr-text mark {
+  background: #e3f4e6;
+  border-bottom: 2px solid #9ccfa4;
+}
+.tr-gaps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+}
+.tr-gaps code {
+  background: #fff4d6;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.tr-ev {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--neutral-300);
+}
+.tr-ev-level {
+  font-weight: 600;
+}
+.tr-ev.lv-supported .tr-ev-level {
+  color: #1d5a2b;
+}
+.tr-ev.lv-partial .tr-ev-level,
+.tr-ev.lv-cross_language .tr-ev-level {
+  color: #6b4b00;
+}
+.tr-ev.lv-none .tr-ev-level,
+.tr-ev.lv-no_sponsor .tr-ev-level {
+  color: var(--error-1100);
+}
+.tr-warn {
+  margin-top: 4px;
+  color: var(--error-1100);
+  font-weight: 600;
+}
+.tr-passage {
+  margin-top: 6px;
+}
+.tr-cite {
+  font-size: 12px;
+}
+.tr-quote {
+  margin: 4px 0;
+  padding: 6px 10px;
+  border-left: 3px solid #9ccfa4;
+  background: var(--neutral-100);
+  font-size: 13px;
+  white-space: pre-wrap;
+}
+.tr-quote.sel {
+  border-left-color: var(--primary-1000);
+  background: var(--primary-100);
+  font-style: italic;
+}
+.tr-citation {
+  margin-top: 12px;
+  padding: 10px;
+  border: 2px solid var(--primary-300);
+  border-radius: var(--radius-card);
+  background: #fff;
+  display: grid;
+  gap: 8px;
+  font-size: 13px;
+}
+.tr-cite-row {
+  border-top: 1px solid var(--neutral-200);
+  padding-top: 6px;
+}
+.tr-cite-label {
+  font-weight: 700;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.tr-badge.ai {
+  justify-self: start;
+  background: #e3f4e6;
+  color: #1d5a2b;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+}
+.tr-sec-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  font: inherit;
+  font-size: 13px;
+  text-align: left;
+  padding: 6px 8px;
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-control);
+  background: #fff;
+  cursor: pointer;
+}
+.tr-sec-title {
+  flex: 1;
+  min-width: 0;
+}
+.tr-sec {
+  display: grid;
+  gap: 6px;
+}
+.tr-gap-sec summary {
+  cursor: pointer;
+  font-size: 13px;
+  padding: 4px 0;
+}
+.tr-gap-row {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  font-size: 12px;
+  padding: 4px 8px;
+  margin: 2px 0;
+  border: 0;
+  border-left: 3px solid #e0a100;
+  background: #fffaf0;
+  cursor: pointer;
+}
+/* document: passage opened from a citation, and colouring by source */
+.paper .cite-hit {
+  background: #fff1a8;
+  box-shadow: 0 0 0 4px #fff1a8;
+  border-radius: 2px;
+  transition: background 1.5s;
+}
+.paper.pv-on [data-pv] {
+  box-shadow: inset 4px 0 0 var(--k);
+  padding-left: 8px;
+}
+.paper.pv-on [data-pv="template"] {
+  --k: #b9b2c9;
+}
+.paper.pv-on [data-pv="template_changed"] {
+  --k: #8b5cf6;
+}
+.paper.pv-on [data-pv="mandatory_changed"] {
+  --k: var(--purple);
+  background: #f6eefc;
+}
+.paper.pv-on [data-pv="ai_fill"] {
+  --k: #3aa55d;
+  background: #f0faf2;
+}
+.paper.pv-on [data-pv="ai_unsupported"] {
+  --k: var(--error-900);
+  background: var(--error-100);
+}
+.paper.pv-on [data-pv="other"] {
+  --k: #8c99a8;
+}
+.paper.pv-on [data-pv="gap"] {
+  --k: #e0a100;
+  background: #fffaf0;
+}
+.tr-passage.weak .tr-quote {
+  border-left-color: var(--neutral-300);
+  color: var(--neutral-700);
+}
+.tr-weak {
+  font-size: 12px;
+  color: var(--neutral-700);
+  font-style: italic;
+}
+.tr-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}

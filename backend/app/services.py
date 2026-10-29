@@ -1,5 +1,6 @@
 """Shared helpers: serialisation of projects/docs/versions/comments, uploads, translation."""
 
+import json
 import logging
 import mimetypes
 import tempfile
@@ -71,6 +72,8 @@ def check_lang(value: str | None, field: str = "language") -> str | None:
 
 
 def version_dict(conn, row) -> dict:
+    from .engine import trace
+
     counts = {
         r["status"]: r["n"]
         for r in conn.execute(
@@ -78,6 +81,7 @@ def version_dict(conn, row) -> dict:
             (row["id"],),
         )
     }
+    sources = trace.recorded_sources(row)
     return {
         "id": row["id"],
         "doc_id": row["doc_id"],
@@ -93,6 +97,7 @@ def version_dict(conn, row) -> dict:
         "comments_open": counts.get("open", 0),
         "comments_approved": counts.get("approved", 0),
         "comments_declined": counts.get("declined", 0),
+        "sources": sources,
     }
 
 
@@ -158,6 +163,7 @@ def add_version(
     source: str,
     user_name: str,
     items: list[dict] | None = None,
+    sources: list[dict] | None = None,
 ) -> int:
     """Store ``data`` in object storage as the next version of ``doc_id`` and index it."""
     if items is None:
@@ -168,11 +174,12 @@ def add_version(
     pid = conn.execute("SELECT project_id FROM project_docs WHERE id = ?", (doc_id,)).fetchone()[0]
     key = storage.version_key(pid, doc_id, number, Path(filename).suffix)
     storage.put(key, data, mime_for(filename))
+    sources_json = json.dumps(sources) if sources else None
     cur = conn.execute(
         "INSERT INTO versions (doc_id, number, filename, stored_name, size, note, source,"
-        " uploaded_by, uploaded_at, checksum_sha256) VALUES (?,?,?,?,?,?,?,?,?,?)",
+        " uploaded_by, uploaded_at, checksum_sha256, sources_json) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
         (doc_id, number, filename, key, len(data), note, source, user_name, db.now_iso(),
-         storage.sha256(data)),
+         storage.sha256(data), sources_json),
     )  # fmt: skip
     vid = cur.lastrowid
     store_comments(conn, vid, items)
@@ -326,6 +333,7 @@ def create_doc_with_version(
     source: str,
     user_name: str,
     source_doc_id: int | None = None,
+    sources: list[dict] | None = None,
 ) -> dict:
     items = prepare_comments(filename, data)
     cur = conn.execute(
@@ -333,7 +341,9 @@ def create_doc_with_version(
         " source_doc_id) VALUES (?,?,?,?,?,?,?)",
         (pid, title, role, icf_type, language, db.now_iso(), source_doc_id),
     )
-    add_version(conn, cur.lastrowid, filename, data, note, source, user_name, items)
+    add_version(
+        conn, cur.lastrowid, filename, data, note, source, user_name, items, sources=sources
+    )
     return doc_dict(
         conn, conn.execute("SELECT * FROM project_docs WHERE id = ?", (cur.lastrowid,)).fetchone()
     )

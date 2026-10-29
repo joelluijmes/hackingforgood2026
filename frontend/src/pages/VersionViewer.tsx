@@ -1,19 +1,29 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
+import {
+  Link,
+  useLocation,
+  useNavigate,
+  useParams,
+  useSearchParams,
+} from 'react-router-dom';
 import {
   api,
+  type Citation,
   type Lang,
   type ProjectDoc,
   type ReviewComment,
   type VersionDetail,
   type VersionHtml,
+  type VersionTrace,
 } from '../api';
 import CommentPanel, { type Staged } from '../components/CommentPanel';
 import EditPanel from '../components/EditPanel';
 import InterpreterPanel from '../components/InterpreterPanel';
 import PropagateDialog from '../components/PropagateDialog';
 import ReviewBar from '../components/ReviewBar';
+import SourceTracePanel from '../components/SourceTracePanel';
+import { findBlock, flashText, normText } from '../highlight';
 import { isLang } from '../i18n';
 import '../review.css';
 
@@ -26,9 +36,10 @@ export default function VersionViewer() {
   const vid = Number(useParams().vid);
   const nav = useNavigate();
   const location = useLocation();
-  const [tab, setTab] = useState<'comments' | 'edit' | 'interpreter'>(
-    'comments',
-  );
+  const [params] = useSearchParams();
+  const [tab, setTab] = useState<
+    'comments' | 'edit' | 'interpreter' | 'sources'
+  >(params.get('tab') === 'sources' ? 'sources' : 'comments');
   const [interpreterOpen, setInterpreterOpen] = useState(false);
   const [fixing, setFixing] = useState<ReviewComment | null>(null);
   const [changeId, setChangeId] = useState<number | null>(null);
@@ -49,6 +60,11 @@ export default function VersionViewer() {
   const [htmlErr, setHtmlErr] = useState('');
   const [noRender, setNoRender] = useState(false);
   const [comments, setComments] = useState<ReviewComment[]>([]);
+  const [trace, setTrace] = useState<VersionTrace | null>(null);
+  const [traceErr, setTraceErr] = useState('');
+  const [citation, setCitation] = useState<Citation | null>(null);
+  const [citing, setCiting] = useState(false);
+  const [coloured, setColoured] = useState(false);
   const [docs, setDocs] = useState<ProjectDoc[]>([]);
   const [error, setError] = useState('');
   const [showTc, setShowTc] = useState(true);
@@ -73,6 +89,9 @@ export default function VersionViewer() {
     setHtmlErr('');
     setNoRender(false);
     setComments([]);
+    setTrace(null);
+    setTraceErr('');
+    setCitation(null);
     setActiveId(null);
     setError('');
     setFixing(null);
@@ -171,6 +190,109 @@ export default function VersionViewer() {
     [spansFor],
   );
 
+  // the source trace is computed on demand, when the Sources tab is first opened
+  useEffect(() => {
+    if (tab !== 'sources' || trace || traceErr || !detail) return;
+    if (detail.doc.role !== 'icf' || detail.version.preview !== 'docx') return;
+    let live = true;
+    api.getVersionTrace(vid).then(
+      (tr) => live && setTrace(tr),
+      (e) => live && setTraceErr(e instanceof Error ? e.message : String(e)),
+    );
+    return () => {
+      live = false;
+    };
+  }, [tab, trace, traceErr, detail, vid]);
+
+  // opened from a citation: scroll to the quoted passage (?find=...)
+  const find = params.get('find');
+  useEffect(() => {
+    if (html && find) flashText(paper.current, find);
+  }, [html, find]);
+
+  // colour each paragraph of the document by where it comes from
+  // biome-ignore lint/correctness/useExhaustiveDependencies: html re-renders the paper
+  useEffect(() => {
+    const root = paper.current;
+    if (!root) return;
+    for (const el of root.querySelectorAll('[data-pv]')) {
+      el.removeAttribute('data-pv');
+    }
+    if (!coloured || !trace) return;
+    const blocks = Array.from(
+      root.querySelectorAll<HTMLElement>('p, li, td, h1, h2, h3, h4'),
+    ).filter((b) => !b.querySelector('p, li, td'));
+    const texts = blocks.map((b) => normText(b.textContent ?? ''));
+    for (const p of trace.paragraphs) {
+      const probe = normText(p.text).slice(0, 60);
+      const i = texts.findIndex(
+        (x) => x.startsWith(probe) || x.includes(probe),
+      );
+      if (i >= 0) {
+        const kind =
+          p.kind === 'ai_fill' &&
+          p.evidence &&
+          !['supported', 'partial'].includes(p.evidence.level)
+            ? 'ai_unsupported'
+            : p.kind;
+        blocks[i].dataset.pv =
+          p.template?.mandatory && p.kind === 'template_changed'
+            ? 'mandatory_changed'
+            : kind;
+        texts[i] = ''; // each block is used once
+      }
+    }
+  }, [coloured, trace, html]);
+
+  const jumpToText = useCallback((text: string) => {
+    if (!flashText(paper.current, text)) {
+      const el = paper.current && findBlock(paper.current, text.slice(0, 40));
+      el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, []);
+
+  const [illBusy, setIllBusy] = useState(false);
+  const [illMsg, setIllMsg] = useState('');
+  const addIllustrations = async () => {
+    setIllBusy(true);
+    setIllMsg('');
+    try {
+      const r = await api.illustrateVersion(vid);
+      const names = r.report.placed.map((p) => p.name).join(', ');
+      if (!r.version) setIllMsg(t('illustrations.noneFitted'));
+      else {
+        nav(`/versions/${r.version.id}`);
+        setIllMsg(
+          t('illustrations.added', {
+            count: r.report.placed.length,
+            number: r.version.number,
+            names,
+          }),
+        );
+      }
+    } catch (e) {
+      setIllMsg(e instanceof Error ? e.message : String(e));
+    } finally {
+      setIllBusy(false);
+    }
+  };
+
+  const citeSelection = async () => {
+    if (!sel) return;
+    const text = sel.text;
+    closeAdd();
+    setTab('sources');
+    setCitation(null);
+    setCiting(true);
+    try {
+      setCitation(await api.cite(vid, text));
+    } catch (e) {
+      setTraceErr(e instanceof Error ? e.message : String(e));
+    } finally {
+      setCiting(false);
+    }
+  };
+
   // highlight the active range
   // biome-ignore lint/correctness/useExhaustiveDependencies: html drives re-query
   useEffect(() => {
@@ -257,6 +379,9 @@ export default function VersionViewer() {
   if (!detail) return <div className="page muted">{t('common.loading')}</div>;
 
   const { version, doc, project } = detail;
+  // the Sources tab only exists for ICF drafts (e.g. a sponsor document opened from a citation)
+  const hasSources = doc.role === 'icf' && version.preview === 'docx';
+  const shownTab = tab === 'sources' && !hasSources ? 'comments' : tab;
   const versions = docs.find((d) => d.id === doc.id)?.versions ?? [version];
   const prev = versions
     .filter((v) => v.number < version.number)
@@ -369,7 +494,31 @@ export default function VersionViewer() {
               />
               {t('versionViewer.showTrackedChanges')}
             </label>
+            {doc.role === 'icf' &&
+              (doc.icf_type === 'child' || doc.icf_type === 'adolescent') &&
+              version.preview === 'docx' && (
+                <button
+                  type="button"
+                  className="btn small"
+                  disabled={illBusy}
+                  onClick={addIllustrations}
+                >
+                  {illBusy ? t('common.working') : t('illustrations.addToForm')}
+                </button>
+              )}
           </div>
+          {illMsg && (
+            <div className="rv-saved" role="status">
+              <span>{illMsg}</span>
+              <button
+                type="button"
+                className="btn ghost"
+                onClick={() => setIllMsg('')}
+              >
+                {t('common.close')}
+              </button>
+            </div>
+          )}
           {htmlErr && <div className="empty">{htmlErr}</div>}
           {noRender && (
             <div className="empty">{t('versionViewer.notRenderable')}</div>
@@ -381,7 +530,7 @@ export default function VersionViewer() {
             // biome-ignore lint/a11y/noStaticElementInteractions: delegated click on highlights
             <div
               ref={paper}
-              className={`paper ${showTc ? '' : 'hide-tc'} ${showFills ? 'show-fills' : ''}`}
+              className={`paper ${showTc ? '' : 'hide-tc'} ${showFills ? 'show-fills' : ''} ${coloured ? 'pv-on' : ''}`}
               onClick={onDocClick}
               onMouseUp={onSelect}
               onKeyUp={onSelect}
@@ -395,7 +544,7 @@ export default function VersionViewer() {
             <button
               type="button"
               role="tab"
-              aria-selected={tab === 'comments'}
+              aria-selected={shownTab === 'comments'}
               onClick={() => setTab('comments')}
             >
               {t('versionViewer.tabComments')}
@@ -404,7 +553,7 @@ export default function VersionViewer() {
             <button
               type="button"
               role="tab"
-              aria-selected={tab === 'edit'}
+              aria-selected={shownTab === 'edit'}
               disabled={version.preview !== 'docx'}
               onClick={() => setTab('edit')}
             >
@@ -414,7 +563,7 @@ export default function VersionViewer() {
               <button
                 type="button"
                 role="tab"
-                aria-selected={tab === 'interpreter'}
+                aria-selected={shownTab === 'interpreter'}
                 onClick={() => {
                   setInterpreterOpen(true);
                   setTab('interpreter');
@@ -423,8 +572,18 @@ export default function VersionViewer() {
                 {t('versionViewer.tabInterpreter')}
               </button>
             )}
+            {doc.role === 'icf' && version.preview === 'docx' && (
+              <button
+                type="button"
+                role="tab"
+                aria-selected={shownTab === 'sources'}
+                onClick={() => setTab('sources')}
+              >
+                {t('trace.tab')}
+              </button>
+            )}
           </div>
-          {tab === 'comments' ? (
+          {shownTab === 'comments' ? (
             <CommentPanel
               staged={staged}
               setStaged={setStaged}
@@ -438,7 +597,7 @@ export default function VersionViewer() {
                 setTab('edit');
               }}
             />
-          ) : tab === 'edit' ? (
+          ) : shownTab === 'edit' ? (
             <EditPanel
               key={vid}
               vid={vid}
@@ -449,11 +608,22 @@ export default function VersionViewer() {
               onClearComment={() => setFixing(null)}
               onApplied={(r) => nav(`/versions/${r.version.id}`)}
             />
+          ) : shownTab === 'sources' ? (
+            <SourceTracePanel
+              trace={trace}
+              error={traceErr}
+              citation={citation}
+              citing={citing}
+              onClearCitation={() => setCitation(null)}
+              onJump={jumpToText}
+              coloured={coloured}
+              onToggleColour={setColoured}
+            />
           ) : null}
           {doc.role === 'icf' && interpreterOpen && (
             <div
               className="rv-interpreter-holder"
-              hidden={tab !== 'interpreter'}
+              hidden={shownTab !== 'interpreter'}
             >
               <InterpreterPanel key={doc.id} icfId={doc.id} uiLanguage={lang} />
             </div>
@@ -491,13 +661,20 @@ export default function VersionViewer() {
               </div>
             </>
           ) : (
-            <button
-              type="button"
-              className="btn primary"
-              onClick={() => setAdding(true)}
-            >
-              {t('comments.addComment')}
-            </button>
+            <div className="rv-actions">
+              <button
+                type="button"
+                className="btn primary"
+                onClick={() => setAdding(true)}
+              >
+                {t('comments.addComment')}
+              </button>
+              {doc.role === 'icf' && (
+                <button type="button" className="btn" onClick={citeSelection}>
+                  {t('trace.whereFrom')}
+                </button>
+              )}
+            </div>
           )}
         </div>
       )}

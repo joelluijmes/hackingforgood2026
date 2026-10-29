@@ -191,6 +191,122 @@ export interface Project {
   open_comments: number;
 }
 
+export interface VersionSourceItem {
+  kind: 'sponsor' | 'template' | 'icf';
+  name: string;
+  /** false = not recorded when this version was made, only inferred from the project */
+  recorded: boolean;
+  /** how an ICF/inherited source relates, e.g. "previous version", "translated from" */
+  relation?: string;
+  doc_id?: number;
+  template_id?: number;
+  version_id?: number;
+  version_number?: number;
+  version?: string;
+  language?: string;
+  filename?: string;
+}
+
+/** Sponsor passage that supports a piece of ICF text. */
+export interface TracePassage {
+  source: Pick<
+    VersionSourceItem,
+    | 'kind'
+    | 'name'
+    | 'filename'
+    | 'doc_id'
+    | 'version_id'
+    | 'version_number'
+    | 'language'
+    | 'recorded'
+  >;
+  section: string;
+  sentence: string;
+  context: string;
+}
+
+export interface TraceEvidence {
+  /** supported >= 60 % of the words in one passage, partial >= 30 % */
+  level: 'supported' | 'partial' | 'none' | 'cross_language' | 'no_sponsor';
+  score: number;
+  /** numbers in the text that occur in none of the sponsor documents */
+  missing_numbers: string[];
+  passage?: TracePassage;
+}
+
+export type TraceKind =
+  | 'template'
+  | 'template_changed'
+  | 'ai_fill'
+  | 'gap'
+  | 'other';
+
+export interface TraceParagraph {
+  idx: number;
+  section: string;
+  text: string;
+  kind: TraceKind;
+  template?: {
+    score: number;
+    mandatory: boolean;
+    section: string;
+    text?: string;
+  };
+  fills?: string[];
+  evidence?: TraceEvidence;
+  gaps?: string[];
+}
+
+export interface TraceAttention {
+  type: 'mandatory_changed' | 'ai_unsupported' | 'gap';
+  idx: number;
+}
+
+export interface VersionTrace {
+  version_id: number;
+  version_number: number;
+  doc_title: string;
+  language: Language | null;
+  icf_type: IcfType | null;
+  sources: VersionSourceItem[];
+  template: {
+    name: string | null;
+    version: string | null;
+    applicable: boolean;
+  };
+  stats: Partial<Record<TraceKind | `ai_${TraceEvidence['level']}`, number>>;
+  attention: TraceAttention[];
+  paragraphs: TraceParagraph[];
+  sections: {
+    title: string;
+    first_idx: number;
+    counts: Partial<Record<TraceKind, number>>;
+  }[];
+  elapsed_ms: number;
+}
+
+/** "Where does this selected text come from?" */
+export interface Citation {
+  selection: string;
+  sources: VersionSourceItem[];
+  ai_fill: boolean;
+  template?: {
+    source: VersionSourceItem;
+    section: string;
+    mandatory: boolean;
+    score: number;
+    text: string;
+  };
+  /** omitted for verbatim template wording that the AI did not write */
+  sponsor?: TraceEvidence;
+  previous?: {
+    source: VersionSourceItem;
+    found: boolean;
+    score: number;
+    text: string;
+  };
+}
+
 export interface Version {
   id: number;
   doc_id: number;
@@ -206,6 +322,7 @@ export interface Version {
   comments_open: number;
   comments_approved: number;
   comments_declined: number;
+  sources?: VersionSourceItem[];
 }
 
 export interface ProjectDoc {
@@ -357,6 +474,26 @@ export interface GenerateRequest {
   sponsor_version_ids: number[];
   notes: string;
   title?: string;
+  /** child / adolescent: add stock illustrations from the library */
+  illustrations?: boolean;
+}
+
+/** Stock picture for children's / adolescent forms (built-in icon pool or uploaded). */
+export interface Illustration {
+  id: number;
+  name: string;
+  tags: string[];
+  credit: string;
+  builtin: boolean;
+}
+
+export interface IllustrateResult {
+  version: Version | null;
+  report: {
+    placed: { section: string; id: number; name: string; score: number }[];
+    sections: number;
+    without_image: string[];
+  };
 }
 
 export interface GenerateReport {
@@ -372,6 +509,7 @@ export type TaskStep =
   | 'reading'
   | 'filling'
   | 'comments'
+  | 'illustrations'
   | 'saving'
   | 'done';
 
@@ -818,6 +956,34 @@ export const api = {
     withToken(`/api/projects/${pid}/export${lang ? `?lang=${lang}` : ''}`),
   versionFileUrl: (vid: number) => withToken(`/api/versions/${vid}/file`),
   getVersionHtml: (vid: number) => req<VersionHtml>(`/versions/${vid}/html`),
+  getVersionTrace: (vid: number) => req<VersionTrace>(`/versions/${vid}/trace`),
+
+  // illustrations for children's forms
+  listIllustrations: () => req<Illustration[]>('/illustrations'),
+  illustrationTopics: () => req<string[]>('/illustrations/topics'),
+  illustrationFileUrl: (id: number) =>
+    withToken(`/api/illustrations/${id}/file`),
+  uploadIllustration: (
+    file: File,
+    meta: { name: string; tags: string[]; credit: string },
+  ) =>
+    req<Illustration>('/illustrations', {
+      method: 'POST',
+      body: form(file, {
+        name: meta.name,
+        tags: meta.tags.join(','),
+        credit: meta.credit,
+      }),
+    }),
+  deleteIllustration: (id: number) =>
+    req<void>(`/illustrations/${id}`, { method: 'DELETE' }),
+  illustrateVersion: (vid: number, maxImages = 8) =>
+    req<IllustrateResult>(
+      `/versions/${vid}/illustrate`,
+      json('POST', { max_images: maxImages }),
+    ),
+  cite: (vid: number, text: string) =>
+    req<Citation>(`/versions/${vid}/cite`, json('POST', { text })),
 
   // read-only ICF Interpreter
   interpreterContext: (icfId: number, versionId?: number) =>

@@ -105,9 +105,13 @@ def _write_version(conn_vid: int, edits: list[dict], note: str, source: str, use
         raise HTTPException(409, "No edit could be applied (the document changed?)")
     items = services.prepare_comments(v["filename"], data)
     with db.connect() as conn:
+        from ..engine import trace
+
+        base = trace.version_source(conn, v["id"], "edited from" if source == "edited" else source)
         vid = services.add_version(
-            conn, doc["id"], v["filename"], data, note, source, user["name"], items
-        )
+            conn, doc["id"], v["filename"], data, note, source, user["name"], items,
+            sources=[base] if base else None,
+        )  # fmt: skip
         services.carry_decisions(conn, v["id"], vid)
     return vid, result["skipped"]
 

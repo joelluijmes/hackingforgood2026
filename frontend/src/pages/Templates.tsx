@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { api, type Document } from '../api';
+import IllustrationLibrary from '../components/IllustrationLibrary';
 import UploadDialog from '../components/UploadDialog';
 import { formatDate, formatSize } from '../format';
 
@@ -230,6 +231,8 @@ export default function Templates() {
           </article>
         );
       })}
+
+      <IllustrationLibrary />
 
       {toast && (
         <button type="button" className="toast" onClick={() => setToast('')}>

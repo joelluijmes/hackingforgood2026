@@ -4,7 +4,15 @@ import { api, type ProjectDoc, type Stage, type Version } from '../api';
 import { docStatus } from '../docStatus';
 import { formatDate } from '../format';
 
-function VersionRow({ v, prev }: { v: Version; prev: Version | undefined }) {
+function VersionRow({
+  v,
+  prev,
+  isIcf,
+}: {
+  v: Version;
+  prev: Version | undefined;
+  isIcf: boolean;
+}) {
   const { t, i18n } = useTranslation();
   return (
     <li className="ver">
@@ -31,10 +39,26 @@ function VersionRow({ v, prev }: { v: Version; prev: Version | undefined }) {
         )}
       </div>
       {v.note && <div className="ver-note">{v.note}</div>}
+      {v.sources && v.sources.length > 0 && (
+        <div className="ver-sources muted small">
+          {t('trace.madeFrom')}{' '}
+          {v.sources
+            .map(
+              (s) =>
+                `${s.name}${s.version_number ? ` v${s.version_number}` : s.version ? ` ${s.version}` : ''}`,
+            )
+            .join(' · ')}
+        </div>
+      )}
       <div className="row ver-actions">
         <Link className="link" to={`/versions/${v.id}`}>
           {t('common.open')}
         </Link>
+        {isIcf && v.preview === 'docx' && (
+          <Link className="link" to={`/versions/${v.id}?tab=sources`}>
+            {t('trace.tab')}
+          </Link>
+        )}
         <a className="link" href={api.versionFileUrl(v.id)}>
           {t('common.download')}
         </a>
@@ -135,7 +159,12 @@ export default function DocCard({
         </div>
         <ol className="timeline">
           {doc.versions.map((v, i) => (
-            <VersionRow key={v.id} v={v} prev={doc.versions[i + 1]} />
+            <VersionRow
+              key={v.id}
+              v={v}
+              prev={doc.versions[i + 1]}
+              isIcf={doc.role === 'icf'}
+            />
           ))}
         </ol>
       </div>
