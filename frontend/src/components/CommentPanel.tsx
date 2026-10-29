@@ -178,15 +178,25 @@ export default function CommentPanel({
   const { t } = useTranslation();
   const [filter, setFilter] = useState<Filter>('all');
   const [error, setError] = useState('');
+  const [genOverride, setGenOverride] = useState<boolean | null>(null);
+
+  // Notes written by the app itself (gaps / filled placeholders) can bury the reviewers' comments.
+  const isGenerated = (c: ReviewComment) => c.author === 'ICF Studio';
+  const generatedCount = comments.filter(isGenerated).length;
+  const showGenerated = genOverride ?? generatedCount === comments.length;
+  const list = useMemo(
+    () => (showGenerated ? comments : comments.filter((c) => !isGenerated(c))),
+    [comments, showGenerated],
+  );
 
   const counts = useMemo(() => {
-    const n = { all: comments.length, open: 0, approved: 0, declined: 0 };
-    for (const c of comments) n[c.status]++;
+    const n = { all: list.length, open: 0, approved: 0, declined: 0 };
+    for (const c of list) n[c.status]++;
     return n;
-  }, [comments]);
+  }, [list]);
 
-  const roots = comments.filter((c) => c.parent_id === null);
-  const repliesOf = (id: number) => comments.filter((c) => c.parent_id === id);
+  const roots = list.filter((c) => c.parent_id === null);
+  const repliesOf = (id: number) => list.filter((c) => c.parent_id === id);
   const shown = roots.filter(
     (c) =>
       filter === 'all' ||
@@ -268,12 +278,12 @@ export default function CommentPanel({
       <div className="rv-panel-head">
         <h2>{t('comments.title')}</h2>
         <div className="muted">
-          {t('comments.reviewed', { done: reviewed, total: comments.length })}
+          {t('comments.reviewed', { done: reviewed, total: list.length })}
         </div>
         <div className="rv-progress">
           <div
             style={{
-              width: `${comments.length ? (reviewed / comments.length) * 100 : 0}%`,
+              width: `${list.length ? (reviewed / list.length) * 100 : 0}%`,
             }}
           />
         </div>
@@ -292,12 +302,22 @@ export default function CommentPanel({
             {t('comments.nextOpen')}
           </button>
         </div>
+        {generatedCount > 0 && generatedCount < comments.length && (
+          <label className="rv-gen">
+            <input
+              type="checkbox"
+              checked={showGenerated}
+              onChange={(e) => setGenOverride(e.target.checked)}
+            />
+            {t('comments.showGenerated', { count: generatedCount })}
+          </label>
+        )}
         {error && <div className="rv-err">{error}</div>}
       </div>
       <div className="rv-list">
         {shown.length === 0 && (
           <div className="empty">
-            {comments.length
+            {list.length
               ? t('comments.noneInFilter')
               : t('comments.noneInVersion')}
           </div>

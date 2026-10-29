@@ -275,7 +275,8 @@
     "translatedFrom": "Translated from {{language}}",
     "showTranslation": "Show translation",
     "showOriginal": "Show original",
-    "translationUnavailable": "Translation unavailable"
+    "translationUnavailable": "Translation unavailable",
+    "showGenerated": "Show generated notes ({{count}})"
   },
   "generate": {
     "title": "Generate ICF draft",

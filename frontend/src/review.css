@@ -368,3 +368,12 @@
     padding: 24px 20px;
   }
 }
+
+.rv-gen {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--neutral-700);
+}

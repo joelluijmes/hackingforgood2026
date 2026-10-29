@@ -275,7 +275,8 @@
     "translatedFrom": "Vertaald uit het {{language}}",
     "showTranslation": "Vertaling tonen",
     "showOriginal": "Origineel tonen",
-    "translationUnavailable": "Vertaling niet beschikbaar"
+    "translationUnavailable": "Vertaling niet beschikbaar",
+    "showGenerated": "Toon gegenereerde opmerkingen ({{count}})"
   },
   "generate": {
     "title": "ICF-ontwerp genereren",

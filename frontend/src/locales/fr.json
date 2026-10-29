@@ -275,7 +275,8 @@
     "translatedFrom": "Traduit de : {{language}}",
     "showTranslation": "Afficher la traduction",
     "showOriginal": "Afficher l'original",
-    "translationUnavailable": "Traduction indisponible"
+    "translationUnavailable": "Traduction indisponible",
+    "showGenerated": "Afficher les notes générées ({{count}})"
   },
   "generate": {
     "title": "Générer un projet d'ICF",
