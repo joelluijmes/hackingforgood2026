@@ -51,16 +51,20 @@ export default function DocCard({
   doc,
   onNewVersion,
   onDelete,
+  sourceTitle,
 }: {
   doc: ProjectDoc;
+  sourceTitle?: string;
   onNewVersion: () => void;
   onDelete: () => void;
 }) {
   const { t } = useTranslation();
+  const latest = doc.versions[0];
   return (
-    <article className="card doc">
-      <div className="doc-head">
-        <div>
+    <details className="card doc collapsible">
+      <summary>
+        <span className="chev" aria-hidden="true" />
+        <div className="doc-sum">
           <h3>{doc.title}</h3>
           <div className="chips">
             {doc.language && (
@@ -69,8 +73,25 @@ export default function DocCard({
             {doc.icf_type && (
               <span className="chip">{t(`icfTypes.${doc.icf_type}`)}</span>
             )}
+            {latest && (
+              <span className="muted small">
+                {t('project.latestSummary', {
+                  n: latest.number,
+                  source: t(`sources.${latest.source}`),
+                })}
+                {latest.comments_open > 0 &&
+                  ` · ${t('project.countOpen', { count: latest.comments_open })}`}
+              </span>
+            )}
           </div>
         </div>
+      </summary>
+      <div className="doc-body">
+        {doc.source_doc_id && (
+          <p className="muted small">
+            {t('project.translatedFrom', { title: sourceTitle ?? '…' })}
+          </p>
+        )}
         <div className="row">
           <button type="button" className="btn" onClick={onNewVersion}>
             {t('project.uploadNewVersion')}
@@ -79,12 +100,12 @@ export default function DocCard({
             {t('common.delete')}
           </button>
         </div>
+        <ol className="timeline">
+          {doc.versions.map((v, i) => (
+            <VersionRow key={v.id} v={v} prev={doc.versions[i + 1]} />
+          ))}
+        </ol>
       </div>
-      <ol className="timeline">
-        {doc.versions.map((v, i) => (
-          <VersionRow key={v.id} v={v} prev={doc.versions[i + 1]} />
-        ))}
-      </ol>
-    </article>
+    </details>
   );
 }

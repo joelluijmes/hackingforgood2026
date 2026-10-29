@@ -1100,3 +1100,193 @@ fieldset.inline {
 .kv dd {
   margin: 0;
 }
+
+/* ---- Project page v3: stage tracker, matrix, collapsibles, task banner ---- */
+.tracker {
+  margin-bottom: 24px;
+}
+.stage {
+  cursor: default;
+  background: var(--neutral-100);
+}
+.stage.done {
+  background: var(--primary-100);
+}
+.stage.done.clickable {
+  cursor: pointer;
+}
+.stage.todo {
+  opacity: 0.6;
+}
+.stage.current {
+  background: var(--primary-200);
+}
+.stage-panel {
+  margin-top: 12px;
+  padding: 16px;
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+}
+.stage-panel h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+.reqs {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+.req {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+.req-ico {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  flex: none;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+}
+.req.met .req-ico {
+  background: #2e9e5b;
+}
+.req.miss .req-ico {
+  background: var(--danger);
+}
+.req.hint .req-ico {
+  background: var(--neutral-500);
+}
+.req.hint {
+  color: var(--neutral-700);
+}
+.stage-actions {
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.matrix-wrap {
+  overflow-x: auto;
+}
+.matrix {
+  border-collapse: collapse;
+  width: 100%;
+}
+.matrix th,
+.matrix td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--neutral-200);
+  vertical-align: top;
+}
+.matrix thead th {
+  font-size: 13px;
+  color: var(--neutral-500);
+}
+.matrix .cell {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.small {
+  font-size: 13px;
+}
+
+details.collapsible > summary,
+details.section > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+.chev {
+  width: 8px;
+  height: 8px;
+  flex: none;
+  border-right: 2px solid var(--neutral-500);
+  border-bottom: 2px solid var(--neutral-500);
+  transform: rotate(-45deg);
+  transition: transform 150ms ease;
+  margin: 0 4px;
+}
+details[open] > summary > .chev {
+  transform: rotate(45deg);
+}
+details.section > summary h2 {
+  margin: 0;
+}
+details.section > .stack {
+  margin-top: 12px;
+}
+.doc-sum h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+.doc-body {
+  margin-top: 12px;
+  display: grid;
+  gap: 12px;
+}
+.tpl-line {
+  display: grid;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--primary-100);
+  border-radius: var(--radius-control);
+}
+
+.tasks {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.task-card {
+  padding: 16px;
+  border: 1px solid var(--primary-300);
+  background: var(--primary-100);
+  border-radius: var(--radius-card);
+  display: grid;
+  gap: 8px;
+}
+.task-card.done {
+  background: #eaf7ef;
+  border-color: #a8d9bb;
+}
+.task-card.failed {
+  background: var(--error-100);
+  border-color: var(--error-900);
+}
+.task-head,
+.task-step {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.bar {
+  height: 10px;
+  border-radius: var(--radius-pill);
+  background: var(--primary-200);
+  overflow: hidden;
+}
+.bar > i {
+  display: block;
+  height: 100%;
+  background: var(--primary-1000);
+  transition: width 400ms ease;
+}
+.task-card p {
+  margin: 0;
+}

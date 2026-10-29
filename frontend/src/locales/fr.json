@@ -104,7 +104,9 @@
     "countApproved_one": "{{count}} approuvé",
     "countApproved_other": "{{count}} approuvés",
     "countDeclined_one": "{{count}} refusé",
-    "countDeclined_other": "{{count}} refusés"
+    "countDeclined_other": "{{count}} refusés",
+    "latestSummary": "v{{n}} · {{source}}",
+    "translatedFrom": "Traduit de {{title}}"
   },
   "stages": {
     "ariaLabel": "Étape du projet",
@@ -296,7 +298,11 @@
     "flagged": "Signalés par un commentaire",
     "removedGuidance": "Paragraphes d'instructions supprimés",
     "aiUsed": "IA utilisée",
-    "openDraft": "Ouvrir le nouveau projet"
+    "openDraft": "Ouvrir le nouveau projet",
+    "templateLine": "Modèle : formulaire belge modèle - patients adultes, {{lang}} v{{version}}",
+    "latest": "(dernière)",
+    "otherVersion": "Utiliser une autre version",
+    "noTemplateForLang": "Aucun modèle disponible pour {{lang}}. Téléversez-en un dans Modèles d'abord."
   },
   "admin": {
     "title": "Admin",
@@ -312,5 +318,58 @@
     "storage": "Stockage",
     "counts": "Totaux",
     "countsLine": "{{projects}} projets, {{docs}} documents de projet, {{templates}} modèles, {{users}} utilisateurs"
+  },
+  "req": {
+    "has_sponsor_docs": "Téléversez au moins un document du promoteur",
+    "has_en_draft": "Générez une version anglaise du formulaire de consentement",
+    "draft_types_missing": "Pas encore de version pour : {{list}}",
+    "has_reviewed_version": "Téléversez la copie relue (avec commentaires) du PI",
+    "comments_decided_one": "Statuez sur tous les commentaires ouverts ({{count}} ouvert)",
+    "comments_decided_other": "Statuez sur tous les commentaires ouverts ({{count}} ouverts)",
+    "translations_complete": "Créez les versions NL et FR (manquant : {{list}})",
+    "ethics_reviewed": "Téléversez l'avis du comité d'éthique et statuez sur ses commentaires"
+  },
+  "tracker": {
+    "toMoveOn": "Pour passer de {{stage}}",
+    "finalTitle": "Dernière étape",
+    "nothingRequired": "Rien de plus à faire.",
+    "moveTo": "Passer à {{stage}}",
+    "backTo": "Retour à {{stage}}",
+    "skip": "Passer quand même...",
+    "skipTitle": "Passer à {{stage}} ?",
+    "skipText": "Ces conditions ne sont pas encore remplies :",
+    "skipConfirm": "Passer quand même",
+    "confirmBack": "Revenir à {{stage}} ?",
+    "goBack": "Revenir à cette étape",
+    "notMet": "Les conditions ne sont pas encore remplies."
+  },
+  "matrix": {
+    "title": "Langues",
+    "type": "Type de formulaire",
+    "generate": "Générer",
+    "translateFromEn": "Traduire depuis EN",
+    "translateBoth": "Traduire en NL + FR",
+    "needEn": "Générez d'abord le formulaire anglais",
+    "chip": "v{{n}} · {{source}}",
+    "note": "Les versions NL/FR sont construites à partir du modèle belge NL/FR ; le contenu du formulaire anglais remplit les champs."
+  },
+  "task": {
+    "titleGenerate": "Génération du formulaire {{lang}} ({{icf}})",
+    "titleTranslate": "Traduction en {{langs}}",
+    "hint": "Cela prend généralement 30 à 90 secondes. Vous pouvez continuer à travailler ; la page se met à jour à la fin.",
+    "ready": "Version prête - {{filled}} remplis, {{flagged}} signalés pour relecture",
+    "open": "Ouvrir",
+    "dismiss": "Fermer",
+    "failed": "Échec de la génération",
+    "lost": "Cette tâche est introuvable (le serveur a peut-être redémarré).",
+    "producing": "maintenant {{lang}}",
+    "step": {
+      "queued": "En attente de démarrage",
+      "reading": "Lecture du modèle",
+      "filling": "Remplissage des champs {{done}} sur {{total}}",
+      "comments": "Ajout des commentaires de relecture",
+      "saving": "Enregistrement du document",
+      "done": "Terminé"
+    }
   }
 }

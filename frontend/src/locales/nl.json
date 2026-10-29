@@ -104,7 +104,9 @@
     "countApproved_one": "{{count}} goedgekeurd",
     "countApproved_other": "{{count}} goedgekeurd",
     "countDeclined_one": "{{count}} afgewezen",
-    "countDeclined_other": "{{count}} afgewezen"
+    "countDeclined_other": "{{count}} afgewezen",
+    "latestSummary": "v{{n}} · {{source}}",
+    "translatedFrom": "Vertaald van {{title}}"
   },
   "stages": {
     "ariaLabel": "Fase van het project",
@@ -296,7 +298,11 @@
     "flagged": "Met opmerking gemarkeerd",
     "removedGuidance": "Verwijderde richtlijnalinea's",
     "aiUsed": "AI gebruikt",
-    "openDraft": "Nieuw ontwerp openen"
+    "openDraft": "Nieuw ontwerp openen",
+    "templateLine": "Sjabloon: Belgisch model-ICF - volwassen patiënten, {{lang}} v{{version}}",
+    "latest": "(laatste)",
+    "otherVersion": "Andere versie gebruiken",
+    "noTemplateForLang": "Geen sjabloon beschikbaar voor {{lang}}. Upload er eerst een onder Sjablonen."
   },
   "admin": {
     "title": "Beheer",
@@ -312,5 +318,58 @@
     "storage": "Opslag",
     "counts": "Aantallen",
     "countsLine": "{{projects}} projecten, {{docs}} projectdocumenten, {{templates}} sjablonen, {{users}} gebruikers"
+  },
+  "req": {
+    "has_sponsor_docs": "Upload minstens één sponsordocument",
+    "has_en_draft": "Genereer een Engelse ICF-versie",
+    "draft_types_missing": "Nog geen versie voor: {{list}}",
+    "has_reviewed_version": "Upload de nagekeken kopie (met opmerkingen) van de PI",
+    "comments_decided_one": "Beslis over alle openstaande opmerkingen ({{count}} open)",
+    "comments_decided_other": "Beslis over alle openstaande opmerkingen ({{count}} open)",
+    "translations_complete": "Maak NL- en FR-versies (ontbreekt: {{list}})",
+    "ethics_reviewed": "Upload de beoordeling van het ethisch comité en beslis over de opmerkingen"
+  },
+  "tracker": {
+    "toMoveOn": "Om door te gaan van {{stage}}",
+    "finalTitle": "Laatste fase",
+    "nothingRequired": "Niets meer nodig.",
+    "moveTo": "Ga naar {{stage}}",
+    "backTo": "Terug naar {{stage}}",
+    "skip": "Toch overslaan...",
+    "skipTitle": "Overslaan naar {{stage}}?",
+    "skipText": "Deze vereisten zijn nog niet vervuld:",
+    "skipConfirm": "Toch overslaan",
+    "confirmBack": "Terug naar {{stage}}?",
+    "goBack": "Terug naar deze fase",
+    "notMet": "De vereisten zijn nog niet vervuld."
+  },
+  "matrix": {
+    "title": "Talen",
+    "type": "ICF-type",
+    "generate": "Genereren",
+    "translateFromEn": "Vertalen vanuit EN",
+    "translateBoth": "Vertalen naar NL + FR",
+    "needEn": "Genereer eerst het Engelse toestemmingsformulier",
+    "chip": "v{{n}} · {{source}}",
+    "note": "NL/FR-versies worden opgebouwd uit het Belgische NL/FR-sjabloon; de inhoud van het Engelse ICF vult de plaatsaanduidingen."
+  },
+  "task": {
+    "titleGenerate": "{{lang}} ICF genereren ({{icf}})",
+    "titleTranslate": "Vertalen naar {{langs}}",
+    "hint": "Dit duurt meestal 30-90 seconden. Je kunt verder werken; de pagina wordt bijgewerkt als het klaar is.",
+    "ready": "Versie klaar - {{filled}} ingevuld, {{flagged}} gemarkeerd voor nazicht",
+    "open": "Openen",
+    "dismiss": "Sluiten",
+    "failed": "Genereren mislukt",
+    "lost": "Deze taak is niet meer terug te vinden (de server is mogelijk herstart).",
+    "producing": "nu {{lang}}",
+    "step": {
+      "queued": "Wacht om te starten",
+      "reading": "Sjabloon lezen",
+      "filling": "Plaatsaanduidingen invullen {{done}} van {{total}}",
+      "comments": "Opmerkingen toevoegen",
+      "saving": "Document opslaan",
+      "done": "Klaar"
+    }
   }
 }

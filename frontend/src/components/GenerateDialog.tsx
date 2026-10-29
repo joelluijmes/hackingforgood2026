@@ -1,37 +1,43 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
 import {
   api,
   type Document,
-  type GenerateReport,
   type IcfType,
   type Language,
   type ProjectDoc,
 } from '../api';
 import Dialog, { errMsg } from './Dialog';
 import { IcfOptions, LangOptions } from './Options';
+import type { TaskMeta } from './TaskBanner';
 
 interface Props {
   projectId: number;
   docs: ProjectDoc[];
+  preset?: { icf: IcfType; language: Language };
   onClose: () => void;
-  onDone: () => void;
+  onStarted: (m: TaskMeta) => void;
 }
+
+const newest = (a: Document, b: Document) =>
+  (b.released ?? '').localeCompare(a.released ?? '') ||
+  (b.version ?? '').localeCompare(a.version ?? '', undefined, {
+    numeric: true,
+  });
 
 export default function GenerateDialog({
   projectId,
   docs,
+  preset,
   onClose,
-  onDone,
+  onStarted,
 }: Props) {
   const { t } = useTranslation();
-  const tIcf = (a: string) => t(`icfTypes.${a}`);
   const sponsors = docs.filter((d) => d.role === 'sponsor' && d.versions[0]);
   const [templates, setTemplates] = useState<Document[] | null>(null);
   const [templateId, setTemplateId] = useState('');
-  const [icf, setIcf] = useState<IcfType>('adult');
-  const [language, setLanguage] = useState<Language>('en');
+  const [icf, setIcf] = useState<IcfType>(preset?.icf ?? 'adult');
+  const [language, setLanguage] = useState<Language>(preset?.language ?? 'en');
   const [picked, setPicked] = useState<Set<number>>(
     new Set(sponsors.map((d) => d.versions[0].id)),
   );
@@ -39,27 +45,21 @@ export default function GenerateDialog({
   const [title, setTitle] = useState('');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
-  const [result, setResult] = useState<{
-    doc: ProjectDoc;
-    report: GenerateReport;
-  } | null>(null);
 
   useEffect(() => {
     api
       .listDocuments('template')
       .then((t) => {
         setTemplates(t);
-        if (t[0]) setTemplateId(String(t[0].id));
       })
       .catch((e) => setError(errMsg(e)));
   }, []);
 
-  function pickTemplate(id: string) {
-    setTemplateId(id);
-    const tpl = templates?.find((x) => String(x.id) === id);
-    if (tpl?.audience) setIcf(tpl.audience);
-    if (tpl?.language) setLanguage(tpl.language);
-  }
+  const forLang = (templates ?? [])
+    .filter((x) => x.language === language)
+    .sort(newest);
+  const chosen = forLang.find((x) => String(x.id) === templateId) ?? forLang[0];
+  const isLatest = chosen === forLang[0];
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
@@ -67,72 +67,25 @@ export default function GenerateDialog({
     setError('');
     try {
       const r = await api.generate(projectId, {
-        template_id: Number(templateId),
+        template_id: isLatest ? undefined : chosen?.id,
         icf_type: icf,
         language,
         sponsor_version_ids: [...picked],
         notes,
         title: title || undefined,
       });
-      setResult(r);
-      onDone();
+      onStarted({
+        id: r.task_id,
+        kind: 'generate',
+        langs: language,
+        icfType: icf,
+      });
+      onClose();
+      return;
     } catch (err) {
       setError(errMsg(err));
     }
     setBusy(false);
-  }
-
-  if (result) {
-    const r = result.report;
-    return (
-      <Dialog
-        title={t('generate.doneTitle')}
-        onClose={onClose}
-        onSubmit={(e) => {
-          e.preventDefault();
-          onClose();
-        }}
-        submitLabel={t('common.close')}
-      >
-        <dl className="report">
-          <dt>{t('generate.placeholders')}</dt>
-          <dd>{r.placeholders_total}</dd>
-          <dt>{t('generate.filled')}</dt>
-          <dd>{r.filled}</dd>
-          <dt>{t('generate.flagged')}</dt>
-          <dd>{r.flagged}</dd>
-          <dt>{t('generate.removedGuidance')}</dt>
-          <dd>{r.removed_guidance_paragraphs}</dd>
-          <dt>{t('generate.aiUsed')}</dt>
-          <dd>{r.ai_used ? t('common.yes') : t('common.no')}</dd>
-        </dl>
-        {result.doc.versions[0] && (
-          <Link
-            className="btn primary"
-            to={`/versions/${result.doc.versions[0].id}`}
-          >
-            {t('generate.openDraft')}
-          </Link>
-        )}
-      </Dialog>
-    );
-  }
-
-  if (busy) {
-    return (
-      <Dialog
-        title={t('generate.title')}
-        onClose={() => {}}
-        onSubmit={(e) => e.preventDefault()}
-        submitLabel={t('generate.submit')}
-        busy
-      >
-        <div className="spinner-row">
-          <span className="spinner" aria-hidden="true" />
-          {t('generate.generating')}
-        </div>
-      </Dialog>
-    );
   }
 
   return (
@@ -141,30 +94,12 @@ export default function GenerateDialog({
       onClose={onClose}
       onSubmit={submit}
       submitLabel={t('generate.submit')}
-      disabled={!templateId}
+      disabled={!chosen}
+      busy={busy}
       error={error}
       wide
     >
       <div className="stack">
-        <label>
-          {t('generate.template')}
-          <select
-            value={templateId}
-            onChange={(e) => pickTemplate(e.target.value)}
-          >
-            {templates === null && <option>{t('common.loading')}</option>}
-            {templates?.length === 0 && (
-              <option>{t('generate.noTemplates')}</option>
-            )}
-            {templates?.map((tpl) => (
-              <option key={tpl.id} value={tpl.id}>
-                {tpl.name} ({tpl.language?.toUpperCase() ?? '?'}
-                {tpl.version ? `, v ${tpl.version}` : ''}
-                {tpl.audience ? `, ${tIcf(tpl.audience)}` : ''})
-              </option>
-            ))}
-          </select>
-        </label>
         <div className="grid2">
           <label>
             {t('generate.icfType')}
@@ -179,11 +114,50 @@ export default function GenerateDialog({
             {t('common.language')}
             <select
               value={language}
-              onChange={(e) => setLanguage(e.target.value as Language)}
+              onChange={(e) => {
+                setLanguage(e.target.value as Language);
+                setTemplateId('');
+              }}
             >
               <LangOptions />
             </select>
           </label>
+        </div>
+        <div className="tpl-line">
+          {templates === null ? (
+            <span className="muted">{t('common.loading')}</span>
+          ) : chosen ? (
+            <>
+              <span>
+                {t('generate.templateLine', {
+                  lang: t(`languages.${language}`),
+                  version: chosen.version ?? '?',
+                })}
+                {isLatest && ` ${t('generate.latest')}`}
+              </span>
+              {forLang.length > 1 && (
+                <label className="small">
+                  {t('generate.otherVersion')}
+                  <select
+                    value={chosen.id}
+                    onChange={(e) => setTemplateId(e.target.value)}
+                  >
+                    {forLang.map((x) => (
+                      <option key={x.id} value={x.id}>
+                        v{x.version ?? '?'} ({x.released ?? x.name})
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              )}
+            </>
+          ) : (
+            <p className="error">
+              {t('generate.noTemplateForLang', {
+                lang: t(`languages.${language}`),
+              })}
+            </p>
+          )}
         </div>
         <fieldset>
           <legend>{t('generate.sponsorDocs')}</legend>

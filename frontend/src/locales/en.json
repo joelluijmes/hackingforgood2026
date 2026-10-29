@@ -104,7 +104,9 @@
     "countApproved_one": "{{count}} approved",
     "countApproved_other": "{{count}} approved",
     "countDeclined_one": "{{count}} declined",
-    "countDeclined_other": "{{count}} declined"
+    "countDeclined_other": "{{count}} declined",
+    "latestSummary": "v{{n}} · {{source}}",
+    "translatedFrom": "Translated from {{title}}"
   },
   "stages": {
     "ariaLabel": "Project stage",
@@ -296,7 +298,11 @@
     "flagged": "Flagged with a comment",
     "removedGuidance": "Guidance paragraphs removed",
     "aiUsed": "AI used",
-    "openDraft": "Open the new draft"
+    "openDraft": "Open the new draft",
+    "templateLine": "Template: Belgian model ICF - adult patients, {{lang}} v{{version}}",
+    "latest": "(latest)",
+    "otherVersion": "Use another version",
+    "noTemplateForLang": "No template available for {{lang}}. Upload one under Templates first."
   },
   "admin": {
     "title": "Admin",
@@ -312,5 +318,58 @@
     "storage": "Storage",
     "counts": "Counts",
     "countsLine": "{{projects}} projects, {{docs}} project documents, {{templates}} templates, {{users}} users"
+  },
+  "req": {
+    "has_sponsor_docs": "Upload at least one sponsor document",
+    "has_en_draft": "Generate an English ICF draft",
+    "draft_types_missing": "No draft yet for: {{list}}",
+    "has_reviewed_version": "Upload the reviewed copy (with comments) from the PI",
+    "comments_decided_one": "Decide all open comments ({{count}} open)",
+    "comments_decided_other": "Decide all open comments ({{count}} open)",
+    "translations_complete": "Create NL and FR versions (missing: {{list}})",
+    "ethics_reviewed": "Upload the ethics committee review and decide its comments"
+  },
+  "tracker": {
+    "toMoveOn": "To move on from {{stage}}",
+    "finalTitle": "Final stage",
+    "nothingRequired": "Nothing more required.",
+    "moveTo": "Move to {{stage}}",
+    "backTo": "Back to {{stage}}",
+    "skip": "Skip anyway...",
+    "skipTitle": "Skip to {{stage}}?",
+    "skipText": "These requirements are not met yet:",
+    "skipConfirm": "Skip anyway",
+    "confirmBack": "Go back to {{stage}}?",
+    "goBack": "Go back to this stage",
+    "notMet": "Requirements are not met yet."
+  },
+  "matrix": {
+    "title": "Languages",
+    "type": "ICF type",
+    "generate": "Generate",
+    "translateFromEn": "Translate from EN",
+    "translateBoth": "Translate to NL + FR",
+    "needEn": "Generate the English ICF first",
+    "chip": "v{{n}} · {{source}}",
+    "note": "NL/FR versions are built from the Belgian NL/FR template; the English ICF content fills the placeholders."
+  },
+  "task": {
+    "titleGenerate": "Generating {{lang}} ICF ({{icf}})",
+    "titleTranslate": "Translating to {{langs}}",
+    "hint": "This usually takes 30-90 seconds. You can keep working; the page updates when it is done.",
+    "ready": "Draft ready - {{filled}} filled, {{flagged}} flagged for review",
+    "open": "Open",
+    "dismiss": "Dismiss",
+    "failed": "Generation failed",
+    "lost": "Lost track of this task (the server may have restarted).",
+    "producing": "now {{lang}}",
+    "step": {
+      "queued": "Waiting to start",
+      "reading": "Reading the template",
+      "filling": "Filling placeholders {{done}} of {{total}}",
+      "comments": "Adding review comments",
+      "saving": "Saving the document",
+      "done": "Done"
+    }
   }
 }
