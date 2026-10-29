@@ -692,3 +692,55 @@
 .rv-add .rv-actions {
   margin: 0;
 }
+
+.rv-status.staged {
+  color: var(--accent, #b45309);
+  font-weight: 600;
+}
+.rv-card.staged {
+  outline: 2px dashed var(--accent, #b45309);
+  outline-offset: -2px;
+}
+.rv-tray {
+  position: sticky;
+  bottom: 0;
+  background: var(--surface, #fff);
+  border-top: 2px solid var(--accent, #b45309);
+  padding: 8px 12px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.12);
+  z-index: 5;
+}
+.rv-tray-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+.rv-tray-bar strong {
+  flex: 1 1 100%;
+}
+.rv-tray-list {
+  list-style: none;
+  margin: 0 0 8px;
+  padding: 0;
+  max-height: 200px;
+  overflow: auto;
+}
+.rv-tray-list li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--border, #ddd);
+}
+.rv-tray-what {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  font-size: 0.85em;
+}
+.rv-tray-what input {
+  width: 100%;
+}

@@ -576,6 +576,19 @@ export const api = {
       json('POST', { status, note }),
     ),
 
+  commentBatch: (
+    vid: number,
+    b: {
+      decisions: { comment_id: number; status: CommentStatus; note?: string }[];
+      replacements: { comment_id: number; text: string }[];
+    },
+  ) =>
+    req<{
+      version: Version | null;
+      decided: number;
+      skipped: { comment_id: number; why: string }[];
+    }>(`/versions/${vid}/comments/batch`, json('POST', b)),
+
   // diff + generate + ai
   diff: (from: number, to: number, lang?: Lang) =>
     req<DiffResult>(
