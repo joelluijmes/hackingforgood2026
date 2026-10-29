@@ -371,8 +371,8 @@
     "resetLocal": " en alle lokaal opgeslagen bestanden",
     "resetSamplesNote": " Daarna worden de voorbeelden uit de bucket opnieuw geïmporteerd.",
     "resetExplain": "Zet de app terug naar de beginstatus: verwijdert alle projecten, documenten, versies en de sjabloonbibliotheek. De demogebruiker blijft. Gebruik 'Resetten + voorbeelden importeren' voor de status direct na de eerste import.",
-    "clearProjects": "Projecten wissen (sjablonen behouden)",
-    "clearConfirm": "Dit verwijdert ALLE projecten, documenten, versies, opmerkingen, taken en gegenereerde bestanden. De sjabloonbibliotheek en geïmporteerde voorbeelden blijven staan, opnieuw importeren is niet nodig. Bestanden in de GCS-bucket worden NIET verwijderd."
+    "clearProjects": "Gegenereerde documenten wissen",
+    "clearConfirm": "Dit verwijdert alle door de app gegenereerde ICF-versies (concepten, AI-bewerkingen, vertalingen) met hun opmerkingen. Projecten, sponsordocumenten, geüploade en gereviewde bestanden en de sjabloonbibliotheek blijven. Projecten zonder concepten gaan terug naar de fase Opstellen. Bestanden in de GCS-bucket worden NIET verwijderd."
   },
   "req": {
     "has_sponsor_docs": "Upload minstens één sponsordocument",

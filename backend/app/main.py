@@ -60,20 +60,11 @@ def admin_status() -> dict:
 
 _reset_lock = threading.Lock()
 _KEEP_TABLES = {"users", "sessions"}
-# keep_library=true: only these (app-generated) tables are cleared, templates/samples stay
-_PROJECT_TABLES = (
-    "changes",
-    "comment_translations",
-    "comments",
-    "versions",
-    "project_docs",
-    "projects",
-)
 
 
 @app.post("/api/admin/reset")
 def admin_reset(
-    request: Request, user: auth.User, import_samples: bool = False, keep_library: bool = False
+    request: Request, user: auth.User, import_samples: bool = False, generated_only: bool = False
 ) -> dict:
     """Wipe all app data (keeps demo user, the caller and their session); never touches GCS."""
     if not _reset_lock.acquire(blocking=False):
@@ -83,8 +74,8 @@ def admin_reset(
             raise HTTPException(409, "Generate/translate tasks are still running; wait and retry")
         if import_samples and not seed.BUCKET_ZIP.exists():
             raise HTTPException(404, "data/bucket.zip not found")
-        if keep_library:
-            return _clear_projects()
+        if generated_only:
+            return _clear_generated()
         header = request.headers.get("authorization", "")
         token = header[7:].strip()
         with db.connect() as conn:
@@ -125,23 +116,61 @@ def admin_reset(
         _reset_lock.release()
 
 
-def _clear_projects() -> dict:
-    """Delete projects, versions, comments and generated files; keep the template library."""
+_GENERATED = ("generated", "edited", "propagated")
+
+
+def _clear_generated() -> dict:
+    """Remove app-generated versions (and docs left empty); keep projects, sponsor docs, uploads."""
     with db.connect() as conn:
-        keys = [r["stored_name"] for r in conn.execute("SELECT stored_name FROM versions")]
-        for t in _PROJECT_TABLES:
-            conn.execute(f'DELETE FROM "{t}"')  # noqa: S608
-            conn.execute("DELETE FROM sqlite_sequence WHERE name = ?", (t,))
+        gen = conn.execute(
+            "SELECT id, doc_id, stored_name FROM versions"  # noqa: S608
+            f" WHERE source IN ({','.join('?' * len(_GENERATED))})",
+            _GENERATED,
+        ).fetchall()
+        ids = [r["id"] for r in gen]
+        marks = ",".join("?" * len(ids))
+        if ids:
+            conn.execute(
+                f"DELETE FROM comment_translations WHERE comment_id IN "  # noqa: S608
+                f"(SELECT id FROM comments WHERE version_id IN ({marks}))",
+                ids,
+            )
+            conn.execute(f"DELETE FROM comments WHERE version_id IN ({marks})", ids)  # noqa: S608
+            conn.execute(f"DELETE FROM versions WHERE id IN ({marks})", ids)  # noqa: S608
+            conn.execute(f"DELETE FROM changes WHERE result_version_id IN ({marks})", ids)  # noqa: S608
+        # docs without any version left, and approvals pointing at deleted versions
+        conn.execute(
+            "DELETE FROM project_docs WHERE id NOT IN (SELECT DISTINCT doc_id FROM versions)"
+            " AND role = 'icf'"
+        )
+        conn.execute(
+            "UPDATE project_docs SET approved_version_id = NULL, approved_by = NULL,"
+            " approved_at = NULL WHERE approved_version_id IS NOT NULL"
+            " AND approved_version_id NOT IN (SELECT id FROM versions)"
+        )
+        # stages past drafting that lost all their ICF docs fall back
+        conn.execute(
+            "UPDATE projects SET stage = CASE WHEN EXISTS (SELECT 1 FROM project_docs d"
+            " WHERE d.project_id = projects.id AND d.role = 'sponsor') THEN 'drafting'"
+            " ELSE 'intake' END WHERE stage IN ('pi_review', 'ethics_review', 'approved')"
+            " AND NOT EXISTS (SELECT 1 FROM project_docs d WHERE d.project_id = projects.id"
+            " AND d.role = 'icf')"
+        )
     tasks.clear()
     removed = 0
     if os.environ.get("STORAGE_BACKEND", "local").strip().lower() == "local":
-        for key in keys:
+        for r in gen:
             try:
-                storage.delete(key)
+                storage.delete(r["stored_name"])
                 removed += 1
             except Exception:  # noqa: BLE001, S110
                 pass
-    return {"reset": True, "local_files_removed": removed, "seed": None}
+    return {
+        "reset": True,
+        "local_files_removed": removed,
+        "seed": None,
+        "versions_removed": len(ids),
+    }
 
 
 for r in (

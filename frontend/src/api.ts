@@ -626,13 +626,13 @@ export const api = {
     }),
   progress: (projectId: number) =>
     req<ProjectProgress>(`/projects/${projectId}/progress`),
-  adminReset: (importSamples: boolean, keepLibrary = false) =>
+  adminReset: (importSamples: boolean, generatedOnly = false) =>
     req<{
       reset: boolean;
       local_files_removed: number;
       seed: SeedResult | null;
     }>(
-      `/admin/reset?import_samples=${importSamples}&keep_library=${keepLibrary}`,
+      `/admin/reset?import_samples=${importSamples}&generated_only=${generatedOnly}`,
       {
         method: 'POST',
       },

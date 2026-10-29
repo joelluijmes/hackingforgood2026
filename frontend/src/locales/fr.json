@@ -371,8 +371,8 @@
     "resetLocal": " et tous les fichiers stockés localement",
     "resetSamplesNote": " Ensuite, les exemples du bucket sont réimportés.",
     "resetExplain": "Remet l'application à l'état initial : supprime tous les projets, documents, versions et la bibliothèque de modèles. L'utilisateur démo est conservé. Utilisez « Réinitialiser + importer les exemples » pour l'état juste après le premier import.",
-    "clearProjects": "Effacer les projets (garder les modèles)",
-    "clearConfirm": "Ceci supprime TOUS les projets, documents, versions, commentaires, tâches et fichiers générés. La bibliothèque de modèles et les exemples importés restent, aucune réimportation n'est nécessaire. Les fichiers du bucket GCS ne sont PAS supprimés."
+    "clearProjects": "Effacer les documents générés",
+    "clearConfirm": "Ceci supprime toutes les versions d'ICF générées par l'application (brouillons, modifications IA, traductions) avec leurs commentaires. Les projets, documents du promoteur, fichiers téléversés et relus, et la bibliothèque de modèles restent. Les projets sans brouillon reviennent à l'étape de rédaction. Les fichiers du bucket GCS ne sont PAS supprimés."
   },
   "req": {
     "has_sponsor_docs": "Téléversez au moins un document du promoteur",

@@ -37,9 +37,9 @@ export default function Admin() {
     setSeeding(false);
   }
 
-  async function reset(withSamples: boolean, keepLibrary = false) {
+  async function reset(withSamples: boolean, generatedOnly = false) {
     const local = status?.storage.backend === 'local';
-    const msg = keepLibrary
+    const msg = generatedOnly
       ? t('admin.clearConfirm')
       : t('admin.resetConfirm', {
           local: local ? t('admin.resetLocal') : '',
@@ -49,7 +49,7 @@ export default function Admin() {
     setResetting(true);
     setResetError('');
     try {
-      const r = await api.adminReset(withSamples, keepLibrary);
+      const r = await api.adminReset(withSamples, generatedOnly);
       setResult(r.seed);
       await load();
     } catch (e) {

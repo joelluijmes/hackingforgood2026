@@ -371,8 +371,8 @@
     "resetLocal": " and all locally stored files",
     "resetSamplesNote": " Afterwards the bucket samples are imported again.",
     "resetExplain": "Resets the app to its initial state: removes all projects, documents, versions and the template library. The demo user stays. Use 'Reset + import samples' to get the state right after the first sample import.",
-    "clearProjects": "Clear projects (keep templates)",
-    "clearConfirm": "This deletes ALL projects, documents, versions, comments, tasks and generated files. The template library and imported samples stay, so no re-import is needed. Files in the GCS bucket are NOT deleted."
+    "clearProjects": "Clear generated documents",
+    "clearConfirm": "This deletes all app-generated ICF versions (drafts, AI edits, translations) with their comments. Projects, sponsor documents, uploaded and reviewed files, and the template library stay. Projects whose drafts disappear fall back to the Drafting stage. Files in the GCS bucket are NOT deleted."
   },
   "req": {
     "has_sponsor_docs": "Upload at least one sponsor document",
