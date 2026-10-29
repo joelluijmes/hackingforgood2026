@@ -323,7 +323,15 @@
     "aiOff": "Désactivée",
     "storage": "Stockage",
     "counts": "Totaux",
-    "countsLine": "{{projects}} projets, {{docs}} documents de projet, {{templates}} modèles, {{users}} utilisateurs"
+    "countsLine": "{{projects}} projets, {{docs}} documents de projet, {{templates}} modèles, {{users}} utilisateurs",
+    "resetTitle": "Réinitialiser",
+    "resetEmpty": "Réinitialiser à vide",
+    "resetSamples": "Réinitialiser + importer les exemples",
+    "resetting": "Réinitialisation...",
+    "resetConfirm": "Ceci supprime DÉFINITIVEMENT TOUS les projets, documents de projet, versions, commentaires, tâches et la bibliothèque de modèles de cette application{{local}}. L'utilisateur démo et votre connexion sont conservés. Les fichiers du bucket GCS ne sont PAS supprimés.{{samples}}",
+    "resetLocal": " et tous les fichiers stockés localement",
+    "resetSamplesNote": " Ensuite, les exemples du bucket sont réimportés.",
+    "resetExplain": "Remet l'application à l'état initial : supprime tous les projets, documents, versions et la bibliothèque de modèles. L'utilisateur démo est conservé. Utilisez « Réinitialiser + importer les exemples » pour l'état juste après le premier import."
   },
   "req": {
     "has_sponsor_docs": "Téléversez au moins un document du promoteur",

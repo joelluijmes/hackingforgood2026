@@ -577,6 +577,12 @@ export const api = {
   task: (id: string) => req<Task>(`/tasks/${id}`),
   progress: (projectId: number) =>
     req<ProjectProgress>(`/projects/${projectId}/progress`),
+  adminReset: (importSamples: boolean) =>
+    req<{
+      reset: boolean;
+      local_files_removed: number;
+      seed: SeedResult | null;
+    }>(`/admin/reset?import_samples=${importSamples}`, { method: 'POST' }),
   adminStatus: () => req<AdminStatus>('/admin/status'),
   aiStatus: () => req<AiStatus>('/ai/status'),
 
