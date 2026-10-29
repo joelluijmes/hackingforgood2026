@@ -75,3 +75,30 @@ Frontend client mirroring this file: `frontend/src/api.ts` (single source of typ
 
 ## Frontend routes
 `/login` · `/` projects · `/projects/:id` · `/templates` · `/templates/:id` (template colour viewer) · `/versions/:vid` (document + comments review) · `/diff?from=<vid>&to=<vid>`
+
+---
+
+# v3 additions: project progress gates, language matrix, background tasks, translation
+
+## ProjectDoc
+- `ProjectDoc` gains `source_doc_id: number | null` (a translation points at the English ICF doc it was made from).
+
+## Background tasks (generate and translate are slow: they return immediately)
+- `POST /api/projects/{id}/generate` JSON `{icf_type, language, sponsor_version_ids, notes, title?, template_id?}` -> **202** `{task_id}`.
+  - `template_id` is optional. Default = the latest template (by released date, then version) whose language == `language` (audience adult). If `template_id` is given and its language != `language` -> 422 `{detail:"template_language_mismatch"}`. No template for that language -> 422 `{detail:"no_template_for_language"}`.
+  - The AI must write the filled placeholder text in `language` (sponsor documents may be in another language).
+- `POST /api/project-documents/{doc_id}/translate` JSON `{target_languages: ("nl"|"fr")[], version_id?: number}` -> **202** `{task_id}`. Source = given version (default: latest version of the doc). For each target language: pick the latest template of that language, call generate with `sponsor_text` = text of the source version and notes instructing to fill the placeholders by translating the source content into the target language (mandatory template text stays as the template has it = "mixed translation"). Result per language: if a doc with `source_doc_id == doc_id` and that language exists, add a NEW VERSION to it (source `generated`, note `Translated from EN v<n>`), else create a new ProjectDoc (role icf, same icf_type, language = target, title = source title with the language suffix replaced, e.g. `ICF adult (NL)`, `source_doc_id` = doc_id).
+- `GET /api/tasks/{task_id}` -> `Task`
+  - `Task = {id: string, kind: "generate"|"translate", status: "running"|"done"|"failed", step: "queued"|"reading"|"filling"|"comments"|"saving"|"done", done: number, total: number, progress: number /*0..1 overall*/, language: Lang|null /*language currently being produced, for translate*/, elapsed_s: number, result: {docs: ProjectDoc[], reports: GenerateReport[]} | null, error: string | null}`
+  - `step`/`done`/`total` describe the current step (e.g. step `filling`, done 12, total 40). `progress` weights: reading 0-0.05, filling 0.05-0.90, comments 0.90-0.97, saving 0.97-1; for translate with several languages the range is split evenly per language.
+  - Tasks live in memory (dict + lock); unknown id -> 404. The work runs in a background thread; failures set `status:"failed"` and `error`.
+- `engine.generate.generate_icf(...)` gets an optional `progress: Callable[[str, int, int], None] | None = None` called as `progress(step, done, total)`.
+
+## Project progress, stage gates and the language matrix
+- `GET /api/projects/{id}/progress` -> `ProjectProgress`
+  `{stage: Stage, next_stage: Stage|null, stages: StageProgress[], matrix: MatrixRow[]}`
+  - `StageProgress = {key: Stage, state: "done"|"current"|"todo", can_leave: boolean, requirements: Requirement[]}` (requirements = what must be true to LEAVE this stage to the next one; `can_leave` = all blocking requirements met; for `approved` requirements = [] and can_leave true)
+  - `Requirement = {key: string, met: boolean, blocking: boolean, detail: string|null}`; keys (frontend translates them): `has_sponsor_docs` (intake, blocking), `has_en_draft` (drafting, blocking), `draft_types_missing` (drafting, non-blocking, detail = comma separated icf types that have a sponsor document but no EN draft), `has_reviewed_version` (pi_review, blocking: at least one EN ICF doc has a version with source `reviewed`), `comments_decided` (pi_review, blocking: no open comments on the latest version of any EN ICF doc; detail = number of open), `translations_complete` (translation, blocking: every EN ICF doc has an NL and an FR translation doc; detail = missing like `adult:fr`), `ethics_reviewed` (ethics_review, blocking: a reviewed version exists on a translated doc and no open comments on the latest versions of translated docs).
+  - `state`: stages before the current stage = `done`, the current = `current`, others `todo`.
+  - `MatrixRow = {icf_type: IcfType, languages: {en: MatrixCell|null, nl: MatrixCell|null, fr: MatrixCell|null}}`; `MatrixCell = {doc_id, version_id, version_number, source: VersionSource, comments_open: number}` (latest version of the doc of that type+language; NL/FR cells come from docs with `source_doc_id` or matching icf_type+language). Rows = icf types present among the project's sponsor docs and ICF docs; if none, a single `adult` row.
+- `PATCH /api/projects/{id}` `{..., stage?, force?: boolean}`: moving FORWARD (to a later stage than the current one) when the current stage's blocking requirements are unmet -> **409** `{detail:"requirements_not_met", missing:[requirement keys]}` unless `force` is true; moving backward is always allowed.

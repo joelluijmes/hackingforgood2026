@@ -121,6 +121,7 @@ export interface ProjectDoc {
   icf_type: IcfType | null;
   language: Language | null;
   created_at: string;
+  source_doc_id: number | null;
   versions: Version[];
 }
 
@@ -176,7 +177,7 @@ export interface DiffResult {
 }
 
 export interface GenerateRequest {
-  template_id: number;
+  template_id?: number;
   icf_type: IcfType;
   language: Language;
   sponsor_version_ids: number[];
@@ -190,6 +191,62 @@ export interface GenerateReport {
   flagged: number;
   removed_guidance_paragraphs: number;
   ai_used: boolean;
+}
+
+export type TaskStep =
+  | 'queued'
+  | 'reading'
+  | 'filling'
+  | 'comments'
+  | 'saving'
+  | 'done';
+
+export interface Task {
+  id: string;
+  kind: 'generate' | 'translate';
+  status: 'running' | 'done' | 'failed';
+  step: TaskStep;
+  done: number;
+  total: number;
+  progress: number;
+  language: Lang | null;
+  elapsed_s: number;
+  result: { docs: ProjectDoc[]; reports: GenerateReport[] } | null;
+  error: string | null;
+}
+
+export interface Requirement {
+  key: string;
+  met: boolean;
+  blocking: boolean;
+  detail: string | null;
+}
+
+export interface StageProgress {
+  key: Stage;
+  state: 'done' | 'current' | 'todo';
+  can_leave: boolean;
+  requirements: Requirement[];
+}
+
+export interface MatrixCell {
+  doc_id: number;
+  version_id: number;
+  version_number: number;
+  source: VersionSource;
+  comments_open: number;
+}
+
+export interface MatrixRow {
+  icf_type: IcfType;
+  languages: Record<Lang, MatrixCell | null>;
+}
+
+export interface ProjectProgress {
+  stage: Stage;
+  next_stage: Stage | null;
+  stages: StageProgress[];
+  matrix: MatrixRow[];
 }
 
 export interface AiStatus {
@@ -295,9 +352,26 @@ async function raw(path: string, init?: RequestInit): Promise<Response> {
   return res;
 }
 
+/** Error carrying the HTTP status and the parsed JSON body (e.g. 409 requirements_not_met). */
+export class ApiError extends Error {
+  status: number;
+  body: unknown;
+  constructor(message: string, status: number, body: unknown) {
+    super(message);
+    this.status = status;
+    this.body = body;
+  }
+}
+
 async function req<T>(path: string, init?: RequestInit): Promise<T> {
   const res = await raw(path, init);
-  if (!res.ok) throw new Error(await errorMessage(res));
+  if (!res.ok) {
+    const body = await res
+      .clone()
+      .json()
+      .catch(() => null);
+    throw new ApiError(await errorMessage(res), res.status, body);
+  }
   if (res.status === 204) return undefined as T;
   return (await res.json()) as T;
 }
@@ -374,7 +448,13 @@ export const api = {
     req<Project>('/projects', json('POST', b)),
   updateProject: (
     id: number,
-    b: { name?: string; study?: string; description?: string; stage?: Stage },
+    b: {
+      name?: string;
+      study?: string;
+      description?: string;
+      stage?: Stage;
+      force?: boolean;
+    },
   ) => req<Project>(`/projects/${id}`, json('PATCH', b)),
   deleteProject: (id: number) =>
     req<void>(`/projects/${id}`, { method: 'DELETE' }),
@@ -435,10 +515,21 @@ export const api = {
       `/diff?from=${from}&to=${to}${lang ? `&lang=${lang}` : ''}`,
     ),
   generate: (projectId: number, b: GenerateRequest) =>
-    req<{ doc: ProjectDoc; report: GenerateReport }>(
+    req<{ task_id: string }>(
       `/projects/${projectId}/generate`,
       json('POST', b),
     ),
+  translate: (
+    docId: number,
+    b: { target_languages: ('nl' | 'fr')[]; version_id?: number },
+  ) =>
+    req<{ task_id: string }>(
+      `/project-documents/${docId}/translate`,
+      json('POST', b),
+    ),
+  task: (id: string) => req<Task>(`/tasks/${id}`),
+  progress: (projectId: number) =>
+    req<ProjectProgress>(`/projects/${projectId}/progress`),
   adminStatus: () => req<AdminStatus>('/admin/status'),
   aiStatus: () => req<AiStatus>('/ai/status'),
 
