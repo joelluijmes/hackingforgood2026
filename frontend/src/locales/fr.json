@@ -424,7 +424,16 @@
     "editText": "Modifier le texte",
     "showChanges": "Afficher les changements",
     "paragraph": "Paragraphe",
-    "mandatory": "Modifie un texte obligatoire du modèle ({{score}} % de correspondance avec le modèle national). Justifiez cet écart auprès du Comité d'éthique."
+    "mandatory": "Modifie un texte obligatoire du modèle ({{score}} % de correspondance avec le modèle national). Justifiez cet écart auprès du Comité d'éthique.",
+    "pendingTitle_one": "{{count}} modification appliquée pas encore reportée sur les autres formulaires",
+    "pendingTitle_other": "{{count}} modifications appliquées pas encore reportées sur les autres formulaires",
+    "selectAll": "Tout sélectionner",
+    "noInstruction": "(modification)",
+    "editCount_one": "{{count}} changement",
+    "editCount_other": "{{count}} changements",
+    "propagateSel_one": "Propager {{count}} modification",
+    "propagateSel_other": "Propager {{count}} modifications ensemble",
+    "skipPropagation": "Ignorer"
   },
   "propagate": {
     "title": "Appliquer cette modification aux autres formulaires",

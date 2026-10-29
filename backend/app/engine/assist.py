@@ -112,7 +112,8 @@ def propagate(
                  for e in change["edits"]]  # fmt: skip
     lang = LANG_NAMES.get(language or "en", "English")
     prompt = (
-        "A change was approved in one version of an ICF. Apply the SAME change to another "
+        "One or more changes were approved in one version of an ICF (a list of edits, in order). "
+        "Apply the SAME changes together to another "
         "version of the same ICF written for a different audience and/or language.\n\n"
         f"SOURCE: audience {change['icf_type']}, language "
         f"{LANG_NAMES.get(change['language'] or 'en')}. Request: {change['instruction']}\n"

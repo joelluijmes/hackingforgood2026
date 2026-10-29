@@ -236,29 +236,21 @@ def get_change(cid: int) -> dict:
         return d
 
 
-@router.post("/changes/{cid}/propagate/preview")
-def propagate_preview(cid: int) -> list[dict]:
+def _preview_targets(change: dict, project_id: int, doc_id: int) -> list[dict]:
     from ..engine import assist, edit
 
     _require_ai()
     with db.connect() as conn:
-        c = _change_row(conn, cid)
         rows = conn.execute(
             "SELECT * FROM project_docs WHERE project_id = ? AND role = 'icf' AND id != ?"
             " ORDER BY id",
-            (c["project_id"], c["doc_id"]),
+            (project_id, doc_id),
         ).fetchall()
         targets = []
         for d in rows:
             v = _latest_version(conn, d["id"])
             if v and v["filename"].lower().endswith(".docx"):
                 targets.append((services.doc_dict(conn, d, with_versions=False), v))
-    change = {
-        "instruction": c["instruction"],
-        "icf_type": c["icf_type"],
-        "language": c["language"],
-        "edits": json.loads(c["edits_json"]),
-    }
 
     def one(target):
         doc, v = target
@@ -281,6 +273,51 @@ def propagate_preview(cid: int) -> list[dict]:
         return list(pool.map(one, targets))
 
 
+def _combined_change(conn, cids: list[int]):
+    """Merge several changes of ONE doc (oldest first) into one change for the AI."""
+    rows = [_change_row(conn, c) for c in dict.fromkeys(cids)]
+    if not rows:
+        raise HTTPException(422, "No changes selected")
+    if len({r["doc_id"] for r in rows}) != 1:
+        raise HTTPException(422, "All changes must belong to the same form")
+    rows.sort(key=lambda r: r["id"])
+    first = rows[0]
+    edits = [e for r in rows for e in json.loads(r["edits_json"])]
+    instr = "; ".join(r["instruction"] for r in rows if r["instruction"])
+    change = {
+        "instruction": instr,
+        "icf_type": first["icf_type"],
+        "language": first["language"],
+        "edits": edits,
+    }
+    return rows, change
+
+
+@router.post("/changes/{cid}/propagate/preview")
+def propagate_preview(cid: int) -> list[dict]:
+    with db.connect() as conn:
+        c = _change_row(conn, cid)
+    change = {
+        "instruction": c["instruction"],
+        "icf_type": c["icf_type"],
+        "language": c["language"],
+        "edits": json.loads(c["edits_json"]),
+    }
+    return _preview_targets(change, c["project_id"], c["doc_id"])
+
+
+class BatchIn(BaseModel):
+    change_ids: list[int]
+
+
+@router.post("/changes/propagate/preview")
+def propagate_preview_batch(body: BatchIn) -> list[dict]:
+    """One AI call per target form for all selected changes combined."""
+    with db.connect() as conn:
+        rows, change = _combined_change(conn, body.change_ids)
+    return _preview_targets(change, rows[0]["project_id"], rows[0]["doc_id"])
+
+
 class TargetIn(BaseModel):
     version_id: int
     edits: list[EditIn]
@@ -290,16 +327,18 @@ class PropagateIn(BaseModel):
     targets: list[TargetIn]
 
 
-@router.post("/changes/{cid}/propagate/apply")
-def propagate_apply(cid: int, body: PropagateIn, user: User) -> list[dict]:
+class PropagateBatchIn(PropagateIn):
+    change_ids: list[int]
+
+
+def _propagate_write(rows, instruction: str, targets: list[TargetIn], user) -> list[dict]:
     with db.connect() as conn:
-        c = _change_row(conn, cid)
-        src = _version_row(conn, c["result_version_id"])
+        src = _version_row(conn, rows[-1]["result_version_id"])
         src_doc = _doc_row(conn, src["doc_id"])
     label = f"{(src_doc['language'] or '').upper()} {src_doc['icf_type'] or ''} v{src['number']}"
-    note = f"Propagated from {label.strip()}: {c['instruction'][:160]}".rstrip(": ")
+    note = f"Propagated from {label.strip()}: {instruction[:160]}".rstrip(": ")
     out = []
-    for t in body.targets:
+    for t in targets:
         if not t.edits:
             continue
         try:
@@ -315,7 +354,58 @@ def propagate_apply(cid: int, body: PropagateIn, user: User) -> list[dict]:
                 "version": services.version_dict(conn, _version_row(conn, vid)),
                 "skipped": skipped,
             })  # fmt: skip
+    if any("version" in o for o in out):
+        with db.connect() as conn:
+            conn.execute(
+                f"UPDATE changes SET propagated_at = ? WHERE id IN ({','.join('?' * len(rows))})",  # noqa: S608
+                (db.now_iso(), *[r["id"] for r in rows]),
+            )
     return out
+
+
+@router.post("/changes/{cid}/propagate/apply")
+def propagate_apply(cid: int, body: PropagateIn, user: User) -> list[dict]:
+    with db.connect() as conn:
+        c = _change_row(conn, cid)
+    return _propagate_write([c], c["instruction"], body.targets, user)
+
+
+@router.post("/changes/propagate/apply")
+def propagate_apply_batch(body: PropagateBatchIn, user: User) -> list[dict]:
+    """Apply the combined edits once per target form (one new version each)."""
+    with db.connect() as conn:
+        rows, change = _combined_change(conn, body.change_ids)
+    return _propagate_write(rows, change["instruction"], body.targets, user)
+
+
+@router.get("/versions/{vid}/changes")
+def pending_changes(vid: int) -> list[dict]:
+    """Applied edits of this form (any version) not yet propagated, oldest first."""
+    with db.connect() as conn:
+        v = _version_row(conn, vid)
+        rows = conn.execute(
+            "SELECT * FROM changes WHERE doc_id = ? AND propagated_at IS NULL ORDER BY id",
+            (v["doc_id"],),
+        ).fetchall()
+        return [
+            {
+                "id": r["id"],
+                "instruction": r["instruction"],
+                "edit_count": len(json.loads(r["edits_json"])),
+                "result_version_id": r["result_version_id"],
+                "created_by": r["created_by"],
+                "created_at": r["created_at"],
+            }
+            for r in rows
+        ]
+
+
+@router.post("/changes/{cid}/dismiss")
+def dismiss_change(cid: int) -> dict:
+    with db.connect() as conn:
+        _change_row(conn, cid)
+        conn.execute("UPDATE changes SET propagated_at = ? WHERE id = ?", (db.now_iso(), cid))
+    return {"ok": True}
 
 
 # ---------- EC response table ----------

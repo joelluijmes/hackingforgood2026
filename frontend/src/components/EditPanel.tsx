@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
   type ApplyResult,
@@ -7,11 +7,13 @@ import {
   type EditProposal,
   type IcfType,
   type Lang,
+  type PendingChange,
   type ReviewComment,
 } from '../api';
 import { CommentBody } from './CommentPanel';
 import { errMsg } from './Dialog';
 import EditCard from './EditCard';
+import PropagateDialog from './PropagateDialog';
 
 interface Turn extends ChatMessage {
   edits?: EditProposal[];
@@ -43,7 +45,32 @@ export default function EditPanel({
   const [edits, setEdits] = useState<EditProposal[]>([]);
   const [on, setOn] = useState<Record<number, boolean>>({});
   const [instruction, setInstruction] = useState('');
+  const [pending, setPending] = useState<PendingChange[]>([]);
+  const [sel, setSel] = useState<Record<number, boolean>>({});
+  const [propIds, setPropIds] = useState<number[] | null>(null);
   const listRef = useRef<HTMLDivElement>(null);
+
+  const loadPending = useCallback(() => {
+    api.pendingChanges(vid).then(
+      (list) => {
+        setPending(list);
+        setSel((o) =>
+          Object.fromEntries(list.map((c) => [c.id, o[c.id] ?? true])),
+        );
+      },
+      () => {},
+    );
+  }, [vid]);
+  useEffect(loadPending, [loadPending]);
+
+  const picked = pending.filter((c) => sel[c.id]).map((c) => c.id);
+
+  async function skipPicked() {
+    await Promise.all(picked.map((id) => api.dismissChange(id))).catch(
+      () => {},
+    );
+    loadPending();
+  }
 
   useEffect(() => {
     if (comment) setInput(t('edit.defaultPrompt'));
@@ -209,6 +236,68 @@ export default function EditPanel({
             </button>
           </div>
         </div>
+      )}
+
+      {pending.length > 0 && (
+        <div className="ed-proposals ed-pending">
+          <h3>{t('edit.pendingTitle', { count: pending.length })}</h3>
+          <label className="ed-pending-all">
+            <input
+              type="checkbox"
+              checked={picked.length === pending.length}
+              onChange={(e) =>
+                setSel(
+                  Object.fromEntries(
+                    pending.map((c) => [c.id, e.target.checked]),
+                  ),
+                )
+              }
+            />{' '}
+            {t('edit.selectAll')}
+          </label>
+          {pending.map((c) => (
+            <label key={c.id} className="ed-pending-row">
+              <input
+                type="checkbox"
+                checked={!!sel[c.id]}
+                onChange={(e) =>
+                  setSel((o) => ({ ...o, [c.id]: e.target.checked }))
+                }
+              />{' '}
+              {c.instruction || t('edit.noInstruction')}{' '}
+              <span className="muted">
+                ({t('edit.editCount', { count: c.edit_count })})
+              </span>
+            </label>
+          ))}
+          <div className="rv-actions">
+            <button
+              type="button"
+              className="btn primary"
+              disabled={!picked.length}
+              onClick={() => setPropIds(picked)}
+            >
+              {t('edit.propagateSel', { count: picked.length })}
+            </button>
+            <button
+              type="button"
+              className="btn ghost"
+              disabled={!picked.length}
+              onClick={skipPicked}
+            >
+              {t('edit.skipPropagation')}
+            </button>
+          </div>
+        </div>
+      )}
+      {propIds && (
+        <PropagateDialog
+          changeIds={propIds}
+          onClose={() => {
+            setPropIds(null);
+            loadPending();
+          }}
+        />
       )}
 
       {error && <div className="rv-err ed-err">{error}</div>}

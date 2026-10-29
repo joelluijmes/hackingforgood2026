@@ -272,11 +272,7 @@ export default function VersionViewer() {
               lang={lang}
               comment={fixing}
               onClearComment={() => setFixing(null)}
-              onApplied={(r) =>
-                nav(`/versions/${r.version.id}`, {
-                  state: { changeId: r.change_id },
-                })
-              }
+              onApplied={(r) => nav(`/versions/${r.version.id}`)}
             />
           )}
         </div>
