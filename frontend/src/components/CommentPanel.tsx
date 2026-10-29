@@ -365,7 +365,7 @@ export default function CommentPanel({
   return (
     <aside className="rv-panel" aria-label={t('comments.title')}>
       <div className="rv-panel-head">
-        <div className="rv-seg" role="group" aria-label={t('comments.title')}>
+        <div className="rv-seg">
           {(['all', 'open', 'approved', 'declined'] as Filter[]).map((f) => (
             <button
               key={f}
