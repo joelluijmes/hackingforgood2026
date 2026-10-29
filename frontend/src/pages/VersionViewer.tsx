@@ -301,6 +301,8 @@ export default function VersionViewer() {
           </div>
           {tab === 'comments' ? (
             <CommentPanel
+              vid={vid}
+              onApplied={(v) => nav(`/versions/${v.id}`)}
               comments={comments}
               setComments={setComments}
               lang={lang}
