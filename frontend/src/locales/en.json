@@ -151,6 +151,10 @@
     "approved": {
       "label": "Approved",
       "hint": "Final version"
+    },
+    "participants": {
+      "label": "Participant portal",
+      "hint": "Share with participants"
     }
   },
   "roles": {
@@ -597,7 +601,7 @@
     },
     "approved": {
       "what": "Final version",
-      "status": "All done. The ICF package is approved."
+      "status": "The ICF package is approved. Next, optionally share it with participants."
     },
     "act": {
       "upload": "Upload sponsor documents",
@@ -611,7 +615,14 @@
       "openDownload": "Download all (zip)",
       "openForReview": "Open for review",
       "more": "More actions",
-      "download": "Download"
+      "download": "Download",
+      "approveAll": "Approve all ({{count}})",
+      "withdrawApproval": "Withdraw approval",
+      "downloadLang": "Download {{lang}}"
+    },
+    "participants": {
+      "what": "Share with participants",
+      "status": "Optional: publish the approved ICFs to the participant portal and invite participants."
     }
   },
   "docStatus": {

@@ -151,6 +151,10 @@
     "approved": {
       "label": "Goedgekeurd",
       "hint": "Definitieve versie"
+    },
+    "participants": {
+      "label": "Deelnemersportaal",
+      "hint": "Delen met deelnemers"
     }
   },
   "roles": {
@@ -597,7 +601,7 @@
     },
     "approved": {
       "what": "Eindversie",
-      "status": "Klaar. Het ICF-pakket is goedgekeurd."
+      "status": "Het ICF-pakket is goedgekeurd. Deel het optioneel met deelnemers."
     },
     "act": {
       "upload": "Sponsordocumenten uploaden",
@@ -611,7 +615,14 @@
       "openDownload": "Alles downloaden (zip)",
       "openForReview": "Openen voor review",
       "more": "Meer acties",
-      "download": "Downloaden"
+      "download": "Downloaden",
+      "approveAll": "Alles goedkeuren ({{count}})",
+      "withdrawApproval": "Goedkeuring intrekken",
+      "downloadLang": "Download {{lang}}"
+    },
+    "participants": {
+      "what": "Delen met deelnemers",
+      "status": "Optioneel: publiceer de goedgekeurde ICF's op het deelnemersportaal en nodig deelnemers uit."
     }
   },
   "docStatus": {

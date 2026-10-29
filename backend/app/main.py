@@ -163,7 +163,8 @@ def _clear_generated() -> dict:
         conn.execute(
             "UPDATE projects SET stage = CASE WHEN EXISTS (SELECT 1 FROM project_docs d"
             " WHERE d.project_id = projects.id AND d.role = 'sponsor') THEN 'drafting'"
-            " ELSE 'intake' END WHERE stage IN ('pi_review', 'ethics_review', 'approved')"
+            " ELSE 'intake' END WHERE stage IN"
+            " ('pi_review', 'ethics_review', 'approved', 'participants')"
             " AND NOT EXISTS (SELECT 1 FROM project_docs d WHERE d.project_id = projects.id"
             " AND d.role = 'icf')"
         )
