@@ -106,7 +106,24 @@
     "countDeclined_one": "{{count}} afgewezen",
     "countDeclined_other": "{{count}} afgewezen",
     "latestSummary": "v{{n}} · {{source}}",
-    "translatedFrom": "Vertaald van {{title}}"
+    "translatedFrom": "Vertaald van {{title}}",
+    "next": {
+      "title": "Volgende stap",
+      "intake": "Upload de documenten van de opdrachtgever (protocol, toestemmingsformulieren) voor deze studie.",
+      "uploadSponsor": "Sponsordocumenten uploaden",
+      "drafting": "Genereer het Engelse ICF-ontwerp uit de sponsordocumenten.",
+      "generateDraft": "ICF-ontwerp genereren",
+      "pi": "Open de ontwerpen en stuur ze naar de PI. Upload de nagekeken kopie (met opmerkingen) als nieuwe versie en beslis over elke opmerking. Vertalen naar NL/FR kan hier ook.",
+      "openDraft": "Openen",
+      "ethics": "Stuur de ICF's naar het ethisch comité: download ze allemaal als één zip en upload daarna elk nagekeken document (met de opmerkingen van het comité) als nieuwe versie. Daarna keur je elke opmerking goed of af zoals gewoonlijk.",
+      "downloadAll": "Alles downloaden voor het ethisch comité",
+      "download": "Downloaden",
+      "uploadReviewed": "Nagekeken versie uploaden",
+      "approved": "Alle fasen zijn afgerond. Download de definitieve versies van alle ICF's.",
+      "downloadFinal": "Definitieve ICF's downloaden (zip)",
+      "latest": "laatste v{{n}}",
+      "noIcfs": "Nog geen ICF-documenten."
+    }
   },
   "stages": {
     "ariaLabel": "Fase van het project",
@@ -120,11 +137,7 @@
     },
     "pi_review": {
       "label": "Nazicht onderzoeker",
-      "hint": "Versturen, nagekeken kopie uploaden"
-    },
-    "translation": {
-      "label": "Vertaling",
-      "hint": "NL- en FR-versies"
+      "hint": "Nakijken, vertalen, nagekeken kopie uploaden"
     },
     "ethics_review": {
       "label": "Ethisch comité",
@@ -364,7 +377,11 @@
       "parent": "Ouders",
       "adolescent": "Adolescent 12–17",
       "child": "Kind 8–11"
-    }
+    },
+    "translateAll": "Alles vertalen",
+    "translateAllTitle": "Alle ontbrekende NL/FR-versies vertalen",
+    "generateAll": "Alle ICF's genereren",
+    "generateAllTitle": "Alle ontbrekende Engelse ICF-types genereren (volwassene, ouders, adolescent, kind)"
   },
   "task": {
     "titleGenerate": "{{lang}} ICF genereren ({{icf}})",

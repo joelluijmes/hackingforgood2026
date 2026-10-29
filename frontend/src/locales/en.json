@@ -106,7 +106,24 @@
     "countDeclined_one": "{{count}} declined",
     "countDeclined_other": "{{count}} declined",
     "latestSummary": "v{{n}} · {{source}}",
-    "translatedFrom": "Translated from {{title}}"
+    "translatedFrom": "Translated from {{title}}",
+    "next": {
+      "title": "Next step",
+      "intake": "Upload the sponsor documents (protocol, sponsor consent forms) for this study.",
+      "uploadSponsor": "Upload sponsor documents",
+      "drafting": "Generate the English ICF draft from the sponsor documents.",
+      "generateDraft": "Generate ICF draft",
+      "pi": "Open the drafts and send them to the PI. Upload the reviewed copy (with comments) as a new version, then decide each comment. Translate to NL/FR here too.",
+      "openDraft": "Open",
+      "ethics": "Send the ICFs to the ethics committee: download them all as one zip, then upload each reviewed document (with the committee's comments) as a new version. You then approve or decline each comment as usual.",
+      "downloadAll": "Download all for ethics committee",
+      "download": "Download",
+      "uploadReviewed": "Upload reviewed version",
+      "approved": "All stages are complete. Download the final versions of all ICFs.",
+      "downloadFinal": "Download final ICFs (zip)",
+      "latest": "latest v{{n}}",
+      "noIcfs": "No ICF documents yet."
+    }
   },
   "stages": {
     "ariaLabel": "Project stage",
@@ -120,11 +137,7 @@
     },
     "pi_review": {
       "label": "PI review",
-      "hint": "Send out, upload reviewed copy"
-    },
-    "translation": {
-      "label": "Translation",
-      "hint": "NL / FR versions"
+      "hint": "Review, translate, upload reviewed copy"
     },
     "ethics_review": {
       "label": "Ethics review",
@@ -364,7 +377,11 @@
       "parent": "Parents",
       "adolescent": "Adolescent 12–17",
       "child": "Child 8–11"
-    }
+    },
+    "translateAll": "Translate all",
+    "translateAllTitle": "Translate all missing NL/FR versions",
+    "generateAll": "Generate all ICFs",
+    "generateAllTitle": "Generate all missing English ICF types (adult, parent, adolescent, child)"
   },
   "task": {
     "titleGenerate": "Generating {{lang}} ICF ({{icf}})",
