@@ -62,7 +62,7 @@ ICF Studio: FastAPI backend (`backend/`, SQLite) + Vite/React frontend (`fronten
 
 ```
 make install   # deps
-make dev       # backend :8000 + frontend :5173 (Ctrl-C stops both)
+make dev       # backend :8010 + frontend :5173 (Ctrl-C stops both)
 make lint      # ruff + biome + tsc
 make fmt       # auto-fix
 make clean-db  # reset db and uploads
@@ -74,4 +74,4 @@ Environment (backend): `STORAGE_BACKEND=local|gcs` (`make dev` defaults to `gcs`
 `ICF_DB_PATH` (SQLite file, default `backend/icf.db`; use separate files for parallel dev servers). SQLite holds metadata only; documents live in the bucket
 (`templates/...`, `projects/<id>/<doc>/v<n>-...`). `make clean-db` does not delete bucket objects.
 
-Open http://localhost:5173 (API docs at http://localhost:8000/docs), then click "Import sample bucket".
+Open http://localhost:5173 (API docs at http://localhost:8010/docs), then click "Import sample bucket".

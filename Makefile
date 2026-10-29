@@ -8,14 +8,14 @@ install: ## Install backend (uv) and frontend (pnpm) deps
 	cd backend && uv sync
 	cd frontend && pnpm install
 
-dev: ## Run backend (8000) and frontend (5173) together
+dev: ## Run backend (8010) and frontend (5173) together
 	$(MAKE) -j2 dev-backend dev-frontend
 
 STORAGE_BACKEND ?= gcs
 GCS_BUCKET ?= hfg2026-bucket
 
 dev-backend: ## Run FastAPI dev server (files in GCS; STORAGE_BACKEND=local for disk)
-	cd backend && STORAGE_BACKEND=$(STORAGE_BACKEND) GCS_BUCKET=$(GCS_BUCKET) uv run fastapi dev app/main.py --port 8000
+	cd backend && STORAGE_BACKEND=$(STORAGE_BACKEND) GCS_BUCKET=$(GCS_BUCKET) uv run fastapi dev app/main.py --port 8010
 
 dev-frontend: ## Run Vite dev server
 	cd frontend && pnpm dev

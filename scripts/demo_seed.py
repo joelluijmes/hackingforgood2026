@@ -2,7 +2,7 @@
 """Seed a demo through the real API.
 
 Run (servers up): cd backend && uv run python ../scripts/demo_seed.py   (or: make demo)
-Env: API_URL (default http://localhost:8000), APP_URL (default http://localhost:5173).
+Env: API_URL (default http://localhost:8010), APP_URL (default http://localhost:5173).
 """
 
 import copy
@@ -22,7 +22,7 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from lxml import etree
 
-API = os.environ.get("API_URL", "http://localhost:8000").rstrip("/")
+API = os.environ.get("API_URL", "http://localhost:8010").rstrip("/")
 APP = os.environ.get("APP_URL", "http://localhost:5173").rstrip("/")
 DRAFT_TITLE = "ICF adult R1 (EN)"
 W = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
