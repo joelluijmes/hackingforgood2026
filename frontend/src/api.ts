@@ -9,7 +9,8 @@ export type Stage =
   | 'drafting'
   | 'pi_review'
   | 'ethics_review'
-  | 'approved';
+  | 'approved'
+  | 'participants';
 export type Role = 'sponsor' | 'icf' | 'other';
 export type IcfType = Audience;
 export type VersionSource =
@@ -719,7 +720,8 @@ export const api = {
       body: form(file, { note: meta.note, source: meta.source }),
     }),
   getVersion: (vid: number) => req<VersionDetail>(`/versions/${vid}`),
-  projectExportUrl: (pid: number) => withToken(`/api/projects/${pid}/export`),
+  projectExportUrl: (pid: number, lang?: Language) =>
+    withToken(`/api/projects/${pid}/export${lang ? `?lang=${lang}` : ''}`),
   versionFileUrl: (vid: number) => withToken(`/api/versions/${vid}/file`),
   getVersionHtml: (vid: number) => req<VersionHtml>(`/versions/${vid}/html`),
 

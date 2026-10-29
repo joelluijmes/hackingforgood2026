@@ -151,6 +151,10 @@
     "approved": {
       "label": "Approuvé",
       "hint": "Version finale"
+    },
+    "participants": {
+      "label": "Portail participants",
+      "hint": "Partager avec les participants"
     }
   },
   "roles": {
@@ -597,7 +601,7 @@
     },
     "approved": {
       "what": "Version finale",
-      "status": "Terminé. Le dossier ICF est approuvé."
+      "status": "Le dossier ICF est approuvé. Vous pouvez ensuite le partager avec les participants."
     },
     "act": {
       "upload": "Téléverser les documents du promoteur",
@@ -611,7 +615,14 @@
       "openDownload": "Tout télécharger (zip)",
       "openForReview": "Ouvrir pour relecture",
       "more": "Plus d'actions",
-      "download": "Télécharger"
+      "download": "Télécharger",
+      "approveAll": "Tout approuver ({{count}})",
+      "withdrawApproval": "Retirer l'approbation",
+      "downloadLang": "Télécharger {{lang}}"
+    },
+    "participants": {
+      "what": "Partager avec les participants",
+      "status": "Facultatif : publiez les ICF approuvés sur le portail participants et invitez les participants."
     }
   },
   "docStatus": {

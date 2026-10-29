@@ -1429,7 +1429,7 @@ details.section > .stack {
 .wizard {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 8px;
   padding: 0;
   margin: 24px 0 16px;
@@ -1712,4 +1712,40 @@ table.sc-docs .chip {
 }
 .step-card .sc-block {
   padding: 32px 36px;
+}
+
+/* ethics/PI doc table: fixed columns, popover above following rows */
+table.sc-docs {
+  table-layout: fixed;
+}
+table.sc-docs col.c-chip {
+  width: 170px;
+}
+table.sc-docs col.c-act {
+  width: 230px;
+}
+table.sc-docs .sc-doc-title {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+table.sc-docs td {
+  padding: 10px 12px;
+}
+.menu[open] {
+  z-index: 40;
+}
+.menu-list {
+  z-index: 40;
+  min-width: 220px;
+}
+.sc-doc-actions .menu-list a,
+.sc-doc-actions .menu-list button {
+  white-space: nowrap;
+  margin: 0;
+}
+.sc-doc-actions .menu-list {
+  text-align: left;
+}
+.btn.sm.ghost {
+  background: transparent;
 }
