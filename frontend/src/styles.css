@@ -1317,7 +1317,7 @@ details.section > .stack {
 .wz-body {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
   padding: 12px 16px;
   text-align: left;
@@ -1351,9 +1351,6 @@ details.section > .stack {
 .wz-text small {
   font-size: 12px;
   line-height: 16px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .wz.done .wz-body {
   background: var(--primary-100);
