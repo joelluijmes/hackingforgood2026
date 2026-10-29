@@ -107,6 +107,23 @@
     "countDeclined_other": "{{count}} afgewezen",
     "latestSummary": "v{{n}} · {{source}}",
     "translatedFrom": "Vertaald van {{title}}",
+    "next": {
+      "title": "Volgende stap",
+      "intake": "Upload de documenten van de opdrachtgever (protocol, toestemmingsformulieren) voor deze studie.",
+      "uploadSponsor": "Sponsordocumenten uploaden",
+      "drafting": "Genereer het Engelse ICF-ontwerp uit de sponsordocumenten.",
+      "generateDraft": "ICF-ontwerp genereren",
+      "pi": "Open de ontwerpen en stuur ze naar de PI. Upload de nagekeken kopie (met opmerkingen) als nieuwe versie en beslis over elke opmerking. Vertalen naar NL/FR kan hier ook.",
+      "openDraft": "Openen",
+      "ethics": "Stuur de ICF's naar het ethisch comité: download ze allemaal als één zip en upload daarna elk nagekeken document (met de opmerkingen van het comité) als nieuwe versie. Daarna keur je elke opmerking goed of af zoals gewoonlijk.",
+      "downloadAll": "Alles downloaden voor het ethisch comité",
+      "download": "Downloaden",
+      "uploadReviewed": "Nagekeken versie uploaden",
+      "approved": "Alle fasen zijn afgerond. Download de definitieve versies van alle ICF's.",
+      "downloadFinal": "Definitieve ICF's downloaden (zip)",
+      "latest": "laatste v{{n}}",
+      "noIcfs": "Nog geen ICF-documenten."
+    },
     "addMenu": "Document toevoegen",
     "approvedAsIs": "Ongewijzigd goedgekeurd",
     "withdrawApproval": "Goedkeuring intrekken"
@@ -123,11 +140,7 @@
     },
     "pi_review": {
       "label": "Nazicht onderzoeker",
-      "hint": "Versturen, nagekeken kopie uploaden"
-    },
-    "translation": {
-      "label": "Vertaling",
-      "hint": "NL- en FR-versies"
+      "hint": "Nakijken, vertalen, nagekeken kopie uploaden"
     },
     "ethics_review": {
       "label": "Ethisch comité",
@@ -286,7 +299,11 @@
     "showTranslation": "Vertaling tonen",
     "showOriginal": "Origineel tonen",
     "translationUnavailable": "Vertaling niet beschikbaar",
-    "showGenerated": "Toon gegenereerde opmerkingen ({{count}})",
+    "fillsSummary": "{{count}} passages ingevuld uit sponsordocumenten",
+    "showFills": "Markeer in document",
+    "addComment": "Opmerking toevoegen",
+    "addPlaceholder": "Je opmerking bij deze tekst…",
+    "addSave": "Opmerking plaatsen",
     "fixWithAi": "Oplossen met AI"
   },
   "generate": {
@@ -311,7 +328,8 @@
     "templateLine": "Sjabloon: Belgisch model-ICF - volwassen patiënten, {{lang}} v{{version}}",
     "latest": "(laatste)",
     "otherVersion": "Andere versie gebruiken",
-    "noTemplateForLang": "Geen sjabloon beschikbaar voor {{lang}}. Upload er eerst een onder Sjablonen."
+    "noTemplateForLang": "Geen sjabloon beschikbaar voor {{lang}}. Upload er eerst een onder Sjablonen.",
+    "englishOnly": "Eerste ICF’s worden altijd in het Engels gegenereerd; NL/FR volgen via vertaling."
   },
   "admin": {
     "title": "Beheer",
@@ -326,7 +344,15 @@
     "aiOff": "Uitgeschakeld",
     "storage": "Opslag",
     "counts": "Aantallen",
-    "countsLine": "{{projects}} projecten, {{docs}} projectdocumenten, {{templates}} sjablonen, {{users}} gebruikers"
+    "countsLine": "{{projects}} projecten, {{docs}} projectdocumenten, {{templates}} sjablonen, {{users}} gebruikers",
+    "resetTitle": "Resetten",
+    "resetEmpty": "Resetten naar leeg",
+    "resetSamples": "Resetten + voorbeelden importeren",
+    "resetting": "Bezig met resetten...",
+    "resetConfirm": "Dit verwijdert PERMANENT ALLE projecten, projectdocumenten, versies, opmerkingen, taken en de sjabloonbibliotheek uit deze app{{local}}. De demogebruiker en je login blijven bestaan. Bestanden in de GCS-bucket worden NIET verwijderd.{{samples}}",
+    "resetLocal": " en alle lokaal opgeslagen bestanden",
+    "resetSamplesNote": " Daarna worden de voorbeelden uit de bucket opnieuw geïmporteerd.",
+    "resetExplain": "Zet de app terug naar de beginstatus: verwijdert alle projecten, documenten, versies en de sjabloonbibliotheek. De demogebruiker blijft. Gebruik 'Resetten + voorbeelden importeren' voor de status direct na de eerste import."
   },
   "req": {
     "has_sponsor_docs": "Upload minstens één sponsordocument",
@@ -367,7 +393,14 @@
       "parent": "Ouders",
       "adolescent": "Adolescent 12–17",
       "child": "Kind 8–11"
-    }
+    },
+    "needReview": "Beschikbaar na PI-review",
+    "translateAnyway": "toch vertalen",
+    "updateTemplate": "Updaten naar nieuwste template",
+    "translateAll": "Alles vertalen",
+    "translateAllTitle": "Alle ontbrekende NL/FR-versies vertalen",
+    "generateAll": "Alle ICF's genereren",
+    "generateAllTitle": "Alle ontbrekende Engelse ICF-types genereren (volwassene, ouders, adolescent, kind)"
   },
   "task": {
     "titleGenerate": "{{lang}} ICF genereren ({{icf}})",
@@ -410,7 +443,16 @@
     "editText": "Tekst bewerken",
     "showChanges": "Wijzigingen tonen",
     "paragraph": "Alinea",
-    "mandatory": "Wijzigt verplichte sjabloontekst ({{score}}% overeenkomst met het nationale sjabloon). Motiveer deze afwijking voor het Ethisch Comité."
+    "mandatory": "Wijzigt verplichte sjabloontekst ({{score}}% overeenkomst met het nationale sjabloon). Motiveer deze afwijking voor het Ethisch Comité.",
+    "pendingTitle_one": "{{count}} toegepaste wijziging nog niet overgenomen in de andere formulieren",
+    "pendingTitle_other": "{{count}} toegepaste wijzigingen nog niet overgenomen in de andere formulieren",
+    "selectAll": "Alles selecteren",
+    "noInstruction": "(wijziging)",
+    "editCount_one": "{{count}} aanpassing",
+    "editCount_other": "{{count}} aanpassingen",
+    "propagateSel_one": "{{count}} wijziging doorvoeren",
+    "propagateSel_other": "{{count}} wijzigingen samen doorvoeren",
+    "skipPropagation": "Overslaan"
   },
   "propagate": {
     "title": "Deze wijziging toepassen op de andere formulieren",
@@ -424,6 +466,9 @@
       "not_applicable": "Niet van toepassing",
       "error": "Mislukt"
     }
+  },
+  "upload": {
+    "autoDetect": "Automatisch detecteren"
   },
   "next": {
     "stepLabel": "Stap",
@@ -465,7 +510,8 @@
       "uploadReviewed": "Nagekeken versie uploaden",
       "approveAsIs": "Ongewijzigd goedkeuren",
       "reviewComments": "Opmerkingen beslissen",
-      "translate": "Ontbrekende versies vertalen"
+      "translate": "Ontbrekende versies vertalen",
+      "openDownload": "Alles downloaden (zip)"
     }
   }
 }

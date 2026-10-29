@@ -5,7 +5,6 @@ export const STAGES: Stage[] = [
   'intake',
   'drafting',
   'pi_review',
-  'translation',
   'ethics_review',
   'approved',
 ];

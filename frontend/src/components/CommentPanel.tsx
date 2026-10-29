@@ -7,8 +7,11 @@ import '../review.css';
 type Filter = 'all' | CommentStatus;
 const trunc = (s: string, n = 140) => (s.length > n ? `${s.slice(0, n)}…` : s);
 
+/** Legacy drafts carried one "filled, please verify" comment per fill; those are fill markers now. */
+const isLegacyFill = (c: ReviewComment) =>
+  c.author === 'ICF Studio' && c.text.startsWith('Filled from sponsor');
+
 /** Read-only comment body: author, language, quote and text in the user's language. */
-const isGenerated = (c: ReviewComment) => c.author === 'ICF Studio';
 
 export function CommentBody({ c, lang }: { c: ReviewComment; lang: Lang }) {
   const { t, i18n } = useTranslation();
@@ -185,7 +188,13 @@ export default function CommentPanel({
   activeId,
   onActivate,
   onFix,
+  fillCount = 0,
+  showFills = false,
+  onToggleFills,
 }: {
+  fillCount?: number;
+  showFills?: boolean;
+  onToggleFills?: (v: boolean) => void;
   comments: ReviewComment[];
   setComments: (f: (prev: ReviewComment[]) => ReviewComment[]) => void;
   lang: Lang;
@@ -196,14 +205,9 @@ export default function CommentPanel({
   const { t } = useTranslation();
   const [filter, setFilter] = useState<Filter>('all');
   const [error, setError] = useState('');
-  const [genOverride, setGenOverride] = useState<boolean | null>(null);
-
-  // Notes written by the app itself (gaps / filled placeholders) can bury the reviewers' comments.
-  const generatedCount = comments.filter(isGenerated).length;
-  const showGenerated = genOverride ?? generatedCount === comments.length;
   const list = useMemo(
-    () => (showGenerated ? comments : comments.filter((c) => !isGenerated(c))),
-    [comments, showGenerated],
+    () => comments.filter((c) => !isLegacyFill(c)),
+    [comments],
   );
 
   const counts = useMemo(() => {
@@ -319,14 +323,15 @@ export default function CommentPanel({
             {t('comments.nextOpen')}
           </button>
         </div>
-        {generatedCount > 0 && generatedCount < comments.length && (
+        {fillCount > 0 && onToggleFills && (
           <label className="rv-gen">
             <input
               type="checkbox"
-              checked={showGenerated}
-              onChange={(e) => setGenOverride(e.target.checked)}
+              checked={showFills}
+              onChange={(e) => onToggleFills(e.target.checked)}
             />
-            {t('comments.showGenerated', { count: generatedCount })}
+            {t('comments.fillsSummary', { count: fillCount })} ·{' '}
+            {t('comments.showFills')}
           </label>
         )}
         {error && <div className="rv-err">{error}</div>}

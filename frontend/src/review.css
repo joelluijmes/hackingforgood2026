@@ -656,3 +656,39 @@
   background: none;
   border-bottom: 0;
 }
+
+/* ---- quiet "filled from sponsor documents" marks (no comment) ---- */
+.paper mark.fill {
+  background: none;
+  color: inherit;
+}
+.paper.show-fills mark.fill {
+  background: #e3f4e6;
+  border-bottom: 2px solid #9ccfa4;
+  border-radius: 2px;
+}
+
+/* ---- floating "Add comment" on a text selection ---- */
+.rv-add {
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px;
+  background: #fff;
+  border: 1px solid var(--neutral-300, #ccc);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  width: 260px;
+}
+.rv-add.collapsed {
+  width: auto;
+}
+.rv-add textarea {
+  width: 100%;
+  resize: vertical;
+}
+.rv-add .rv-actions {
+  margin: 0;
+}

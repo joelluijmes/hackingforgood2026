@@ -13,9 +13,11 @@ import EditCard from './EditCard';
 /** Carry an applied change over to the project's other ICFs (audiences × languages). */
 export default function PropagateDialog({
   changeId,
+  changeIds,
   onClose,
 }: {
-  changeId: number;
+  changeId?: number;
+  changeIds?: number[];
   onClose: () => void;
 }) {
   const { t } = useTranslation();
@@ -23,16 +25,22 @@ export default function PropagateDialog({
   const [on, setOn] = useState<Record<string, boolean>>({});
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
+  const ids = changeIds ?? (changeId ? [changeId] : []);
+  const idsKey = ids.join(',');
   const [results, setResults] = useState<PropagationResult[] | null>(null);
 
   useEffect(() => {
     let live = true;
-    api.propagatePreview(changeId).then(
-      (list) => {
+    const list = idsKey.split(',').map(Number);
+    (list.length > 1
+      ? api.propagatePreviewBatch(list)
+      : api.propagatePreview(list[0])
+    ).then(
+      (res) => {
         if (!live) return;
-        setTargets(list);
+        setTargets(res);
         const init: Record<string, boolean> = {};
-        for (const x of list)
+        for (const x of res)
           for (const e of x.edits) init[`${x.version_id}:${e.idx}`] = true;
         setOn(init);
       },
@@ -41,7 +49,7 @@ export default function PropagateDialog({
     return () => {
       live = false;
     };
-  }, [changeId]);
+  }, [idsKey]);
 
   const setEdit = (vid: number, idx: number, text: string) =>
     setTargets((all) =>
@@ -68,13 +76,13 @@ export default function PropagateDialog({
     setBusy(true);
     setError('');
     try {
+      const body = targets
+        .map((x) => ({ version_id: x.version_id, edits: chosen(x) }))
+        .filter((x) => x.edits.length);
       setResults(
-        await api.propagateApply(
-          changeId,
-          targets
-            .map((x) => ({ version_id: x.version_id, edits: chosen(x) }))
-            .filter((x) => x.edits.length),
-        ),
+        ids.length > 1
+          ? await api.propagateApplyBatch(ids, body)
+          : await api.propagateApply(ids[0], body),
       );
     } catch (err) {
       setError(errMsg(err));

@@ -51,7 +51,8 @@ export default function NextStepPanel({
   onChanged,
   onUpload,
   onGenerate,
-  onTranslateMissing,
+  onGenerateAll,
+  onTranslateAll,
   onNewVersion,
   onError,
 }: {
@@ -61,7 +62,8 @@ export default function NextStepPanel({
   onChanged: () => void | Promise<void>;
   onUpload: () => void;
   onGenerate: () => void;
-  onTranslateMissing: () => void;
+  onGenerateAll: () => void;
+  onTranslateAll: () => void;
   onNewVersion: (doc: ProjectDoc) => void;
   onError: (msg: string) => void;
 }) {
@@ -134,13 +136,10 @@ export default function NextStepPanel({
         : t('next.drafting.none');
       break;
     case 'pi_review':
-      status = t('next.pi_review.status', {
+      status = `${t('next.pi_review.status', {
         done: en.filter(reviewed).length,
         total: en.length,
-      });
-      break;
-    case 'translation':
-      status = t('next.translation.status', { count: translated.length });
+      })} · ${t('next.translation.status', { count: translated.length })}`;
       break;
     case 'ethics_review':
       status = t('next.ethics_review.status', {
@@ -166,8 +165,8 @@ export default function NextStepPanel({
         break;
       case 'has_en_draft':
         primary = (
-          <button type="button" className="btn primary" onClick={onGenerate}>
-            {t('next.act.generate')}
+          <button type="button" className="btn primary" onClick={onGenerateAll}>
+            {t('matrix.generateAll')}
           </button>
         );
         break;
@@ -192,7 +191,7 @@ export default function NextStepPanel({
           <button
             type="button"
             className="btn primary"
-            onClick={onTranslateMissing}
+            onClick={onTranslateAll}
           >
             {t('next.act.translate')}
           </button>
@@ -241,6 +240,18 @@ export default function NextStepPanel({
       <button key="g" type="button" className="btn" onClick={onGenerate}>
         {t('next.act.generateAnother')}
       </button>,
+    );
+
+  if (stage === 'ethics_review' || stage === 'approved')
+    secondary.push(
+      <a
+        key="zip"
+        className="btn"
+        href={api.projectExportUrl(projectId)}
+        download
+      >
+        {t('next.act.openDownload')}
+      </a>,
     );
 
   return (

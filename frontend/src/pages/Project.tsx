@@ -11,6 +11,7 @@ import {
   type AiStatus,
   api,
   type IcfType,
+  type Lang,
   type Language,
   type MatrixCell,
   type ProjectDoc,
@@ -22,7 +23,7 @@ import {
 import { errMsg } from '../components/Dialog';
 import DocCard from '../components/DocCard';
 import GenerateDialog from '../components/GenerateDialog';
-import IcfMatrix from '../components/IcfMatrix';
+import IcfMatrix, { isReviewed } from '../components/IcfMatrix';
 import NextStepPanel from '../components/NextStepPanel';
 import {
   NewVersionDialog,
@@ -101,7 +102,8 @@ export default function Project() {
         opened.current = true;
         // sponsor docs collapsed once an ICF draft exists
         setOpen({
-          sponsor: !d.some((x) => x.role === 'icf'),
+          sponsor: p.stage === 'intake',
+          matrix: ['drafting', 'pi_review'].includes(p.stage),
           icf: true,
           other: true,
         });
@@ -127,18 +129,29 @@ export default function Project() {
       // storage unavailable: tasks just won't survive a reload
     }
   }
-  const addTask = (m: TaskMeta) => saveTasks([...tasks, m]);
+  const addTask = (m: TaskMeta) =>
+    setTasks((cur) => {
+      const list = [...cur, m];
+      try {
+        sessionStorage.setItem(`icf-tasks-${projectId}`, JSON.stringify(list));
+      } catch {
+        // ignore
+      }
+      return list;
+    });
 
   async function translate(
     en: MatrixCell,
     icf: IcfType,
     langs: ('nl' | 'fr')[],
+    force?: boolean,
   ) {
     setError('');
     try {
       const r = await api.translate(en.doc_id, {
         target_languages: langs,
         version_id: en.version_id,
+        force,
       });
       addTask({
         id: r.task_id,
@@ -153,18 +166,67 @@ export default function Project() {
     }
   }
 
+  async function updateTemplate(c: MatrixCell, icf: IcfType, lang: Lang) {
+    setError('');
+    try {
+      const r = await api.updateToTemplate(c.doc_id, {
+        version_id: c.version_id,
+      });
+      addTask({
+        id: r.task_id,
+        kind: 'translate',
+        langs: lang.toUpperCase(),
+        icfType: icf,
+        docId: c.doc_id,
+      });
+    } catch (e) {
+      setError(errMsg(e));
+    }
+  }
+
+  async function translateAll() {
+    for (const row of progress?.matrix ?? []) {
+      const en = row.languages.en;
+      if (!en || !isReviewed(en)) continue;
+      const langs = (['nl', 'fr'] as const).filter((l) => !row.languages[l]);
+      if (langs.length && !busy.has(`${en.doc_id}`))
+        await translate(en, row.icf_type, langs);
+    }
+  }
+
+  async function generateAll() {
+    setError('');
+    const have = new Set(
+      (docs ?? [])
+        .filter((d) => d.role === 'icf' && d.language === 'en')
+        .map((d) => d.icf_type ?? 'adult'),
+    );
+    const sponsorIds = (docs ?? [])
+      .filter((d) => d.role === 'sponsor' && d.versions.length)
+      .map((d) => Math.max(...d.versions.map((v) => v.id)));
+    for (const icf of ['adult', 'parent', 'adolescent', 'child'] as IcfType[]) {
+      if (
+        have.has(icf) ||
+        tasks.some((m) => m.kind === 'generate' && m.icfType === icf)
+      )
+        continue;
+      try {
+        const r = await api.generate(projectId, {
+          icf_type: icf,
+          language: 'en',
+          sponsor_version_ids: sponsorIds,
+          notes: '',
+        });
+        addTask({ id: r.task_id, kind: 'generate', langs: 'en', icfType: icf });
+      } catch (e) {
+        setError(errMsg(e));
+      }
+    }
+  }
+
   function openGenerate(p?: { icf: IcfType; language: Language }) {
     setPreset(p);
     setDialog('generate');
-  }
-
-  async function translateMissing() {
-    for (const row of progress?.matrix ?? []) {
-      const en = row.languages.en;
-      if (!en) continue;
-      const langs = (['nl', 'fr'] as const).filter((l) => !row.languages[l]);
-      if (langs.length) await translate(en, row.icf_type, [...langs]);
-    }
   }
 
   async function backTo(stage: Stage) {
@@ -251,12 +313,6 @@ export default function Project() {
       <StageStepper progress={progress} onBack={backTo} />
       {error && <p className="error">{error}</p>}
 
-      <TaskBanner
-        tasks={tasks}
-        onFinished={load}
-        onDismiss={(id) => saveTasks(tasks.filter((x) => x.id !== id))}
-      />
-
       <NextStepPanel
         projectId={projectId}
         progress={progress}
@@ -264,20 +320,55 @@ export default function Project() {
         onChanged={load}
         onUpload={() => setDialog('upload')}
         onGenerate={() => openGenerate()}
-        onTranslateMissing={translateMissing}
+        onGenerateAll={generateAll}
+        onTranslateAll={translateAll}
         onNewVersion={setVersionFor}
         onError={setError}
       />
 
-      <section className="group docs-area">
-        <h2>{t('matrix.title')}</h2>
+      <TaskBanner
+        tasks={tasks}
+        onFinished={load}
+        onDismiss={(id) => saveTasks(tasks.filter((x) => x.id !== id))}
+      />
+
+      <Section
+        title={t('matrix.title')}
+        count={progress.matrix.length}
+        open={open.matrix ?? true}
+        onToggle={(o) => setOpen((x) => ({ ...x, matrix: o }))}
+      >
+        <div className="row">
+          <button
+            type="button"
+            className="btn"
+            title={t('matrix.generateAllTitle')}
+            onClick={generateAll}
+          >
+            {t('matrix.generateAll')}
+          </button>
+          <button
+            type="button"
+            className="btn"
+            disabled={!progress.matrix.some((r) => isReviewed(r.languages.en))}
+            title={
+              progress.matrix.some((r) => isReviewed(r.languages.en))
+                ? t('matrix.translateAllTitle')
+                : t('matrix.needReview')
+            }
+            onClick={translateAll}
+          >
+            {t('matrix.translateAll')}
+          </button>
+        </div>
         <IcfMatrix
           matrix={progress.matrix}
           busyLangs={busy}
           onGenerate={(icf) => openGenerate({ icf, language: 'en' })}
           onTranslate={translate}
+          onUpdate={updateTemplate}
         />
-      </section>
+      </Section>
 
       {docs.length === 0 && (
         <div className="empty">

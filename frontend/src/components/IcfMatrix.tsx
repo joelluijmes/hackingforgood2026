@@ -4,11 +4,16 @@ import type { IcfType, Lang, MatrixCell, ProjectProgress } from '../api';
 
 const COLS: Lang[] = ['en', 'nl', 'fr'];
 
+/** One place for the translation gate (later: doc-level approved flag). */
+export const isReviewed = (c: MatrixCell | null) =>
+  c?.source === 'reviewed' || c?.approved === true;
+
 export default function IcfMatrix({
   matrix,
   busyLangs,
   onGenerate,
   onTranslate,
+  onUpdate,
 }: {
   matrix: ProjectProgress['matrix'];
   /** doc ids currently translating, to disable buttons */
@@ -18,7 +23,9 @@ export default function IcfMatrix({
     enCell: MatrixCell,
     icf: IcfType,
     langs: ('nl' | 'fr')[],
+    force?: boolean,
   ) => void;
+  onUpdate: (cell: MatrixCell, icf: IcfType, lang: Lang) => void;
 }) {
   const { t } = useTranslation();
   return (
@@ -36,6 +43,7 @@ export default function IcfMatrix({
           {matrix.map((row) => {
             const en = row.languages.en;
             const both = !row.languages.nl && !row.languages.fr;
+            const ok = isReviewed(en);
             return (
               <tr key={row.icf_type}>
                 <th scope="row">
@@ -45,7 +53,8 @@ export default function IcfMatrix({
                       <button
                         type="button"
                         className="link"
-                        disabled={busyLangs.has(`${en.doc_id}`)}
+                        disabled={!ok || busyLangs.has(`${en.doc_id}`)}
+                        title={ok ? undefined : t('matrix.needReview')}
                         onClick={() =>
                           onTranslate(en, row.icf_type, ['nl', 'fr'])
                         }
@@ -85,6 +94,15 @@ export default function IcfMatrix({
                           >
                             {t('common.open')}
                           </Link>
+                          {c.source === 'upload' && (
+                            <button
+                              type="button"
+                              className="link"
+                              onClick={() => onUpdate(c, row.icf_type, l)}
+                            >
+                              {t('matrix.updateTemplate')}
+                            </button>
+                          )}
                         </div>
                       </td>
                     );
@@ -93,7 +111,7 @@ export default function IcfMatrix({
                       <td key={l}>
                         <button
                           type="button"
-                          className="btn"
+                          className="btn ghost"
                           onClick={() => onGenerate(row.icf_type)}
                         >
                           {t('matrix.generate')}
@@ -104,9 +122,17 @@ export default function IcfMatrix({
                     <td key={l}>
                       <button
                         type="button"
-                        className="btn"
-                        disabled={!en || busyLangs.has(`${en.doc_id}:${l}`)}
-                        title={en ? undefined : t('matrix.needEn')}
+                        className="btn ghost"
+                        disabled={
+                          !en || !ok || busyLangs.has(`${en.doc_id}:${l}`)
+                        }
+                        title={
+                          !en
+                            ? t('matrix.needEn')
+                            : ok
+                              ? undefined
+                              : t('matrix.needReview')
+                        }
                         onClick={() =>
                           en &&
                           onTranslate(en, row.icf_type, [l as 'nl' | 'fr'])
@@ -114,6 +140,22 @@ export default function IcfMatrix({
                       >
                         {t('matrix.translateFromEn')}
                       </button>
+                      {en && !ok && (
+                        <button
+                          type="button"
+                          className="link small"
+                          onClick={() =>
+                            onTranslate(
+                              en,
+                              row.icf_type,
+                              [l as 'nl' | 'fr'],
+                              true,
+                            )
+                          }
+                        >
+                          {t('matrix.translateAnyway')}
+                        </button>
+                      )}
                     </td>
                   );
                 })}

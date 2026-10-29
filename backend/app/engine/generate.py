@@ -202,6 +202,19 @@ def _valid(ans) -> str | None:
     return ans
 
 
+def _mark_fill(r_el, n: int) -> None:
+    """Wrap a filled run in a bookmark `icf_fill_N` so the viewer can highlight it (no comment)."""
+    from docx.oxml import OxmlElement
+
+    start, end = OxmlElement("w:bookmarkStart"), OxmlElement("w:bookmarkEnd")
+    bid = str(900000 + n)
+    start.set(q("id"), bid)
+    start.set(q("name"), f"icf_fill_{n}")
+    end.set(q("id"), bid)
+    r_el.addprevious(start)
+    r_el.addnext(end)
+
+
 def generate_icf(
     template_path: str,
     out_path: str,
@@ -276,12 +289,7 @@ def generate_icf(
                 from docx.shared import RGBColor
 
                 first.font.color.rgb = RGBColor(0, 0, 0)
-            doc.add_comment(
-                first,
-                text="Filled from sponsor documents - please verify",
-                author=AUTHOR,
-                initials="ICF",
-            )
+            _mark_fill(first._r, filled)  # quiet marker, no Word comment
             filled += 1
         else:
             for r in runs:
@@ -289,7 +297,7 @@ def generate_icf(
             shown = ph["text"] if len(ph["text"]) <= 200 else ph["text"][:200] + "..."
             doc.add_comment(
                 runs,
-                text=f"Information missing: {shown}",
+                text=f"Missing: {shown} - please add this information",
                 author=AUTHOR,
                 initials="ICF",
             )
