@@ -1,6 +1,6 @@
 # 00 - Overview and pipeline plan (synthesis of the 6 reader notes)
 
-Paths: text mirror = /Users/joell/dev/hackingforgood/memory/text ; binaries = /Users/joell/dev/hackingforgood/bucket ; notes = /Users/joell/dev/hackingforgood/memory/notes (biomede-example, forum-example, hemismart-mykids-nonmedical-icons, national-templates, pediatric-adaptation-analysis, mock-api-pediatric-prescriber).
+Paths: text mirror = data/text ; binaries = bucket (unzip data/bucket.zip) ; notes = memory/notes (biomede-example, forum-example, hemismart-mykids-nonmedical-icons, national-templates, pediatric-adaptation-analysis, mock-api-pediatric-prescriber).
 
 ## 1. What the bucket is
 Hacking for Good (Google) bucket of Belgian clinical-trial informed consent material. Four real trials (Forum/FORUM2, Biomede 2.0, HEM-iSmart sub D, MyKids) each show a sponsor ORIGINAL consent form (where available) and the Belgian APPROVED ICFs (L1 SIS and ICF, one per audience: 18+/adult, parents, 12-17, 8-11, in EN/NL/FR where available). Next to them sit the mandatory Belgian CT-College MODEL ICF (adults, IMP trials; EN/FR/NL, two versions each), a non-medical (Ghent) ICF template, an icon pool for child-friendly forms, and an unrelated mock e-prescription API (Pediatric Prescriber track). Goal: sponsor original -> Belgian-compliant approved ICF set; ground truth = the approved files.
@@ -75,3 +75,11 @@ Risks:
 
 ## 7. Update (after workflow)
 - HEM-iSmart sponsor `.RTF` files are now converted into `memory/text/HEM-iSmart Example/Sponsor Originals/` (convert.sh extension match fixed to include `RTF`). Not yet analysed against the approved HEM docs.
+
+## 8. Briefing deck update (docs/ pptx) - READ `briefing-bspho-use-case.md`
+The organizers' briefing (BSPHO, 29 Oct 2026) is the authoritative assignment. It changes/clarifies:
+- Deliverable is a deployable **web app with three modes: creation, translation, update** (see briefing note), outputs .docx, must flag edits to mandatory text and information gaps for human review.
+- **Correction to section 3 points 6-7:** Adolescent (12-17) and Children (8-11) ICFs are adapted from the *sponsor's own* adolescent/child ICFs using **HIRUZ (UZ Gent) templates**, not from the adult ICF. Only the Parental ICF is derived from the Adult ICF. The measured length/voice rules in pediatric-adaptation-analysis.md remain valid as descriptions of the target output.
+- HIRUZ adolescent/children templates (EN/FR/NL) were announced as provided but were not found in the bucket; non-medical HIRUZ templates exist only as one EN adult file.
+- Update mode (old-template ICFs -> latest template) and the template-modularisation step are explicit requirements; template ingestion must be reusable for future template versions.
+- Nice-to-haves: interactive human-in-the-loop creation, image generation for children, text simplification tool, translation tool, non-medical ICFs.

@@ -1,6 +1,6 @@
 # HEM-iSmart example, MyKids (non-medical) and Icons: analysis notes
 
-Text root: /Users/joell/dev/hackingforgood/memory/text (originals in .../bucket). All EN only.
+Text root: data/text (originals in .../bucket). All EN only.
 
 ## 1. Inventory (word counts from converted text)
 
@@ -54,7 +54,7 @@ HEM 12-17 (3,920 w) is a full information sheet; 18+ and Parents are about 14k w
 - Retention numbers differ: non-medical template says investigator keeps original at least 10 years; MyKids/HEM child assent says 25 years (study-specific, from sponsor). Do not hardcode.
 - Pipeline implication: age groups need independent text length targets (8-11: ~900-1,300 words; 12-17: ~4,000; adult: whole thing), no legal blocks for 8-11, and a separate assent form (not a signed ICF) with a "tick yes/no" table.
 
-## 5. Icons ICFs.docx (/Users/joell/dev/hackingforgood/bucket/Additional Materials/Icons ICFs.docx)
+## 5. Icons ICFs.docx (bucket (unzip data/bucket.zip)/Additional Materials/Icons ICFs.docx)
 Extracted at /private/tmp/claude-501/-Users-joell-dev-hackingforgood/ec10d97d-aa6f-41f2-a6de-48b008132cd5/scratchpad/icons (word/media). Text is only the header line "Flaticon - https://www.flaticon.com/" (hyperlink) plus auto alt-text (Dutch Word auto-captions: "Afbeelding met ... Automatisch gegenereerde beschrijving"). 17 images, one per paragraph, in order (rId5..rId21 = image1..image17). It is an icon library for child-friendly ICFs, attribution to Flaticon (licence requires crediting).
 
 Ordering and discernible content (my viewing):

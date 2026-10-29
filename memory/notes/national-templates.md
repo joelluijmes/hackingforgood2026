@@ -1,7 +1,7 @@
 # National Templates (CT-College model ICF, adults, IMP trials)
 
-Source text: `/Users/joell/dev/hackingforgood/memory/text/National Templates/` (6 txt, ~1320-1345 lines each).
-Originals: `/Users/joell/dev/hackingforgood/bucket/National Templates/*.docx`.
+Source text: `data/text/National Templates/` (6 txt, ~1320-1345 lines each).
+Originals: `bucket (unzip data/bucket.zip)/National Templates/*.docx`.
 Title (EN): "Model ICF for interventional clinical trialS with IMP on adult patients". Adult patients ONLY (no minors, no pediatric text). Incapacitated adults are covered only via the optional LEGAL REPRESENTATIVE signature block.
 
 ## Files and versions

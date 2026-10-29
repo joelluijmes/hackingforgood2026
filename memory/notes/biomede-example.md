@@ -1,6 +1,6 @@
 # Biomede Example (BIOMEDE 2.0) - analysis notes
 
-Source: /Users/joell/dev/hackingforgood/memory/text/Biomede Example/ (text), binaries in /Users/joell/dev/hackingforgood/bucket/Biomede Example/ (.docx approved, .doc/.docx sponsor).
+Source: data/text/Biomede Example/ (text), binaries in bucket (unzip data/bucket.zip)/Biomede Example/ (.docx approved, .doc/.docx sponsor).
 Trial: BIOMEDE 2.0, pediatric/adolescent/adult diffuse midline glioma (DIPG), sponsor Gustave Roussy (Villejuif, FR). Randomised ONC201 (Chimerix) vs everolimus (Novartis) + standard radiotherapy.
 
 ## Inventory

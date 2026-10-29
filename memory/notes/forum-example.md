@@ -1,6 +1,6 @@
 # Forum Example (FORUM2 trial) - analysis notes
 
-Root: /Users/joell/dev/hackingforgood/memory/text/Forum Example  (originals: /Users/joell/dev/hackingforgood/bucket)
+Root: data/text/Forum Example  (originals: bucket (unzip data/bucket.zip))
 Trial: FORUM2 "Framework for Optimizing, Refining, and Unifying Management of HSCT in Pediatric ALL", EU CT 2025-522052-13-00, sponsor Ospedale Pediatrico Bambino Gesu (Rome), academic platform trial. Insurer in approved files: Amlin, policy 299.053.700 (Brussels).
 
 ## 1. Inventory (74 text files: 17 sponsor + 57 approved)
