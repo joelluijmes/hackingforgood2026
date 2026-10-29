@@ -2,12 +2,15 @@
 
 from . import _xml
 from ._xml import q
+from .render import is_toc_paragraph
 
 
 def _block_lines(container) -> list[str]:
     lines: list[str] = []
     for child in container:
         if child.tag == q("p"):
+            if is_toc_paragraph(child):
+                continue
             t = _xml.para_text(child).strip()
             if t:
                 lines.append(t)

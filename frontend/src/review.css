@@ -752,3 +752,29 @@
   min-width: 0;
   overflow-x: hidden;
 }
+
+/* ---- table of contents entries: internal links to headings ---- */
+.paper p.toc {
+  margin: 2px 0;
+}
+.paper p.toc-2 {
+  padding-left: 1.25em;
+}
+.paper p.toc-3 {
+  padding-left: 2.5em;
+}
+.paper a.toc-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.paper a.toc-link:hover {
+  text-decoration: underline;
+}
+.paper a.toc-link[data-dead] {
+  cursor: default;
+}
+.paper p.toc-title {
+  font-weight: 700;
+  margin: 12px 0 6px;
+}

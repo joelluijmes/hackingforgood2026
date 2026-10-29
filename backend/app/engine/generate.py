@@ -13,7 +13,7 @@ from docx.text.run import Run
 
 from . import ai
 from ._xml import q
-from .render import COLOR_CLASSES, _rgb, _style_color
+from .render import COLOR_CLASSES, _rgb, _style_color, is_toc_paragraph
 
 log = logging.getLogger("icf.generate")
 
@@ -104,6 +104,8 @@ def _collect_placeholders(doc) -> tuple[list[dict], int]:
     placeholders: list[dict] = []
     section = ""
     for p_el in list(doc.element.body.iter(q("p"))):
+        if is_toc_paragraph(p_el):  # never fill, strip or flag the table of contents
+            continue
         p = Paragraph(p_el, doc._body)
         style_name = p.style.name if p.style is not None else ""
         para_color = _style_color(p.style) if p.style is not None else None
@@ -217,6 +219,29 @@ def _mark_fill(r_el, n: int) -> None:
     r_el.addnext(end)
 
 
+def _refresh_toc_on_open(doc) -> None:
+    """Ask Word to refresh fields (TOC page numbers / removed guidance entries) when opening."""
+    from docx.oxml import OxmlElement
+
+    settings = doc.settings.element
+    if settings.find(q("updateFields")) is not None:
+        return
+    el = OxmlElement("w:updateFields")
+    el.set(q("val"), "true")
+    later = {  # schema order: updateFields precedes these
+        "hdrShapeDefaults", "footnotePr", "endnotePr", "compat", "docVars", "rsids", "mathPr",
+        "attachedSchema", "themeFontLang", "clrSchemeMapping", "doNotIncludeSubdocsInStats",
+        "doNotAutoCompressPictures", "forceUpgrade", "captions", "readModeInkLockDown",
+        "smartTagType", "schemaLibrary", "shapeDefaults", "doNotEmbedSmartTags", "decimalSymbol",
+        "listSeparator",
+    }  # fmt: skip
+    nxt = next((c for c in settings if c.tag.rsplit("}", 1)[-1] in later), None)
+    if nxt is not None:
+        nxt.addprevious(el)
+    else:
+        settings.append(el)
+
+
 def generate_icf(
     template_path: str,
     out_path: str,
@@ -312,6 +337,7 @@ def generate_icf(
             flagged += 1
         report("comments", n, len(placeholders))
     report("saving", 0, 1)
+    _refresh_toc_on_open(doc)
     doc.save(out_path)
     return {
         "placeholders_total": len(placeholders),
