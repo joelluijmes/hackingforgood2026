@@ -253,7 +253,14 @@ def generate_icf(
     icf_type: str,
     progress: Callable[[str, int, int], None] | None = None,
     thinking_budget: int = 1024,
+    facts: str = "",
 ) -> dict:
+    if facts and facts.strip():  # authoritative known facts (site, contacts, insurer...)
+        notes = (
+            "KNOWN FACTS (authoritative; use verbatim for site, contact, insurance and similar "
+            "details; do not flag these as missing):\n" + facts.strip() + "\n\n" + (notes or "")
+        )
+
     def report(step: str, done: int, total: int) -> None:
         if progress:
             try:
