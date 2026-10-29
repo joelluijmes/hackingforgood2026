@@ -75,6 +75,11 @@ const INVENTORY: { group: string; items: [string, Status, string?][] }[] = [
       ],
       ['Creation always in English; NL/FR only after PI review', 'done'],
       [
+        'Study profile: project and site facts with global BSPHO defaults',
+        'done',
+        'contacts, insurer, DPO; inferred from sponsor docs; fed into generation',
+      ],
+      [
         'Mixed translation into NL/FR templates',
         'done',
         'template language kept, content translated',

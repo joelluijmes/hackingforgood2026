@@ -11,6 +11,7 @@ import Login from './pages/Login';
 import ParticipantPortal from './pages/ParticipantPortal';
 import Project from './pages/Project';
 import Projects from './pages/Projects';
+import Settings from './pages/Settings';
 import Templates from './pages/Templates';
 import VersionViewer from './pages/VersionViewer';
 import Viewer from './pages/Viewer';
@@ -54,6 +55,7 @@ function Shell() {
             {t('nav.projects')}
           </NavLink>
           <NavLink to="/templates">{t('nav.templates')}</NavLink>
+          <NavLink to="/settings">{t('nav.settings')}</NavLink>
         </nav>
         <NavLink to="/admin" className="nav-admin">
           {t('nav.admin')}
@@ -102,6 +104,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects/:id" element={<Project />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/settings" element={<Settings />} />
         <Route path="/templates" element={<Templates />} />
         <Route path="/templates/:id" element={<Viewer />} />
         <Route path="/versions/:vid" element={<VersionViewer />} />

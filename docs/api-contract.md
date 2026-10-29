@@ -152,3 +152,12 @@ Staff-only (`role=staff`), mirror of the participant endpoints without membershi
 - `GET /api/projects/{pid}/portal-preview/documents/{doc_id}?persona=&lang=` -> `ParticipantDocumentContent`.
 - `POST /api/projects/{pid}/portal-preview/ask` body = participant ask body -> same reply as `/api/participant/trials/{pid}/ask`.
 - `GET /api/projects/{pid}/participant-invitations` -> `[{email, expires_at, status: pending|accepted|expired}]` (newest first; tokens are never returned after creation).
+
+## Study profile (project facts + global defaults)
+Fixed fact schema in `backend/app/facts.py` (`key,label,group,kind text|phone|email|multiline,scope global|project|both,hint`; groups study, site, contacts, privacy, ethics, insurance). Effective value = project override > global default. Facts are fed to generation/translation/update as authoritative context; unknown facts give a `Missing: ... in the study profile (profile field: <label>)` Word comment.
+- `GET /api/global-facts` -> `{schema: FactDef[] (scope global|both), values: {key: string}}`; `PUT /api/global-facts` body `{values: {key: string|null}}` (empty/null removes) -> same shape.
+- `GET /api/projects/{pid}/facts` -> `{schema: FactDef[], facts: {key: {value, source: 'manual'|'inferred'|'global'|''}}, globals: {key: string}, key_facts: string[], filled, total}`.
+- `PUT /api/projects/{pid}/facts` body `{values: {key: string|null}, source?: 'manual'|'inferred'}` (partial; empty removes the override). `source='inferred'` + `study_summary` also sets `project.description`. -> same as GET.
+- `POST /api/projects/{pid}/facts/infer` -> `{suggestions: [{key, value, current, current_source}]}` (AI from sponsor docs; nothing saved). 422 `no_sponsor_documents`, 503 `ai_unavailable`, 502 `ai_failed`.
+- Admin: full reset wipes facts; "clear generated" keeps them. Project delete removes its facts. Generic Belgian DPA defaults are seeded into `global_facts` at startup when the table is empty.
+- Frontend: Study profile card on `/projects/:id`; `/settings` global defaults.

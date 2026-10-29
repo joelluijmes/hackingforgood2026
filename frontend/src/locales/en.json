@@ -58,7 +58,8 @@
     "projects": "Projects",
     "templates": "Templates",
     "language": "Your language",
-    "admin": "Admin"
+    "admin": "Admin",
+    "settings": "Global defaults"
   },
   "projects": {
     "title": "Projects",
@@ -758,5 +759,41 @@
       "publishedVersion": "Published version {{n}}",
       "close": "Close"
     }
+  },
+  "facts": {
+    "title": "Study profile",
+    "filled": "{{filled}} of {{total}} key facts filled",
+    "infer": "Infer from sponsor documents",
+    "inferring": "Reading sponsor documents…",
+    "save": "Save",
+    "saved": "Saved",
+    "override": "Override",
+    "inherited": "Inherited from global defaults",
+    "revert": "Use global default",
+    "src_inferred": "inferred",
+    "src_global": "global",
+    "src_manual": "manual",
+    "reviewTitle": "Suggested facts from sponsor documents",
+    "reviewHint": "Review each suggestion; only accepted ones are saved (marked as inferred).",
+    "accept": "Accept",
+    "reject": "Skip",
+    "acceptSelected": "Save accepted ({{n}})",
+    "none": "No new facts were found in the sponsor documents.",
+    "current": "Current",
+    "noSponsor": "Upload a sponsor document first.",
+    "aiOff": "AI is not available.",
+    "aiFail": "The AI call failed, try again.",
+    "hint": "Reused in every ICF generation: filled facts are used verbatim, missing ones raise a comment pointing here.",
+    "group": {
+      "study": "Study",
+      "site": "Site",
+      "contacts": "Contacts",
+      "privacy": "Data protection",
+      "ethics": "Ethics committee",
+      "insurance": "Insurance"
+    },
+    "settingsTitle": "Global defaults",
+    "settingsLead": "BSPHO-wide facts that every project inherits and can override in its study profile.",
+    "about": "Study profile: structured project and site facts (contacts, insurer, DPO) with global BSPHO defaults, inferred from sponsor documents and fed into ICF generation"
   }
 }

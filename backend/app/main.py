@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from . import auth, convert, db, seed, storage, tasks
 from .routers import (
     editing,
+    facts,
     generate,
     interpreter,
     library,
@@ -29,6 +30,9 @@ app.add_middleware(
 def _startup() -> None:
     db.init()
     auth.seed_demo_user()
+    from . import facts as facts_mod
+
+    facts_mod.seed_global_defaults()
 
 
 @app.get("/api/health")
@@ -192,6 +196,7 @@ for r in (
     review.router,
     generate.router,
     editing.router,
+    facts.router,
     interpreter.router,
     participant.router,
 ):

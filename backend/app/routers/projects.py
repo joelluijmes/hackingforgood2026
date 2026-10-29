@@ -164,6 +164,7 @@ def delete_project(pid: int) -> Response:
             conn, "doc_id IN (SELECT id FROM project_docs WHERE project_id = ?)", (pid,)
         )
         conn.execute("DELETE FROM project_docs WHERE project_id = ?", (pid,))
+        conn.execute("DELETE FROM project_facts WHERE project_id = ?", (pid,))
         conn.execute("DELETE FROM projects WHERE id = ?", (pid,))
     return Response(status_code=204)
 

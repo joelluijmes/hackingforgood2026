@@ -58,7 +58,8 @@
     "projects": "Projecten",
     "templates": "Sjablonen",
     "language": "Uw taal",
-    "admin": "Beheer"
+    "admin": "Beheer",
+    "settings": "Algemene standaarden"
   },
   "projects": {
     "title": "Projecten",
@@ -758,5 +759,41 @@
       "publishedVersion": "Gepubliceerde versie {{n}}",
       "close": "Sluiten"
     }
+  },
+  "facts": {
+    "title": "Studieprofiel",
+    "filled": "{{filled}} van {{total}} kerngegevens ingevuld",
+    "infer": "Afleiden uit sponsordocumenten",
+    "inferring": "Sponsordocumenten lezen…",
+    "save": "Opslaan",
+    "saved": "Opgeslagen",
+    "override": "Overschrijven",
+    "inherited": "Overgenomen uit algemene standaarden",
+    "revert": "Algemene standaard gebruiken",
+    "src_inferred": "afgeleid",
+    "src_global": "algemeen",
+    "src_manual": "handmatig",
+    "reviewTitle": "Voorgestelde gegevens uit sponsordocumenten",
+    "reviewHint": "Controleer elk voorstel; alleen geaccepteerde worden opgeslagen (als afgeleid gemarkeerd).",
+    "accept": "Accepteren",
+    "reject": "Overslaan",
+    "acceptSelected": "Geaccepteerde opslaan ({{n}})",
+    "none": "Er zijn geen nieuwe gegevens gevonden in de sponsordocumenten.",
+    "current": "Huidig",
+    "noSponsor": "Upload eerst een sponsordocument.",
+    "aiOff": "AI is niet beschikbaar.",
+    "aiFail": "De AI-aanroep mislukte, probeer opnieuw.",
+    "hint": "Hergebruikt bij elke ICF-generatie: ingevulde gegevens worden letterlijk gebruikt, ontbrekende geven een opmerking die hiernaar verwijst.",
+    "group": {
+      "study": "Studie",
+      "site": "Centrum",
+      "contacts": "Contacten",
+      "privacy": "Gegevensbescherming",
+      "ethics": "Ethisch comité",
+      "insurance": "Verzekering"
+    },
+    "settingsTitle": "Algemene standaarden",
+    "settingsLead": "BSPHO-brede gegevens die elk project overneemt en in het studieprofiel kan overschrijven.",
+    "about": "Studieprofiel: gestructureerde project- en centrumgegevens (contacten, verzekeraar, DPO) met algemene BSPHO-standaarden, afgeleid uit sponsordocumenten en gebruikt bij ICF-generatie"
   }
 }
