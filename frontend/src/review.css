@@ -644,3 +644,15 @@
     max-height: none;
   }
 }
+
+/* formatting-only changes (e.g. made bold): proposal cards + tracked w:rPrChange in the document */
+.ed-diff .ed-fmt,
+.paper .tc-fmt {
+  background: #eef3ff;
+  border-bottom: 2px dotted #4a6fd8;
+  border-radius: 2px;
+}
+.paper.hide-tc .tc-fmt {
+  background: none;
+  border-bottom: 0;
+}

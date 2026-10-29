@@ -8,7 +8,6 @@ export type Stage =
   | 'intake'
   | 'drafting'
   | 'pi_review'
-  | 'translation'
   | 'ethics_review'
   | 'approved';
 export type Role = 'sponsor' | 'icf' | 'other';
@@ -542,6 +541,7 @@ export const api = {
       body: form(file, { note: meta.note, source: meta.source }),
     }),
   getVersion: (vid: number) => req<VersionDetail>(`/versions/${vid}`),
+  projectExportUrl: (pid: number) => withToken(`/api/projects/${pid}/export`),
   versionFileUrl: (vid: number) => withToken(`/api/versions/${vid}/file`),
   getVersionHtml: (vid: number) => req<VersionHtml>(`/versions/${vid}/html`),
 

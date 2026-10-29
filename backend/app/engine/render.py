@@ -88,6 +88,10 @@ class _Renderer:
             h = f"<u>{h}</u>"
         if cls:
             h = f'<span class="c-{cls}">{h}</span>'
+        change = r_el.find(f"{q('rPr')}/{q('rPrChange')}")
+        if change is not None:  # tracked formatting change (e.g. made bold)
+            author = escape(change.get(q("author")) or "", quote=True)
+            h = f'<span class="tc-fmt" data-author="{author}">{h}</span>'
         return h, ("" if in_del else text)
 
     def _walk_inline(self, el, p, para_color, pieces: list, plain: list):

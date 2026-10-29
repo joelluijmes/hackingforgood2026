@@ -106,7 +106,24 @@
     "countDeclined_one": "{{count}} refusé",
     "countDeclined_other": "{{count}} refusés",
     "latestSummary": "v{{n}} · {{source}}",
-    "translatedFrom": "Traduit de {{title}}"
+    "translatedFrom": "Traduit de {{title}}",
+    "next": {
+      "title": "Étape suivante",
+      "intake": "Téléversez les documents du promoteur (protocole, formulaires de consentement) pour cette étude.",
+      "uploadSponsor": "Téléverser les documents du promoteur",
+      "drafting": "Générez le projet d'ICF en anglais à partir des documents du promoteur.",
+      "generateDraft": "Générer le projet d'ICF",
+      "pi": "Ouvrez les projets et envoyez-les au PI. Téléversez la copie relue (avec commentaires) comme nouvelle version, puis statuez sur chaque commentaire. Vous pouvez aussi traduire en NL/FR ici.",
+      "openDraft": "Ouvrir",
+      "ethics": "Envoyez les ICF au comité d'éthique : téléchargez-les tous dans un zip, puis téléversez chaque document relu (avec les commentaires du comité) comme nouvelle version. Vous approuvez ou refusez ensuite chaque commentaire comme d'habitude.",
+      "downloadAll": "Tout télécharger pour le comité d'éthique",
+      "download": "Télécharger",
+      "uploadReviewed": "Téléverser la version relue",
+      "approved": "Toutes les étapes sont terminées. Téléchargez les versions finales de tous les ICF.",
+      "downloadFinal": "Télécharger les ICF finaux (zip)",
+      "latest": "dernière v{{n}}",
+      "noIcfs": "Pas encore de documents ICF."
+    }
   },
   "stages": {
     "ariaLabel": "Étape du projet",
@@ -120,11 +137,7 @@
     },
     "pi_review": {
       "label": "Relecture investigateur",
-      "hint": "Envoyer, téléverser la copie relue"
-    },
-    "translation": {
-      "label": "Traduction",
-      "hint": "Versions NL / FR"
+      "hint": "Relire, traduire, téléverser la copie relue"
     },
     "ethics_review": {
       "label": "Comité d'éthique",
@@ -364,7 +377,11 @@
       "parent": "Parents",
       "adolescent": "Adolescent 12–17",
       "child": "Enfant 8–11"
-    }
+    },
+    "translateAll": "Tout traduire",
+    "translateAllTitle": "Traduire toutes les versions NL/FR manquantes",
+    "generateAll": "Générer tous les ICF",
+    "generateAllTitle": "Générer tous les types d'ICF anglais manquants (adulte, parents, adolescent, enfant)"
   },
   "task": {
     "titleGenerate": "Génération du formulaire {{lang}} ({{icf}})",
