@@ -1,0 +1,609 @@
+DOCUMENT INFORMATIF ET FORMULAIRE DE CONSENTEMENT ÉCLAIRÉ POUR LES PARENTS/TUTEURS
+
+FORUM2 – Sous-étude ForInfant (P1)
+
+Utilisation du blinatumomab (un engageur de lymphocytes T bispécifique) pour prévenir la rechute après une greffe allogénique de cellules souches hématopoïétiques chez les enfants de moins de 2 ans ne recevant pas d'irradiation corporelle totale (ICT) dans le cadre du régime de conditionnement
+
+Titre officiel de l'étude : FORUM2– Cadre pour l'optimisation, le perfectionnement et l'unification de la prise en charge (Framework for Optimizing, Refining, and Unifying Management - FORUM) de la GCSH dans la LLA pédiatrique.
+
+Numéro EU : 2025-522052-13-00
+
+Numéro d’essai : FORUM2
+
+Promoteur de l’essai : Ospedale Pediatrico Bambino Gesù, IRCCS, Piazza di Sant’Onofrio 4, Rome, Italie
+
+Nom du site : nom officiel du site
+
+Principale adresse du site : address of site
+
+Qui puis-je contacter en cas de questions ?
+
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+| Nom             | Fonction                                                                                                                                                   | En cas de                                                                                      | Coordonnées                                                                        |
++:================+============================================================================================================================================================+================================================================================================+====================================================================================+
+| Prénom, nom     | Investigateur principal du site                                                                                                                            | Informations, problèmes ou inquiétudes                                                         | N° de téléphone, e-mail                                                            |
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+|                 | Le personnel de l’essai                                                                                                                                    | Informations, problèmes, inquiétudes                                                           | N° de téléphone, e-mail                                                            |
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+|                 | Contact pour les questions urgentes relatives à l’essai                                                                                                    | Informations, problèmes, inquiétudes urgents                                                   | N° de téléphone                                                                    |
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+|                 | Médiateur pour les droits des patients du site [et si cela n'est pas possible, contactez le CT College].                                                   | Préoccupations/questions relatives à vos droits en tant que participant(e) à un essai clinique | Numéro de téléphone du site [si ce n’est pas possible : ct-college@health.fgov.be] |
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+| Assurance Amlin | Compagnie d'assurance du promoteur                                                                                                                         | En cas de désaccord ou de plainte sur un sinistre                                              | Numéro de police : 299.053.700                                                     |
+|                 |                                                                                                                                                            |                                                                                                |                                                                                    |
+|                 |                                                                                                                                                            |                                                                                                | Adresse : Boulevard du Roi Albert II 37                                            |
+|                 |                                                                                                                                                            |                                                                                                |                                                                                    |
+|                 |                                                                                                                                                            |                                                                                                | 1030 Bruxelles                                                                     |
+|                 |                                                                                                                                                            |                                                                                                |                                                                                    |
+|                 |                                                                                                                                                            |                                                                                                | N° de téléphone : 02 894 70 00                                                     |
+|                 |                                                                                                                                                            |                                                                                                |                                                                                    |
+|                 |                                                                                                                                                            |                                                                                                | E-mail: klachtenmanagement.be                                                      |
+|                 |                                                                                                                                                            |                                                                                                | @msamlin.com                                                                       |
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+|                 | Data Protection Officer du site [si impossible, personne de contact pour la protection des données.] Personne à contacter pour la protection des données.] | Questions relatives à la confidentialité de vos données                                        | N° de téléphone                                                                    |
+|                 |                                                                                                                                                            |                                                                                                |                                                                                    |
+|                 |                                                                                                                                                            |                                                                                                | E-mail : E-mail                                                                    |
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+|                 | Autorité belge de protection des données                                                                                                                   | Plaintes relatives à la confidentialité de vos données                                         | +32(0)2274 48 00                                                                   |
+|                 |                                                                                                                                                            |                                                                                                |                                                                                    |
+|                 |                                                                                                                                                            |                                                                                                | E-mail : contact@apd-gba.be                                                        |
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+
+● Pour gérer les plaintes non résolues par l'investigateur, vous pouvez contacter le médiateur du centre d'étude à l'adresse ci-dessus.
+
+● En vertu du RGPD, vous avez le droit d'accéder au traitement des données de votre enfant. Pour toute question à ce sujet, vous pouvez contacter le Data Protection Officer du centre d'étude à l'adresse ci-dessus.
+
+● Vous avez également le droit de déposer une plainte concernant la manière dont les données de votre enfant sont traitées auprès de l'autorité de contrôle belge chargée de veiller au respect de la législation en matière de protection des données. Autorité de protection des données (APD), ci-dessus.
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| L'essai en un coup d’oeil                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Bonjour,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Vous recevez cette lettre d'information parce que votre enfant a été diagnostiqué avec une leucémie lymphoblastique aiguë (LLA) et aura besoin d'une greffe de cellules souches hématopoïétiques (GCSH). Ce document concerne spécifiquement la participation éventuelle à une sous-étude (P1) de l'essai FORUM2.                                                                                                                                                                              |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| L'essai FORUM2 est un essai académique, ce qui signifie qu'il est organisé par différents hôpitaux universitaires. Il s'agit d'une infrastructure commune permettant d'aborder plusieurs questions scientifiques au fil du temps, dans un cadre unique. Il a été mis en place par l'Ospedale Pediatrico Bambino Gesù (IRCCS) à Rome (Italie) et inclura plus de 1000 participants dans le monde entier, dont environ 4 à 5 patients par an en Belgique.                                        |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Dans ce cadre, certains patients peuvent être invités à participer à des sous-études spécifiques, selon qu'ils rentrent dans les conditions ou non. Chacune de ces sous-études a ses propres critères d'éligibilité et son propre calendrier. Votre consentement écrit explicite vous sera demandé avant toute participation à ces sous-études si votre enfant remplit les conditions d'élégibilité.                                                                                           |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Cette fiche d'information et ce formulaire de consentement se réfèrent à la sous-étude P1 (blinatumomab).                                                                                                                                                                                                                                                                                                                                                                                      |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Cette sous-étude vise à déterminer si un traitement par blinatumomab jusqu'à 4 cycles après la GCSH peut améliorer les résultats chez les enfants de moins de 2 ans atteint(e)s de LLA B CD19+.                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| L'étude FORUM précédente a montré que le taux de rechute après GCSH chez les enfants atteint(e)s de LLA B de moins de 2 ans est particulièrement élevé et que les enfants de moins de 2 ans ne peuvent pas bénéficier de l'effet réducteur de rechute de l'ICT (irradiation corporelle totale) dans le cadre du régime de conditionnement. Il est en effet associé à un risque excessif de toxicités sévères à long terme, en particulier sur la croissance et le développement neurocognitif. |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Les principaux objectifs de la sous-étude sont d'essayer de :                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| - Réduire l'incidence de la rechute                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| - Améliorer la survie après GCSH                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| - Évaluer la tolérabilité du blinatumomab après GCSH                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| - Évaluer l'effet du blinatumomab sur la reconstitution du système immunitaire après la greffe.                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Le blinatumomab est une forme d'immunothérapie autorisée pour traiter certaines LLA B CD19+ à haut risque et sera administré en prophylaxie (prévention) de la rechute après GCSH.                                                                                                                                                                                                                                                                                                             |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Le blinatumomab sera fourni gratuitement et l'hospitalisation associée ne vous sera pas facturée. Toutes les autres visites sont effectuées dans le cadre du traitement standard. Tous les examens et procédures seront effectués dans le cadre des soins standard (pas d'examens ou de procédures spécifiques à l'étude, pas de prélèvements sanguins spécifiques à l'étude).                                                                                                                 |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Le recrutement durera un maximum de 5 ans et 40 enfants seront inclus. Nous prévoyons d'inclure un maximum de 3 patient(e)s belges. Après la période de traitement, vous et votre enfant serez invité(e)s à revenir à l'hôpital pour des visites de suivi à long terme tous les 6 mois jusqu'à 2 ans après GCSH. Ces visites sont effectuées dans le cadre des soins standard.                                                                                                                 |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| La participation à la sous-étude P1 est volontaire et ne vous coûte rien de plus que le coût du traitement standard. Vous ne recevrez aucune compensation pour la participation de votre enfant à cette partie de l'essai. Si quelque chose arrive à votre enfant pendant l'essai, le promoteur a souscrit une assurance pour couvrir tous les frais liés.                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Si votre enfant ne participe pas à cette sous-étude avec le blinatumomab, il ou elle ne recevra pas de blinatumomab et bénéficiera du suivi intensif habituel après une greffe de cellules souches.                                                                                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Votre investigateur ou investigatrice informera les médecins traitant(e)s de votre enfant de sa participation à cet essai. Votre enfant ne peut pas participer à un autre essai clinique interventionnel sans en informer l'investigateur ou le personnel chargé de l'essai. Vous devez également communiquer toutes les informations pertinentes relatives à l'état de santé de votre enfant, aux autres médicaments pris ou aux symptômes ressentis.                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| L'essai et les documents relatifs à l'essai ont été examinés et approuvés par les autorités européennes et un comité d'éthique indépendant en Belgique. Les donnés seront confidentielles.                                                                                                                                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Veuillez prendre le temps de lire attentivement ce document. Vous pouvez en discuter avec les membres de votre famille, vos amis ou vos médecins. La participation de votre enfant à cette sous-étude est entièrement volontaire. Si vous choisissez de ne pas participer, cela n'affectera pas les soins médicaux futurs de votre enfant.                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Si vous décidez de laisser votre enfant participer, vous êtes libre de retirer votre consentement à tout moment, sans donner de raison et sans aucune conséquence négative pour le traitement de votre enfant.                                                                                                                                                                                                                                                                                 |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Si vous avez des questions concernant cet essai, veuillez me contacter ou contacter mon équipe en utilisant les coordonnées figurant sur la première page de ce document.                                                                                                                                                                                                                                                                                                                      |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Cordialement,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| L’investigateur                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+CHAPITRE I – DESCRIPTION DE L'ESSAI ET DE VOS DROITS LORSQUE votre enfant PARTICIPE
+
+Pourquoi mener cette sous-étude ?
+
+Cette sous-étude fait partie de l'essai plateforme FORUM2 plus large, qui vise à optimiser la façon dont la greffe de cellules souches (GCSH) est réalisée pour les enfants et les jeunes atteint(e)s de leucémie aiguë lymphoblastique (LLA).
+
+Le but de cette sous-étude est d'évaluer si les résultats peuvent être améliorés pour les enfants de moins de 2 ans atteint(e)s de LLA B CD19+ en testant si l'utilisation du blinatumomab après GCSH entraîne une réduction de la rechute leucémique.
+
+Le traitement de soins standard actuel pour les enfants de moins de 2 ans avec une indication de GCSH est la greffe elle-même, précédée d'un régime de conditionnement intensif à base de chimiothérapie.
+
+L'étude FORUM précédente a montré que chez les enfants de moins de 2 ans :
+
+- le taux de rechute après GCSH chez les enfants atteint(e)s de LLA B de moins de 2 ans est particulièrement élevé et
+
+- ils ne peuvent pas bénéficier de l'effet réducteur de rechute de l'ICT (irradiation corporelle totale) dans le cadre du régime de conditionnement car cela est associé à un risque excessif de toxicités sévères à long terme, en particulier sur la croissance et le développement neurocognitif.
+
+Par conséquent, nous souhaitons administrer le blinatumomab dans cette sous-étude afin d'essayer de réduire le risque de rechute. Le blinatumomab est une forme d'immunothérapie autorisée pour traiter certaines LLA B CD19+ à haut risque et sera administré en prophylaxie (prévention) de la rechute après GCSH. Le blinatumomab, un engageur de lymphocytes T bispécifique (BiTE) ciblant CD19, stimulera les lymphocytes T pour éliminer les cellules CD19 positives, y compris les cellules leucémiques, avec un profil de toxicité favorable par rapport à la chimiothérapie traditionnelle. Le BiTE a démontré son efficacité dans les populations pédiatriques et adultes. Chez les nourrissons atteint(e)s de LLA, il a récemment été démontré que le blinatumomab est sûr et efficace, avec un excellent profil de sécurité.
+
+Généralement bien toléré, en particulier dans un contexte de maladie à faible charge tumorale, le blinatumomab représente un médicament idéal à utiliser après GCSH. Des stratégies de consolidation après GCSH allogénique pour prévenir la rechute chez les patient(e)s atteint(e)s de LLA B CD19 positive sont à l'étude, et il a été démontré que le blinatumomab peut être utilisé avec succès dans ce contexte.
+
+Cette sous-étude vise à déterminer si un traitement par blinatumomab jusqu'à 4 cycles après la GCSH peut améliorer les résultats chez les enfants de moins de 2 ans atteint(e)s de LLA B CD19+.
+
+Les principaux objectifs de la sous-étude sont d'essayer de :
+
+- Réduire l'incidence de la rechute
+
+- Améliorer la survie après GCSH
+
+- Évaluer la tolérabilité du blinatumomab après GCSH
+
+- Évaluer l'effet du blinatumomab sur la reconstitution du système immunitaire.
+
+Cette sous-étude devrait se dérouler dans environ 30 centres dans 20 pays européens et 40 enfants de moins de 2 ans y seront inclus. Le recrutement durera un maximum de 5 ans et nous prévoyons d'inclure un maximum de 3 patient(e)s belges.
+
+Pourquoi mon enfant est-il invité à participer ?
+
+Votre enfant a reçu un diagnostic de leucémie aiguë lymphoblastique B CD19+ (LLA B) et est âgé(e) de 3 mois à 2 ans. Votre enfant a été greffé(e) après un régime de conditionnement à base de chimiothérapie.
+
+Nous vous demandons de donner votre consentement pour participer à cette sous-étude car nous voulons vérifier si l'utilisation du blinatumomab après GCSH chez les enfants de moins de 2 ans est sûre et efficace pour réduire l'incidence de la rechute leucémique.
+
+L'investigateur/investigatrice ou le personnel de l'essai discutera avec vous des conditions à remplir pour être autorisé(e) à participer à la sous-étude.
+
+Mon enfant doit-il participer à un essai ?
+
+La participation de votre enfant à cet essai est volontaire et doit rester libre de toute contrainte. Cela signifie que vous/votre enfant avez le droit de ne pas participer à l'essai ou de vous retirer à tout moment sans donner de raison, même si vous avez précédemment accepté de participer. Votre décision n'aura aucune incidence sur votre relation avec l'investigateur ou le médecin traitant de votre enfant, ni sur la qualité des soins médicaux futurs de votre enfant.
+
+Si d'autres traitements sont disponibles pour la GCSH dans le cas de la LAL, l'investigateur ou son délégué discutera de ces traitements avec vous.
+
+Que se passera-t-il pendant cette sous-étude? 
+
+Avant la participation de votre enfant à cette sous-étude, le médecin traitant s'assurera que votre enfant est éligible pour participer et que le traitement commence aussi rapidement et en toute sécurité que possible.
+
+Pendant cette période de sélection, l'équipe de l'étude effectuera plusieurs évaluations médicales, notamment :
+
+Examen des antécédents médicaux de votre enfant et de son état de santé actuel
+
+- Examen physique
+
+- Analyses sanguines
+
+- Ponction de moelle osseuse
+
+La période de sélection commencera une fois que vous aurez signé le consentement éclairé, jusqu'à 14 jours avant le début du traitement et durera au maximum 14 jours. Tous les examens sont effectués dans le cadre des soins standard car votre enfant fera toujours l'objet d'un suivi intensif après la greffe de cellules souches.
+
+Une fois que l'éligibilité de votre enfant sera confirmée, le traitement de l'étude commencera rapidement pour réduire le risque de rechute de la maladie et éviter des retards inutiles.
+
+Le traitement impliquera jusqu’à quatre cycles de 28 jours de blinatumomab perfusé par voie intraveineuse, espacés d’une pause de 2 mois (voir image ci-dessous). Chez les patient(e)s présentant des signes de récidive possible de la maladie (c'est-à-dire une maladie résiduelle minime positive) à tout moment après GCSH, cet intervalle peut être réduit à 1 mois. Le traitement par blinatumomab commencera au jour 60 +/- 10 après GCSH.
+
+[Afbeelding met tekst, schermopname, Lettertype Door AI gegenereerde inhoud is mogelijk onjuist.]
+
+Le blinatumomab sera administré à la dose de 15 mcg/m2/jour en perfusion i.v. continue de 24 heures sur une période de 28 jours. Le médicament sera administré par des injecteurs spécifiques qui vous seront fournis ou fournis à votre enfant. Les patient(e)s resteront à l'hôpital les 3 premiers jours d'un cycle de blinatumomab. Le reste du traitement peut se poursuivre en ambulatoire. La durée d'hospitalisation dépend du jugement de l'investigateur ou investigatrice, ainsi que de la sécurité et de la tolérabilité du blinatumomab. L'administration du médicament ne doit pas être interrompue, si possible. En cas d'interruption de la perfusion due à une interruption technique ou logistique (par exemple, mesure diagnostique), elle doit être aussi courte que possible et la perfusion reprise le plus tôt possible. Si l'interruption dure plus de 4 heures, la reprise de la perfusion doit être effectuée à l'hôpital, sous la supervision de l'investigateur ou investigatrice.
+
+La période de traitement prévue dans cette sous-étude est de 10 mois. Le traitement de votre enfant commencera au jour 1 de l'étude et se poursuivra selon le schéma à moins que l'un des événements suivants ne se produise plus tôt :
+
+- Une rechute leucémique se produit
+
+- Des effets secondaires graves se produisent et ne se résolvent pas après réduction ou interruption du traitement
+
+- Votre enfant se retire de l'étude ou décède
+
+Pendant la période de traitement, les soins de votre enfant seront ajustés en fonction de sa réponse à la thérapie. La réponse (c'est-à-dire le maintien de la rémission) sera formellement évaluée par ponction de moelle osseuse à la fin du premier cycle et avant chaque cycle suivant.
+
+Afin de déterminer si le blinatumomab est efficace par rapport aux soins standard (c'est-à-dire aucun traitement supplémentaire), les résultats des patient(e)s traité(e)s seront comparés à ceux des patient(e)s inclus dans l'étude FORUM 1 précédente (cohorte historique).
+
+Si vous acceptez que votre enfant participe à cette sous-étude, il ou elle devra être hospitalisé(e) pendant 3 à 7 jours au début du traitement. Ensuite, vous viendrez régulièrement à l'hôpital et bénéficierez d'un suivi étroit, comme d'habitude après une greffe de cellules souches.
+
+Environ 30 jours après que votre enfant a pris sa dernière dose de blinatumomab, le médecin de l'étude vous contactera (par téléphone ou pour planifier une visite) pour effectuer une évaluation de suivi de sécurité afin de vérifier l'état de santé général de votre enfant.
+
+Après la période de traitement, vous et votre enfant serez invité(e)s à revenir à l'hôpital pour des visites de suivi à long terme tous les 6 mois jusqu'à 2 ans après GCSH. Ces visites sont importantes pour une surveillance continue de la santé et sont également effectuées dans le cadre des soins standard (sera également effectué si votre enfant ne participe pas à cette étude).
+
+Le blinatumomab vous sera fourni gratuitement et l'hospitalisation associée ne vous sera pas facturée. Toutes les autres visites et tous les examens sont effectués dans le cadre du traitement de soins standard (pas d'examens spécifiques à l'étude).
+
+Si votre enfant ne participe pas à cette sous-étude avec le blinatumomab, il ou elle ne recevra pas de blinatumomab et bénéficiera du suivi intensif habituel après une greffe de cellules souches.
+
+Les procédures ou examens standard pour le traitement de la maladie de votre enfant (c'est-à-dire les soins standard) vous seront facturés ou remboursés par votre mutuelle (sécurité sociale belge). Si vous avez besoin de plus de détails ou si vous n'êtes pas affilié(e) à une mutuelle (sécurité sociale belge), veuillez contacter le personnel de l'essai.
+
+Mon enfant tirera-t-il un bénéfice de cette sous-étude? 
+
+Le blinatumomab peut ou non être bénéfique pour traiter la LLA de votre enfant ou soulager les symptômes. Le blinatumomab peut ne pas être plus efficace que le traitement de soins standard actuel (aucun traitement supplémentaire après la greffe de cellules souches). Même s'il est bénéfique pour lui, un retour ou une aggravation des symptômes, de la maladie ou de l'affection est toujours possible.
+
+Les informations obtenues lors d'un essai peuvent contribuer à une meilleure compréhension de l'utilisation du médicament expérimental blinatumomab et peuvent améliorer les soins et les résultats de votre enfant et des futur(e)s patient(e)s atteint(e)s de LLA subissant une greffe de cellules souches.
+
+Quels sont les risques et inconforts possibles de la participation ?
+
+1.  Quels sont les effets secondaires possibles ?
+
+La participation à l’essai implique des risques. La participation à cette sous-étude clinique peut comporter des risques liés au médicament de l'étude (blinatumomab). Même si des études antérieures ont montré que le blinatumomab était généralement bien toléré, vous pouvez néanmoins observer des effets secondaires. Ces derniers peuvent varier d'une personne à l'autre. Ce document inclut à la fois les effets secondaires courants et les effets secondaires rares, mais graves, connus pour être associés au blinatumomab. Nous vous recommandons de discuter de tout doute avec le médecin de l'étude, y compris les effets secondaires possibles non répertoriés ici. De nombreux effets secondaires se résolvent peu de temps après l'arrêt ou la modification du médicament. Cependant, certains effets secondaires peuvent être graves, durables ou permanents et, dans de rares cas, pourraient être mortels.
+
+Effets secondaires du blinatumomab
+
+Chez les patient(e)s traité(e)s pour des hémopathies lymphoïdes, en dehors du contexte de GCSH, les effets secondaires très fréquents (survenant chez plus d'1 personne sur 10) incluent :
+
+Infections (virales ou bactériennes)
+
+Faible nombre de globules blancs (neutropénie), ce qui peut augmenter le risque d'infection
+
+Faible nombre de plaquettes (thrombocytopénie), ce qui peut entraîner des ecchymoses ou des saignements faciles
+
+Neutropénie fébrile (de la fièvre et peu de neurtophiles (type de globule blanc dand le sang)
+
+Syndrome de libération de cytokines
+
+Insomnie, maux de tête, tremblements
+
+Tachycardie (rythme cardiaque anormalement rapide), hypertension (élévation anormale de la pression artérielle), hypotension (une pression artérielle anormalement basse)
+
+Nausées, diarrhée, vomissements, constipation, douleurs abdominales
+
+Douleurs dorsales, douleurs dans les membres
+
+Augmentation des enzymes hépatiques, diminution des immunoglobulines
+
+Dans la grande majorité des cas (hors infections), ces effets secondaires sont réversibles et peuvent être gérés en réduisant temporairement ou en arrêtant le blinatumomab. Votre enfant sera surveillé(e) régulièrement par examen clinique, mesures des signes vitaux et analyses de sang, et si les conditions cliniques ne s'améliorent pas, la dose du médicament peut être réduite ou même temporairement arrêtée puis reprise à une dose inférieure.
+
+Les effets secondaires fréquents (survenant chez 1 à 10 patient(e)s sur 100) incluaient :
+
+Infections graves (y compris septicémie et pneumonie)
+
+Syndrome de lyse tumorale (les cellules cancéreuses détruites rapidement par le traitement normalement après chimiothérapie ce qui n'est pas attendu dans ce contexte en raison de l'état de rémission complète requis pour l'inscription)
+
+État confusionnel, désorientation, encéphalopathie (maladie, lésion ou
+
+dysfonctionnement cérébral , paresthésie (fourmis), convulsions, étourdissements, somnolence, trouble nerveux crânien, ataxie,
+
+Dyspnée, respiration sifflante
+
+Dans de rares cas (moins d'1 personne sur 100), un syndrome de fuite capillaire, une insuffisance respiratoire aiguëet une pancréatite ont été signalés. Les symptômes peuvent inclure une prise de poids, une toux sévère et une dyspnée, une fièvre élevée, des douleurs abdominales sévères. Informez immédiatement le médecin de l'étude si votre enfant présente l'un de ces symptômes.
+
+Expérience clinique du blinatumomab chez les patient(e)s pédiatriques atteint(e)s de LLA B
+
+Dans 2 essais cliniques récents, des enfants atteint(e)s de LLA B à haut risque ont été traité(e)s avec un ou deux cycles de blinatumomab avant GCSH (et les résultats comparés à ceux de la chimiothérapie standard, puisqu'il s'agissait d'essais contrôlés randomisés) :
+
+Tous les patient(e)s ont subi au moins un événement indésirable (EI, effet secondaire)
+
+Les EI liés au traitement étaient le plus souvent le syndrome de libération de cytokines (22%) et l'encéphalopathie (11%)
+
+Dans les 2 études, 57% et 76% ont subi un EI grave (grade ≥3) :
+Thrombocytopénie (18,5%), stomatite (18,5%), neutropénie (16,7%), anémie (14,8%), fièvre 5,6%
+
+Des EI graves sont survenus chez 24,1% des patient(e)s
+
+Seulement 3,7% des patient(e)s ont eu un EI entraînant l'arrêt du blinatumomab
+
+Dans ces études, le traitement par blinatumomab a été associé à de meilleurs résultats (y compris la survie après GCSH) et moins d'effets secondaires par rapport à la chimiothérapie standard.
+
+Il est donc très important que vous ou votre enfant signaliez immédiatement à l'investigateur tout problème de santé nouveau ou aggravé, que vous pensiez ou non qu'il soit lié à l'essai, et même s'il est déjà décrit dans ce document. Si votre enfant doit prendre d'autres médicaments, veuillez en discuter au préalable avec l’investigateur. Si, pour une raison quelconque, votre enfant consulte un autre médecin traitant pendant l'essai, vous devez l'informer que votre enfant participe à un essai. Cela pourrait être important pour établir un diagnostic et lui prescrire le traitement approprié si nécessaire.
+
+2.  Quels sont les risques ou les désagréments possibles des examens pendant l'essai ?
+
+Tous les examens sont effectués dans le cadre des soins standard.
+
+3.  Mon enfant peut-il prendre d'autres médicaments pendant l'essai ?
+
+N'hésitez pas à demander à l'investigateur plus d'explications sur l'utilisation de médicaments ou de compléments alimentaires (y compris l'aromathérapie, la phytothérapie, l'homéopathie, etc.).
+
+4.  La participation de mon enfant à l'essai aura-t-elle un impact sur ses activités quotidiennes ?
+
+Nous voulons nous assurer que l'essai se déroule sans heurts. C'est pourquoi nous conclurons avec vous les accords suivants :
+
+- Vous vous assurerez que votre enfant prend tous ses médicaments de la manière prescrite
+
+- Pendant cet essai, votre enfant ne participera pas à un autre essai médical scientifique, à moins que le promoteur n'ait donné son accord avant la participation.
+
+- Veuillez contacter l'investigateur ou un membre de l'équipe infirmière de recherche dans les situations suivantes :
+
+  o Votre enfant commencera à prendre d'autres médicaments. Y compris les médicaments homéopatiques, les remèdes naturels, les vitamines autres médicaments sans ordonnance.
+
+  o Votre enfant devra être admis à l'hôpital ou y recevoir un traitement.
+
+  o Votre enfant développe soudain des problèmes de santé.
+
+  o Votre enfant ne souhaite plus participer à l'essai.
+
+  o Votre numéro de téléphone, votre adresse ou votre adresse électronique ont changé.
+
+Que se passe-t-il si un problème survient au cours de l'essai ?
+
+Même en l'absence de faute, le promoteur est responsable des dommages causés à votre enfant, qu'ils soient directement ou indirectement liés à votre participation à l'essai. Le promoteur a souscrit une assurance appropriée (dite "ASSURANCE SANS FAUTE") pour couvrir cette responsabilité Une copie du certificat d'assurance peut être obtenue auprès de l'investigateur ou du personnel de l'essai.
+
+Si vous (ou, en cas de décès, vos ayants droit) demandez une indemnisation pour un préjudice causé à la santé de votre enfant résultant directement ou indirectement de sa participation à l'essai, vous devez en informer rapidement l'investigateur ou le personnel chargé de l'essai.
+
+Si l'investigateur estime qu'un lien entre le(s) problème(s) de santé nouveau(x) ou aggravé(s) et l'essai est possible, il en informera le promoteur de l'essai. Ce dernier entamera alors immédiatement la procédure de déclaration auprès de sa compagnie d'assurance. Si la compagnie le juge nécessaire, elle désignera un expert chargé d'évaluer s'il existe un lien entre le ou les problèmes de santé signalés chez votre enfant et l'essai. L'assurance ne couvre pas l'évolution naturelle de la maladie de votre enfant ou les effets secondaires connus du traitement que votre enfant aurait reçu sans participer à l'essai (c'est-à-dire votre traitement standard).
+
+Si vous ou votre enfant le jugez opportun, ou si vous ou les ayants droit de votre enfant êtes en désaccord avec l'investigateur ou l'expert désigné par la compagnie d'assurance, vous pouvez contacter la compagnie d'assurance ou engager une procédure à son encontre. Vous trouverez les coordonnées de contact sur la première page de ce formulaire.
+
+Que se passe-t-il si d'autres options thérapeutiques ou de nouvelles informations sont disponibles au cours de l'essai ?
+
+Au cours de l'essai, de nouvelles informations importantes pourraient être disponibles, susceptibles d'influencer votre décision concernant la participation (ou la poursuite de la participation) de votre enfant. Par exemple, d'autres traitements pour la maladie de votre enfant ou de nouvelles informations importantes pourraient être disponibles. Il est du devoir de l'investigateur ou investigatrice de discuter de ces nouvelles informations avec vous afin de vous donner l'occasion de reconsidérer la participation de votre enfant à l'essai.
+
+Si vous décidez que votre enfant ne participera plus à l'essai ou si votre enfant n'est plus en mesure d'y participer, l'investigateur de votre enfant veillera à ce que votre enfant continue de recevoir les meilleurs soins médicaux possibles.
+
+La participation de mon enfant à l'essai peut-elle prendre fin prématurément ?
+
+Comme expliqué en détail ci-dessous, la participation de votre enfant à l'essai peut prendre fin prématurément dans les cas suivants
+
+- vous décidez de retirer votre consentement pour votre enfant, ou
+
+- l'investigateur décide de mettre fin à la participation de votre enfant à l'essai, ou
+
+- d'autres entités interrompent ou mettent fin à l'essai.
+
+En tout cas, si la participation de votre enfant à l'essai se termine prématurément, l'investigateur ou investigatrice discutera avec vous des soins médicaux futurs de votre enfant. Les données collectées avant que vous ne mettiez fin à la participation de votre enfant continueront d'être utilisées comme décrit dans ce formulaire. Le but est d'éviter de fausser/biais les résultats de l’étude (comme décrit au chapitre I. § 12.3).
+
+Selon la situation de votre enfant, l'investigateur ou investigatrice discutera avec vous de la nécessité de visites ou de procédures de suivi.
+
+1.  Vous décidez de retirer votre consentement.
+
+Vous avez le droit de retirer votre consentement pour votre enfant pour quelque raison que ce soit, à tout moment, sans avoir à justifier votre décision. Toutefois, pour la sécurité de votre enfant, vous devez informer l'investigateur de cette décision. Bien que cela ne soit pas obligatoire, il peut être utile pour l'investigateur et le promoteur de connaître les raisons de cette décision (par exemple les effets secondaires, la fréquence des visites cliniques...).
+
+Si vous retirez votre consentement à la participation de votre enfant, veuillez en discuter avec le chercheur afin d'évaluer les modalités pratiques du retrait (compte tenu de la situation de votre enfant). Aucune nouvelle donnée ne pourra être collectée et envoyée au promoteur.
+
+2.  L'investigateur décide de mettre fin à la participation de votre enfant à l'essai
+
+L'investigateur peut mettre fin à la participation de votre enfant à l'essai parce que
+
+- il/elle pense que c'est mieux pour votre enfant
+
+- il/elle détermine que votre enfant ne suit pas les instructions données aux participants, ou
+
+- toute autre raison qui vous sera expliquée,
+
+- l'étude entière doit être interrompue pour tous les participants (voir paragraphe suivant).
+
+Si cela se produit, le personnel de l'essai vous expliquera pourquoi et assurera un suivi approprié.
+
+1.  D'autres entités peuvent interrompre ou mettre fin à l'essai
+
+Le promoteur et les autorités sanitaires belges compétentes peuvent interrompre ou mettre fin à l'essai pour les raisons suivantes
+
+- les informations recueillies montrent que l'étude n'est pas efficace (elle n'apporte pas une amélioration suffisante de la santé des participants à l'étude) ;
+
+- les effets secondaires (graves) sont plus nombreux que prévu ; ou
+
+- toute autre raison dûment motivée par cette partie.
+
+Quel traitement mon enfant recevra-t-il ou recevra-t-elle après sa participation à l'essai ? 
+
+Si votre enfant a arrêté l'étude, l'investigateur évaluera son état de santé. Si nécessaire, il lui prescrira le meilleur traitement standard disponible.
+
+La participation de mon enfant à l'essai entraînera-t-elle des frais supplémentaires pour moi ?
+
+Comme décrit dans la section 4, tous les examens sont conformes aux normes de soins. Le blinatumomab vous sera fourni gratuitement et les hospitalisations nécessaires au début du traitement par blinatumomab ne vous seront pas facturées. Les procédures, examens et les autres visites standard pour le traitement de la maladie de votre enfant (c'est-à-dire les soins standard) vous seront facturés ou remboursés par votre mutuelle (sécurité sociale belge).
+
+L'étude n'entraîne aucun coût supplémentaire. Vous/votre enfant ne recevrez aucune compensation financière pour sa participation à cet essai.
+
+Quelles sont les données collectées au sujet de mon enfant pendant l'essai et qu'en adviendra-t-il ?
+
+1.  Quelles sont les données collectées et traitées pendant l'essai ?
+
+Les données à caractère personnel collectées et traitées concernent des informations sur la santé et l'état de santé de votre enfant. Il s'agit notamment des antécédents médicaux de votre enfant, de certaines informations générales le concernant (par exemple, son âge et son sexe) et des résultats des examens nécessaires à l’essai.
+
+Des données sur l'origine ethnique peuvent être collectées afin de garantir que les données de recherche sont traitées dans le cadre d'une population aussi large que possible.
+
+2.  Comment l'investigateur traitera-t-il les données personnelles de mon enfant ?
+
+L’investigateur (et le personnel chargé de l'essai) est tenu au secret professionnel ou à un accord de confidentialité concernant les données collectées.
+
+Cela signifie qu'il/elle ne révélera jamais l'identité de votre enfant, même dans une publication scientifique ou une conférence, et qu'il/elle codifiera les données de votre enfant (réf.)[1]) (c'est-à-dire qu'il/elle remplacera l'identité de votre enfant par un code d'identification dans l'essai) avant de les envoyer au promoteur. En d'autres termes, ce code ne contiendra aucun identifiant personnel ni aucune combinaison d'identifiants tels que le nom, le prénom, les initiales, la date de naissance complète ou partielle, le numéro de dossier, etc.
+
+Par conséquent, l'investigateur et le personnel de l'essai sous la responsabilité de l'investigateur seront les seuls à pouvoir établir un lien entre l'identité de votre enfant et les données transmises au cours de l'essai, sauf exceptions énumérées à la section 12.5.
+
+Les données transmises au promoteur ne lui permettront pas d'identifier votre enfant.
+
+3.  Comment les données de mon enfant seront-elles traitées ?
+
+Les données relatives à votre enfant seront traitées conformément à la législation européenne et belge en vigueur en matière de protection des données.
+
+La raison pour laquelle les données à caractère personnel de votre enfant peuvent être traitées aux fins de l'étude est qu'elles sont traitées dans le cadre de la conduite de recherches scientifiques et de l'exécution d'une mission d'intérêt public.
+
+4.  Ai-je accès aux données collectées et traitées de mon enfant pendant l'essai et puis-je les rectifier ?
+
+Vous avez le droit de demander à l'investigateur quelles données sont collectées sur votre enfant et comment ces données seront utilisées dans le cadre de l'essai.
+
+Vous avez le droit
+
+- de consulter et d'accéder à ces données
+
+- de recevoir les données personnelles collectées
+
+- de demander leur rectification si elles sont incorrectes
+
+- de restreindre le traitement des données de votre enfant
+
+- de retirer votre consentement au traitement des données à caractère personnel. Cependant, les données personnelles de votre enfant collectées avant le retrait seront conservées pour éviter de fausser les résultats de l'essai.
+
+Il n'est pas possible d'effacer toutes les données de votre enfant pour éviter de fausser les résultats de l'essai.
+
+1.  Qui, en dehors de l’investigateur et du personnel de l’essai, a accès aux données personnelles de mon enfant ?
+
+Pour vérifier la qualité de l'essai, il est possible que les données personnelles non codées de votre enfant ou les informations contenues dans son dossier médical et pertinentes pour l'essai soient examinées par des personnes extérieures au personnel de l'essai mais sous la responsabilité de l'investigateur. Ces personnes doivent être soumises au secret professionnel ou à un accord de confidentialité. Les personnes suivantes peuvent être envisagées :
+
+- le personnel désigné par le promoteur de l'essai (moniteurs et auditeurs), et les personnes ou organisations fournissant des services au promoteur ou collaborant avec lui. Ils ne transmettront toutefois jamais le nom de votre enfant et ses coordonnées au promoteur.
+
+- les inspecteurs des autorités sanitaires compétentes du monde entier
+
+- un groupe d'audit indépendant
+
+- des personnes désignées par le Comité d'éthique
+
+Pour les besoins de l'essai, les données codées de l'essai peuvent être envoyées à d'autres pays de l'UE et à des tiers :
+
+- le personnel (autre que les inspecteurs) des autorités sanitaires compétentes de Belgique (Agence fédérale des médicaments et des produits de santé, AFMPS) et d'autres pays de l'UE et de pays tiers,
+
+- le(s) comité(s) d'éthique belge(s) chargé(s) de l'évaluation,
+
+- les chercheurs externes,
+
+- le promoteur de l'essai, le personnel désigné par le promoteur et les personnes ou organisations qui fournissent des services au promoteur ou collaborent avec lui, et/ou le personnel désigné par le promoteur.
+
+- les sociétés du groupe du promoteur en Belgique et dans d'autres pays de l'UE et hors UE.
+
+Le règlement européen et la législation belge sur la protection des données imposent des exigences en matière de transfert de données vers des pays non membres de l'UE. Le promoteur doit assurer des garanties équivalentes en ce qui concerne les normes de protection des données personnelles avant de transférer les données encodées vers des pays non membres de l'UE. Si un accord de protection des données a été conclu à cette fin, une copie de cet accord peut être obtenue par l'intermédiaire de l'investigateur. Vous pouvez toujours contacter votre investigateur pour obtenir plus d'informations sur ces transferts.
+
+1.  Qu'adviendra-t-il des résultats de l'essai ?
+
+Après la clôture de l'essai, une description et les résultats de cet essai clinique seront publiés dans des revues médicales spécialisées. Une copie de la publication scientifique ou, si disponible, un résumé destiné au grand public peut être obtenu auprès de l’investigateur ou du personnel chargé de l'essai.
+
+Une description de l’essai sera également disponible sur https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en et/ou sur https://www.Clinicaltrials.gov. Vous pouvez consulter ces sites web à tout moment en utilisant les informations reprises sur la première page du formulaire de consentement éclairé. Dans un délai d'un an après la fin de l'étude, le site web reprendra un résumé des résultats conformément aux recommandations de la Commission européenne.
+
+Ces sites web ou publications ne contiendront pas d'informations permettant d’identifier votre enfant
+
+2.  Les données de mon enfant seront-elles utilisées à d'autres fins que l'essai auquel il participe ?
+
+Les résultats de l'essai seront utilisés pour répondre aux questions scientifiques de l'essai. En outre, le promoteur souhaite utiliser les données obtenues dans le cadre de cet essai pour d'autres activités de recherche et de développement (et les publications scientifiques associées). Ces activités ne peuvent concerner que des recherches portant sur la même maladie ou le même médicament.
+
+Toute recherche supplémentaire en dehors de l'essai et donc non décrite dans les points ci-dessus doit être approuvée par un comité d'éthique belge reconnu.
+
+Vous avez déjà acceptés ou refusés à l'utilisation des données d'essai de votre enfant à d'autres fins dans le formulaire de consentement de l’essai principal de FORUM2.
+
+3.  Combien de temps les données de mon enfant seront-elles conservées ?
+
+Après la fin de l'essai, les données codées de votre enfant seront conservées pendant au moins 25 ans, conformément à la réglementation européenne sur les essais cliniques, afin de garantir la validité de la recherche. Ce sera également le cas si vous avez interrompu prématurément sa participation à l'essai.
+
+ Quels sont les échantillons biologiques de mon enfant prélevés au cours de l'essai et qu'en adviendra-t-il ? 
+
+Les échantillons biologiques sont des échantillons de matière provenant du corps humain. Dans cette sous-étude, aucun échantillon biologique spécifique à l'essai ne sera prélevé.
+
+Qui a examiné et approuvé les documents de l'essai ?
+
+Les documents de l'essai ont été revus par
+
+- Les autorités sanitaires compétentes belges (AFMPS) ou, le cas échéant, les autorités sanitaires nationales compétentes d'autres Etats membres de l'UE et
+
+- un comité d'éthique belge indépendant.
+
+Les autorités sanitaires compétentes et les comités d'éthique ont pour mission de protéger les personnes qui participent à un essai. Les autorités sanitaires veilleront à ce que l'essai soit mené conformément à la législation applicable.
+
+Vous ne devez en aucun cas considérer leur accord comme une incitation à faire participer votre enfant à l'essai.
+
+CHAPITRE II - Consentement éclairé POUR LES PARENTS/TUTEURS
+
+FORUM2 – Sous-étude ForInfant (P1)
+
+Utilisation du blinatumomab (un engageur de lymphocytes T bispécifique) pour prévenir la rechute après une greffe allogénique de cellules souches hématopoïétiques chez les enfants de moins de 2 ans ne recevant pas d'irradiation corporelle totale (ICT) dans le cadre du régime de conditionnement
+
+Numéro de référence du participant à l'étude : _______________
+
+Version et date du protocole : ______________________________
+
+PARTICIPANT(E) : 
+
+Conditions préalables pour la participation de votre enfant à l'essai
+
+- Je déclare avoir lu ce formulaire et compris les informations qu'il contient.
+
+- Je déclare avoir été informé(e) et comprendre l'objectif de cette sous-étude, sa durée et ses conséquences, les risques et inconforts possibles, et ce qui est attendu.
+  Les droits de mon enfant m'ont été expliqués et je les ai compris.
+
+- J'ai eu suffisamment de temps pour réfléchir à la participation de mon enfant à cette sous-étudeet pour en discuter avec une personne de confiance (par exemple des amis, des parents, le médecin traitant...).
+
+- J'ai eu la possibilité de poser toutes les questions qui me venaient à l'esprit et j'ai obtenu une réponse satisfaisante à mes questions.
+
+- Je comprends que la participation de mon enfant à cette sous-étude est volontaire et libre de toute contrainte et que je suis libre d'interrompre à tout moment la participation de mon enfant à l'essai.
+
+- Je comprends que des données concernant mon enfant seront collectées et qu'elles seront traitées de manière confidentielle, comme décrit au chapitre I, §12.2.
+
+- J'ai conscience que les données personnelles de mon enfant sont traitées comme décrit au chapitre I, §12.
+
+- Je comprends que les représentants du promoteur, du comité d'éthique et des autorités sanitaires compétentes ont accès au dossier médical de mon enfant s'ils y sont autorisés (comme décrit au chapitre I, §12.5).
+
+- Je comprends que le promoteur a souscrit une assurance au cas où mon enfant subirait des dommages liés à sa participation à cet essai.
+
+- Je comprends qu'en participant à cette sous-étude, je n'aurai pas d'autres frais que ceux liés au traitement standard de la maladie de mon enfant.
+
+- J’ai conscience que le ou les médecins traitants de mon enfant seront informés de sa participation à cet essai.
+
+- Si mon enfant participe à un autre essai interventionnel, je dois en informer l'investigateur ou l'équipe chargée de l'essai. J'accepte que mon enfant ne participe à aucun autre essai interventionnel (par exemple, avec un médicament à l'étude, un dispositif médical, une technique chirurgicale expérimentale) en même temps sans en informer au préalable l'investigateur ou le personnel de l'essai, qui pourrait ne pas autoriser la participation de mon enfant pour une bonne raison.
+
+- Je comprends que je dois coopérer et suivre les instructions de l'investigateur et du personnel de l'essai concernant l'essai.
+
+- Je comprends que la participation de mon enfant à cette sous-étude pourrait se terminer sans mon consentement s'il ou elle a besoin d'un autre traitement, ne suit pas le plan de l'essai, subit une blessure liée à l'essai, ou pour toute autre raison justifiée.
+
+- Je certifie que toutes les informations que j'ai fournies concernant les antécédents médicaux de mon enfant sont correctes, à ma connaissance. Je comprends qui cela pourrait porter préjudice à mon enfant si je n'informe pas l'investigateur des raisons possibles pour lesquelles mon enfant ne pourrait pas participer à l'étude.
+
+Je consens à laisser mon enfant participer à cette sous-étude P1, et j'ai reçu une copie signée et datée de toutes les pages de ce document.
+
+Nom et prénom du premier parent/tuteur :
+
+Date (JJ/MM/AAAA) :
+
+Heure :
+
+Signature du premier parent/tuteur :
+
+Nom et prénom du premier parent/tuteur :
+
+Date (JJ/MM/AAAA) :
+
+Heure :
+
+Signature du second parent/tuteur :
+
+TÉMOIN IMPARTIAL/INTERPRÈTE (REF. [2] )
+
+(si présent)
+
+Je soussigné(e) (cocher la case correspondante),
+
+☐ Témoin impartial
+
+☐ Interprète
+
+ai assisté à l'ensemble du processus d'information des parents/tuteurs et je confirme que les informations relatives aux objectifs et aux procédures de l'essai ont été fournies de manière adéquate, que les parents/tuteurs (ou leur représentant légal) ont apparemment compris l'essai et que le consentement à participer à l'essai a été donné librement.
+
+Je déclare en outre qu'en tant que témoin impartial/interprète, je suis indépendant du promoteur et de l'investigateur.
+
+Nom et prénom du témoin impartial/interprète :
+
+Qualification du témoin impartial/Interprète :
+
+Date (DD/MMM/YYYY) :
+
+Heure :
+
+Qualification du témoin impartial/Interprète :
+
+INVESTIGATEUR
+
+Je, l'investigateur soussigné, confirme que
+
+- les parents/tuteurs ont reçu verbalement les informations nécessaires sur l'essai, se sont vu expliquer le contenu de l'essai et ont reçu un document original signé.
+
+- J'ai vérifié que les parents/tuteurs ont compris l'essai.
+
+- J'ai laissé aux parents/tuteurs suffisamment de temps pour accepter que leur enfant participe et pour poser toutes leurs questions.
+
+- aucune pression n'a été exercée pour persuader les parents/tuteurs d'accepter que leur enfant participe à l'essai.
+
+- Je travaille conformément aux principes éthiques énoncés dans la dernière version de la "Déclaration d'Helsinki", aux "Bonnes pratiques cliniques" et à la loi belge sur les essais cliniques.
+
+Nom et prénom de l’investigateur :
+
+Date (DD/MMM/YYYY) :
+
+Heure :
+
+Signature de l’investigateur :
+
+GLOSSAIRE
+
+AFMPS : Agence fédérale des médicaments et des produits de santé
+
+APD : L'Autorité de protection des données veille à ce que les données à caractère personnel soient traitées avec soin et protégées de manière rigoureuse, et à ce que la vie privée future de votre enfant reste également garantie.
+
+Autres abréviations apparaissant dans le texte :
+
+Assurance sans faute :
+
+Le promoteur est responsable de toute blessure ou de tout dommage subi par le participant et directement ou indirectement lié à l'essai clinique. Vous n'avez pas à prouver de faute à cet égard.
+
+MONITEUR et AUDITEUR
+
+Le moniteur et l'auditeur travaillent tous deux pour le promoteur.
+Le moniteur assure un contrôle qualité continu pendant toute la durée de l'essai. L'auditeur effectue un contrôle qualité indépendant et ponctuel à un moment donné pendant l'essai. Il vérifie si l'essai est ou a été mené conformément au protocole, si les données rapportées sont fiables et si l'essai clinique a été mené conformément aux règles applicables.
+
+RÉFÉRENCES
+
+[1] Tout au long du document, le terme « codage » est utilisé comme synonyme de « pseudonymisation », terme utilisé dans le règlement général sur la protection des données n° 2016/679.
+
+[2] Le recours à un témoin impartial est nécessaire lorsque le sujet ou son représentant légal parle et/ou comprend parfaitement la langue du formulaire de consentement éclairé approuvé, mais ne sait ni lire ni écrire en raison d'un handicap physique ou d'une déficience visuelle. Un interprète est nécessaire lorsque l'investigateur ne parle pas la langue du patient.

@@ -1,0 +1,900 @@
+INFORMATIEFORUMULIER VOOR PATIËNTEN VAN 18 JAAR EN OUDER
+
+ BIOMEDE 2.0 studie 
+
+Officiële titel van de studie: Biological Medicine for Diffuse Intrinsic Pontine Glioma (DIPG) Eradication
+
+EU CT-nummer: 2023-506027-29-00
+
+Studienummer: Biomede 2.0
+
+Opdrachtgever(s) van de studie: Gustave Roussy instituut, 114 Rue Edouard Vaillant, 94805 Villejuif, (France)
+
+Naam studiecentrum: officiële naam van het studiecentrum
+
+Hoofdadres studiecentrum: adres van het studiecentrum
+
+Met wie kan ik contact opnemen als ik vragen heb?
+
++:-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+----------------------------------------------+
+| Naam                     | Functie                                                                                                                                         | Voor                                                                        | Contact-gegevens                             |
++--------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+----------------------------------------------+
+| Familienaam, voornaam    | Hoofdonderzoeker van het studiecentrum                                                                                                          | Informatie, problemen, bezorgdheden                                         | Telefoonnr./ E-mail                          |
++--------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+----------------------------------------------+
+|                          | Studiepersoneel                                                                                                                                 | Informatie, problemen, bezorgdheden                                         | Telefoonnr./ E-mail                          |
++--------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+----------------------------------------------+
+|                          | Contact voor dringende vragen m.b.t. de studie                                                                                                  | Dringende informatie, problemen, bezorgdheden                               | Telefoonnr.                                  |
++--------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+----------------------------------------------+
+|                          | Ombudspersoon patiëntenrechten van het studiecentrum,                                                                                           | Bezorgdheden/ vragen over uw rechten als deelnemer aan een klinische studie | Telefoonnr. van het studiecentrum            |
++--------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+----------------------------------------------+
+| Amlin Insurance          | Verzekeringsmaatschappij van de opdrachtgever                                                                                                   | Betwisting of klacht over een schadeclaim                                   | Polisnr:                                     |
+|                          |                                                                                                                                                 |                                                                             | 299.053.700                                  |
+| Koning Albert II-laan 37 |                                                                                                                                                 |                                                                             |                                              |
+|                          |                                                                                                                                                 |                                                                             | Adres: adres van de verzekeringsmaatschappij |
+| 1030 Brussel             |                                                                                                                                                 |                                                                             |                                              |
+|                          |                                                                                                                                                 |                                                                             | Telefoonnr.:                                 |
+|                          |                                                                                                                                                 |                                                                             |                                              |
+|                          |                                                                                                                                                 |                                                                             | E-mail: e-mail adres                         |
++--------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+----------------------------------------------+
+|                          | Functionaris voor gegevensbescherming van het studiecentrum [of indien niet mogelijk: Contactpersoon voor de bescherming van persoonsgegevens.] | Vragen over de vertrouwelijkheid van uw gegevens                            | Telefoonnr.                                  |
+|                          |                                                                                                                                                 |                                                                             |                                              |
+|                          |                                                                                                                                                 |                                                                             | E-mail: e-mail                               |
++--------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+----------------------------------------------+
+|                          | Belgische Gegevensbeschermingsautoriteit                                                                                                        | Klachten over de vertrouwelijkheid van uw gegevens                          | +32(0)2274 48 00                             |
+|                          |                                                                                                                                                 |                                                                             |                                              |
+|                          |                                                                                                                                                 |                                                                             | E-mail: contact@apd-gba.be                   |
++--------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+----------------------------------------------+
+
+- Voor het beheer van klachten die niet door de onderzoeker worden opgelost, kan u terecht bij de ombudsman van het studiecentrum op bovenstaand adres.
+
+- Volgens de GDPR heeft u recht op inzage in de verwerking van uw gegevens. Voor vragen hierover kan u contact opnemen met de functionaris Gegevensbescherming van het studiecentrum op bovenstaand adres.
+
+- U hebt ook het recht om een ​​klacht in te dienen over de wijze van verwerking van uw gegevens bij de Belgische toezichthoudende autoriteit die verantwoordelijk is voor de naleving van de wetgeving inzake gegevensbescherming: Gegevensbeschermingsautoriteit (GBA), hierboven.
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DE STUDIE IN EEN OOGOPSLAG                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Beste,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   U krijgt dit document omdat we u willen uitnodigen om deel te nemen aan de Biomede 2.0 studie, een internationale klinische studie die wordt uitgevoerd door een onderzoeksteam van het Gustave Roussy instituut in Frankrijk. Deze informatie is bedoeld om u te helpen begrijpen welke behandeling zal worden gegeven in deze studie en wat dat voor u betekent.                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   De Biomede 2.0 studie is een studie voor kinderen, adolescenten en volwassenen met een nieuwe diagnose van een infiltrerend glioom van de hersenstam of een diffuse midlijntumor. Dit is een erg agressieve kwaadaardige hersentumor. Op dit moment is er voor de meeste gevallen geen behandeling die doeltreffend genoeg is om de ziekte te genezen. Conventionele chemotherapie is niet effectief voor deze aandoening. Bestraling wel, maar de doeltreffendheid ervan is vaak tijdelijk. Uw arts stelt voor om een nieuw geneesmiddel toe te voegen aan de standaardbestraling, om de doeltreffendheid ervan te verhogen. Dit gebeurt in het kader van een klinische studie, BIOMEDE 2.0.                                                                                               |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Het doel van deze studie is om de werkzaamheid van ONC201 te onderzoeken in vergelijking met everolimus, wanneer deze behandelingen worden gegeven in combinatie met de standaard behandeling met bestraling. Everolimus was het beste van de drie geneesmiddelen die we tijdens de vorige studie (BIOMEDE 1.0) onderzocht hebben. ONC201 is het nieuwe geneesmiddel dat onderzocht wordt. Andere doelstellingen van deze studie zijn de bijwerkingen van deze behandelingen evalueren en de duur van de respons op de behandeling te bepalen. Everolimus en ONC201 zijn orale medicaties die door een farmaceutisch bedrijf geleverd zullen worden voor de studie. De Biomede 2.0 studie is een niet-commerciële studie (wat betekent dat het farmaceutisch bedrijf de studie niet leidt). |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Als u beslist om deel te nemen aan deze studie, zal er eerst een screening uitgevoerd worden om na te gaan of u kan deelnemen. Als u aan alle inclusiecriteria voldoet en aan geen van de niet-inclusiecriteria, kunnen wij uw deelname aan deze studie bevestigen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Als u aan alle criteria voldoet, zal een computer u willekeurig toewijzen aan de groep met everolimus of ONC201 in combinatie met de standaard radiotherapiebehandeling. Patiënten in de groep met everolimus zullen dagelijks één of meer (op basis van gewicht) everolimustabletten innemen, eenmaal per dag. Patiënten in de ONC201-groep zullen één of meer capsules (op basis van gewicht) oraal innemen, slechts 2 opeenvolgende dagen per week (D1-D2), eenmaal per dag.                                                                                                                                                                                                                                                                                                             |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Voor, tijdens en na de behandeling zal het medisch team u nauwgezet opvolgen en een aantal scans en tests doen om te zien welk effect de gecombineerde behandeling heeft gehad op uw kanker.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   De vaakst voorkomende te verwachten bijwerkingen van Everolimus, ONC201 en de standaard radiotherapiebehandeling worden beschreven in de informatie hieronder.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   De behandeling met ONC201 of everolimus zal worden voortgezet zolang dit verdragen wordt en effect heeft. De duur van de behandeling verschilt daarom van persoon tot persoon.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Als uw ziekte erger wordt of terugkomt, wordt uw behandeling stopgezet. Indien mogelijk kan uw arts voorstellen om over te stappen naar de andere studiebehandeling (ONC201 of everolimus).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Na de behandeling wordt u verder opgevolgd: om de 3 à 4 maanden tijdens het eerste jaar en daarna om de 6 maanden tot 5 jaar na de start van de behandeling.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Aangezien deze gecombineerde behandeling nog in onderzoek is, zouden zich nog andere, momenteel niet bekende risico's en ongemakken kunnen voordoen. Daarom is het van groot belang dat u elk nieuw of erger geworden gezondheidsprobleem onmiddellijk bij de onderzoeker meldt. Dit geldt ook als u denkt dat het niets te maken heeft met de studie. Als u ernstige bijwerkingen hebt, kan de onderzoeker beslissen dat het nodig is om extra tests uit te voeren.                                                                                                                                                                                                                                                                                                                        |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Als vrouw mag u niet zwanger worden tijdens de studie en tot minstens 6 maanden na het einde van de behandeling. Daarnaast mag u geen eicellen laten afnemen voor eigen gebruik of donatie na de start van de behandeling en tot minstens 6 maanden na de laatste behandeling. U mag geen borstvoeding geven tijdens de behandeling. Als man mag u niemand zwanger maken en geen sperma doneren tijdens de studie en tot minstens 6 maanden na het einde van de behandeling.                                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   In totaal zullen er 368 kinderen/(jong)volwassenen uit heel Europa aan deze studie deelnemen, waarvan ongeveer 8 Belgische deelnemers per jaar zijn. Uw studiedeelname zal tot 5 jaar na de start van de behandeling duren. Als we op enig moment in het onderzoek van mening zijn dat het geven van Everolimus of ONC201 de patiënten in dit onderzoek niet helpt, zullen we stoppen met het includeren van meer patiënten.                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Er zullen geen studiespecifieke bezoeken of onderzoeken plaatsvinden; met uitzondering van de 2 studiespecifieke functionele MRI’s (scan van uw tumor - één bij screening en één aan het einde van de radiotherapie). De radiologische beelden zullen worden beoordeeld door externe deskundigen. Daarnaast wordt een stukje tumormateriaal dat wordt verzameld tijdens een standaard biopsie-afname opgestuurd ter bevestiging van de diagnose en genetisch onderzoek. Dit wordt in detail beschreven in de informatie hieronder.                                                                                                                                                                                                                                                          |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Deelname aan de studie is niet duurder dan de standaardbehandeling. U krijgt geen vergoeding voor uw deelname. De opdrachtgever van deze studie heeft een verzekering afgesloten om alle gerelateerde kosten te dekken als er iets met u zou gebeuren tijdens de studie.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   U beslist zelf of u deelneemt aan deze behandelingsgroep van de Biomede 2.0-studie. De deelname is vrijwillig. Als u beslist niet deel te nemen, krijgt u de radiotherapie behandeling zonder everolimus of ONC201 of een andere standaardbehandeling die uw arts met u zal bespreken.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Tijdens deze studie worden er gegevens en stalen van uw tumor verzameld, die vertrouwelijk zullen worden behandeld.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Aangezien deze gecombineerde behandeling nog onderzocht wordt, is het niet zeker of u er voordeel bij zult hebben. Uw deelname zal de onderzoekers echter helpen om meer inzicht te krijgen in de behandeling van hersentumoren en manieren om die in de toekomst te verbeteren.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   De studie en de studiedocumenten zijn nagekeken en goedgekeurd door de EU-autoriteiten en een Ethisch Comité in België.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Neem in geval van vragen over deze studie contact op met mij of mijn team via de contactgegevens op de eerste pagina van dit document.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Vriendelijke groeten,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Uw onderzoeker                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+HOOFDSTUK I - BESCHRIJVING VAN DE STUDIE EN UW RECHTEN BIJ DEELNAME
+
+Beste,
+
+Wij zouden u graag uitnodigen om deel te nemen aan een klinische studie om een behandeling voor uw ziekte te beoordelen. Neem genoeg tijd om deze informatie grondig door te lezen en bespreek de informatie met de onderzoeker, het medisch team of anderen vóór u beslist om aan deze studie deel te nemen. Neem gerust uw tijd om vragen te stellen als iets niet duidelijk is of als u bijkomende informatie wenst. Dit proces noemen we "geïnformeerde toestemming". Als u beslist om aan deze studie deel te nemen, zullen we u vragen om het toestemmingsformulier achteraan deze informatie te ondertekenen.
+
+Waarom wordt deze studie uitgevoerd?
+
+Een infiltrerend glioom van de hersenstam of een diffuse midlijntumor is een erg agressieve kwaadaardige hersentumor. Op dit moment is er voor de meeste gevallen geen behandeling die doeltreffend genoeg is om de ziekte te genezen.
+
+De plaats in de hersenen kan het operatief verwijderen van de tumor verhinderen. Conventionele chemotherapie is niet effectief voor deze aandoening. Bestraling wel, maar de doeltreffendheid ervan is vaak tijdelijk.
+
+Uw arts stelt voor om een nieuw geneesmiddel toe te voegen aan de standaardbestraling, om de doeltreffendheid ervan te verhogen. Dit gebeurt in het kader van een klinische studie, BIOMEDE 2.0. Er wordt willekeurig een van de twee mogelijke behandelingen gekozen.
+
+Het doel van deze studie is om de werkzaamheid van ONC201 te onderzoeken in vergelijking met everolimus, wanneer deze behandelingen worden gegeven in combinatie met bestraling. Everolimus was het beste van de drie geneesmiddelen die we tijdens de vorige studie (BIOMEDE 1.0) onderzocht hebben. Daarom gebruiken we dit geneesmiddel als comparator in deze nieuwe studie. ONC201 is het nieuwe geneesmiddel dat onderzocht wordt. De werkzaamheid ervan wordt beoordeeld aan de hand van de duur van de periode zonder progressie van de ziekte vanaf de start van de behandeling en op basis van klinische symptomen en medische beeldvorming.
+
+Everolimus en ONC201 zijn zogenoemde "doelgerichte behandelingen/geneesmiddelen". Deze geneesmiddelen werken specifiek in op een eiwit of mechanisme dat zorgt voor de tumorgroei. Theoretisch gezien hebben ze dus ook geen effect op gezonde cellen. Daarom hebben ze ook minder bijwerkingen dan conventionele chemotherapie voor kanker. Conventionele chemotherapie werkt immers in op de celdeling van alle cellen in het lichaam, zowel kankercellen als gezonde cellen.
+
+Andere doelstellingen van deze studie zijn:
+
+• De bijwerkingen van deze behandelingen evalueren wanneer ze samen met de
+
+bestraling gegeven worden, en voor de volledige duur van de behandeling.
+
+• De duur van de respons op de behandeling evalueren.
+
+• De verschillen in werkzaamheid tussen de twee onderzochte behandelingen
+
+(ONC201 en everolimus) evalueren volgens tumorlocatie en bekende
+
+prognostische biomarkers. Biomarkers zijn moleculen of eiwitten die bij
+
+bepaalde soorten tumoren te veel voorkomen (overexpressie) of net abnormaal
+
+afwezig zijn. Deze markers kunnen voorspellen of de doelgerichte behandeling werkt. Onderzoek naar biomarkers helpt artsen bij het kiezen van een
+
+behandeling, het opvolgen van de doeltreffendheid van de behandeling en het
+
+personaliseren van de behandeling.
+
+• Evalueren of patiënten bij progressie behandeld kunnen worden met een
+
+doelgerichte therapie, op basis van het moleculair profiel bij diagnose.
+
+Bijkomende doelstellingen van deze studie zijn:
+
+• Beoordelen van de voorspellende en prognostische waarde van biomarkers (de mate waarin een biomarker in staat is om het toekomstige verloop van een ziekte of aandoening te voorspellen).
+
+• Beschrijven van de veranderingen die op de beeldvorming gedetecteerd
+
+kunnen worden.
+
+  Waarom wordt mij gevraagd deel te nemen?
+
+U wordt gevraagd om deel te nemen aan deze studie omdat u de diagnose van een infiltrerend glioom van de hersenstam of een diffuse midlijntumor hebt gekregen. U en het medisch team overwegen een deelname aan de Biomede 2.0 studie. Een nieuwe medicatie (ONC201 of everolimus) zal aan de standaard radiotherapiebehandeling worden toegevoegd om de doeltreffendheid ervan te vergroten. Welke nieuwe medicatie wordt toegevoegd, wordt willekeurig bepaald.
+
+De onderzoeker of het studiepersoneel zal met u de voorwaarden bespreken om tot de studie te kunnen worden toegelaten. Het is niet zeker dat uw deelname aan deze studie uw hersentumor zal genezen, uw levenskwaliteit zal verbeteren of uw leven zal verlengen.
+
+Moet ik deelnemen aan deze studie? 
+
+Uw deelname aan deze studie gebeurt vrijwillig en mag nooit onder druk gebeuren. Dit betekent dat u het recht heeft om niet deel te nemen aan de studie. U mag u ook op elk moment terugtrekken zonder dat u hiervoor een reden hoeft te geven, zelfs al heeft u eerder toegestemd om deel te nemen. Uw beslissing zal geen invloed hebben op uw relatie met de onderzoeker of uw behandelende arts, noch op de kwaliteit van uw toekomstige medische zorgen.
+
+Indien andere behandelingen beschikbaar zijn voor hersentumor, zal de onderzoeker of zijn/haar afgevaardigde die behandelingen met u bespreken. Als u niet deelneemt aan de studie, krijgt u de standaardbehandeling met radiotherapie zonder de toevoeging van everolimus of ONC201 of een andere standaardbehandeling.
+
+Wat gaat er tijdens de studie gebeuren? 
+
+In totaal zullen er 368 kinderen/jongvolwassenen uit heel Europa aan deze studie deelnemen. Er zullen ongeveer 8 Belgische deelnemers per jaar zijn.
+
+U zal in deze studie een van de onderstaande behandelingen krijgen in combinatie met de bestraling die deel uitmaakt van de standaardzorg.
+
+- ONC201 (Chimerix)
+
+- Everolimus (Novartis)
+
+Randomisatie bepaalt of u ONC201 krijgt of Everolimus. Randomisatie betekent dat een computer willekeurig kiest welke van de twee behandelingen u krijgt.
+
+De meeste onderzoeken die we hieronder beschrijven zullen deel uitmaken van de normale zorg, terwijl andere specifiek zijn voor deze klinische studie. Alle ziekenhuisbezoeken maken deel uit van de standaardzorg.
+
+Deze studie wordt opgedeeld in 3 fases:
+
+- Screening
+
+- Behandeling
+
+- Opvolging
+
+Screening
+
+Tijdens de screeningsperiode moet u onderzoeken ondergaan voor de behandeling wordt toegediend. Voor details, zie de tabel hieronder. In deze fase van de studie controleren we en gaan we na of uw deelname wetenschappelijk verantwoord is.
+
+Tijdens de screenings periode worden de volgende onderzoeken uitgevoerd:
+
+Biopsie:
+
+Het tumorbiopt wordt eerst geanalyseerd in het lokale laboratorium van het ziekenhuis waar de biopsie werd afgenomen. Deze biopsie wordt niet specifiek voor de studie uitgevoerd. Als u ermee akkoord gaat om deel te nemen aan de studie dan zal een stukje van het tumorbiopt naar Frankrijk (Villejuif) verzonden worden, zodat het daar diepgaander onderzocht kan worden om:
+
+- de diagnose van een invasief hersenstam glioom of diffuse midlijntumor te bevestigen
+
+- eventueel aanwezige biologische indicatoren (biomarkers) op te sporen
+
+- de biologische analyse van de tumor te vervolledigen (door DNA-sequencing) om zo mogelijk nieuwe biomarkers en nieuwe behandelopties te vinden (=translationeel onderzoek).
+
+Biomarkers worden opgespoord om te beslissen wat de meest optimale behandeling is. In erg zeldzame gevallen betekenen biomarkers in de tumor een contra-indicatie voor één van de studiebehandelingen. In voorkomend geval zal de arts u hierover informeren.
+
+Demografische gegevens, medische en chirurgische voorgeschiedenis:
+
+De arts-onderzoeker verzamelt de volgende informatie: uw leeftijd (alleen geboortejaar en -maand), medische en chirurgische voorgeschiedenis (huidige en eerdere aandoeningen).
+
+Hij of zij zal u ook vragen welke geneesmiddelen u neemt, zoals bijvoorbeeld corticosteroïden.
+
+Klinisch onderzoek:
+
+De arts-onderzoeker onderzoekt uw gezondheidstoestand, uw welzijn en vermogen om activiteiten van het dagelijks leven (ADL's) uit te voeren. De arts zal een volledig klinisch en neurologisch onderzoek uitvoeren, neemt de vitale parameters (bloeddruk, hartslag, lichaamstemperatuur) en meet en weegt u. U krijgt ook een elektrocardiogram (ECG).
+
+Beeldvorming:
+
+Er worden ook beelden gemaakt om de tumor te meten en de algemene toestand te onderzoeken. Deze beelden omvatten een MRI-scan (scan van uw tumor aan de hand van magnetische resonantie) en een röntgenfoto van de longen. Deze MRI brengt ook de perfusie (doorbloeding) in de tumor in kaart (perfusie-MRI) en duurt daarom iets langer dan een gewone MRI (ongeveer 30 minuten). Dit is een studiespecifieke functionele MRI. Specifiek voor de studie zullen de beelden worden geüpload naar een platform voor een centrale beoordeling door deskundigen.
+
+Bloedonderzoeken:
+
+- Biologische onderzoeken (hematologie, biochemie, stolling)
+
+- Hepatitis B screening (serologie)
+
+- Zwangerschapstest Als u een vrouw bent en vruchtbaar bent, zal u een zwangerschapstest moeten doen (bloed of urine). Deze test moet negatief zijn om te kunnen deelnemen aan de studie.
+
+Alle handelingen die tijdens deze screeningsperiode gesteld worden, maken deel uit van de standaardzorg, met uitzondering van de functionele MRI. Alle andere onderzoeken zullen ook gebeuren als u niet deelneemt aan de studie.
+
+We kunnen uw deelname aan deze studie pas bevestigen nadat deze onderzoeken gebeurd zijn en als u aan alle inclusiecriteria voldoet zonder aan één van de uitsluitingscriteria te voldoen. Als u niet aan de studie kan deelnemen krijgt u de standaardbestraling. U krijgt in dat geval geen experimentele behandeling naast de bestraling.
+
+Behandeling
+
+Op dag 1 (D1) van de behandelingsfase start u met:
+
+- Bestraling: U krijgt de standaarddosis bestraling (54 Gray) over een periode van 6 weken. Dit betekent een dosis van 1.8 Gray per dag, 5 opeenvolgende dagen per week (geen bestraling tijdens het weekend).
+
+- Een van de volgende behandelingen:
+
+- Ofwel everolimus: u neemt dagelijks één of meer tabletten (op basis van uw lichaamsgewicht) oraal in, eenmaal per dag;
+
+- Ofwel ONC201: u neemt één of meer capsules(op basis van uw lichaamsgewicht) oraal in, eenmaal per dag, maar slechts twee opeenvolgende dagen per week (D1-D2);
+
+Tijdens de eerste twee maanden van de behandeling gebeurt er wekelijks een klinisch onderzoek (inclusief welzijn), daarna gebeurt dit maandelijks. Tijdens deze consultaties wordt er ook opnieuw een bloedonderzoek gedaan om te kijken of het goed gaat en of u de behandeling goed verdraagt. De arts-onderzoeker zal u ook vragen of u last heeft (gehad) van bijwerkingen. Deze worden indien nodig ook behandeld.
+
+Er wordt ook elke maand een neurologisch onderzoek uitgevoerd en u wordt gewogen en gemeten. Deze onderzoeken zouden ook gebeuren als u niet aan de studie zou deelnemen.
+
+Daarnaast is het ook belangrijk dat u alle behandelingen die u krijgt meldt aan uw dokter, waaronder corticosteroïden, maar ook alternatieve geneeswijzen. De arts zal dan kijken of er interacties zijn tussen het studiegeneesmiddel en deze andere behandelingen.
+
+Tot slot zal er ook een nieuwe MRI-scan uitgevoerd worden onmiddellijk na het einde van de bestraling en daarna tweemaandelijks. De eerste follow-up MRI omvat ook een studiespecifieke functionele MRI om de perfusie in de tumor in kaart te brengen en duurt daarom iets langer dan een gewone MRI (ongeveer 30 minuten). Alle andere follow-up MRIs zullen uitgevoerd worden zoals gebruikelijk zonder de studie specifieke functionele MRI.
+
+Als uw ziekte ongunstig evolueert of als u hervalt, wordt de behandeling stopgezet. Indien mogelijk kan uw arts voorstellen om over te schakelen op de andere studiebehandeling (ONC201 of everolimus), zoals eerder beschreven.
+
+Voor deze tweede behandelingsperiode zal er opnieuw een zwangerschapstest en een hepatitis-B-screening worden afgenomen, indien geïndiceerd.
+
+Tijdens deze tweede behandelingsperiode ondergaat u dezelfde onderzoeken als tijdens de eerste behandelingsperiode:
+
+- Maandelijks: klinisch onderzoek, bloedonderzoek (biologie)
+
+- Tweemaandelijks: MRI
+
+De behandeling met ONC201 of everolimus wordt voortgezet zolang deze werkzaam is en goed verdragen wordt. De duur van de behandeling kan daarom voor iedereen verschillen.
+
+Opvolging
+
+Er wordt een afspraak ingepland 28 dagen na het beëindigen van de behandeling.
+
+Daarna heeft u elke 3-4 maanden een controleafspraak gedurende het eerste jaar, en elke 6 maanden tot het vijfde jaar na de start van de behandeling. Bij deze standaardcontroles wordt er een klinisch onderzoek uitgevoerd (om late bijwerkingen op te sporen), een neurologisch onderzoek en een MRI. Uw arts noteert bij elke afspraak of u andere behandelingen gehad hebt en of u bijwerkingen hebt ervaren.
+
+Uw totale deelnameduur zal tot 5 jaar na start van de behandeling zijn. .
+
+De opvolging zal volgens de standaard zorg uitgevoerd worden; er zijn geen studiespecifieke procedures.
+
+Als u aan het einde van uw deelname nog steeds een bijwerking ervaart, kan de arts-onderzoeker u contacteren tot deze bijwerking is opgelost, om ervoor te zorgen dat u de juiste medische zorg krijgt. Hij/zij kan u ook contacteren als u na het einde van de studie een bijwerking meldt.
+
+Overzicht van de procedures
+
+In de volgende tabel vindt u de behandelingen of onderzoeken die u moet ondergaan.
+
++:----------------------------------------------------:+:----------------------:+:------------------------------------------------------------------:+:------------------------------------:+:-----------------------------------------------------------------------------------------------------------------:+
+| Tijdstip                                                                                                                                                                                                                                                                                                      |
++------------------------------------------------------+------------------------+--------------------------------------------------------------------+--------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Handeling                                            | Bij diagnose/screening | Tijdens behandeling                                                | Aan het einde van de behandelperiode | Opvolging elke 3-4 maanden gedurende het 1e jaar, daarna elke 6 maanden tot 5 jaar na de start van de behandeling |
++------------------------------------------------------+------------------------+--------------------------------------------------------------------+--------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Biopsie van de tumor                                 | X                      |                                                                    |                                      |                                                                                                                   |
++------------------------------------------------------+------------------------+--------------------------------------------------------------------+--------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Klinisch onderzoek                                   | X                      | X (wekelijks gedurende de eerste twee maanden, daarna maandelijks) | X                                    | X                                                                                                                 |
++------------------------------------------------------+------------------------+--------------------------------------------------------------------+--------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Medische voorgeschiedenis                            | X                      |                                                                    |                                      |                                                                                                                   |
++------------------------------------------------------+------------------------+--------------------------------------------------------------------+--------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Neurologisch onderzoek                               | X                      | X (maandelijks)                                                    | X                                    | X                                                                                                                 |
++------------------------------------------------------+------------------------+--------------------------------------------------------------------+--------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+| ECG (en echocardiogram indien nodig)                 | X                      |                                                                    |                                      |                                                                                                                   |
++------------------------------------------------------+------------------------+--------------------------------------------------------------------+--------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Radiografie van de longen                            | X                      |                                                                    |                                      |                                                                                                                   |
++------------------------------------------------------+------------------------+--------------------------------------------------------------------+--------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+| MRI⁴                                                 | X                      | X (tweemaandelijks)                                                | X                                    | X                                                                                                                 |
++------------------------------------------------------+------------------------+--------------------------------------------------------------------+--------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Bloedonderzoek (hematologie, biochemie en stolling¹) | X                      | X (wekelijks gedurende de eerste twee maanden, daarna maandelijks) | X (indien mogelijk)                  |                                                                                                                   |
++------------------------------------------------------+------------------------+--------------------------------------------------------------------+--------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Hepatitis-B-screening                                | X²                     |                                                                    |                                      |                                                                                                                   |
++------------------------------------------------------+------------------------+--------------------------------------------------------------------+--------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Zwangerschapstest (indien van toepassing)            | X³                     |                                                                    |                                      |                                                                                                                   |
++------------------------------------------------------+------------------------+--------------------------------------------------------------------+--------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Registratie van alle ingenomen medicatie             | X                      | X                                                                  | X                                    | X                                                                                                                 |
++------------------------------------------------------+------------------------+--------------------------------------------------------------------+--------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Registratie van alle bijwerkingen                    | X                      | X                                                                  | X                                    | X                                                                                                                 |
++------------------------------------------------------+------------------------+--------------------------------------------------------------------+--------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+
+¹ Stolling wordt alleen bij de screening onderzocht.
+
+² Een nieuwe hepatitis-B-screening wordt uitgevoerd bij de start van een eventuele tweede behandelingsperiode.
+
+³ Een nieuwe zwangerschapstest wordt uitgevoerd bij de start van een eventuele tweede behandelingsperiode.
+
+⁴De eerste 2 MRI-onderzoeken bevatten een studiespecifieke functionele MRI die iets langer zal duren (30 min).
+
+De onderzoeken die studiespecifiek zijn, zullen u niet worden aangerekend. De behandelingen en onderzoeken die behoren tot uw standaardbehandeling zullen aan u worden aangerekend of vergoed worden door uw mutualiteit (Belgische sociale zekerheid). Alle procedures, met uitzondering van de 2 studie-specifieke functionele MRI’s (één bij de screening en één aan het einde van de radiotherapie), behoren tot de standaardzorg.
+
+Neem contact op met het studiepersoneel voor meer details of indien u niet aangesloten bent bij een mutualiteit (Belgische sociale zekerheid).
+
+Optionele studie
+
+In het uitzonderlijke geval dat een zogenaamde “vloeibare” biopsie (bloed of cerebrospinaal vocht) werd uitgevoerd in plaats van een tumorbiopsie, kunnen nieuwe biomarkers op dit staal worden getest in het laboratorium van de opdrachtgever in Frankrijk. U bent vrij om te aanvaarden of te weigeren dat dit staal wordt geanalyseerd om nieuwe biomarkers op te sporen.
+
+Indien u akkoord gaat, zal bij de diagnose het volgende staal worden afgenomen:
+
+- 5 ml bloedstaal
+
+Of
+
+- 1 ml cerebrospinaal vocht (CSV, vocht rond de hersenen en het ruggenmerg)
+
+Cerebrospinaal vocht wordt afgenomen tijdens een lumbaalpunctie. Dit is een procedure waarbij een dokter met een dunne naald in uw onderrug een kleine hoeveelheid hersenvocht afneemt. Dit is niet specifiek voor de studie en wordt binnen de standaard behandeling uitgevoerd.
+
+Zal ik voordeel halen uit de studie? 
+
+We hebben de geneesmiddelen geselecteerd voor opname in de Biomede 2.0-studie omdat ze veelbelovende resultaten hebben opgeleverd. Daarom hopen we dat kinderen, adolescenten en jonge volwassenen met een infiltrerend glioom van de hersenstam of een diffuse midlijntumor er voordeel bij zullen hebben. We kunnen echter niet garanderen dat u voordeel hebt bij deelname aan deze studie.
+
+De informatie die tijdens de studie verkregen wordt, kan bijdragen tot een beter inzicht in het gebruik van het studiegeneesmiddel of tot de ontwikkeling van een nieuw geneesmiddel voor de behandeling van uzelf of toekomstige patiënten.
+
+Het behandelingschema kan al dan niet gunstig blijken te zijn voor de behandeling van uw infiltrerend glioom van de hersenstam of een diffuse midlijntumor of het verlichten van uw symptomen. Zelfs als het effect gunstig blijkt, is een terugkeer of verergering van de symptomen, de ziekte of de aandoening nog altijd mogelijk.
+
+Wat zijn de mogelijke risico's en ongemakken bij deelname aan de studie?
+
+6.1 Wat zijn de mogelijke bijwerkingen van standaard radiotherapie en everolimus/ONC201?
+
+Deelnemen aan een studie houdt enig risico in. Everolimus, ONC201 en de standaard radiotherapie kunnen bijwerkingen veroorzaken. Sommige bijwerkingen komen vaker voor dan andere, en de patiënt ervaart ze mogelijk niet allemaal.
+
+Everolimus
+
+Vaak voorkomende bijwerkingen (kan voorkomen bij meer dan 1 op 10 personen):
+
+  - Verlaagd aantal rode bloedcellen, witte bloedcellen en bloedplaatjes
+
+  - Verlies van eetlust
+
+  - Anorexie, gewichtsverlies
+
+  - Misselijkheid en braken
+
+  - Diarree
+
+  - Huiduitslag, acne
+
+  - Ontsteking van de mondslijmvliezen met ulceratie (stomatitis, aften)
+
+  - Vermoeidheid
+
+  - Hoofdpijn
+
+Minder vaak voorkomende bijwerkingen (kunnen voorkomen bij maximaal 1 op 10 personen):
+
+  - Nierfalen
+
+  - Buikpijn
+
+  - Bloedingen
+
+ONC201
+
+Soms voorkomende maar mogelijk ernstige bijwerkingen (kunnen voorkomen bij maximaal 1 op 100 personen):
+
+  - Infecties van de bovenste luchtwegen, gegeneraliseerde infectie (sepsis)
+
+  - Neurologische aandoeningen die tot hersenschade en cognitieve stoornissen kunnen leiden (encefalopathie)
+
+  - Ademhalingsmoeilijkheden (dyspneu)
+
+  - Abnormale bloedtoevoer naar de schedel, longen en de lever (intracraniële bloeding, longbloeding, leverbloeding)
+
+  - Obstructie van een slagader in de longen (longembolie)
+
+  - Complicaties als gevolg van de massale vernietiging van kankercellen (tumorlysis-syndroom).
+
+Standaard radiotherapie
+
+  - Misselijkheid en braken
+
+  - Hoofdpijn
+
+  - Slaperigheid
+
+  - Tijdelijke neurologische verslechtering die soms lijkt op pseudoprogressie (versterken van het effect van de bestraling door het doelgericht geneesmiddel)
+
+  - Laat gehoorverlies
+
+U kan deze bijwerkingen van radiotherapie ook ervaren als u niet deelneemt aan de studie.
+
+U ondergaat regelmatig bloedtests tijdens en na de behandeling en wordt regelmatig gecontroleerd. Zoek onmiddellijk medische hulp als u zich zorgen maakt tijdens of na de behandeling.
+
+Aangezien deze gecombineerde behandeling nog onderzocht wordt, zouden zich nog andere, momenteel niet bekende risico's en ongemakken kunnen voordoen. Daarom is het van groot belang dat u elk nieuw of erger geworden gezondheidsprobleem onmiddellijk bij de onderzoeker meldt. Dit geldt ook als u denkt dat het niets te maken heeft met de studie en zelfs wanneer het reeds beschreven is in dit document. Als u andere medicatie moet gebruiken, bespreek dit dan vooraf met de onderzoeker. Indien u om gelijk welke reden een andere arts raadpleegt tijdens de studie, moet u hem/haar meedelen dat u deelneemt aan een studie en uw “in-geval-van-nood-kaart” tonen. Dit kan belangrijk zijn voor een juiste diagnose en behandeling indien nodig.
+
+6.2 Wat zijn de mogelijke risico's of ongemakken van de onderzoeken tijdens de studie?
+
+Aan de onderzoeken tijdens de studie zijn geen gekende risico's verbonden. Alle onderzoeken worden uitgevoerd binnen de standaardbehandeling van uw ziekte.
+
+Alleen bij de screening en het einde van de radiotherapie zal naast de standaard MRI een studiespecifieke functionele MRI worden uitgevoerd. Er worden geen mogelijke risico's verwacht, maar dit onderzoek zal iets langer duren (30min langer).
+
+6.3 Mag ik tijdens de studie andere geneesmiddelen nemen?
+
+Aarzel niet om de onderzoeker meer uitleg te vragen over het gebruik van andere geneesmiddelen en voedingssupplementen (inclusief onder meer aromatherapie, fytotherapie, homeopathie,…) tijdens de studie.
+
+6.4 Zal mijn deelname aan de studie een invloed hebben op mijn dagelijkse activiteiten?
+
+We willen zorgen dat de studie vlot verloopt. Daarom maken we de volgende afspraken met u:
+
+• U zorgt dat u al uw geneesmiddelen inneemt op de manier die de onderzoeker heeft uitgelegd.
+
+• U neemt tijdens deze studie niet deel aan een andere medisch-wetenschappelijke studie, tenzij u voorafgaand aan de deelname toestemming hebt gekregen van de opdrachtgever.
+
+• U komt naar al uw afspraken.
+
+• U hebt uw deelnemerskaart steeds bij u, bijvoorbeeld in uw portemonnee. Er staat op dat u deelneemt aan deze studie en wie moet worden verwittigd in geval van nood. Laat deze kaart zien wanneer u op raadpleging gaat bij een andere arts.
+
+• Neem contact op met de onderzoeker of onderzoeksverpleegkundige in de volgende situaties:
+
+- U gaat andere geneesmiddelen nemen. Dit omvat ook homeopathische geneesmiddelen, natuurlijke geneesmiddelen, vitamines en geneesmiddelen zonder voorschrift.
+
+- U moet opgenomen worden in het ziekenhuis of daar een behandeling ondergaan.
+
+- U krijgt plots problemen met uw gezondheid.
+
+- U wilt niet meer deelnemen aan de studie.
+
+- Uw telefoonnummer, adres of e-mailadres is gewijzigd.
+
+6.5 Mag ik zwanger worden, een kind verwekken, of mag ik borstvoeding geven tijdens de studie?
+
+Dit deel is uitsluitend bestemd voor deelnemers die zwanger zouden kunnen worden of deelnemers die hun partner(s) zwanger zouden kunnen maken.
+
+Vrouwelijke deelnemer: Omdat de effecten van de gecombineerde behandeling op een ongeboren kind of baby niet bekend zijn, mag u niet aan deze studie deelnemen indien :
+
+- u zwanger bent,
+
+- u wenst zwanger te worden in de nabije toekomst of
+
+- u borstvoeding geeft.
+
+Ook is het niet toegelaten eicellen te doneren gedurende en na uw deelname aan de studie, tot 6 maanden na de laatste inname.
+
+Bij deelname aan de studie, zal uw onderzoeker met u bespreken welke vormen van anticonceptie geschikt zijn.
+
+Als u toch zwanger wordt tijdens de studie, dient u onmiddellijk de onderzoeker en uw behandelende arts op de hoogte te brengen. Omwille van veiligheidsredenen wil de onderzoeker uw zwangerschap en het resultaat ervan opvolgen en kan hij verplicht zijn deze gegevens met de opdrachtgever te delen om te voldoen aan regelgeving omtrent het controleren en het melden van veiligheidsinformatie betreffende het behandeling.
+
+Mannelijke deelnemer:
+
+De gecombineerde behandeling zou een effect kunnen hebben op uw sperma en zou een onbekend risico kunnen inhouden voor een ongeboren kind.
+
+Als u deelneemt aan deze studie, moet u anticonceptiva gebruiken en mag u geen sperma doneren gedurende de hele studie en tot 6 maanden na de laatste inname. Gelieve dit onderwerp met de onderzoeker te bespreken indien het voor u van toepassing is.
+
+U verbindt zich ertoe uw vrouwelijke partner op de hoogte te brengen van uw deelname aan deze studie en van het mogelijke risico voor een ongeboren kind.
+
+Als uw partner toch zwanger wordt tijdens de studie, moet u onmiddellijk de onderzoeker op de hoogte brengen. Met uw akkoord, zal de onderzoeker uw partner vragen om haar zwangerschap en het resultaat ervan op te volgen en een specifiek formulier voor geïnformeerde toestemming (voor de zwangere partner) te ondertekenen.
+
+Wat als er tijdens de studie iets fout gaat?
+
+Zelfs als er geen sprake is van een fout, is de opdrachtgever aansprakelijk voor schade die u wordt berokkend, direct of indirect gerelateerd aan uw deelname aan de studie. De opdrachtgever heeft een passende verzekering afgesloten (een zogenaamde FOUTLOZE VERZEKERING) voor deze aansprakelijkheid in overeenstemming met de huidige Europese en Belgische wetgeving inzake klinische proeven. Een kopie van het verzekeringscertificaat is verkrijgbaar bij de onderzoeker of studiepersoneel.
+
+Als u (of in geval van overlijden, uw rechthebbenden) een schadevergoeding wilt voor schade aan uw gezondheid als direct of indirect gevolg van deelname aan de studie, moet u het studiepersoneel hiervan onmiddellijk op de hoogte stellen.
+
+Als de onderzoeker van mening is dat er mogelijk een verband bestaat tussen nieuwe of verergerde gezondheidsproble(e)m(en) en de studie, zal hij/zij de opdrachtgever van de studie hiervan op de hoogte stellen. De opdrachtgever zal dan onmiddellijk de aangifteprocedure bij zijn verzekeringsmaatschappij starten. Als de maatschappij het nodig acht, zal zij een deskundige aanstellen om te beoordelen of er een verband is tussen uw gemelde gezondheidsproble(e)m(en) en de studie. De verzekering dekt niet de natuurlijke progressie van uw ziekte/aandoening of de bekende bijwerkingen van de behandeling die u zou hebben gekregen zonder deelname aan de studie (dat is uw standaardbehandeling).
+
+Wanneer u dit gepast vindt of wanneer u of uw rechthebbenden het niet eens zijn met de onderzoeker of met de deskundige die door de verzekeringsmaatschappij is aangesteld, kunt u contact opnemen met de verzekeringsmaatschappij of kan een procedure worden gestart tegen de verzekeringsmaatschappij. U vindt de contactgegevens op de voorpagina van dit formulier.
+
+Wat als er tijdens de studie andere behandelingen of nieuwe informatie over het studiegeneesmiddel of de studie beschikbaar worden?
+
+In de loop van de studie zou nieuwe belangrijke informatie beschikbaar kunnen worden, die een invloed zou kunnen hebben op uw beslissing om (verder) deel te nemen. Zo kunnen bijvoorbeeld andere behandelingen voor uw hersentumor of belangrijke nieuwe informatie over het studiegeneesmiddel beschikbaar worden. Het is de plicht van de onderzoeker deze nieuwe informatie met u te bespreken en u de kans te geven uw deelname aan de studie te herbekijken.
+
+Indien u besluit uw deelname aan de studie te beëindigen of indien u niet langer kan deelnemen, zal de onderzoeker erop toezien dat u de best mogelijke behandeling blijft krijgen.
+
+Kan mijn deelname aan de studie vroegtijdig eindigen?
+
+Zoals verder in dit deel gedetailleerd besproken wordt, kan uw deelname aan de studie vroegtijdig eindigen wanneer
+
+- u besluit uw toestemming in te trekken of te stoppen met de behandeling met het studiegeneesmiddel,
+
+- de onderzoeker besluit uw deelname aan de studie te stoppen of te laten stoppen met de behandeling met het studiegeneesmiddel,, of
+
+- andere instanties de studie onderbreken of beëindigen.
+
+In elk geval, als uw deelname aan de studie vroegtijdig stopt, zal de onderzoeker uw verdere medische zorg met u bespreken. De gegevens verzameld vóór het beëindigen van uw deelname, zullen verder gebruikt worden zoals beschreven in dit formulier. Dit is bedoeld om een foutieve interpretatie van de studieresultaten te vermijden (zoals beschreven in hoofdstuk I.§ 12.4).
+
+Afhankelijk van uw situatie zal de onderzoeker met u bespreken of er opvolgingsbezoeken of -procedures nodig zijn.
+
+Als u een bijwerking ondervindt op het moment waarop u met het studiegeneesmiddel stopt, kan de onderzoeker nadien contact met u opnemen om na te gaan of de bijwerking verdwenen is of niet na afloop van uw deelname aan de studie.
+
+Als u na het beëindigen van uw deelname aan de studie een nieuwe bijwerking ondervindt, mag u de onderzoeker contacteren en vragen om opvolging daarvan.
+
+9.1 U besluit uw toestemming in te trekken
+
+U kan op elk moment beslissen uw toestemming in te trekken, zonder een reden op te geven. Wel moet u, voor uw eigen veiligheid, de onderzoeker op de hoogte brengen van uw beslissing. Ook al is het niet verplicht, kan het voor de onderzoeker en voor de opdrachtgever nuttig zijn om de reden van deze beslissing te kennen (bv. bijwerkingen, te veel verplaatsingen, ...).
+
+Gelieve met de onderzoeker de praktische kant van de stopzetting van uw deelname te bespreken (afhankelijk van uw situatie), met inbegrip van verdere opvolgingsbezoeken of -procedures. Er zullen geen nieuwe gegevens meer verzameld en bezorgd worden aan de opdrachtgever.
+
+Als uw biologische stalen (bv. bloedstalen, urinestalen) reeds werden gebruikt of getest vóór de intrekking van uw toestemming, heeft de opdrachtgever nog steeds het recht de resultaten van die tests te gebruiken.
+
+Ook uw biologische stalen die verzameld werden (maar nog niet getest) vóór het intrekken van uw toestemming, en de gegevens die daaruit worden verkregen, kunnen nog steeds worden gebruikt door de opdrachtgever. U kan vragen om deze stalen te vernietigen. Om een foutieve interpretatie van de studieresultaten te vermijden, kan dit uitgesteld worden tot het einde van de studie.
+
+9.2 U beslist te stoppen met de behandeling met het studiegeneesmiddel
+
+Het is mogelijk dat u beslist om te stoppen met de behandeling met het studiegeneesmiddel, maar dat u toestemt verder deel te nemen aan de studie en te worden gecontacteerd door het studiepersoneel.
+
+Indien u beslist om te stoppen met de behandeling met het studiegeneesmiddel, kan u verder naar de studiegerelateerde raadplegingen komen. Het studiepersoneel zal u vragen of ze u per telefoon, e-mail of post kunnen contacteren om te vragen naar uw algemene gezondheidstoestand en/of bijwerkingen op lange termijn kunnen opvolgen. Deze informatie is belangrijk voor de wetenschappelijke waarde van de studie en om de resultaten ervan juist te interpreteren. U bent vrij om zo een regelmatig contact te weigeren. Uw beslissing zal uw toekomstige medische zorg niet beïnvloeden.
+
+9.3 De onderzoeker besluit uw deelname aan de studie te stoppen of u te laten stoppen met de behandeling met het studiegeneesmiddel
+
+De onderzoeker kan uw deelname aan de studie beëindigen omdat
+
+- hij/zij het voor u het beste vindt (bv. op basis van uw testresultaten, wanneer u bepaalde gezondheidsproblemen ontwikkelt, wanneer het protocol definieert dat u niet zwanger mag worden en u toch zwanger wordt, …)
+
+- u de instructies van het studiepersoneel niet naleeft,
+
+- er een andere reden is die u zal worden uitgelegd, of
+
+- de volledige studie stopgezet moet worden voor alle deelnemers (zie volgende paragraaf).
+
+Als dat gebeurt, dan zal het studiepersoneel u uitleggen waarom en de gepaste opvolging verzekeren.
+
+4.  Andere instanties kunnen de studie onderbreken of beëindigen
+
+De opdrachtgever en de bevoegde Belgische gezondheidsautoriteiten kunnen de studie onderbreken of beëindigen
+
+- omdat uit de verzamelde informatie blijkt dat everolimus of ONC201 niet goed genoeg werkt (onvoldoende verbetering in de gezondheid van de deelnemers aan de studie oplevert),
+
+- omdat everolimus of ONC201 meer (ernstige) bijwerkingen veroorzaakt dan verwacht, of
+
+- om een andere reden die door de betrokken instantie zal worden uitgelegd.
+
+Welke behandeling zal ik krijgen na mijn deelname aan de studie? 
+
+Nadat u everolimus of ONC201 hebt gekregen in deze studiebehandelingsgroep, zal de onderzoeker uw gezondheid evalueren en uw verdere behandeling bespreken in functie van uw respons. Hij/zij zal de best mogelijke verdere standaardbehandeling voorschrijven.
+
+Het is ook mogelijk dat u aan een andere behandelingsgroep deelneemt indien van toepassing. In dat geval zal de onderzoeker dit verder met u bespreken.
+
+Zal mijn deelname aan de studie bijkomende kosten met zich meebrengen voor mij?
+
+Als u beslist om deel te nemen aan deze studie, brengt dat geen extra kosten mee voor u of uw ziekteverzekering. U krijgt geen financiële vergoeding voor uw deelname. Alle bezoeken en onderzoeken zijn deel van de standaardbehandeling behalve de 2 functionele MRI’s bij screening en na het einde van de radiotherapie.
+
+De opdrachtgever van de studie levert de geneesmiddelen everolimus en ONC201 en betaalt ervoor. De kosten voor de analyse van de extra bloedstaal worden gedekt door de opdrachtgever van de studie. Uw tumorstalen zijn een gift. U zal geen enkel financieel voordeel ontvangen in verband met de ontwikkeling van nieuwe therapieën die voortvloeien uit het gebruik van uw staal en die een commerciële waarde zouden kunnen hebben.
+
+Welke gegevens worden over mij verzameld tijdens de studie en wat gaat ermee gebeuren?
+
+12.1 Welke gegevens worden tijdens de studie verzameld en verwerkt?
+
+De verzamelde en verwerkte persoonsgegevens gaan over uw gezondheid en medische toestand, met inbegrip van uw medische geschiedenis, een deel van uw achtergrondinformatie (bv. uw leeftijd en geslacht) en de resultaten van de studieonderzoeken.
+
+Etnische gegevens worden verzameld om ervoor te zorgen dat er onderzoeksgegevens worden verwerkt in een zo breed mogelijke populatie.
+
+2.   Hoe zal de onderzoeker mijn persoonsgegevens behandelen?
+
+De onderzoeker (en het studiepersoneel) is gebonden door het beroepsgeheim of via een vertrouwelijkheidsovereenkomst bij het verzamelen en verwerken van uw gegevens.
+
+Dit betekent dat hij/zij uw identiteit nooit zal bekendmaken, ook niet in een wetenschappelijke publicatie of een voordracht, en dat hij/zij uw gegevens zal coderen (Ref.[1]) (dit betekent dat hij/zij zal uw identiteit in de studie vervangen door een identificatiecode) alvorens ze naar de opdrachtgever te sturen. Met andere woorden, deze code zal geen persoonlijke identificator of combinatie van identificatoren bevatten zoals naam, voornaam, initialen, volledige of gedeeltelijke geboortedatum, dossiernummer, enz.
+
+Daardoor zullen de onderzoeker en het studiepersoneel, onder de verantwoordelijkheid van de onderzoeker, de enigen zijn die uw identiteit zullen kunnen koppelen aan de gegevens die tijdens de studie zijn doorgegeven, met de uitzonderingen vermeld onder § 12.5.
+
+De gegevens die de opdrachtgever krijgt, zullen hem dus niet in staat stellen u te identificeren.
+
+3.  Hoe zullen mijn gegevens verwerkt worden?
+
+Uw studiegegevens zullen verwerkt worden in overeenstemming met de huidige Europese en Belgische wetgeving inzake gegevensbescherming.
+
+De reden dat uw persoonsgegevens mogen worden verwerkt voor de doeleinden van de studie, is dat ze worden verwerkt voor het verrichten van wetenschappelijk onderzoek en dat we een taak moeten uitvoeren die gebeurt in het algemeen belang.
+
+4.  Heb ik toegang tot mijn gegevens die tijdens de studie verzameld en verwerkt zijn en kan ik ze rechtzetten?
+
+U heeft het recht om aan de onderzoeker te vragen welke gegevens over u worden verzameld en waarvoor ze gebruikt worden in deze studie.
+
+U heeft het recht om
+
+- toegang te krijgen tot deze gegevens en ze na te kijken,
+
+- de verzamelde persoonsgegevens te ontvangen
+
+- correctie te vragen als ze niet juist zijn,
+
+- de verwerking van uw gegevens te beperken,
+
+- uw toestemming in te trekken voor de verwerking van persoonsgegevens. Uw persoonsgegevens die al verzameld werden vóór uw terugtrekking, zullen bewaard blijven om een foutieve interpretatie van de studieresultaten te vermijden.
+
+Het is niet mogelijk om al uw gegevens te laten schrappen, om te voorkomen dat de resultaten van de studie foutief worden geïnterpreteerd.
+
+2.   Wie anders dan de onderzoeker en zijn studiepersoneel heeft toegang tot mijn persoonsgegevens?
+
+Om de kwaliteit van de studie te controleren kan het gebeuren dat uw niet-gecodeerde persoonsgegevens of voor deze studie relevante informatie uit uw medisch dossier geïnspecteerd worden door andere mensen dan het studiepersoneel. Deze inzage gebeurt onder de verantwoordelijkheid van de onderzoeker. Deze personen zijn gebonden aan het beroepsgeheim of via een vertrouwelijkheidsovereenkomst. Het kan gaan om:
+
+- door de opdrachtgever aangeduid personeel (MONITORS en AUDITORS) en mensen of organisaties die diensten leveren aan of samenwerken met de opdrachtgever. Zij zullen echter nooit uw naam en contactgegevens doorgeven aan de opdrachtgever.
+
+- inspecteurs van de bevoegde gezondheidsautoriteiten van over de hele wereld.
+
+- een onafhankelijke auditgroep.
+
+- personen aangeduid door het Ethisch Comité.
+
+Indien nodig voor de studie mogen de gecodeerde studiegegevens naar andere landen binnen en buiten de Europese Unie (EU) worden gestuurd en worden nagekeken door:
+
+- personeel (andere dan de inspecteurs) van de bevoegde gezondheidsautoriteiten van België (Federaal Agentschap voor Geneesmiddelen en Gezondheidsproducten, FAGG) of andere landen binnen en buiten de EU,
+
+- het/de Belgisch(e) evaluerend(e) Ethisch(e) Comité(s),
+
+- externe onderzoekers,
+
+- de opdrachtgever van de studie, door de opdrachtgever aangeduid personeel en mensen of organisaties die diensten leveren aan of samenwerken met de opdrachtgever, en/of
+
+- bedrijven uit de groep van de opdrachtgever in België en in andere landen binnen en buiten de EU.
+
+- farmaceutische bedrijven binnen of buiten Europa voor onderzoek, veiligheidsmonitoring of commerciële doeleinden. Zij zijn net als ander studiepersoneel verplicht om de vertrouwelijkheid van deze gegevens te garanderen. Mogelijk bevinden deze derden zich in landen buiten Europa waar er andere wetgeving geldt in verband met gegevensbescherming. Alle gegevensaanvragen worden uitgebreid geëvalueerd door de opdrachtgever, en toegang wordt alleen gegeven met de nodige goedkeuringen en correcte procedures. U kan aan de hand van deze gegevens niet geïdentificeerd worden, en ze zullen niet zodanig met andere gegevens gecombineerd worden dat u geïdentificeerd kunt worden. De gegevens zullen ook niet worden gebruikt om in de toekomst beslissingen te nemen over bepaalde dienstverlening, zoals verzekeringen. U wordt in geen geval op welke wijze dan ook geïdentificeerd in een verslag, presentatie of publicatie dat of die voortvloeit uit deze studie.
+
+- onafhankelijke deskundigen die de gegevens opnieuw analyseren om de resultaten van de klinische studie te verifiëren (centrale radiologische beoordelaar).
+
+De Europese regelgeving en de Belgische wetgeving over gegevensbescherming leggen beperkingen op voor de overdracht van gegevens naar niet-EU landen. De opdrachtgever moet altijd verzekeren dat uw gecodeerde studiegegevens gelijkwaardig beschermd worden bij overdracht naar een niet-EU land. Indien de opdrachtgever hiervoor een overeenkomst over databescherming afsluit, kan een kopie van deze overeenkomst worden verkregen via de onderzoeker.
+
+U kan altijd met de onderzoeker contact opnemen voor meer informatie over zulke overdracht.
+
+12.6 Wat zal er gebeuren met de resultaten van de studie?
+
+Na afsluiting van de studie zal een beschrijving en de resultaten van de studie gepubliceerd worden in gespecialiseerde medische tijdschriften. Een kopie van de wetenschappelijke publicatie, is verkrijgbaar via de onderzoeker of het studiepersoneel.
+
+Een beschrijving van de studie zal ook beschikbaar zijn op https://euclinicaltrials.eu/search-for-clinical-trials/?lang=nl. Met behulp van de informatie op het voorblad van dit formulier, kan u deze website raadplegen. Binnen 1 jaar na afsluiting van de studie zal de website een samenvatting van de resultaten bevatten in overeenstemming met de richtsnoer van de Europese Commissie.
+
+Deze website of publicaties zullen geen informatie bevatten waarmee u te identificeren bent.
+
+12.7 Zullen mijn gegevens gebruikt worden voor andere doeleinden dan de studie waaraan ik deelneem?
+
+De resultaten van de studie zullen worden gebruikt om een antwoord te geven op de wetenschappelijke vragen van deze studie. Daarnaast zou de opdrachtgever uw gegevens die uit deze studie verkregen zijn, willen gebruiken in andere onderzoeks- en ontwikkelingsactiviteiten (en de daaraan gekoppelde wetenschappelijke publicaties). Deze activiteiten kunnen enkel gaan over:
+
+- de werking van everolimus/ONC201 en gelijkaardige geneesmiddelen,
+
+- dezelfde ziekte/aandoening waarvoor everolimus/ONC201 in deze studie wordt getest, of
+
+- andere ziektes en gezondheidsproblemen waarvoor everolimus/ONC201 een oplossing zou kunnen bieden, of van gerelateerde diagnostische tests.
+
+Elk bijkomend of toekomstig onderzoek buiten de studie en dus niet beschreven in bovenstaande punten, moet steeds goedgekeurd worden door een erkend Ethisch Comité.
+
+U gaat al dan niet akkoord met het gebruik van uw studiegegevens voor andere doeleinden buiten de context van de studie door het betreffende vakje in Hoofdstuk II aan te vinken.
+
+12.8 Hoe lang worden mijn gegevens bijgehouden?
+
+Na afloop van de studie zullen uw gecodeerde gegevens minstens 25 jaar worden bijgehouden in overeenstemming met de Europese wetgeving inzake klinische proeven om de geldigheid van het onderzoek te verzekeren. Dat zal ook het geval zijn indien u voortijdig met uw deelname aan de studie stopt.
+
+Welke biologische stalen worden van mij verzameld tijdens de studie en wat gebeurt ermee?
+
+13.1 Welke biologische stalen worden van mij verzameld tijdens de studie?
+
+Biologische stalen zijn stalen van menselijk lichaamsmateriaal (zoals bv. bloed, weefsel, urine, stoelgang, …). In deze studie wordt de tumorbiopsie uitgevoerd volgens de standaard zorg (niet studiespecifiek). Een deel van de reeds uitgevoerde tumorbiopsie wordt naar Frankrijk (Villejuif) gestuurd en wordt voor deze studie verder onderzocht om de diagnose te bevestigen, een genetische analyse uit te voeren en te controleren op biomarkers.
+
+In het uitzonderlijke geval dat er een zogenaamde “liquid” biopsie (bloed of hersenvocht) is uitgevoerd in plaats van een tumorbiopsie, kunnen op dit staal nieuwe biomarkers worden onderzocht in het laboratorium van de sponsor in Frankrijk. U bent vrij om aan het einde van dit formulier al dan niet toestemming te geven voor de analyse van dit staal om nieuwe biomarkers te zoeken.
+
+Voor deze stalen wordt ook een coderingsprocedure gebruikt net zoals voor uw persoonsgegevens in overeenstemming met de Belgische wetgeving op het gebruik van menselijk lichaamsmateriaal (zie I § 12.2). Wanneer stalen naar de opdrachtgever worden gezonden, of naar organisaties die samenwerken met de opdrachtgever, zullen zij enkel uw identificatiecode kunnen zien. De opdrachtgever zorgt ervoor dat steeds wordt bijgehouden waar uw biologische stalen zich bevinden. Het gebruik van uw biologische stalen, hangt samen met de verwerking van de bijbehorende gecodeerde persoonsgegevens.
+
+Uw biologische stalen zijn een gift. U zal geen enkel financieel voordeel ontvangen in verband met de ontwikkeling van nieuwe therapieën die voortvloeien uit het gebruik van uw biologische stalen en die een commerciële waarde zouden kunnen hebben.
+
+2.   Wat gebeurt er met de verzamelde biologische stalen binnen de context van de studie?
+
+Deze biologische stalen zullen worden geanalyseerd met het oog op de doelstellingen van deze studie.
+
+Aangezien de wetenschap in dit domein voortdurend vooruitgang boekt, zou de opdrachtgever, de overschotten van uw biologische stalen nog 10 jaar willen bewaren. Hij doet dit voor aanvullend onderzoek dat binnen de context van de huidige klinische studie blijft en dus gaat over dezelfde ziekte of over dezelfde behandeling/hetzelfde geneesmiddel als in deze studie.
+
+U gaat al dan niet akkoord met het bewaren van de overschotten van uw biologische stalen voor aanvullend onderzoek binnen de context van de huidige klinische studie door in Hoofdstuk II het betreffende vakje aan te vinken.
+
+Het materiaal zal worden gebruikt voor toekomstig onderzoek, buiten de studie waaraan u deelneemt, om meer inzicht te krijgen in de ziekte, de behandeling ervan en de reacties op deze behandeling, en everolimus/ONC201.
+
+Als u hiermee akkoord gaat, mag dit aanvullende onderzoek alleen worden uitgevoerd in overeenstemming met de wetgeving inzake het gebruik van menselijk weefselmateriaal en met goedkeuring van een erkende ethische commissie.
+
+Op uw biologische stalen zullen ook genetische analyses worden verricht. Genetische analyses zijn onderzoeken naar DNA. DNA bepaalt bijvoorbeeld de kleur van ons haar en onze ogen. DNA kan ook verklaren waarom sommige mensen wel op bepaalde geneesmiddelen reageren en anderen niet. Ook kan het verklaren waarom sommige mensen bepaalde ziekten wel krijgen en anderen niet.
+
+Deze genetische analyses leveren essentiële informatie op voor de studie. Als u niet wil dat deze analyses worden uitgevoerd, kan u niet deelnemen aan de studie.
+
+Wat indien onderzoek betekenisvolle informatie over uw gezondheid oplevert?
+
+Tijdens de studie kan het gebeuren dat we nieuwe informatie ontdekken over uw gezondheid. Indien deze informatie van belang kan zijn voor uw gezondheid, zal de opdrachtgever de onderzoeker inlichten. Met uw toestemming zal de onderzoeker u en uw behandelende arts op de hoogte brengen van uw resultaten en de mogelijke gevolgen. Indien nodig zal de onderzoeker en/of de behandelende arts u raad geven over wat u moet doen.
+
+U kan de onderzoeker op de hoogte brengen of u al dan niet akkoord gaat om over betekenisvolle informatie over uw gezondheid geïnformeerd te worden, door het betreffende vakje in Hoofdstuk II aan te vinken. De onderzoeker/uw behandelende arts zal u deze informatie in ieder geval meedelen als het niet weten ervan ernstige nadelen voor uw gezondheid of die van derden kan opleveren.
+
+Wie heeft de documenten inzake de studie nagekeken en goedgekeurd?
+
+De studiedocumenten werden nagekeken door:
+
+- de Belgische bevoegde gezondheidsautoriteiten (FAGG) of indien van toepassing, door de nationale bevoegde gezondheidsautoriteiten van andere EU lidstaten, en
+
+- een onafhankelijk Belgisch Ethisch Comité
+
+De bevoegde gezondheidsautoriteiten en de Ethische Comités hebben als taak de personen die aan een studie deelnemen te beschermen. De bevoegde gezondheidsautoriteiten zullen erop toezien dat de studie gebeurt in overeenstemming met de toepasselijke wetgeving.
+
+U mag hun goedkeuring niet opvatten als een stimulans om deel te nemen aan de studie.
+
+HOOFDSTUK II – GEÏNFORMEERDE TOESTEMMING Formulier voor geïnformeerde toestemming voor patiënten van 18 jaar en ouder
+
+BIOMEDE 2.0 studie
+
+DEELNEMER 
+
+VEREISTEN VOOR UW DEELNAME AAN DE STUDIE
+
+- Ik verklaar dat ik dit formulier heb gelezen en dat ik de informatie erin begrepen heb.
+
+- Ik verklaar dat ik geïnformeerd ben over het doel van de studie, de duur en de gevolgen ervan, mogelijke risico's en ongemakken, de voorzorgen die ik moet nemen en wat van mij verwacht wordt, en dat ik dit alles begrepen heb. Mijn rechten als deelnemer aan een studie zijn mij uitgelegd en ik heb ze begrepen.
+
+- Ik heb voldoende tijd gehad om erover na te denken en erover te praten met een vertrouwenspersoon (bv. vrienden, familie, behandelende arts, ...).
+
+- Ik heb de kans gekregen om alle vragen te stellen die bij me opkwamen en ik heb een bevredigend antwoord gekregen.
+
+- Ik begrijp dat ik vrijwillig en zonder daartoe gedwongen te zijn, zal deelnemen aan deze studie en dat ik op ieder moment mijn deelname aan de studie stop kan zetten.
+
+- Ik begrijp dat er gegevens over mij zullen worden verzameld en dat deze vertrouwelijk zullen behandeld worden zoals beschreven in Hoofdstuk I, §12.2.
+
+- Ik ben ervan op de hoogte dat mijn persoonsgegevens verwerkt worden zoals beschreven in Hoofdstuk I, § 12
+
+- Ik begrijp dat vertegenwoordigers van de opdrachtgever, het Ethisch Comité, en bevoegde gezondheidsautoriteiten inzage hebben in mijn medisch dossier indien ze hiertoe gemachtigd zijn (zoals beschreven in Hoofdstuk I, §12.5).
+
+- Ik begrijp dat de studiemonitoring bepaalde personen toegang geeft tot al mijn gegevens. Ik geef die personen toestemming om mijn gegevens in te zien voor monitoringdoeleinden.
+
+- Ik begrijp dat mijn versleutelde gegevens kunnen worden verzonden naar landen buiten de EU, waar de privacywetgeving van de EU niet van toepassing is.
+
+- Ik begrijp dat de opdrachtgever een verzekering heeft afgesloten voor het geval ik schade zou lijden in verband met mijn deelname aan deze studie.
+
+- Ik begrijp dat ik bij deelname aan deze studie geen kosten heb, tenzij deze voor de standaardbehandeling van mijn ziekte.
+
+- Ik ben op de hoogte dat mijn behandelende arts(en) op de hoogte wordt gebracht van mijn deelname aan deze studie.
+
+- Wanneer ik deelneem aan een andere interventionele studie, dien ik dit aan de onderzoeker of het studiepersoneel te laten weten. Ik stem ermee in dat ik niet gelijktijdig aan een andere interventionele studie (bijvoorbeeld met een studiegeneesmiddel, medisch hulpmiddel, experimentele chirurgische techniek) deelneem zonder de onderzoeker of het studiepersoneel daarvan op de hoogte te brengen, en dat deelname om gemotiveerde redenen kan geweigerd worden.
+
+- Ik begrijp dat ik moet meewerken en de instructies van de onderzoeker en van het studiepersoneel rond de studie moet volgen.
+
+- Ik begrijp dat mijn deelname aan de studie zonder mijn toestemming kan beëindigd worden als ik een andere behandeling nodig heb, het studieschema niet volg, een letsel heb dat met de studie te maken heeft of om gelijk welke andere gerechtvaardigde reden.
+
+- Ik begrijp dat genetische analyses gebeuren op mijn biologische stalen.
+
+- Ik bevestig dat alle informatie die ik heb gegeven over mijn medische geschiedenis correct is, voor zover ik weet. Ik begrijp dat het schadelijk voor mij kan zijn als ik de onderzoeker niet informeer over mogelijke redenen waarom ik niet aan het onderzoek zou mogen deelnemen
+
+- Indien van toepassing, begrijp ik dat ik niet zwanger mag worden of mijn partner zwanger mag maken tijdens de studie. De onderzoeker heeft besproken hoe ik kan zorgen dat ik niet zwanger word of dat mijn partner niet zwanger wordt.
+
+OPTIONELE TOESTEMMINGEN DIE GEEN ABSOLUTE VOORWAARDEN ZIJN VOOR UW DEELNAME AAN DEZE STUDIE
+
+STUDIEgegevens
+
+1.  Zoals vermeld in Hoofdstuk I, § 12.7, zou de opdrachtgever uw studiegegevens willen gebruiken voor andere onderzoeks- en ontwikkelingsactiviteiten (en de daaraan gekoppelde wetenschappelijke publicaties). Deze onderzoeksdoelen moeten goedgekeurd zijn door een erkend Ethisch Comité.
+
+  Gaat u ermee akkoord dat uw gegevens die in deze studie verkregen zijn worden gebruikt voor andere onderzoeksdoeleinden?
+
+  (Vink het gepaste vakje aan)
+
++:--------------------------------+---------------------------------+
+|   ☐ Ik ga akkoord               |   ☐ Ik ga niet akkoord          |
++---------------------------------+---------------------------------+
+
+BIOLOGISCHE STALEN BINNEN DE CONTEXT VAN DE STUDIE
+
+1.  Zoals vermeld in Hoofdstuk I, § 4, in het uitzonderlijke geval dat een zogenaamde “vloeibare” biopsie (bloed of cerebrospinaal vocht) werd uitgevoerd in plaats van een tumorbiopsie, wenst de opdrachtgever het staal te gebruiken om nieuwe biomarkers te onderzoeken.
+
+  Indien van toepassing, gaat u akkoord met het gebruik van dit staal voor het opsporen van nieuwe biomarkers?
+
+  (Vink het gepaste vakje aan)
+
++:--------------------------------+---------------------------------+
+|   ☐ Ik ga akkoord               |   ☐ Ik ga niet akkoord          |
++---------------------------------+---------------------------------+
+
+1.  Zoals vermeld in Hoofdstuk I, § 13.2 zou de opdrachtgever de overschotten van de biologische stalen 10 jaar willen bewaren voor aanvullend onderzoek binnen de context van de studie waaraan u zal deelnemen. De stalen zullen gebruikt worden om uw ziekte, de behandeling ervan en de reactie op een behandeling beter te begrijpen. Dit onderzoek dient goedgekeurd te zijn door een erkend Ethisch Comité.
+
+Gaat u ermee akkoord dat de overschotten van de biologische stalen
+worden bewaard voor aanvullend onderzoek binnen de context van de studie?
+
+  (Vink het gepaste vakje aan)
+
++:--------------------------------+---------------------------------+
+|   ☐ Ik ga akkoord               |   ☐ Ik ga niet akkoord          |
++---------------------------------+---------------------------------+
+
+BETEKENISVOLLE INFORMATIE
+
+1.  Zoals beschreven in Hoofdstuk I, § 14 kan het gebeuren dat betekenisvolle informatie gevonden wordt die van belang kunnen zijn voor uw gezondheid of voor die van derden.
+
+  Als dat gebeurt, wilt u dan dat de onderzoeker/uw behandelend arts u op de hoogte brengt van dit resultaat?
+
+  (Vink het gepaste vakje aan)
+
++:---------------------------------------------------+---------------------------------------------+
+|   ☐ Neen, ik wil niet op de hoogte gebracht worden |   ☐ Ja, ik wil op de hoogte gebracht worden |
++----------------------------------------------------+---------------------------------------------+
+
+  Ik stem in met deelname aan de studie, met bovenstaande beperkingen, en ik heb een ondertekende en gedateerde kopie ontvangen van alle bladzijden van dit document.
+
+Naam en voornaam van de deelnemer:
+
+Datum (DD/MMM/JJJJ):
+
+Tijdstip:
+
+Handtekening van de deelnemer:
+
+WETTELIJKE VERTEGENWOORDIGER (REF. [2])
+
+Ik verklaar dat men mij heeft geïnformeerd over de vraag om een beslissing te nemen over deelname aan de studie door de persoon die ik vertegenwoordig. Ik handel in zijn/haar beste belang en houd rekening met zijn of haar mogelijke wens. Mijn toestemming is van toepassing op alle punten opgenomen in het toestemmingsformulier voor de deelnemer.
+
+Ik ben eveneens geïnformeerd dat van zodra de klinische situatie het toelaat, de persoon die ik vertegenwoordig op de hoogte zal worden gesteld van zijn/haar deelname aan deze studie. Hij/zij is op dat moment vrij om toestemming te geven voor een verdere deelname of om de deelname stop te zetten door dit toestemmingsformulier al dan niet te ondertekenen.
+
+Ik heb een ondertekende en gedateerde kopie ontvangen van dit document.
+
+Naam en voornaam van de wettelijke vertegenwoordiger:
+
+Relatie met de deelnemer:
+
+Datum (DD/MMM/JJJJ):
+
+Tijdstip:
+
+Handtekening van de wettelijke vertegenwoordiger
+
+ONPARTIJDIGE GETUIGE / TOLK (REF.[3] )
+
+Ik, ondergetekende (vink aan wat past),
+
+☐ onpartijdige getuige
+
+☐ tolk
+
+ben tijdens het volledige proces van informatieverstrekking aan de deelnemer aanwezig geweest en bevestig dat de informatie over de doelstellingen en procedures van de studie op adequate wijze is verstrekt. Ik bevestig dat de deelnemer (of diens wettelijke vertegenwoordiger) de studie naar alle waarschijnlijkheid heeft begrepen en dat de toestemming voor deelname uit vrije wil is gegeven. 
+
+Ik verklaar bovendien dat ik, optredend als onpartijdig getuige/tolk, geen banden heb met de opdrachtgever en de onderzoeker.
+
+Naam en voornaam van de onpartijdige getuige / tolk:
+
+Hoedanigheid van de onpartijdige getuige / tolk:
+
+Datum (DD/MMM/JJJJ):
+
+Tijdstip:
+
+Handtekening van de onpartijdige getuige / tolk:
+
+ONDERZOEKER
+
+Ik, de ondergetekende onderzoeker, bevestig
+
+- dat de deelnemer mondeling de noodzakelijke informatie over de studie heeft gekregen, dat de inhoud hem/haar is uitgelegd en dat hij/zij een origineel ondertekende versie van dit document heeft gekregen.
+
+- dat ik heb nagegaan of de deelnemer de studie heeft begrepen.
+
+- dat ik de deelnemer voldoende tijd heb gegeven om na te denken over zijn/haar deelname en om vragen te stellen.
+
+- dat geen enkele druk op de deelnemer werd uitgeoefend om hem/haar te doen toestemmen in deelname aan de studie.
+
+- dat ik werk in overeenstemming met de ethische beginselen zoals vermeld in de meest recente versie van de "Verklaring van Helsinki", de "Goede klinische praktijken" en de Belgische wet inzake klinische proeven.
+
+Naam en voornaam van de onderzoeker:
+
+Datum (DD/MMM/JJJJ):
+
+Tijdstip:
+
+Handtekening onderzoeker:
+
+VERKLARENDE WOORDENLIJST
+
+FAGG: Federaal Agentschap voor Geneesmiddelen en Gezondheidsproducten
+
+GBA: De Belgische Gegevensbeschermingsautoriteit zorgt ervoor dat persoonsgegevens zorgvuldig worden gebruikt en beveiligd, en dat uw privacy ook in de toekomst gewaarborgd blijft.
+
+Andere afkortingen die in de tekst voorkomen:
+
+VERZEKERING MET "FOUTLOZE" AANSPRAKELIJKHEID:
+
+De opdrachtgever is aansprakelijk voor elk letsel of elke schade aan de deelnemer die rechtstreeks of onrechtstreeks verband houdt met de studie. Hiervoor dient u geen fout aan te tonen.
+
+MONITOR en AUDITOR:
+
+Zowel de monitor als de auditor werkt voor de opdrachtgever.
+De monitor zorgt voor een continue kwaliteitscontrole tijdens het hele verloop van de studie. De auditor voert een onafhankelijk, éénmalig onderzoek op een bepaald moment tijdens het verloop van de studie. Ze controleren of de studie wordt/werd uitgevoerd volgens het protocol, of de gerapporteerde gegevens betrouwbaar zijn en of de studie in overeenstemming is met de geldende wetten.
+
+REFERENTIES
+
+[1] Doorheen het document wordt de term “codering” gebruikt als een synoniem voor “pseudonimisering”, de term die in de Algemene Verordening Gegevensbescherming No 2016/679 wordt gebruikt.
+
+[2] Wanneer een meerderjarige niet in staat is zijn wil kenbaar te maken, moet er beroep gedaan worden op een wettelijke vertegenwoordiger die in opeenvolgende volgorde wordt bepaald (persoon die de patiënt vooraf heeft aangewezen om in zijn plaats op te treden, bewindvoerder, of bij gebreke daaraan, de samenwonende echtgenoot, de wettelijk samenwonende partner, feitelijk samenwonende partner, meerderjarig kind, een ouder, een meerderjarige broer of zus). Indien ook de persoon die krachtens het tweede lid kan optreden dat niet wenst te doen of ontbreekt, behartigt de betrokken beroepsbeoefenaar, in voorkomend geval in multidisciplinair overleg, de belangen van de patiënt. De regeling is vastgelegd in het artikel 11 van de wet van 7 mei 2017 inzake experimenten op de menselijke persoon en artikelen 12 en 14 van de wet van 22 augustus 2002 betreffende de rechten van de patiënt.
+
+[3] Het gebruik van een onpartijdige getuige is noodzakelijk wanneer de betrokkene of diens wettelijke vertegenwoordiger de taal van het goedgekeurde formulier voor geïnformeerde toestemming spreekt en/of volledig begrijpt maar niet kan lezen en schrijven als gevolg van een fysieke handicap of visueel gehandicapt is. Een tolk is noodzakelijk wanneer de onderzoeker niet de taal van de patiënt spreekt.

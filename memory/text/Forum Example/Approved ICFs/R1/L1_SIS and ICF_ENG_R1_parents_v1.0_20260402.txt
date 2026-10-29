@@ -1,0 +1,547 @@
+INFORMATION SHEET AND INFORMED CONSENT FORM FOR PARENTS/GUARDIANS
+
+FORUM2 - Sub-Study Randomisation 1 (R1)
+
+A Comparison of Two Different Radiation Doses – 8 Gray and 12 Gray - Total Body Irradiation (TBI) Before Stem Cell Transplantation in Children and young Adults with Acute Lymphoblastic Leukemia (ALL)
+
+Official title of the trial: FORUM2 – Framework for Optimizing, Refining, and Unifying Management of HSCT in Pediatric ALL
+
+EU number: 2025-522052-13-00
+
+Trial number: FORUM2
+
+Sponsor(s) of the trial: Ospedale Pediatrico Bambino Gesù, IRCCS, Piazza di Sant’Onofrio 4, Rome, Italy
+
+Site name: official name of site
+
+Main address of site: address of site
+
+Who can I contact in case of questions?
+
++---------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+| Name                | Function                                                                                      | In case of                                                                 | Contact details                                                     |
++=====================+===============================================================================================+============================================================================+=====================================================================+
+| Surname, First name | Principal Investigator of the site                                                            | Information, problems or concerns                                          | Phone N°, E-mail                                                    |
++---------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+|                     | The trial staff                                                                               | Information, problems, concerns                                            | Phone N°, E-mail                                                    |
++---------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+|                     | Contact for urgent study-related questions                                                    | Urgent information, problems, concerns                                     | Phone N°                                                            |
++---------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+|                     | Ombudsperson for patient rights of the site [and if not possible contact the CT College.]     | Concerns/ questions about your rights as a participant in a clinical trial | Phone N° from the site [if not possible: ct-college@health.fgov.be] |
++---------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+| Amlin Insurance     | Insurance Company of the sponsor                                                              | In case of disagreement or complaint on a damage claim                     | Policy N°: 299.053.700                                              |
+|                     |                                                                                               |                                                                            |                                                                     |
+|                     |                                                                                               |                                                                            | Address: Koning Albert II-laan 37                                   |
+|                     |                                                                                               |                                                                            |                                                                     |
+|                     |                                                                                               |                                                                            | 1030 Brussel                                                        |
+|                     |                                                                                               |                                                                            |                                                                     |
+|                     |                                                                                               |                                                                            | Phone N°: 02 894 70 00                                              |
+|                     |                                                                                               |                                                                            |                                                                     |
+|                     |                                                                                               |                                                                            | E-mail: klachtenmanagement.be                                       |
+|                     |                                                                                               |                                                                            | @msamlin.com                                                        |
++---------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+|                     | Data protection officer of the site [or if not possible: Contact person for data protection.] | Questions about the confidentiality of your data                           | Phone N°                                                            |
+|                     |                                                                                               |                                                                            |                                                                     |
+|                     |                                                                                               |                                                                            | E-mail: e-mail                                                      |
++---------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+|                     | Belgian Data Protection Authority                                                             | Complaints relating to the confidentiality of your data                    | +32(0)2274 48 00                                                    |
+|                     |                                                                                               |                                                                            |                                                                     |
+|                     |                                                                                               |                                                                            | E-mail : contact@apd-gba.be                                         |
++---------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+
+● To manage complaints not resolved by the investigator, you can contact the study centre ombudsman at the above address.
+
+● According to the GDPR, you have the right to access the processing of your child’s data. For questions about this, you can contact the Study Centre's Data Protection Officer at the above address.
+
+● You also have the right to lodge a complaint about the way your child’s data are processed with the Belgian supervisory authority responsible for compliance with data protection legislation: Data Protection Authority (GBA), above.
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| The trial at a glance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Dear                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| You are receiving this information letter because your child has been diagnosed with an acute lymphoblastic leukaemia (ALL) and will need an hematopoietic stem cell transplantation (HSCT). This document specifically concerns the possible participation in a sub-study (R1) of the FORUM2 Trial.                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| The FORUM2 trial is an academic platform trial which means that it is organized by different academic hospitals. This is a shared infrastructure to address multiple scientific questions over time, within a single framework. It was set up by the Ospedale Pediatrico Bambino Gesù (IRCCS) in Rome (Italy) and will include more than 1000 participants worldwide, including about 4-5 patients per year in Belgium.                                                                                                                                                                             |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Within this framework, some patients may be invited to participate in specific sub-studies depending if they are eligible or not. Each of these sub-studies has its own specific eligibility criteria, timelines and your explicit written consent will be asked before participation in these sub-studies if your child is eligible.                                                                                                                                                                                                                                                               |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| This information sheet and consent form refers to the sub-study R1. This sub-study is a randomized comparison of two different doses of total body irradiation (TBI) given before the transplant: a standard dose of 12 Gy versus a reduced dose of 8 Gy. The aim of this sub-study is to determine whether the reduced dose of TBI, when combined with chemotherapy (Etoposide), is as effective in preventing relapse while potentially causing fewer long-term side effects. Several smaller studies have shown promising results of reducing the radiation dose while maintaining the efficacy. |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| The sub- study involves a randomised comparison: if you agree to the participation of your child, he/she will be assigned at random to receive either 8 Gy or 12 Gy of radiation before the transplant. All participants receive the same standard chemotherapy drug, Etoposide. This kind of study design — called a controlled, randomized trial — is the most reliable way to compare medical treatments. Clinical data will be collected on how your child feels and which side effects your child experiences until 5 years after transplantation.                                             |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Possible benefits of participating include the chance that your child will receive a lower radiation dose that may reduce the risk of long-term complications — assuming the 8 Gy dose proves to be as effective. However, this cannot be guaranteed, and there may be no direct benefit for her/him. The broader benefit is contributing to better and safer treatment for future patients.                                                                                                                                                                                                        |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Participation in the sub-study R1 is voluntary and costs you nothing extra compared to the cost of the standard treatment. You will not receive any compensation for the participating of your child in this part of the trial. If anything happens with your child during the trial, the sponsor has taken an insurance to cover any related costs.                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| The investigator will inform the treating physicians regarding participation of your child in this trial. He/she cannot participate in another interventional clinical trial without informing the investigator or trial staff. You also need to communicate all relevant information related to the state of health of your child, other medication taken or the symptoms experienced.                                                                                                                                                                                                             |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| The trial and trial documents have been reviewed and approved by EU authorities and an independent Ethics Committee in Belgium. The data will be kept confidential.                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Please take the time to read this document carefully. You may wish to discuss it with family members, friends, or the doctors. The participation of your child in the sub-study is entirely voluntary. If you / your child chooses not to participate, this will not affect your child’s future medical care.                                                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| If you / your child decide to participate, you are free to withdraw your consent at any time, without giving a reason and without any negative consequences for the treatment of your child.                                                                                                                                                                                                                                                                                                                                                                                                        |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| If you have any questions about this trial, please contact me or my team using the contact details on the first page of this document.                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Kind regards,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| The researcher                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+CHAPTER I – DESCRIPTION OF THE TRIAL AND YOUR RIGHTS WHEN your child is PARTICIPATING
+
+Why is this sub-study being conducted?
+
+This sub-study is part of the larger FORUM2 platform trial, which aims to optimize the way stem cell transplantation is performed for children and young people with acute lymphoblastic leukaemia (ALL).
+
+For patients with a diagnosis of high-risk or relapsed ALL, an allogeneic stem cell transplant (HSCT) is one of the recommended treatments. This means that your child will receive healthy stem cells from a suitable donor. This approach is part of routine care for this kind of ALL and has been shown to improve long-term survival.
+
+Before the transplant, a so-called conditioning treatment has been given. This prepares the body by eliminating remaining leukaemia cells and suppressing the immune system, to allow donor cells to grow.
+
+Conditioning usually involves a combination of total body irradiation (TBI) and chemotherapy. The current standard approach is 12 Gray (Gy) irradiation in combination with a chemotherapy called Etoposide (12 Gy TBI plus etoposide), which has shown to have very good results in preventing relapse. However, radiation is also associated with an increased risk of acute side effects (organ damage, nausea, mucositis, skin toxicity, and infections) and long-term side effects such as growth disorders, hormonal imbalances, infertility and late organ damage.
+
+This sub-study of the FORUM2 platform trial is being conducted to find out whether a lower radiation dose of 8 Gy (combined with the drug Etoposide, also called VP 16) is equally effective in preventing relapse while reducing long-term side effects. Several smaller trials have shown promising results of reducing the radiation dose while maintaining the efficacy.
+
+Group R1 focuses specifically on the question: Is 8 Gy TBI as effective as 12 Gy TBI in preventing leukaemia relapse, but with fewer harmful effects?
+
+This sub-study is expected to enroll around 1,000 children and adolescents aged 2 to 25 years, in multiple centres across Europe and beyond. All participating centres are experienced transplant centres following strict international protocols.
+
+The main goal (primary objective) is to compare survival without relapse or secondary cancers between the two groups after four years.
+
+Secondary objectives include comparing side effects, infections, transplant-related complications, organ function, and quality of life.
+
+Why is my child being asked to take part?
+
+Your child has been diagnosed with acute lymphoblastic leukaemia (ALL). Although treatment so far has led to complete remission (meaning that no leukaemia cells are currently detectable), there remains a significant risk that the leukaemia could come back based on the characteristics of the disease. To give your child the best chance of a long-term cure, an allogeneic stem cell transplant (HSCT) is recommended, in which he/she will receive healthy stem cells from a suitable donor.
+
+To prepare for the HSCT, a standard total body irradiation with a dose of 12 Gy (GY is the unit of irradiation) is given in addition to standard chemotherapy (Etoposide, also called VP16).
+
+This sub-study involves a randomised comparison: if you and your child agree to participation, he/she will be assigned at random to receive either 8 Gy or 12 Gy of radiation before the transplant. All participants receive the same chemotherapy drug, Etoposide. This kind of trial design — called a controlled, randomized trial — is the most reliable way to compare medical treatments.
+
+The investigator or trial staff will discuss with you the requirements for your child to be allowed to enter the trial.
+
+Does my child have to take part in a trial?
+
+Your child’s participation in this trial is voluntary and must remain free of any coercion. This means that you/your child have the right not to take part in the trial or to withdraw at any time without giving a reason, even if you and your child previously agreed to take part. Your decision will not affect your relationship with the investigator or your child’s treating physician nor will it affect the quality of the future medical care of your child.
+
+If other treatments are available for HSCT for ALL, the investigator or his/her delegate will discuss these treatments with you.
+
+If you and your child agree to participation, the investigator will inform your child’s treating physicians. Your child then cannot participate in another interventional clinical trial without informing the investigator or trial staff. You and your child also need to communicate all relevant information related to the state of health of her / him, other medication taken or the symptoms experienced.
+
+What will happen during the sub-study? 
+
+If you and your child choose to participate in this sub-study, the only difference compared to standard care will be the dose of total body irradiation (TBI) used as part of the conditioning treatment before the stem cell transplantation. Your child will receive either the standard dose (12 Gy) or the reduced dose (8 Gy) of TBI, depending on the random assignment.
+
+All other aspects of the transplantation procedure — including the chemotherapy drug (etoposide), the transplantation itself, supportive care during the hospital stay, and follow-up after discharge — will be identical to the treatment your child would receive outside the trial.
+
+Importantly, participation in this sub-study will not result in any additional examinations, procedures, or follow-up visits beyond what is already required for a standard of care stem cell transplantation. This sub-study does not involve any experimental drugs, additional invasive procedures or extra appointments. Your child will be monitored in the same way and with the same frequency as any other patient undergoing a stem cell transplantation outside this trial.
+
+Participants are randomly assigned to one of two treatment groups. Both groups will receive a standard conditioning treatment before the transplantation, which includes a chemotherapy drug called Etoposide (VP16). This drug will be given intravenously at a dose and schedule in line with current standard of care transplantation protocols.
+
+The difference between the two groups is the dose of total body irradiation (TBI) applied along with etoposide:
+
+- One group will receive the standard dose of 12 Gray (Gy) TBI, which is the current standard treatment used in clinical practice for patients undergoing HSCT.
+
+- The other group will receive a reduced dose of 8 Gy, which is the investigational treatment being tested in this trial.
+
+TBI is given through external radiation in multiple fractions over 2 to 3 days, and is administered by radiation oncology specialists before the transplantation. The aim is to compare how well the two different TBI doses work in preventing relapse and to examine whether the lower dose can reduce acute and long-term side effects without compromising effectiveness.
+
+This is a randomized controlled sub-study. Participants will be randomly assigned to receive either the standard 12 Gy TBI or the investigational 8 Gy TBI, each with equal probability (1:1 randomization). The probability is 50:50. The assignment is not influenced by the patient, their family, or the treating physician. The sub-study is not blinded, meaning parents/patients and the medical team will know which dose has been assigned.
+
+Clinical trial design
+
+[]
+
+Both TBI doses are administered as part of a defined standard of care transplantation protocol and followed by the stem cell infusion. After the transplantation, all patients will receive the same supportive care and monitoring.
+
+Approximately 1,000 patients are expected to participate in this sub-study, including about 4-5 participants each year in Belgium, with roughly 500 patients in each treatment group. Clinical data will be collected on how your child feels and which side effects your child experiences until 5 years after transplantation.
+
+If your child meets all the conditions required to be enrolled in this sub-study and you and he / she agree to take part, your child will undergo the above-mentioned treatment. There are no trial specific procedures or visits. Only the dose of TBI is different between the 2 groups (8 or 12 Gy). If your child will not participate in this sub-study, he / she will receive the standard of care dose of TBI, 12Gy.
+
+Standard of care procedures or examinations for your child’s condition (i.e. standard of care) will be charged to you or reimbursed by your mutual insurance fund (Belgian social security). If you need more details or if you are not affiliated with a mutual insurance fund (Belgian social security), please contact the trial staff.
+
+Will my child benefit from the sub-study? 
+
+The information obtained during a trial may contribute to improve care and outcomes of your child and future patients with ALL undergoing a stem cell transplantation. Possible benefits of participating include the chance that your child will receive a lower radiation dose that may reduce the risk of long-term complications — assuming the 8 Gy dose proves to be as effective. However, this cannot be guaranteed, and there may be no direct benefit for her / him.
+
+What are the possible risks and discomforts of taking part?
+
+1.  What are the possible side effects of Total Body Irradiation
+
+Participation in a trial involves some risk. Participation in this sub-study involves undergoing an allogeneic stem cell transplant (HSCT), preceded by conditioning treatment with chemotherapy and total body irradiation (TBI). These treatments are known to be highly intensive and associated with a range of short- and long-term risks. While all treatments used in the sub-study are based on current clinical standard of care, the investigational aspect of this sub-study is the comparison between two different TBI doses: 12 Gy (standard) and 8 Gy (reduced). Below is a detailed description of the foreseeable risks associated with participation.
+
+TBI is used to prepare your child’s body to accept donor stem cells by suppressing the immune system and eliminating remaining leukaemia cells. Radiation affects not only cancer cells but also healthy tissues, which may lead to acute and delayed complications.
+
+- Short-term (acute) side effects: Fatigue, nausea, vomiting, decreased appetite, irritation of the mucous membranes, and skin redness or dryness.
+
+- Long-term side effects: These may develop months to years after treatment and include:
+
+  - Endocrine disorders such as hypothyroidism or growth hormone deficiency.
+
+  - Delayed or impaired growth and physical development, particularly in younger children.
+
+  - Infertility or reduced fertility due to damage to the reproductive organs.
+
+  - Cataracts (clouding of the lens in the eye) that may require surgery.
+
+  - Lung or kidney dysfunction, usually mild but sometimes persistent.
+
+  - Secondary malignancies (new cancers) later in life — these are rare but serious.
+
+The risk and severity of acute and long-term effects are generally higher with 12 Gy TBI compared to 8 Gy. The goal of the sub-study is to determine whether the lower dose is equally effective while causing fewer of these complications. However, since conditioning with 8 Gy has not been tested in a randomized controlled trial yet, the lower dose of irradiation might be associated with an increased risk of relapse.
+
+Therefore, it is very important that you report any new or worsened health problems of your child immediately to the investigator, regardless of whether or not you think it has to do with the sub-study, and even when it is already described in this document. If your child needs to use other medication, discuss this with the investigator beforehand. If, for any reason, your child consults another treating physician during the trial you must inform him/her that your child is taking part in a trial. This could be important in determining a diagnosis and giving her / him the correct treatment if needed.
+
+1.  What are the possible risks or discomforts of the examinations during the trial?
+
+There are no trial specific examinations during the sub-study. Only examinations within the standard of care will be performed. There will be no additional risks or discomforts compared to the standard of care.
+
+2.  Can my child take other medicines during the trial?
+
+Do not hesitate to ask the investigator for more explanation about the use of medicines or and food supplements (including aromatherapy, phytotherapy, homeopathy..).
+
+3.  Will the participation of my child to the trial have an impact on his / her daily activities?
+
+We want to ensure that the trial runs smoothly. That is why we will make the following agreements with you:
+
+• You will make sure your child takes all your drugs in the way needed
+
+• During this trial, your child won’t participate in another medical scientific trial,
+unless sponsor approval was obtained prior to participation
+
+• Please contact the investigator or research nurse in the following situations:
+
+  o Your child will start to take other drugs. This includes homeopathic drugs,
+  natural remedies, vitamins or over-the-counter drugs.
+
+  o Your child needs to be admitted to the hospital or receive treatment there.
+
+  o Your child suddenly develops problems with its health.
+
+  o Your child no longer wants to take part in the trial.
+
+  o Your phone number, address or e-mail address has changed.
+
+4.  Can my child get pregnant, conceive a child, or can she breastfeed during the trial?
+
+The conditioning regimen, particularly TBI, can damage reproductive organs and can cause significant harm to an unborn child.
+
+Loss of fertility is expected in both males and females after HSCT, though individual risk depends on age, dose, and sex. In a separate appointment, your child’s treating physician will discuss in detail possible interventions for fertility preservation.
+
+If your child is a female, she must not become pregnant during the trial and for at least 12 months after completing treatment. In addition, she may not have egg cells stored for her own use or donation after the start of the treatment and for at least 12 months after the last treatment. She may not breastfeed during treatment.
+
+If your child is male, he must not cause a pregnancy or donate sperm during the trial and for at least 6 months after completing treatment.
+
+If your child can become pregnant and is heterosexually active, or has a partner who can become pregnant, then the treating physician or nurse will explain the different types of contraceptives that should be used during and after the trial.
+
+The investigator will discuss with your child the suitable forms of contraception. If you and your child decide to participate in this trial, your child or the female partner of the participant that can become pregnant, must use one of the recognised contraceptive methods (to prevent she or the female partner from becoming pregnant). If an oral hormonal contraception is used, they will need to use a barrier method such as condoms too.
+
+If your child or the partner becomes pregnant during this trial, they must tell the investigator or the trial staff immediately. In this case, the treating physician will discuss what next steps to take with the treatment. The investigator will monitor the pregnancy and inform the sponsor about its outcome. For safety reasons, the investigator wants to monitor the pregnancy and its outcome and may be required to share this data with the sponsor to comply with regulations on monitoring and reporting safety information. Your child and the partner will receive a separate information letter regarding this, and a separate consent will have to be granted.
+
+What If something goes wrong within the trial?
+
+Even if there is no fault, the sponsor is liable for harm caused to your child whether directly or indirectly related to your participation in the trial. The sponsor has taken an appropriate insurance (a so called “NO FAULT INSURANCE*”) for this liability. A copy of the insurance certificate can be obtained from the investigator or trial staff.
+
+If you (or in the event of death, your rightful claimants) seek compensation for a harm to your child’s health as a direct or indirect result of participating in the trial, you must inform your child’s investigator or trial staff promptly.
+
+If the investigator believes that a link between the new or worsened health problem(s) and the trial is possible, he/she will inform the trial sponsor. The sponsor will then immediately initiate the declaration procedure to its insurance company. If the company considers it necessary, it will appoint an expert to assess whether there is a link between your child’s reported health problem(s) and the trial. The insurance does not cover the natural progression of your child’s disease or the known side effects of the treatment your child would have received without taking part to the trial (that is your child’s standard treatment).
+
+Whenever you/your child feel it is appropriate or if you or your child’s rightful claimants disagree either with the investigator or with the expert appointed by the insurance company, you may contact the insurance company or proceedings may be brought against the insurance company. You will find the contact details on the front page of this form.
+
+What if other treatment options or new information become available during the course of the trial?
+
+During the course of the trial, important new information might become available, possibly affecting your decision for your child to (further) participate. For example, other treatments for your child’s disease or important new information may become available. It is the duty of the investigator to discuss this new information with you/your child to give the opportunity to re-consider your child’s participation in the trial.
+
+If you decide for your child to stop taking part in the trial or if your child is no longer able to participate, your child’s investigator will see to it that your child continues to receive the best possible medical care.
+
+Can my child’s participation in the trial end prematurely?
+
+As explained in detail below, your child’s trial participation may end prematurely when
+
+- you decide for your child to withdraw your consent or,
+
+- the investigator decides to end your child’s trial participation, or
+
+- other entities interrupt or end the trial.
+
+In any case, if your child’s trial participation ends prematurely, the investigator will discuss your child’s future medical care with you/your child. Data collected before you terminate your child’s participation will continue to be used as described in this form. This is to avoid skewing / biasing results of the trial (as described in chapter I. § 12.4.).
+
+Depending on your child’s situation, the investigator will discuss with you/your child whether follow-up visits or procedures are needed.
+
+1.  You decide to withdraw your consent
+
+You are entitled to withdraw your consent for your child for any reason, at any time, without having to justify your decision. However, for your child’s safety, you should inform the investigator of your decision. Although it is not mandatory, it may be useful for the investigator and for the sponsor to know the reason of this decision (for example side effects, frequency of clinical visits,…).
+
+If you withdraw your consent for your child to participate, please discuss with the investigator to evaluate the practical modalities of the withdrawal (in light of your child’s situation). No new data will be collected and sent to the sponsor.
+
+2.  The investigator decides to end your child’s trial participation
+
+The investigator may end your child’s trial participation because
+
+- he/she thinks it is better for your child
+
+- he/she determines that your child is not following the instructions given to participants, or
+
+- any other reason that will be explained,
+
+- the entire study should be discontinued for all participants (see next paragraph).
+
+If that happens, the trial staff will explain why and ensure appropriate follow-up.
+
+1.  Other entities may interrupt or end the trial
+
+The sponsor and the competent Belgian health authorities may interrupt or end the trial because
+
+- the information gathered shows that the trial is not effective (does not deliver a sufficient level of improvement in the health of the trial participants),
+
+- there are more (serious) side effects than anticipated, or
+
+- any other reason that will be duly motivated by such party.
+
+Which treatment will my child get after my child’s participation in the trial? 
+
+If your child stopped the study, the investigator will assess your child’s health. If necessary, he/she will prescribe your child the best standard treatment available.
+
+Will my child’s participation in the trial involve extra costs for me?
+
+As described in section 4, all visits, examinations and the treatment are standard of care. Only the dose of TBI is different (12Gy versus 8 Gy). The standard procedures or examinations for your child’s condition (i.e. standard of care) will be charged to you or reimbursed by your mutual insurance fund (Belgian social security).
+
+The study does not involve any additional costs. You/your child will not receive any financial compensation for participating in this trial.
+
+Which data are collected about my child during the trial and what will happen with them?
+
+1.  Which data are collected and processed during the trial?
+
+The collected and processed personal data concern information about your child’s health and medical condition. This includes your child’s medical history, some of your child’s background information (for example your child’s age and sex) and the results of examinations required by the trial.
+
+Ethnic origin data may be collected to ensure that research data are processed in the broadest possible population.
+
+2.  How will the investigator treat my child’s personal data?
+
+The investigator (and the trial staff) is bound by professional secrecy or by a confidentiality agreement about the data collected.
+
+This means that he/she will never reveal your child’s identity, including in a scientific publication or a lecture and that he/she will encode your child’s data (Ref. [1]) (that is by replacing your child’s identity by an identification code in the trial) before sending them to the sponsor. In other words, this code will not contain any personal identifier or combination of identifiers such as name, first name, initials, full or partial date of birth, file number, etc.
+
+Therefore, the investigator and the trial staff under the responsibility of the investigator, will be the only ones able to establish a link between your child’s identity and the data transmitted during the trial, with the exceptions listed under section 12.5.
+
+The data transmitted to the sponsor will not allow the sponsor to identify your child.
+
+3.  How will my child’s data be handled?
+
+Your child’s trial data will be processed in accordance with the current European and Belgian data protection legislation.
+
+The reason that your child’s personal data may be processed for the purposes of the study is that it is processed for the conduct of scientific research and for the performance of a task carried out in the public interest.
+
+4.  Do I have access to my child’s data collected and processed during the trial and can I rectify them?
+
+You are entitled to ask the investigator what data are being collected about your child and how those data will be used in connection with the trial.
+
+You have the right
+
+- to inspect and access these data
+
+- to receive the personal data that are collected
+
+- to ask for correction if they are incorrect,
+
+- to restrict the processing of your child’s data.
+
+- to withdraw your consent for the processing of personal data. However your child’s personal data collected before withdrawal will be kept to avoid skewing of results in the trial.
+
+It is not possible to have all your child’s data erased to avoid skewing of results in the trial.
+
+1.  Who, other than the Investigator and his trial staff, has access to my child’s personal data?
+
+To verify the quality of the trial, it is possible that your child’s personal uncoded data or information in your child’s medical records relevant for the trial, will be examined by people outside the trial staff but under the responsibility of the investigator. These persons must be subject to professional secrecy or a confidentiality agreement. The following might be considered:
+
+- the personnel designated by the sponsor of the trial (monitors and auditors), and people or organisations providing services for or collaborating with the sponsor. They will however never transfer your child’s name and contact details to the sponsor.
+
+- inspectors of competent health authorities worldwide
+
+- an independent audit group
+
+- people designated by the Ethics Committee
+
+For the needs of the trial, the encoded trial data may be sent to other EU and non-EU countries and may be reviewed by
+
+- personnel (other than the inspectors) of competent health authorities of Belgium (Federal agency for medicines and health products, FAMHP) and other EU and non-EU countries,
+
+- the evaluating Belgian Ethics Committee(s),
+
+- external researchers,
+
+- the sponsor of the trial, personnel designated by the sponsor, and people or organisations providing services for or collaborating with the sponsor, and/or
+
+- group companies of the sponsor in Belgium, and in other EU and non-EU countries.
+
+The European regulation and the Belgian legislation on data protection have requirements for transferring data to non-EU countries. The sponsor must ensure equivalent guarantees regarding personal data protection standards before transferring the encoded data to non-EU countries. If for this purpose, there is a data protection agreement, a copy of this agreement may be obtained via the investigator. You can always contact your investigator to obtain more information about any such transfers.
+
+1.  What will happen to the results of the trial?
+
+After trial closure, a description and the results of this clinical trial will be published in specialised medical journals. A copy of the scientific publication or a summary for laypersons can be obtained from the investigator or the trial staff.
+
+A description of the trial will also be available on https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en and/or https://www.Clinicaltrials.gov. You can search these websites at any time using the information on the front page of the informed consent form. Within 1 year after the study's completion, the website will contain a summary of the results in accordance with the European Commission's guidelines.
+
+These websites or publications will not include information that can identify your child.
+
+2.  Will my child’s data be used for other purposes than for the trial in which he/she takes part?
+
+The results of the trial will be used to answer the scientific questions of the trial. In addition, the sponsor would like to use your child’s data obtained from this trial, in connection with other research and development activities (and the associated scientific publications). These activities can only concern research about the same disease or medication.
+
+Any additional research outside of the trial and therefore not described in the above points, must be approved by a recognized Ethics Committee.
+
+You already agreed or disagreed , to the use of your child’s trial data for other purposes in the main ICF of the FORUM2 study at the beginning.
+
+3.  How long will my child’s data be kept?
+
+After the end of the trial your child’s encoded data will be retained for at least 25 years in accordance with the European clinical trial regulation to ensure the validity of the research. This will also be the case if your child stopped trial participation prematurely.
+
+ Which biological samples are collected from my child during the trial and what will happen with them? 
+
+Biological samples are samples of human body material. In this sub-study, no trial specific biological samples will be collected.
+
+Who has reviewed and approved the trial documents?
+
+The documents of the trial have been reviewed by
+
+- The Belgian competent health authorities (FAMHP) or, if applicable, by the competent national health authorities of other EU members states and
+
+- An independent Belgian Ethics Committee
+
+It is the task of the competent health authorities and the Ethics Committees to protect people who take part in a trial. The health authorities will ensure that the trial is conducted in accordance with the applicable legislation.
+
+You should not under any circumstances take their approval as an incentive for your child to take part in the trial.
+
+CHAPTER II - Informed consent FOR PARENTS/GUARDIANS 
+
+FORUM2 - Sub-Study Randomisation 1 (R1)
+
+A Comparison of Two Different Radiation Doses – 8 Gray and 12 Gray - Total Body Irradiation (TBI) Before Stem Cell Transplantation in Children and young Adults with Acute Lymphoblastic Leukemia (ALL)
+
+Reference number of study participant: _______________
+
+Protocol version and date: ______________________________
+
+PARTICIPANT 
+
+Prerequisites for your CHILD’s participation in the trial
+
+- I declare that I have read this form and understood its information.
+
+- I declare that I have been informed of and that I understand the purpose of the sub-study, its duration and consequences, possible risks and discomforts, the precautions that my child must take and what is expected of him/her. My child’s rights have been explained to me and I have understood those rights.
+
+- I have had enough time to think about my child taking part in this sub-study and to discuss it with a trusted person (for example friends, relatives, treating physician, …).
+
+- I have had the opportunity to ask any questions that came to mind and have obtained a satisfactory response to my questions.
+
+- I understand that my child’s participation in this sub-study is voluntarily and free from any coercion and that I am free to stop at any time my child’s trial participation.
+
+- I understand that data about my child will be collected and that they will be treated confidentially as described in Chapter I, §12.2.
+
+- I am aware that my child’s personal data is being processed as described in Chapter I, § 12.
+
+- I understand that representatives of the sponsor, the ethics committee, and competent health authorities have access to my child’s medical record if authorised to do so (as described in Chapter I, §12.5).
+
+- I understand that the sponsor has taken out an insurance in case my child should suffer any damage in connection with his/her participation in this trial.
+
+- I understand that when participating in this sub-study, I will not have any costs except those related to the standard of care treatment of my child’s disease.
+
+- I understand the importance of contraception and will inform my child adequately so he/she adheres to the recommendations provided. I will also inform my child’s partner(s) about my child’s participation in a clinical trial that may be harmful to the fetus, and we will take the necessary contraceptive measures together.
+
+- I am aware that my child’s treating physician(s) being informed of my child’s participation in this trial.
+
+- If my child takes part in another interventional trial, I must inform the investigator or trial team about this. I agree for my child not to take part in any other interventional trial (e.g. with a study drug, medical device, experimental surgical technique) at the same time without first informing the investigator or the trial staff, who might not permit my child to participate for a good reason.
+
+- I understand that my child needs to cooperate and follow the investigator’s and trial staff’s instructions regarding the trial.
+
+- I understand that my child’s participation to the sub-study might end without my child’s consent if he/she needs other treatment, do not follow the trial plan, have a trial-related injury, or for any other justified reason.
+
+- I certify that all the information I have given about my child’s medical history is correct, to the best of my knowledge. I understand that it may be harmful to my child if I do not inform the investigator of possible reasons why my child could not participate in the study.
+
+I consent for my child to take part in the R1 sub-study and I have received a signed and dated copy of all pages of this document.
+
+Name and surname of first parent/guardian:
+
+Date (DD/MMM/JJJJ):
+
+Time:
+
+Signature of first parent/guardian:
+
+Name and surname of second parent/guardian:
+
+Date (DD/MMM/JJJJ):
+
+Time:
+
+Signature of second parent/guardian:
+
+IMPARTIAL WITNESS / INTERPRETER (REF. [2] )
+
+(If present)
+
+I, the undersigned (Tick as appropriate),
+
+☐ Impartial Witness
+
+☐ Interpreter
+
+was present during the entire process of informing the parents/guardians and I confirm that the information on the objectives and procedures of the trial was adequately provided, that the parents/guardians (or his/her legal representative) apparently understood the trial and that consent to participate in the trial was freely given.
+
+I declare furthermore that acting as an impartial witness/interpreter, I am independent of the sponsor and the investigator.
+
+Impartial Witness / Interpreter surname and first name:
+
+Impartial Witness / Interpreter qualification:
+
+Date (DD/MMM/YYYY):
+
+Time:
+
+Impartial Witness / Interpreter signature:
+
+INVESTIGATOR
+
+I, the undersigned investigator, confirm that
+
+• the parents/guardians have been verbally provided with the necessary information about the trial, has been explained the content and has been given an original signed document.
+
+• I have verified that the parents/guardians have understood the trial.
+
+• I have given the parents/guardians sufficient time to agree that their child will participate and to ask any questions.
+
+• no pressure was applied to persuade the parents/guardians to agree that their child will take part in the trial.
+
+• I operate in accordance with the ethical principles set out in the latest version of the “Helsinki Declaration”, the “Good Clinical Practices” and the Belgian Law on clinical trials.
+
+Investigator’s, Surname and first name:
+
+Date (DD/MMM/YYYY):
+
+Time:
+
+Investigator’s signature:
+
+GLOSSARY
+
+FAMHP: Federal agency for medicines and health products
+
+DPA: The Data Protection Authority ensures that personal data are handled with care and thoroughly protected, and that your child’s future privacy also remains guaranteed.
+
+Other abbreviations that appear in the text:
+
+No Fault insurance:
+
+The sponsor is liable for any injury or any damage that the participant has suffered, and which is directly or indirectly related to the clinical trial. You do not have to prove any mistake in this respect.
+
+MONITOR and AUDITOR
+
+Both the monitor and auditor work for the sponsor.
+The monitor takes care of a continuous quality check during the entire process of the trial. The auditor performs an independent, one-time quality check at some time during the trial. They verify if the trial is being/was conducted according to the protocol, if the reported data are liable and if the clinical trial was conducted according to the applicable rules.
+
+REFERENCES
+
+[1] Throughout the document, the term ‘’encoding‘’ is used as a synonym for ‘’pseudonymisation‘’, the term used in General Data Protection Regulation No 2016/679.
+
+[2] The use of an impartial witness is necessary when the subject or their legal representative speaks and/or fully understands the language of the approved informed consent form but cannot read and write due to a physical disability or is visually impaired. An interpreter is necessary when the investigator does not speak the patient's language.

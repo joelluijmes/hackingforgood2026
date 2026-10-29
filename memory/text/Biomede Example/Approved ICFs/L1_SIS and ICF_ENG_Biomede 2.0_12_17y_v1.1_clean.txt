@@ -1,0 +1,315 @@
+BIOMEDE 2.0 study:
+
+Biological Medicine for Diffuse Intrinsic Pontine Glioma (DIPG) Eradication
+
+Sponsor of the study: Gustave Roussy, Villejuif (France)
+
+Dear,
+
+We would like to invite you to participate in a clinical study. Before you decide to participate in this study, take sufficient time to read this information sheet carefully and discuss this with the investigator/medical team or other people of your choice. Please take time to ask questions if there are any uncertainties or if you require additional information. If you agree to take part, you will be asked to sign an assent form. Your parents will be asked to sign a consent form as well.
+
+What is the purpose of this study?
+
+Your doctor has confirmed that you have a tumour in your brain that is an infiltrating brainstem glioma or diffuse midline tumour. Because of its location in the brain, this tumor might not be operable. Conventional chemotherapy (as usual) has shown not to be effective in this disease; only radiotherapy is effective, but most often only temporarily.
+
+Your doctor is proposing to add a new drug to the standard radiotherapy treatment to increase its effectiveness, as part of a clinical study called "BIOMEDE 2.0". This treatment will be chosen at random from two possible treatments.
+
+The aim of this study is to evaluate the efficacy of ONC201 compared to everolimus in combination with radiotherapy. At this moment, we don't know which treatment works best and is best tolerated.
+
+The sponsor of this study is the center Gustave Roussy (Eduard Vaillant street 114, 94805 Villejuif, France).
+
+what does participation in the study include?
+
+In this study, you will receive one of the following treatments in combination with standard of care radiation therapy:
+
+- ONC201 (company Chimerix)
+
+- Everolimus (company Novartis)
+
+These drugs are so called “targeted therapies/drugs”. These are drugs that specifically target a protein or mechanism involved in tumor development. These drugs are therefore theoretically without effect on healthy cells. As a result, they have fewer side effects than conventional (as usual) anti-tumor chemotherapy. Anti-tumor chemotherapy act on all cells in the body that divide, whether they are cancerous or not.
+
+If you will receive either ONC201 or Everolimus will be determined by randomization. This randomization will be done by a computer that will randomly determine which of the two potentially effective treatments will be given.
+
+If your disease progresses during the course of the study, your treatment will be stopped. Your physician may propose to receive the other treatment arm of the study (ONC201 or everolimus).
+
+If you not wish to participate in this study, you will be offered the standard radiation treatment for an invasive brainstem glioma or diffuse midline tumour. No targeted treatment will be added to the radiation therapy in this case.
+
+How many participants will be included in this study?
+
+A total of 368 children/(young) adults will participate in this study across Europe over a period of 4 years. An estimated number of 8 participants per year will be included in Belgium.
+
+WHAT IS THE DURATION OF THIS STUDY?
+
+Your participation in this study will take until 5 years after the start of the treatment during which we will collect information on your disease, how you are doing and which eventual other treatments you will receive.
+
+The examinations/tests that are needed for this study are also part of the standard care. Thus your participation in the study includes no extra visits compared to treatment without participation in the study.
+
+What is expected from you?
+
+If you decide to participate in this study, we ask you to cooperate with the researcher and that you follow his/her instructions carefully. In particular, we ask you to respect the planned study appointments.
+
+It is important that you respect the items mentioned below:
+
+- report all side effects, injury, symptoms or complaints to the doctor, even if they do not seem important, including any unplanned hospital admissions
+
+- do not participate in another drug study while participating to this study.
+
+- tell the doctor about any medications you take, even if it is medication you buy without a prescription or it is a natural or herbal remedy
+
+- tell the doctor if you plan to have a vaccination. Some vaccines may not be suitable during chemotherapy.
+
+- ensure that if you are sexually active, that you use an adequate method of birth control both during treatment and for minimal 6 months afterwards
+
+WHICH procedures WILL be performed in the context of the study?
+
+Procedures
+
+Before starting treatment, your doctor will check that you can receive the study treatment by carrying out the following tests: a clinical examination and a neurological examination. Your doctor will note your height and weight, as well as your temperature, blood pressure and heart rate. You'll also have a blood test, and if indicated, a pregnancy test. You will also have an MRI scan (device that takes photos of your tumour) and a biopsy (a piece of your tumour removed during surgery) of your tumor (if possible). These procedures will also be done if you don’t participate in the study. Only a study specific functional MRI will be added to the standard MRI which is study specific and will take about 30 minutes longer that the usual MRIs.
+
+A part of the tumor biopsy will be sent to France (Villejuif) and will be examined into more detail to confirm the diagnosis and to perform a complete biological and genetic analysis of the tumor. A tumor biopsy is a standard of care procedure.
+
+Once the treatment has been defined, you will take the medication (ONC201 capsules or Everolimus tablets) from the first day of radiotherapy.
+
+Both treatments will be taken orally once a day. Everolimus will be taken daily, while ONC201 will be taken on 2 consecutive days (D1-D2) per week. There are no study specific hospital visits.
+
+Radiotherapy will be administered daily for 6 consecutive weeks without interruption, except on weekends.
+
+A clinical examination and blood test will be carried out every week during radiotherapy, and then once a month.
+
+It's important that you tell your doctor about all the treatments you are taking, even those not prescribed by your doctor. The doctor will then check, depending on the trial medication, whether you can take these other treatments.
+
+A first follow-up MRI will be carried out just after the end of radiotherapy, and then every 2 months. The MRI just after the end of radiotherapy will include a study specific functional MRI and will take slightly longer (around 30 minutes). The other follow-up MRIs will be done as usual.
+
+If your disease progresses or returns, you will stop your treatment. Then, if possible, your doctor will suggest that you take the other treatment in the study (ONC201 or Everolimus).
+
+During this 2nd treatment period, you will again be monitored regularly: once a month for a blood test and a clinical examination, and once every 2 months for an MRI scan.
+
+All the examinations described above are part of the standard of care except for the treatment with Everolimus/ONC201, the 2 study specific functional MRIs and the tumor samples that will be sent specifically for the study. You don’t need to undergo any additional procedures for the study.
+
+After that, you will continue to be monitored every 3-4 months for the first year and then every 6 months until the fifth year after starting treatment. At these standard of care follow-up visits, you will have a clinical examination (looking for late side effects), a neurological examination and an MRI. Your doctor will note at each visit whether you have taken any other treatments, and whether you have had any side effects.
+
+The follow up period is up to a maximum of 5 years after the start of treatment.
+
+Overview procedures
+
++:--------------------------------------------------------------:+:----------------------:+:--------------------------------------------------------------:+:-------------------------------:+:-----------------------------------------------------------------------------------------------:+
+| Timepoints                                                                                                                                                                                                                                                                                   |
++----------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Procedure                                                      | At Diagnosis/screening | During treatment                                               | At the end of treatment periods | Follow up each 3-4 months the 1^(st) year, each 6 months until 5 years after start of treatment |
++----------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Tumour biopsy                                                  | X                      |                                                                |                                 |                                                                                                 |
++----------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Clinical examination                                           | X                      | X (once per week the first 2 months, afterwards each month     | X                               | X                                                                                               |
++----------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Medical history                                                | X                      |                                                                |                                 |                                                                                                 |
++----------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Neurological examination                                       | X                      | X (once per month)                                             | X                               | X                                                                                               |
++----------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| ECG⁵ (and echocardiography if necessary)                       | X                      |                                                                |                                 |                                                                                                 |
++----------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Radiography of lungs                                           | X                      |                                                                |                                 |                                                                                                 |
++----------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| MRI imaging⁴                                                   | X                      | X (each 2 months)                                              | X                               | X                                                                                               |
++----------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Blood examination (haematology, biochemistry and coagulation¹) | X                      | X (once per week the first 2 months, afterwards once per month | X (if possible)                 |                                                                                                 |
++----------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Hepatitis B examination                                        | X²                     |                                                                |                                 |                                                                                                 |
++----------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Pregnancy test (if applicable)                                 | X³                     |                                                                |                                 |                                                                                                 |
++----------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Collection of all medication taken                             | X                      | X                                                              | X                               | X                                                                                               |
++----------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Collection of all side effects                                 | X                      | X                                                              | X                               | X                                                                                               |
++----------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+
+¹ Coagulation is only tested at screening.
+
+² A new hepatitis B examination is performed if a second treatment period is started. This is a
+
+blood test used to check whether you are (or have been) infected with the hepatitis B virus.
+
+³ A new pregnancy test is performed if a second treatment period is started.
+
+⁴ The first 2 MRI examinations will include a study specific functional MRI that will take a little longer (30 min).
+
+⁵An ECG is an electrocardiogram in which the doctor records a video of your heart to check whether it is in good condition and functioning as it should.
+
+Collection of biological samples
+
+The tumor biopsy is done in the standard of care and a part of this biopsy will be kept for analysis during the study. With your permission, these samples may also be kept in a biobank after the study and may be re-used for further cancer research. In both these cases, the samples may be transferred - systematically in a confidential and secure manner - to other academic institutions/organizations and industrial partners as part of a research partnership with Gustave Roussy and stored for a maximum of 10 years.
+
+Your samples collected and analyzed in the context of this study will be pseudonymized (also referred to as “coded” that your identity cannot be traced) after collection. You remain the "owner" of your human body material. This means that you can always ask that your stored samples are destroyed by the biobank. In that case you should contact your doctor, who will then ensure that the stored body material is destroyed.
+
+As already mentioned, biological and genetic tests will be performed on your samples for this study to find out what the genes in your cells look like (these genes form the 'code' in the cells that makes the cells know what to do and how to do it. This code is called a cell's 'DNA' or 'genetic material' and is uniquely constructed in each person). Possible genetic changes that can be found are very important to help us determine your treatment and thus provide essential information for the study. If you do not want these analyses to be carried out, you cannot take part in the study.
+
+It may happen that the results of the analysis of your biological samples by chance reveal information that may be important to your health or that of your blood relatives. These data are called "incidental findings". You can choose whether you wish to be informed about this or not, and you can give your consent to this by ticking the box on the consent form on the last pages of this information letter.
+
+Optional study
+
+In the exceptional case where a so-called "liquid" biopsy (blood or cerebrospinal fluid) has been performed instead of a tumor biopsy, new biomarkers may be tested in the laboratory of the sponsor in France on this sample. Biomarkers are molecules or proteins that are present
+
+in excessive amounts (overexpression) or are abnormally absent in certain types of tumours. You are free to accept or refuse to have this sample analyzed to search for new biomarkers.
+
+If you agree, the following sample will be taken at diagnosis:
+
+-5ml blood sample
+
+Or
+
+-1ml Cerebrospinal fluid (CSF, fluid around the brain and spinal cord)
+
+WHAT ARE THE POSSIBLE side effects of the treatment?
+
+Radiotherapy and all medication used to treat you may cause side effects. If you experience any symptoms or discomforts during the clinical trial we ask you to report this immediately to the treating physician.
+
+Everolimus
+
+The most common side effects of Everolimus are:
+
+-Reduction in number of red blood cells, white blood cells and platelets
+
+-Loss of appetite
+
+-Anorexia, weight loss
+
+-Nausea and vomiting
+
+-Diarrhea
+
+-Skin rash, acne
+
+-Inflammation of the oral mucosa with ulcerations (stomatitis, aphta)
+
+-Fatigue
+
+-Headache
+
+-Renal failure
+
+-Abdominal pain
+
+-Bleeding
+
+ONC 201
+
+The most common side effects of ONC201 are:
+
+-Upper respiratory infections, generalized infections
+
+-Neurological disorders associated with brain damage
+
+-Difficulty breathing
+
+-Abnormal blood flow to the skull, lungs and liver (intracranial bleeding,
+pulmonary bleeding, hepatic bleeding)
+
+-Obstruction of an artery in the lungs
+
+-Complications related to the massive destruction of cancer cells (tumor lysis
+syndrome).
+
+Radiotherapy treatment 
+
+The most common side effects of radiotherapy are:
+
+- Nausea and vomiting
+
+- Headaches
+
+- Drowsiness
+
+- Temporary neurological worsening sometimes corresponding to pseudoprogression (exaggeration of the effects of radiation therapy by the targeted drug)
+
+- Delayed hearing loss.
+
+You will also experience the side effects of radiotherapy treatment if you won’t participate in this study.
+
+All types of medication used in the treatment schedule of this study can harm the embryo, fetus and any unborn or breastfed child. Therefore, patients participating in the study may not be or become pregnant or breastfeed during their participation. Patients who may become pregnant should use contraception during the entire duration of the study.
+
+Throughout the study, you will be closely monitored and regularly tested for possible side effects. If any side effect may occur, your doctor will evaluate and eventually adapt your treatment.
+
+You have the right to ask questions at any time about the possible and/or known risks of this study. If information comes to light during the course of the study, that could affect your willingness to continue to participate in this study, you will be notified.
+
+WHAT ARE YOUR RIGHTS and what happens if you do not participate iN THIS STUDY?
+
+Your decision to participate in this study is entirely voluntary. If for any reason and at any time you decide not to participate, you can tell your doctor. Your doctor and the nurses won't mind if you don't want to participate. The doctor will then discuss with you how to treat your disease and you will most probably receive radiotherapy alone.
+
+If, during the course of the study, your doctor feels that this study is not the best treatment, the doctor may remove you from the study and suggest a possibly better treatment.
+
+The doctor conducting this study will inform your general practitioner/pediatrician about your participation in this study.
+
+This study was evaluated by an independent Ethics Committee and will be carried out in accordance with national laws. Your data will be treated confidentially and given a code (pseudonymized) in order to respect your privacy. This coded data can then be shared with other researchers for future studies in the context of the same or similar disease or treatment. These studies may take place in Belgium or abroad. Such new studies must always first be approved by the ethics committee. The doctor will also ensure that insurance is taken by UZ Leuven to protect and/or treat you in the event of damage and/or injury resulting from your participation in this study (Amlin Insurance - contractnr. 299.053.700). You can ask questions about the study at any time.
+
+WHO can you contact in case of problems or questions?
+
+If you have any questions during your treatment or if there are any problems, you can always talk to your parents, the nurses and your doctor:
+
+Name and phone number of your doctor or somebody from his/her team:
+
+………………………………………………………………………………….
+
+INFORMED ASSENT FORM FOR ADOLESCENTS FROM 12 TO 17 YEARS
+
+BIOMEDE 2.0 study:
+Biological Medicine for Diffuse Intrinsic Pontine Glioma (DIPG) Eradication
+
+Promotor of the study: Gustave Roussy, Villejuif (Frankrijk)
+
+First and last name of the participant:………………………………………………………
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+-------+
+| I have read and understood the document "Information for adolescents from 12 to 17 years” for participants aged 12-17 years" and I received a copy.                                                                                                       |                                                                                   |       |
+|                                                                                                                                                                                                                                                           |                                                                                   |       |
+| I received an explanation about the study and I was able to ask all my questions.                                                                                                                                                                         |                                                                                   |       |
++:==================================================================================+:==================================================================================+:==================================================================================+===================================================================================+=======+
+| I understand that my participation in the study is voluntary and that I can stop the study at any time without having to give a reason.                                                                                                                   |                                                                                   |       |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+-------+
+| I am aware that information about my disease will be collected and coded and that my coded data will be used for current scientific research. My privacy will be respected at all times.                                                                  |                                                                                   |       |
+|                                                                                                                                                                                                                                                           |                                                                                   |       |
+| I am aware that my coded data may be used for future studies in the context of the same or similar disease or treatment, both in Belgium and abroad. Such new studies must always be approved by an ethics committee.                                     |                                                                                   |       |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+-------+
+| +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+                |       |
+| | Tick ‘YES’ if you agree, if not tock the box “NO”                                                                                                                                                                                                                                                                          |                |       |
+| |                                                                                                                                                                                                                                                                                                                            |                |       |
+| | I agree to participate in the following parts of the study:                                                                                                                                                                                                                                                                |                |       |
+| +=======================================================================================================================================================================================================================================================================:+========================:+========================:+                |       |
+| |                                                                                                                                                                                                                                                                        | YES                     | NO                      |                |       |
+| +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+-------------------------+                |       |
+| | 5)  I agree to the participation in the Biomede 2.0 study and inclusion of my pseudonymized information in an international database. If I do not wish to give permission for this part of the study, my participation in the study stops.                             |                         |                         |                |       |
+| +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+-------------------------+                |       |
+| | 6)  In the exceptional case where a so-called "liquid" biopsy (blood or cerebrospinal fluid) has been performed instead of a tumor biopsy, I agree that the sample will be used for research to search for new biomarkers                                              |                         |                         |                |       |
+| +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+-------------------------+                |       |
+| | 7)  I agree that at the end of the study my samples will be transferred to a biobank for 10 years for future research solely in the context of my disease/pathology or treatment. Such a new research should always be submitted and approved by the Ethics Committee. |                         |                         |                |       |
+| +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+-------------------------+                |       |
+| | 8)  I want to be informed by the investigator if incidental discoveries come to light in my biological samples (incidental findings) that may be of importance for my health or that of my relatives.                                                                  |                         |                         |                |       |
+| +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+-------------------------+                |       |
+| | 9)  I agree that data obtained from this trial can be used for other research (and the associated scientific publications) on the condition that such research has been approved by a recognized Ethics Committee.                                                     |                         |                         |                |       |
+| +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+-------------------------+                |       |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+| Name and first name of the participant                                            | Signature                                                                         | Date                                                                                                                                                                          |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Name and first name of the doctor-investigator*                                   | Signature                                                                         | Date                                                                                                                                                                          |
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+2 copies must be completed. The original is kept by the investigator in the hospital for a period of at least 25 years, the copy is given to the participant.
+
+*Tick by the investigator if agreed
+
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  I declare that I have provided the necessary information regarding this study (the nature, the purpose, and the foreseeable effects) orally and a copy of the information document to the participant.   
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -----
+  I confirm that no pressure has been exerted on the participant to allow him/her to participate in the study and I am prepared to answer any additional questions.                                        
+
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Witness/Interpreter (if present)
+
+I was present during the entire process of informing and I confirm that the information on the objectives and procedures of the study were adequately provided, that the participant apparently understood the study and that consent to participate in the study was freely given.
+
+Surname, first name and qualification of the witness/interpreter:
+
+……………………………………………………..
+
+Date and signature of the witness/interpreter:
+
+……………………………………………………..

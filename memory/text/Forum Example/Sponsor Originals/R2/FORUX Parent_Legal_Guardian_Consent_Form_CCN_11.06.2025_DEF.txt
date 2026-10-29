@@ -1,0 +1,807 @@
+PARENT/GUARDIAN INFORMATION SHEET AND INFORMED CONSENT FORM FOR THE INCLUSION OF A MINOR IN A CLINICAL TRIAL
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Official title of the trial (in Italian)                                                                                                                                                                                                      |
+|                                                                                                                                                                                                                                               |
+| FORUX - A Phase III, randomized, open-label multi-center study comparing ruxolitinib plus corticosteroids versus corticosteroids alone in children with ALL and treatment-naïve grade II-IV aGvHD following allogeneic HSCT                   |
++:==============================================================================================================================================================================================================================================+
+| Official title of the trial in more understandable terms for the patient (use common and non-technical terms: for example, make it clear that the investigational molecule is a new drug to lower blood pressure, prevent heart attack, etc.) |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Facility-context of the trial                                                                                                                                                                                                                 |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Coordinating center (if different from the structure where the trial will take place) and clinical trial coordinator                                                                                                                          |
+|                                                                                                                                                                                                                                               |
+| Coordinating center ____________________________________________________________________                                                                                                                                                      |
+|                                                                                                                                                                                                                                               |
+| Clinical trial coordinator__________________________________________________________________                                                                                                                                                  |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Register where the trial has been registered or will be registered (if applicable) and any identification code if available                                                                                                                   |
+|                                                                                                                                                                                                                                               |
+| Identification code ____________________________                                                                                                                                                                                              |
+|                                                                                                                                                                                                                                               |
+| Register_______________________________________________________________________________________                                                                                                                                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Principal investigator (indicate the local Trial Manager)                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                               |
+| Name ___________________________________________________________________________                                                                                                                                                              |
+|                                                                                                                                                                                                                                               |
+| Affiliation ____________________________________________________________________________                                                                                                                                                      |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Sponsor/Financing body                                                                                                                                                                                                                        |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Ethics Committee                                                                                                                                                                                                                              |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+This document consists of the following sections:
+
+A.  INTRODUCTION
+
+B.  INFORMATION SECTION. SUMMARY OF THE TRIAL: KEY INFORMATION
+
+C.  INFORMATION SECTION. FURTHER INFORMATION
+
+D.  INFORMED CONSENT SECTION
+
+  ATTACHMENTS
+  ADDITIONAL DOCUMENTS
+
+Dear Sir/Madam, the information contained in the following information sheet is very detailed. We kindly ask you to accept to participate in the trial ONLY after having carefully read this information sheet and having had a FULL INTERVIEW with a member of the clinical trial group who shall dedicate the NECESSARY TIME to fully understand what is proposed to you.
+
+A.  INTRODUCTION
+
+Dear Sir/Madam (Guardian),
+
+We are inviting your child/the minor to voluntarily participate in this clinical study to evaluate whether the combination of RUXOLITINIB and CORTICOSTEROIDS is safe and has beneficial effects when compared to CORTICOSTEROIDS ALONE in individuals up to 18 years of age who have developed treatment-naïve acute graft-versus-host disease (aGvHD), a complication that may occur following an allogeneic stem cell transplant.
+
+It is your right to be informed about the purpose and characteristics of the trial so that you can make an informed and free decision whether or not to authorize participation.
+
+This document aims to inform you about the nature and purposes of the trial, and about what the participation will entail, including your rights and responsibilities.
+
+Please read the following carefully. The researchers involved in this project, indicated at the beginning of this document, are available to answer your questions. No question that comes to your mind is trivial: don't be afraid to ask!
+
+Besides us, you can discuss the proposal contained in this document with your general practitioner/pediatrician, your family and other trusted persons. Take your time to decide. You can take home an unsigned copy of this document to think about it or to discuss it with others before making a decision.
+
+Should you decide not to allow your child/the minor to participate in the trial, your child/the minor will still receive the best possible care for patients with his/her condition/disease.
+
+In no way will your refusal be interpreted as a lack of trust.
+
+To facilitate the understanding of this document, the Clinical Trial Office (OTHERS: INDICATE) makes available a cultural mediator in order to transfer the contents in the manner and language most suitable for you.
+
+If you are unable to sign the informed consent, the consent can be provided and recorded using specific alternative means, such as audio or video recordings, in the presence of at least one impartial witness.
+
+Once you have read this form, received answers to any questions and decided to authorize your child/the minor to participate in the trial, you will be asked to sign a consent form, of which you will receive a hard copy.
+
+The Principal Investigator
+
+B.  INFORMATION SECTION.
+
+SUMMARY OF THE TRIAL: KEY INFORMATION
+
+Your child/the minor has been diagnosed with acute Graft-versus-Host Disease (aGvHD), a possible complication that can occur after receiving a stem cell transplant from a donor (called an allogeneic hematopoietic stem cell transplant, or HSCT). Acute GvHD occurs when immune cells from the donor (contained in the graft) attack your child’s/the minor’s body, mistakenly recognizing it as foreign. This immune response causes inflammation and damage to tissues, and it can seriously affect the success of the transplant. Preventive treatments (called prophylaxis) are able to reduce the risk of developing aGvHD, but this complication still affects 30% to 50% of patients receiving a transplant, this variability depending on individual risk factors. aGvHD usually appears within the first 100 days after the transplant (called “classic” aGvHD), but it can also occur later or alongside symptoms of the chronic form (cGvHD), known as "overlap" GvHD. The organs most often affected by aGvHD are the skin, liver, and gastrointestinal (GI) tract. Symptoms can include:
+
+- Skin rashes or redness
+
+- Nausea and vomiting
+
+- Watery (or even bloody) diarrhea
+
+- Yellowing of the skin or eyes (jaundice)
+
+The severity of these symptoms is very important: more severe aGvHD often means a lower chance of recovery and survival.
+
+The standard first treatment for aGvHD is corticosteroids. Unfortunately, these only lead to full recovery in about 40% to 50% of patients. For those patients who don’t respond well to steroids (a condition known as steroid-refractory aGvHD, or SR-aGvHD), the outcome is often poor. If corticosteroids don’t work well enough, doctors may use second-line treatments. These include therapies such as drugs, extracorporeal photopheresis (ECP), mesenchymal stromal cells (MSC), and various other medications that suppress the immune system or target specific biological processes. These treatments can help about half of the patients, but their success rates are still limited.
+
+In addition, even in patients who do improve with steroids or second-line therapies, long-term use of steroids can cause serious side effects such as:
+
+- Increased risk of infections
+
+- High blood sugar (diabetes)
+
+- High blood pressure
+
+- Bone loss (osteoporosis)
+
+- Cataracts
+
+- Muscle weakness
+
+- Slowed growth (in children)
+
+One new medication, Ruxolitinib, has shown better results than other second-line options in clinical studies conducted in patients with SR-aGvHD. Ruxolitinib is a targeted drug taken by mouth that blocks specific proteins (JAK1 and JAK2) involved in the immune response responsible for GvHD development. It is now approved for use in both children and adults who have either acute or chronic GvHD and who haven’t responded well to steroids or other systemic treatments.
+
+Because of its demonstrated effectiveness, the European Society for Blood and Marrow Transplantation (EBMT) now strongly recommends ruxolitinib as the preferred treatment for patients whose aGvHD does not improve with steroids. However, it's important to understand that ruxolitinib does not work for everyone. In a major clinical trial, 38% of patients with SR-GvHD did not show improvement after 28 days, and more than 60% needed additional third-line treatments after 56 days. Also, patients with SR-aGvHD often continue to experience flares (worsening of symptoms) as steroid doses are reduced. This frequently requires continued use of high-dose steroids, which increases the risk of serious infections, cancer recurrence, and other complications.
+
+Because of these challenges, there is an urgent need to find better first-line treatments for children with aGvHD, in order to reduce the cumulative use of corticosteroids and prevent the development of SR-aGvHD.
+
+The FORUX trial (Group R2) is part of a larger international research project (FORUM2) aimed at improving the outcomes of stem cell transplantation in children and young adults with acute lymphoblastic leukaemia (ALL), and it’is specifically focused on pediatric patients (< 18 years) with aGvHD.
+
+- Why am I being asked to authorise the participation in this trial?
+
+We are asking you to give your consent to participate in this clinical trial because we want to verify if the combination of RUXOLITINIB and CORTICOSTEROIDS is safe and more effective when compared to CORTICOSTEROIDS ALONE for the treatment of newly diagnosed aGvHD that has not received any systemic therapy. Your child/the minor is being asked to participate in this trial because s/he shows some clinical characteristics that will be better specified in section C.
+
+The purpose of this study is to find better treatments for aGvHD by addressing the limitations of current first-line therapy with corticosteroids. Specifically, the study aims to reduce the need for long-term steroid use and help prevent the development of steroid-refractory aGvHD (SR-aGvHD).
+
+Ruxolitinib works by targeting several pathways involved in both the innate and adaptive immune systems—two parts of the immune response that play a key role in the development of GvHD. Importantly, preclinical research suggests that ruxolitinib does not interfere with the graft-versus-leukemia (GvL) effect, a beneficial aspect of transplantation where donor immune cells help fight any remaining cancer cells.
+
+This broad immune-modulating activity may explain why ruxolitinib has shown benefits in patients with SR-aGvHD. However, rather than waiting to use it only after steroid resistance develops, we believe that starting ruxolitinib earlier, alongside steroids, could lead to even better outcomes.
+
+- What are the aims of the trial? How many centers and patients will participate?
+
+This trial aims to find out whether starting treatment with both ruxolitinib and corticosteroids right at the beginning of aGvHD can lead to better outcomes than using corticosteroids alone.
+
+The main goals of the study are to:
+
+- Support faster and more effective resolution of aGvHD
+
+- Prevent the disease from progressing to more severe stages
+
+- Enable earlier reduction or discontinuation of immunosuppressive therapy
+
+- Improve overall survival and quality of life
+
+- Promote better recovery of your child’s/the minor’s immune system
+
+The trial is expected to take place in approximately 90 centers across 20 European countries and 192 children and adolescents aged 3 months to 18 years, will be included.
+
+- What is the routine care approach for treating our child’s/the minor’s/the minor’s disease (indicate)?
+
+The standard treatment for aGvHD is based on corticosteroids (such as methylprednisolone or prednisone), which are given by mouth or through a vein. These are usually used alone or together with a class of medicine called calcineurin inhibitors (CNIs), depending on whether your child/the minor is already receiving them and how well they are tolerating them. If your child/the minor had previously stopped or reduced CNIs before developing aGvHD, their doctor may restart it or increase the dose—unless it causes/d significant side effects.
+
+Doctors often try to confirm the diagnosis of aGvHD with a small tissue sample (biopsy) from the affected organ. However, treatment is usually started based on symptoms, even if a biopsy has not yet been done, in order not to delay care.
+
+For moderate to severe aGvHD (Grade II or higher) that affects the gut or liver, the usual first treatment is methylprednisolone at 2 mg per kilogram per day (or a similar dose of prednisone). This dose is typically kept the same for at least 7 days. If your child/the minor improves, the dose is slowly reduced (“tapered”) over several weeks, according to the hospital’s usual practice—often aiming to stop the steroids after 4 to 6 weeks
+
+- Is it my/our free choice to decide whether to participate or not?
+
+You can freely choose whether or not to authorise participation in the FORUX (R2) trial. Even after accepting, you can change your mind and withdraw at any time. Your decision will not affect your involvement in the FORUM2 master trial or your potential enrolment in other observational or interventional studies conducted within (but not limited to) this framework.
+
+- If I/we decide not to consent to our child’s/the minor’s/the minor’s participation in the trial, what choices do I have?
+
+If you decide not to consent your child/the minor to join the trial, s/he can still be followed by the clinical centre that is treating him/her and s/he will be treated using the best approved (non-experimental) therapeutic methods for aGvHD, according to what outlined in the FORUM2 master protocol.
+
+In addition, s/he can participate in another observational or interventional trial within the FORUM2 master protocol or in another experimental trial outside the master protocol that may be in progress, provided that he/she meets the specific inclusion/exclusion criteria.
+
+- What happens if I /we decide to authorise participation in the trial?
+
+If you agree to allow your child/the minor to take part in this study, they will be required to visit the hospital or study center up to 13 times during the Treatment Period. These visits will occur weekly during the first 8 weeks, and then once every 4 weeks until the end of the treatment period, which is expected to last approximately 6 months (24 weeks) from the start of treatment.
+
+Before officially joining the study, your child/the minor will undergo a series of initial medical assessments to confirm that they meet the eligibility criteria. These may include blood tests and other standard examinations. In certain cases, invasive procedures, such as biopsies of the affected organs, may be necessary to confirm the diagnosis of aGvHD.
+
+The full schedule of tests and examinations that will take place during the trial is described in detail in the next section: “C.3 What examinations, tests and procedures are provided for in the trial?”
+
+Once enrolled, your child/the minor will be randomly assigned to one of two treatment groups, either (1) ruxolitinib in combination with corticosteroids, or (2) corticosteroids alone, which is the current standard treatment.
+
+Treatment will begin as soon as possible after randomization. Additional details regarding the treatments and how they are administered can be found in section: “C.2 What are the patient groups compared? What is the intervention being tested?”
+
+- What are the risks and benefits if I/we decide to authorise participation in the trial?
+
+Taking part in this clinical trial may involve both potential benefits and risks. It is important that you carefully consider both before deciding whether to allow your child/the minor to participate. Below is a summary of the main expected benefits and possible risks associated with participation in this study.
+
+- Expected benefits
+
+By participating in this clinical trial, your child/the minor may receive a combination treatment of ruxolitinib and corticosteroids, which could be more effective than the current standard treatment for acute Graft-versus-Host Disease (aGvHD), which relies on corticosteroids alone.
+
+If effective, this investigational approach may allow to:
+
+- Achieve a faster and more complete resolution of aGvHD
+
+- Obtain earlier recovery of the immune system
+
+- Reduce the need for prolonged use of immunosuppressive medications
+
+Together, these effects may also help preserve the anti-leukemic activity of the donor’s immune cells (also known as the graft-versus-leukemia effect), which plays an important role in preventing cancer relapse after transplant.
+
+Additionally, shortening the duration of corticosteroid use may reduce the risk of serious side effects linked to long-term steroid therapy, such as infections, high blood sugar, bone loss, or growth delays, potentially resulting in a lower risk of complications or death and an improved quality of life for your child.
+
+The FORUX (R2) study, is a Phase III clinical trial, meaning it is designed to rigorously compare the new combination treatment against the current standard of care in a larger group of pediatric patients. If the results are positive, this combination could become the new standard first-line treatment for aGvHD in children.
+
+Even if your child/the minor does not experience a direct medical benefit, their participation will contribute to advancing scientific knowledge and may help improve treatment options for future children affected by aGvHD.
+
+- Potential risks
+
+We want to make sure that you immediately understand some possible risks: additional information can be found in the next section “What risks can I face if I participate in this trial”?
+
+If you decide to authorize your child/the minor (or the minor under your care) to participate in this trial, it is important to understand that the investigational treatment, namely the combination of ruxolitinib and corticosteroids, may not be more effective than the current standard treatment of corticosteroids alone. In some cases, it may be less effective or could potentially be associated with an increased risk of leukemia relapse, although current evidence does not conclusively indicate this.
+
+If your child/the minor does not respond fully to treatment or if aGvHD symptoms worsen, additional therapies will be provided based on clinical need. Regardless of which treatment group your child/the minor is assigned to, they will continue to be followed and monitored closely throughout the study.
+
+There is also a risk that the investigational treatment may cause more frequent or more severe side effects than the standard therapy. For example, combining ruxolitinib with corticosteroids may lead to:
+
+- An increased risk of infections.
+
+- A decrease in blood cell counts, such as red cells (anemia), white cells (leukopenia), neutrophils (neutropenia) and platelets (thrombocytopenia).
+
+In previous studies involving pediatric patients with aGvHD, the most common treatment-related side effects included:
+
+- Anemia
+
+- Low white blood cell counts
+
+- Low neutrophil counts
+
+Some patients experienced serious side effects, such as:
+
+- Infections
+
+- Fever (pyrexia)
+
+- Kidney problems (acute kidney injury)
+
+- Sepsis (a life-threatening infection)
+
+About half of the patients experienced severe side effects (grade 3 or higher). In some cases, side effects led to dose adjustments or discontinuation of the treatment. However, no cases of graft failure were reported.
+
+Your child/the minor will be closely monitored throughout the study for any signs of side effects. Most adverse reactions improve or go away after stopping or adjusting treatment. However, some may become serious, long-lasting, or permanent, and in rare cases, they can be life-threatening and may require hospitalization.
+
+The investigational drug will be used together with other medications already approved and commonly used in aGvHD treatment, such as corticosteroids and calcineurin inhibitors (like cyclosporine or tacrolimus). These standard therapies also carry risks, including high blood pressure (hypertension), high blood sugar (hyperglycemia/diabetes), bone weakening (osteoporosis), cataracts, muscle weakness, increased risk of infections, delayed growth (in children). All efforts will be made to minimize these risks, and your child’s/the minor’s health and safety will be carefully observed during the trial.
+
+- Is the consent final? Can I/we decide to withdraw our child/the minor from the clinical trial (voluntary exit)?
+
+You can decide to withdraw your child/the minor from the trial at any time and for any reason, without having to justify your decision.
+
+Should you decide not to let him/her participate anymore, please inform one of the investigating doctors as soon as possible: it is important to suspend treatment safely. The doctor may consider a final check-up test/examination.
+
+Your doctor will keep you informed of any changes in the trial that may affect your willingness to continue to authorise participation.
+
+- Are there any reasons why the trial could be stopped not by my/our will (early termination)?
+
+Yes, the investigating physician may decide to terminate your child’s/the minor’s/the minor’s participation in the trial if:
+
+- His/her health conditions were to change and participation in the trial proved potentially harmful
+
+- New information is available and the trial is no longer in his/her best interest
+
+- Your child/the minor does not follow the agreed rules for participation in the trial
+
+- For women: the minor gets pregnant during the trial
+
+- The trial is stopped by the competent authorities or by the promoter.
+
+If participation in the trial is discontinued for any reason—including your decision, medical withdrawal, pregnancy, or study suspension—it is strongly recommended that your child/the minor continues to attend scheduled follow-up visits, as outlined in the study protocol. These follow-up evaluations are important for monitoring their health and ensuring appropriate care, especially after receiving the investigational treatment. Even if the investigational therapy is stopped, the follow-up phase helps the study doctor detect and manage any delayed side effects or changes in your child’s/the minor’s/the minor’s condition. You may always discuss the continuation of follow-up assessments with the study doctor to determine the most appropriate course of action based on your child’s/the minor’s/the minor’s clinical needs.
+
+C.  INFORMATION SECTION. FURTHER INFORMATION
+
+1.  What is the purpose of the trial?
+
+The purpose of this clinical trial is to improve treatment for children and adolescents with newly diagnosed acute Graft-versus-Host Disease (aGvHD) by testing whether adding ruxolitinib to standard corticosteroid therapy leads to better outcomes than using corticosteroids alone.
+
+For over 30 years, corticosteroids have been the standard first-line treatment for moderate to severe aGvHD. However, they only work in 30–50% of children, and many patients experience flare-ups when the steroid dose is reduced. Prolonged use of steroids can lead to serious side effects, such as infections, diabetes, high blood pressure, weak bones, slowed growth, and other long-term health problems. The two-year survival rate for children with steroid-refractory aGvHD remains low (20–30%).
+
+Ruxolitinib, an oral medication that blocks specific immune pathways (JAK1 and JAK2), has already shown significant benefits in adults and children with steroid-refractory aGvHD. It works by reducing harmful inflammation and immune system overactivity without interfering with the graft-versus-leukemia (GvL) effect—an important benefit of stem cell transplantation that helps prevent leukemia relapse.
+
+This study aims to find out if starting ruxolitinib early, together with corticosteroids, can:
+
+- Increase the likelihood of treatment success (overall response rate)
+
+- Prevent progression to more severe forms of aGvHD
+
+- Reduce the need for long-term steroid or other immunosuppressive treatments
+
+- Improve survival, immune system recovery, and overall quality of life
+
+By participating in this trial, researchers hope to offer a more effective and safer first-line treatment option for children with aGvHD, and reduce the long-term risks associated with current therapies.
+
+2.  What are the patient groups compared? What is the intervention being tested?
+
+This is a Phase III, randomized, open-label clinical trial. This means that participants will be randomly assigned to one of two treatment groups, with a 50% chance (1 in 2) of receiving the investigational treatment or the standard treatment. This is done to ensure a fair comparison between the two options. This trial is not blinded, meaning that both you and the doctors will know which treatment your child/the minor is receiving. The study aims to enroll a total of 192 patients, with approximately half in each treatment group.
+
+Eligible patients are males or females aged 3 months to under 18 years, transplanted at FORUM2 centers with unmanipulated bone marrow or peripheral blood from a matched donor, following TBI-based or chemotherapy-only conditioning. They must show clinical signs of grade II–IV aGVHD and have confirmed myeloid engraftment.
+
+The two treatment groups are:
+
+- Group 1 – Investigational Treatment:
+  Your child/the minor will receive RUXOLITINIB (the investigational drug) in combination with corticosteroids (methylprednisolone 2 mg/kg/day or equivalent prednisone), along with a calcineurin inhibitor (either cyclosporine A or tacrolimus).
+
+  - Ruxolitinib is an oral medication is taken by mouth in tablets or liquid formulation.
+
+  - The exact dosage and schedule of ruxolitinib will be determined based on your child’s/the minor’s age and weight and will be administered daily alongside corticosteroids.
+
+- Group 2 – Standard Treatment (Control Group):
+  Your child/the minor will receive corticosteroids alone (methylprednisolone 2 mg/kg/day or equivalent prednisone), along with a calcineurin inhibitor (either cyclosporine A or tacrolimus).
+
+  - This represents the current standard of care used in clinical practice.
+
+The planned treatment period for aGvHD in this study is 24 weeks (about 6 months). Your child’s/the minor’s treatment will begin on Study Day 1 and continue unless one of the following occurs earlier:
+
+- The treatment does not work (no response or worsening of aGvHD)
+
+- There is a mix of improvement and worsening
+
+- There is a flare (return of symptoms)
+
+- Serious side effects occur
+
+- Your child/the minor withdraws from the study or passes away
+
+During the treatment period, your child’s/the minor’s care will be adjusted based on how well they respond to the therapy. The response will first be formally assessed on Day 28 of the study.
+
+If your child/the minor shows improvement (partial or complete response) by Day 28:
+
+- If receiving the investigational treatment (ruxolitinib + corticosteroids): ruxolitinib will continue at the prescribed dose until at least Day 42, while corticosteroids will be tapered gradually after the achievement of a complete response. If your child/the minor remains stable, the doctor may begin gradually reducing (tapering) the dose of ruxolitinib after Day 42, based on their condition and clinical judgment. The taper will ideally be completed by Week 24, unless there's a medical reason to continue for a longer period.
+
+- If receiving corticosteroids alone: Corticosteroids may be tapered gradually following standard guidelines even before Day 28, after achievement of a complete response, depending on your child’s/the minor’s condition.
+
+If your child/the minor does not show improvement by Day 28:
+
+- If in the investigational treatment group (ruxolitinib + corticosteroids): Your child/the minor will be considered as having experienced a treatment failure. In this case, the study doctor may prescribe additional systemic therapies based on your child’s/the minor’s medical condition and clinical needs. Your child/the minor will then enter the long-term follow-up phase and will continue to be closely monitored as part of the clinical trial.
+
+- If in the corticosteroids-only group: The doctor may start ruxolitinib at any time during the treatment period if your child/the minor meets the criteria for steroid-refractory aGvHD (when steroids are not or no longer effective). If ruxolitinib is started before Day 28, this will be recorded as a treatment failure (event) for analysis purposes. If started after Day 28, it will be considered a formal "cross-over" to the investigational treatment.
+
+Children who cross over to ruxolitinib after starting in the corticosteroids-only group will follow the same treatment and tapering plan as those who started with ruxolitinib. They will be monitored weekly for 8 weeks after starting ruxolitinib, and then monthly until tapering is complete.
+
+In all cases, patients receiving ruxolitinib will continue taking corticosteroids and a calcineurin inhibitor (either cyclosporine A or tacrolimus) as per standard practice, unless your physician identifies specific contraindications. Tapering of these drugs will be done based on how well your child/the minor is responding to treatment.
+
+[Immagine che contiene testo, schermata, Carattere Descrizione generata automaticamente]
+
+3.  What examinations, tests and procedures are provided for if we authorise participation in the trial?
+
+If you authorize your child/the minor to participate in this study, the first step will be the screening period, which is the time between signing the informed consent form and the start of treatment. This period is designed to confirm that your child/the minor meets the eligibility criteria to take part in the study and to ensure that treatment begins as quickly and safely as possible.
+
+The screening period will begin when your child/the minor is diagnosed with treatment-naïve grade II aGvHD and will last no more than 7 days
+
+During this time, the study team will carry out a number of medical assessments, including:
+
+- Review of your child’s/the minor’s medical history and current health status
+
+- Physical examination
+
+- Blood tests (some of which may already be part of your child’s/the minor’s regular care)
+
+- Other clinical evaluations to rule out other possible diagnoses and confirm aGvHD
+
+In some cases, a biopsy of the affected organ/a may be requested, but this is not required to join the study. If a biopsy is not possible or is not recommended for medical reasons, your child/the minor may still be enrolled based on the clinical judgment of the treating doctor, provided that other causes of symptoms have been excluded.
+
+Any tests or procedures already done as part of your child’s/the minor’s routine care, such as a recent complete blood count (CBC), may be used for screening purposes, as long as they meet the criteria defined by the study and were performed within the appropriate timeframe.
+
+No study-specific procedures will be performed before you provide written consent.
+
+Once your child/the minor is confirmed as eligible, study treatment will begin promptly—ideally within 48 hours after randomization—to reduce the risk of disease progression and avoid unnecessary delays.
+
+If you agree to allow your child/the minor to take part in this study, they will need to visit the hospital or study center up to 13 times during the Treatment Period. These visits will take place once per week for the first 8 weeks, and then once every 4 weeks until the end of the treatment period, which is expected to last approximately 6 months (24 weeks) from the start of treatment.
+
+About 30 days after your child/the minor takes their last dose of the study medication, the study doctor will contact you (by phone or to schedule a visit) to carry out a safety follow-up assessment to check on your child’s/the minor’s overall health.
+
+After the treatment period, you and your child/the minor will be asked to return to the hospital or center for long-term follow-up visits at 9, 12, 18, and 24 months after the start of treatment. These visits are important to continue monitoring your child’s/the minor’s health and may include additional assessments.
+
+Each visit will last approximately 2 to 3 hours, except for the first treatment visit, which may take longer—around 9 to 10 hours for some patients.
+
+Depending on how your child/the minor responds to treatment, or if symptoms of aGvHD return, the study doctor may decide to continue or taper treatment for up to an additional 24 weeks (approximately 6 months). In such cases, study visits will continue every 4 weeks, as described above.
+
+At Week 48, the study doctor will perform additional evaluations, including:
+
+- An assessment of your child’s/the minor’s reproductive health using the Tanner scale (a tool for measuring pubertal development)
+
+- A blood test to check for active viral infections, particularly if your child/the minor is still taking ruxolitinib
+
+The “End of Treatment” Visit will be scheduled when your child/the minor finishes taking ruxolitinib—either at Week 24, Week 48, or earlier, depending on the clinical decision of the study doctor. If your child/the minor ends treatment before Week 24, follow-up visits and assessments will still take place according to the planned schedule.
+
+In addition to standard laboratory tests, blood samples will be taken for:
+
+- Biomarker analysis
+
+- Immune system recovery
+
+- Pharmacokinetic (PK) analysis – to understand how ruxolitinib is absorbed, distributed, metabolized, and eliminated by your child’s/the minor’s body
+
+If instructed by the study doctor, on days when pharmacokinetic samples are required, your child/the minor will take their ruxolitinib dose at the hospital or study center, under the supervision of the research staff. Your child/the minor should not take the drug at home on those days. If the dose is missed or taken incorrectly, it is very important to inform the study doctor immediately.
+
+Samples for pharmacokinetic analysis will be collected before the first dose, weekly up to Day 28 (±3 days), and again on Day 42 (±3 days) and Day 56 (±3 days). Both pre-dose and post-dose samples will be collected.
+
+All biological samples collected from your child/the minor will be coded and pseudoanonymized immediately after collection. This means their name and personal identifiers will be replaced by a unique code, known only to the study doctor. This coding system helps protect your child/the minor’s privacy, while allowing important results to be shared with you if needed.
+
+Some samples will be analyzed at the hospital where your child/the minor is being treated, while others may be sent to the coordinating study center located at Bambino Gesù Children’s Hospital.
+
+The storage and handling of your child/the minor’s data and biological samples will be done in full compliance with applicable data protection laws, including the General Data Protection Regulation (GDPR) in the European Union (see also question 10). These standards ensure that all data and samples are processed securely and confidentially.
+
+Leftover blood samples may be stored at your child’s/the minor’s treatment center or the coordinating center for up to 15 years after the end of the study. These samples may be used in the future for research closely related to this study, such as:
+
+- Understanding the biology of aGvHD
+
+- Improving methods to diagnose, monitor, or treat the disease
+
+- Comparing data with other clinical trials or developing new clinical endpoints
+
+Importantly, genetic testing will not be performed on these samples unless you are contacted and provide additional written consent.
+
+If future research goes beyond the scope of this study, or involves genetic testing, you will be contacted to decide whether you wish to give new consent. It is your right to accept or decline.
+
+You may withdraw your consent at any time without affecting your child’s/the minor’s medical care. If you choose to withdraw your consent for future use of samples, you may request:
+
+- That any remaining samples be permanently anonymized, meaning they can no longer be linked to your child
+
+- Or that the samples and associated data be destroyed
+
+There are two types of permitted future use of leftover samples:
+
+1.  Use by the same research team for purposes closely related to this study
+
+2.  Use by different research teams, but only within the framework of joint scientific projects aligned with the study goals
+
+With your permission, the results of these studies may be:
+
+- Shared anonymously with other researchers
+
+- Published in scientific journals, without any information that could identify your child
+
+- Used to advance the understanding and treatment of aGvHD
+
+If any relevant new results arise during these studies, such as findings that could affect your child’s/the minor’s future health, medical treatment, or reproductive choices, you will be informed by the study team (see also question C.11)
+
+4.  What risks can I our child/the minor face if I/we authorise participation in the trial?
+
+Participation in this clinical trial may involve risks related to the study drug (ruxolitinib), other medications used during treatment, and procedures such as blood sampling. Side effects may vary from person to person. This document includes both common side effects and rare but serious side effects known to be associated with ruxolitinib. You are encouraged to discuss any concerns with the study doctor, including possible side effects not listed here.
+
+Many side effects resolve shortly after stopping or adjusting the medication. However, some side effects may be serious, long-lasting, or permanent, and in rare cases, could be life-threatening.
+
+Side effects of ruxolitinib
+
+In patients treated for other conditions (such as myelofibrosis or polycythemia vera), very common side effects (occurring in more than 1 in 10 people) included:
+
+- Low red blood cell count (anemia), which may cause fatigue, pale skin, or shortness of breath
+
+- Low white blood cell count (neutropenia), which may increase the risk of infection
+
+- Low platelet count (thrombocytopenia), which may lead to easy bruising or bleeding
+
+- Urinary tract infections
+
+- Increased cholesterol or triglyceride levels
+
+- Headache, dizziness, weight gain
+
+- Constipation, high blood pressure, altered liver test results
+
+- Shingles (herpes zoster), which may cause painful rash or blisters
+
+In most cases, changes in blood cell counts are reversible and can be managed by temporarily reducing or stopping ruxolitinib. Your child/the minor will be monitored regularly through blood tests, and if their cell counts do not recover quickly, ruxolitinib may be paused longer or restarted at a lower dose.
+
+Common side effects (occurring in 1 to 10 in 100 patients) included:
+
+- Excessive intestinal gas (flatulence)
+
+- Reduction in all three types of blood cells (pancytopenia)
+
+In rare cases (less than 1 in 100), tuberculosis has been reported. Symptoms may include chronic cough, coughing up blood, fever, night sweats, and weight loss. Inform the study doctor immediately if your child/the minor shows any of these symptoms.
+
+Suddenly stopping ruxolitinib may also lead to health risks. In patients with aGvHD or myelofibrosis, abrupt discontinuation has been associated with a return of symptoms or inflammatory reactions, including anxiety, insomnia, weakness, or worsening disease. If treatment needs to be stopped, it will be done under close medical supervision.
+
+The effect of ruxolitinib on viral replication in people with chronic hepatitis B is not known. If your child/the minor has ever had viral hepatitis, this must be discussed with the study doctor. Children with active viral infection will not be treated with ruxolitinib.
+
+There have been rare reports of progressive multifocal leukoencephalopathy (PML), a serious brain infection, among patients undergoing allogeneic stem cell transplantation, including some receiving ruxolitinib. While it is not clear if ruxolitinib caused PML, symptoms such as confusion, speech difficulty, weakness on one side of the body, or vision problems must be reported immediately.
+
+Cases of non-melanoma skin cancers (NMSC), including basal cell carcinoma, squamous cell carcinoma, and the rare Merkel cell carcinoma, have been reported in patients treated with ruxolitinib. These may also be related to prior treatments or the underlying disease. Inform the doctor if you notice any new or unusual skin lesions.
+
+In animal studies, bone growth delay and fractures were observed in very young animals treated with high doses of ruxolitinib. Although these findings occurred at higher doses than those used in this study, the greatest concern applies to children under 2 years of age, especially those under 1 year. Bone growth will be monitored, and potential effects are expected to be reversible, although full catch-up growth may not always occur.
+
+Clinical experience in pediatric patients with aGvHD
+
+In a recent clinical trial of ruxolitinib in children with treatment-naïve or steroid-refractory aGvHD:
+
+- All patients experienced at least one adverse event (AE)
+
+- 51.1% had treatment-related AEs, most commonly anemia (20%), low neutrophil count (17.8%), and low white blood cell count (15.6%)
+
+- 86.7% experienced a severe AE (grade ≥3), with 40% of those considered treatment-related
+
+- Serious AEs occurred in 53.3% of patients, including fever, kidney injury, sepsis, and viral cystitis
+
+- Infections were reported in 71.1% of patients, with 14 having grade ≥3 infections
+
+Despite these risks, many patients were able to reduce or completely stop corticosteroids during treatment. By day 56, 75.6% had reduced steroid use by at least 50%, and 37.8% were off steroids entirely. By the end of the treatment period, 62.2% had fully discontinued steroids.
+
+These results suggest that ruxolitinib offers clinically meaningful benefits with a manageable safety profile, although vigilant monitoring for side effects—especially infections—is essential.
+
+As part of the study, your child/the minor will undergo approximately 16 blood draws. The volume of blood collected will depend on their age and the specific visit. Risks include fainting, discomfort, bruising, and rarely, infection or blood clots at the site of collection. Blood pressure cuffs may cause temporary discomfort or bruising.
+
+In rare cases, a healthcare worker may be accidentally exposed to your child’s/the minor’s blood. If this occurs, the hospital will follow its standard safety procedures. You will be informed and advised of any actions necessary to ensure your child’s/the minor’s and the staff’s safety. Confidentiality will be maintained.
+
+Pregnancy and reproductive safety
+
+Pregnant or breastfeeding girls may not participate in this study. If your daughter is of childbearing potential, she must confirm she is not pregnant and must agree to avoid pregnancy during the study.
+
+Animal studies suggest that ruxolitinib could harm a fetus or newborn. If your daughter becomes pregnant or suspects she may be pregnant during the study or within 30 days of completing treatment, she must immediately inform the study doctor and stop taking the study drug. Continued treatment during pregnancy is not allowed.
+
+The doctor will monitor her and her baby’s health throughout the pregnancy. You and your daughter will be asked to sign a separate pregnancy follow-up consent to allow the doctor to collect relevant information about the outcome of the pregnancy and the baby’s health, if appropriate.
+
+There is currently no evidence that ruxolitinib is present in human sperm.
+
+During treatment with ruxolitinib, you must immediately inform the study doctor if your child/the minor:
+
+- Develops unusual bruising, bleeding, extreme fatigue, shortness of breath, or frequent infections
+
+- Shows signs of shingles (painful skin rash with blisters)
+
+- Has a persistent cough with blood, fever, night sweats, or weight loss (possible signs of tuberculosis)
+
+- Experiences confusion, weakness, visual disturbances, or trouble speaking or walking (possible signs of PML)
+
+- Has any changes in prescribed medications or develops any new medical issues
+
+- Develops new or changing skin lesions, which may require further examination
+
+- Becomes pregnant or, if male, is known or suspected to have fathered a pregnancy during the study
+
+5.  How will we be notified of any unexpected results following diagnostic tests?
+
+As part of the study protocol and your child/the minor’s medical care during the trial, a variety of medical assessments will be carried out. These may include blood tests, imaging exams (such as X-rays), functional evaluations, and other procedures that are considered standard practice during the management of aGvHD.
+
+These tests are not specifically designed to detect unrelated medical conditions. However, it is possible that they may reveal unexpected findings, such as signs of a previously undiagnosed health issue.
+
+If any such results are identified, the study doctor will discuss them with you in a timely and respectful manner. You will be given the opportunity to express your preferences regarding the type and amount of information you wish to receive. For example, you may choose to:
+
+- Be informed only about findings that are immediately relevant to your child’s/the minor’s current medical care, or
+
+- Also be informed about results that could have long-term implications, including those related to family health or future reproductive decisions
+
+This study does not include any genetic testing as part of its standard assessments. However, if any additional tests (including genetic analyses) are ever considered in the future, you will be informed beforehand, and separate written consent will be requested. You have the right not to receive certain types of information, and your choices regarding this will be fully respected.
+
+6.  Is it useful/necessary to inform our family doctor/pediatrician?
+
+Yes, it is important that your child/the minor’s pediatrician or general practitioner (GP) is informed about their participation in this clinical trial. Your family doctor may play a valuable role in supporting your child/the minor’s overall health, especially during the longer-term follow-up phase, by helping monitor side effects and coordinating any non-study-related care.
+
+However, please note that during the treatment period, which includes the administration of ruxolitinib and/or corticosteroids, as well as the first 6 months of follow-up, the transplant center will be your child/the minor’s primary point of contact for medical care. All treatment decisions, monitoring, medication management (including dose adjustments), and any urgent medical issues will be handled by the specialized transplant and study team.
+
+After the main treatment phase, your child/the minor will continue to attend follow-up visits at the transplant center, including long-term assessments at 9, 12, 18, and 24 months. While your family doctor may be involved in supporting child/the minor’s general health during this time, the transplant and study team will remain fully responsible for all care related to the clinical trial.
+
+7.  What will our child’s/the minor’s/the minor’s commitment be and what are our responsibilities if we decide to authorise his/her participation?
+
+It is very important that you and your child/the minor attend all scheduled study visits and follow the instructions provided by the study doctor. It is essential that your child/the minor takes the study medication exactly as directed by the study doctor. Please ensure that your child/the minor does not miss any doses of the tablets or the liquid form of the study treatment.
+
+Inform the study doctor about any medications your child/the minor is taking during the study, including prescription drugs, over-the-counter medications, herbal products, natural or alternative remedies, and vitamins. Also inform the study doctor if your child/the minor stops taking any previously prescribed medication. This information is very important.
+
+Notify the study doctor or study staff immediately if your child/the minor experiences any unusual symptoms.
+
+By signing this consent form, you agree to follow the study doctor’s instructions and to ensure that your child/the minor attends all required study visits.
+
+If your child/the minor is of reproductive age (see also question C.4):
+
+- Girls must avoid becoming pregnant and must not breastfeed during the study. Appropriate contraceptive methods should be used, as recommended by the study doctor.
+
+- Boys should avoid fathering a child/the minor during the study. The study doctor will discuss appropriate precautions.
+
+By signing this consent form, you agree to follow the study doctor’s instructions and to ensure that your child/the minor attends all required study visits and complies with the study requirements.
+
+8.  Will I/we have to bear costs for participation in the trial? Will I/we be reimbursed for any expenses? Will our child/the minor receive a compensation?
+
+You will not bear costs for your child’s/the minor’s/the minor’s participation in the trial as these are fully covered by the trial center and the sponsor. Participation in this study does not include any form of financial compensation. In accordance with applicable laws and ethical guidelines, no payments or rewards may be offered for taking part in clinical research. This is to ensure that participation is based on free and informed choice, without any undue influence.
+
+9.  What happens if our child/the minor suffers damage as a result of participating in the trial?
+
+Participation in a clinical trial may involve drawbacks and risks that cannot be determined a priori. For this reason, the clinical trial provides insurance coverage to protect your child’s/the minor’s/the minor’s participation.
+
+Pursuant to applicable law, insurance is provided to cover any damage suffered due to participation in the trial, for the entire period of the same, to cover the civil liability of the investigator and the promoter.
+
+INDICATE THE INSURANCE COMPANY, THE POLICY NUMBER, THE LIMIT OF LIABILITY PER PARTICIPANT, THE AGGREGATE LIMIT OF LIABILITY.
+
+It is worth noting that, according to the Ministerial Decree of 14 July 2009, the insurance policy does not cover the value exceeding the ceiling and is effective exclusively for damages whose compensation request has been submitted no later than the period provided for in the policy (INDICATE THE NUMBER OF MONTHS). However, this limitation does not affect the right to obtain compensation from the person liable for any damage (to protect the trial participant).
+
+10. Who will have access to our child’s/the minor’s/the minor’s health data, including personal data, and how will they be treated during the trial?
+
+Your data, in particular personal and health data, will be processed only to the extent that they are indispensable to the objective of the trial and for pharmacovigilance purposes, in compliance with EU Regulation 2016/679, known as GDPR (General Data Protection Regulation) and with Legislative Decree 10 August 2018, no. 101. In practical terms, the documents relating to the participant will be kept in a safe place and will not report his/her name in clear text, only known to the researchers, but an identification code.
+
+The data, made anonymous, may be subject to control by regulatory bodies and used for scientific publications (journals, conferences).
+
+Your clinical data collected for the purposes of the trial, as well as the results of the tests carried out, will be stored for the time required by the regulations and subsequently destroyed. They will not be destroyed only if a) it is no longer possible to trace them back to your child’s/the minor’s/the minor’s identity, because they have been anonymised during the trial itself; b) in the presence of your specific informed consent.
+
+If the personal data are transferred to a third country or to an international organization, all the guarantees will be adopted which are provided for by Article 46 of the GDPR 679/2016.
+
+11. How will our child’s/the minor’s/the minor’s biological samples taken for trial purposes be treated and who will have access to them?
+
+All biological samples collected from your child/the minor will be coded and pseudoanonymized immediately after collection. Pseudonymization is a technique that allows to change and mask personal and sensitive data of a natural person, in order not to make them directly and easily attributable to him/her. This means their name and personal identifiers will be replaced by a unique code, known only to the study doctor. This coding system helps protect your child/the minor’s privacy, while allowing important results to be shared with you if needed.
+
+Some samples will be analyzed at the hospital where your child/the minor is being treated, while others may be sent to the coordinating study center located at Bambino Gesù Children’s Hospital.
+
+The storage and handling of your child/the minor’s data and biological samples will be done in full compliance with applicable data protection laws, including the General Data Protection Regulation (GDPR) in the European Union (see also question 10). These standards ensure that all data and samples are processed securely and confidentially.
+
+Leftover blood samples may be stored at your child’s/the minor’s treatment center or the coordinating center for up to 15 years after the end of the study. These samples may be used in the future for research closely related to this study, such as:
+
+- Understanding the biology of aGvHD
+
+- Improving methods to diagnose, monitor, or treat the disease
+
+- Comparing data with other clinical trials or developing new clinical endpoints
+
+Importantly, genetic testing will not be performed on these samples unless you are contacted and provide additional written consent.
+
+If future research goes beyond the scope of this study, or involves genetic testing, you will be contacted to decide whether you wish to give new consent. It is your right to accept or decline.
+
+You may withdraw your consent at any time without affecting your child’s/the minor’s medical care. If you choose to withdraw your consent for future use of samples, you may request:
+
+- That any remaining samples be permanently anonymized, meaning they can no longer be linked to your child
+
+- Or that the samples and associated data be destroyed
+
+There are two types of permitted future use of leftover samples:
+
+3.  Use by the same research team for purposes closely related to this study
+
+4.  Use by different research teams, but only within the framework of joint scientific projects aligned with the study goals
+
+With your permission, the results of these studies may be:
+
+- Shared anonymously with other researchers
+
+- Published in scientific journals, without any information that could identify your child
+
+- Used to advance the understanding and treatment of aGvHD
+
+If any relevant new results arise during these studies, such as findings that could affect your child’s/the minor’s future health, medical treatment, or reproductive choices, you will be informed by the study team (see also question C.5)
+
+12. How will I/we have access to the results of the trial?
+
+Once the trial is over and all the resulting data have been collected, they will be analysed to draw conclusions. The investigators undertake to make them available to the scientific community.
+
+The law provides for the possibility that participants have access to the results of the trial. Therefore, you can ask the investigating physician to communicate the general results of the trial (or indicate where and how to access the trial results).
+
+13. Was the trial approved by the Ethics Committee?
+
+The trial protocol proposed to you has been examined and approved by the Ethics Committee ......................... on ......... Among other things, the Ethics Committee has verified the compliance of the trial with the standards of Good Clinical Practice and with the ethical principles expressed in the Declaration of Helsinki and that your child’s/the minor’s/the minor’s safety, rights and well-being have been protected.
+
+14. Who can I refer to for more information on the clinical trial our child/the minor is invited to participate in?
+
+INDICATE THE NAMES AND REFERENCES OF THE PERSONS WHO CAN BE CONTACTED FOR FURTHER INFORMATION.
+
+15. If I/we decide to authorise participation in the trial, who can I/we contact in case of need?
+
+For any doubt and unforeseeable or unscheduled event during the trial (doubts relating to the treatment in progress, side effects, decision to abandon the trial, etc.), you can contact:
+
+INDICATE NAMES AND REFERENCES OF THE TRIAL CENTER STAFF THAT THE PARENTS/GUARDIAN CAN CONTACT (Dr. [SPECIFY NAME], [SPECIFY TELEPHONE NUMBER, E-MAIL]).
+
+INDICATE WHO CAN BE CONTACTED ON HOLIDAYS AND POSSIBLE CONTACTS ON CALL
+
+Should you deem it appropriate to report events or facts relating to the trial your child/the minor has joined to subjects not directly involved in the trial itself, you can refer to the Ethics Committee that approved the trial (INDICATE), to the Health Department of the Trial Center (INDICATE), to the competent authority (AIFA).
+
+16. What happens if our child/the minor comes of age during the trial?
+
+If your child/the minor comes of age during the trial, s/he will become legally autonomous in his/her choices. Consequently, s/he will be submitted a new informed consent.
+
+  ______________________________ ___/___/______ _________ ____________________________
+
+  Full name of the doctor Date Time Signature
+
+who delivered the note
+INFORMED CONSENT SECTION FOR THE PARENT/S OR GUARDIAN OF THE MINOR
+
+(Notes: 1 copy for the participant, 1 copy for the trial manager)
+
+(Name of the minor, place and date of birth)__________________________________________
+
+Title of the trial:________________________________________________________________
+
+Protocol code, version and date: ___________________________________________________________
+
+Promoter of the trial/sponsor funding body: _____________________________________
+
+Principal Investigator (NAME, AFFILIATION, REFERENCES): ________________________________________
+
+_______________________________________________________________________________________
+
+I, the undersigned ______________________________________________
+
+born in _________________________________________________________________ on ___/___/______
+
+as mother/legal guardian of the abovementioned minor;
+
+I, the undersigned ______________________________________________
+
+born in _________________________________________________________________ on ___/___/______
+
+as father/legal guardian of the abovementioned minor;
+
+I/WE HEREBY DECLARE THAT
+
+▢ Dr. ________________________________________ has provided me/us with exhaustive explanations regarding the request for participation in the research in question, as reported in the information section contained in this consent, of which I was/we were given a copy on ____________ at ______________ (indicate date and time of delivery);
+
+▢ I/we have been clearly explained and I/we have understood the nature, the purposes, the procedures, the expected benefits, the possible risks and inconveniences and the alternative treatment methods with respect to the proposed clinical trial;
+
+▢ I had the opportunity to ask any question to the trial investigator and I received satisfactory answers;
+
+▢ I/we had sufficient time to reflect on the information received
+
+▢ I had sufficient time to discuss it with third parties;
+
+▢ I/we have been informed that the trial protocol and all the forms used have received the favorable opinion by the competent Ethics Committee;
+
+▢ I am/we are aware that the research can be interrupted at any time, by decision of the trial manager;
+
+▢ I/we have been informed that I/we will be made aware of any new data that could jeopardize the safety of the research and that, for any problem or further questions, I/we may contact the doctors where our child/the minor is being treated;
+
+▢ for the best protection of our child’s/the minor’s/the minor’s health, I am/we are aware of the importance (and of my/our responsibility) of informing the general practitioner of the trial in which we authorize our child/the minor to participate. I am/we are aware of the importance of providing the investigator with all information (drugs, side effects, etc.) concerning our child/the minor;
+
+▢ I/we have been informed that the results of the trial will be made known to the scientific community, protecting our child’s/the minor’s/the minor’s identity according to the current legislation on privacy;
+
+▢ I am/we are aware that any choice expressed in this consent form may be revoked at any time and without any justification;
+
+▢ I/we have received a copy of this consent form.
+
+I/WE HEREBY DECLARE THAT
+
+▢ We authorize our child/the minor to participate in the trial
+
+▢ I am/we are willing ▢ NOT willing that our child/the minor be contacted after the end of the trial to provide information on his/her state of health (this only applies to contacts that the study protocol does not envisage as follow-up)
+
+If applicable:
+
+▢ I/WE ACCEPT ▢ DO NOT ACCEPT that our daughter/the minor uses contraceptive drugs
+
+________________________________________ ___/___/______ _________ ______________________
+
+Full name of the mother Date Time Signature
+
+________________________________________ ___/___/______ _________ ______________________
+
+Full name of the father Date Time Signature
+
+________________________________________ ___/___/______ _________ ______________________
+
+Full name of the legal representative Date Time Signature
+
+[In case the parent/legal guardian cannot sign]
+
+I, the undersigned _________________________________________________ confirm that I have attended the informative meeting between Dr. ________________________and Mr./Ms. __________________________and I confirm that he/she is unable to give his/her consent in writing.
+
+________________________________________ ___/___/______ _________ ______________________
+
+Full name of the independent witness Date Time Signature
+
+[In case the foreign parent/legal guardian does not understand the Italian language]
+
+I, the undersigned _________________________________________________ confirm that I have attended the informative meeting between Dr. ________________________and Mr./Ms. __________________________and I confirm that I have acted as a facilitator for the understanding of the information.
+
+________________________________________ ___/___/______ _________ ______________________
+
+Full name of the cultural mediator Date Time Signature
+
+STATEMENT OF THE DOCTOR WHO OBTAINED THE CONSENT
+
+(Name of the minor, place and date of birth)
+
+Title of the trial:________________________________________________________________
+
+Protocol code, version and date: ___________________________________________________________
+
+Promoter/sponsor of the trial__________________________________________________________________
+
+Principal Investigator (NAME, AFFILIATION, REFERENCES): ________________________________________
+
+_______________________________________________________________________________________
+
+I, the undersigned Prof./Dr. ………………………………… ……………………..… in my capacity as Principal investigator
+
+Surname Name
+
+(or as delegate of the Principal investigator)
+
+Hereby declare that
+
+the father and mother/the legal guardian have spontaneously consented to the minor’s participation in the trial
+
+I also declare that:
+
+  ▢ I have provided full explanations relating to the purpose of the trial, the procedures, the possible risks and benefits and to possible alternatives;
+
+  ▢ I have verified that the parents/legal guardian have sufficiently understood the information provided
+
+  ▢ I have given the parents/legal guardian the necessary time and the opportunity to ask questions about the trial
+
+  ▢ I have clearly described the possibility of withdrawing from the trial at any time or of changing the choices made
+
+  ▢ I have not exerted any coercion or undue influence in requesting this consent
+
+  ▢ I have provided the parents/legal guardian with information on how the results of the trial will be disclosed
+
+  ▢ I have provided the parents/legal guardian with a simplified information sheet intended for minors between the ages of 7 and 11 and I have stressed the opportunity that the above minor be informed, with the precautions and methods suitable for their age, of the characteristics of the trial s/he will join
+
+_____________________________________________________ ________
+
+Place and date Time
+
+_________________________________________________ _________________________________________________
+
+Name Surname (block letters) of the doctor who provided the Signature (and stamp)
+
+information and who obtained the consent
+
+This form is an integral part and must be kept together
+
+with the information sheet for informed consent

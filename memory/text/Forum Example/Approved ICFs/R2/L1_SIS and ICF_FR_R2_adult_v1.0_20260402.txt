@@ -1,0 +1,811 @@
+DOCUMENT INFORMATIF ET FORMULAIRE DE CONSENTEMENT ÉCLAIRÉ POUR LES PATIENT(E)S ADULTES
+
+FORUM2 – Sous-étude FORUX - Randomisation 2 (R2)
+
+Comparaison entre ruxolitinib et corticostéroïdes versus corticostéroïdes seuls chez les enfants atteint(e)s de LLA et de maladie du greffon contre l'hôte de grade II à IV non traitée après une greffe allogénique de cellules souches hématopoïétiques
+
+Titre officiel de l'étude : FORUM2– Cadre pour l'optimisation, le perfectionnement et l'unification de la prise en charge (Framework for Optimizing, Refining, and Unifying Management - FORUM) de la GCSH dans la LLA pédiatrique.
+
+Numéro EU : 2025-522052-13-00
+
+Numéro d’essai : FORUM2
+
+Promoteur de l’essai : Ospedale Pediatrico Bambino Gesù, IRCCS, Piazza di Sant’Onofrio 4, Rome, Italie
+
+Nom du site : nom officiel du site
+
+Principale adresse du site : address of site
+
+Qui puis-je contacter en cas de questions ?
+
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+| Nom             | Fonction                                                                                                                                                   | En cas de                                                                                      | Coordonnées                                                                        |
++:================+============================================================================================================================================================+================================================================================================+====================================================================================+
+| Prénom, nom     | Investigateur principal du site                                                                                                                            | Informations, problèmes ou inquiétudes                                                         | N° de téléphone, e-mail                                                            |
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+|                 | Le personnel de l’essai                                                                                                                                    | Informations, problèmes, inquiétudes                                                           | N° de téléphone, e-mail                                                            |
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+|                 | Contact pour les questions urgentes relatives à l’essai                                                                                                    | Informations, problèmes, inquiétudes urgents                                                   | N° de téléphone                                                                    |
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+|                 | Médiateur pour les droits des patients du site [et si cela n'est pas possible, contactez le CT College].                                                   | Préoccupations/questions relatives à vos droits en tant que participant(e) à un essai clinique | Numéro de téléphone du site [si ce n’est pas possible : ct-college@health.fgov.be] |
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+| Assurance Amlin | Compagnie d'assurance du promoteur                                                                                                                         | En cas de désaccord ou de plainte sur un sinistre                                              | Numéro de police : 299.053.700                                                     |
+|                 |                                                                                                                                                            |                                                                                                |                                                                                    |
+|                 |                                                                                                                                                            |                                                                                                | Adresse : Boulevard du Roi Albert II 37                                            |
+|                 |                                                                                                                                                            |                                                                                                |                                                                                    |
+|                 |                                                                                                                                                            |                                                                                                | 1030 Bruxelles                                                                     |
+|                 |                                                                                                                                                            |                                                                                                |                                                                                    |
+|                 |                                                                                                                                                            |                                                                                                | N° de téléphone : 02 894 70 00                                                     |
+|                 |                                                                                                                                                            |                                                                                                |                                                                                    |
+|                 |                                                                                                                                                            |                                                                                                | E-mail: klachtenmanagement.be                                                      |
+|                 |                                                                                                                                                            |                                                                                                | @msamlin.com                                                                       |
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+|                 | Data Protection Officer du site [si impossible, personne de contact pour la protection des données.] Personne à contacter pour la protection des données.] | Questions relatives à la confidentialité de vos données                                        | N° de téléphone                                                                    |
+|                 |                                                                                                                                                            |                                                                                                |                                                                                    |
+|                 |                                                                                                                                                            |                                                                                                | E-mail : E-mail                                                                    |
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+|                 | Autorité belge de protection des données                                                                                                                   | Plaintes relatives à la confidentialité de vos données                                         | +32(0)2274 48 00                                                                   |
+|                 |                                                                                                                                                            |                                                                                                |                                                                                    |
+|                 |                                                                                                                                                            |                                                                                                | E-mail : contact@apd-gba.be                                                        |
++-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+
+● Pour gérer les plaintes non résolues par l'investigateur, vous pouvez contacter le médiateur du centre d'étude à l'adresse ci-dessus.
+
+● En vertu du RGPD, vous avez le droit d'accéder au traitement de vos données. Pour toute question à ce sujet, vous pouvez contacter le Data Protection Officer du centre d'étude à l'adresse ci-dessus.
+
+● Vous avez également le droit de déposer une plainte concernant la manière dont vos données sont traitées auprès de l'autorité de contrôle belge chargée de veiller au respect de la législation en matière de protection des données. Autorité de protection des données (APD), ci-dessus.
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| L'essai en un coup d’Œil                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Bonjour,                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Vous recevez ce document informatif parce que vous avez reçu un diagnostic de leucémie lymphoblastique aiguë (LLA) et que vous allez avoir besoin d'une greffe de cellules souches hématopoïétiques (GCSH). Ce document concerne spécifiquement votre participation éventuelle à une sous-étude (R2) de l'essai FORUM2.                                                                                                                                 |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| L'essai FORUM2 est un essai académique, ce qui signifie qu'il est organisé par différents hôpitaux universitaires. Il s'agit d'une infrastructure commune permettant d'aborder plusieurs questions scientifiques au fil du temps, dans un cadre unique. Il a été mis en place par l'Ospedale Pediatrico Bambino Gesù (IRCCS) à Rome (Italie) et inclura plus de 1000 participants dans le monde entier, dont environ 4 à 5 patients par an en Belgique. |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Dans ce cadre, certains patients peuvent être invités à participer à des sous-études spécifiques, selon qu'ils rentrent dans les conditions ou non. Chacune de ces sous-études a ses propres critères d'éligibilité et son propre calendrier. Votre consentement écrit explicite vous sera demandé avant toute participation à ces sous-études si vous remplissez les conditions.                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Cette fiche d'information et ce formulaire de consentement se réfèrent à la sous-étude R2 (FORUX).                                                                                                                                                                                                                                                                                                                                                      |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Cette sous-étude est une comparaison randomisée de deux traitements médicamenteux différents pour la maladie aiguë du greffon contre l'hôte (GvHDa) nouvellement diagnostiquée qui n'a reçu aucun traitement systémique.                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Le but de cette sous-étude est de trouver de meilleurs traitements pour la GvHDa en répondant aux limites du traitement de première ligne actuel par corticostéroïdes. Plus précisément, la sous-étude vise à réduire le besoin d'utilisation de stéroïdes à long terme et à aider à prévenir le développement d'une GvHDa réfractaire aux stéroïdes (GvHDa-RS).                                                                                        |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Par conséquent, nous voulons vérifier si la combinaison de ruxolitinib et de corticostéroïdes est sûre et plus efficace par rapport aux corticostéroïdes seuls.                                                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| La sous-étude implique une comparaison randomisée : si vous acceptez de participer, vous serez assigné(e) au hasard au groupe pour recevoir du ruxolitinib et des corticostéroïdes ou des corticostéroïdes seuls avant la greffe.                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Toutes les visites et tous les examens sont effectués dans le cadre du traitement de soins standard. Pour la sous-étude, des questionnaires pour évaluer la qualité de vie doivent être completées et certains échantillons de sang spécifiques à l'étude doivent être prélevés. Au total, vous participerez à cette sous-étude pendant environ 2 ans et demi.                                                                                          |
+| Cela comprend environ 6 mois de traitement et 2 ans de suivi après le début du traitement.                                                                                                                                                                                                                                                                                                                                                              |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| La participation à la sous-étude R2 est volontaire et ne vous coûte rien de plus que le coût de votre traitement standard. Vous ne recevrez aucune compensation pour votre participation à cette partie de l'essai. Si quelque chose vous arrive pendant l'étude, le promoteur de cette étude a souscrit une assurance pour couvrir tous les frais liés à l’essai.                                                                                      |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| L'investigateur informera les médecins traitants de votre participation à cet essai. Vous ne pouvez participer à un autre essai clinique interventionnel sans en informer l'investigateur ou le personnel de l'essai. Vous devez également communiquer toutes les informations pertinentes relatives à votre état de santé, aux autres médicaments pris ou aux symptômes ressentis.                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| L'essai et les documents relatifs à l'essai ont été examinés et approuvés par les autorités européennes et un comité d'éthique indépendant en Belgique. Les donnés seront confidentielles.                                                                                                                                                                                                                                                              |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Veuillez prendre le temps de lire attentivement ce document. Vous pouvez en discuter avec les membres de votre famille, vos amis ou vos médecins. Votre participation à cette sous-étude est entièrement volontaire. Si vous décidez de ne pas participer, cela n'aura aucune incidence sur vos soins médicaux futurs.                                                                                                                                  |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Si vous décidez de participer, vous êtes libre de retirer votre consentement à tout moment, sans donner de raison et sans aucune conséquence négative pour votre traitement.                                                                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Si vous avez des questions concernant cet essai, veuillez me contacter ou contacter mon équipe en utilisant les coordonnées figurant sur la première page de ce document.                                                                                                                                                                                                                                                                               |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Cordialement,                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Votre chercheur                                                                                                                                                                                                                                                                                                                                                                                                                                         |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+CHAPITRE I - DESCRIPTION DE L'ESSAI ET DROITS DES PARTICIPANT(E)S
+
+Pourquoi mener cette sous-étude ?
+
+Cette sous-étude (étude R2 FORUX) fait partie de l'essai plateforme FORUM2 plus large, qui vise à optimiser la façon dont la greffe de cellules souches est réalisée pour les enfants et les jeunes atteint(e)s de leucémie aiguë lymphoblastique (LLA).
+
+Pour les patients chez lesquels un diagnostic de LLA à haut risque ou récidivante a été posé, une greffe allogénique de cellules souches (GCS) est l'un des traitements recommandés. Cela signifie que vous recevrez des cellules souches saines provenant d'un donneur compatible. Cette approche fait partie des soins de routine pour ce type de LLA et a révélé améliorer la survie à long terme.
+
+La maladie aiguë du greffon contre l'hôte (GvHDa) est une complication possible qui peut survenir après avoir reçu une greffe de cellules souches d'un donneur ou d'une donneuse. La GvHD aiguë se produit lorsque les cellules immunitaires du donneur ou de la donneuse (contenues dans le greffon) attaquent votre corps, l’identifiant à tort comme étranger. Cette réponse immunitaire provoque une inflammation et des lésions tissulaires, et elle peut sérieusement affecter le succès de la greffe.
+
+Des traitements préventifs (appelés prophylaxie) peuvent réduire le risque de développer une GvHDa, mais cette complication touche encore 30 % à 50 % des patient(e)s recevant une greffe, selon les facteurs de risque individuels.
+
+Le traitement standard de première ligne pour la GvHDa est les corticostéroïdes. Malheureusement, ceux-ci ne conduisent à une guérison complète que chez environ 40 % à 50 % des patient(e)s. Pour les patient(e)s qui ne répondent pas bien aux stéroïdes (une condition connue sous le nom de GvHDa réfractaire aux stéroïdes, ou GvHDa-RS), le pronostic est souvent mauvais. Si les corticostéroïdes ne fonctionnent pas assez bien, les médecins peuvent utiliser des traitements de deuxième ligne.
+
+Un nouveau médicament, le ruxolitinib, a montré de meilleurs résultats que d'autres options de deuxième ligne dans des études cliniques menées chez des patient(e)s atteint(e)s de GvHDa-RS. Le ruxolitinib est un médicament ciblé pris par voie orale qui bloque des protéines spécifiques (JAK1 et JAK2) impliquées dans la réponse immunitaire responsable du développement de la GvHD. Il est maintenant approuvé pour une utilisation chez les enfants et les adultes atteint(e)s de GvHD aiguë ou chronique et qui n'ont pas bien répondu aux stéroïdes ou à d'autres traitements systémiques.
+
+L'objectif de cette sous-étude est d'améliorer le traitement des enfants et adolescent(e)s atteint(e)s de maladie aiguë du greffon contre l'hôte (GvHDa) nouvellement diagnostiquée en testant si l'ajout du ruxolitinib au traitement standard par corticostéroïdes comme premier traitement conduit à de meilleurs résultats que l'utilisation de corticostéroïdes seuls.
+
+Cette sous-étude vise à déterminer si commencer le ruxolitinib administré tôt, avec les corticostéroïdes, peut :
+
+- Augmenter la probabilité de succès du traitement (taux de réponse global)
+
+- Prévenir la progression vers des formes plus sévères de GvHDa
+
+- Réduire le besoin de traitements stéroïdiens ou autres immunosuppresseurs à long terme
+
+- Améliorer la survie, la récupération du système immunitaire et la qualité de vie globale
+
+En participant à cette sous-étude, les chercheurs et chercheuses espèrent proposer une option de traitement de première ligne plus efficace et plus sûre pour les enfants atteint(e)s de GvHDa, et réduire les risques à long terme associés à l'utilisation prolongée actuelle de stéroïdes, tels que les infections, l'hyperglycémie, la perte osseuse ou les retards de croissance.
+
+La sous-étude FORUX (R2) est un essai clinique de phase III, ce qui signifie qu'elle est conçue pour comparer rigoureusement le nouveau traitement combiné au traitement de soins standard actuel dans un plus grand groupe de patient(e)s pédiatriques. Si les résultats sont positifs, cette combinaison pourrait devenir le nouveau traitement standard de première ligne pour la GvHDa chez les enfants et adolescents.
+
+La sous-étude aura lieu dans environ 90 centres dans 20 pays d'Europe. 192 enfants et ados de 3 mois à 18 ans y participeront. Tous les centres participants sont des centres de transplantation expérimentés qui suivent des protocoles internationaux stricts. On estime qu'un(e) patient(e) belge par an participera à cette sous-étude.
+
+Pourquoi me propose-t-on de participer ?
+
+Vous avez reçu un diagnostic de maladie aiguë du greffon contre l'hôte (GvHDa), une complication possible qui peut survenir après avoir reçu une greffe de cellules souches d'un donneur ou d'une donneuse (appelée greffe allogénique de cellules souches hématopoïétiques, ou GCSH).
+
+Nous vous demandons de donner votre consentement pour participer à cette sous-étude R2 FORUX, car nous voulons vérifier si la combinaison de ruxolitinib et de corticostéroïdes est sûre et plus efficace par rapport aux corticostéroïdes seuls pour le traitement de la GvHDa nouvellement diagnostiquée qui n'a reçu aucun traitement systémique.
+
+Ai-je l’obligation de participer à un essai ?
+
+Votre participation à un essai est volontaire et doit rester libre de toute contrainte. Cela signifie que vous avez le droit de ne pas participer à l'essai ou de vous en retirer à tout moment sans donner de raison, même si vous avez déjà accepté d'y participer. Votre décision n'affectera pas la relation avec l'investigateur ou votre médecin traitant, ni la qualité de vos soins médicaux futurs.
+
+Si d'autres traitements sont disponibles pour la GCSH dans le cas de la LLA, l'investigateur ou son délégué discutera de ces traitements avec vous.
+
+Que se passera-t-il pendant la sous-étude? 
+
+Si vous acceptez de participer, la première étape sera la période de sélection, qui est le temps entre la signature du formulaire de consentement éclairé et le début du traitement. Cette période est conçue pour confirmer que vous remplissez les critères d'éligibilité pour participer à l'étude.
+
+La période de sélection commencera lorsque vous recevrez un diagnostic de GvHDa de grade II non traitée et durera au maximum 7 jours. Pendant ce temps, plusieurs évaluations médicales seront effectuées, notamment :
+
+- Examen de vos antécédents médicaux et de votre état de santé actuel
+
+- Examen physique
+
+- Analyses sanguines
+
+- Autres évaluations cliniques pour écarter d'autres diagnostics possibles et confirmer la GvHDa
+
+Toutes les procédures de sélection sont effectuées dans le cadre des soins habituels et ne sont pas spécifiques à l'étude. Certaines procédures auront été effectuées avant la période de sélection. Aucune procédure spécifique à l'étude ne sera effectuée avant la signature du formulaire de consentement éclairé.
+
+Une fois que votre éligibilité est confirmée, le traitement commencera rapidement, idéalement dans les 48 heures suivant la randomisation, pour réduire le risque de progression de la maladie et éviter des retards inutiles. Avec la randomisation, vous serez assigné(e) au hasard à l'un des deux groupes de traitement, soit (1) ruxolitinib en combinaison avec des corticostéroïdes, soit (2) corticostéroïdes seuls, qui est le traitement standard actuel :
+
+- Groupe 1
+
+Vous recevrez du RUXOLITINIB en combinaison avec des corticostéroïdes (méthylprednisolone 2 mg/kg/jour ou prednisone équivalente), ainsi qu'un inhibiteur de la calcineurine (ciclosporine A ou tacrolimus).
+
+- Le ruxolitinib est un médicament oral qui se prend par la bouche sous forme de comprimés ou de formulation liquide.
+
+- La dose exacte et le calendrier du ruxolitinib seront déterminés en fonction de votre âge et de votre poids et seront administrés quotidiennement en parallèle aux corticostéroïdes.
+
+- Groupe 2 – Traitement standard (groupe témoin) :
+
+  Vous recevrez des corticostéroïdes seuls (méthylprednisolone 2 mg/kg/jour ou prednisone équivalente), ainsi qu'un inhibiteur de la calcineurine (ciclosporine A ou tacrolimus).
+
+- Cela représente le traitement de soins standard actuel utilisé en pratique clinique.
+
+[Afbeelding met tekst, schermopname, Lettertype, Parallel Door AI gegenereerde inhoud is mogelijk onjuist.]
+
+La période de traitement prévue pour la GvHDa dans cette étude est de 24 semaines (environ 6 mois). Vous visiterez régulièrement l'hôpital comme d'habitude. Ces visites auront lieu chaque semaine pendant les 8 premières semaines, puis une fois toutes les 4 semaines jusqu'à la fin de la période de traitement, qui devrait durer environ 6 mois (24 semaines) à partir du début du traitement.
+
+Le traitement commencera au jour 1 de l'étude et se poursuivra à moins que l'un des événements suivants ne se produise plus tôt :
+
+- Échec du traitement (aucune réponse ou aggravation de la GvHD)
+
+- Réponse mixte (amélioration partielle avec une certaine aggravation)
+
+- Rechute (réapparition des symptômes)
+
+- Survenue d'événements indésirables graves
+
+- Retrait de l'étude ou décès
+
+Pendant la période de traitement, les soins seront adaptés en fonction de votre réponse à la thérapie. La réponse sera formellement évaluée pour la première fois au jour 28 de l'étude.
+
+- En cas d'amélioration (réponse partielle ou complète) au jour 28 :
+
+Groupe expérimental (ruxolitinib + corticostéroïdes) : Le ruxolitinib sera poursuivi à la dose prescrite au moins jusqu'au jour 42, tandis que les corticostéroïdes seront progressivement réduits après obtention d'une réponse complète. Si la situation est stable, le médecin peut commencer à réduire le ruxolitinib après le jour 42 selon son jugement clinique. La réduction devrait idéalement être terminée à la semaine 24, sauf indication médicale de continuer plus longtemps.
+
+Groupe corticostéroïdes seuls : Les corticostéroïdes peuvent être réduits selon les directives standard même avant le jour 28 après obtention d'une réponse complète, selon la condition clinique.
+
+- Si aucune amélioration n'est constatée au jour 28 :
+
+Groupe expérimental : Le traitement sera considéré comme un échec. Le médecin de l'étude peut prescrire des thérapies systémiques supplémentaires en fonction des besoins médicaux. Le patient ou la patiente entrera alors dans la phase de suivi à long terme tout en restant surveillé(e) de près dans le cadre de l'essai clinique.
+
+Groupe corticostéroïdes seuls : Le médecin peut commencer le ruxolitinib à tout moment pendant la période de traitement si les critères de GvHDa réfractaire aux stéroïdes sont remplis. S'il est commencé avant le jour 28, cela sera enregistré comme un échec du traitement à des fins d'analyse. S'il est commencé après le jour 28, cela sera considéré comme un "changement" formel vers le traitement expérimental.
+
+Les patient(e)s qui passent au ruxolitinib après avoir commencé dans le groupe corticostéroïdes seuls suivront le même plan de traitement et de réduction que ceux qui ont commencé avec le ruxolitinib. Ils seront surveillés chaque semaine pendant 8 semaines après le début du ruxolitinib, puis mensuellement jusqu'à la fin de la réduction.
+
+Dans tous les cas, les patient(e)s recevant du ruxolitinib continueront à prendre des corticostéroïdes et un inhibiteur de la calcineurine (ciclosporine A ou tacrolimus) selon la pratique standard, à moins que le médecin n'identifie des contre-indications spécifiques. La réduction de ces médicaments sera basée sur la réponse au traitement.
+
+Environ 30 jours après avoir pris la dernière dose du médicament de l'étude, le médecin de l'étude vous contactera (par téléphone ou pour planifier une visite) pour une évaluation de suivi de sécurité afin de vérifier votre état de santé général.
+
+Après la période de traitement, vous serez invité(e) à revenir à l'hôpital ou au centre d'étude pour des visites de suivi à long terme à 9, 12, 18 et 24 mois après le début du traitement. Ces visites sont importantes pour une surveillance continue de la santé et sont effectuées dans le cadre des soins standard.
+
+Selon la réponse au traitement ou si les symptômes de GvHD réapparaissent, le médecin de l'étude peut décider de continuer ou de réduire progressivement le traitement jusqu'à 24 semaines supplémentaires (environ 6 mois). Dans de tels cas, les visites d'étude continueront toutes les 4 semaines comme décrit ci-dessus.
+
+La visite de "fin de traitement" sera programmée à la fin de la prise de ruxolitinib, à la semaine 24, à la semaine 48 ou plus tôt selon la décision clinique du médecin de l'étude. Si le traitement se termine avant la semaine 24, les visites et évaluations de suivi continueront selon le calendrier prévu.
+
+Toutes les visites et tous les examens sont effectués dans le cadre du traitement de soins standard (pas de visites ou d'examens spécifiques à l'étude). Les éléments suivants sont spécifiques à l'étude dans cette sous-étude :
+
+- remplir des questionnaires pour évaluer votre qualité de vie (voir ci-dessous)
+
+- prises de sang (voir ci-dessous)
+
+Les procédures ou examens standard pour le traitement de votre maladie (c'est-à-dire les soins standard) vous seront facturés ou remboursés par votre mutuelle (sécurité sociale belge). Si vous avez besoin de plus de détails ou si vous n'êtes pas affilié(e) à une mutuelle (sécurité sociale belge), veuillez contacter le personnel de l'essai.
+
+Questionnaires sur la qualité de vie
+
+Pendant cette sous-étude, votre qualité de vie sera évaluée avec des questionnaires que vous devrez remplir aux moments suivants :
+
+- avant le début de votre traitement avec ruxolitinib
+
+- jour 28 après le début du traitement
+
+- jour 56 après le début du traitement
+
+- jour 100 après le début du traitement
+
+- jour 168 après le début du traitement
+
+- pour 30 après la dernière dose de médicament
+
+Pour la sous-étude, les patient(e)s à partir de 18 ans devront remplir les questionnaires FACT-BNT et Eq-5D. Pour les patient(e)s entre 2 et 18 ans, il faudra remplir un questionnaire PEDsQL et un module PEDsQL sur la greffe de cellules souches. Chaque fois que vous remplirez le questionnaire, cela prendra environ 20 minutes. Pour cette sous-étude, il faudra au total environ 2 heures pour remplir ces questionnaires.
+
+Échantillons sanguins
+
+En plus des tests de laboratoire de routine, des échantillons de sang spécifiques à l'étude seront prélevés pour :
+
+- Analyse de biomarqueurs
+
+- Analyse pharmacocinétique (PK), pour comprendre comment le ruxolitinib est absorbé, distribué, métabolisé et éliminé par l'organisme
+
+Des échantillons de sang seront prélevés aux moments prévus dans les soins standard (aucune visite d'étude supplémentaire nécessaire) et seront combinés avec des échantillons de sang prélevés dans le cadre des soins standard. Il est possible qu'une ponction supplémentaire soit nécessaire pour les échantillons de sang pharmacocinétiques, car cela nécessite également des échantillons de sang prélevés après l'administration du ruxolitinib.
+
+Des échantillons de sang spécifiques à l'étude sont prélevés aux moments suivants, spécifiés dans le tableau ci-dessous :
+
+Des échantillons pour l'analyse pharmacocinétique seront prélevés avant la première dose, chaque semaine jusqu'au jour 28 (±3 jours), et à nouveau au jour 42 (±3 jours) et au jour 56 (±3 jours). Des échantillons pré-dose et post-dose seront prélevés.
+
+Si le médecin de l'étude vous le demande, les jours où des échantillons pharmacocinétiques sont nécessaires, vous prendrez la dose de ruxolitinib à l'hôpital ou au centre d'étude sous la supervision du personnel de recherche. Vous ne devez pas prendre le médicament à la maison ces jours-là. Si une dose est oubliée ou prise incorrectement, il est très important d'en informer immédiatement le médecin de l'étude.
+
+  ------------------------------------------------------------------------------------------------------
+                                        Biomarqueurs    Échantillon pK*   Questionnaire qualité de vie
+                                        (sang 2.5ml)    (sang 2.5ml)      
+  ------------------------------------- --------------- ----------------- ------------------------------
+  Jour 1 (avant le traitement)          x               x                 x
+
+  Jour 7 ruxolitinib                    x               x                 
+
+  Jour 14 ruxolitinib                   x               x                 
+
+  Jour 21 ruxolitinib                   x               x                 
+
+  Jour 28 ruxolitinib                   x               x                 x
+
+  Jour 42 ruxolitinib                   x               x                 
+
+  Jour 56 ruxolitinib                   x               x                 x
+
+  Jour 84 ruxolitinib                   x                                 
+
+  Jour 100 ruxolitinib                                                    x
+
+  Jour 112 ruxolitinib                  x                                 
+
+  Jour 140 ruxolitinib                  x                                 
+
+  Jour 168 ruxolitinib**                                                  x
+
+  Fin du traitement**                   x                                 
+
+  30 jours après la fin du traitement                                     x
+  ------------------------------------------------------------------------------------------------------
+
+*Prélèvement sanguin avant et après administration de ruxolitinib.
+
+**Le jour 168 et la fin du traitement peuvent être au même moment si le traitement est arrêté à la semaine 24.
+
+Tous les échantillons biologiques prélevés seront codés. Cela signifie que votre nom et vos identifiants personnels seront remplacés par un code unique connu uniquement de l'équipe de l'étude. Les échantillons seront envoyés au promoteur coordonnateur de l'étude (Hôpital pédiatrique Bambino Gesù à Rome, Italie).
+
+Des analyses génétiques seront également réalisées sur vos échantillons. Ces analyses fournissent des informations essentielles pour la sous-étude et le traitement futur de votre maladie. Si vous ne souhaitez pas que ces analyses soient effectuées, vous ne pouvez pas participer à la sous-étude.
+
+Quels avantages tirerai-je de la sous-étude? 
+
+Le ruxolitinib peut ou non être bénéfique pour traiter votre LLA ou soulager vos symptômes. Même s'il vous est bénéfique, un retour ou une aggravation des symptômes, de la maladie ou de l'affection est toujours possible.
+
+Les informations obtenues lors d'un essai peuvent contribuer à une meilleure compréhension de l'utilisation du médicament expérimental ruxolitinib et peuvent améliorer les soins et les résultats pour vous-même et les futur(e)s patient(e)s atteint(e)s de LLA subissant une greffe de cellules souches.
+
+Des analyses génétiques seront également réalisées sur vos échantillons. Ces analyses fournissent des informations essentielles pour l'étude et le traitement futur de votre maladie. Si vous ne souhaitez pas que ces analyses soient effectuées, vous ne pourrez pas participer à la sous-étude.
+
+Quels sont les risques et désagréments possibles de la participation ?
+
+1.  Quels sont les effets secondaires possibles ?
+
+La participation à l’essai implique des risques.
+
+Si vous décidez de participer à cette sous-étude, il est important de comprendre que le traitement expérimental, à savoir la combinaison de ruxolitinib et de corticostéroïdes, peut ne pas être plus efficace que le traitement standard actuel de corticostéroïdes seuls. Dans certains cas, il peut être moins efficace ou pourrait potentiellement être associé à un risque accru de rechute leucémique, bien que les preuves actuelles n'indiquent pas cela de manière concluante.
+
+Si vous ne répondez pas complètement au traitement ou si les symptômes de GvHDa s'aggravent, des thérapies supplémentaires seront fournies en fonction des besoins cliniques. Quel que soit le groupe de traitement auquel vous êtes assigné(e), vous continuerez à être suivi(e) et surveillé(e) de près tout au long de l'étude.
+
+Il existe également un risque que le traitement expérimental puisse causer des effets secondaires plus fréquents ou plus graves que la thérapie standard. Par exemple, combiner le ruxolitinib avec des corticostéroïdes peut entraîner :
+
+- Un risque accru d'infections
+
+- Une diminution du nombre de cellules sanguines, telles que les globules rouges (anémie), les globules blancs (leucopénie), les neutrophiles (neutropénie) et les plaquettes (thrombocytopénie)
+
+Dans des études antérieures impliquant des patient(e)s pédiatriques atteint(e)s de GvHDa, les effets secondaires les plus courants liés au traitement incluaient :
+
+- Anémie
+
+- Faible nombre de globules blancs
+
+- Faible nombre de neutrophiles
+
+Certain(e)s patient(e)s ont subi des effets secondaires graves, tels que :
+
+- Infections
+
+- Fièvre (pyrexie)
+
+- Problèmes rénaux (lésion rénale aiguë)
+
+- Septicémie (infection potentiellement mortelle)
+
+La participation à cette sous-étude peut comporter des risques liés au ruxolitinib et à des procédures telles que les prélèvements sanguins. Les effets secondaires peuvent varier d'une personne à l'autre. Ce document inclut à la fois les effets secondaires courants et les effets secondaires rares, mais graves, connus pour être associés au ruxolitinib. Vous êtes encouragé(e) à discuter de toute préoccupation avec le médecin de l'étude, y compris les effets secondaires possibles non répertoriés ici.
+
+De nombreux effets secondaires se résolvent peu de temps après l'arrêt ou l'ajustement du médicament. Cependant, certains effets secondaires peuvent être graves, durables ou permanents et, dans de rares cas, pourraient être mortels.
+
+Effets secondaires du ruxolitinib
+
+Chez les patient(e)s traité(e)s pour d'autres conditions (telles que la myélofibrose ou la polycythémie vraie), les effets secondaires très fréquents (survenant chez plus d'1 personne sur 10) incluaient :
+
+- Faible nombre de globules rouges (anémie), ce qui peut causer de la fatigue, une peau pâle ou un essoufflement
+
+- Faible nombre de globules blancs (neutropénie), ce qui peut augmenter le risque d'infection
+
+- Faible nombre de plaquettes (thrombocytopénie), ce qui peut entraîner des ecchymoses ou des saignements faciles
+
+- Infections urinaires
+
+- Augmentation du taux de cholestérol ou de triglycérides
+
+- Maux de tête, étourdissements, prise de poids
+
+- Constipation, hypertension artérielle, résultats de tests hépatiques altérés
+
+- Zona (herpès zoster), ce qui peut causer une éruption cutanée ou des cloques douloureuses
+
+Dans la plupart des cas, les changements dans le nombre de cellules sanguines sont réversibles et peuvent être gérés en réduisant temporairement ou en arrêtant le ruxolitinib. Vous serez surveillé(e) régulièrement par le biais d’analyses de sang, et si vos taux de cellules ne se rétablissent pas rapidement, le ruxolitinib peut être mis en pause plus longtemps ou repris à une dose inférieure.
+
+Effets indésirables fréquents (peuvent toucher 1 à 10 personne(s) sur 100) :
+
+- Excès de gaz intestinaux (flatulences)
+
+- Réduction des trois types de cellules sanguines (pancytopénie)
+
+Dans de rares cas (moins d'1 personne sur 100), une tuberculose a été signalée. Les symptômes peuvent inclure une toux chronique, des crachats de sang, de la fièvre, des sueurs nocturnes et une perte de poids. Informez immédiatement le médecin de l'étude si vous ressentez l'un de ces symptômes.
+
+L'effet du ruxolitinib sur la réplication virale chez les personnes atteintes d'hépatite B chronique n'est pas connu. Si vous avez déjà eu une hépatite virale, signalez-le au médecin de l'étude. Les enfants atteint(e)s d'infection virale active ne seront pas traité(e)s avec du ruxolitinib.
+
+Il y a eu de rares rapports de leucoencéphalopathie multifocale progressive (LEMP), une infection cérébrale grave, parmi les patient(e)s ayant subi une greffe allogénique de cellules souches, y compris certain(e)s recevant du ruxolitinib. Bien que nous ignorons si le ruxolitinib a causé la LEMP, signalez immédiatement tout symptôme tel que confusion, difficultés d'élocution, faiblesse d'un côté du corps ou problèmes de vision.
+
+Des cas de cancers cutanés non mélanomes (CCNM), y compris carcinome basocellulaire, carcinome épidermoïde et le rare carcinome à cellules de Merkel, ont été signalés chez des patient(e)s traité(e)s avec du ruxolitinib. Ceux-ci peuvent également être liés à des traitements antérieurs ou à une maladie sous-jacente. Signalez au médecin toute lésion cutanée nouvelle ou inhabituelle.
+
+Dans des études sur les animaux, un retard de croissance osseuse et des fractures ont été observés chez de très jeunes animaux traités avec des doses élevées de ruxolitinib. Bien que ces résultats soient survenus à des doses plus élevées que celles utilisées dans cette sous-étude, la plus grande préoccupation concerne les enfants de moins de 2 ans, en particulier ceux de moins d'1 an. L'équipe médicale surveillera la croissance osseuse, et les effets potentiels devraient être réversibles, bien que la récupération complète de la croissance ne soit pas toujours garantie.
+
+Arrêter brusquement le ruxolitinib peut également entraîner des risques pour la santé. Chez les patient(e)s atteint(e)s de GvHDa ou de myélofibrose, l'arrêt brutal a été associé à une réapparition des symptômes ou à des réactions inflammatoires, y compris anxiété, insomnie, faiblesse ou aggravation de la maladie. Si vous devez arrêter le traitement, cela se fera sous surveillance médicale étroite.
+
+Il est donc très important que vous signaliez immédiatement à l'investigateur tout problème de santé nouveau ou aggravé, que vous pensiez ou non qu'il soit lié à la sous-étude, et même s'il est déjà décrit dans ce document. Si vous devez prendre d'autres médicaments, parlez-en avec l'investigateur avant de les prendre. Si, pour une raison quelconque, vous consultez un autre médecin traitant pendant l'essai, vous devez l'informer que vous participez à un essai. Cela pourrait être important pour établir un diagnostic et vous donner le bon traitement si nécessaire.
+
+Pendant le traitement par ruxolitinib, prévenez immédiatement le médecin de l'étude si vous :
+
+- Développez des ecchymoses inhabituelles, des saignements, une fatigue extrême, un essoufflement ou des infections fréquentes
+
+- Présentez des signes de zona (éruption cutanée douloureuse avec cloques)
+
+- Avez une toux persistante avec du sang, de la fièvre, des sueurs nocturnes ou une perte de poids (signes possibles de tuberculose)
+
+- Ressentez de la confusion, une faiblesse, des troubles visuels ou des difficultés à parler ou à marcher (signes possibles de LEMP)
+
+- Avez des changements dans vos médicaments prescrits ou développez de nouveaux problèmes médicaux
+
+- Développez des lésions cutanées nouvelles ou changeantes, qui peuvent nécessiter un examen supplémentaire
+
+- Devenez enceinte ou, si vous êtes un homme, avez engendré ou pensez avoir engendré une grossesse pendant l'étude
+
+  1.  Quels sont les risques ou les désagréments possibles des examens pendant l'essai ?
+
+Tous les examens font partie des soins habituels. L'équipe médicale combinera autant que possible les prélèvements de sang pour l'étude avec les prises de sang de routine. Le prélèvement de sang peut causer de la douleur, des saignements, des ecchymoses ou une infection localisée autour du site d'injection. De même, certains participants peuvent ressentir de l’étourdissement ou même s'évanouir pendant la procédure. Le personnel de l’essai chargé de la prise de sang fera tout son possible pour minimiser ces désagréments.
+
+2.  Puis-je prendre d'autres médicaments pendant l'essai ?
+
+N'hésitez pas à demander à votre investigateur plus d'explications sur l'utilisation de médicaments ou de compléments alimentaires (y compris l'aromathérapie, la phytothérapie, l'homéopathie, etc.).
+
+3.  Ma participation à l'essai aura-t-elle un impact sur mes activités quotidiennes ?
+
+Nous voulons nous assurer que l'essai se déroule sans heurts. C'est pourquoi nous conclurons avec vous les accords suivants :
+
+- Vous prendrez tous les médicaments de la manière prescrite.
+
+- Pendant cet essai, vous ne participerez pas à un autre essai médical scientifique, à moins que le promoteur n'ait donné son accord avant la participation.
+
+- Veuillez contacter l'investigateur ou un membre de l'équipe infirmière de recherche dans les situations suivantes :
+
+  o Vous allez commencer à prendre d'autres médicaments. Y compris les médicaments homéopatiques, les remèdes naturels, les vitamines autres médicaments sans ordonnance.
+
+  o Vous devez être admis(e) à l'hôpital ou y recevoir un traitement.
+
+  o Vous avez soudainement des problèmes de santé.
+
+  o Vous ne souhaitez plus participer à l'essai.
+
+  o Votre numéro de téléphone, votre adresse ou votre adresse électronique ont changé.
+
+4.  Puis-je tomber enceinte, concevoir un enfant ou allaiter pendant l'essai ?
+
+Les études chez l'animal suggèrent que le ruxolitinib peut nuire au fœtus ou au nouveau-né. Si vous tombez enceinte ou pensez l'être pendant l'étude ou dans les 30 jours suivant la fin du traitement, prévenez immédiatement le médecin de l'étude et arrêtez de prendre le médicament. Vous ne pourrez pas continuer le traitement pendant la grossesse.
+
+Une perte de fertilité est à prévoir chez les hommes et les femmes après une greffe de cellules souches hématopoïétiques, bien que le risque individuel dépende de l'âge, de la dose et du sexe. Votre médecin traitant discutera en détail avec vous des options possibles pour préserver votre fertilité.
+
+Si vous êtes une femme, vous ne devez pas tomber enceinte pendant l'essai et pendant au moins 12 mois après la fin du traitement. En outre, vous ne devez pas conserver d'ovules pour votre propre usage ou pour un don après le début du traitement et pendant au moins 12 mois après le dernier traitement. Vous ne devez pas allaiter pendant la durée de l’essai.
+
+Si vous êtes un homme, vous ne pouvez pas provoquer une grossesse en donnant du sperme avant au moins 6 mois après le dernier traitement.
+
+Si vous pouvez tomber enceinte et que vous êtes hétérosexuellement active, ou si vous avez une partenaire qui peut tomber enceinte, le médecin traitant ou un membre du personnel infirmier vous expliquera les différents types de contraceptifs que vous devez utiliser pendant et après l'essai.
+
+Votre investigateur discutera avec vous des formes de contraception appropriées. Si vous décidez de participer à cet essai, vous (ou la partenaire féminine du participant qui peut tomber enceinte) devez utiliser l'une des méthodes contraceptives reconnues (pour éviter que vous ou la partenaire féminine ne tombiez enceinte). Si vous ou votre partenaire utilisez une contraception hormonale orale, vous devrez également utiliser une méthode barrière telle que des préservatifs.
+
+Si vous ou votre partenaire tombez enceinte pendant cet essai, prévenez immédiatement l'investigateur ou investigatrice ou le personnel de l'essai. Si vous tombez enceinte, le médecin traitant discutera des prochaines étapes du traitement. L'investigateur suivra la grossesse et informera le promoteur de son issue. Pour des raisons de sécurité, l'investigateur souhaite surveiller la grossesse et son issue et peut être amené à partager ces données avec le promoteur afin de se conformer à la réglementation en matière de surveillance et de communication des informations relatives à la sécurité. Vous/votre partenaire recevrez un document informatif distinct à ce sujet et un consentement distinct devra être accordé.
+
+Même si vous ne participez pas à cette étude, vous recevrez une GCSH et il est également important de ne pas tomber enceinte ou de ne pas mettre quelqu'un enceinte en dehors de cette étude.
+
+Que se passe-t-il si un problème survient au cours de l'essai ?
+
+Même s'il n'y a pas de faute, le promoteur est responsable des dommages qui vous sont causés, qu'ils soient directement ou indirectement liés à votre participation à l'essai. Le promoteur a souscrit une assurance appropriée (dite "Assurance sans faute") pour couvrir cette responsabilité Une copie du certificat d'assurance peut être obtenue auprès de l'investigateur ou du personnel de l'essai.
+
+Si vous (ou en cas de décès, vos ayants droit) cherchez à obtenir une indemnisation pour une atteinte à votre santé résultant directement ou indirectement de votre participation à l'essai, vous devez en informer rapidement votre investigateur ou le personnel de l'essai.
+
+Si l'investigateur estime qu'un lien entre le(s) problème(s) de santé nouveau(x) ou aggravé(s) et l'essai est possible, il en informera le promoteur de l'essai. Ce dernier entamera alors immédiatement la procédure de déclaration auprès de sa compagnie d'assurance. Si la compagnie l'estime nécessaire, elle désignera un expert pour évaluer s'il existe un lien entre votre/vos problème(s) de santé signalé(s) et l'essai. L'assurance ne couvre pas l'évolution naturelle de votre maladie/condition ou les effets secondaires connus du traitement que vous auriez reçu sans participer à l'essai (c'est-à-dire votre traitement standard).
+
+Si vous le jugez opportun ou si vous ou vos ayants droit n'êtes pas d'accord avec l'investigateur ou avec l'expert désigné par la compagnie d'assurance, vous pouvez contacter la compagnie d'assurance ou engager une procédure contre la compagnie d'assurance. Vous trouverez les coordonnées de contact sur la première page de ce formulaire.
+
+Que se passe-t-il si d'autres options thérapeutiques ou de nouvelles informations sont disponibles au cours de l'essai ?
+
+Au cours de l'essai, de nouvelles informations importantes pourraient être disponibles, ce qui pourrait influencer votre décision de participer ou non à l'essai. Par exemple, d'autres traitements pour votre maladie ou de nouvelles informations importantes pourraient être disponibles. Il est du devoir de l'investigateur de discuter de ces nouvelles informations avec vous et de vous donner la possibilité de reconsidérer votre participation à l'essai.
+
+Si vous décidez d'arrêter de participer à l'essai ou si vous n'êtes plus en mesure de le faire, votre investigateur veillera à ce que vous continuiez à recevoir les meilleurs soins médicaux possibles.
+
+Ma participation à l'essai peut-elle prendre fin prématurément ?
+
+Comme expliqué en détail ci-dessous, votre participation à l'essai peut prendre fin prématurément dans les cas suivants
+
+- vous décidez de retirer votre consentement ou
+
+- l'investigateur décide de mettre fin à votre participation à l'essai, ou
+
+- d'autres entités interrompent ou mettent fin à l'essai.
+
+Dans tous les cas, si votre participation à l'essai prend fin prématurément, l'investigateur discutera de vos futurs soins médicaux avec vous. Les données collectées avant que vous ne mettiez fin à votre participation continueront d'être utilisées comme décrit dans ce formulaire. Le but est d'éviter de fausser/biais les résultats de l'essai (comme décrit au chapitre I. § 12.3).
+
+En fonction de votre situation, l'investigateur discutera avec vous de la nécessité d'effectuer des visites ou des procédures de suivi.
+
+1.  Vous décidez de retirer votre consentement.
+
+Vous avez le droit de retirer votre consentement pour quelque raison que ce soit, à tout moment, sans avoir à justifier votre décision. Toutefois, pour votre sécurité, vous devez informer l'investigateur de cette décision. Bien que cela ne soit pas obligatoire, il peut être utile pour l'investigateur et le promoteur de connaître les raisons de cette décision (par exemple les effets secondaires, la fréquence des visites cliniques...).
+
+Si vous retirez votre consentement, veuillez en discuter avec le chercheur afin d'évaluer les modalités pratiques du retrait (compte tenu de votre situation). Aucune nouvelle donnée ne pourra être collectée et envoyée au promoteur.
+
+2.  L'investigateur décide de mettre fin à votre participation à l'essai
+
+L'investigateur peut mettre fin à votre participation à l'essai pour les raisons suivantes
+
+- il/elle pense que c'est mieux pour vous.
+
+- il/elle détermine que vous ne suivez pas les instructions données aux participant(e)s, ou
+
+- toute autre raison qui vous sera expliquée,
+
+- l'étude entière doit être interrompue pour tous les participants (voir paragraphe suivant).
+
+Si cela se produit, le personnel de l'essai vous expliquera pourquoi et assurera un suivi approprié.
+
+1.  D'autres entités peuvent interrompre ou mettre fin à l'essai
+
+Le promoteur et les autorités sanitaires belges compétentes peuvent interrompre ou mettre fin à l'essai pour les raisons suivantes
+
+- les informations recueillies montrent que la sous-étude n'est pas efficace (elle n'apporte pas une amélioration suffisante de la santé des participants à l'essai) ;
+
+- les effets secondaires (graves) sont plus nombreux que prévu ; ou
+
+- toute autre raison dûment motivée par cette partie.
+
+Quel traitement recevrai-je après ma participation à l'essai ? 
+
+Si vous vous retirez de l’essai, l'investigateur évaluera votre état de santé. Si nécessaire, il/elle vous prescrira le meilleur traitement standard disponible.
+
+Ma participation à l'essai entraînera-t-elle des frais supplémentaires pour moi ?
+
+Comme décrit dans la section 4, toutes les visites et tous les examens font partie des soins habituels. Les procédures ou examens standard pour le traitement de votre maladie (c'est-à-dire les soins standard) vous seront facturés ou remboursés par votre mutuelle (sécurité sociale belge).
+
+L'étude n'entraîne aucun coût supplémentaire. Vous ne recevrez aucune compensation financière pour votre participation à cette étude.
+
+Quelles sont les données collectées à mon sujet pendant l'essai et qu'en adviendra-t-il ?
+
+1.  Quelles sont les données collectées et traitées pendant l'essai ?
+
+Les données personnelles collectées et traitées concernent des informations sur votre santé et votre état de santé. Cela comprend vos antécédents médicaux, certaines informations générales vous concernant (par exemple votre âge, votre sexe) et les résultats des examens requis par l'essai.
+
+Les données relatives à l'origine ethnique sont collectées afin de garantir que les données de recherche soient traitées dans le cadre d'une population aussi large que possible.
+
+2.  Comment l'investigateur traitera-t-il mes données personnelles ?
+
+L’investigateur (et le personnel chargé de l'essai) est tenu au secret professionnel ou à un accord de confidentialité concernant les données collectées.
+
+Cela signifie qu'il/elle ne révélera jamais votre identité, même dans une publication scientifique ou une conférence, et qu'il/elle codera vos données (réf. [1]) (c'est-à-dire qu'il/elle remplacera votre identité par un code d'identification dans l'essai) avant de les envoyer au promoteur. En d'autres termes, ce code ne contiendra aucun identifiant personnel ni aucune combinaison d'identifiants tels que le nom, le prénom, les initiales, la date de naissance complète ou partielle, le numéro de dossier, etc.
+
+Par conséquent, l'investigateur et le personnel de l'essai sous la responsabilité de l'investigateur seront les seuls à pouvoir établir un lien entre votre identité et les données transmises au cours de l'essai, sauf exceptions énumérées au point 12.5.
+
+Les données transmises au promoteur ne lui permettront pas de vous identifier.
+
+3.  Comment mes données seront-elles traitées ?
+
+Vos données seront traitées conformément à la législation européenne et belge en vigueur en matière de protection des données.
+
+La raison pour laquelle vos données à caractère personnel peuvent être traitées aux fins de l'étude est qu'elles sont traitées dans le cadre de la conduite de recherches scientifiques et de l'exécution d'une mission d'intérêt public.
+
+4.  Ai-je accès à mes données collectées et traitées pendant l'essai et puis-je les rectifier ?
+
+Vous avez le droit de demander à l'investigateur quelles données sont collectées à votre sujet et comment elles seront utilisées dans le cadre de l'essai.
+
+Vous avez le droit
+
+- de consulter et d'accéder à ces données
+
+- de recevoir les données personnelles collectées
+
+- de demander leur rectification si elles sont incorrectes
+
+- de restreindre le traitement de vos données
+
+- de retirer votre consentement au traitement des données à caractère personnel. Toutefois, les données personnelles collectées avant le retrait seront conservées afin d'éviter que les résultats de l'essai ne soient faussés.
+
+Il n'est pas possible d'effacer toutes vos données pour éviter de fausser les résultats de l'essai.
+
+1.  Qui, en dehors de l’investigateur et de son personnel de l’essai, a accès à mes données personnelles ?
+
+Pour vérifier la qualité de l'essai, il est possible que vos données personnelles non codées ou les informations de votre dossier médical pertinentes pour l'essai soient examinées par des personnes extérieures au personnel de l'essai mais sous la responsabilité de l'investigateur. Ces personnes doivent être soumises au secret professionnel ou à un accord de confidentialité. Les personnes suivantes peuvent être envisagées :
+
+- le personnel désigné par le promoteur de l'essai (moniteurs et auditeurs), et les personnes ou organisations fournissant des services au promoteur ou collaborant avec lui. Ils ne transmettront toutefois jamais votre nom et vos coordonnées au promoteur.
+
+- les inspecteurs des autorités sanitaires compétentes du monde entier
+
+- un groupe d'audit indépendant
+
+- des personnes désignées par le Comité d'éthique
+
+Pour les besoins de l'essai, les données codées de l'essai peuvent être envoyées à d'autres pays de l'UE et à des tiers :
+
+- le personnel (autre que les inspecteurs) des autorités sanitaires compétentes de Belgique (Agence fédérale des médicaments et des produits de santé, AFMPS) et d'autres pays de l'UE et de pays tiers,
+
+- le(s) comité(s) d'éthique belge(s) chargé(s) de l'évaluation,
+
+- les chercheurs externes,
+
+- le promoteur de l'essai, le personnel désigné par le promoteur et les personnes ou organisations qui fournissent des services au promoteur ou collaborent avec lui, et/ou le personnel désigné par le promoteur.
+
+- les sociétés du groupe du promoteur en Belgique et dans d'autres pays de l'UE et hors UE.
+
+Le règlement européen et la législation belge sur la protection des données imposent des exigences en matière de transfert de données vers des pays non membres de l'UE. Le promoteur doit assurer des garanties équivalentes en ce qui concerne les normes de protection des données personnelles avant de transférer les données encodées vers des pays non membres de l'UE. Si un accord de protection des données a été conclu à cette fin, une copie de cet accord peut être obtenue par l'intermédiaire de l'investigateur. Vous pouvez toujours contacter votre investigateur pour obtenir plus d'informations sur ces transferts.
+
+1.  Qu'adviendra-t-il des résultats de l'essai ?
+
+Après la clôture de l'essai, une description et les résultats de cet essai clinique seront publiés dans des revues médicales spécialisées. Une copie de la publication scientifique ou, si disponible, un résumé destiné au grand public peut être obtenu auprès de l’investigateur ou du personnel chargé de l'essai.
+
+Une description de l’essai sera également disponible sur https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en et/ou sur https://www.Clinicaltrials.gov. Vous pouvez consulter ces sites web à tout moment en utilisant les informations reprises sur la première page du formulaire de consentement éclairé. Dans un délai d'un an après la fin de l'étude, le site web reprendra un résumé des résultats conformément aux recommandations de la Commission européenne.
+
+Ces sites web ou publications ne contiendront pas d'informations permettant de vous identifier.
+
+2.  Mes données seront-elles utilisées à d'autres fins que l'essai auquel je participe ?
+
+Les résultats de l'essai seront utilisés pour répondre aux questions scientifiques de l'essai. De plus, nous aimerions utiliser vos données obtenues de cet essai pour d'autres activités de recherche et développement (et les publications scientifiques associées). Ces activités ne peuvent concerner que des recherches portant sur la même maladie ou le même médicament.
+
+Toute recherche supplémentaire en dehors de l'essai et donc non décrite dans les points ci-dessus doit recevoir l'approbation d'un comité d'éthique reconnu.
+
+Vous avez déjà acceptés ou refusés à l'utilisation de vos données d'essai à d'autres fins dans le formulaire de consentement de l’essai principal de FORUM2.
+
+3.  Combien de temps mes données seront-elles conservées ?
+
+Après la fin de l'essai, vos données codées seront conservées pendant au moins 25 ans, conformément à la réglementation européenne sur les essais cliniques, afin de garantir la validité de la recherche. Ce sera également le cas si vous avez interrompu prématurément votre participation à l'essai.
+
+ Quels sont les échantillons biologiques venant de moi prélevés au cours de l'essai et qu'en adviendra-t-il ? 
+
+1.  Quels sont les échantillons biologiques venant de moi prélevés au cours de l'essai ?
+
+Les échantillons biologiques sont des échantillons de matière provenant du corps humain. Dans le cadre de cette sous-étude, le(s) échantillon(s) biologique(s) suivant(s) sera(ont) prélevé(s) : échantillons de sang (voir chapitre I, section 4)
+
+La procédure de codification de vos échantillons biologiques est la même que celle utilisée pour vos données personnelles, conformément à la législation belge sur l'utilisation de matériel biologique humain (voir § 12.2). Les échantillons envoyés au promoteur ou aux organisations travaillant en collaboration avec le promoteur, ne seront étiquetés qu'avec votre code d'identification de l'essai. Le promoteur veille à ce que l'emplacement de vos échantillons biologiques soit toujours suivi. L'utilisation de vos échantillons biologiques est liée au traitement des données personnelles codées associées.
+
+Vos échantillons biologiques sont considérés comme un "don". Vous ne recevrez aucun avantage financier lié au développement de nouvelles thérapies dérivées de l'utilisation de vos échantillons biologiques, et qui pourraient avoir une valeur commerciale.
+
+2.  Qu'adviendra-t-il des échantillons biologiques collectés ?
+
+Ces échantillons biologiques seront analysés pour les objectifs de l'essai. Les échantillons seront envoyés au promoteur de l'étude (Hôpital pédiatrique Bambino Gesù à Rome, Italie).
+
+L'équipe de recherche effectuera également des analyses génétiques sur vos échantillons biologiques. Les analyses génétiques sont des études de l'ADN. Par exemple, l'ADN détermine la couleur de nos cheveux et de nos yeux. L'ADN peut également expliquer pourquoi certaines personnes répondent à certains médicaments et d'autres non. Il peut également expliquer pourquoi certaines personnes contractent certaines maladies et d'autres non. Le but de ces analyses génétiques est d'en savoir plus sur les niveaux de ruxolitinib qui passent dans le sang et la vitesse à laquelle l'organisme le décompose (pharmacocinétique).
+
+Ces analyses génétiques fourniront des informations essentielles pour l'essai. Si vous ne souhaitez pas que ces analyses soient effectuées, vous ne pourrez pas participer à l'essai.
+
+Comme les progrès scientifiques dans ce domaine sont constants, le promoteur souhaite, avec votre consentement, conserver les restes de vos échantillons biologiques pendant 25 ans. Le promoteur les utilisera pour des recherches supplémentaires qui restent dans le cadre de l'essai clinique actuel et donc avec la même maladie ou le même traitement/médicament que dans cet essai.
+
+Ces échantillons peuvent être utilisés à l'avenir pour des recherches liées à cette étude, telles que :
+
+Comprendre la biologie de la GvHDa
+
+Améliorer les méthodes pour diagnostiquer, surveiller ou traiter la maladie
+
+Comparer les données avec d'autres études cliniques ou développer de nouveaux critères d'évaluation cliniques
+
+Il existe deux types d'utilisation future autorisée des échantillons restants :
+
+1. Utilisation par la même équipe de recherche à des fins strictement liées à cette étude
+
+2. Utilisation par différentes équipes de recherche, mais uniquement dans le cadre de projets scientifiques conjoints alignés sur les objectifs de l'étude, portant sur la même maladie ou le même traitement/médicament
+
+À la fin de ce formulaire, vous acceptez ou refusez l'utilisation des restes de vos échantillons pour de futures recherches dans le contexte de cet essai en cochant la case appropriée au chapitre II. Toute recherche supplémentaire en dehors de l'essai doit recevoir l'approbation d'un comité d'éthique reconnu.
+
+Vous pouvez révoquer votre consentement à tout moment sans que cela n'affecte vos soins médicaux. Si vous choisissez de révoquer le consentement pour l'utilisation future des échantillons, vous pouvez demander :
+
+Que tous les échantillons restants soient rendus anonymes de façon permanente (ils ne pourront plus être liés à vous), OU
+
+Que les échantillons et les données associées soient détruits
+
+ Que se passe-t-il si l'essai révèle des informations importantes sur votre santé ?
+
+Nous pouvons découvrir de nouvelles informations sur votre santé au cours de l'essai. Si ces informations peuvent être importantes pour votre santé, le promoteur en informera le chercheur. Avec votre consentement, le chercheur vous informera, ainsi que votre médecin traitant, des résultats et des conséquences possibles. Si nécessaire, le chercheur et/ou le médecin traitant vous conseilleront sur la marche à suivre.
+
+Vous pouvez indiquer au chercheur si vous acceptez ou non d'être informé des informations significatives découvertes au sujet de votre santé en cochant la case correspondante au chapitre II. Le chercheur/votre médecin traitant vous informera de ces informations dans tous les cas où le fait de ne pas en être informé pourrait nuire gravement à votre santé ou à celle de tiers.
+
+Qui a examiné et approuvé les documents de l'essai ?
+
+Les documents de l'essai ont été revus par
+
+- Les autorités sanitaires compétentes belges (AFMPS) ou, le cas échéant, les autorités sanitaires nationales compétentes d'autres états membres de l'UE et
+
+- un comité d'éthique belge indépendant.
+
+Les autorités sanitaires compétentes et les comités d'éthique ont pour mission de protéger les personnes qui participent à un essai. Les autorités sanitaires veilleront à ce que l'essai soit mené conformément à la législation applicable.
+
+Vous ne devez en aucun cas considérer leur approbation comme une incitation à participer à l'essai.
+
+CHAPITRE II – CONSENTEMENT éclairé POUR LES PATIENTS ADULTES
+
+FORUM2 – Sous-étude FORUX - Randomisation 2 (R2)
+
+Comparaison entre ruxolitinib et corticostéroïdes versus corticostéroïdes seuls chez les enfants atteint(e)s de LLA et de maladie du greffon contre l'hôte de grade II à IV non traitée après une greffe allogénique de cellules souches hématopoïétiques
+
+Numéro de référence du participant à l'étude : _______________
+
+Version et date du protocole : ______________________________
+
+PARTICIPANT(E) : 
+
+Conditions préalables à votre participation à l'essai
+
+- Je déclare avoir lu ce formulaire et compris les informations qu'il contient.
+
+- Je déclare avoir été informé(e) et comprendre l'objectif de la sous-étude, sa durée et ses conséquences, les risques et désagréments éventuels, les précautions que je dois prendre et ce qui est attendu de moi. Mes droits m'ont été expliqués et je les ai compris.
+
+- J'ai eu suffisamment de temps pour réfléchir à ma participation à cette sous-étude et pour en discuter avec une personne de confiance (par exemple des amis, des parents, le médecin traitant...).
+
+- J'ai eu la possibilité de poser toutes les questions qui me venaient à l'esprit et j'ai obtenu une réponse satisfaisante à mes questions.
+
+- Je comprends que ma participation à cette sous-étude est volontaire et libre de toute contrainte et que je suis libre d'arrêter à tout moment ma participation à l'essai.
+
+- Je comprends que des données me concernant seront collectées et qu'elles seront traitées de manière confidentielle, comme décrit au chapitre I, §12.2.
+
+- Je suis conscient que mes données personnelles seront traitées comme décrit au chapitre I, §12.
+
+- Je comprends que les représentants du promoteur, du comité d'éthique et des autorités sanitaires compétentes auront accès à mon dossier médical s'ils y sont autorisés (comme décrit au chapitre I, §12.5).
+
+- Je comprends que le promoteur a souscrit une assurance au cas où je subirais des dommages liés à ma participation à cet essai.
+
+- Je comprends qu'en participant à cette sous-étude, je n'aurai pas d'autres frais que ceux liés au traitement standard de ma maladie.
+
+- Je comprends l'importance de la contraception et de respecter les recommandations fournies. J'informerai également mon/mes partenaire(s) de ma participation à un essai clinique pouvant être nocif pour le fœtus, et nous prendrons ensemble les mesures contraceptives nécessaires.
+
+- J'ai conscience que mon (mes) médecin(s) traitant(s) sera (seront) informé(s) de ma participation à cet essai.
+
+- Si je participe à un autre essai interventionnel, je dois en informer l'investigateur ou l'équipe chargée de l'essai. J'accepte de ne participer à aucun autre essai interventionnel (par exemple, avec un médicament à l'étude, un dispositif médical, une technique chirurgicale expérimentale) en même temps sans en informer au préalable l'investigateur ou le personnel de l'essai, qui pourrait ne pas autoriser ma participation pour une bonne raison.
+
+- Je comprends que je dois coopérer et suivre les instructions de l'investigateur et du personnel de l'essai concernant l'essai.
+
+- Je comprends que ma participation à cette sous-étude peut prendre fin sans mon consentement si j'ai besoin d'un autre traitement, je ne suis pas le protocole de l'essai ou pour toute autre raison justifiée.
+
+- Je certifie que toutes les informations que j'ai fournies concernant mes antécédents médicaux sont correctes, à ma connaissance. Je comprends qui cela pourrait me porter préjudice si je n'informe pas l'investigateur des raisons possibles pour lesquelles je ne pourrais pas participer à l'étude.
+
+Consentements facultatifs qui ne sont pas une condition préalable à VOTRE participation à cet essai.
+
+ÉCHANTILLONS BIOLOGIQUES DANS LE CADRE DE L'ESSAI CLINIQUE
+
+1.  Comme indiqué au chapitre I, § 13.2, le promoteur souhaite conserver les restes de vos échantillons biologiques pendant 25 ans à des fins de recherche supplémentaire futures dans le cadre de l'essai auquel vous participerez. Toute recherche en dehors de l'essai doit recevoir l'approbation d'un comité d'éthique reconnu.
+
+Acceptez-vous que les restes de vos échantillons biologiques et les données personnelles qui les accompagnent soient conservés à des fins de recherche supplémentaire dans le cadre de l'essai ?
+
+  (Cochez la case appropriée)
+
++---------------------------------+---------------------------------+
+|   ☐ J'accepte                   |   ☐ Je refuse                   |
++:================================+=================================+
+
+INFORMATIONS PERTINENTES
+
+2.  Comme indiqué au chapitre I §14, il peut arriver que des informations pertinentes soient découvertes qui pourraient être importantes pour votre santé ou celle de tiers.
+
+Si cela devait se produire, voulez-vous que l’investigateur ou votre médecin traitant vous en informe ?
+
+  (Cochez la case appropriée)
+
++------------------------------------------+-----------------------------------+
+|   ☐ Non, je ne veux pas qu’on m'informe. |   ☐ Oui, je veux qu'on m'informe. |
++:=========================================+===================================+
+
+Je consens à participer à cette sous-étude R2, avec les restrictions susmentionnées, et j'ai reçu une copie signée et datée de toutes les pages de ce document.
+
+Prénom et nom du/de la participant(e) :
+
+Date (DD/MMM/YYYY) :
+
+Signature du/de la participant(e) :
+
+TÉMOIN IMPARTIAL/INTERPRÈTE (REF. [2] )
+
+Je soussigné(e) (cocher la case correspondante),
+
+☐ Témoin impartial
+
+☐ Interprète
+
+a assisté à l'ensemble du processus d'information du participant et confirme que les informations sur les objectifs et les procédures de l'essai ont été fournies de manière adéquate, que le participant (ou son représentant légal) a apparemment compris l'essai et que le consentement à participer à l'essai a été donné en toute liberté. 
+
+Je déclare en outre qu'en tant que témoin impartial/interprète, je suis indépendant du promoteur et de l'investigateur.
+
+Nom et prénom du témoin impartial/interprète :
+
+Qualification du témoin impartial/Interprète :
+
+Date (DD/MMM/YYYY) :
+
+Signature témoin impartial/interprète :
+
+INVESTIGATEUR
+
+Je, l'investigateur soussigné, confirme que
+
+- le participant a reçu verbalement les informations nécessaires sur l'essai, s'est vu expliquer le contenu et a reçu un document original signé.
+
+- J'ai vérifié que le participant a compris l'essai.
+
+- J'ai donné au participant suffisamment de temps pour accepter de participer et pour poser d'éventuelles questions.
+
+- aucune pression n'a été exercée pour persuader le participant d'accepter de participer à l'essai.
+
+- Je travaille conformément aux principes éthiques énoncés dans la dernière version de la "Déclaration d'Helsinki", aux "Bonnes pratiques cliniques" et à la loi belge sur les essais cliniques.
+
+Nom et prénom de l’investigateur :
+
+Date (DD/MMM/YYYY) :
+
+Signature de l’investigateur :
+
+GLOSSAIRE
+
+AFMPS : Agence fédérale des médicaments et des produits de santé
+
+APD : L'Autorité de protection des données veille à ce que les données personnelles soient traitées avec soin et protégées de manière approfondie, et à ce que votre vie privée future soit également garantie.
+
+Autres abréviations apparaissant dans le texte :
+
+Assurance sans faute :
+
+Le promoteur est responsable de toute blessure ou de tout dommage subi par le participant et directement ou indirectement lié à l'essai clinique. Vous n'avez pas à prouver de faute à cet égard.
+
+MONITEUR et AUDITEUR
+
+Le moniteur et l'auditeur travaillent tous deux pour le promoteur.
+Le moniteur assure un contrôle qualité continu pendant toute la durée de l'essai. L'auditeur effectue un contrôle qualité indépendant et ponctuel à un moment donné pendant l'essai. Il vérifie si l'essai est ou a été mené conformément au protocole, si les données rapportées sont fiables et si l'essai clinique a été mené conformément aux règles applicables.
+
+RÉFÉRENCES
+
+[1] Tout au long du document, le terme « codage » est utilisé comme synonyme de « pseudonymisation », terme utilisé dans le règlement général sur la protection des données n° 2016/679.
+
+[2] Le recours à un témoin impartial est nécessaire lorsque le sujet ou son représentant légal parle et/ou comprend parfaitement la langue du formulaire de consentement éclairé approuvé, mais ne sait ni lire ni écrire en raison d'un handicap physique ou d'une déficience visuelle. Un interprète est nécessaire lorsque l'investigateur ne parle pas la langue du patient.

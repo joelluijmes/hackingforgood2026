@@ -1,0 +1,58 @@
+# Biomede Example (BIOMEDE 2.0) - analysis notes
+
+Source: /Users/joell/dev/hackingforgood/memory/text/Biomede Example/ (text), binaries in /Users/joell/dev/hackingforgood/bucket/Biomede Example/ (.docx approved, .doc/.docx sponsor).
+Trial: BIOMEDE 2.0, pediatric/adolescent/adult diffuse midline glioma (DIPG), sponsor Gustave Roussy (Villejuif, FR). Randomised ONC201 (Chimerix) vs everolimus (Novartis) + standard radiotherapy.
+
+## Inventory
+Sponsor Originals (all FRENCH, all dated 2022-03-04, old EudraCT 2014-001929-32 / CSET 2014/2126; footer like "V2.0 du 04/03/2022_NIP_Enfan"). Words in parentheses.
+- Sponsor Originals/11.3a_..._NIFC_6ans_v2.0 (323) - ultra-short note for children ~6 (source is .doc). Not tied to a module; no drug names.
+- Biopsy/ (diagnostic biopsy module, filenames 11.1a-d, v4.0): 6_12ans (596), 13_17ans (1410), Majeur (3874), Parent (4258).
+- Treatment/ (11.2a-d): 6_12ans v3.0 (856), 13_17ans v6.0 (2470), Majeur v6.0 (6218), Parent v6.0 (6633).
+Approved ICFs (12 files, v1.1, "L1_SIS and ICF_<LANG>_Biomede 2.0_<group>_v1.1_clean"): LANG EN(ENG)/NL/FR x group 8_11y / 12_17y / +18y / Parents.
+Approx words EN: 8-11 = 920, 12-17 = 3418, +18 = 10146, Parents = 10560. FR ~5% longer, NL ~ EN. Parity of structure across the 3 languages is high (same line layout, same sections).
+"L1_SIS and ICF" = Subject Information Sheet + Informed Consent Form in ONE file (L1 probably = layer/level 1; uncertain).
+
+## Mapping sponsor -> approved (UNCERTAIN: no explicit mapping file given; inferred from content)
+- Sponsor has 2 modules x 4 audiences (+1 stray 6-yr doc) = 9 docs, FR only. Approved has 1 doc per audience per language = 4 x 3 = 12. So Biopsy + Treatment modules are MERGED into one approved ICF per audience.
+- Approved adult/parent ICFs do NOT contain a dedicated biopsy procedure section: biopsy is described as "not study specific / standard of care" ("Tumour Biopsy: The tumour biopsy will first be analysed in the local laboratory ... This biopsy is not study specific"). Optional "liquid biopsy" exception and a consent checkbox exist. So the sponsor Biopsy module (surgical biopsy, genetic pangenomic analysis, incidental-findings option) was largely dropped/reframed; only its sample/biomarker/incidental findings parts survive (Chapter II checkboxes).
+- Age groups differ: sponsor 6-12 / 13-17 / Majeur / Parent -> approved 8-11 / 12-17 / +18 / Parents. Sponsor 6-12 -> approved 8-11 (Belgian cut); 12-17 is a boundary shift (sponsor 13-17).
+- CONTENT DRIFT: Sponsor adult Treatment v6.0 mentions ONC201 vs everolimus (primary objective) but the sponsor docs are from 2022 using EudraCT/CSET ids; the approved ICFs use EU CT number 2023-506027-29-00 (CTIS era), official title "Biological Medicine for Diffuse Intrinsic Pontine Glioma (DIPG) Eradication" (sponsor FR title: "Thérapeutiques ciblées sur les biomarqueurs dans les gliomes diffus de la ligne médiane"). Sponsor v6 text seems the basis for approved text; text was substantially re-written/restructured to the national template, not just translated. Sponsor children docs mention "tirage au sort" and both drugs in 13-17 version; adult sponsor mentions ONC201 only in a few places (grep counts: 9 ONC201, 0 everolimus in adult/parent sponsor). Treat as: sponsor docs may be partially out-of-date relative to protocol; do NOT assume 1:1.
+- Translation direction: FR sponsor -> EN/NL/FR approved. The approved FR is probably a re-localised version (Belgian FR template wording), not the sponsor FR verbatim. Not verified by diffing; EN approved likely the "master" produced from the sponsor, then NL/FR translated (uncertain).
+- Sponsor register: children/teen docs use informal "tu"; adult/parent docs use "vous"(but sponsor "Majeur" biopsy uses vous, treatment adult uses "tu" in opening lines per excerpt - inconsistent, mildly notable). Approved NL 8-11 uses "je/jij".
+
+## Sponsor structure (French, headings prefixed by "///", ALL CAPS)
+Treatment adult (11.2ci): LES OBJECTIFS DE LA RECHERCHE; LE TRAITEMENT DE L'ETUDE; LA METHODOLOGIE; LE DEROULEMENT DE L'ETUDE; TABLEAU RECAPITULATIF DES VISITES; LES BENEFICES ATTENDUS; LES RISQUES; CONTRACEPTION ET GROSSESSE; LES ALTERNATIVES THERAPEUTIQUES; PARTICIPATION VOLONTAIRE / INTERRUPTION DE PARTICIPATION; NOUVELLES INFORMATIONS...; MODALITES DE PRISE EN CHARGE EN FIN DE RECHERCHE; COUTS POTENTIELS / INDEMNISATION; ASSURANCE; DEMARCHES REGLEMENTAIRES; PROTECTION DE VOS DONNEES PERSONNELLES; VOS DONNEES. VOS DROITS.; CONTACTS...; LEXIQUE. Consent form appended ("DESTINE AUX PATIENTS MAJEURS").
+Biopsy adult (11.1ci): OBJECTIFS; METHODOLOGIE; COMMENT SE DEROULE LA BIOPSIE ?; CONSERVATION ET UTILISATIONS DE MES ECHANTILLONS BIOLOGIQUES; BENEFICES; RISQUES; ETUDES BIOLOGIQUES ASSOCIEES; PRISE EN CHARGE APRES LA BIOPSIE; PARTICIPATION VOLONTAIRE...; COUTS; ASSURANCE; DEMARCHES REGLEMENTAIRES; PROTECTION DONNEES; CONTACTS; LEXIQUE.
+=> Sponsor structure is the French (CNIL/Jardé-style) NIP/CF structure, NOT the Belgian template.
+
+## Structure of approved ICFs (Belgian national template / CT College model, applied)
+Adult (+18) EN, in order:
+1. Cover/front matter: "Official title of the trial", "EU CT number: 2023-506027-29-00", "Trial number", "Sponsor(s) of the trial", "Site name"/"Main address of site" (placeholders left for site), "Who can I contact in case of questions?" contact table (PI, trial staff, urgent contact, ombudsperson, Amlin Insurance (insurer of NCC) 299.053.700, DPO, Belgian Data Protection Authority +32(0)2274 48 00 contact@apd-gba.be) - fixed Belgian boilerplate.
+2. Boxed "The trial at a glance" (plain-language summary in a flattened table).
+3. "CHAPTER I - DESCRIPTION OF THE TRIAL AND YOUR RIGHTS WHEN PARTICIPATING" with question headings: Why is this study being conducted? / Why am I being asked to take part? / Do I have to take part in a trial? / What will happen during the trial? (Screening period, Treatment phase, Follow-up phase, Overview procedures [visit table], Optional study) / Will I benefit from the trial? / What are the possible risks and discomforts of taking part? (1. side effects: Everolimus, ONC201, Standard radiotherapy; 2. examinations; 3. other medicines; 4. daily activities; 5/6. pregnancy/breastfeeding) / What if something goes wrong within the trial? / What if other treatment options or new information become available...? / Can my participation in the trial end prematurely? / Which treatment will I get after my participation? / Will my participation involve extra costs? / Which data are collected about me ... (12.1-12.x GDPR sub-questions) / Which biological samples are collected ... (13.x) / What if the trial reveals meaningful information about your health? (§14) / Who has reviewed and approved the trial documents?
+4. "CHAPTER II - Informed consent": PARTICIPANT statements ("I understand that data about me will be collected..."; refs to "Chapter I, § 12.2/12.5"), optional checkboxes (data other purposes §12.7; liquid biopsy biomarkers §4; retain remainder of samples 10 years §13.2; incidental/"MEANINGFUL INFORMATION" §14), signature blocks (DD/MMM/YYYY, Time), INVESTIGATOR declaration (Helsinki), legal representative block.
+5. "GLOSSARY", "REFERENCES" (and for parents "MONITOR and AUDITOR").
+Numbered sections referenced cross-doc ("Chapter I, § 12.7") => NL numbering is explicit ("6.3", "12.1") while EN/FR often have lists restart "1."; a pipeline must keep section anchors consistent for these cross-references.
+NL: "HOOFDSTUK I - BESCHRIJVING VAN DE STUDIE EN UW RECHTEN BIJ DEELNAME"; FR: "CHAPITRE I - DESCRIPTION DE L'ETUDE ET de VOS DROITS EN tant que PARTICIPANT", "CHAPITRE II - FORMULAIRE DE CONSENTEMENT ECLAIRE DESTINE AUX PATIENT(E)S AGE(E)S DE 18 ANS ET PLUS". FR questions: "Qui contacter en cas de questions ?", "Pourquoi cette étude est-elle réalisée ?", "Suis-je obligé de participer...". NL: "Met wie kan ik contact opnemen als ik vragen heb?", "Waarom wordt deze studie uitgevoerd?", "Moet ik deelnemen aan deze studie?".
+Parents ICF: same skeleton as adult, pronouns switched ("your child's RIGHTS", "Why is your child being asked to take part?", "Will my child benefit"), Chapter II has "Prerequisites for your child's participation", two Parent/Guardian signature blocks + "LEGAL REPRESENTATIVE (REF. [2])".
+
+## Differences between age groups (approved)
+- +18 and Parents: full template (~10k words), complete Chapter I/II, GDPR etc.
+- 12-17y (3.4k words): NOT the template skeleton. A short "information sheet" with Q-headings: "What is the purpose of this study?", "How many participants...", "WHAT IS THE DURATION...", "What is expected from you?", "WHICH procedures WILL be performed", Procedures/Overview procedures/Collection of biological samples/Optional study, "WHAT ARE THE POSSIBLE side effects" (Everolimus, ONC 201, Radiotherapy), "WHAT ARE YOUR RIGHTS...", "WHO can you contact..."; ends with "INFORMED ASSENT FORM FOR ADOLESCENTS FROM 12 TO 17 YEARS" (assent, not consent) with checkboxes. Uses "you"; medically detailed, near-adult register but shorter sentences.
+- 8-11y (~900 words): very short, headings "WhAT IS THE AIM OF THE STUDY?", "WHAT TREATMENT WILL I RECEIVE...", "Which tests will be done...", "WhO KNOWS I'm taking part", "Has anybody checked that the study is OK to do?" (ethics committee), "WHAT HAPPENS IF YOU DO NOT WANT TO PARTICIPATE", "To whom can you ask questions?", ends with name/date lines only (no checkboxes seen). Has clipart placeholders ("[MC900134551[1]]", "[]"). Simple vocabulary: "invisible rays to damage bad cells", "a computer will decide which group you will be in".
+- Contents dropped as age decreases: contact table, risks detail, GDPR sections, insurance, glossary. Odd: headings have random capitalisation (WhAT, WhO, iN) - artifacts of the source docx (small caps), a pipeline should normalise case.
+- Informal address (FR tu, NL je) in 8-11 and 12-17 (sponsor FR uses tu too).
+
+## Observations useful for the pipeline
+- National template content (contacts table, insurer, DPA, GDPR chapter, chapter II checkboxes, glossary) is largely fixed boilerplate; trial-specific content = "trial at a glance", Why/Procedures/Visits/Risks/Optional study/Benefits. Sponsor FR text must be mapped into these slots, not copied in order.
+- Site-specific fields are left as placeholders ("Surname, First name", "Phone N°", "official name of site") - the pipeline should leave placeholders, not invent.
+- Tables are flattened in text (ASCII "+---+" grids, e.g. "Overview procedures" visit table with X marks); original .docx tables hold the visit schedule. Text conversion loses images/checkbox glyphs (checkboxes survive as unicode).
+- Sponsor visit tables ("TABLEAU RECAPITULATIF DES VISITES") correspond to approved "Overview procedures".
+- Sponsor adult doc counts: adult approved is ~1.6x sponsor Treatment+Biopsy adult (10146 vs 3874+6218=10092 - nearly equal total, suggesting merging).
+- Child versions are not mere shortening of adult: written from scratch with new structure; approved 8-11 EN is ~3x longer than sponsor 6-12 treatment (856) minus.. uncertain: sponsor 6-12 Treatment 856 + Biopsy 596 = 1452 vs approved 8-11 920 words.
+
+## Uncertain / not verified
+- No diff done between sponsor FR and approved FR; relationship (re-translation vs rewrite) unverified.
+- Version 1.1 "clean" implies earlier tracked versions exist; not in bucket.
+- Whether the stray 6-year doc (11.3a, .doc) is used in Belgium: no Belgian 6-7 year group exists in approved set, so likely unused.
+- Whether Biopsy module is intentionally excluded in Belgium (biopsy as standard of care) or simply merged; text says biopsy "not study specific" in approved - strong hint but not confirmed.

@@ -1,0 +1,635 @@
+DOCUMENT INFORMATIF ET FORMULAIRE DE CONSENTEMENT ÉCLAIRÉ POUR LES PARENTS/TUTEURS
+
+FORUM2 – étude principale
+
+Cadre pour l'optimisation, le perfectionnement et l'unification de la prise en charge de la greffe de cellules souches hématopoïétiques (GCSH) dans la leucémie lymphoblastique aiguë (LLA) pédiatrique. (Framework for Optimizing, Refining, and Unifying Management)
+
+Titre officiel de l'essai : FORUM2– Cadre pour l'optimisation, le perfectionnement et l'unification de la prise en charge (Framework for Optimizing, Refining, and Unifying Management - FORUM) de la GCSH dans la LLA pédiatrique.
+
+Numéro EU : 2025-522052-13-00
+
+Numéro d’essai : FORUM2
+
+Promoteur de l’essai : Ospedale Pediatrico Bambino Gesù, IRCCS, Piazza di Sant’Onofrio 4, Rome, Italie
+
+Nom du site : nom officiel du site
+
+Principale adresse du site : address of site
+
+Qui puis-je contacter en cas de questions ?
+
++-----------------+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+| Nom             | Fonction                                                                                                 | En cas de                                                                                      | Coordonnées                                                                        |
++:================+==========================================================================================================+================================================================================================+====================================================================================+
+| Prénom, nom     | Investigateur principal du site                                                                          | Informations, problèmes ou inquiétudes                                                         | N° de téléphone, e-mail                                                            |
++-----------------+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+|                 | Le personnel de l’essai                                                                                  | Informations, problèmes, inquiétudes                                                           | N° de téléphone, e-mail                                                            |
++-----------------+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+|                 | Contact pour les questions urgentes relatives à l’essai                                                  | Informations, problèmes, inquiétudes urgents                                                   | N° de téléphone                                                                    |
++-----------------+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+|                 | Médiateur pour les droits des patients du site [et si cela n'est pas possible, contactez le CT College]. | Préoccupations/questions relatives à vos droits en tant que participant(e) à un essai clinique | Numéro de téléphone du site [si ce n’est pas possible : ct-college@health.fgov.be] |
++-----------------+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+| Assurance Amlin | Compagnie d'assurance du promoteur                                                                       | En cas de désaccord ou de plainte sur un sinistre                                              | Numéro de police : 299.053.700                                                     |
+|                 |                                                                                                          |                                                                                                |                                                                                    |
+|                 |                                                                                                          |                                                                                                | Adresse : Boulevard du Roi Albert II 37                                            |
+|                 |                                                                                                          |                                                                                                |                                                                                    |
+|                 |                                                                                                          |                                                                                                | 1030 Bruxelles                                                                     |
+|                 |                                                                                                          |                                                                                                |                                                                                    |
+|                 |                                                                                                          |                                                                                                | N° de téléphone : 02 894 70 00                                                     |
+|                 |                                                                                                          |                                                                                                |                                                                                    |
+|                 |                                                                                                          |                                                                                                | E-mail: klachtenmanagement.be                                                      |
+|                 |                                                                                                          |                                                                                                | @msamlin.com                                                                       |
++-----------------+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+|                 | Data Protection Officer du site [si impossible, personne de contact pour la protection des données.]     | Questions relatives à la confidentialité de vos données                                        | N° de téléphone                                                                    |
+|                 |                                                                                                          |                                                                                                |                                                                                    |
+|                 |                                                                                                          |                                                                                                | E-mail : E-mail                                                                    |
++-----------------+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+|                 | Autorité belge de protection des données                                                                 | Plaintes relatives à la confidentialité de vos données                                         | +32(0)2274 48 00                                                                   |
+|                 |                                                                                                          |                                                                                                |                                                                                    |
+|                 |                                                                                                          |                                                                                                | E-mail : contact@apd-gba.be                                                        |
++-----------------+----------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+
+● Pour gérer les plaintes non résolues par l'investigateur, vous pouvez contacter le médiateur du centre d'étude à l'adresse ci-dessus.
+
+● En vertu du RGPD, vous avez le droit d'accéder au traitement des données de votre enfant. Pour toute question à ce sujet, vous pouvez contacter le Data Protection Officer du centre d'étude à l'adresse ci-dessus.
+
+● Vous avez également le droit de déposer une plainte concernant la manière dont les données de votre enfant sont traitées auprès de l'autorité de contrôle belge chargée de veiller au respect de la législation en matière de protection des données. Autorité de protection des données (APD), ci-dessus.
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| L'essai en un coup d’Œil                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Bonjour,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Vous recevez cette lettre d'information parce que votre enfant a reçu un diagnostic de leucémie lymphoblastique aiguë (LLA) et aura besoin d'une greffe de cellules souches hématopoïétiques (GCSH). Ce document concerne spécifiquement la participation éventuelle de votre enfant à l’étude principale de l'essai FORUM2.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| L'essai FORUM 2 est un essai académique, ce qui signifie qu'il est organisé par différents hôpitaux universitaires. Il s'agit d'une infrastructure commune permettant d'aborder plusieurs questions scientifiques au fil du temps, dans un cadre unique. Il a été mis en place par l'Ospedale Pediatrico Bambino Gesù (IRCCS) à Rome (Italie), se déroulera dans environ 26 pays et inclura plus de 1000 participants dans le monde entier, dont environ 4 à 5 patients par an en Belgique.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Dans ce cadre, certains patients peuvent être invités à participer à des sous-études spécifiques, selon qu'ils rentrent dans les conditions ou non. Chacune de ces sous-études a ses propres critères de sélection et son propre calendrier. Votre consentement écrit explicite vous sera demandé avant toute participation à ces sous-études si votre enfant remplissez les conditions.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Ce document informatif et ce formulaire de consentement concernent uniquement la participation à l’étude principale à la plateforme FORUM 2. Cette étude principale ne comprend pas d'examens, de procédures médicales ou de traitements supplémentaires autres que ceux qui font partie des soins cliniques habituels de votre enfant. La seule différence est que certaines informations cliniques issues des examens et traitements de routine de votre enfant avant, pendant et après la greffe de cellules souches seront collectées. Il s'agit, par exemple, d'informations sur les résultats de laboratoire, les caractéristiques de la greffe, les complications et les données de suivi. Ces données seront collectées à partir du dossier médical de votre enfant et stockées dans une base de données sécurisée et pseudonymisée. La participation de votre enfant à cette étude principale durera jusqu'à 5 ans après la greffe de cellules souches pendant laquelle des informations seront recueillies sur le traitement standard de votre enfant. |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Votre enfant recevra le traitement standard et les données cliniques relatives à son traitement seront collectées. Il n'y a pas de visites, d'examens ou de traitements spécifiques à l'étude. Pour l’étude, des questionnaires pour évaluer la qualité de vie doivent être complétées et certains échantillons de sang spécifiques à l'étude doivent être prélevés.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| La participation de votre enfant à cette étude principale ne présente aucun bénéfice médical direct pour lui. Cependant, les données collectées au sujet de votre enfant pendant son traitement standard peuvent contribuer à améliorer les soins et les résultats pour les futurs patients atteints de LLA qui subiront une greffe de cellules souches.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| La participation à l’étude principale de la plateforme FORUM 2 est volontaire et ne vous coûte rien de plus que le coût du traitement standard de votre enfant. Vous ne recevrez aucune compensation pour votre participation à cette étude principale. Si quelque chose arrive à votre enfant pendant l'étude, le promoteur de cette étude a souscrit une assurance pour couvrir tous les frais liés à l’essai.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| L'investigateur de votre enfant informera le médecin traitant de votre enfant de sa participation à cet essai. Votre enfant ne peut pas participer à un autre essai clinique interventionnel sans en informer l'investigateur ou le personnel chargé de l'essai. Vous devez également communiquer toutes les informations pertinentes relatives à l'état de santé de votre enfant, aux autres médicaments pris ou aux symptômes ressentis.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| L'étude et les documents relatifs à celle-ci ont été examinés et approuvés par les autorités européennes et un comité d'éthique indépendant en Belgique. Les données seront confidentielles.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Veuillez prendre le temps de lire attentivement ce document. Vous pouvez en discuter avec les membres de votre famille, vos amis ou les médecins de votre enfant. La participation de votre enfant à l’essai est entièrement volontaire. Si vous choisissez de ne pas laisser votre enfant participer, cela n'aura aucune incidence sur ses soins médicaux futurs.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Si vous décidez de laisser votre enfant participer, vous êtes libre de retirer votre consentement à tout moment, sans donner de raison et sans aucune conséquence négative pour le traitement de votre enfant.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Si vous avez des questions concernant cet essai, veuillez me contacter ou contacter mon équipe en utilisant les coordonnées figurant sur la première page de ce document.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Cordialement,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Votre investigateur                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+CHAPITRE I - DESCRIPTION DE L'ESSAI ET DROITS LORSQUE VOTRE ENFANT PARTICIPE 
+
+Pourquoi mener cette étude?
+
+Votre enfant est invité à participer à l'essai clinique FORUM 2, qui vise à optimiser la manière dont la greffe de cellules souches est réalisée chez les enfants et les jeunes atteints de leucémie lymphoblastique aiguë (LLA).
+
+Ce document informatif et ce formulaire de consentement concernent uniquement la participation à l’étude principale de l'essai clinique FORUM 2 et la collecte de données associée. À ce stade, vous ne donnez pas votre consentement pour un changement de traitement, une intervention expérimentale ou une sous-étude clinique pour votre enfant. Toute étude ou intervention supplémentaire vous sera expliquée en détail dans un formulaire d'information et de consentement distinct, et votre consentement écrit explicite vous sera à nouveau demandé avant la participation de votre enfant.
+
+Pourquoi demander à votre enfant de participer?
+
+Votre enfant a reçu un diagnostic de LLA. Le traitement suivi jusqu'à présent a conduit à une rémission complète (ce qui signifie qu'aucune cellule leucémique n'est actuellement détectable), mais il existe toujours un risque important de récidive de la leucémie en raison des caractéristiques de la maladie de votre enfant. Afin de donner à votre enfant les meilleures chances de guérison à long terme, une greffe allogénique de cellules souches (GCSH) est recommandée, dans le cadre de laquelle votre enfant recevra des cellules souches saines provenant d'un donneur compatible.
+
+L'essai plateforme FORUM 2 a été mis en place par l'Ospedale Pediatrico Bambino Gesù (IRCCS) à Rome (Italie). Cet essai fournit une infrastructure commune permettant d'aborder plusieurs questions scientifiques au fil du temps, dans un cadre unique.
+
+L'essai plateforme comprend une étude principale et plusieurs sous-études prédéfinis qui traitent différentes questions cliniques. Par exemple :
+
+• Groupe R1 : comparaison de deux doses de rayonnement différentes utilisées dans le traitement de conditionnement avant la GCSH
+
+• Groupe R2 : évaluation des traitements de la maladie du greffon contre l'hôte aiguë (aGvHD)
+
+• Groupe S1 : évaluation de différentes stratégies d'immunosuppression pour les greffes provenant de donneurs familiaux non compatibles
+
+• Groupe P1 : étude pilote sur le traitement d'entretien post-greffe chez les jeunes enfants
+
+[Afbeelding met tekst, schermopname, bloem Door AI gegenereerde inhoud is mogelijk onjuist.]
+
+Chacune des sous-études ci-dessus a ses propres critères d'éligibilité et son calendrier, et un consentement distinct vous sera demandé avant la participation de votre enfant.
+
+Ce document informatif et ce formulaire de consentement concernent uniquement l’étude principale de l'essai plateforme FORUM 2, qui se concentre sur la collecte de données médicales liées au traitement standard de votre enfant par greffe de cellules souches hématopoïétiques (GCSH) pour toutes les formes de leucémie aiguë. En acceptant de participer, vous consentez à la collecte des données cliniques de votre enfant pendant le traitement standard qu'il recevra.
+
+Mon enfant doit-il participer à un essai?
+
+La participation de votre enfant à cette étude principale de l'essai clinique est volontaire et doit rester libre de toute contrainte. Cela signifie que vous/votre enfant avez le droit de ne pas participer à l'essai ou de vous retirer à tout moment sans donner de raison, même si vous et votre enfant aviez précédemment accepté d'y participer. Votre décision n'aura aucune incidence sur votre relation avec l'investigateur ou le médecin traitant de votre enfant ni sur la qualité des soins médicaux futurs de votre enfant.
+
+Si d'autres traitements sont disponibles pour la GCSH dans le cas de la LLA, l'investigateur ou son délégué discutera de ces traitements avec vous et votre enfant.
+
+Si vous et votre enfant acceptez de participer, votre investigateur en informera les médecins traitants de votre enfant. Votre enfant ne peut pas participer à un autre essai clinique interventionnel sans en informer l'investigateur ou le personnel chargé de l'essai. Vous devez également communiquer toutes les informations pertinentes relatives à l'état de santé de votre enfant, aux autres médicaments pris ou aux symptômes ressentis.
+
+Que se passera-t-il pendant l’essai? 
+
+Si vous et votre enfant décidez de participer à cette étude principale de l'essai clinique FORUM2, votre enfant recevra le traitement standard GCSH et suivi comme d'habitude. Cette étude principale ne comprend pas d'examens, de procédures médicales ou de traitements supplémentaires autres que ceux qui font partie des soins cliniques habituels de votre enfant. Vous ne consentez à aucun changement de traitement, intervention expérimentale ou sous-étude clinique.
+
+Dans cette étude principale, nous vous demandons si nous pouvons recueillir des informations cliniques sur le traitement standard de votre enfant, telles que les examens et traitements de routine avant, pendant et après la greffe de cellules souches. Il s'agit, par exemple, d'informations sur les résultats de laboratoire, les caractéristiques de la greffe, les complications et les données de suivi. Ces données seront collectées à partir du dossier médical de votre enfant et stockées dans une base de données sécurisée et pseudonymisée.
+
+Toutes les visites et tous les examens sont effectués dans le cadre du traitement de soins standard (pas de visites ou d'examens spécifiques à l'étude). Les éléments suivants sont spécifiques à l'étude dans cette étude :
+
+- remplir des questionnaires pour évaluer votre qualité de vie (obligatoire)
+
+- prises de sang (optionnel)
+
+Questionnaires sur la qualité de vie
+
+Pendant cette étude, la qualité de vie de votre enfant sera évaluée avec des questionnaires que vous/votre enfant devrez remplir aux moments suivants :
+
+- avant la greffe de cellules souches
+
+- après la greffe de cellules souches :
+
+  - 1 mois
+
+  - 3 mois
+
+  - 6 mois
+
+  - 12 mois
+
+  - 18 mois
+
+  - 24 mois
+
+- Si votre enfant a une GvHDa (certaines cellules immunitaires du donneur ou de la donneuse (qui font partie de la greffe) attaquent le corps parce qu'elles le considèrent comme « étranger)
+
+  - Au moment de la GvHDa
+
+  - 9 mois après la greffe de cellules souches si tu as une GvHD chronic
+
+Pour l’étude, les patient(e)s à partir de 18 ans devront remplir les questionnaires FACT-BNT et Eq-5D. Pour les patient(e)s entre 2 et 18 ans, il faudra remplir un questionnaire PEDsQL et un module PEDsQL sur la greffe de cellules souches. Chaque fois que vous/votre enfant remplirez le questionnaire, cela prendra environ 20 minutes. Pour cette étude, il faudra au total 3 heures au maximum pour remplir ces questionnaires (9 moments au maximum).
+
+Échantillons sanguins (optionnel)
+
+En plus des tests de laboratoire de routine, des échantillons de sang spécifiques à l'étude seront prélevés de votre enfant pour analyser la quantitié de ATG. La globuline anti‑thymocyte (ATG), un anticorps polyclonal, est administrée dans le cadre du traitement standard avant une greffe de cellules souches hématopoïétiques (GCSH) afin d’éviter que les cellules du donneur n’attaquent les tissus sains du receveur (phénomène appelé maladie du greffon contre l’hôte, ou GvH). Dans le cadre de l’étude, la concentration de l’ATG active sera mesurée dans le sang de votre enfant à différents moments afin d’évaluer comment les différents patients la métabolisent dans leur organisme. Un échantillon de sang de 4 ml sera prélevé chez votre enfant aux moments suivants :
+
+• jour 1 de ATG (avant et après l’administration)
+
+• jour 2 de ATG (avant et après l’administration)
+
+• jour 3 de ATG (avant et après l’administration)
+
+• au moment de la greffe de cellules souches (GCSH)
+
+• jour 6 après GCSH
+
+• jour 15 après GCSH
+
+• jour 30 après GCSH
+
+• jour 35 après GCSH
+
+Des échantillons de sang seront prélevés aux moments prévus dans les soins standard (aucune visite d'étude supplémentaire nécessaire) et seront combinés avec des échantillons de sang prélevés dans le cadre des soins standard. Il est possible qu'une ponction supplémentaire soit nécessaire pour les échantillons de sang ATG, car cela nécessite également des échantillons de sang prélevés après l'administration de ATG.
+
+Tous les échantillons biologiques prélevés seront codés. Cela signifie que le nom et les identifiants personnels de votre enfant seront remplacés par un code unique connu uniquement de l'équipe de l'étude. Les échantillons seront envoyés au promoteur coordonnateur de l'étude (Hôpital pédiatrique Bambino Gesù à Rome, Italie).
+
+Des analyses génétiques seront également réalisées sur les échantillons de votre enfant. Ces analyses fournissent des informations essentielles pour l’étude et le traitement futur de la maladie de votre enfant.
+
+Ces prélèvements sanguins sont facultatifs. Si vous ne souhaitez pas qu'ils soient effectués chez votre enfant, vous pouvez l'indiquer à la fin du formulaire de consentement éclairé.
+
+Cet essai clinique se déroulera dans environ 26 pays et inclura plus de 1000 participants dans le monde entier, dont environ 4 à 5 patients par an en Belgique. Dans l'ensemble, la participation de votre enfant à cette partie de l'essai durera jusqu'à 5 ans après la greffe de cellules souches pendant laquelle des informations seront recueillies sur le traitement standard de votre enfant.
+
+Les procédures ou examens standard pour le traitement de la maladie de votre enfant (c'est-à-dire les soins standard) vous seront facturés ou remboursés par votre mutuelle (sécurité sociale belge). Si vous avez besoin de plus de détails ou si vous n'êtes pas affilié à une mutuelle (sécurité sociale belge), veuillez contacter le personnel de l'essai.
+
+Mon enfant tirera-t-il un bénéfice de l'essai? 
+
+La participation de votre enfant à cette étude principale de l'essai ne présente aucun bénéfice médical direct pour lui. Cependant, les données collectées au sujet de votre enfant pendant son traitement standard peuvent contribuer à améliorer les soins et les résultats pour les futurs patients atteints de LLA qui subiront une greffe de cellules souches.
+
+Si votre enfant est inclus dans l'une des sous-études à l'avenir, les risques et avantages potentiels vous seront expliqués dans une fiche d'information destinée aux patients et un formulaire de consentement éclairé séparés.
+
+Quels sont les risques et désagréments possibles de la participation?
+
+1.  Quels sont les effets secondaires possibles ?
+
+Dans cette étude principale de l'essai clinique, votre enfant recevra le traitement standard. Les données cliniques issues du traitement standard de votre enfant seront collectées. Par conséquent, la participation ne comporte aucun risque médical direct par rapport aux soins habituels prodigués à votre enfant.
+
+Tous les médicaments, même ceux utilisés dans le cadre d'un traitement standard, peuvent avoir des effets secondaires. Il est très important que vous signaliez immédiatement à l'investigateur tout problème de santé nouveau ou aggravé. Si votre enfant doit prendre d'autres médicaments, parlez-en avec l'investigateur avant de les prendre. Si, pour une raison quelconque, vous consultez un autre médecin traitant pendant l'essai, vous devez l'informer que votre enfant participe à un essai. Cela pourrait être important pour établir un diagnostic et donner le bon traitement à votre enfant si nécessaire.
+
+2.  Quels sont les risques ou les désagréments possibles des examens pendant l'essai ?
+
+Tous les examens font partie des soins habituels. L'équipe médicale combinera autant que possible les prélèvements de sang pour l'étude avec les prises de sang de routine. Le prélèvement de sang peut causer de la douleur, des saignements, des ecchymoses ou une infection localisée autour du site d'injection. De même, certains participants peuvent ressentir de l’étourdissement ou même s'évanouir pendant la procédure. Le personnel de l’essai chargé de la prise de sang fera tout son possible pour minimiser ces désagréments.
+
+3.  Mon enfant peut-il prendre d'autres médicaments pendant l'essai ?
+
+N'hésitez pas à demander à votre investigateur plus d'explications sur l'utilisation d'autres médicaments pendant le traitement standard de votre enfant.
+
+4.  La participation de mon enfant à l'essai aura-t-elle un impact sur ses activités quotidiennes ?
+
+Nous voulons nous assurer que l'essai se déroule sans heurts. C'est pourquoi nous conclurons avec vous les accords suivants :
+
+- Vous vous assurerez que votre enfant prend tous ses médicaments de la manière prescrite
+
+- Pendant cet essai, votre enfant ne participera pas à un autre essai médical scientifique, à moins que le promoteur n'ait donné son accord avant la participation.
+
+- Veuillez contacter l'investigateur ou un membre de l'équipe infirmière de recherche dans les situations suivantes :
+
+o Votre enfant commence à prendre d'autres médicaments. Y compris les médicaments homéopathiques, les remèdes naturels, les vitamines et autres médicaments sans ordonnance.
+
+o Votre enfant doit être admis à l'hôpital ou y recevoir un traitement.
+
+o Votre enfant développe soudain des problèmes de santé.
+
+o Votre enfant ne souhaite plus participer à l'essai.
+
+o Votre numéro de téléphone, votre adresse ou votre adresse électronique ont changé.
+
+Que se passe-t-il si un problème survient au cours de l'essai ?
+
+Même en l'absence de faute, le promoteur est responsable des dommages causés à votre enfant, qu'ils soient directement ou indirectement liés à votre participation à l'essai. Le promoteur a souscrit une assurance appropriée (dite "ASSURANCE SANS FAUTE") pour couvrir cette responsabilité Une copie du certificat d'assurance peut être obtenue auprès de l'investigateur ou du personnel de l'essai.
+
+Si vous (ou, en cas de décès, vos ayants droit) demandez une indemnisation pour un préjudice causé à la santé de votre enfant résultant directement ou indirectement de sa participation à l'essai, vous devez en informer rapidement l'investigateur ou le personnel chargé de l'essai.
+
+Si l'investigateur estime qu'un lien entre le(s) problème(s) de santé nouveau(x) ou aggravé(s) et l'essai est possible, il en informera le promoteur de l'essai. Ce dernier entamera alors immédiatement la procédure de déclaration auprès de sa compagnie d'assurance. Si la compagnie le juge nécessaire, elle désignera un expert chargé d'évaluer s'il existe un lien entre les problèmes de santé signalés chez votre enfant et l'essai. L'assurance ne couvre pas l'évolution naturelle de la maladie de votre enfant ou les effets secondaires connus du traitement que votre enfant aurait reçu sans participer à l'essai (c'est-à-dire votre traitement standard).
+
+Si vous ou votre enfant le jugez opportun, ou si vous ou les ayants droit de votre enfant êtes en désaccord avec l'investigateur ou l'expert désigné par la compagnie d'assurance, vous pouvez contacter la compagnie d'assurance ou engager une procédure à son encontre. Vous trouverez les coordonnées de contact sur la première page de ce formulaire.
+
+Que se passe-t-il si d'autres options thérapeutiques ou de nouvelles informations sont disponibles au cours de l'essai ?
+
+Au cours de l'essai, de nouvelles informations importantes peuvent apparaître. Par exemple, d'autres traitements standard peuvent devenir accessibles à votre enfant. Il est du devoir de l'investigateur de discuter de ces nouvelles informations avec vous. Dans ce cas, les données relatives à ce nouveau traitement standard seront collectées. Vous avez toujours la possibilité de retirer votre enfant de l'essai.
+
+Si vous décidez que votre enfant ne participera plus à l'essai ou si votre enfant n'est plus en mesure d'y participer, l'investigateur de votre enfant veillera à ce que votre enfant continue à recevoir les meilleurs soins médicaux possibles.
+
+La participation de mon enfant à l'essai peut-elle prendre fin prématurément ?
+
+Comme expliqué en détail ci-dessous, la participation de votre enfant à l'essai peut prendre fin prématurément dans les cas suivants
+
+• vous décidez de retirer votre consentement pour votre enfant, ou
+
+• l'investigateur décide de mettre fin à la participation de votre enfant à l'essai, ou
+
+• d'autres entités interrompent ou mettent fin à l'essai.
+
+Dans tous les cas, si la participation de votre enfant à l'essai prend fin prématurément, l'investigateur discutera avec vous/votre enfant des soins médicaux futurs de votre enfant. Les données collectées avant que vous ne mettiez fin à la participation de votre enfant continueront d'être utilisées comme décrit dans ce formulaire. Le but est d'éviter de fausser/biaiser les résultats de l'essai (comme décrit au chapitre I. § 12.4.).
+
+En fonction de la situation de votre enfant, l'investigateur discutera avec vous/votre enfant de la nécessité d'effectuer des visites ou des procédures de suivi.
+
+1.  Vous décidez de retirer votre consentement.
+
+Vous avez le droit de retirer votre consentement pour votre enfant pour quelque raison que ce soit, à tout moment, sans avoir à justifier votre décision. Toutefois, pour la sécurité de votre enfant, vous devez informer l'investigateur de cette décision. Bien que cela ne soit pas obligatoire, il peut être utile pour l'investigateur et le promoteur de connaître les raisons de cette décision.
+
+Si vous retirez votre consentement à la participation de votre enfant, cela signifie que vous décidez que les données relatives au traitement standard de votre enfant ne peuvent plus être collectées. Aucune nouvelle donnée ne pourra être collectée et envoyée au promoteur..
+
+2.  L'investigateur décide de mettre fin à la participation de votre enfant à l'essai
+
+L'investigateur peut mettre fin à la participation de votre enfant à l'essai parce que
+
+- il/elle pense que c'est mieux pour votre enfant
+
+- il/elle détermine que votre enfant ne suit pas les instructions données aux participants, ou
+
+- toute autre raison qui vous sera expliquée,
+
+- l'étude entière doit être interrompue pour tous les participants (voir paragraphe suivant).
+
+Si cela se produit, le personnel de l'essai vous expliquera pourquoi et assurera un suivi approprié.
+
+1.  D'autres entités peuvent interrompre ou mettre fin à l'essai
+
+Le promoteur et les autorités sanitaires belges compétentes peuvent interrompre ou mettre fin à l'essai pour les raisons suivantes
+
+- les informations recueillies montrent que l'étude n'est pas efficace (elle n'apporte pas une amélioration suffisante de la santé des participants à l'essai) ;
+
+- les effets secondaires (graves) sont plus nombreux que prévu ; ou
+
+- toute autre raison dûment motivée par cette partie.
+
+Quel traitement mon enfant recevra-t-il après ma participation à l'essai ? 
+
+Si votre enfant a arrêté l'étude, l'investigateur évaluera son état de santé. Si nécessaire, il lui prescrira le meilleur traitement standard disponible. Le traitement standard sera le même, que votre enfant participe ou non à l'essai.
+
+ La participation de mon enfant à l'essai entraînera-t-elle des frais supplémentaires pour moi ?
+
+Comme décrit dans la section 4, toutes les visites, tous les examens et tous les traitements sont conformes aux normes de soins. Les procédures ou examens standard pour le traitement de la maladie de votre enfant (c'est-à-dire les soins standard) vous seront facturés ou remboursés par votre mutuelle (sécurité sociale belge).
+
+L'étude n'entraîne aucun coût supplémentaire. Vous/votre enfant ne recevrez aucune compensation financière pour sa participation à cet essai.
+
+Quelles sont les données collectées au sujet de mon enfant pendant l'essai et qu'en adviendra-t-il ?
+
+1.  Quelles sont les données collectées et traitées pendant l'essai ?
+
+Les données à caractère personnel collectées et traitées concernent des informations sur la santé et l'état de santé de votre enfant. Il s'agit notamment des antécédents médicaux de votre enfant, de certaines informations générales le concernant (par exemple, son âge et son sexe) et des résultats des examens.
+
+Des données sur l'origine ethnique peuvent être collectées afin de garantir que les données de recherche sont traitées dans le cadre d'une population aussi large que possible.
+
+2.  Comment l'investigateur traitera-t-il les données personnelles de mon enfant ?
+
+L’investigateur (et le personnel chargé de l'essai) est tenu au secret professionnel ou à un accord de confidentialité concernant les données collectées.
+
+Cela signifie qu'il/elle ne révélera jamais l'identité de votre enfant, même dans une publication scientifique ou une conférence, et qu'il/elle codera les données de votre enfant (réf.) [1]) (c'est-à-dire qu'il/elle remplacera l'identité de votre enfant par un code d'identification dans l'essai) avant de les envoyer au promoteur. Ce code ne contiendra aucun identifiant personnel ni aucune combinaison d'identifiants tels que le nom, le prénom, les initiales, la date de naissance complète ou partielle, le numéro de dossier, etc.
+
+L’investigateur et le personnel de l'essai sous la responsabilité de ce dernier seront les seuls à pouvoir établir un lien entre l'identité de votre enfant et les données transmises pendant l'essai, à l'exception des cas énumérés à la section 12.5.
+
+Les données transmises au promoteur ne lui permettront pas d'identifier votre enfant.
+
+3.  Comment les données de mon enfant seront-elles traitées ?
+
+Les données relatives à votre enfant seront traitées conformément à la législation européenne et belge en vigueur en matière de protection des données.
+
+La raison pour laquelle les données à caractère personnel de votre enfant peuvent être traitées aux fins de l'étude est qu'elles sont traitées dans le cadre de la conduite de recherches scientifiques et de l'exécution d'une mission d'intérêt public.
+
+4.  Ai-je accès aux données collectées et traitées de mon enfant pendant l'essai et puis-je les rectifier ?
+
+Vous avez le droit de demander à l'investigateur quelles données sont collectées sur votre enfant et comment ces données seront utilisées dans le cadre de l'essai.
+
+Vous avez le droit
+
+- de consulter et d'accéder à ces données
+
+- de recevoir les données personnelles collectées
+
+- de demander leur rectification si elles sont incorrectes
+
+- de restreindre le traitement des données de votre enfant
+
+- de retirer votre consentement au traitement des données à caractère personnel. Toutefois, les données personnelles collectées avant le retrait seront conservées afin d'éviter que les résultats de l'essai ne soient faussés.
+
+Il n'est pas possible d'effacer toutes les données de votre enfant pour éviter de fausser les résultats de l'essai.
+
+1.  Qui, en dehors de l’investigateur et du personnel de l’essai, a accès aux données personnelles de mon enfant ?
+
+Pour vérifier la qualité de l'essai, il est possible que les données personnelles non codées de votre enfant ou les informations contenues dans son dossier médical et pertinentes pour l'essai soient examinées par des personnes extérieures au personnel de l'essai, mais sous la responsabilité de l'investigateur. Ces personnes doivent être soumises au secret professionnel ou à un accord de confidentialité. Les personnes suivantes peuvent être envisagées :
+
+- le personnel désigné par le promoteur de l'essai (moniteurs et auditeurs), et les personnes ou organisations fournissant des services au promoteur ou collaborant avec lui. Ils ne transmettront toutefois jamais le nom de votre enfant et ses coordonnées au promoteur.
+
+- les inspecteurs des autorités sanitaires compétentes du monde entier
+
+- un groupe d'audit indépendant
+
+- des personnes désignées par le Comité d'éthique
+
+Pour les besoins de l'essai, les données codées de l'essai peuvent être envoyées à d'autres pays de l'UE et à des
+
+- le personnel (autre que les inspecteurs) des autorités sanitaires compétentes de Belgique (Agence fédérale des médicaments et des produits de santé, AFMPS) et d'autres pays de l'UE et de pays tiers,
+
+- le(s) comité(s) d'éthique belge(s) chargé(s) de l'évaluation,
+
+- les chercheurs externes,
+
+- le promoteur de l'essai, le personnel désigné par le promoteur et les personnes ou organisations qui fournissent des services au promoteur ou collaborent avec lui, et/ou le personnel désigné par le promoteur.
+
+- les sociétés du groupe du promoteur en Belgique et dans d'autres pays de l'UE et hors UE.
+
+Le règlement européen et la législation belge sur la protection des données imposent des exigences en matière de transfert de données vers des pays non membres de l'UE. Le promoteur doit assurer des garanties équivalentes en ce qui concerne les normes de protection des données personnelles avant de transférer les données encodées vers des pays non membres de l'UE. Si un accord de protection des données a été conclu à cette fin, une copie de cet accord peut être obtenue par l'intermédiaire de l'investigateur. Vous pouvez toujours contacter votre investigateur pour obtenir plus d'informations sur ces transferts.
+
+1.  Qu'adviendra-t-il des résultats de l'essai ?
+
+Après la clôture de l'essai, une description et les résultats de cet essai clinique seront publiés dans des revues médicales spécialisées. Une copie de la publication scientifique ou, si disponible, un résumé destiné au grand public peut être obtenu auprès de l’investigateur ou du personnel chargé de l'essai.
+
+Une description de l’essai sera également disponible sur https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en et/ou sur https://www.Clinicaltrials.gov. Vous pouvez consulter ces sites web à tout moment en utilisant les informations reprises sur la première page du formulaire de consentement éclairé. Dans un délai d'un an après la fin de l'étude, le site web reprendra un résumé des résultats conformément aux recommandations de la Commission européenne.
+
+Ces sites web ou publications ne contiendront pas d'informations permettant d’identifier votre enfant
+
+2.  Les données de mon enfant seront-elles utilisées à d'autres fins que l'essai auquel il participe ?
+
+Les résultats de l'essai serviront à répondre à des questions visant à améliorer le traitement des patients atteints de LLA et nécessitant une GCSH En outre, le promoteur souhaite utiliser les données obtenues dans le cadre de cet essai pour d'autres activités de recherche et de développement (et les publications scientifiques associées). Cette recherche future ne peut concerner que des recherches sur la même maladie ou le même médicament.
+
+Toute recherche supplémentaire en dehors de l'essai et donc non décrite dans les points ci-dessus doit être approuvée par un comité d'éthique reconnu.
+
+À la fin de ce formulaire, vous acceptez ou refusez l'utilisation de vos données d'essai à d'autres fins en cochant la case appropriée au chapitre II.
+
+3.  Combien de temps les données de mon enfant seront-elles conservées ?
+
+Après la fin de l'essai, les données codées de votre enfant seront conservées pendant au moins 25 ans, conformément à la réglementation européenne sur les essais cliniques, afin de garantir la validité de la recherche. Ce sera également le cas si votre enfant a cessé prématurément de participer à l'essai.
+
+ Quels sont les échantillons biologiques de mon enfant prélevés au cours de l'essai et qu'en adviendra-t-il ? 
+
+1.  Quels sont les échantillons biologiques prélevés au cours de l'essai ?
+
+Les échantillons biologiques sont des échantillons de matière provenant du corps humain. Dans cette sous-étude, les échantillons biologiques suivants seront prélevés sur votre enfant : échantillons de sang (voir chapitre I, section 4)
+
+La procédure d'encodage des échantillons biologiques de votre enfant est la même que celle utilisée pour les données personnelles de votre enfant, conformément à la législation belge relative à l'utilisation de matériel biologique humain (voir I § ). Les échantillons envoyés au promoteur ou aux organisations travaillant en collaboration avec le promoteur, ne seront étiquetés qu'avec le code d'identification de l'essai de votre enfant. Le promoteur veille à ce que l'emplacement des échantillons biologiques de votre enfant soit toujours suivi. L'utilisation des échantillons biologiques de votre enfant est liée au traitement des données personnelles codées associées de votre enfant.
+
+Ses échantillons biologiques sont considérés comme un "don". Vous ne recevrez aucun avantage financier lié au développement de nouvelles thérapies dérivées de l'utilisation des échantillons biologiques de votre enfant, et qui pourraient avoir une valeur commerciale.
+
+2.  Qu'adviendra-t-il des échantillons biologiques collectés de mon enfant ?
+
+Ces échantillons biologiques seront analysés pour les objectifs de l'essai. Les échantillons spécifiques à l’étude seront envoyés au promoteur coordonnateur de l'étude (Hôpital pédiatrique Bambino Gesù à Rome, Italie).
+
+Des analyses génétiques seront également effectuées sur les échantillons biologiques de votre enfant. Les analyses génétiques sont des études de l'ADN. Par exemple, l'ADN détermine la couleur de nos cheveux et de nos yeux. L'ADN peut également expliquer pourquoi certaines personnes répondent à certains médicaments et d'autres non. Il peut également expliquer pourquoi certaines personnes contractent certaines maladies et d'autres non.
+
+Ces analyses génétiques fourniront des informations essentielles pour l'essai. Vous pouvez indiquer au chercheur si vous acceptez ou non ces analyses génétiques soient effectuées chez votre enfant en cochant la case correspondante au chapitre II.
+
+Étant donné que les progrès scientifiques dans ce domaine sont constants, le promoteur souhaiterait, avec votre accord, conserver les restes de ses échantillons biologiques pendant 25 ans. Le promoteur les utilisera pour des recherches supplémentaires qui restent dans le cadre de l'essai clinique actuel et donc avec la même maladie ou le même traitement/médicament que dans cet essai.
+
+Ces échantillons peuvent être utilisés à l'avenir pour des recherches liées à cette étude, telles que :
+
+Comprendre la biologie de la GvHDa
+
+Améliorer les méthodes pour diagnostiquer, surveiller ou traiter la maladie
+
+Comparer les données avec d'autres études cliniques ou développer de nouveaux critères d'évaluation cliniques
+
+Il existe deux types d'utilisation future autorisée des échantillons restants de votre enfant :
+
+1. Utilisation par la même équipe de recherche à des fins strictement liées à cette étude
+
+2. Utilisation par différentes équipes de recherche, mais uniquement dans le cadre de projets scientifiques conjoints alignés sur les objectifs de l'étude, portant sur la même maladie ou le même traitement/médicament
+
+À la fin de ce formulaire, vous acceptez ou refusez l'utilisation des restes des échantillons de votre enfant pour la recherche dans le contexte de cet essai en cochant la case appropriée au chapitre II. Les recherches supplémentaires en dehors de l'essai doivent être approuvées par un comité d'éthique reconnu.
+
+Vous pouvez révoquer votre consentement pour la participation de votre enfant à tout moment sans affecter les soins médicaux. Si vous choisissez de révoquer le consentement pour l'utilisation future des échantillons, vous pouvez demander :
+
+Que tous les échantillons restants de votre enfant soient rendus anonymes de façon permanente (ils ne pourront plus lui être liés), OU
+
+Que les échantillons de votre enfant et les données associées soient détruits
+
+Que se passe-t-il si l'essai révèle des informations importantes sur la santé de votre enfant ?
+
+Nous pouvons découvrir de nouvelles informations sur la santé de votre enfant au cours de l'essai. Si ces informations peuvent être importantes pour sa santé, le promoteur en informera le chercheur. Avec votre consentement, le chercheur ou la chercheuse vous informera, vous et votre médecin traitant, des résultats de votre enfant et des conséquences possibles. Si nécessaire, le chercheur et/ou le médecin traitant vous conseilleront sur la marche à suivre.
+
+Vous pouvez indiquer au chercheur si vous acceptez ou non d'être informé des informations significatives découvertes au sujet de la santé de votre enfant en cochant la case correspondante au chapitre II. Le chercheur ou la chercheuse ou votre médecin traitant vous informera de ces informations en tout cas lorsque le fait de ne pas être informé(e) peut causer un préjudice grave à la santé de votre enfant ou à celle de tiers.
+
+Qui a examiné et approuvé les documents de l'essai ?
+
+Les documents de l'essai ont été revus par
+
+- Les autorités sanitaires compétentes belges (AFMPS) ou, le cas échéant, les autorités sanitaires nationales compétentes d'autres États membres de l'UE et un comité d'éthique belge indépendant.
+
+Les autorités sanitaires compétentes et les comités d'éthique ont pour mission de protéger les personnes qui participent à un essai. Les autorités sanitaires veilleront à ce que l'essai soit mené conformément à la législation applicable.
+
+Vous ne devez en aucun cas considérer leur accord comme une incitation à faire participer votre enfant à l'essai.
+
+CHAPITRE II - Formulaire de consentement POUR LES PARENTS/TUTEURS  FORUM2 – étude principale
+
+Cadre pour l'optimisation, le perfectionnement et l'unification de la prise en charge de la greffe de cellules souches hématopoïétiques (GCSH) dans la leucémie lymphoblastique aiguë (LLA) pédiatrique. (Framework for Optimizing, Refining, and Unifying Management OF HSCT IN PEDIATRIC ALL) 
+
+Numéro de référence du participant à l'étude : _______________
+
+Version et date du protocole : ______________________________
+
+PARTICIPANT(E) : 
+
+Conditions préalables pour la participation de votre enfant à l'essai
+
+- Je déclare avoir lu ce formulaire et compris les informations qu'il contient.
+
+- Je déclare avoir été informé(e) et comprendre l'objectif de l'essai clinique, sa durée et ses conséquences, les risques et désagréments éventuels, les précautions que mon enfant doit prendre et ce qui est attendu de moi. Les droits de mon enfant m'ont été expliqués et je les ai compris.
+
+- J'ai eu suffisamment de temps pour réfléchir à la participation de mon enfant à cet essai et pour en discuter avec une personne de confiance (par exemple des amis, des parents, le médecin traitant...).
+
+- J'ai eu la possibilité de poser toutes les questions qui me venaient à l'esprit et j'ai obtenu une réponse satisfaisante à mes questions.
+
+- Je comprends que la participation de mon enfant à cet essai est volontaire et libre de toute contrainte et que je suis libre de l'interrompre à tout moment.
+
+- Je comprends que des données concernant mon enfant seront collectées et qu'elles seront traitées de manière confidentielle, comme décrit au chapitre I, §12.2.
+
+- Je suis conscient que les données personnelles de mon enfant sont traitées comme décrit au chapitre I, §12.
+
+- Je comprends que les représentants du promoteur, du comité d'éthique et des autorités sanitaires compétentes ont accès au dossier médical de mon enfant s'ils y sont autorisés (comme décrit au chapitre I, §12.5).
+
+- Je comprends que le promoteur a souscrit une assurance au cas où mon enfant subirait des dommages liés à sa participation à cet essai.
+
+- Je comprends qu'en participant à cet essai, je n'aurai pas d'autres frais que ceux liés au traitement standard de la maladie de mon enfant.
+
+- J’ai conscience que le ou les médecins traitants de mon enfant seront informés de sa participation à cet essai.
+
+- Si mon enfant participe à un autre essai interventionnel, je dois en informer l'investigateur ou l'équipe chargée de l'essai. J'accepte que mon enfant ne participe à aucun autre essai interventionnel (par exemple, avec un médicament à l'étude, un dispositif médical, une technique chirurgicale expérimentale) en même temps sans en informer au préalable l'investigateur ou le personnel de l'essai, qui pourrait ne pas autoriser la participation de mon enfant pour une bonne raison.
+
+- Je comprends que mon enfant doit coopérer et suivre les instructions de l'investigateur et du personnel de l'essai concernant l'essai.
+
+- Je comprends que la participation de mon enfant à l'essai peut prendre fin sans son consentement si mon enfant a besoin d'un autre traitement, ne suit pas le protocole de l'essai ou pour toute autre raison justifiée.
+
+- Je certifie que toutes les informations que j'ai fournies concernant les antécédents médicaux de mon enfant sont correctes, à ma connaissance. Je comprends qui cela pourrait porter préjudice à mon enfant si je n'informe pas l'investigateur des raisons possibles pour lesquelles mon enfant ne pourrait pas participer à l'étude.
+
+Consentements facultatifs qui ne sont pas une condition préalable à la participation de votre ENFANT à cet essai.
+
+DONNÉES OBTENUES DANS CET ESSAI
+
+1.  Comme spécifié au chapitre I, § 12.7, le promoteur souhaite pouvoir utiliser les données de votre enfant obtenues à partir de cet essai pour d'autres activités de recherche et développement (et les publications scientifiques associées), à condition que ces objectifs de recherche aient été approuvés par un comité d'éthique reconnu.
+
+  Êtes-vous d'accord avec l'utilisation des données de votre enfant obtenues dans le cadre de cet essai à d'autres fins de recherche ?
+
+  (Cochez la case appropriée)
+
++---------------------------------+---------------------------------+
+|   ☐ J'accepte                   |   ☐ Je refuse                   |
++:================================+=================================+
+
+ÉCHANTILLONS BIOLOGIQUES DANS LE CADRE DE L'ESSAI CLINIQUE
+
+2.  Comme indiqué au chapitre I section 4, le promoteur souhaite recueillir des échantillons de sang auprès de votre enfant dans le cadre de l'essai clinique auquel votre enfant participeras.
+
+Acceptez-vous de donner des échantillons de sang de votre enfant dans le cadre de cette étude?
+
+(Cochez la case appropriée)
+
++---------------------------------+---------------------------------+
+|   ☐ J'accepte                   |   ☐ Je refuse                   |
++:================================+=================================+
+
+3.  Comme indiqué au chapitre I,§ 13.2, le promoteur souhaite conserver les restes des échantillons biologiques de votre enfant pendant 25 ans à des fins de recherche supplémentaire dans le cadre de l'essai auquel votre enfant participera. Les recherches supplémentaires en dehors de l'essai doivent être approuvées par un comité d'éthique reconnu.
+
+  Acceptez-vous que les restes des échantillons biologiques de votre enfant et les données personnelles qui les accompagnent soient conservés à des fins de recherche supplémentaire dans le cadre de l'essai ?
+
+  (Cochez la case appropriée)
+
++---------------------------------+---------------------------------+
+|   ☐ J'accepte                   |   ☐ Je refuse                   |
++:================================+=================================+
+
+INFORMATIONS PERTINENTES
+
+4.  Comme indiqué au chapitre I §14, il peut arriver que des informations pertinentes soient découvertes qui pourraient être importantes pour la santé de votre enfant ou celle de tiers.
+
+Si cela devait se produire, voulez-vous que l’investigateur ou votre médecin traitant vous en informe ?
+
+  (Cochez la case appropriée)
+
++------------------------------------------+-----------------------------------+
+|   ☐ Non, je ne veux pas qu’on m'informe. |   ☐ Oui, je veux qu'on m'informe. |
++:=========================================+===================================+
+
+Je consens à laisser mon enfant participer à l'essai, avec les restrictions susmentionnées, et j'ai reçu une copie signée et datée de toutes les pages de ce document.
+
+Nom et prénom du premier parent/tuteur :
+
+Date (JJ/MM/AAAA) :
+
+Heure :
+
+Signature du premier parent/tuteur :
+
+Nom et prénom du premier parent/tuteur :
+
+Date (JJ/MM/AAAA) :
+
+Heure :
+
+Signature du second parent/tuteur :
+
+TÉMOIN IMPARTIAL/INTERPRÈTE (REF. [2] )
+
+(si présent)
+
+Je soussigné(e) (cocher la case correspondante),
+
+☐ Témoin impartial
+
+☐ Interprète
+
+ai assisté à l'ensemble du processus d'information des parents/tuteurs et je confirme que les informations relatives aux objectifs et aux procédures de l'essai ont été fournies de manière adéquate, que les parents/tuteurs (ou leur représentant légal) ont apparemment compris l'essai et que le consentement à participer à l'essai a été donné librement. 
+
+Je déclare en outre qu'en tant que témoin impartial/interprète, je suis indépendant du promoteur et de l'investigateur.
+
+Nom et prénom du témoin impartial/interprète :
+
+Qualification du témoin impartial/Interprète :
+
+Date (DD/MMM/YYYY) :
+
+Heure :
+
+Signature témoin impartial/interprète :
+
+INVESTIGATEUR
+
+Je, l'investigateur soussigné, confirme que :
+
+- les parents/tuteurs ont reçu verbalement les informations nécessaires sur l'essai, se sont vu expliquer le contenu de l'essai et ont reçu un document original signé.
+
+- J'ai vérifié que les parents/tuteurs ont compris l'essai.
+
+- J'ai laissé aux parents/tuteurs suffisamment de temps pour accepter que leur enfant participe et pour poser toutes leurs questions.
+
+- Aucune pression n'a été exercée pour persuader les parents/tuteurs d'accepter que leur enfant participe à l'essai.
+
+- Je travaille conformément aux principes éthiques énoncés dans la dernière version de la "Déclaration d'Helsinki", aux "Bonnes pratiques cliniques" et à la loi belge sur les essais cliniques.
+
+Nom et prénom de l’investigateur :
+
+Date (DD/MMM/YYYY) :
+
+Heure :
+
+Signature de l’investigateur :
+
+GLOSSAIRE
+
+AFMPS : Agence fédérale des médicaments et des produits de santé
+
+APD : L'Autorité de protection des données veille à ce que les données à caractère personnel soient traitées avec soin et protégées de manière rigoureuse, et à ce que la vie privée future de votre enfant reste également garantie.
+
+Autres abréviations apparaissant dans le texte :
+
+Assurance sans faute :
+
+Le promoteur est responsable de toute blessure ou de tout dommage subi par le participant et directement ou indirectement lié à l'essai clinique. Vous n'avez pas à prouver de faute à cet égard.
+
+MONITEUR et AUDITEUR
+
+Le moniteur et l'auditeur travaillent tous deux pour le promoteur.
+Le moniteur assure un contrôle qualité continu pendant toute la durée de l'essai. L'auditeur effectue un contrôle qualité indépendant et ponctuel à un moment donné pendant l'essai. Il vérifie si l'essai est ou a été mené conformément au protocole, si les données rapportées sont fiables et si l'essai clinique a été mené conformément aux règles applicables.
+
+RÉFÉRENCES
+
+[1] Tout au long du document, le terme « codage » est utilisé comme synonyme de « pseudonymisation », terme utilisé dans le règlement général sur la protection des données n° 2016/679.
+
+[2] Le recours à un témoin impartial est nécessaire lorsque le sujet ou son représentant légal parle et/ou comprend parfaitement la langue du formulaire de consentement éclairé approuvé, mais ne sait ni lire ni écrire en raison d'un handicap physique ou d'une déficience visuelle. Un interprète est nécessaire lorsque l'investigateur ne parle pas la langue du patient.

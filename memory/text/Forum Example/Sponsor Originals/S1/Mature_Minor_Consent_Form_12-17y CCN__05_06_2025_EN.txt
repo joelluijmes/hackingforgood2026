@@ -1,0 +1,417 @@
+INFORMED CONSENT FORM FOR THE INCLUSION IN A CLINICAL TRIAL
+
+INTENDED FOR A MINOR AGED BETWEEN 12 AND 17 YEARS
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Official title of the trial(in Italian)                                                                                                                                                                                                           |
+|                                                                                                                                                                                                                                                   |
+| Comparing between In-Vivo PTCy and Ex-Vivo αβ T-Cell Depletion in Mismatched Donor Transplantation for Pediatric and Young Adult ALL: A Prospective Stratified Cohort Study                                                                       |
++:==================================================================================================================================================================================================================================================+
+| Official title of the trial in more understandable terms for the patient                                                                                                                                                                          |
+|                                                                                                                                                                                                                                                   |
+| This study compares two ways to get rid of T cells in transplants from mismatched donors in children and young adults. The first way is to give Cyclophosphamide after the transplant, and the second way is to take αβ T cells out of the graft. |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Facility-context of the trial                                                                                                                                                                                                                     |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Coordinating center (if different from the structure where the trial will take place) and clinical trial coordinator                                                                                                                              |
+|                                                                                                                                                                                                                                                   |
+| Coordinating center ____________________________________________________________________                                                                                                                                                          |
+|                                                                                                                                                                                                                                                   |
+| Clinical trial coordinator__________________________________________________________________                                                                                                                                                      |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Register where the trial has been registered or will be registered (if applicable) and any identification code if available                                                                                                                       |
+|                                                                                                                                                                                                                                                   |
+| Identification code ____________________________                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                                   |
+| Register_______________________________________________________________________________________                                                                                                                                                   |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Principal investigator (indicate the local Trial Manager)                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                   |
+| Name ___________________________________________________________________________                                                                                                                                                                  |
+|                                                                                                                                                                                                                                                   |
+| Affiliation ____________________________________________________________________________                                                                                                                                                          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                                                                                                                                                   |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Sponsor/Financing body                                                                                                                                                                                                                            |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Ethics Committee                                                                                                                                                                                                                                  |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+  This document consists of the following sections:
+
+A.  INTRODUCTION
+
+B.  QUESTIONS AND ANSWERS SECTION: KEY INFORMATION
+
+C.  FURTHER INFORMATION
+
+D.  CONSENT SECTION
+
+ADDITIONAL DOCUMENTS
+
+A.  INTRODUCTION
+
+Dear Young Person,
+
+your parents have been involved to inform them and ask for their consent to your participation in a clinical trial. For this purpose, we have submitted to them a detailed information sheet, which goes into detail on the various aspects of the trial. From a legal point of view, their consent is essential for you to be able to take part in the trial.
+
+However, it is your right to be informed about the purpose and characteristics of the trial so that you can make an informed and free decision whether to participate or not. In relation to your age, there are the prerequisites for a reasonable maturity allowing you to form your own opinion on the subject and to evaluate the information relating to the trial, to its risks and benefits. For this reason, your explicit desire will be taken into consideration to participate or to refuse participation in the trial or to withdraw from it at any time.
+
+This document aims to inform you clearly and thoroughly about the nature and purposes of the trial, and about what your participation will entail for you, including your rights and responsibilities. We have restricted ourselves to the aspects that we consider most significant for you but, if you wish, you can also consult the information sheet delivered to your parents.
+
+Please read the following carefully. The researchers involved in this project, indicated at the beginning of this document, are available to answer your questions. No question that comes to your mind is trivial: don't be afraid to ask!
+
+Besides us, you can discuss the proposal contained in this document with your general practitioner, your family and other trusted persons. Take your time to decide. You can take home an unsigned copy of this document to think about it or to discuss it with others before making a decision.
+
+Should you decide not to participate in the trial, you will still receive the best possible care for patients with your condition/disease. In no way will your refusal be interpreted as a lack of trust.
+
+IF APPROPRIATE: To facilitate the understanding of this document, the Trial Center (OTHERS: INDICATE) makes available a cultural mediator in order to transfer the contents in the manner and language most suitable for you.
+
+IF APPROPRIATE: If you are unable to sign the informed consent, the consent can be provided and recorded using specific alternative means, such as audio or video recordings, in the presence of at least one impartial witness.
+
+Once you have read this form, received answers to any questions and decided to participate in the trial, you will be asked to sign a consent form, of which you will receive a hard copy.
+
+The first section will answer the following questions:
+
+- What is the aim of this clinical trial?
+
+- What are the objectives of the trial? Who else will participate? How long will it last?
+
+- Is it my free choice to decide whether to participate or not?
+
+- What if at some point I want to withdraw from the trial?
+
+- What happens if I decide to participate in the trial? How long will it last?
+
+- Are there any rules to respect?
+
+- What benefits can I expect?
+
+- Will I take risks if I participate in the trial?
+
+- Who can I ask for further explanations? Who will my contact point be?
+
+- What happens if I come of age during the trial?
+
+In the next section, we will provided you with additional relevant information.
+
+The Principal Investigator
+
+A.  QUESTIONS AND ANSWERS: KEY INFORMATION
+
+- What is the aim of this clinical trial?
+
+  We are asking you to participate in a clinical trial funded by ................ because you have......
+
+  You are a candidate for an allogeneic stem cell transplant from a mismatched related donor (haplo-HSCT). For this type of transplant, it is important to reduce the number of T cells in the graft. This is to lower the risk of a condition called Graft-versus-Host Disease (GvHD). The two most common methods for reducing T-cell activity are based on giving to patients a drug called cyclophosphamide after transplant (PTCy) or on removing a specific type of T lymphocyte (αβ T-cells) and B lymphocyte from the graft. So far, no one has done a study to compare the two strategies we talked about. The aim of this trial is to see if there are any differences in the results of these two different T-cell depletion methods.
+
+- What are the objectives of the trial? Who else will participate? How long will it last?
+
+  The trial is performed to answer this question: are there differences in efficacy or rate of complications between those who received a haplo-HSCT based on cyclophosphamide or based on αβ/CD19+ cell depletion from the graft?
+
+  The trial is expected to take place in approximately 133 centers in 26 countries and 150 patients will be included.
+
+  The trial is expected to last 5 years.
+
+- Is it my free choice to decide whether to participate or not?
+
+  In relation to your age, there are the prerequisites for a reasonable maturity allowing you to form your own opinion on the subject (discussing it with your parents, with trial staff or with whomever you deem appropriate) and to evaluate the information relating to the trial, to its risks and benefits. For this reason, your explicit desire will be taken into consideration to participate or to refuse participation in the trial or to withdraw from it at any time.
+
+  If you decide not to join the trial, you can still be followed by the physicians that are treating you and the T-cell depletion method for your haplo-HSCT will be chosen by your doctors.
+
+  In addition, you can participate in another trial that may be in progress.
+
+- What if at some point I want to withdraw from the trial?
+
+  You can decide to withdraw from the trial at any time and for any reason, without having to justify your decision.
+
+  Should you decide not to participate anymore, please inform one of the investigating doctors as soon as possible: it is important to suspend treatment safely. The doctor may consider a final check-up test/examination.
+
+  Your doctor will keep you informed of any changes in the trial that may affect your willingness to participate.
+
+  Please note that the investigating physician may decide to terminate your participation in the trial if:
+
+- Your health conditions were to change and participation in the trial proved potentially harmful
+
+- New information is available and the trial is no longer in your best interest
+
+- You do not follow the agreed rules for participation in the trial: in particular, for girls, if you happen to get pregnant during the trial
+
+- What happens if I decide to participate in the trial? How long will it last?
+
+  Before taking part in the trial, your doctor will ask you to perform some tests and check if you have the characteristics required to join it.
+
+  If you decide to take part in the trial, your doctors will choose the T cell depletion platform for the haplo-HSCT from one of these two options:
+
+  PTCY: intravenous administration of Cyclophosphamide on days +3 and +4 after HSCT. On day +5, you'll start taking immune suppressive drugs as CSA and mofetil mycophenolate daily during the early period after transplantation. These drugs will be administered intravenously in the early period after haplo-HSCT, and subsequently by mouth.
+
+  - αβ T-cell depletion: the leukapheresis product collected from your donor will be depleted of TCR αβ T cells and B cells following the standard protocol that the Center uses. After the depletion, the cells collected from your donor will be given to you on day 0.
+
+  According to the study, you will be evaluated with periodic control until 5 years after HSCT.
+
+  During the screening procedure and post-transplant visits, you will have a physical, laboratory and radiological examination depending on your condition.
+
+  The evaluations will include:
+
+  • A general visit (with blood pressure and heart rate checks, etc.) and a record of any drugs you're currently taking.
+
+  • Blood samples at specific time points;
+
+  • Bone marrow evaluation at +30, +60 and +100 days, as well as at +6, +9, +12, +18 and +24 months after the transplant.
+
+  • Radiological examinations, depending on clinical assessments and during long-term visits
+
+  • The PEDsQLTM questionnaire and the PedsQL™ Stem Cell Transplant Module.
+
+  • We'll be checking up on you every year with a range of specialists, including those who specialise in growth, breathing, and heart health.
+
+- Are there any rules to respect?
+
+  REPORT INFORMATION ON THE PARTICIPANT'S RESPONSIBILITIES, IN PARTICULAR:
+
+- Scrupulously observe the indications and requests from the health personnel following the trial and ensure attendance at appointments.
+
+- Please inform the clinical trial doctor on:
+
+  o any medications you are taking including non-conventional medicine,
+
+  o any side effects that may arise during the trial,
+
+  o any exam or hospitalisation in facilities other than the trial center,
+
+  In all this you will be advised and supported by your parents.
+
+  Moreover, it will be mandatory to:
+
+- For boys, avoid having a child during the trial.
+
+- For girls, avoid pregnancy or breastfeeding during the trial.
+
+  We remind you that the treatment envisaged by the trial could harm a possible fetus. It is therefore envisaged that you first carry out a pregnancy test and subsequently undertake not to get pregnant. If you agree to participate in this trial, you must therefore use a safe method of contraception during the trial period and for ....... months after the last dose of the drug. You should evaluate with the doctor who proposed this trial the best contraceptive method for your case”.
+
+- What benefits can I expect?
+
+  Although you will not receive any direct immediate benefits from joining the trial, your participation in the study will help clinicians determine whether there are differences in transplant success between the two T-cell depletion methods. You and other patients undergoing transplant from a haploidentical donor could benefit in the future.
+
+  Based on available studies, both of these transplant platforms works equally at treating childhood acute lymphoblastic leukaemia. So far, no one's tried to compare the results of PT-Cy haplo-HSCT and TCR αβ/CD19+ depleted HSCT in a study involving a high number of patients. This study will compare the results for patients treated with these two transplant strategies. The choice of T-cell depletion strategy will be based on the centre's experience.
+
+- Will I take risks if I participate in the trial?
+
+  The risks you may face by taking part in this trial are the same as the risks associated with the haplo-HSCT procedure.
+
+  The chemotherapy and radiotherapy administered before a transplant, will weaken your immune system. This means you are more likely to get infections from bacteria, viruses and fungi. If there are fewer T cells in the transplant, it can take longer to recover from infection. To reduce this risk, you will be given drugs such as antibiotics, as well as drugs against viruses and fungi.
+
+  The conditioning therapy has similar side effects to the initial treatment (nausea, vomiting, hair loss, stomatitis). Making red blood cells (needed for oxygen transport) and platelets (needed for blood clotting) is also temporarily affected. These cells must be replaced by blood transfusions.
+
+  In the past, this treatment has been linked to a higher chance of the transplant being rejected because of strong reactions between the donor and recipient.
+
+  Graft versus Host Disease is a complication which occurs when the donor cells starts to attack your body cells. It can cause skin problems (e.g. a rash), liver problems and gut problems (e.g. watery diarrhea). To diagnose GvHD, a doctor might take a sample of skin or intestinal tissue for testing. They will start an appropriate treatment as soon as possible.
+
+  Sadly, even years later, leukemia can come back. So, it is important to have regular check-ups to spot any problems as soon as possible.
+
+  Even years after treatment, there may still be some effects from the chemotherapy and radiation. The most common late effects involve growth, lung and infertility. Moreover, the transplant by itself could increase the risk to develop a second tumor.
+
+- Who can I ask for further explanations? Who will my contact point be?
+
+  For any doubt and unforeseeable or unscheduled event during the trial (doubts relating to the treatment in progress, side effects, decision to abandon the trial, etc.), you or your parents (guardian) can contact:
+
+  INDICATE NAMES AND REFERENCES OF THE TRIAL CENTER STAFF THAT THE PARTICIPANT CAN CONTACT (Dr. [SPECIFY NAME], [SPECIFY TELEPHONE NUMBER, E-MAIL]).
+
+  INDICATE WHO CAN BE CONTACTED ON HOLIDAYS AND POSSIBLE CONTACTS ON CALL
+
+- What happens if I come of age during the trial?
+
+  As already indicated, if you aggree to participate in the trial you will be asked to sign a consent form, whereby you confirm that you have been sufficiently clarified every aspect of the trial, that you express your willingness to participate but that it has no legal value, unlike the consent given by your parents, who exercise the so-called parental authority. Should you come of age, you will become legally autonomous in your choices. Consequently, you will be submitted a new informed consent.
+
+B.  FURTHER INFORMATION
+
+1.  Trial Authorization
+
+  The trial protocol proposed to you has been examined and approved by the Ethics Committee ......................... Among other things, the Ethics Committee has verified the compliance of the trial with the standards of Good Clinical Practice and with the ethical principles expressed in the Declaration of Helsinki and that your safety, rights and well-being have been protected.
+
+2.  Processing of personal, health and clinical data
+
+  Your data, in particular personal and health data, will be processed only to the extent that they are indispensable to the objective of the trial and for pharmacovigilance purposes, in compliance with EU Regulation 2016/679, known as GDPR (General Data Protection Regulation) and with Legislative Decree 10 August 2018, no. 101, that is, the rules governing privacy. In practical terms, the documents concerning you will be kept in a safe place and will not report your name in clear text (only known to the researchers), but an identification code.
+
+  The data, made anonymous, may be subject to control by regulatory bodies and used for scientific publications (journals, conferences).
+
+  Your clinical data collected for the purposes of the trial, as well as the results of the tests carried out, will be stored for the time required by the regulations and subsequently destroyed. They will not be destroyed only if a) it is no longer possible to trace them back to your identity, because they have been anonymised during the trial itself; b) in the presence of your specific informed consent.
+
+  If the personal data are transferred to a third country or to an international organization, all the guarantees will be adopted which are provided for by Article 46 of the GDPR 679/2016.
+
+3.  Treatment of biological samples
+
+  For the purpose of experimentation, you may be asked for taking of biological samples such as blood or tissue samples.
+
+  As for health data, also biological samples will be used for the purposes of the trial in a pseudonymised way (technique allowing to change and mask personal and sensitive data of a natural person, in order not to make them directly and easily attributable to him/her).
+
+  Once the trial is over, your samples will be destroyed. They will not be destroyed only if: a) it is no longer possible to trace them back to your identity, because they have been anonymised during the trial itself, or b) in the presence of your specific informed consent and agreement with the biobank for sample storage.
+
+4.  Access to the results of the trial?
+
+  Once the trial is over and all the resulting data have been collected, they will be analyzed to draw conclusions. The investigators undertake to make them available to the scientific community.
+
+  The law provides for the possibility that participants have access to the results of the trial. Therefore, you and your parents can ask the investigating physician to communicate the general results of the trial (or indicate where and how to access the trial results).
+
+5.  Unexpected results following analysis
+
+  Analyses (genetic, X-ray, etc.) performed during the trial may give unexpected results (e.g. relating to the possibility of developing other diseases in the future). This information will only be provided to you upon your indication. You may also choose to receive only information that may be useful for the care of your health and/or your potentially affected family members and/or to allow you to make an informed reproductive choice.
+
+______________________________ ___/___/______ _________ ____________________________
+
+Full name of the doctor Date Time Signature
+
+who delivered the note
+
+Additional documents:
+
+- Consent for use of biological data/samples for future studies
+
+- Consent for genetic testing
+
+- Consent for any sub-studies (additional studies that are not an integral part of the main study protocol)
+
+1.  
+
+C.  INFORMED CONSENT BY A MINOR AGED BETWEEN 12 AND 17 YEARS
+
+(Notes: 1 copy for the participant, 1 copy for the trial manager)
+
+Title of the trial:________________________________________________________________
+
+Protocol code, version and date: ___________________________________________________________
+
+Promoter of the trial/sponsor funding body: _____________________________________
+
+Principal Investigator (NAME, AFFILIATION, REFERENCES): ________________________________________
+
+_______________________________________________________________________________________
+
+I, the undersigned ______________________________________________
+
+born in _________________________________________________________________ on ___/___/______
+
+DECLARE THAT
+
+▢ Dr ________________________________________ has provided me/us with exhaustive explanations regarding the request for participation in the research in question, as reported in the information section contained in this consent, of which I was/we were given a copy on ____________ at ______________ (indicate date and time of delivery);
+
+▢ I have been clearly explained and I have understood the nature, the purposes, the procedures, the expected benefits, the possible risks and inconveniences and the alternative treatment methods with respect to the proposed clinical trial;
+
+▢ I had the opportunity to ask any question to the trial investigator and I received satisfactory answers;
+
+▢ I had sufficient time to reflect on the information received and to discuss it with my parents or with whomever I deemed appropriate;
+
+▢ I have been informed that the trial protocol and all the forms used have received the favorable opinion by the competent Ethics Committee;
+
+▢ I have been informed that I can decide not to take part in the study or to leave it at any time, without providing justification, and that such decisions will in no way change the relationship with the treating doctors and with the facility where I am being treated;
+
+▢ I am aware that the research can be interrupted at any time, by decision of the trial manager;
+
+▢ I have been informed that I will be made aware of any new data that could jeopardise the safety of the research and that, for any problem or further questions, I may contact the doctors where I am being treated;
+
+▢ I have been informed that the results of the trial will be made known to the scientific community, protecting my identity according to the current legislation on privacy;
+
+▢ I am aware that any choice expressed in this consent form may be revoked at any time and without any justification;
+
+▢ I have received a copy of this consent form.
+
+I HEREBY DECLARE THAT
+
+▢ I am willing to participate in the trial
+
+▢I am willing ▢ NOT willing to be informed of all unexpected news relating to my present or future health that may accidentally emerge from the investigations envisaged by the trial, including genetic ones
+
+▢I am willing ▢ NOT willing to be informed of all unexpected news relating to my present or future health only if it can be useful for my health care or to allow me to make informed reproductive choices
+
+▢ I am willing ▢ NOT willing to be contacted after the end of the trial to provide information on my state of health (this only applies to contacts that the study protocol does not envisage as follow-up)
+
+If applicable:
+
+▢ I ACCEPT ▢ I DO NOT ACCEPT to use contraceptive drugs
+
+________________________________________ ___/___/______ _________ ______________________
+
+Place and date Time
+
+___________________________________________ ___________________________________________
+
+Full name of the minor patient Signature
+
+___________________________________________ ___________________________________________
+
+Full name of the legal representative Signature
+
+___________________________________________ ___________________________________________
+
+Full name of the doctor who provided Signature
+
+information and who obtained the consent
+
+[In case the patient cannot sign]
+
+I, the undersigned _________________________________________________ confirm that I have attended the informative meeting between Dr. ________________________and minor patient __________________________and I confirm that he/she is unable to give his/her consent in writing.
+
+________________________________________ ___/___/______ _________ ______________________
+
+Full name of the independent witness Date Time Signature
+
+[In case the patient does not understand the Italian language]
+
+I, the undersigned _________________________________________________ confirm that I have attended the informative meeting between Dr. ________________________and minor patient __________________________and I confirm that I have acted as a facilitator for the understanding of the information.
+
+________________________________________ ___/___/______ _________ ______________________
+
+Full name of the cultural mediator Date Time Signature
+
+  STATEMENT OF THE DOCTOR WHO OBTAINED THE CONSENT BY A MINOR AGED BETWEEN 12 AND 17 YEARS
+
+(Name of the minor patient, place and date of birth)
+
+Title of the trial:________________________________________________________________
+
+Protocol code, version and date: ___________________________________________________________
+
+Promoter/sponsor of the trial__________________________________________________________________
+
+Principal Investigator (NAME, AFFILIATION, REFERENCES): ________________________________________
+
+_______________________________________________________________________________________
+
+I, the undersigned Prof./Dr. ………………………………… ……………………..… in my capacity as Principal investigator
+
+Surname Name
+
+(or as delegate of the Principal investigator)
+
+Hereby declare that
+
+the minor mature patient has voluntarily consented to his/her participation in the trial
+
+I also declare, compatibly with his/her age, that:
+
+▢ I have provided the minor patient with full explanations relating to the purpose of the trial, the procedures, the possible risks and benefits and to possible alternatives;
+
+▢ I have verified that the minor patient sufficiently understood the information provided
+
+▢ I have given the minor patient the necessary time and the opportunity to ask questions about the trial
+
+▢ I have clearly described the possibility of withdrawing from the trial at any time or of changing the choices made
+
+▢ I have not exerted any coercion or undue influence in requesting this consent
+
+▢ I have provided the patient with information on how the results of the trial will be disclosed to him/her
+
+_____________________________________________________ ________
+
+Place and date Time
+
+_________________________________________________ _________________________________________________
+
+Name Surname (block letters) of the doctor who provided the Signature (and stamp)
+
+Information and who obtained the consent
+
+This form is an integral part and must be kept together
+
+with the information sheet for informed consent

@@ -1,0 +1,478 @@
+INFORMATION SHEET AND INFORMED CONSENT FORM FOR THE PARTICIPATION OF PATIENTS IN THE FORUM 2 TRIAL: Randomisation 8 Gray versus 12 Gray
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Official title of the trial:                                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                         |
+| FORUM2 – Randomisation 1: A randomized comparison of 8 Gy versus 12 Gy total body irradiation (TBI) as part of the conditioning prior to allogeneic hematopoietic stem cell transplantation (HSCT) in children and young adults with Acute Lymphoblastic Leucemia (ALL) |
++:========================================================================================================================================================================================================================================================================+
+| Official title of the trial in more understandable terms for the patient:                                                                                                                                                                                               |
+|                                                                                                                                                                                                                                                                         |
+| FORUM2 – Randomisation 1: A Comparison of Two Different Radiation Doses – 8 Gray and 12 Gray Total Body Irradiation (TBI) Before Stem Cell Transplantation in Children and young Adults with Acute Lymphoblastic Leucemia (ALL)                                         |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Facility-context of the trial                                                                                                                                                                                                                                           |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Coordinating center (if different from the structure where the trial will take place) and clinical trial coordinator                                                                                                                                                    |
+|                                                                                                                                                                                                                                                                         |
+| Coordinating center:                                                                                                                                                                                                                                                    |
+|                                                                                                                                                                                                                                                                         |
+| Ospedale Pediatrico Bambino Gesù, IRCCS                                                                                                                                                                                                                                 |
+|                                                                                                                                                                                                                                                                         |
+| Piazza di Sant'Onofrio, 4                                                                                                                                                                                                                                               |
+|                                                                                                                                                                                                                                                                         |
+| 0165 Roma, Italy                                                                                                                                                                                                                                                        |
+|                                                                                                                                                                                                                                                                         |
+| Tel: 0039/06.6859.3697                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                                                         |
+| Fax: 0039/06.6859.2292                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                                                         |
+| Clinical trial coordinator                                                                                                                                                                                                                                              |
+|                                                                                                                                                                                                                                                                         |
+| Prof. Dr. Franco Locatelli                                                                                                                                                                                                                                              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Register where the trial has been registered or will be registered (if applicable) and any identification code if available                                                                                                                                             |
+|                                                                                                                                                                                                                                                                         |
+| Identification code: 2025-522052-13-00                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                                                         |
+| Register: CETIS                                                                                                                                                                                                                                                         |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Principal investigator (indicate the local Trial Manager)                                                                                                                                                                                                               |
+|                                                                                                                                                                                                                                                                         |
+| Name ___________________________________________________________________________                                                                                                                                                                                        |
+|                                                                                                                                                                                                                                                                         |
+| Affiliation ___________________________________________________________________                                                                                                                                                                                         |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Sponsor/Financing body                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                                                         |
+| Ospedale Pediatrico Bambino Gesù, IRCCS, Rome, Italia                                                                                                                                                                                                                   |
+|                                                                                                                                                                                                                                                                         |
+| Prof. Dr. Franco Locatelli                                                                                                                                                                                                                                              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Ethics Committee                                                                                                                                                                                                                                                        |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+This document consists of the following sections:
+
+A.  INTRODUCTION
+
+B.  INFORMATION SECTION SUMMARY OF THE TRIAL: KEY INFORMATION
+
+C.  INFORMATION SECTION FURTHER INFORMATION
+
+D.  INFORMED CONSENT SECTION
+
+  ATTACHMENTS
+
+  ADDITIONAL DOCUMENTS
+
+Dear Sir/Madam, the information contained in the following information sheet is very detailed. We kindly ask you to accept to participate in the trial only after having carefully read this information sheet and having had a full interview with a member of the clinical trial group who shall dedicate the necessary time to fully understand what is proposed to you.
+
+A.  INTRODUCTION
+
+Dear Sir/Madam,
+
+This document is part of the informed consent process for participation in a clinical research study.
+
+You are being invited to consider your child’s/the minor’s participation in this clinical research trial because your child/the minor has been diagnosed with acute lymphoblastic leukemia (ALL) and needs to undergo allogeneic hematopoietic stem cell transplantation (HSCT). This document specifically concerns your child’s/the minor’s possible participation in a substudy of the FORUM2 Trial: Randomization 1 (8 Gray vs. 12 Gray).
+
+This substudy is a randomized comparison of two different doses of total body irradiation (TBI) given before the transplant: a standard dose of 12 Gy versus a reduced dose of 8 Gy. The aim of this substudy is to determine whether the reduced dose of TBI, when combined with chemotherapy (etoposide), is as effective in preventing relapse while potentially causing fewer long-term side effects.
+
+Please take the time to read this document carefully. You may wish to discuss it with family members, friends, or your child’s/the minor’s doctors. Your child’s/the minor’s participation in the study is entirely voluntary. If you choose not to enroll your child, this will not affect your child’s/the minor’s future medical care. If you decide to participate, you are free to withdraw your consent at any time, without giving a reason and without any negative consequences for your child’s/the minor’s treatment.
+
+The Principal Investigator
+
+B.  INFORMATION SECTION.
+
+SUMMARY OF THE TRIAL: KEY INFORMATION
+
+This section gives you a brief overview of the study we are inviting you to join. The next sections will explain everything in more detail, so you can decide whether or not you want your child/the minor to take part in the study with full understanding of what it involves. Your child/the minor has been diagnosed with acute lymphoblastic leukaemia (ALL). Although treatment so far has led to complete remission — meaning that no leukaemia cells are currently detectable — based on the characteristics of your child’s/the minor’s disease, there remains a significant risk that the leukaemia could come back. To give your child/the minor the best chance of a long-term cure, an allogeneic stem cell transplant (HSCT) is the recommended, in which your child/the minor will receive healthy stem cells from a suitable donor. This approach is part of routine care for children with high-risk or relapsed ALL and has been shown to improve long-term survival.
+
+Before the transplant, your child/the minor must receive a so-called conditioning treatment. This prepares the body by eliminating remaining leukaemia cells and suppressing the immune system, making space for the donor cells to grow. Conditioning usually involves a combination of total body irradiation (TBI) and chemotherapy. The current standard approach is 12 Gray (Gy) irradiation in combination with a chemotherapy called etoposide (12 Gy TBI plus etoposide), which has shown very good results in preventing relapse. However, radiation is also associated with an increased risk of acute side effects (organ damage, nausea, mucositis, skin toxicity, and infections) and long-term side effects such as growth disorders, hormonal imbalances, infertility and late organ damage.
+
+This clinical trial is being conducted to find out whether a lower radiation dose of 8 Gy (also combined with etoposide) can work just as well in preventing relapse while reducing long-term side effects. Several smaller studies have shown promising results of reducing the radiation dose while maintain the efficacy. This substudy is part of the larger FORUM2 platform trial, which aims to optimize the way stem cell transplantation is performed for children and young people with ALL. Within this platform, Group R1 focuses specifically on the question: Is 8 Gy TBI as effective as 12 Gy TBI in preventing leukaemia relapse, but with fewer harmful effects?
+
+The study involves a randomised comparison: if you agree to your child’s/the minor’s participation, your child/the minor will be assigned by chance to receive either 8 Gy or 12 Gy of radiation before the transplant. All participants receive the same chemotherapy drug, etoposide. This kind of study design — called a controlled, randomized trial — is the most reliable way to compare medical treatments.
+
+Participation is completely voluntary. If you decide not to take part, your child/the minor will receive stem cell transplantation using the current standard of care conditioning regimen. The medical care your child/the minor receives will not be affected in any way. If you do agree to enroll your child, you can still change your mind and withdraw your consent at any time — without giving a reason, and without any disadvantage to your child’s/the minor’s treatment.
+
+This substudy is expected to enrol around 1,000 children and adolescents aged 2 to 25 years, in multiple centres across Europe and beyond. All participating centres are experienced transplant centres following strict international protocols.
+
+The main goal (primary objective) is to compare survival without relapse or secondary cancers between the two groups after four years.
+
+Secondary objectives include comparing side effects, infections, transplant-related complications, organ function, and quality of life.
+
+Possible benefits of participating include the chance that your child/the minor will receive a lower radiation dose that may reduce the risk of long-term complications — assuming the 8 Gy dose proves to be as effective. However, this cannot be guaranteed, and there may be no direct benefit for your child. The broader benefit is contributing to better and safer treatments for future patients.
+
+As with any transplant, there are known risks, including short-term side effects (such as nausea, vomiting, fatigue, infections, mucositis, and temporary damage to the blood cells, liver, kidneys, or lungs) as well as long-term risks (such as impaired growth, hormonal problems, infertility, or secondary cancers). One important complication after transplant is Graft-versus-Host Disease (GvHD) — a condition in which the donor’s immune cells attack the child’s/the minor’s body. GvHD can affect the skin, liver, and intestines, and while it is often manageable with medication, in some cases it can be severe or long-lasting. These risks apply to both study groups, but the likelihood and severity may differ depending on the radiation dose — which is what the study aims to clarify. Participation may also involve a small risk that the lower dose of radiation (8 Gy) turns out to be less effective in preventing relapse than the standard 12 Gy — but all patients are carefully monitored, and transplant protocols include measures to detect and manage relapse early.
+
+Importantly, your consent is not final: you may withdraw your child/the minor from the trial at any time, and you will be asked whether the data already collected may still be used for research. In rare cases, the study may be stopped early if new evidence emerges that one treatment is clearly superior or inferior, or if unexpected safety concerns arise. You will be informed immediately should this occur.
+
+C.  INFORMATION SECTION. FURTHER INFORMATION
+
+1.  What is the purpose of the trial?
+
+This substudy is part of the international FORUM2 clinical trial platform, which is designed to improve treatment strategies for children, adolescents, and young adults with acute lymphoblastic leukaemia (ALL) undergoing allogeneic stem cell transplantation (HSCT). Before HSCT, patients receive a preparative treatment called conditioning, which typically includes total body irradiation (TBI) combined with chemotherapy. The current standard regimen uses 12 Gray (Gy) of TBI with the chemotherapy drug etoposide (VP16). While this approach is effective in preventing leukaemia relapse, it is also associated with acute and long-term side effects, including impaired growth and development, hormonal dysfunction, infertility, and organ damage. Several smaller studies have shown promising results of reducing the radiation dose while maintain the efficacy. The aim of this substudy (Group R1) is to determine whether a lower radiation dose of 8 Gy—also combined with etoposide—can achieve the same success in preventing relapse while reducing the risk of these long-term complications. Participants will be randomly assigned to receive either 8 Gy or 12 Gy of TBI before their transplant. Both treatment arms are considered active and based on current standards of care. The results of this study will help determine whether future patients can be treated with less radiation without compromising their chances of cure.
+
+2.  What are the patient groups compared? What is the intervention being tested?
+
+This substudy (Group R1) is part of a larger international research project (FORUM2) aimed at improving the outcomes of stem cell transplantation in children and young adults with acute lymphoblastic leukaemia (ALL). All participants in this substudy are patients aged between 2 and 25 years who are in complete remission from ALL and are scheduled to undergo their first allogeneic stem cell transplant (HSCT) using stem cells from either a matched sibling or a matched unrelated donor. Patients who have previously received a transplant or are not in remission at the time of enrolment cannot participate. Additional exclusion criteria include other types of cancer, prior total body irradiation (TBI) contraindications, female patients who are pregnant or breast feeding, fertile male or female patients of childbearing potential who do not agree to abstinence or, if sexually active, do not agree to the use of contraception, patients withsevere organ dysfunction, or active infections. In addition, patients who have received irradiation of the central nervous system of 18 Gy within 12 months from the transplant.
+
+In this substudy, patients are randomly assigned to one of two treatment groups. Both groups will receive a conditioning treatment before the transplant, which includes a chemotherapy drug called etoposide. toposide will be given intravenously at a dose and schedule in line with current transplant protocols. The difference between the two groups is the dose of total body irradiation (TBI) applied along with etoposide:
+
+- One group will receive the standard dose of 12 Gray (Gy) TBI, which is the current standard treatment used in clinical practice for many patients undergoing HSCT.
+
+- The other group will receive a reduced dose of 8 Gy, which is the investigational treatment being tested in this study.
+
+TBI is given through external radiation in multiple fractions over 2 to 3 days, and is administered by radiation oncology specialists before the transplant. The aim is to compare how well the two different TBI doses work in preventing relapse and to examine whether the lower dose can reduce acute and long-term side effects without compromising effectiveness.
+
+This is a randomized controlled trial. Participants will be randomly assigned to receive either the standard 12 Gy TBI or the investigational 8 Gy TBI, each with equal probability (1:1 randomization). The probability is 50:50. The assignment is not influenced by the patient, their family, or the treating physician. The trial is not blinded, meaning both families and the medical team will know which dose has been assigned.
+
+Both TBI doses are administered as part of a defined transplant protocol and followed by the stem cell infusion. After the transplant, all patients will receive the same supportive care and monitoring. Approximately 1,000 patients are expected to participate in this substudy, with roughly 500 patients in each treatment group.
+
+Please note: The 8 Gy TBI dose is being investigated as a potential future standard, but is not yet approved as routine care. This treatment is only available as part of this trial. After the study ends, the decision to use a dose of 8 Gy in a possible further transplantion will depend on the study results and regulatory decisions in your country.If this approach is no longer pursued due to medical reasons or regulatory decisions, your treating physician will discuss alternative treatment options.
+
+Clinical trial design
+
+[]
+
+3.  What examinations, tests and procedures are provided for if we authorise participation in the trial?
+
+If you choose to enroll your child/the minor in this trial, the only difference compared to standard care will be the dose of total body irradiation (TBI) used as part of the conditioning treatment before the stem cell transplant. Your child/the minor will receive either the standard dose (12 Gy) or the reduced dose (8 Gy) of TBI, depending on the random assignment. All other aspects of the transplant procedure — including the chemotherapy drug (etoposide), the transplant itself, supportive care during the hospital stay, and follow-up after discharge — will be identical to the treatment your child/the minor would receive outside of the study.
+
+Importantly, participation in this trial will not result in any additional examinations, procedures, or follow-up visits beyond what is already required for standard transplant care. This substudy does not involve any experimental drugs, invasive procedures, or extra appointments. Your child/the minor will be monitored in the same way and with the same frequency as any other patient undergoing a stem cell transplant. If, at any point, specific tests or procedures outside the standard of care are considered, you will be informed in advance and a separate consent will be obtained.
+
+Furthermore, female patients of childbearing potential must agree to adhere to effective contraception during the study period
+
+4.  What risks can I our child/the minor face if I/we authorise participation in the trial
+    Potential Risks and Discomforts
+
+Participation in this trial involves undergoing an allogeneic stem cell transplant (HSCT), preceded by conditioning treatment with chemotherapy and total body irradiation (TBI). These treatments are known to be highly intensive and associated with a range of short- and long-term risks. While all treatments used in the study are based on current clinical standards, the investigational aspect of this trial lies in the comparison between two different TBI doses: 12 Gy (standard) and 8 Gy (reduced). Below is a detaled description of the foreseeable risks associated with participation.
+
+1. Risks Related to Total Body Irradiation
+
+Risks related to total body irradiation (TBI)
+TBI is used to prepare the body to accept donor stem cells by suppressing the immune system and eliminating remaining leukemia cells. Radiation affects not only cancer cells but also healthy tissues, which may lead to acute and delayed complications.
+
+- Short-term (acute) side effects: Fatigue, nausea, vomiting, decreased appetite, irritation of the mucous membranes, and skin redness or dryness.
+
+- Long-term side effects: These may develop months to years after treatment and include:
+
+  - Endocrine disorders such as hypothyroidism or growth hormone deficiency.
+
+  - Delayed or impaired growth and physical development, particularly in younger children.
+
+  - Infertility or reduced fertility due to damage to the reproductive organs.
+
+  - Cataracts (clouding of the lens in the eye) that may require surgery.
+
+  - Lung or kidney dysfunction, usually mild but sometimes persistent.
+
+  - Secondary malignancies (new cancers) later in life — these are rare but serious.
+
+The risk and severity of acute and long-term effects are generally higher with 12 Gy TBI compared to 8 Gy. The goal of the study is to determine whether the lower dose is equally effective while causing fewer of these complications. However, since conditioning with 8 Gy has not been tested in randomized controlled trial yet, the lower dose of irradiation might be associated with an increased risk of relapse.
+
+2. Risks Associated with Stem Cell Transplantation
+
+Regardless of group assignment, all patients will undergo allogeneic HSCT, which carries inherent and serious risks. These risks are part of standard transplant care and are not specific to the study.
+
+Toxicity from the chemotherapy agent etoposide (VP16)
+Etoposide is commonly used as part of standard conditioning regimens before HSCT. It is associated with several side effects that are typically temporary but can range in severity.
+
+- Nausea, vomiting, hair loss, mouth sores (mucositis), fatigue, and temporary reduction in blood counts (white blood cells, red blood cells, and platelets), which may require transfusions.
+
+- Liver enzyme elevations, loss of appetite, diarrhea, or skin rash.
+
+- Serious liver dysfunction, allergic reactions, or rare forms of heart or lung irritation.
+
+- Development of secondary cancers, particularly with high cumulative doses or combination with radiation.
+
+Infections due to severe immunosuppression
+
+- All patients will experience a period of intense immunosuppression following conditioning. During this time, the immune system is unable to fight off infections effectively.
+
+- Fever, bacterial infections requiring intravenous antibiotics, viral reactivations (e.g. CMV, EBV), and fungal infections.
+
+- Severe pneumonia, bloodstream infections (sepsis), or gastrointestinal infections.
+
+- Some infections can be life-threatening, particularly in the early weeks after transplant.
+
+Bleeding complications
+
+- The conditioning therapy and transplant lead to a drop in platelet production, increasing the risk of internal and external bleeding.
+
+- Mild to moderate bleeding (nosebleeds, bruising).
+
+- Rarely, serious or life-threatening bleeding (e.g. into the brain or lungs) may occur.
+
+Organ toxicity
+
+- Temporary liver or kidney dysfunction is common and typically reversible.
+
+- Severe or persistent organ injury may occur in some patients.
+
+3. Graft-versus-Host Disease (GvHD)
+
+After engraftment of donor stem cells, the immune cells from the donor may recognize your child’s/the minor’s tissues as foreign and attack them. This condition is called Graft-versus-Host Disease (GvHD).
+
+Acute GvHD usually develops within the first 100 days after transplant and primarily affects the skin, liver, and gastrointestinal tract.
+
+- Skin rash, diarrhea, or liver enzyme elevation.
+
+- Severe forms can involve extensive skin involvement, bloody diarrhea, or serious liver dysfunction.
+
+Chronic GvHD, which occurs later, may affect multiple organs including skin, eyes, mouth, lungs, joints, and genitals. It may lead to long-term impairment or disability.
+
+- Severity can range from mild and manageable to life-threatening.
+
+GvHD requires immunosuppressive treatment (e.g. steroids), which itself increases the risk of infections and other side effects.
+
+4. Reproductive Health and Fertility
+
+Impact on fertility
+
+- The conditioning regimen, particularly TBI, can damage reproductive organs, which leads to infertility.Loss of fertility is expected in both males and females after HSCT, though individual risk depends on age, dose, and sex.
+
+- In a separate appointment, your treating physician will discuss in detail possible interventions for fertility preservation.
+
+Risks in case of pregnancy
+
+- TBI and chemotherapy may harm an unborn child.
+
+- Female patients who have reached puberty will undergo a pregnancy test before conditioning.
+
+- Patients who can become pregnant, and those with partners who can, will be required to use effective contraception during and after treatment, as directed by the study team.
+
+- Note: Patients who become pregnant during or shortly after transplant face high risks of complications for both mother and fetus.
+
+5.  How will we be notified of any unexpected results following diagnostic tests?
+
+As part of your child’s/the minor’s care during the trial, various medical assessments will be performed — including blood tests, imaging (such as X-rays), and other examinations that are part of standard transplant procedures. Although these tests are not aimed at detecting unrelated health issues, it is possible that they may reveal unexpected findings — for example, signs of another medical condition that had not previously been diagnosed.
+
+Should such unexpected results arise, the study doctor will discuss them with you in a timely and sensitive manner. You will be given the opportunity to decide what kind of information you wish to receive. For example, you may choose to be informed only about findings that are relevant to your child’s/the minor’s immediate medical care, or you may prefer to also receive information that could have longer-term relevance — including for your family’s health or for making future reproductive decisions.
+
+In this study, the only analyses of genetic information will be performed to find a suitable, matching stem cell donor for your child. No further genetic analyses areplanned. However, if any additional tests outside of routine clinical care are ever considered, you will be informed in advance and specific consent will be obtained. You have the right not to know certain types of information, and your preferences in this regard will be fully respected.
+
+6.  Is it useful/necessary to inform our family doctor/pediatrician?
+
+Yes, it is important that your child’s/the minor’s pediatrician or general practitioner (GP) is informed about participation in this clinical trial. Your family doctor may play an important role in supporting your child’s/the minor’s general health, identifying possible side effects, and helping manage medications during longer-term follow-up.
+
+However, please note that during the period of conditioning, transplantation, and early recovery, the transplant centre will be your child’s/the minor’s primary point of contact and care. All treatment decisions, monitoring, and any urgent interventions will be coordinated and managed by the specialised transplant team. After the first phase is completed, your child/the minor will continue to be followed by the transplant centre in regular visits. Your family doctor is welcome to remain involved and may be consulted at any time, but during this time, the transplant centre team remains fully responsible for your child’s/the minor’s care.
+
+7.  Will I/we have to bear costs for participation in the trial? Will I/we be reimbursed for any expenses? Will our child/the minor receive a compensation?
+
+You will not have to pay any costs related to your child’s/the minor’s participation in this clinical trial. All procedures, treatments, and assessments required by the study are fully covered by the transplant centre and/or the study sponsor.
+
+Participation in the study does not involve any form of financial compensation. According to applicable laws and ethical guidelines, it is not permitted to offer payment or rewards for taking part in clinical research.
+
+8.  What happens if our child/the minor suffers damage as a result of participating in the trial?
+
+    - Information about the Insurance is given by the sponsor
+
+Participation in a clinical trial may involve drawbacks and risks that cannot be determined a priori. For this reason, the clinical trial provides insurance coverage to protect your participation.
+
+Pursuant to applicable law, insurance is provided to cover any damage suffered due to participation in the trial, for the entire period of the same, to cover the civil liability of the investigator and the promoter.
+
+INDICATE THE INSURANCE COMPANY, THE POLICY NUMBER, THE LIMIT OF LIABILITY PER PARTICIPANT, THE AGGREGATE LIMIT OF LIABILITY Please find the details in attachment
+
+It is worth noting that, according to the Ministerial Decree of 14 July 2009, the insurance policy does not cover the value exceeding the ceiling and is effective exclusively for damages whose compensation request has been submitted no later than the period provided for in the policy (INDICATE THE NUMBER OF MONTHS). However, this limitation does not affect your right to obtain compensation from the person liable for any damage (to protect the trial participant).
+
+9.  Who will have access to our child’s/the minor’s/the minor’s health data, including personal data, and how will they be treated during the trial?
+
+Your data, in particular personal and health data, will be processed only to the extent that they are indispensable to the objective of the trial and for pharmacovigilance purposes, in compliance with EU Regulation 2016/679, known as GDPR (General Data Protection Regulation) and with Legislative Decree 10 August 2018, no. 101. In practical terms, the documents relating to the participant will be kept in a safe place and will not report his/her name in clear text, only known to the researchers, but an identification code.
+
+The data, made anonymous, may be subject to control by regulatory bodies and used for scientific publications (journals, conferences).
+
+Your clinical data collected for the purposes of the trial, as well as the results of the tests carried out, will be stored for the time required by the regulations and subsequently destroyed. They will not be destroyed only if a) it is no longer possible to trace them back to your identity, because they have been anonymised during the trial itself; b) in the presence of your specific informed consent.
+
+If the personal data are transferred to a third country or to an international organization, all the guarantees will be adopted which are provided for by Article 46 of the GDPR 679/2016.
+
+This needs to be adapted at each countries data safety requirements!
+
+10. How will our child’s/the minor’s/the minor’s biological samples taken for trial purposes be treated and who will have access to them?
+
+This substudy does not require any additional biological samples beyond those already collected as part of routine clinical care before, during, and after stem cell transplantation. Any samples used for trial-related analysis will be obtained during standard procedures and no extra blood draws or biopsies are planned for research purposes.
+
+Like your child’s/the minor’s health data, any biological samples used for the trial will be handled in a pseudonymised manner. This means that personal identifiers (such as name or date of birth) will be replaced by a study code, and only authorised members of the clinical trial team will be able to link the code back to your child’s/the minor’s identity.
+
+11. How will I/we have access to the results of the trial?
+
+After the trial has ended and all data have been collected and analyzed, the results will be summarized and shared with the scientific and medical community through publications and presentations. These results will help improve future treatment strategies for children and adolescents with acute lymphoblastic leukaemia.
+
+According to applicable regulations, you have the right to access the general results of the trial. If you wish, you may ask the study doctor to provide you with a summary of the study’s findings once they are available. Alternatively, the study team can inform you where and how the results will be published or made publicly accessible. Please note that individual results for your child/the minor will not be part of these summaries, and all information will remain pseudonymised to protect your child’s/the minor’s privacy.
+
+12. Was the trial approved by the Ethics Committee?
+
+The trial protocol proposed to you has been examined and approved by the Ethics Committee ......................... Among other things, the Ethics Committee has verified the compliance of the trial with the standards of Good Clinical Practice and with the ethical principles expressed in the Declaration of Helsinki and that your safety, rights and well-being have been protected.
+
+13. Who can I refer to for more information on the clinical trial our child/the minor is invited to participate in?
+
+INDICATE THE NAMES AND REFERENCES OF THE PERSONS WHO CAN BE CONTACTED FOR FURTHER INFORMATION.
+
+SPONSOR AND NATIONAL COORDINATING PHYSICIAN
+
+14. If I/we decide to authorise participation in the trial, who can I/we contact in case of need?
+
+SPONSOR AND NATIONAL COORDINATING PHYSICIAN
+
+15. What happens if our child/the minor comes of age during the trial?
+
+If your child/the minor comes of age during the trial, s/he will become legally autonomous in his/her choices. Consequently, s/he will be submitted a new informed consent.
+
+____________________________ ___/___/______ _________ ____________________________
+
+Full name of the doctor Date Time Signature
+
+who delivered the note
+
+  INFORMED CONSENT SECTION FOR THE PARENT/S OR GUARDIAN OF THE MINOR
+
+(Notes: 1 copy for the participant, 1 copy for the trial manager)
+
+(Name of the minor, place and date of birth)__________________________________________
+
+Title of the trial:
+
+FORUM2 – Randomisation 1: A randomized comparison of 8 Gy versus 12 Gy total body irradiation (TBI) as part of the conditioning prior to allogeneic hematopoietic stem cell transplantation (HSCT) in children and young adults with Acute Lymphoblastic Leucemia (ALL)
+
+Protocol code: FORUM 2
+
+Version and date: _____________________________________________________________
+
+Promoter of the trial/sponsor funding body: IRCCS Bambino Gesù Children’s Hospital
+
+Principal Investigator (NAME, AFFILIATION, REFERENCES):
+
+___________________________________________________________________________________________
+
+I, the undersigned ______________________________________________
+
+born in _________________________________________________________________ on ___/___/______
+
+as mother/legal guardian of the abovementioned minor;
+
+I, the undersigned ______________________________________________
+
+born in _________________________________________________________________ on ___/___/______
+
+as father/legal guardian of the abovementioned minor;
+
+I/WE HEREBY DECLARE THAT
+
+▢ Dr ________________________________________has provided me/us with exhaustive explanations regarding the request for participation in the research in question, as reported in the information section contained in this consent, of which I was/we were given a copy on ____________ at ______________ (indicate date and time of delivery);
+
+▢ I/we have been clearly explained and I/we have understood the nature, the purposes, the procedures, the expected benefits, the possible risks and inconveniences and the alternative treatment methods with respect to the proposed clinical trial;
+
+▢ I had the opportunity to ask any question to the trial investigator and I received satisfactory answers;
+
+▢ I/we had sufficient time to reflect on the information received
+
+▢ I/we had sufficient time to discuss it with third parties;
+
+▢ I/we have been informed that the trial protocol and all the forms used have received the favourable opinion by the competent Ethics Committee;
+
+▢ I am/we are aware that the research can be interrupted at any time, by decision of the trial manager;
+
+▢ I/we have been informed that I/we will be made aware of any new data that could jeopardise the safety of the research and that, for any problem or further questions, I/we may contact the doctors where our child/the minor is being treated;
+
+▢ for the best protection of our child’s/the minor’s/the minor’s health, I am/we are aware of the importance (and of my/our responsibility) of informing the general practitioner of the trial in which we authorise our child/the minor to participate. I am/we are aware of the importance of providing the investigator with all information (drugs, side effects, etc.) concerning our child/the minor;
+
+▢ I/we have been informed that the results of the trial will be made known to the scientific community, protecting our child’s/the minor’s/the minor’s identity according to the current legislation on privacy;
+
+▢ I am/we are aware that any choice expressed in this consent form may be revoked at any time and without any justification;
+
+▢ I/we have received a copy of this consent form.
+
+I/WE HEREBY DECLARE THAT
+
+▢ We authorise our child/the minor to participate in the trial
+
+▢ I am/we are willing ▢ NOT willing
+
+that our child/the minor be contacted after the end of the trial to provide information on his/her state of health (this only applies to contacts that the study protocol does not envisage as follow-up)
+
+If applicable:
+
+▢ I/WE ACCEPT ▢ DO NOT ACCEPT that our daughter/the minor uses contraceptive drugs
+
+________________________________________ ___/___/______ _________ ______________________
+
+Full name of the mother Date Time Signature
+
+________________________________________ ___/___/______ _________ ______________________
+
+Full name of the father Date Time Signature
+
+________________________________________ ___/___/______ _________ ______________________
+
+Full name of the legal representative Date Time Signature
+
+[In case the parent/Legal guardian cannot sign]
+
+I, the undersigned _________________________________________________ confirm that I have attended the informative meeting between Dr. ________________________and Mr/Ms __________________________and I confirm that he/she is unable to give his/her consent in writing.
+
+________________________________________ ___/___/______ _________ ______________________
+
+Full name of the independent witness Date Time Signature
+
+[In case the parent/Legal guardian does not understand the Italian language]
+
+I, the undersigned _________________________________________________ confirm that I have attended the informative meeting between Dr. ________________________and Mr/Ms __________________________and I confirm that I have acted as a facilitator for the understanding of the information.
+
+________________________________________ ___/___/______ _________ ______________________
+
+Full name of the cultural mediator Date Time Signature
+
+STATEMENT OF THE DOCTOR WHO OBTAINED THE CONSENT
+
+(Name of the minor, place and date of birth)
+
+Title of the trial:
+
+FORUM2 – Randomization 1: A randomized comparison of 8 Gy versus 12 Gy total body irradiation (TBI) as part of the conditioning prior to allogeneic hematopoietic stem cell transplantation (HSCT) in children and young adults with Acute Lymphoblastic Leucemia (ALL)
+
+Protocol code: FORUM 2
+
+Version and date: _____________________________________________________________
+
+Promoter of the trial/sponsor funding body: IRCCS Bambino Gesù Children’s Hospital
+
+Principal Investigator (NAME, AFFILIATION, REFERENCES):
+
+___________________________________________________________________________________________
+
+I, the undersigned Prof./Dr. ________________ ________________ in my capacity as investigator
+
+Surname Name
+
+(or as delegate of the Principal investigator)
+
+Hereby declare that
+
+the father and mother/the legal guardian have spontaneously consented to the minor’s participation in the trial
+
+I also declare that:
+
+  ▢ I have provided full explanations relating to the purpose of the trial, the procedures, the possible risks and benefits and to possible alternatives;
+
+  ▢ I have verified that the parents/legal guardian have sufficiently understood the information provided
+
+  ▢ I have given the parents/legal guardian the necessary time and the opportunity to ask questions about the trial
+
+  ▢ I have clearly described the possibility of withdrawing from the trial at any time or of changing the choices made
+
+  ▢ I have not exerted any coercion or undue influence in requesting this consent
+
+  ▢ I have provided the parents/legal guardian with information on how the results of the trial will be disclosed
+
+  ▢ I have provided the parents/legal guardian with a simplified information sheet intended for minors between the ages of 7 and 11 and I have stressed the opportunity that the above minor be informed, with the precautions and methods suitable for their age, of the characteristics of the trial s/he will join
+
+_____________________________________________________ ________
+
+Place and date Time
+
+_________________________________________________ _________________________________________________
+
+Name Surname (block letters) of the doctor who provided the Signature (and stamp)
+
+information and who obtained the consent
+
+This form is an integral part and must be kept together with the information sheet for informed consent

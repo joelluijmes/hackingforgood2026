@@ -1,0 +1,882 @@
+Official title of the trial: Biological Medicine for Diffuse Intrinsic Pontine Glioma (DIPG) Eradication
+
+EU CT number: 2023-506027-29-00
+
+Trial number: Biomede 2.0
+
+Sponsor(s) of the trial: Gustave Roussy institute, 114 Rue Edouard Vaillant, 94805 Villejuif, (France)
+
+Site name: official name of site
+
+Main address of site: address of site
+
+Who can I contact in case of questions?
+
++--------------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-----------------------------+
+| Name                     | Function                                                                                      | In case of                                                                 | Contact details             |
++==========================+===============================================================================================+============================================================================+=============================+
+| Surname, First name      | Principal Investigator of the site                                                            | Information, problems or concerns                                          | Phone N°, E-mail            |
++--------------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-----------------------------+
+|                          | The trial staff                                                                               | Information, problems, concerns                                            | Phone N°, E-mail            |
++--------------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-----------------------------+
+|                          | Contact for urgent study-related questions                                                    | Urgent information, problems, concerns                                     | Phone N°                    |
++--------------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-----------------------------+
+|                          | Ombudsperson for patient rights of the site                                                   | Concerns/ questions about your rights as a participant in a clinical trial | Phone N°                    |
++--------------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-----------------------------+
+| Amlin Insurance          | Insurance Company of the NCC                                                                  | In case of disagreement or complaint on a damage claim                     | 299.053.700                 |
+| Koning Albert II laan 37 |                                                                                               |                                                                            |                             |
+| 1030 Brussel             |                                                                                               |                                                                            |                             |
++--------------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-----------------------------+
+|                          | Data protection officer of the site [or if not possible: Contact person for data protection.] | Questions about the confidentiality of your data                           | Phone N°                    |
+|                          |                                                                                               |                                                                            |                             |
+|                          |                                                                                               |                                                                            | E-mail: e-mail              |
++--------------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-----------------------------+
+|                          | Belgian Data Protection Authority                                                             | Complaints relating to the confidentiality of your data                    | +32(0)2274 48 00            |
+|                          |                                                                                               |                                                                            |                             |
+|                          |                                                                                               |                                                                            | E-mail : contact@apd-gba.be |
++--------------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-----------------------------+
+
+● To manage complaints not resolved by the investigator, you can contact the study centre ombudsman at the above address.
+
+● According to the GDPR, you have the right to access the processing of your data. For questions about this, you can contact the Study Centre's Data Protection Officer at the above address.
+
+● You also have the right to lodge a complaint about the way your data are processed with the Belgian supervisory authority responsible for compliance with data protection legislation: Data Protection Authority (GBA), above.
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| The trial at a glance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   Dear,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   You are receiving this document because we would like to invite you to take part in an international clinical trial called Biomede 2.0 run by a research team at the Gustave Roussy institute in France. This information is to help you understand what treatment will be given in this trial and what this means for you.                                                                                                                                                                                                                                                                                                           |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   The Biomede 2.0 trial is a trial for children, adolescents, and adults with a new diagnosis of an infiltrating brainstem glioma or diffuse midline tumour. This is a very aggressive malignant brain tumour. There is currently no treatment that is effective enough to cure this disease in most cases. Conventional chemotherapy has shown not to be effective in this disease. Only radiotherapy is effective, but most often only temporarily. Your doctor is proposing to add a new drug to the standard radiotherapy treatment to increase its effectiveness, as part of a clinical study called "BIOMEDE 2.0".                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   The aim of the Biomede 2.0 study is to evaluate the efficacy of ONC201 compared to everolimus in combination with the standard radiotherapy. Everolimus is the best of the three drugs tested in the previous trial (BIOMEDE 1.0). ONC201 is the new drug to be tested. Other aims of the study are to evaluate the side effects of the treatments and to evaluate the duration of the response to treatment. Everolimus and ONC201 are oral medications that will be delivered by a pharmaceutical company for the trial. The Biomede 2.0 study is a non-commercial trial (which means the pharmaceutical company does not lead it). |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   If you agree to participate in this trial, first a screening will be done to verify if you can participate. If you meet all of the inclusion criteria and none of the non-inclusion criteria, we can confirm your participation in this study.                                                                                                                                                                                                                                                                                                                                                                                        |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   If you meet all criteria a computer will randomly assign you to the group with everolimus or ONC201 in combination with the standard radiotherapy treatment. Patients in the group with everolimus will take one or more (defined according to their weight) everolimus tablets daily, once per day. Patients in the ONC201 group will take one or more capsules (defined according to their weight) orally, only 2 consecutive days per week (D1-D2), once a day.                                                                                                                                                                    |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   Before, during and after treatment, the medical team will carefully follow you up and will do some scans and tests to see what effect the treatment has had on your cancer.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   The most frequent side effects to expect from Everolimus, ONC201 and the standard radiation treatment are described in the information below.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   Treatment with ONC201 or everolimus will be continued as long as its efficacy and tolerance allow. The duration of treatment is therefore variable from one person to another.                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   If your disease progresses or returns, your treatment will be stopped. If possible, your doctor can suggest that you are switched to the other study treatment (ONC201 or everolimus).                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   After treatment, you will continue to be monitored every 3-4 months for the first year and then every 6 months until the fifth year after starting treatment.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   Because this treatment combination is still under investigation, other currently unknown risks and discomforts could occur. Therefore, it is very important that you report any new or worsened health problems immediately to the investigator, regardless of whether or not you think it has to do with the trial. If you have any important side effects, the investigator might determine that it is necessary to perform additional tests.                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   If you are a women, you must not become pregnant during the trial and for at least 6 months after completing treatment. In addition, you must not have egg cells stored for your own use or donation after the start of the treatment and for at least 6 months after the last treatment. You must not breastfeed during treatment. If you are a men, you must not cause a pregnancy or donate sperm during the trial and for at least 6 months after completing treatment.                                                                                                                                                           |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   The trial will include about 368 children/(young) adults worldwide, including about 8 patients per year in Belgium. Your participation in this trial will last until 5 years after the start of the treatment. If we believe at any point in the trial that giving Everolimus or ONC201 is not helping the patients in this study, then we will stop including more patients.                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   There won’t be any trial specific visits or examinations; except for the 2 study specific functional MRIs (scan of your tumor - one at screening and one at the end of the radiotherapy). The radiological images will be reviewed by external experts. In addition, a piece of the tumour material that is collected during a standard biopsy collection will be sent for confirmation of the diagnosis and genetic testing. This is described into detail in the information below.                                                                                                                                                 |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   Participating in the trial will not cost you anything extra compared to your standard treatment costs. You will not receive any compensation for your participation. If something happens to you during the trial, the sponsor of this trial has taken out an insurance to cover any related costs.                                                                                                                                                                                                                                                                                                                                   |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   It is up to you to decide whether to join this Biomede 2.0 trial. Taking part is voluntary. If you decide you will not take part, you will receive the standard radiation treatment without the oral everolimus or ONC201 or another standard of care treatment that your doctor will discuss with you.                                                                                                                                                                                                                                                                                                                               |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   During this trial, data and tumour biopsy samples will be collected and will be treated confidentially.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   Because this treatment combination is still under investigation, it is not sure if there will be any benefit. But however, your participation will help the investigators gain more insight into the treatment of brain tumours and ways to improve it in the future.                                                                                                                                                                                                                                                                                                                                                                 |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   The trial and its documents have been reviewed and approved by the EU authorities and an Ethics Committee in Belgium.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   In case of any questions about this trial, please contact myself or my team using the contact details on the first page of this document.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   Sincerely,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|   Your Investigator                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+CHAPTER I – DESCRIPTION OF THE TRIAL AND YOUR RIGHTS WHEN PARTICIPATING
+
+Dear,
+
+We would like to invite you to participate in a clinical trial to evaluate a treatment for your disease. Please take the time to read this information carefully and discuss it with the investigator, the medical team, or others before you decide to participate in this trial. Please feel free to ask questions if anything is unclear or if you would like additional information. We call this process “informed consent.” If you decide to participate in this study, we will ask you to sign the consent form at the back of this information sheet.
+
+Why is this study being conducted?
+
+An infiltrating brainstem glioma or diffuse midline tumour is a very aggressive malignant brain tumour. There is currently no treatment that is effective enough to cure this disease in most cases.
+
+Because of its location in the brain, this tumour might not be operable. Conventional chemotherapy has shown not to be effective in this disease; only radiotherapy is effective, but most often only temporarily.
+
+Your doctor is proposing to add a new drug to the standard radiotherapy treatment to increase its effectiveness, as part of a clinical study called "BIOMEDE 2.0". This treatment will be chosen at random from two possible treatments.
+
+The aim of this study is to evaluate the efficacy of ONC201 compared to everolimus in combination with radiotherapy. Everolimus is the best of the three drugs tested in the previous trial (BIOMEDE 1.0). This is why we will use this drug as a comparator in this new trial. ONC201 is the new drug to be tested. The efficacy will be assessed based on the duration without disease progression from the beginning of the treatment and on clinical signs and medical imaging results.
+
+Everolimus and ONC201 are so called “targeted therapies/drugs”. These are drugs that specifically target a protein or mechanism involved in tumour development. These drugs are therefore theoretically without effect on healthy cells. As a result, they have fewer side effects than conventional anti-tumour chemotherapy. Anti-tumour chemotherapy act on all cells in the body that divide, whether they are cancerous or not.
+
+Other objectives of this study are:
+
+- Evaluate the side effects of these treatments given at the same time as standard radiotherapy and then during the total duration of treatment.
+
+- Evaluate the duration of the response to the treatment.
+
+- Evaluate the differences in efficacy between the two treatments studied (ONC201 and everolimus) according to tumour site and known prognostic biomarkers. Biomarkers are molecules or proteins that are overexpressed or abnormally absent in certain types of tumours. These markers can predict whether the targeted treatment is effective. Biomarker research helps physicians to guide their therapeutic choices, monitor the effectiveness of treatments and can help to individualize treatments.
+
+- To evaluate the possibility for patients to be treated at the time of disease progression with a targeted therapy according to their molecular profile performed at diagnosis.
+
+Additional objectives of this study include:
+
+- Assess the predictive and prognostic value of biomarkers. (the extent to which a biomarker is capable of predicting the future course of a disease or condition).
+
+- Describe the changes observed on imaging during treatment.
+
+Why am I being asked to take part?
+
+We are inviting you to take part in this clinical trial because you have been diagnosed with a tumour that is an infiltrating brainstem glioma or diffuse midline tumour. You and your medical team are considering participation in the Biomede 2.0 study. A new drug (ONC201 or everolimus) will be added to the standard radiotherapy treatment to increase its effectiveness. Which new drug will be added will be randomly chosen.
+
+The investigator or trial staff will discuss with you the requirements to be allowed to enter the trial. It is not guaranteed that your participation in this trial will cure your brain tumour, improve your quality of life, or will extend your life.
+
+Do I have to take part in a trial?
+
+Your participation in a trial is voluntary and must remain free of any coercion. This means that you have the right not to take part in the trial or to withdraw at any time without giving a reason, even if you previously agreed to take part. Your decision will not affect your relationship with the investigator or your treating physician nor will it affect the quality of your future medical care.
+
+If other treatments are available for your brain tumour, the investigator or his/her delegate will discuss these treatments with you. If you will not participate in the trial, you will receive the standard of care treatment with radiotherapy without the addition of everolimus of ONC201or another standard of care treatment.
+
+What will happen during the trial? 
+
+A total of 368 children/(young) adults will participate in this study across Europe. An estimated number of 8 participants per year will be included in Belgium.
+
+In this study, you will receive one of the following treatments in combination with standard of care radiation therapy:
+
+ ONC201 (company Chimerix)
+
+ Everolimus (company Novartis)
+
+Whether you will receive either ONC201 or Everolimus will be determined by randomization. This randomization will be done by a computer that will randomly determine which of the two potentially effective treatments will be given.
+
+Most of the examinations/tests that are needed for this study below are also part of the standard care. Thus your participation in the study includes no extra visits compared to treatment without participation in the study.
+
+This study is divided into 3 phases:
+
+- Screening period
+
+- Treatment phase
+
+- Follow-up phase
+
+Screening period
+
+During the screening period you will have to undergo tests before the treatment is administered (see details in the table below). At this stage of the study, we are checking and assessing whether your participation is scientifically justified.
+
+During the screening period the following procedures will be done:
+
+Tumour Biopsy:
+
+The tumour biopsy will first be analysed in the local laboratory of the hospital where you had the biopsy. This biopsy is not study specific. If you agree to participate to this study, a part of the tumour biopsy already performed will be sent to France (Villejuif) and will be examined into more detail to:
+
+- confirm the diagnosis of invasive brainstem glioma or diffuse midline tumour,
+
+- check the presence of biological indicators (biomarkers),
+
+- complete the biological analysis of the tumour (by genetic sequencing) with the aim of possibly finding new biomarkers and new treatment options (= translational research).
+
+A search for biomarkers (biological indicators) will be done to decide which is the most optimal treatment. In very rare cases, biomarkers found in the tumour may contraindicate the administration of one of the treatments proposed in this study. If this is the case, you will be informed.
+
+Demographic data, medical and surgical history:
+
+The investigating physician will collect the following information: your age (month and year of birth only), medical and surgical history (past and current illnesses).
+
+He or she will also ask you about any medications you are taking, such as corticosteroids.
+
+Clinical Examination:
+
+The physician-investigator will check your general health, and determine your performance status (assessment of ability to perform daily activities, well-being). He or she will perform a complete clinical and neurological examination, measure your vital signs (blood pressure, heart rate by pulse measurement, take your temperature), and record your height and weight. You will also have an electrocardiogram (ECG).
+
+Imaging tests:
+
+Imaging tests will be done to measure and record the size of the tumour, and to check your general condition. The different imaging tests that will be done are an MRI (scan of your tumor by Magnetic Resonance Imaging) and a lung x-ray. This MRI will include intra-tumour perfusion and will therefore be a little longer than the usual MRIs (about 30 minutes). This is a study specific functional MRI. Specifically for the study, the images will be uploaded to a platform for central review by experts.
+
+Blood tests:
+
+- For a biological workup (haematological, biochemical, coagulation)
+
+- For hepatitis B screening (serology)
+
+- For a pregnancy test: If you are a woman of childbearing age, you will need to do a blood (or urine) pregnancy test. The result of this test must be negative to participate in the study.
+
+All the above procedures during the screening period are standard of care procedures that you will also have if you are not participating in the study except for the functional MRI imaging.
+
+Only after all of these tests have been completed, and if you meet all of the inclusion criteria and none of the non-inclusion criteria, we can confirm your participation in this study. If you cannot participate, you will be offered the standard radiation treatment. No experimental treatment will be added to the radiation therapy in this case.
+
+Treatment phase
+
+On Day 1 (D1) of the treatment phase, you will start:
+
+- Radiation therapy: you will receive the standard dose of radiation (54 Grays) over 6 weeks, which is a fraction of 1.8 Gray per day, on 5 consecutive days per week (no weekend radiation therapy).
+
+- One of the following treatments:
+
+- Either everolimus: you will take one or more tablets (defined according to your weight) orally, daily, once a day;
+
+- Or ONC201: you will take one or more capsules (defined according to your weight) orally, only 2 consecutive days per week (D1-D2), once a day.
+
+During this treatment phase, a clinical examination (with performance evaluation) will be performed once a week for the first 2 months of treatment, then once a month. During these visits, a blood test will also be done to check if you are doing fine and if the treatment is well tolerated. The physician-investigator will ask you if you have (had) any side effect that will be treated if necessary.
+
+Once a month, you will also have a neurological examination, and we will collect your weight and height. These are all examinations you will also have if you are not participating to the study.
+
+In addition, it is important that you report all treatments you are receiving (including corticosteroids) to your doctor, including alternative medicine treatments. Depending on the trial medication you are taking, the doctor will check for drug interactions with these other treatments.
+
+Finally, an initial follow-up MRI will be done right after the radiation treatment ends and then every 2 months. These first follow-up MRI will include a study specific functional MRI of intra-tumour perfusion and will therefore be a little longer than the usual MRIs (about 30 minutes). All other follow-up MRIs will be done as usual without the study specific functional MRI.
+
+If your disease progresses or returns, your treatment will be stopped. If possible, your doctor can suggest that you are switched to the other study treatment (ONC201 or everolimus), as described above.
+
+Prior to this 2nd treatment period, a new pregnancy test and a new hepatitis B screening will be performed, if indicated.
+
+During this 2nd treatment period, you will have the same examinations as during the 1st treatment period:
+
+- Once a month: clinical examination, biological check-up
+
+- Every 2 months: MRI
+
+Treatment with ONC201 or everolimus will be continued as long as its efficacy and tolerance allow. The duration of treatment is therefore variable from one person to another.
+
+Follow-up phase
+
+You will have a visit 28 days after the treatment was stopped.
+
+After that, you will continue to be monitored every 3-4 months for the first year and then every 6 months until the fifth year after starting treatment. At these standard of care follow-up visits, you will have a clinical examination (looking for late side effects), a neurological examination and an MRI. Your doctor will note at each visit whether you have taken any other treatments, and whether you have had any side effects.
+
+The total duration of your participation in this study will therefore be until 5 years after start of treatment.
+
+The follow-up phase will be done according the standard of care so no study specific procedures will be performed.
+
+At the end of your participation in the study, if you have an unresolved side effect, the investigating physician may contact you until the side effect is resolved to ensure that you receive appropriate medical follow-up. He/she may also contact you if you report a side effect after the end of the study.
+
+Overview procedures
+
+In the following table you will find the treatments or examinations that you will have to undergo,
+
++:-------------------------------------------------------------:+:----------------------:+:--------------------------------------------------------------:+:-------------------------------:+:-----------------------------------------------------------------------------------------------:+
+| Timepoints                                                                                                                                                                                                                                                                                  |
++---------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Procedure                                                     | At Diagnosis/screening | During treatment                                               | At the end of treatment periods | Follow up each 3-4 months the 1^(st) year, each 6 months until 5 years after start of treatment |
++---------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Tumour biopsy                                                 | X                      |                                                                |                                 |                                                                                                 |
++---------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Clinical examination                                          | X                      | X (once per week the first 2 months, afterwards each month     | X                               | X                                                                                               |
++---------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Medical history                                               | X                      |                                                                |                                 |                                                                                                 |
++---------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Neurological examination                                      | X                      | X (once per month)                                             | X                               | X                                                                                               |
++---------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| ECG (and echocardiography if necessary)                       | X                      |                                                                |                                 |                                                                                                 |
++---------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Radiography of lungs                                          | X                      |                                                                |                                 |                                                                                                 |
++---------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| MRI imaging⁴                                                  | X                      | X (each 2 months)                                              | X                               | X                                                                                               |
++---------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Blood examination (hematology, biochemistry and coagulation¹) | X                      | X (once per week the first 2 months, afterwards once per month | X (if possible)                 |                                                                                                 |
++---------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Hepatitis B examination                                       | X²                     |                                                                |                                 |                                                                                                 |
++---------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Pregnancy test (if applicable)                                | X³                     |                                                                |                                 |                                                                                                 |
++---------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Collection of all medication taken                            | X                      | X                                                              | X                               | X                                                                                               |
++---------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+| Collection of all side effects                                | X                      | X                                                              | X                               | X                                                                                               |
++---------------------------------------------------------------+------------------------+----------------------------------------------------------------+---------------------------------+-------------------------------------------------------------------------------------------------+
+
+¹ Coagulation is only tested at screening.
+
+² A new hepatitis B examination is performed if a second treatment period is started.
+
+³ A new pregnancy test is performed if a second treatment period is started.
+
+⁴ The first 2 MRI examinations will include a study specific functional MRI that will take a little longer (30 min).
+
+The study-specific examinations will not be charged to you. The standard procedures or examinations for your condition (i.e. standard of care) will be charged to you or reimbursed by your mutual insurance fund (Belgian social security). All procedures except for the 2 study specific functional MRIs (one at screening and one at the end of the radiotherapy) are standard of care.
+
+If you need more details or if you are not affiliated with a mutual insurance fund (Belgian social security), please contact the trial staff.
+
+Optional study
+
+In the exceptional case where a so-called "liquid" biopsy (blood or cerebrospinal fluid) has been performed instead of a tumour biopsy, new biomarkers may be tested in the laboratory of the sponsor in France on this sample. You are free to accept or refuse to have this sample analyzed to search for new biomarkers.
+
+If you agree, the following sample will be taken at diagnosis:
+
+-5ml blood sample
+
+Or
+
+-1ml Cerebrospinal fluid (CSF, fluid around the brain and spinal cord)
+
+Cerebrospinal fluid is collected during a lumbar puncture. This is a procedure in which a doctor uses a thin needle to extract a small amount of cerebrospinal fluid from your lower back. This is not specific to the study and is carried out as part of the standard treatment.
+
+Will I benefit from the trial? 
+
+We have selected the medicines to be included in Biomede 2.0 trial as they have shown promising results and so we hope they will be of benefit to children, adolescents, and young people an infiltrating brainstem glioma or diffuse midline tumour. However, we cannot promise that you will benefit from taking part in this trial.
+
+The information obtained during a trial may contribute to a better understanding of your disease and the use of the investigational medicinal product (referred to as “IMP”) or to the development of a new medicinal product for the treatment of yourself or future patients.
+
+The treatment schedule may or may not be beneficial in treating your infiltrating brainstem glioma or diffuse midline tumour or relieving your symptoms. Even if it is beneficial to you, a potential return or worsening of symptoms, illness or disease is still possible.
+
+What are the possible risks and discomforts of taking part?
+
+1.  What are the possible side effects of standard radiotherapy and everolimus/ONC201 treatment?
+
+Participation in a trial involves some risk. Everolimus, ONC201 and the standard radiotherapy can have side effects. Some are more common than others, and any one patient may not experience all of them.
+
+Everolimus
+
+Common side effects include (may affect more than 1 in 10 patients):
+
+  - Reduction in number of red blood cells, white blood cells and platelets
+
+  - Loss of appetite
+
+  - Anorexia, weight loss
+
+  - Nausea and vomiting
+
+  - Diarrhea
+
+  - Skin rash, acne
+
+  - Inflammation of the oral mucosa with ulcerations (stomatitis, aphta)
+
+  - Fatigue
+
+  - Headache
+
+Less common side effects include (may affect up to 1 in 10 patients):
+
+- Renal failure
+
+  - Abdominal pain
+
+  - Bleeding
+
+ONC201
+
+Uncommon but potentially serious adverse events (may affect up to 1 in 100 patients):
+
+- Upper respiratory infections, generalized infections (sepsis)
+
+- Neurological disorders associated with brain damage (encephalopathy),
+  cognitive impairment
+
+- Difficulty breathing (dyspnea, respiratory distress)
+
+- Abnormal blood flow to the skull, lungs and liver (intracranial bleeding,
+  pulmonary bleeding, hepatic bleeding)
+
+- Obstruction of an artery in the lungs (pulmonary embolism)
+
+- Complications related to the massive destruction of cancer cells (tumour lysis
+  syndrome).
+
+Standard radiotherapy
+
+- Nausea and vomiting
+
+- Headaches
+
+- Drowsiness
+
+- Transient neurological worsening sometimes corresponding to pseudoprogression (exaggeration of the effects of radiation therapy by the targeted drug)
+
+- Delayed hearing loss.
+
+You will also experience these side effects of radiotherapy if you will not participate in this study.
+
+You will receive regular blood tests during and after treatment and will be checked frequently. Seek urgent medical attention if you have any concerns during or after treatment.
+
+Because this treatment combination is still under investigation, other currently unknown risks and discomforts could occur. Therefore, it is very important that you report any new or worsened health problems immediately to the investigator, regardless of whether or not you think it has to do with the trial, and even when it is already described in this document. If you need to use other medication, discuss this with the investigator beforehand. If, for any reason, you consult another treating physician during the trial you must inform him/her that you are taking part in a trial and present your emergency card. This could be important in determining a diagnosis and giving you the correct treatment if needed.
+
+1.  What are the possible risks or discomforts of the examinations during the trial?
+
+There are no known risks of the examinations during the trial. All examinations are performed for the standard treatment of your disease.
+
+Only at screening and the end of radiotherapy a study specific functional MRI will be done together with the standard MRI. No possible risks are expected but this examination will take a little longer (30min longer).
+
+2.  Can I take other medicines during the trial?
+
+Do not hesitate to ask your investigator for more explanation about the use of other medicines and food supplements (including aromatherapy, phytotherapy, homeopathy..) during the trial.
+
+3.  Will my participation to the trial have an impact on my daily activities?
+
+We want to ensure that the trial runs smoothly. That is why we will make the following agreements with you:
+
+• You will make sure you take all your drugs in the way that the investigator
+has explained.
+
+• During this trial, you won’t participate in another medical scientific trial,
+unless sponsor approval was obtained prior to participation
+
+• You will attend all your appointments.
+
+• Please carry your participant card with you. For example, in your wallet.
+This states that you are taking part in this trial and who to notify in case of
+an emergency. Show this card when you visit another doctor.
+
+• Please contact the investigator or research nurse in the following situations:
+
+  o You will start to take other drugs. This includes homeopathic drugs,
+  natural remedies, vitamins or over-the-counter drugs.
+
+  o You need to be admitted to the hospital or receive treatment there.
+
+  o You suddenly develop problems with your health.
+
+  o You no longer want to take part in the trial.
+
+  o Your phone number, address or e-mail address has changed.
+
+4.  Can I get pregnant, conceive a child, or can I breastfeed during the trial?
+
+This section is intended solely for participants with a potential to get pregnant or participants who may get their partners pregnant.
+
+Female participant: Because the medicines given on this trial could cause significant harm to an unborn child, or infant, you will not be allowed to take part in this trial if :
+
+- you are pregnant,
+
+- wish to become pregnant in the near future or
+
+- if you are breastfeeding.
+
+It is also not allowed to do egg/ovum donation during and after your participation in the trial for up to 6 months after the last intake.
+
+If you take part in the trial, your investigator will discuss with you the suitable forms of contraception.
+
+Nevertheless, if you become pregnant during the trial, you should inform immediately the investigator and your treating physician. For safety reasons, the investigator wants to monitor your pregnancy and its outcome and may be required to share this data with the sponsor to comply with regulations on monitoring and reporting safety information regarding the treatment.
+
+Male participant:
+
+The treatment in this trial could have an effect on your sperm and could lead to an unknown risk for an unborn child.
+
+If you take part in the trial, you must use contraception, and you should not be sperm donor for the duration of the trial and up to 6 months after the last intake. Please discuss this subject with the investigator if this applies to you.
+
+You commit to inform your female partner of your participation in this trial and of the potential risk to an unborn child.
+
+Nevertheless, if your partner becomes pregnant during the trial, you should inform immediately the investigator. If you agree, (s)he will contact your partner to ask her to be followed up during her pregnancy and its outcome and to sign a specific informed consent (for the pregnant partner).
+
+What If something goes wrong within the trial?
+
+Even if there is no fault, the sponsor is liable for harm caused to you whether directly or indirectly related to your participation in the trial. The sponsor has taken an appropriate insurance (a so called “No Fault insurance”) for this liability. A copy of the insurance certificate can be obtained from the investigator or trial staff.
+
+If you (or in the event of death, your rightful claimants) seek compensation for a harm to your health as a direct or indirect result of participating in the trial, you must inform your investigator or trial staff promptly.
+
+If the investigator believes that a link between the new or worsened health problem(s) and the trial is possible, he/she will inform the trial sponsor. The sponsor will then immediately initiate the declaration procedure to its insurance company. If the company considers it necessary, it will appoint an expert to assess whether there is a link between your reported health problem(s) and the trial. The insurance does not cover the natural progression of your disease/condition or the known side effects of the treatment you would have received without taking part to the trial (that is your standard treatment).
+
+Whenever you feel it is appropriate or if you or your rightful claimants disagree either with the investigator or with the expert appointed by the insurance company, you may contact the insurance company or proceedings may be brought against the insurance company. You will find the contact details on the front page of this form.
+
+What if other treatment options or new information become available during the course of the trial?
+
+During the course of the trial, important new information might become available, possibly affecting your decision to (further) participate. For example, other treatments for your brain tumour or important new information on everolimus or ONC201 may become available. It is the duty of the investigator to discuss this new information with you and to give you the opportunity to re-consider your participation in the trial.
+
+If you decide to stop taking part in the trial or if you are no longer able to participate, your investigator will see to it that you continue to receive the best possible medical care.
+
+Can my participation in the trial end prematurely?
+
+As explained in detail below, your trial participation may end prematurely when
+
+- you decide to withdraw your consent or to discontinue treatment,
+
+- the investigator decides to end your trial participation, or
+
+- other entities interrupt or end the trial.
+
+In any case, if your trial participation ends prematurely, the investigator will discuss your future medical care with you. Data collected before you terminate your participation will continue to be used as described in this form. This is to avoid skewing / biasing results of the trial (as described in chapter I. § 12.4.).
+
+Depending on your situation, the investigator will discuss with you whether follow-up visits or procedures are needed.
+
+If you experience a side effect at the time you stop taking the IMP, the investigator may contact you afterward to determine whether or not the side effect disappeared after your participation in the study ends.
+
+If you experience a new side effect after stopping your participation in the trial, you may contact the investigator and ask for follow up.
+
+1.  You decide to withdraw your consent
+
+You are entitled to withdraw your consent for any reason, at any time, without having to justify your decision. However, for your safety, you should inform the investigator of your decision. Although it is not mandatory, it may be useful for the investigator and for the sponsor to know the reason of this decision (for example side effects,…).
+
+Please discuss with your investigator to evaluate the practical modalities of your withdrawal (in light of your situation), including any follow up-visits or procedures.
+
+No new data will be collected and sent to the sponsor.
+
+If your biological samples have already been used or analysed before the withdrawal of your consent, the sponsor still has the right to use the results from those tests.
+
+The biological samples that have been collected (but not tested) before the withdrawal of your consent and the data obtained from it, can also still be used by the sponsor. You may ask for a destruction of those samples. If this impacts the validity of the trial, the destruction may be postponed till the end of the trial.
+
+2.  You decide to discontinue treatment with the study drug
+
+You may decide to stop treatment with the study drug but agree to continue participating in the study and be contacted by trial staff.
+
+If you decide to stop treatment with the study drug, you may continue to come to the study-related consultations. The trial staff will ask you if they can contact you by phone, email or post to ask about your general health status and/or to follow-up long-term side effects. This information is important for the scientific value of the study and to correctly interpret its results. You are free to refuse such a regular contact. Your decision will not affect your future medical care.
+
+3.  The investigator decides to end your trial participation or to discontinue your treatment with the IMP
+
+The investigator may end your trial participation because
+
+- he/she thinks it is better for you (e.g. based on your test results, when you develop certain health problems, when the protocol defines that you should not get pregnant and you get pregnant anyway, ...),
+
+- he/she determines that you are not following the instructions given to participants, or
+
+- any other reason that will be explained,
+
+- the entire study should be discontinued for all participants (see next paragraph).
+
+  If that happens, the trial staff will explain why and ensure appropriate follow-up.
+
+1.  Other entities may interrupt or end the trial
+
+The sponsor and the competent Belgian health authorities may interrupt or end the trial because
+
+- the information gathered shows that everolimus or ONC201 are not effective (does not deliver a sufficient level of improvement in the health of the trial participants),
+
+- everolimus or ONC201 cause more (serious) side effects than anticipated, or
+
+- any other reason that will be duly motivated by such party.
+
+Which treatment will I get after my participation in the trial? 
+
+After you received everolimus or ONC201 of the trial, the investigator will assess your health and discuss further treatment depending on your response. He/she will prescribe the best further standard treatment available.
+
+It is also possible that you can participate in the other treatment arm (everolimus or ONC201) of this trial if applicable. In this case the investigator will further discuss this with you.
+
+Will my participation in the trial involve extra costs for me?
+
+If you decide to participate to this study, there are no additional costs for you or your insurance company. You will not receive any financial compensation for participating. All visits and examinations are part of the standard of care, except the 2 functional MRIs at screening and after the end of radiotherapy.
+
+The sponsor of the trial is providing and paying the everolimus and ONC201 medication. The cost of the analysis of the tumour sample is covered by the sponsor of the trial. Your samples are viewed as a “donation”. You will not receive any financial payment if a new treatment that has commercial value is developed using your sample.
+
+Which data are collected about me during the trial and what will happen with them?
+
+1.  Which data are collected and processed during the trial?
+
+The collected and processed personal data concern information about your health and medical condition. This includes your medical history, some of your background information (for example your age and sex) and the results of examinations required by the trial.
+
+Ethnic origin data are collected to ensure that research data are processed in the broadest possible population.
+
+2.  How will the investigator treat my personal data?
+
+The investigator (and the trial staff) is bound by professional secrecy or by a confidentiality agreement about the data collected.
+
+This means that he/she will never reveal your identity, including in a scientific publication or a lecture and that he/she will encode your data (Ref. [1]) (that is by replacing your identity by an identification code in the trial) before sending them to the sponsor. In other words, this code will not contain any personal identifier or combination of identifiers such as name, first name, initials, full or partial date of birth, file number, etc
+
+Therefore, the investigator and the trial staff under the responsibility of the investigator, will be the only ones able to establish a link between your identity and the data transmitted during the trial, with the exceptions listed under section 12.5.
+
+The data transmitted to the sponsor will not allow the sponsor to identify you.
+
+3.  How will my data be handled?
+
+Your trial data will be processed in accordance with the current European and Belgian
+
+data protection legislation.
+
+The reason that your personal data may be processed for the purposes of the study is that it is processed for the conduct of scientific research and for the performance of a task carried out in the public interest.
+
+4.  Do I have access to my data collected and processed during the trial and can I rectify them?
+
+You are entitled to ask the investigator what data are being collected about you and how those data will be used in connection with the trial.
+
+You have the right
+
+- to inspect and access these data
+
+- to receive the personal data that are collected
+
+- to ask for correction if they are incorrect,
+
+- to restrict the processing of your data.
+
+- to withdraw your consent for the processing of personal data. However personal data collected before withdrawal will be kept to avoid skewing of results in the trial.
+
+It is not possible to have all your data erased to avoid skewing of results in the trial.
+
+1.  Who, other than the Investigator and his trial staff, has access to my personal data?
+
+To verify the quality of the trial, it is possible that your personal uncoded data or information in your medical records relevant for the trial, will be examined by people outside the trial staff but under the responsibility of the investigator. These persons must be subject to professional secrecy or a confidentiality agreement. The following might be considered:
+
+- the personnel designated by the sponsor of the trial (monitors and auditors), and people or organisations providing services for or collaborating with the sponsor. They will however never transfer your name and contact details to the sponsor.
+
+- inspectors of competent health authorities worldwide
+
+- an independent audit group
+
+- people designated by the Ethics Committee
+
+For the needs of the trial, the encoded trial data may be sent to other EU and non-EU countries and may be reviewed by
+
+- personnel (other than the inspectors) of competent health authorities of Belgium (Federal agency for medicines and health products, FAMHP) and other EU and non-EU countries,
+
+- the evaluating Belgian Ethics Committee(s),
+
+- external researchers,
+
+- the sponsor of the trial, personnel designated by the sponsor, and people or organisations providing services for or collaborating with the sponsor, and/or
+
+- group companies of the sponsor in Belgium, and in other EU and non-EU countries.
+
+- Pharmaceutical companies inside or outside Europe for research, safety monitoring or commercial filing purposes. They have the same duty of confidentiality as other trial personnel. These third parties may be based in countries outside of Europe where data protection regulations differ. Any such request is carefully considered by the sponsor and will only be granted if the necessary procedures and approvals are in place. This information will not identify you and will not be combined with other information in a way that could identify you. The information will not be used to make decisions about future services available to you, such as insurance. Under no circumstances will you be identified in any way in any report, presentation or publication arising from this trial.
+
+- independent experts who re-analyze data to verify the results of the clinical study (central reviewer radiology).
+
+The European regulation and the Belgian legislation on data protection have requirements for transferring data to non-EU countries. The sponsor must ensure equivalent guarantees regarding personal data protection standards before transferring the encoded data to non-EU countries. If for this purpose, there is a data protection agreement, a copy of this agreement may be obtained via the investigator. You can always contact your investigator to obtain more information about any such transfers.
+
+1.  What will happen to the results of the trial?
+
+After trial closure, a description and the results of this clinical trial will be published in specialised medical journals. A copy of the scientific publication can be obtained from the investigator or the trial staff.
+
+A description of the trial will also be available on https://www.clinicaltrialsregister.eu/ and/or https://www.Clinicaltrials.gov. You can search these websites at any time using the information on the front page of the informed consent form. Within 1 year after the study's completion, the website will contain a summary of the results in accordance with the European Commission's guidelines.
+
+These websites or publications will not include information that can identify you.
+
+2.  Will my data be used for other purposes than for the trial in which I take part?
+
+The results of the trial will be used to answer the scientific questions of the trial. In addition, the sponsor would like to use your data obtained from this trial, in connection with other research and development activities (and the associated scientific publications). This future research can only concern research about the same disease or medication. These activities may only concern
+
+- the way everolimus/ONC201 and drugs of the same group work,
+
+- the disease/condition for which everolimus/ONC201 is evaluated in this trial or
+
+- other diseases and health problems which could benefit from everolimus/ONC201, or from related diagnostic tests.
+
+Any additional research outside of the trial and therefore not described in the above points, must be approved by a recognized Ethics Committee.
+
+At the end of this form, you agree or disagree to the use of your trial data for other purposes by ticking the appropriate checkbox in Chapter II.
+
+1.  How long will my data be kept?
+
+After the end of the trial your encoded data will be retained for at least 25 years in accordance with the European clinical trial regulation to ensure the validity of the research. This will also be the case if you stopped trial participation prematurely.
+
+ Which biological samples are collected from me during the trial and what will happen with them? 
+
+1.  Which biological samples are collected from me during the trial?
+
+Biological samples are samples of human body material (for example blood, tissue, urine, faecal stool, ….). In this trial, the tumour biopsy is done according to the standard of care (not study specific). A part of the tumour biopsy already performed will be sent to France (Villejuif) and will be examined for this trial into more detail to confirm the diagnosis, a genetic analysis and to check for biomarkers.
+
+In the exceptional case where a so-called "liquid" biopsy (blood or cerebrospinal fluid) has been performed instead of a tumour biopsy, new biomarkers may be tested in the laboratory of the sponsor in France on this sample. You are free to accept or refuse to have this sample analysed to search for new biomarkers at the end of this form.
+
+The procedure to encode your biological samples is the same as that used for your personal data in accordance with Belgian legislation on the use of human body material (see I § 12.2). Samples sent to the sponsor or to organisations working in collaboration with the sponsor, will only be labelled with your trial identification code. The sponsor ensures that the location of your biological samples is always tracked. The use of your biological samples is linked to the processing of the associated coded personal data.
+
+Your biological samples are deemed to be a “donation”. You will not receive any financial benefit associated with the development of new therapies derived from the use of your biological samples, and which may have commercial value.
+
+2.  What will happen to the collected biological samples?
+
+The tumour biopsy will be analysed for the objectives of the trial.
+
+Since scientific progress in this area is constant, the sponsor would like to, with your consent retain the remainders of your biological samples for 10 years. The sponsor will use them for additional research that remains within the context of the current clinical trial and thus with the same disease or the same treatment/drug as in this study.
+
+You agree or disagree to the retention of the remainder of your biological samples for additional research within the context of the current clinical trial by ticking the appropriate checkbox in Chapter II. The material will be used for future research, outside the trial that you will participate in, to better understand the disease, its treatment and the responses to this treatment, and everolimus/ONC201.
+
+If you agree, this additional research may only be conducted according to the legislation on the use of human tissue material and with the approval of a recognized Ethics Committee.
+
+Genetic analyses will also be performed on your biological samples. Genetic analyses are studies of DNA. For example, DNA determines the colour of our hair and eyes. DNA can also explain why some people respond to certain drugs and others do not. It can also explain why some people get certain diseases and others do not.
+
+These genetic analyses will deliver essential information for the trial. If you do not want these analyses to be conducted, you will not be allowed to participate in the trial.
+
+What if the trial reveals meaningful information about your health?
+
+We may discover new information about your health during the course of the trial. If this information may be important to your health, the sponsor will inform the researcher. With your consent, the researcher will inform you and your treating physician about your results and the possible consequences. If necessary, the researcher and/or the treating physician will advise you on what to do next.
+
+You can let the researcher know whether or not you agree to be informed about meaningful information discovered about your health by ticking the relevant checkbox in Chapter II. The researcher/your treating physician will inform you about this information in any case where not being informed may cause serious harm to your health or that of third parties.
+
+Who has reviewed and approved the trial documents?
+
+The documents of the trial have been reviewed by
+
+- The Belgian competent health authorities (FAMHP) or, if applicable, by the competent national health authorities of other EU members states and
+
+- An independent Belgian Ethics Committee
+
+It is the task of the competent health authorities and the Ethics Committees to protect people who take part in a trial. The health authorities will ensure that the trial is conducted in accordance with the applicable legislation.
+
+You should not under any circumstances take their approval as an incentive to take part in the trial.
+
+CHAPTER II - Informed consent
+
+for patients of 18 years and older
+
+BIOMEDE 2.0 study
+
+PARTICIPANT 
+
+Prerequisites for your participation in the trial
+
+- I declare that I have read this form and understood its information.
+
+- I declare that I have been informed of and that I understand the purpose of the clinical trial, its duration and consequences, possible risks and discomforts, the precautions that I must take and what is expected of me. My rights have been explained to me and I have understood those rights.
+
+- I have had enough time to think about taking part in this trial and to discuss it with a trusted person (for example friends, relatives, treating physician, …).
+
+- I have had the opportunity to ask any questions that came to mind and have obtained a satisfactory response to my questions.
+
+- I understand that my participation in this trial is voluntarily and free from any coercion and that I am free to stop at any time my trial participation.
+
+- I understand that data about me will be collected and that they will be treated confidentially as described in Chapter I, §12.2.
+
+- I am aware that my personal data is being processed as described in Chapter I, § 12.
+
+- I understand that representatives of the sponsor, the ethics committee, and competent health authorities have access to my medical record if authorised to do so (as described in Chapter I, §12.5).
+
+- I understand that the monitoring of the trial will give certain persons access to all my data. I give these persons permission to view my data for monitoring purposes.
+
+- I understand that my encoded data may be sent to countries outside the EU, where EU privacy laws don't apply.
+
+- I understand that the sponsor has taken out an insurance in case I should suffer any damage in connection with my participation in this trial.
+
+- I understand that when participating in this trial, I will not have any costs except those related to the standard of care treatment of my disease.
+
+- I am aware that my treating physician(s) being informed of my participation in this trial.
+
+- If I take part in another interventional trial, I must inform the investigator or trial team about this. I agree not to take part in any other interventional trial (e.g. with a study drug, medical device, experimental surgical technique) at the same time without first informing the investigator or the trial staff, who might not permit me to participate for a good reason.
+
+- I understand that I need to cooperate and follow the investigator’s and trial staff’s instructions regarding the trial.
+
+- I understand that participation to the trial might end for me without my consent if I need other treatment, do not follow the trial plan, have a trial-related injury, or for any other justified reason.
+
+- I understand that genetic analyses will be conducted on my biological samples.
+
+- I certify that all the information I have given about my medical history is correct, to the best of my knowledge. I understand that it may be harmful to me if I do not inform the investigator of possible reasons why I could not participate in the study.
+
+- If applicable, I understand that I cannot become pregnant, or impregnate my partner, during the trial. The investigator has discussed how to ensure not to become pregnant, to ensure my partner does not become pregnant.
+
+Optional consents which are no prerequisite for your participation in this trial.
+
+DATA OBTAINED FROM THIS TRIAL
+
+1.  As specified in Chapter I, § 12.7, the sponsor would like to be able to use your data obtained from this trial for other research and development activities (and the associated scientific publications) on the condition that such research purposes have been approved by a recognized Ethics Committee.
+
+  Do you agree with the use of your data obtained in this trial for other research purposes?
+
+  (Tick as appropriate)
+
++---------------------------------+---------------------------------+
+|   ☐ I agree                     |   ☐ I do not agree              |
++:================================+=================================+
+
+BIOLOGICAL SAMPLES WITHIN THE CONTEXT OF THE TRIAL
+
+2.  As specified in Chapter I, § 4, in the exceptional case where a so-called "liquid" biopsy (blood or cerebrospinal fluid) has been performed instead of a tumour biopsy, the sponsor would like to use the sample to search for new biomarkers.
+
+  If applicable, do you agree with the use of this sample to search for new biomarkers?
+
+  (Tick as appropriate)
+
++---------------------------------+---------------------------------+
+|   ☐ I agree                     |   ☐ I do not agree              |
++:================================+=================================+
+
+3.  As specified in Chapter I, § 13.2, the sponsor would like to retain the remainders of your biological samples for 10 years for additional research within the context of the trial that you will participate in. The samples will be used to better understand the disease, its treatment and the responses to this treatment. This research can only be done on the condition that this has been approved by a recognized Ethics Committee..
+
+  Do you agree with the retention of the remainders of your biological samples and the accompanying personal data for additional research within the context of the trial?
+
+  (Tick as appropriate)
+
++---------------------------------+---------------------------------+
+|   ☐ I agree                     |   ☐ I do not agree              |
++:================================+=================================+
+
+MEANINGFUL INFORMATION
+
+4.  As specified in Chapter I, §14, it may occur that meaningful information is discovered that may be important for your health or that of third parties.
+
+If this were to occur, would you like the researcher/your treating physician to inform you of this result?
+
+  (Tick as appropriate)
+
++---------------------------------------+---------------------------------+
+|   ☐ No, I do not wish to be informed. |   ☐ Yes, I wish to be informed. |
++:======================================+=================================+
+
+I consent to take part in the trial, with the above restrictions and I have received a signed and dated copy of all pages of this document.
+
+Participant’s surname and first name:
+
+Date (DD/MMM/YYYY):
+
+Time:
+
+Participant’s signature:
+
+LEGAL REPRESENTATIVE (REF. [2])
+
+I declare that I have been informed that I am being asked to take a decision on whether or not to take part in the clinical trial for the person I represent, considering his/her best interests and taking into consideration his/her likely wishes. My consent applies to all the items listed in the consent of the participant.
+
+I have also been informed that as soon as the clinical situation allows, the person I represent will be made aware of his/her participation in a clinical trial and from that point will be free to continue with this participation or end it by signing or refusing to sign this consent form.
+
+I have received a signed and dated copy of this document.
+
+Legal representative’s surname and first name:
+
+Relationship to the participant:
+
+Date (DD/MMM/YYYY):
+
+Time:
+
+Legal representative’s signature:
+
+IMPARTIAL WITNESS / INTERPRETER (REF. [3] )
+
+I, the undersigned (Tick as appropriate),
+
+☐ Impartial Witness
+
+☐ Interpreter
+
+was present during the entire process of informing the participant and I confirm that the information on the objectives and procedures of the trial was adequately provided, that the participant (or his/her legal representative) apparently understood the trial and that consent to participate in the trial was freely given. 
+
+I declare furthermore that acting as an impartial witness/interpreter, I am independent of the sponsor and the investigator.
+
+Impartial Witness / Interpreter surname and first name:
+
+Impartial Witness / Interpreter qualification:
+
+Date (DD/MMM/YYYY):
+
+Time:
+
+Impartial Witness / Interpreter signature:
+
+INVESTIGATOR
+
+I, the undersigned investigator, confirm that
+
+- the participant has been verbally provided with the necessary information about the trial, has been explained the content and has been given an original signed document.
+
+- I have verified that the participant has understood the trial.
+
+- I have given the participant sufficient time to agree to take part and to ask any questions.
+
+- no pressure was applied to persuade the participant to agree to take part in the trial.
+
+- I operate in accordance with the ethical principles set out in the latest version of the “Helsinki Declaration”, the “Good Clinical Practices” and the Belgian Law on clinical trials.
+
+Investigator’s, Surname and first name:
+
+Date (DD/MMM/YYYY):
+
+Time:
+
+Investigator’s signature:
+
+GLOSSARY
+
+FAMHP: Federal agency for medicines and health products
+
+DPA: The Data Protection Authority ensures that personal data are handled with care and thoroughly protected, and that your future privacy also remains guaranteed.
+
+Other abbreviations that appear in the text:
+
+No Fault insurance:
+
+The sponsor is liable for any injury or any damage that the participant has suffered, and which is directly or indirectly related to the clinical trial. You do not have to prove any mistake in this respect.
+
+MONITOR and AUDITOR
+
+Both the monitor and auditor work for the sponsor.
+The monitor takes care of a continuous quality check during the entire process of the trial. The auditor performs an independent, one-time quality check at some time during the trial. They verify if the trial is being/was conducted according to the protocol, if the reported data are liable and if the clinical trial was conducted according to the applicable rules.
+
+REFERENCES
+
+[1] Throughout the document, the term ‘’encoding‘’ is used as a synonym for ‘’pseudonymisation‘’, the term used in General Data Protection Regulation No 2016/679.
+
+[2] When a person of full age is incapable of expressing his will, legal representation must be used which is determined in successive order (person whom the patient has previously designated to act in his place, administrator, or failing that, cohabitating spouse, the legal cohabiting partner, de facto cohabiting partner, an adult child, a parent, an adult brother or sister). If that person does not wish to do so or is absent, the professional concerned, where appropriate in multidisciplinary consultation, represents the interests of the patient. The regulation is laid down in article 31 of the law of 7 May 2017 on clinical trials for medicinal products for human use and articles 12 and 14 of the Law of 22 August 2002 on patients’ rights.
+
+[3] The use of an impartial witness is necessary when the subject or their legal representative speaks and/or fully understands the language of the approved informed consent form but cannot read and write due to a physical disability or is visually impaired. An interpreter is necessary when the investigator does not speak the patient's language.

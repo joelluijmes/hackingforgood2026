@@ -1,0 +1,746 @@
+INFORMED CONSENT FORM FOR THE INCLUSION IN A CLINICAL TRIAL
+
+INTENDED FOR A MINOR AGED BETWEEN 12 AND 17 YEARS
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Official title of the trial(in Italian)                                                                                                                                                                                                       |
++:==============================================================================================================================================================================================================================================+
+| Official title of the trial in more understandable terms for the patient (use common and non-technical terms: for example, make it clear that the investigational molecule is a new drug to lower blood pressure, prevent heart attack, etc.) |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Facility-context of the trial                                                                                                                                                                                                                 |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Coordinating center (if different from the structure where the trial will take place) and clinical trial coordinator                                                                                                                          |
+|                                                                                                                                                                                                                                               |
+| Coordinating center ____________________________________________________________________                                                                                                                                                      |
+|                                                                                                                                                                                                                                               |
+| Clinical trial coordinator__________________________________________________________________                                                                                                                                                  |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Register where the trial has been registered or will be registered (if applicable) and any identification code if available                                                                                                                   |
+|                                                                                                                                                                                                                                               |
+| Identification code ____________________________                                                                                                                                                                                              |
+|                                                                                                                                                                                                                                               |
+| Register_______________________________________________________________________________________                                                                                                                                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Principal investigator (indicate the local Trial Manager)                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                               |
+| Name ___________________________________________________________________________                                                                                                                                                              |
+|                                                                                                                                                                                                                                               |
+| Affiliation ____________________________________________________________________________                                                                                                                                                      |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                                                                                                                                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Sponsor/Financing body                                                                                                                                                                                                                        |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Ethics Committee                                                                                                                                                                                                                              |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+  This document consists of the following sections:
+
+A.  INTRODUCTION
+
+B.  QUESTIONS AND ANSWERS SECTION: KEY INFORMATION
+
+C.  FURTHER INFORMATION
+
+D.  CONSENT SECTION
+
+ADDITIONAL DOCUMENTS
+
+A.  INTRODUCTION
+
+Dear Young Person,
+
+your parents have been involved to inform them and ask for their consent to your participation in a clinical trial. For this purpose, we have submitted to them a detailed information sheet, which goes into detail on the various aspects of the trial. From a legal point of view, their consent is essential for you to be able to take part in the trial.
+
+However, it is your right to be informed about the purpose and characteristics of the trial so that you can make an informed and free decision whether to participate or not. In relation to your age, there are the prerequisites for a reasonable maturity allowing you to form your own opinion on the subject and to evaluate the information relating to the trial, to its risks and benefits. For this reason, your explicit desire will be taken into consideration to participate or to refuse participation in the trial or to withdraw from it at any time.
+
+This document aims to inform you clearly and thoroughly about the nature and purposes of the trial, and about what your participation will entail for you, including your rights and responsibilities. We have restricted ourselves to the aspects that we consider most significant for you but, if you wish, you can also consult the information sheet delivered to your parents.
+
+Please read the following carefully. The researchers involved in this project, indicated at the beginning of this document, are available to answer your questions. No question that comes to your mind is trivial: don't be afraid to ask!
+
+Besides us, you can discuss the proposal contained in this document with your general practitioner, your family and other trusted persons. Take your time to decide. You can take home an unsigned copy of this document to think about it or to discuss it with others before making a decision.
+
+Should you decide not to participate in the trial, you will still receive the best possible care for patients with your condition/disease. In no way will your refusal be interpreted as a lack of trust.
+
+To facilitate the understanding of this document, the Trial Center (OTHERS: INDICATE) makes available a cultural mediator in order to transfer the contents in the manner and language most suitable for you.
+
+If you are unable to sign the informed consent, the consent can be provided and recorded using specific alternative means, such as audio or video recordings, in the presence of at least one impartial witness.
+
+Once you have read this form, received answers to any questions and decided to participate in the trial, you will be asked to sign a consent form, of which you will receive a hard copy.
+
+The first section will answer the following questions:
+
+- What is the aim of this clinical trial?
+
+- What are the objectives of the trial? Who else will participate? How long will it last?
+
+- Is it my free choice to decide whether to participate or not?
+
+- What if at some point I want to withdraw from the trial?
+
+- What happens if I decide to participate in the trial? How long will it last?
+
+- Are there any rules to respect?
+
+- What benefits can I expect?
+
+- Will I take risks if I participate in the trial?
+
+- Who can I ask for further explanations? Who will my contact point be?
+
+- What happens if I come of age during the trial?
+
+In the next section, we will provided you with additional relevant information.
+
+The Principal Investigator
+
+A.  QUESTIONS AND ANSWERS: KEY INFORMATION
+
+Dear Young Person
+You’ve been diagnosed with acute Graft-versus-Host Disease, or aGvHD. This is a complication that can happen after a stem cell transplant from a donor (called an allogeneic hematopoietic stem cell transplant, or HSCT). When you have aGvHD, some of the donor’s immune cells (which are part of the transplant) attack your body because they see it as “foreign.” This can cause inflammation and damage in different parts of your body, and it can make your recovery more difficult.
+
+Doctors try to prevent aGvHD by giving medicines (called prophylaxis) after the transplant. But even with these preventive treatments, about 30% to 50% of people who get a transplant still develop aGvHD. It usually happens within the first 100 days after the transplant (this is called “classic” aGvHD), but it can also show up later or along with a longer-lasting form called chronic GvHD (or cGvHD).
+
+The parts of the body most often affected by aGvHD are:
+
+- Your skin
+
+- Your liver
+
+- Your gut (digestive system)
+
+You might have symptoms like:
+
+- Skin rashes or redness
+
+- Nausea or throwing up
+
+- Watery or bloody diarrhea
+
+- Yellowing of your skin or eyes (this is called jaundice)
+
+How serious these symptoms are can affect how well you recover from the transplant. More severe symptoms usually mean a harder recovery.
+
+The usual first treatment for aGvHD is a type of medicine called corticosteroids (like prednisone). These work well for some people—but not for everyone. In fact, only about 40% to 50% of people fully get better with steroids. If the steroids don’t work, the condition is called steroid-refractory aGvHD (SR-aGvHD), and it's harder to treat.
+
+If that happens, doctors try second-line treatments, like:
+
+- Special immune-suppressing drugs
+
+- Extracorporeal photopheresis (ECP), a type of light-based blood treatment
+
+- Mesenchymal stromal cells (MSC), which help reduce inflammation
+
+- Other targeted therapies
+
+These treatments help about half the patients, but not all. Also, using steroids for a long time can cause serious side effects, like:
+
+- Infections
+
+- High blood sugar (diabetes)
+
+- High blood pressure
+
+- Weak bones (osteoporosis)
+
+- Cataracts
+
+- Muscle weakness
+
+- Slower growth (especially in kids and teens)
+
+A newer drug called ruxolitinib has shown better results for people with SR-aGvHD. It’s a pill that blocks certain proteins (called JAK1 and JAK2) involved in the immune system response that causes GvHD. It’s now approved for children and adults with either acute or chronic GvHD when other treatments haven’t worked.
+
+Because of this, experts in Europe (the EBMT) recommend ruxolitinib as the preferred option when steroids don’t help. But even this drug doesn’t work for everyone. In one major study:
+
+- 38% of patients didn’t get better after 28 days
+
+- Over 60% still needed more treatments after 56 days
+
+Also, some patients still have flare-ups of aGvHD when doctors try to lower the steroid dose. This often means they have to stay on high-dose steroids longer, which increases the risk of other serious problems like infections or relapse of the original disease.
+
+That’s why researchers are trying to find better first-line treatments for kids and teens with aGvHD. The goal is to reduce the need for steroids and to prevent cases from becoming steroid-refractory.
+
+This brings us to the FORUX trial (Group R2). It’s part of a larger international research study called FORUM2, which is looking for better treatments for children and young adults with acute lymphoblastic leukemia (ALL) who have had a stem cell transplant. The FORUX trial (Group R2) is just for patients 18 or younger who develop aGvHD after transplant.
+
+- What is the aim of this clinical trial?
+
+  We’re inviting you to take part in this clinical trial because we want to see if using two medicines together, ruxolitinib and corticosteroids, works better and is just as safe as using corticosteroids alone to treat aGvHD when it first appears.
+
+  Right now, the first treatment for aGvHD is usually corticosteroids. But these don’t work well for everyone, and they can cause serious side effects if used for a long time. That’s why researchers are looking for better ways to treat aGvHD from the start—before it becomes harder to treat.
+
+  Ruxolitinib is a medicine that helps calm down the immune system by blocking certain signals (called pathways) that are involved in causing GvHD. These signals normally help your body fight infections, but in GvHD, they’re too active and attack your own tissues.
+
+  An important thing about ruxolitinib is that it does not seem to interfere with the “graft-versus-leukemia” (GvL) effect. That’s the part of the transplant where the donor’s immune cells can still help fight any leftover cancer cells in your body. That’s a good thing.
+
+  We already know ruxolitinib can help some people who don’t get better with steroids. But in this trial, we want to test whether starting ruxolitinib right away, together with steroids, might give even better results—before steroid resistance has a chance to develop.
+
+- What are the objectives of the trial? Who else will participate? How long will it last?
+
+  This study is trying to answer this big question:
+
+  Is it better to treat aGvHD right away with both ruxolitinib and corticosteroids, instead of corticosteroids alone?
+
+  The main goals of the study are to:
+
+- Help aGvHD symptoms go away faster and more effectively
+
+- Stop the disease from getting worse
+
+- Make it possible to reduce or stop immune-suppressing medications earlier
+
+- Improve survival and overall quality of life
+
+- Support better and faster recovery of your immune system
+
+  This study will be run in about [xxx] hospitals across [xxx] European countries and will include around 192 children and teens aged 3 months to 18 years.
+
+- Is it my free choice to decide whether to participate or not?
+
+  In relation to your age, there are the prerequisites for a reasonable maturity allowing you to form your own opinion on the subject (discussing it with your parents, with trial staff or with whomever you deem appropriate) and to evaluate the information relating to the trial, to its risks and benefits. For this reason, your explicit desire will be taken into consideration to participate or to refuse participation in the trial or to withdraw from it at any time.
+
+  If you decide not to join the trial, you can still be followed by the clinical center that is treating you and you will be treated using the best approved (non-experimental) therapeutic methods for aGvHD, according to what outlined in the FORUM2 master protocol.
+
+  In addition, you can participate in another clinical trial within the FORUM2 master protocol or in another experimental trial outside the master protocol that may be in progress, provided that you are eligible.
+
+- What if at some point I want to withdraw from the trial?
+
+  You can decide to withdraw from the trial at any time and for any reason, without having to justify your decision.
+
+  Should you decide not to participate anymore, please inform one of the investigating doctors as soon as possible: it is important to suspend treatment safely. The doctor may consider a final check-up test/examination.
+
+  Your doctor will keep you informed of any changes in the trial that may affect your willingness to participate.
+
+  Please note that the investigating physician may decide to terminate your participation in the trial if:
+
+- Your health conditions were to change and participation in the trial proved potentially harmful
+
+- New information is available and the trial is no longer in your best interest
+
+- You do not follow the agreed rules for participation in the trial: in particular, for girls, if you happen to get pregnant during the trial
+
+- What happens if I decide to participate in the trial? How long will it last?
+
+If you decide to take part in this study, here’s what you need to know.
+
+This is a clinical trial testing two different treatments for aGvHD (a complication after a stem cell transplant). The researchers want to find out if adding a medicine called ruxolitinib to the usual treatment (called corticosteroids) works better than using corticosteroids alone.
+
+You’ll be randomly placed in one of two treatment groups—kind of like flipping a coin. You have a 50% chance of being in either group. You and your doctors will know which treatment you’re getting.
+
+The two treatment groups are:
+
+Group 1 – New combination treatment:
+
+- You’ll get ruxolitinib (a pill or liquid you take by mouth), plus corticosteroids, plus another medicine that helps control the immune system (called cyclosporine A or tacrolimus).
+
+Group 2 – Standard treatment:
+
+- You’ll get only corticosteroids, plus cyclosporine A or tacrolimus. This is the usual way doctors treat aGvHD right now.
+
+The dose of ruxolitinib will be based on your age and weight.
+
+Before starting the treatment
+
+Before starting the trial, you’ll go through a screening period that lasts up to 7 days. During this time, the study team will check if you’re eligible to join by doing:
+
+- A review of your medical history
+
+- A physical exam
+
+- Blood tests
+
+- Other checks to confirm aGvHD
+
+Sometimes, a biopsy of the affected area (like the skin or gut) may be needed, but this is only done if necessary. Biopsy is usually performed under general anesthesia. You can still join the study without a biopsy if your doctor agrees.
+
+No study-related procedures will happen unless you and your parents/guardians give written consent.
+
+How long does the study last?
+
+The main treatment period lasts about 6 months (24 weeks). You’ll need to come to the hospital or clinic up to 13 times:
+
+- Once a week for the first 8 weeks
+
+- Once every 4 weeks after that until Week 24
+
+Your doctor will check how well you’re doing, especially on Day 28.
+
+If you're improving:
+
+- Treatment continues and doses may be slowly reduced (tapered).
+
+- If you're on ruxolitinib, it will be continued at least until Day 42, and possibly up to Week 24 or longer if needed.
+
+If you're not improving:
+
+- Your treatment might change.
+
+- If you started with ruxolitinib and steroids, your doctor might add other treatments.
+
+- If you were on steroids alone, your doctor may decide to start ruxolitinib (this is called “crossing over”). From that point, you’ll follow the same plan as patients who started with ruxolitinib.
+
+You’ll keep taking the immune-suppressing medicine (cyclosporine A or tacrolimus) unless your doctor says otherwise.
+
+After the treatment period
+
+About 1 month after your last dose, your doctor will check in with you—by phone or at a visit—for a safety check.
+
+Then, you’ll be asked to return for long-term follow-up visits at:
+
+- 9 months, 12 months, 18 months, and 24 months after treatment starts.
+
+These visits help the doctors keep track of your health and recovery.
+
+Some visits may take 2 to 3 hours. Your first treatment visit may be longer (up to 9–10 hours) because of extra testing and observation.
+
+What else will happen during the study?
+
+In addition to regular blood tests, some extra samples will be taken for research, to help doctors learn more about:
+
+- How your immune system recovers
+
+- How your body processes ruxolitinib (pharmacokinetics, or PK)
+
+- Certain biomarkers (clues in your blood that help doctors understand diseases)
+
+When PK samples are needed, you’ll take your ruxolitinib dose at the hospital, not at home. If you ever miss a dose or take it at the wrong time, tell your doctor right away.
+
+All samples will be coded to protect your identity. Your name will not appear on them—only a special code known by your doctor.
+
+Some samples will be tested at your hospital, others may be sent to Bambino Gesù Children’s Hospital, the study’s main center.
+
+What happens to leftover blood samples?
+
+Some blood samples may be stored and used later for research related to this study, for up to 15 years. They might help:
+
+- Improve how we diagnose or treat aGvHD
+
+- Compare results with other studies
+
+No genetic testing will be done unless you give extra written permission later.
+
+You can choose to:
+
+- Let your samples be used for future research (only related to this study)
+
+- Or ask that they be destroyed or fully anonymized (so no one can link them back to you)
+
+You can withdraw from the study at any time. This won’t affect your regular care in any way.
+
+If new results come out that could affect your future health or medical choices, the study team will inform you.
+
+treatments or stop early, doctors will continue to monitor your health closely for the full study period.
+
+- Are there any rules to respect?
+
+Yes. If you join the study, there are some important rules to follow to keep you safe and to make sure the study results are reliable.
+
+Here’s what you need to do:
+
+- Go to all your scheduled study visits. These visits are important for checking how the treatment is working and how you’re feeling.
+
+- Take your medicine exactly as the doctor tells you. Whether it’s a tablet or a liquid, don’t skip any doses. If you miss a dose by accident or feel unwell after taking it, tell your study doctor right away.
+
+- Tell the study team about any other medicines or supplements you're using. This includes:
+
+  - Prescription drugs
+
+  - Over-the-counter medicines (like painkillers or cold medicine)
+
+  - Herbal or natural products
+
+  - Vitamins
+
+Also, tell them if you stop taking any regular medication during the study.
+
+- Let the doctor know right away if you feel anything unusual or different, even if it doesn’t seem serious. This could be a side effect or something important for your care.
+
+If you're old enough to have children:
+
+- Girls: You must not get pregnant or breastfeed during the study. The doctor will talk to you about using the right birth control methods to stay safe.
+
+- Boys: You must not try to father a child during the study. The doctor will explain what precautions to take.
+
+By agreeing to be in the study, you’re saying that you will:
+
+- Follow the doctor’s instructions
+
+- Come to your study visits
+
+- Stick to all the study rules
+
+These steps are really important for your safety and for the success of the research
+
+- What benefits can I expect?
+
+If you take part in this study, you may receive a new combination treatment that includes ruxolitinib and corticosteroids. This could work better than the current standard treatment, which uses corticosteroids alone.
+
+If the combination works well, it might:
+
+- Help your aGvHD symptoms get better more quickly and completely
+
+- Help your immune system recover sooner
+
+- Reduce the need for long-term use of medicines that weaken your immune system
+
+All of these things could help you:
+
+- Avoid serious side effects from steroids, like infections, high blood sugar, weak bones, or slowed growth
+
+- Lower the chance of relapse (when leukemia comes back)
+
+- Improve your overall quality of life during and after treatment
+
+This study is a Phase III trial, which means it is carefully designed to compare two treatments in a large group of children and teens. If the new combination works better, it could become the new standard way to treat aGvHD in kids.
+
+Even if you don’t personally benefit from the treatment, your participation will still help researchers learn more about how to treat aGvHD, which could help other children like you in the future.
+
+- Will I take risks if I participate in the trial?
+
+In a study like this, every adolescent can react differently after taking the investigational drug and could have side effects or ailments, even serious ones, that the trial doctor cannot predict at the moment. For this reason you will be carefully monitored. Many of these reactions disappear immediately after stopping the therapies. In some cases, adverse reactions may instead become more serious, long-lasting, or never go away; they may require hospitalization and even (rarely) be fatal. For this reason, if side effects occur during the study, you must immediately report them to your parents and to the investigating doctor, so they may decide to suspend the administration of the drug and give you any necessary treatment. In addition, you and your parents will be notified promptly if information becomes available during the trial that could influence the decision to participate in the study.
+
+What are the possible side effects of ruxolitinib?
+
+Most side effects go away after stopping or adjusting the medication. But some can be long-lasting, serious, or very rarely, life-threatening.
+
+Very common side effects (happen in more than 1 in 10 people):
+
+- Low red blood cells (anemia): may cause tiredness, pale skin, or shortness of breath
+
+- Low white blood cells: can raise the risk of infections
+
+- Low platelets: may cause bruising or bleeding easily
+
+- Urinary tract infections (UTIs)
+
+- Increased cholesterol or fat in the blood
+
+- Headaches, dizziness, weight gain
+
+- Constipation, high blood pressure, or abnormal liver test results
+
+- Shingles (painful rash or blisters)
+
+Doctors will check your blood regularly. If blood counts drop too low, your doctor may pause or adjust the medication.
+
+Less common side effects (1 to 10 out of 100 people):
+
+- Too much gas (flatulence)
+
+- Low levels of all types of blood cells (called pancytopenia)
+
+Rare side effects (less than 1 in 100 people):
+
+- Tuberculosis (TB): cough, fever, night sweats, or weight loss
+
+- Severe brain infection (PML): symptoms like confusion, speech problems, vision changes, or weakness
+
+- Skin cancers: new or changing moles or bumps—tell your doctor if you notice anything strange on your skin
+
+Other possible risks:
+
+- Stopping ruxolitinib suddenly could cause symptoms like weakness, anxiety, or return of disease, always stop under a doctor’s supervision
+
+- It may not be safe if you’ve had hepatitis B or other viral infections—make sure to tell your doctor if this applies to you
+
+- In animal studies, ruxolitinib slowed down bone growth. This may affect very young children, but bone growth will be monitored in everyone
+
+What have we seen in kids who took ruxolitinib in past studies?
+
+In a recent study with children who had aGvHD:
+
+- All had at least one side effect
+
+- About half had side effects related to ruxolitinib (most often low blood counts)
+
+- Over half had serious side effects (like fever, infections, or kidney issues)
+
+- Infections were common, about 7 in 10 kids got one, but many kids were able to reduce or stop taking steroids thanks to ruxolitinib
+
+Other risks in the study
+
+You’ll have about 16 blood draws during the study. This might cause:
+
+- Discomfort, bruising, or dizziness
+
+- Very rarely, infection or blood clots at the needle site
+
+If any hospital staff are accidentally exposed to your blood (this is very rare), they’ll follow safety rules to protect everyone. Your identity will stay confidential.
+
+What if I’m able to get pregnant or make someone pregnant?
+
+- Girls: You can’t be pregnant or breastfeeding in this study. You’ll need to use birth control during the study. If you think you might be pregnant, tell the study doctor right away—you’ll need to stop the medication, and your health (and the baby’s) will be followed closely.
+
+- Boys: You should avoid getting someone pregnant during the study. There's no current evidence that ruxolitinib affects sperm, but it’s still important to take precautions.
+
+If a pregnancy happens during the study, extra consent will be needed to collect follow-up health information about the baby, if appropriate
+
+If you decide not to take part in this trial:
+
+- You will still be treated at your usual hospital
+
+- You will still receive the best approved treatment available for aGvHD
+
+- You may still be able to join other parts of the FORUM2 study, or other clinical trials, as long as you meet the criteria
+
+If you do join this trial and then decide to stop, the doctors will keep taking care of you and will continue to offer the best treatment options based on your situation.
+
+- Who can I ask for further explanations? Who will my contact point be?
+
+  For any doubt and unforeseeable or unscheduled event during the trial (doubts relating to the treatment in progress, side effects, decision to abandon the trial, etc.), you or your parents (guardian) can contact:
+
+  INDICATE NAMES AND REFERENCES OF THE TRIAL CENTER STAFF THAT THE PARTICIPANT CAN CONTACT (Dr. [SPECIFY NAME], [SPECIFY TELEPHONE NUMBER, E-MAIL]).
+
+  INDICATE WHO CAN BE CONTACTED ON HOLIDAYS AND POSSIBLE CONTACTS ON CALL
+
+- What happens if I come of age during the trial?
+
+  As already indicated, if you agree to participate in the trial you will be asked to sign a consent form, whereby you confirm that you have been sufficiently clarified every aspect of the trial, that you express your willingness to participate but that it has no legal value, unlike the consent given by your parents, who exercise the so-called parental authority. Should you come of age, you will become legally autonomous in your choices. Consequently, you will be submitted a new informed consent.
+
+B.  FURTHER INFORMATION
+
+1.  Trial Authorization
+
+  The trial protocol proposed to you has been examined and approved by the Ethics Committee ......................... Among other things, the Ethics Committee has verified the compliance of the trial with the standards of Good Clinical Practice and with the ethical principles expressed in the Declaration of Helsinki and that your safety, rights and well-being have been protected.
+
+2.  Processing of personal, health and clinical data
+
+  Your data, in particular personal and health data, will be processed only to the extent that they are indispensable to the objective of the trial and for pharmacovigilance purposes, in compliance with EU Regulation 2016/679, known as GDPR (General Data Protection Regulation) and with Legislative Decree 10 August 2018, no. 101, that is, the rules governing privacy. In practical terms, the documents concerning you will be kept in a safe place and will not report your name in clear text (only known to the researchers), but an identification code.
+
+  The data, made anonymous, may be subject to control by regulatory bodies and used for scientific publications (journals, conferences).
+
+  Your clinical data collected for the purposes of the trial, as well as the results of the tests carried out, will be stored for the time required by the regulations and subsequently destroyed. They will not be destroyed only if a) it is no longer possible to trace them back to your identity, because they have been anonymised during the trial itself; b) in the presence of your specific informed consent.
+
+  If the personal data are transferred to a third country or to an international organization, all the guarantees will be adopted which are provided for by Article 46 of the GDPR 679/2016.
+
+3.  Treatment of biological samples
+
+During the study, blood samples will be taken from you for testing. These samples help doctors understand how the treatment is working and how your body is reacting.
+
+As soon as your samples are collected:
+
+- They will be given a code instead of your name (this is called pseudonymization)
+
+- Only the study doctor will know what the code means
+
+- This helps protect your privacy while still allowing results to be shared with you if needed
+
+Some samples will be tested at your hospital. Others may be sent to the main research center at Bambino Gesù Children’s Hospital.
+
+- What happens to the samples after the study ends?
+
+Any leftover blood samples may be kept for up to 15 years after the study finishes. They could be used for future research, but only for purposes related to this study, like:
+
+- Understanding how aGvHD works
+
+- Finding better ways to treat or diagnose the disease
+
+- Comparing results with other clinical trials
+
+These studies can never use your name or personal information. Your identity will always stay private.
+
+- Will my samples be used for genetic testing?
+
+No genetic testing will be done unless:
+
+- You and your parents are told about it first
+
+- You give separate written permission
+
+If future research ever goes beyond the goals of this study, you’ll be asked if you want to give new consent. You can say yes or no, and your choice will always be respected.
+
+- Can I change my mind later?
+
+Yes. You can withdraw your consent at any time. If you do, you can ask that:
+
+- Any remaining samples be destroyed, or
+
+- Made completely anonymous, so they can’t be traced back to you
+
+- Who can use my samples in the future?
+
+If you agree, your samples could be used:
+
+1.  By the same research team, for research closely related to this study
+
+2.  By other research teams in trusted scientific projects that have similar goals
+
+The results of these studies may be:
+
+- Shared anonymously with other researchers
+
+- Published in medical journals—but never with your name or personal details
+
+- Used to help other kids with aGvHD in the future
+
+If any important new findings come from these studies, such as something that could affect your health or future choices, the study team will let you know.
+
+4.  Access to the results of the trial?
+
+  Once the trial is over and all the resulting data have been collected, they will be analyzed to draw conclusions. The investigators undertake to make them available to the scientific community.
+
+  The law provides for the possibility that participants have access to the results of the trial. Therefore, you and your parents can ask the investigating physician to communicate the general results of the trial (or indicate where and how to access the trial results).
+
+5.  Unexpected results following analysis
+
+While you’re in the study, you’ll have regular medical check-ups like blood tests, physical exams, and possibly scans (like X-rays). These are meant to monitor your health and how your aGvHD is responding to treatment.
+
+These tests aren’t designed to look for other illnesses, but sometimes they can show unexpected results, like a health issue that no one knew about before.
+
+If that happens:
+
+- The study doctor will talk to you and your parents about what was found.
+
+You can choose how much information you want to know:
+
+- Some people only want to hear about things that affect their health right now
+
+- Others may want to know about things that could affect their future health, family, or ability to have children later on
+
+Your wishes will be respected, and you’ll get support in understanding what the results mean.
+
+This study does not include any genetic testing, but if that ever changes in the future, you and your parents would be asked for separate permission before any such testing is done.
+
+You always have the right to say you don’t want to know certain information, and that choice will be honored.
+
+______________________________ ___/___/______ _________ ____________________________
+
+Full name of the doctor Date Time Signature
+
+who delivered the note
+
+Additional documents:
+
+- Consent for use of biological data/samples for future studies
+
+- Consent for genetic testing
+
+- Consent for any sub-studies (additional studies that are not an integral part of the main study protocol)
+
+1.  
+
+C.  INFORMED CONSENT BY A MINOR AGED BETWEEN 12 AND 17 YEARS
+
+(Notes: 1 copy for the participant, 1 copy for the trial manager)
+
+Title of the trial:________________________________________________________________
+
+Protocol code, version and date: ___________________________________________________________
+
+Promoter of the trial/sponsor funding body: _____________________________________
+
+Principal Investigator (NAME, AFFILIATION, REFERENCES): ________________________________________
+
+_______________________________________________________________________________________
+
+I, the undersigned ______________________________________________
+
+born in _________________________________________________________________ on ___/___/______
+
+DECLARE THAT
+
+▢ Dr ________________________________________ has provided me/us with exhaustive explanations regarding the request for participation in the research in question, as reported in the information section contained in this consent, of which I was/we were given a copy on ____________ at ______________ (indicate date and time of delivery);
+
+▢ I have been clearly explained and I have understood the nature, the purposes, the procedures, the expected benefits, the possible risks and inconveniences and the alternative treatment methods with respect to the proposed clinical trial;
+
+▢ I had the opportunity to ask any question to the trial investigator and I received satisfactory answers;
+
+▢ I had sufficient time to reflect on the information received and to discuss it with my parents or with whomever I deemed appropriate;
+
+▢ I have been informed that the trial protocol and all the forms used have received the favorable opinion by the competent Ethics Committee;
+
+▢ I have been informed that I can decide not to take part in the study or to leave it at any time, without providing justification, and that such decisions will in no way change the relationship with the treating doctors and with the facility where I am being treated;
+
+▢ I am aware that the research can be interrupted at any time, by decision of the trial manager;
+
+▢ I have been informed that I will be made aware of any new data that could jeopardise the safety of the research and that, for any problem or further questions, I may contact the doctors where I am being treated;
+
+▢ I have been informed that the results of the trial will be made known to the scientific community, protecting my identity according to the current legislation on privacy;
+
+▢ I am aware that any choice expressed in this consent form may be revoked at any time and without any justification;
+
+▢ I have received a copy of this consent form.
+
+I HEREBY DECLARE THAT
+
+▢ I am willing to participate in the trial
+
+▢I am willing ▢ NOT willing to be informed of all unexpected news relating to my present or future health that may accidentally emerge from the investigations envisaged by the trial, including genetic ones
+
+▢I am willing ▢ NOT willing to be informed of all unexpected news relating to my present or future health only if it can be useful for my health care or to allow me to make informed reproductive choices
+
+▢ I am willing ▢ NOT willing to be contacted after the end of the trial to provide information on my state of health (this only applies to contacts that the study protocol does not envisage as follow-up)
+
+If applicable:
+
+▢ I ACCEPT ▢ I DO NOT ACCEPT to use contraceptive drugs
+
+________________________________________ ___/___/______ _________ ______________________
+
+Place and date Time
+
+___________________________________________ ___________________________________________
+
+Full name of the minor patient Signature
+
+___________________________________________ ___________________________________________
+
+Full name of the legal representative Signature
+
+___________________________________________ ___________________________________________
+
+Full name of the doctor who provided Signature
+
+information and who obtained the consent
+
+  STATEMENT OF THE DOCTOR WHO OBTAINED THE CONSENT BY A MINOR AGED BETWEEN 12 AND 17 YEARS
+
+(Name of the minor patient, place and date of birth)
+
+Title of the trial:________________________________________________________________
+
+Protocol code, version and date: ___________________________________________________________
+
+Promoter/sponsor of the trial__________________________________________________________________
+
+Principal Investigator (NAME, AFFILIATION, REFERENCES): ________________________________________
+
+_______________________________________________________________________________________
+
+I, the undersigned Prof./Dr. ………………………………… ……………………..… in my capacity as Principal investigator
+
+Surname Name
+
+(or as delegate of the Principal investigator)
+
+Hereby declare that
+
+the minor mature patient has voluntarily consented to his/her participation in the trial
+
+I also declare, compatibly with his/her age, that:
+
+▢ I have provided the minor patient with full explanations relating to the purpose of the trial, the procedures, the possible risks and benefits and to possible alternatives;
+
+▢ I have verified that the minor patient sufficiently understood the information provided
+
+▢ I have given the minor patient the necessary time and the opportunity to ask questions about the trial
+
+▢ I have clearly described the possibility of withdrawing from the trial at any time or of changing the choices made
+
+▢ I have not exerted any coercion or undue influence in requesting this consent
+
+▢ I have provided the patient with information on how the results of the trial will be disclosed to him/her
+
+_____________________________________________________ ________
+
+Place and date Time
+
+_________________________________________________ _________________________________________________
+
+Name Surname (block letters) of the doctor who provided the Signature (and stamp)
+
+Information and who obtained the consent
+
+This form is an integral part and must be kept together
+
+with the information sheet for informed consent

@@ -1,0 +1,545 @@
+INFORMATIE EN FORMULIER VOOR GEÏNFORMEERDE TOESTEMMING VOOR OUDERS/VOOGDEN
+
+FORUM2 - Substudie Randomisatie 1 (R1)
+
+Een vergelijking van totale lichaamsbestraling (TBI) in twee verschillende bestralingsdoses – 8 Gray en 12 Gray – voorafgaand aan een stamceltransplantatie bij kinderen en jongvolwassenen met acute lymfatische leukemie (ALL)
+
+Officiële titel van de studie: FORUM2 – Framework for Optimizing, Refining, and Unifying Management of HSCT in Pediatric ALL (Kader voor de Optimalisatie, Verfijning en Eenmaking van het Beheer van HSCT bij Pediatrische ALL)
+
+EU-nummer: 2025-522052-13-00
+
+Studienummer: FORUM2
+
+Opdrachtgever(s) van de studie: Ospedale Pediatrico Bambino Gesù, IRCCS, Piazza di Sant'Onofrio 4, Rome, Italië
+
+Naam studiecentrum: officiële naam van het studiecentrum
+
+Hoofdadres studiecentrum: adres van het studiecentrum
+
+Met wie kan ik contact opnemen als ik vragen heb?
+
++-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+| Naam                  | Functie                                                                                                                                         | Voor                                                                        | Contactgegevens                                                                     |
++=======================+=================================================================================================================================================+=============================================================================+=====================================================================================+
+| Familienaam, voornaam | Hoofdonderzoeker van het studiecentrum                                                                                                          | Informatie, problemen, bezorgdheden                                         | Telefoonnr./ E-mail                                                                 |
++-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+|                       | Studiepersoneel                                                                                                                                 | Informatie, problemen, bezorgdheden                                         | Telefoonnr./ E-mail                                                                 |
++-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+|                       | Contact voor dringende vragen m.b.t. de studie                                                                                                  | Dringende informatie, problemen, bezorgdheden                               | Telefoonnr.                                                                         |
++-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+|                       | Ombudspersoon patiëntenrechten van het studiecentrum, [of indien niet mogelijk contact opnemen met het CT-College]                              | Bezorgdheden/ vragen over uw rechten als deelnemer aan een klinische studie | Telefoonnr. van het studiecentrum [indien niet mogelijk: ct-college@health.fgov.be] |
++-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+| Amlin Insurance       | Verzekeringsmaatschappij van de opdrachtgever                                                                                                   | Betwisting of klacht over een schadeclaim                                   | Polisnr: 299.053.700                                                                |
+|                       |                                                                                                                                                 |                                                                             |                                                                                     |
+|                       |                                                                                                                                                 |                                                                             | Adres: Koning Albert II-laan 37                                                     |
+|                       |                                                                                                                                                 |                                                                             |                                                                                     |
+|                       |                                                                                                                                                 |                                                                             | 1030 Brussel                                                                        |
+|                       |                                                                                                                                                 |                                                                             |                                                                                     |
+|                       |                                                                                                                                                 |                                                                             | Telefoonnr.: 02 894 70 00                                                           |
+|                       |                                                                                                                                                 |                                                                             |                                                                                     |
+|                       |                                                                                                                                                 |                                                                             | E-mail: klachtenmanagement.be                                                       |
+|                       |                                                                                                                                                 |                                                                             | @msamlin.com                                                                        |
++-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+|                       | Functionaris voor gegevensbescherming van het studiecentrum [of indien niet mogelijk: Contactpersoon voor de bescherming van persoonsgegevens.] | Vragen over de vertrouwelijkheid van uw gegevens                            | Telefoonnr.                                                                         |
+|                       |                                                                                                                                                 |                                                                             |                                                                                     |
+|                       |                                                                                                                                                 |                                                                             | E-mail: e-mail                                                                      |
++-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+|                       | Belgische gegevensbeschermingsautoriteit                                                                                                        | Klachten over de vertrouwelijkheid van uw gegevens                          | +32(0)2274 48 00                                                                    |
+|                       |                                                                                                                                                 |                                                                             |                                                                                     |
+|                       |                                                                                                                                                 |                                                                             | E-mail: contact@apd-gba.be                                                          |
++-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+
+● Voor het beheer van klachten die niet door de onderzoeker worden opgelost, kan u terecht bij de ombudsman van het studiecentrum op bovenstaand adres.
+
+● Volgens de GDPR heeft u recht op inzage in de verwerking van de gegevens van uw kind. Voor vragen hierover kan u contact opnemen met de functionaris Gegevensbescherming van het studiecentrum op bovenstaand adres.
+
+● U hebt ook het recht om een klacht in te dienen over de wijze van verwerking van de gegevens van uw kind bij de Belgische toezichthoudende autoriteit die verantwoordelijk is voor de naleving van de wetgeving inzake gegevensbescherming: Gegevensbeschermingsautoriteit (GBA), hierboven.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| De studie in een oogopslag                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Beste                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| U krijgt deze informatiebrief omdat uw kind de diagnose acute lymfatische leukemie (ALL) heeft gekregen en een hematopoëtische stamceltransplantatie (HSCT) nodig heeft. Dit document heeft specifiek betrekking op de mogelijke deelname aan een substudie (R1) van de FORUM2-studie.                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| De FORUM2-studie is een academische platformstudie, wat betekent dat ze wordt georganiseerd door verschillende academische ziekenhuizen. Ze biedt een gedeelde infrastructuur om gedurende een bepaalde periode meerdere wetenschappelijke vragen te beantwoorden binnen hetzelfde kader. Ze werd opgezet door het kinderziekenhuis Ospedale Pediatrico Bambino Gesù (IRCCS) in Rome (Italië) en er zullen meer dan 1.000 deelnemers over de hele wereld betrokken zijn, onder wie jaarlijks ongeveer 4-5 patiënten in België.                                                                                                                                                                              |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Binnen dit kader kunnen sommige patiënten worden uitgenodigd om deel te nemen aan specifieke substudies als ze daarvoor in aanmerking komen. Elk van die substudies heeft eigen specifieke inclusiecriteria en termijnen. Als u in aanmerking komt voor die substudies zal uw expliciete schriftelijke toestemming worden gevraagd voordat u deelneemt.                                                                                                                                                                                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Deze informatiebrief en dit toestemmingsformulier hebben betrekking op de substudie R1. Deze substudie is een gerandomiseerde vergelijking van twee verschillende doses totale lichaamsbestraling (TBI) die voorafgaand aan de transplantatie worden gegeven: een standaarddosis van 12 Gy versus een verlaagde dosis van 8 Gy. Het doel van deze substudie is om te bepalen of de verlaagde dosis TBI in combinatie met chemotherapie (etoposide) even werkzaam is om recidief te voorkomen en mogelijk minder bijwerkingen op lange termijn veroorzaakt. In verschillende kleinere studies zijn veelbelovende resultaten vastgesteld met een verlaagde stralingsdosis met behoud van de doeltreffendheid. |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| De substudie omvat een gerandomiseerde vergelijking: als u instemt met de deelname van uw kind, wordt hij/zij willekeurig toegewezen aan een bestraling van 8 Gy of 12 Gy voorafgaand aan de transplantatie. Alle deelnemers krijgen hetzelfde standaard chemotherapiegeneesmiddel, etoposide. Dit soort studieopzet – een gecontroleerde, gerandomiseerde studie – is de meest betrouwbare manier om medische behandelingen te vergelijken. Er worden klinische gegevens verzameld over hoe uw kind zich voelt en welke bijwerkingen uw kind ervaart tot 5 jaar na de transplantatie.                                                                                                                      |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Mogelijke voordelen van deelname zijn onder meer de kans dat uw kind een lagere stralingsdosis krijgt die het risico op complicaties op lange termijn kan verminderen – ervan uitgaande dat de dosis van 8 Gy even doeltreffend blijkt te zijn. Dat kan echter niet worden gegarandeerd en hij/zij heeft mogelijk geen rechtstreeks voordeel bij de studie. Het ruimere voordeel is dat u bijdraagt aan een betere en veiligere behandeling voor toekomstige patiënten.                                                                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Deelname aan de substudie R1 is vrijwillig en kost u niets meer vergeleken met de kosten van de standaardbehandeling. U krijgt geen vergoeding voor de deelname van uw kind aan dit deel van de studie. De opdrachtgever heeft een verzekering afgesloten om alle gerelateerde kosten te dekken als er iets met uw kind zou gebeuren tijdens de studie.                                                                                                                                                                                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| De onderzoeker zal de behandelende artsen op de hoogte brengen over de deelname van uw kind aan deze studie. Hij/zij mag niet deelnemen aan een andere interventionele klinische studie zonder de onderzoeker of het studiepersoneel ervan op de hoogte te brengen. U moet ons ook alle relevante informatie bezorgen over de gezondheidstoestand van uw kind, andere medicatie die hij/zij neemt of de symptomen die hij/zij krijgt.                                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| De studie en studiedocumenten zijn nagekeken en goedgekeurd door EU-autoriteiten en een onafhankelijk Ethisch Comité in België. De gegevens worden vertrouwelijk behandeld.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Neem de tijd om dit document zorgvuldig te lezen. Bespreek het eventueel met familieleden, vrienden of de artsen. De deelname van uw kind aan de substudie is volledig vrijwillig. Als u / uw kind beslist om niet deel te nemen, heeft dat geen invloed op de toekomstige medische zorg van uw kind.                                                                                                                                                                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Als u / uw kind beslist om deel te nemen, kunt u uw toestemming op elk moment intrekken zonder dat u daarvoor een reden hoeft te geven en zonder negatieve gevolgen voor de behandeling van uw kind.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Neem in geval van vragen over deze studie contact op met mij of mijn team via de contactgegevens op de eerste pagina van dit document.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Met vriendelijke groeten,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| De onderzoeker                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+HOOFDSTUK I – BESCHRIJVING VAN DE STUDIE EN UW RECHTEN BIJ DEELNAME VAN UW KIND
+
+Waarom wordt deze substudie uitgevoerd?
+
+Deze substudie maakt deel uit van de ruimere FORUM2-platformstudie, die bedoeld is om de uitvoering van stamceltransplantaties bij kinderen en jongeren met acute lymfatische leukemie (ALL) te optimaliseren.
+
+Voor patiënten met de diagnose hoog risico- of recidiverende ALL is een allogene stamceltransplantatie (HSCT) een van de aanbevolen behandelingen. Dat betekent dat uw kind gezonde stamcellen krijgt van een geschikte donor. Die aanpak is deel van de standaardzorg voor dit type ALL, met een bewezen verbetering van de langetermijnoverleving.
+
+Voorafgaand aan de transplantatie wordt een zogenaamde conditioneringsbehandeling gegeven. Die bereidt het lichaam voor door resterende leukemiecellen te verwijderen en het immuunsysteem te onderdrukken, zodat de donorcellen kunnen groeien.
+
+De conditionering bestaat meestal uit een combinatie van totale lichaamsbestraling (TBI) en chemotherapie. De huidige standaardaanpak is bestraling met 12 Gray (Gy) in combinatie met een chemotherapie met de naam etoposide (TBI met 12 Gy plus etoposide), die heel doeltreffend is gebleken voor de preventie van recidief (de ziekte die terugkomt). Bij bestraling is er echter ook een verhoogd risico op acute bijwerkingen (orgaanschade, misselijkheid, mucositis, huidtoxiciteit en infecties) en bijwerkingen op lange termijn zoals groeistoornissen, hormonale onevenwichten, onvruchtbaarheid en late orgaanschade.
+
+Deze substudie van de FORUM2-platformstudie wordt uitgevoerd om uit te zoeken of een lagere bestralingsdosis van 8 Gy (gecombineerd met het geneesmiddel etoposide, ook VP 16 genoemd) even doeltreffend is om recidief te voorkomen, maar met minder bijwerkingen op lange termijn. In verschillende kleinere studies zijn veelbelovende resultaten vastgesteld met een verlaagde stralingsdosis met behoud van de doeltreffendheid.
+
+Groep R1 richt zich specifiek op de vraag: Is TBI met 8 Gy even doeltreffend als TBI met 12 Gy om een recidief van de leukemie te voorkomen, maar met minder schadelijke effecten?
+
+Aan deze substudie zullen naar verwachting ongeveer 1.000 kinderen en adolescenten van 2 tot 25 jaar meedoen, in meerdere centra in Europa en erbuiten. Alle deelnemende centra zijn ervaren transplantatiecentra die strikte internationale protocollen volgen.
+
+Het hoofddoel (primaire doelstelling) is een vergelijking van de overleving na vier jaar zonder recidief of secundaire kankers tussen de twee groepen.
+
+Secundaire doelstellingen zijn vergelijkingen van de bijwerkingen, infecties, transplantatiegerelateerde complicaties, orgaanfunctie en levenskwaliteit.
+
+Waarom wordt mijn kind gevraagd deel te nemen?
+
+Uw kind werd gediagnosticeerd met acute lymfatische leukemie (ALL). Hoewel de behandeling van uw kind tot nu toe heeft geleid tot volledige remissie (wat betekent dat er op dit moment geen leukemiecellen meer te vinden zijn), is er op basis van de kenmerken van de ziekte van uw kind nog steeds een aanzienlijk risico dat de leukemie terugkomt. Om uw kind de beste kans op genezing op lange termijn te geven, wordt een allogene stamceltransplantatie (HSCT) aanbevolen, waarbij hij/zij gezonde stamcellen krijgt van een geschikte donor.
+
+Als voorbereiding op de HSCT wordt een standaard totale lichaamsbestraling met een dosis van 12 Gy (GY is de bestralingseenheid) toegediend in combinatie met standaard chemotherapie (etoposide, ook VP 16 genoemd).
+
+Deze substudie omvat een gerandomiseerde vergelijking: als u en uw kind instemmen met deelname, wordt hij/zij willekeurig toegewezen aan een bestraling van 8 Gy of 12 Gy voorafgaand aan de transplantatie. Alle deelnemers krijgen hetzelfde chemotherapiegeneesmiddel, etoposide. Dit soort studieopzet – een gecontroleerde, gerandomiseerde studie – is de meest betrouwbare manier om medische behandelingen te vergelijken.
+
+De onderzoeker of het studiepersoneel zal met u de voorwaarden bespreken voor de toelating van uw kind tot de studie.
+
+Moet mijn kind deelnemen aan deze studie?
+
+De deelname van uw kind aan deze studie gebeurt vrijwillig en mag nooit onder druk gebeuren. Dit betekent dat u / uw kind het recht hebt/heeft om niet deel te nemen aan de studie. U / uw kind mag u/zich ook op elk moment terugtrekken zonder dat u hiervoor een reden hoeft te geven, zelfs al hebben u en uw kind eerder toegestemd om deel te nemen. Uw beslissing zal geen invloed hebben op uw relatie met de onderzoeker of de behandelende arts van uw kind, noch op de kwaliteit van de toekomstige medische zorgen van uw kind.
+
+Indien andere behandelingen beschikbaar zijn voor HSCT voor ALL, zal de onderzoeker of zijn/haar afgevaardigde die behandelingen met u bespreken.
+
+Als u en uw kind akkoord gaan om deel te nemen, dan zal de onderzoeker de behandelende artsen van uw kind op de hoogte brengen. Uw kind mag dan niet deelnemen aan een andere interventionele klinische studie zonder de onderzoeker of het studiepersoneel hiervan op de hoogte te brengen. U en uw kind moeten ons ook alle relevante informatie bezorgen over de gezondheidstoestand van uw kind, andere medicatie die uw kind neemt of de symptomen die uw kind krijgt.
+
+Wat gaat er tijdens de substudie gebeuren? 
+
+Als u en uw kind beslissen om deel te nemen aan deze substudie, is het enige verschil met de standaardbehandeling de dosis totale lichaamsbestraling (TBI) die wordt gebruikt als deel van de conditioneringsbehandeling voorafgaand aan de stamceltransplantatie. Uw kind krijgt de TBI ofwel met de standaarddosis (12 Gy) of met de verlaagde dosis (8 Gy), afhankelijk van de willekeurige toewijzing.
+
+Alle andere aspecten van de transplantatieprocedure – inclusief het chemotherapiegeneesmiddel (etoposide), de transplantatie zelf, de ondersteunende zorg tijdens het ziekenhuisverblijf en de opvolging na ontslag uit het ziekenhuis – zullen precies hetzelfde zijn als bij de behandeling die uw kind buiten de studie zou krijgen.
+
+Belangrijk om te weten is dat deelname aan deze substudie niet zal leiden tot extra onderzoeken, procedures of opvolgingsbezoeken naast wat al nodig is voor een standaard stamceltransplantatie. Aan deze substudie komen geen experimentele geneesmiddelen, bijkomende invasieve ingrepen of extra afspraken te pas. Uw kind wordt op dezelfde manier en met dezelfde frequentie opgevolgd als elke andere patiënt die een stamceltransplantatie ondergaat buiten deze studie.
+
+Deelnemers worden willekeurig toegewezen aan een van twee behandelgroepen. Beide groepen krijgen voorafgaand aan de transplantatie een conditioneringsbehandeling met een chemotherapiegeneesmiddel genaamd etoposide (VP 16). Dat geneesmiddel zal intraveneus worden toegediend, dosis en schema stemmen overeen met de huidige standaard transplantatieprotocollen.
+
+Het verschil tussen de twee groepen is de dosis van de totale lichaamsbestraling (TBI) die samen met etoposide wordt toegepast:
+
+- Eén groep krijgt de standaarddosis van 12 Gray (Gy) TBI, wat de huidige standaardbehandeling is die in de klinische praktijk wordt gebruikt voor patiënten die een HSCT ondergaan.
+
+- De andere groep krijgt een verlaagde dosis van 8 Gy, de onderzoeksbehandeling die in deze studie wordt getest.
+
+De TBI wordt gegeven via uitwendige bestraling in meerdere fracties verspreid over 2 à 3 dagen en wordt voorafgaand aan de transplantatie toegediend door radiotherapie-oncologiespecialisten. Het doel is om te vergelijken hoe goed de twee verschillende TBI-doses werken om een recidief te voorkomen en om te onderzoeken of de lagere dosis de acute en langetermijnbijwerkingen kan verminderen zonder dat de doeltreffendheid in het gedrang komt.
+
+Dit is een gerandomiseerde gecontroleerde substudie. Deelnemers zullen willekeurig worden toegewezen om ofwel de standaard TBI met 12 Gy of de onderzoeks-TBI met 8 Gy te krijgen, elk met een gelijke waarschijnlijkheid (randomisatieverhouding van 1:1). De kans is 50:50. De toewijzing wordt niet beïnvloed door de patiënt, zijn familie of de behandelende arts. De substudie is niet geblindeerd, wat betekent dat zowel de ouders en patiënten als het medisch team weten welke dosis is toegewezen.
+
+Opzet van de klinische studie
+
+[]
+
+Beide TBI-doses worden toegediend als onderdeel van een specifiek standaard transplantatieprotocol en gevolgd door de stamcelinfusie. Na de transplantatie krijgen alle patiënten dezelfde ondersteunende zorg en opvolging.
+
+Naar verwachting zullen ongeveer 1.000 patiënten deelnemen aan deze substudie, waaronder ongeveer 4-5 deelnemers per jaar in België, met ongeveer 500 patiënten per behandelgroep. Er worden klinische gegevens verzameld over hoe uw kind zich voelt en welke bijwerkingen uw kind ervaart tot 5 jaar na de transplantatie.
+
+Indien uw kind voldoet aan alle voorwaarden voor deelname aan deze substudie en u en hij/zij besluiten deel te nemen, zal hij/zij de hierboven vermelde behandeling ondergaan. Er zijn geen studiespecifieke procedures of bezoeken. Alleen de dosis TBI verschilt tussen de 2 groepen (8 of 12 Gy). Als uw kind niet deelneemt aan deze substudie, krijgt hij/zij de standaarddosis TBI, 12 Gy.
+
+De behandelingen en onderzoeken die behoren tot de standaardbehandeling van uw kind zullen aan u worden aangerekend of vergoed worden door uw mutualiteit (Belgische sociale zekerheid). Neem contact op met het studiepersoneel voor meer details of indien u niet aangesloten bent bij een mutualiteit (Belgische sociale zekerheid).
+
+Zal mijn kind voordeel halen uit de substudie? 
+
+De informatie die tijdens de substudie wordt verkregen, kan bijdragen aan een betere zorg en uitkomsten voor uw kind en toekomstige patiënten met ALL die een stamceltransplantatie ondergaan. Mogelijke voordelen van deelname zijn onder meer de kans dat uw kind een lagere stralingsdosis krijgt die het risico op complicaties op lange termijn kan verminderen – ervan uitgaande dat de dosis van 8 Gy even doeltreffend blijkt te zijn. Dat kan echter niet worden gegarandeerd en hij/zij heeft mogelijk geen rechtstreeks voordeel bij de studie.
+
+Wat zijn de mogelijke risico's en ongemakken bij deelname aan de studie?
+
+1.  Wat zijn de mogelijke bijwerkingen van totale lichaamsbestraling?
+
+Deelnemen aan een studie houdt enig risico in. Deelname aan deze substudie bestaat uit het ondergaan van een allogene stamceltransplantatie (HSCT), voorafgegaan door een conditioneringsbehandeling met chemotherapie en totale lichaamsbestraling (TBI). We weten dat die behandelingen zeer intensief zijn en allerlei risico's op korte en lange termijn met zich meebrengen. Alle behandelingen die worden gebruikt in de substudie zijn gebaseerd op de huidige klinische zorgstandaard; het onderzoeksaspect van deze substudie zit in de vergelijking tussen twee verschillende TBI-doses: 12 Gy (standaard) en 8 Gy (verlaagd). Hieronder volgt een gedetailleerde beschrijving van de verwachte risico's die gepaard kunnen gaan met deelname.
+
+De TBI wordt gebruikt om het lichaam van uw kind voor te bereiden om stamcellen van een donor te aanvaarden door het immuunsysteem te onderdrukken en resterende leukemiecellen te verwijderen. Bestraling heeft niet alleen een impact op kankercellen maar ook op gezonde weefsels, wat kan leiden tot acute en latere complicaties.
+
+- Bijwerkingen op korte termijn (acuut): vermoeidheid, misselijkheid, braken, verminderde eetlust, irritatie van de slijmvliezen en roodheid of droogheid van de huid.
+
+- Bijwerkingen op lange termijn: deze kunnen zich maanden tot jaren na de behandeling ontwikkelen en omvatten:
+
+  - endocriene aandoeningen zoals hypothyreoïdie of groeihormoondeficiëntie,
+
+  - vertraagde of beperkte groei en lichamelijke ontwikkeling, vooral bij jongere kinderen,
+
+  - onvruchtbaarheid of verminderde vruchtbaarheid door schade aan de voortplantingsorganen,
+
+  - cataract (vertroebeling van de ooglens) waarvoor een operatie nodig kan zijn,
+
+  - long- of nierfunctiestoornissen, meestal mild maar soms langdurig,
+
+  - secundaire tumoren (nieuwe kankers) op latere leeftijd – deze zijn zeldzaam maar ernstig.
+
+Het risico en de ernst van acute en langetermijnbijwerkingen zijn in het algemeen hoger bij 12 Gy TBI in vergelijking met 8 Gy. Het doel van de substudie is om te bepalen of de lagere dosis even doeltreffend is en minder van die complicaties veroorzaakt. Aangezien conditionering met 8 Gy echter nog niet getest is in een gerandomiseerde gecontroleerde studie, zou de lagere bestralingsdosis een verhoogd risico op recidief kunnen inhouden.
+
+Daarom is het van groot belang dat u elk nieuw of erger geworden gezondheidsprobleem bij uw kind onmiddellijk bij de onderzoeker meldt. Dit geldt ook als u denkt dat het niets te maken heeft met de studie, en zelfs wanneer het reeds beschreven is in dit document. Als uw kind andere medicatie moet gebruiken, bespreek dit dan vooraf met de onderzoeker. Indien uw kind om gelijk welke reden een andere arts raadpleegt tijdens de studie, moet u hem/haar meedelen dat uw kind deelneemt aan een studie. Dit kan belangrijk zijn voor een juiste diagnose en behandeling indien nodig.
+
+1.  Wat zijn de mogelijke risico's of ongemakken van de onderzoeken tijdens de studie?
+
+Er zijn geen studiespecifieke onderzoeken tijdens de substudie. Er worden alleen onderzoeken uitgevoerd die deel uitmaken van de standaardzorg. Er zijn geen bijkomende risico's of ongemakken vergeleken met de standaardzorg.
+
+2.  Mag mijn kind tijdens de studie andere geneesmiddelen nemen?
+
+Aarzel niet om de onderzoeker meer uitleg te vragen over het gebruik van andere geneesmiddelen en voedingssupplementen (inclusief onder meer aromatherapie, fytotherapie, homeopathie, …).
+
+3.  Zal de deelname van mijn kind aan de studie een invloed hebben op zijn/haar dagelijkse activiteiten?
+
+We willen zorgen dat de studie vlot verloopt. Daarom maken we de volgende afspraken met u:
+
+• U zorgt dat uw kind al zijn/haar geneesmiddelen inneemt op de juiste manier.
+
+• Uw kind neemt tijdens deze studie niet deel aan een andere medisch-wetenschappelijke studie, tenzij u voorafgaand aan de deelname toestemming hebt gekregen van de opdrachtgever.
+
+• Neem contact op met de onderzoeker of onderzoeksverpleegkundige in de volgende situaties:
+
+  o Uw kind gaat andere geneesmiddelen nemen. Dat omvat ook homeopathische geneesmiddelen, natuurlijke geneesmiddelen, vitamines en geneesmiddelen zonder voorschrift.
+
+  o Uw kind moet opgenomen worden in het ziekenhuis of daar een behandeling ondergaan.
+
+  o Uw kind krijgt plots gezondheidsproblemen.
+
+  o Uw kind wil niet meer deelnemen aan de studie.
+
+  o Uw telefoonnummer, adres of e-mailadres is gewijzigd.
+
+4.  Mag mijn kind zwanger worden, een kind verwekken, of borstvoeding geven tijdens de studie?
+
+Het conditioneringsregime, in het bijzonder de TBI, kan de voortplantingsorganen beschadigen en aanzienlijke schade toebrengen aan een ongeboren kind.
+
+Na HSCT is vruchtbaarheidsverlies te verwachten bij zowel mannen als vrouwen, hoewel het individuele risico afhangt van de leeftijd, de dosis en het geslacht. De behandelende arts van uw kind zal de mogelijke ingrepen voor vruchtbaarheidsbehoud in detail met u bespreken tijdens een aparte afspraak.
+
+Als meisje mag uw kind niet zwanger worden tijdens de studie en tot minstens 12 maanden na het einde van de behandeling. Daarnaast mag ze geen eicellen laten afnemen voor eigen gebruik of donatie na de start van de behandeling en tot minstens 12 maanden na de laatste behandeling. Ze mag geen borstvoeding geven tijdens de behandeling.
+
+Als jongen mag uw kind niemand zwanger maken en geen sperma doneren tijdens de studie en tot minstens 6 maanden na het einde van de behandeling.
+
+Als uw kind zwanger kan worden en heteroseksueel actief is, of een partner heeft die zwanger kan worden, dan zal de behandelende arts of verpleegkundige de verschillende soorten anticonceptiemiddelen uitleggen die hij/zij tijdens en na de studie moet gebruiken.
+
+De onderzoeker zal de geschikte soorten anticonceptiemiddelen met uw kind bespreken. Als u en uw kind beslissen om deel te nemen aan deze studie, moet uw kind of de vrouwelijke partner van de deelnemer die zwanger kan worden een van de erkende anticonceptiemiddelen gebruiken (om te voorkomen dat zij of de vrouwelijke partner zwanger wordt). Bij gebruik van orale hormonale anticonceptie moet ook een barrièremethode zoals condooms worden gebruikt.
+
+Als uw kind of de partner zwanger wordt tijdens deze studie, moet u dit onmiddellijk aan de onderzoeker of het studiepersoneel vertellen. In dat geval zal de behandelende arts bespreken wat de volgende stappen zijn voor de behandeling. De onderzoeker zal de zwangerschap monitoren en de opdrachtgever op de hoogte brengen over de uitkomst. Om veiligheidsredenen wil de onderzoeker de zwangerschap en de uitkomst ervan opvolgen en moet hij/zij die gegevens mogelijk delen met de opdrachtgever om te voldoen aan de regelgeving voor het monitoren en rapporteren van veiligheidsinformatie. Uw kind en de partner ontvangen hierover een aparte informatiebrief en u moet er apart toestemming voor geven.
+
+Wat als er tijdens de studie iets fout gaat?
+
+Zelfs als er geen sprake is van een fout, is de opdrachtgever aansprakelijk voor schade die uw kind wordt berokkend, direct of indirect gerelateerd aan zijn/haar deelname aan de studie. De opdrachtgever heeft een passende verzekering afgesloten (een zogenaamde FOUTLOZE VERZEKERING) voor deze aansprakelijkheid. Een kopie van het verzekeringscertificaat is verkrijgbaar bij de onderzoeker of studiepersoneel.
+
+Als u (of in geval van overlijden, uw rechthebbenden) een schadevergoeding wilt voor schade aan de gezondheid van uw kind als direct of indirect gevolg van deelname aan de studie, moet u het studiepersoneel hiervan onmiddellijk op de hoogte stellen.
+
+Als de onderzoeker van mening is dat er mogelijk een verband bestaat tussen nieuwe of verergerde gezondheidsproble(e)m(en) en de studie, zal hij/zij de opdrachtgever van de studie hiervan op de hoogte stellen. De opdrachtgever zal dan onmiddellijk de aangifteprocedure bij zijn verzekeringsmaatschappij starten. Als de maatschappij het nodig acht, zal zij een deskundige aanstellen om te beoordelen of er een verband is tussen de gemelde gezondheidsproble(e)m(en) van uw kind en de studie. De verzekering dekt niet de natuurlijke progressie van de ziekte/aandoening van uw kind of de bekende bijwerkingen van de behandeling die uw kind zou hebben gekregen zonder deelname aan de studie (dat is de standaardbehandeling van uw kind).
+
+Wanneer u / uw kind dit gepast vinden of wanneer u of de rechthebbenden van uw kind het niet eens zijn met de onderzoeker of met de deskundige die door de verzekeringsmaatschappij is aangesteld, kunt u contact opnemen met de verzekeringsmaatschappij of kan een procedure worden gestart tegen de verzekeringsmaatschappij. U vindt de contactgegevens op de voorpagina van dit formulier.
+
+Wat als er tijdens de studie andere behandelingen of nieuwe informatie beschikbaar worden?
+
+In de loop van de studie zou nieuwe belangrijke informatie beschikbaar kunnen worden, die een invloed zou kunnen hebben op uw beslissing om uw kind (verder) te laten deelnemen. Zo kunnen bijvoorbeeld andere behandelingen voor de aandoening van uw kind of belangrijke nieuwe informatie beschikbaar worden. Het is de plicht van de onderzoeker deze nieuwe informatie met u / uw kind te bespreken om u de kans te geven de deelname van uw kind aan de studie te herbekijken.
+
+Indien u besluit de deelname van uw kind aan de studie te beëindigen of indien uw kind niet langer kan deelnemen, zal de onderzoeker van uw kind erop toezien dat uw kind de best mogelijke behandeling blijft krijgen.
+
+Kan de deelname van mijn kind aan de studie vroegtijdig eindigen?
+
+Zoals verder in dit deel gedetailleerd besproken wordt, kan de deelname van uw kind aan de studie vroegtijdig eindigen wanneer
+
+- u besluit de toestemming van uw kind in te trekken,
+
+- de onderzoeker besluit de deelname van uw kind aan de studie te stoppen, of
+
+- andere instanties de studie onderbreken of beëindigen.
+
+In elk geval, als de deelname van uw kind aan de studie vroegtijdig stopt, zal de onderzoeker de verdere medische zorg van uw kind met u / uw kind bespreken. De gegevens verzameld vóór het beëindigen van de deelname van uw kind, zullen verder gebruikt worden zoals beschreven in dit formulier. Dit is bedoeld om een foutieve interpretatie van de studieresultaten te vermijden (zoals beschreven in hoofdstuk I. § 12.4.).
+
+Afhankelijk van de situatie van uw kind zal de onderzoeker met u / uw kind bespreken of er opvolgingsbezoeken of -procedures nodig zijn.
+
+1.  U besluit uw toestemming in te trekken
+
+U kan op elk moment beslissen uw toestemming voor uw kind in te trekken, zonder een reden op te geven. Wel moet u, voor de veiligheid van uw kind, de onderzoeker op de hoogte brengen van uw beslissing. Ook al is het niet verplicht, kan het voor de onderzoeker en voor de opdrachtgever nuttig zijn om de reden van deze beslissing te kennen (bv. bijwerkingen, te veel verplaatsingen, ...).
+
+Als u uw toestemming voor de deelname van uw kind intrekt, bespreek dat dan met de onderzoeker om de praktische modaliteiten van de intrekking te evalueren (in het licht van de situatie van uw kind). Er zullen geen nieuwe gegevens meer verzameld en bezorgd worden aan de opdrachtgever.
+
+2.  De onderzoeker besluit de deelname van uw kind aan de studie te stoppen
+
+De onderzoeker kan de deelname van uw kind aan de studie beëindigen omdat
+
+- hij/zij het voor uw kind het beste vindt,
+
+- uw kind de instructies van het studiepersoneel niet naleeft,
+
+- er een andere reden is die u zal worden uitgelegd, of
+
+- de volledige studie stopgezet moet worden voor alle deelnemers (zie volgende paragraaf).
+
+Als dat gebeurt, dan zal het studiepersoneel u uitleggen waarom en de gepaste opvolging verzekeren.
+
+1.  Andere instanties kunnen de studie onderbreken of beëindigen
+
+De opdrachtgever en de bevoegde Belgische gezondheidsautoriteiten kunnen de studie onderbreken of beëindigen
+
+- omdat uit de verzamelde informatie blijkt dat de substudie niet goed genoeg werkt (onvoldoende verbetering in de gezondheid van de deelnemers aan de studie oplevert),
+
+- omdat er meer (ernstige) bijwerkingen zijn dan verwacht, of
+
+- om een andere reden die door de betrokken instantie zal worden uitgelegd.
+
+Welke behandeling zal mijn kind krijgen na zijn/haar deelname aan de studie? 
+
+Indien uw kind stopt met de studie, zal de onderzoeker de gezondheidstoestand van uw kind evalueren. Indien nodig zal hij/zij uw kind de beste beschikbare standaardbehandeling voorschrijven.
+
+Zal de deelname van mijn kind aan de studie bijkomende kosten met zich meebrengen voor mij?
+
+Zoals beschreven in rubriek 4 behoren alle bezoeken, onderzoeken en behandelingen tot de standaardzorg. Alleen de dosis TBI verschilt (12 Gy versus 8 Gy). De behandelingen en onderzoeken die behoren tot de standaardbehandeling van uw kind zullen aan u worden aangerekend of vergoed worden door uw mutualiteit (Belgische sociale zekerheid).
+
+De studie brengt geen extra kosten met zich mee. U / uw kind krijgt geen financiële vergoeding voor zijn/haar deelname aan deze studie.
+
+Welke gegevens worden over mijn kind verzameld tijdens de studie en wat gaat ermee gebeuren?
+
+1.  Welke gegevens worden tijdens de studie verzameld en verwerkt?
+
+De verzamelde en verwerkte persoonsgegevens gaan over de gezondheid en medische toestand van uw kind, met inbegrip van de medische geschiedenis van uw kind, een deel van de achtergrondinformatie van uw kind (bv. leeftijd en geslacht) en de resultaten van de studieonderzoeken.
+
+Etnische gegevens kunnen worden verzameld om ervoor te zorgen dat er onderzoeksgegevens worden verwerkt in een zo breed mogelijke populatie.
+
+2.  Hoe zal de onderzoeker de persoonsgegevens van mijn kind behandelen?
+
+De onderzoeker (en het studiepersoneel) is gebonden door het beroepsgeheim of via een vertrouwelijkheidsovereenkomst bij het verzamelen en verwerken van uw gegevens.
+
+Dit betekent dat hij/zij de identiteit van uw kind nooit zal bekendmaken, ook niet in een wetenschappelijke publicatie of een voordracht, en dat hij/zij de gegevens van uw kind zal coderen (Ref. [1]) (dit betekent dat hij/zij de identiteit van uw kind in de studie zal vervangen door een identificatiecode) alvorens ze naar de opdrachtgever te sturen. Met andere woorden, deze code zal geen persoonlijke identificator of combinatie van identificatoren bevatten zoals naam, voornaam, initialen, volledige of gedeeltelijke geboortedatum, dossiernummer, enz.
+
+Daardoor zullen de onderzoeker, en het studiepersoneel onder de verantwoordelijkheid van de onderzoeker, de enigen zijn die de identiteit van uw kind zullen kunnen koppelen aan de gegevens die tijdens de studie zijn doorgegeven, met de uitzonderingen vermeld onder § 12.5.
+
+De gegevens die de opdrachtgever krijgt, zullen hem dus niet in staat stellen uw kind te identificeren.
+
+3.  Hoe zullen de gegevens van mijn kind verwerkt worden?
+
+De studiegegevens van uw kind zullen verwerkt worden in overeenstemming met de huidige Europese en Belgische wetgeving inzake gegevensbescherming.
+
+De reden dat de persoonsgegevens van uw kind mogen worden verwerkt voor de doeleinden van de studie, is dat ze worden verwerkt voor het verrichten van wetenschappelijk onderzoek en dat we een taak moeten uitvoeren die gebeurt in het algemeen belang.
+
+4.  Heb ik toegang tot de gegevens van mijn kind die tijdens de studie verzameld en verwerkt zijn en kan ik ze rechtzetten?
+
+U heeft het recht om aan de onderzoeker te vragen welke gegevens over uw kind worden verzameld en waarvoor ze gebruikt worden in deze studie.
+
+U heeft het recht om
+
+- toegang te krijgen tot deze gegevens en ze na te kijken,
+
+- de verzamelde persoonsgegevens te ontvangen,
+
+- correctie te vragen als ze niet juist zijn,
+
+- de verwerking van de gegevens van uw kind te beperken,
+
+- uw toestemming in te trekken voor de verwerking van persoonsgegevens. Uw kind zijn/haar persoonsgegevens die al verzameld werden vóór uw terugtrekking, zullen bewaard blijven om een foutieve interpretatie van de studieresultaten te vermijden.
+
+Het is niet mogelijk om alle gegevens van uw kind te laten schrappen, om te voorkomen dat de resultaten van de studie foutief worden geïnterpreteerd.
+
+1.  Wie anders dan de onderzoeker en zijn studiepersoneel heeft toegang tot de persoonsgegevens van mijn kind?
+
+Om de kwaliteit van de studie te controleren kan het gebeuren dat de niet-gecodeerde persoonsgegevens van uw kind of voor deze studie relevante informatie uit het medisch dossier van uw kind geïnspecteerd worden door andere mensen dan het studiepersoneel. Deze inzage gebeurt onder de verantwoordelijkheid van de onderzoeker. Deze personen zijn gebonden aan het beroepsgeheim of via een vertrouwelijkheidsovereenkomst. Het kan gaan om:
+
+- door de opdrachtgever aangeduid personeel (MONITORS en AUDITORS) en mensen of organisaties die diensten leveren aan of samenwerken met de opdrachtgever. Zij zullen echter nooit de naam en contactgegevens van uw kind doorgeven aan de opdrachtgever,
+
+- inspecteurs van de bevoegde gezondheidsautoriteiten van over de hele wereld,
+
+- een onafhankelijke auditgroep,
+
+- personen aangeduid door het Ethisch Comité.
+
+Indien nodig voor de studie mogen de gecodeerde studiegegevens naar andere landen binnen en buiten de Europese Unie (EU) worden gestuurd en worden nagekeken door:
+
+- personeel (andere dan de inspecteurs) van de bevoegde gezondheidsautoriteiten van België (Federaal Agentschap voor Geneesmiddelen en Gezondheidsproducten, FAGG) of andere landen binnen en buiten de EU,
+
+- het/de Belgisch(e) evaluerend(e) Ethisch(e) Comité(s),
+
+- externe onderzoekers,
+
+- de opdrachtgever van de studie, door de opdrachtgever aangeduid personeel en mensen of organisaties die diensten leveren aan of samenwerken met de opdrachtgever, en/of
+
+- bedrijven uit de groep van de opdrachtgever in België en in andere landen binnen en buiten de EU.
+
+De Europese regelgeving en de Belgische wetgeving over gegevensbescherming leggen beperkingen op voor de overdracht van gegevens naar niet-EU landen. De opdrachtgever moet altijd verzekeren dat uw gecodeerde studiegegevens gelijkwaardig beschermd worden bij overdracht naar een niet-EU land. Indien de opdrachtgever hiervoor een overeenkomst over databescherming afsluit, kan een kopie van deze overeenkomst worden verkregen via de onderzoeker. U kan altijd met de onderzoeker contact opnemen voor meer informatie over zulke overdracht.
+
+1.  Wat zal er gebeuren met de resultaten van de studie?
+
+Na afsluiting van de studie zal een beschrijving en de resultaten van de studie gepubliceerd worden in gespecialiseerde medische tijdschriften. Een kopie van de wetenschappelijke publicatie of een voor een deelnemer begrijpelijke samenvatting, is verkrijgbaar via de onderzoeker of het studiepersoneel.
+
+Een beschrijving van de studie zal ook beschikbaar zijn op https://euclinicaltrials.eu/search-for-clinical-trials/?lang=nl en/of https://www.Clinicaltrials.gov. Met behulp van de informatie op het voorblad van het formulier voor geïnformeerde toestemming, kan u deze websites raadplegen. Binnen 1 jaar na afsluiting van de studie zal de website een samenvatting van de resultaten bevatten in overeenstemming met de richtsnoer van de Europese Commissie.
+
+Deze websites of publicaties zullen geen informatie bevatten waarmee uw kind te identificeren is.
+
+2.  Zullen de gegevens van mijn kind gebruikt worden voor andere doeleinden dan de studie waaraan mijn kind deelneemt?
+
+De resultaten van de studie zullen worden gebruikt om een antwoord te geven op de wetenschappelijke vragen van deze studie. Daarnaast zou de opdrachtgever de gegevens van uw kind die uit deze studie verkregen zijn, willen gebruiken in andere onderzoeks- en ontwikkelingsactiviteiten (en de daaraan gekoppelde wetenschappelijke publicaties). Deze activiteiten kunnen enkel gaan over dezelfde ziekte of hetzelfde geneesmiddel.
+
+Elk bijkomend onderzoek buiten de studie en dus niet beschreven in bovenstaande punten, moet steeds goedgekeurd worden door een erkend Ethisch Comité.
+
+U bent reeds al dan niet akkoord gegaan met het gebruik van de studiegegevens van uw kind voor andere doeleinden in het toestemmingsformulier van de hoofdstudie van FORUM2.
+
+3.  Hoe lang worden de gegevens van mijn kind bijgehouden?
+
+Na afloop van de studie zullen de gecodeerde gegevens van uw kind minstens 25 jaar worden bijgehouden in overeenstemming met de Europese wetgeving inzake klinische proeven om de geldigheid van het onderzoek te verzekeren. Dat zal ook het geval zijn indien uw kind voortijdig met zijn/haar deelname aan de studie stopt.
+
+ Welke biologische stalen worden van mijn kind verzameld tijdens de studie en wat gebeurt ermee? 
+
+Biologische stalen zijn stalen van menselijk lichaamsmateriaal. In deze substudie worden geen studiespecifieke biologische stalen verzameld.
+
+Wie heeft de documenten inzake de studie nagekeken en goedgekeurd?
+
+De studiedocumenten werden nagekeken door:
+
+- de Belgische bevoegde gezondheidsautoriteiten (FAGG) of indien van toepassing, door de nationale bevoegde gezondheidsautoriteiten van andere EU lidstaten, en
+
+- een onafhankelijk Belgisch Ethisch Comité
+
+De bevoegde gezondheidsautoriteiten en de Ethische Comités hebben als taak de personen die aan een studie deelnemen te beschermen. De bevoegde gezondheidsautoriteiten zullen erop toezien dat de studie gebeurt in overeenstemming met de toepasselijke wetgeving.
+
+U mag hun goedkeuring niet opvatten als een stimulans om uw kind te laten deelnemen aan de studie.
+
+HOOFDSTUK II –Geïnformeerde toestemming VOOR OUDERS/VOOGDEN 
+
+FORUM2 - Substudie Randomisatie 1 (R1)
+
+Een vergelijking van totale lichaamsbestraling (TBI) in twee verschillende bestralingsdoses – 8 Gray en 12 Gray – voorafgaand aan een stamceltransplantatie bij kinderen en jongvolwassenen met acute lymfatische leukemie (ALL)
+
+Referentienummer van studiedeelnemer: _______________
+
+Protocolversie en -datum: ______________________________
+
+DEELNEMER 
+
+Vereisten voor de deelname van uw KIND aan de studie
+
+- Ik verklaar dat ik dit formulier heb gelezen en dat ik de informatie erin begrepen heb.
+
+- Ik verklaar dat ik geïnformeerd ben over het doel van de substudie, de duur en de gevolgen ervan, mogelijke risico's en ongemakken, de voorzorgen die mijn kind moet nemen en wat van hem/haar verwacht wordt, en dat ik dit alles begrepen heb. De rechten van mijn kind als deelnemer aan een studie zijn mij uitgelegd en ik heb ze begrepen.
+
+- Ik heb voldoende tijd gehad om erover na te denken en erover te praten met een vertrouwenspersoon (bv. vrienden, familie, behandelende arts, ...).
+
+- Ik heb de kans gekregen om alle vragen te stellen die bij me opkwamen en ik heb een bevredigend antwoord gekregen.
+
+- Ik begrijp dat mijn kind vrijwillig en zonder daartoe gedwongen te zijn, zal deelnemen aan deze substudie en dat ik op ieder moment de deelname van mijn kind aan de studie stop kan zetten.
+
+- Ik begrijp dat er gegevens over mijn kind zullen worden verzameld en dat deze vertrouwelijk zullen behandeld worden zoals beschreven in Hoofdstuk I, §12.2.
+
+- Ik ben ervan op de hoogte dat de persoonsgegevens van mijn kind verwerkt worden zoals beschreven in Hoofdstuk I, § 12.
+
+- Ik begrijp dat vertegenwoordigers van de opdrachtgever, het Ethisch Comité, en bevoegde gezondheidsautoriteiten inzage hebben in het medisch dossier van mijn kind indien ze hiertoe gemachtigd zijn (zoals beschreven in Hoofdstuk I, §12.5).
+
+- Ik begrijp dat de opdrachtgever een verzekering heeft afgesloten voor het geval mijn kind schade zou lijden in verband met zijn/haar deelname aan deze studie.
+
+- Ik begrijp dat ik bij deelname aan deze substudie geen kosten heb, tenzij deze voor de standaardbehandeling van de ziekte van mijn kind.
+
+- Ik begrijp het belang van anticonceptie en zal mijn kind goed informeren zodat hij/zij de gegeven aanbevelingen opvolgt. Ik zal eveneens de partner(s) van mijn kind informeren over de deelname van mijn kind aan een klinische studie met een geneesmiddel dat mogelijk schadelijk is voor de foetus, en om samen de benodigde anticonceptiemaatregelen te treffen.
+
+- Ik ben op de hoogte dat de behandelende arts(en) van mijn kind op de hoogte wordt gebracht van de deelname van mijn kind aan deze studie.
+
+- Wanneer mijn kind deelneemt aan een andere interventionele studie, dien ik dit aan de onderzoeker of het studiepersoneel te laten weten. Ik stem ermee in dat mijn kind niet gelijktijdig aan een andere interventionele studie (bijvoorbeeld met een studiegeneesmiddel, medisch hulpmiddel, experimentele chirurgische techniek) deelneemt zonder de onderzoeker of het studiepersoneel daarvan op de hoogte te brengen, en dat deelname om gemotiveerde redenen kan geweigerd worden.
+
+- Ik begrijp dat mijn kind moet meewerken en de instructies van de onderzoeker en van het studiepersoneel rond de studie moet volgen.
+
+- Ik begrijp dat de deelname van mijn kind aan de substudie zonder de toestemming van mijn kind kan beëindigd worden als hij/zij een andere behandeling nodig heeft, het studieschema niet volgt, een letsel heeft dat met de studie te maken heeft of om gelijk welke andere gerechtvaardigde reden.
+
+- Ik bevestig dat alle informatie die ik heb gegeven over de medische geschiedenis van mijn kind correct is, voor zover ik weet. Ik begrijp dat het schadelijk voor mijn kind kan zijn als ik de onderzoeker niet informeer over mogelijke redenen waarom mijn kind niet aan het onderzoek zou mogen deelnemen.
+
+Ik stem in met de deelname van mijn kind aan de R1 substudie en ik heb een ondertekende en gedateerde kopie ontvangen van alle bladzijden van dit document.
+
+Naam en achternaam van eerste ouder/voogd:
+
+Datum (DD/MMM/JJJJ):
+
+Tijdstip:
+
+Handtekening van eerste ouder/voogd:
+
+Naam en achternaam van tweede ouder/voogd:
+
+Datum (DD/MMM/JJJJ):
+
+Tijdstip:
+
+Handtekening van tweede ouder/voogd:
+
+ONPARTIJDIGE GETUIGE / TOLK (REF. [2] )
+
+(Indien aanwezig)
+
+Ik, ondergetekende (vink aan wat past),
+
+☐ onpartijdige getuige
+
+☐ tolk
+
+ben tijdens het volledige proces van informatieverstrekking aan de ouders/voogden aanwezig geweest en bevestig dat de informatie over de doelstellingen en procedures van de studie op adequate wijze is verstrekt. Ik bevestig dat de ouders/voogden (of hun wettelijke vertegenwoordiger) de studie naar alle waarschijnlijkheid hebben begrepen en dat de toestemming voor deelname uit vrije wil is gegeven.
+
+Ik verklaar bovendien dat ik, optredend als onpartijdig getuige/tolk, geen banden heb met de opdrachtgever en de onderzoeker.
+
+Naam en voornaam van de onpartijdige getuige / tolk:
+
+Hoedanigheid van de onpartijdige getuige / tolk:
+
+Datum (DD/MMM/JJJJ):
+
+Tijdstip:
+
+Handtekening van de onpartijdige getuige / tolk:
+
+ONDERZOEKER
+
+Ik, de ondergetekende onderzoeker, bevestig
+
+• dat de ouders/voogden mondeling de noodzakelijke informatie over de studie hebben gekregen, dat de inhoud hen is uitgelegd en dat ze een origineel ondertekende versie van dit document hebben gekregen,
+
+• dat ik heb nagegaan of de ouders/voogden de studie hebben begrepen,
+
+• dat ik de ouders/voogden voldoende tijd heb gegeven om akkoord te gaan met de deelname van hun kind en om vragen te stellen,
+
+• dat geen enkele druk op de ouders/voogden werd uitgeoefend om hen te doen toestemmen in de deelname van hun kind aan de studie,
+
+• dat ik werk in overeenstemming met de ethische beginselen zoals vermeld in de meest recente versie van de "Verklaring van Helsinki", de "Goede klinische praktijken" en de Belgische wet inzake klinische proeven.
+
+Naam en voornaam van de onderzoeker:
+
+Datum (DD/MMM/JJJJ):
+
+Tijdstip:
+
+Handtekening onderzoeker:
+
+VERKLARENDE WOORDENLIJST
+
+FAGG: Federaal Agentschap voor Geneesmiddelen en Gezondheidsproducten
+
+GBA: De Belgische Gegevensbeschermingsautoriteit zorgt ervoor dat persoonsgegevens zorgvuldig worden gebruikt en beveiligd, en dat de privacy van uw kind ook in de toekomst gewaarborgd blijft.
+
+Andere afkortingen die in de tekst voorkomen:
+
+Verzekering met "foutloze" aansprakelijkheid:
+
+De opdrachtgever is aansprakelijk voor elk letsel of elke schade aan de deelnemer die rechtstreeks of onrechtstreeks verband houdt met de studie. Hiervoor dient u geen fout aan te tonen.
+
+MONITOR en AUDITOR:
+
+Zowel de monitor als de auditor werkt voor de opdrachtgever.
+De monitor zorgt voor een continue kwaliteitscontrole tijdens het hele verloop van de studie De auditor voert een onafhankelijk, éénmalig onderzoek op een bepaald moment tijdens het verloop van de studie. Ze controleren of de studie wordt/werd uitgevoerd volgens het protocol, of de gerapporteerde gegevens betrouwbaar zijn en of de studie in overeenstemming is met de geldende wetten.
+
+REFERENTIES
+
+[1] Doorheen het document wordt de term “codering” gebruikt als een synoniem voor “pseudonimisering”, de term die in de Algemene Verordening Gegevensbescherming No 2016/679 wordt gebruikt.
+
+[2] Het gebruik van een onpartijdige getuige is noodzakelijk wanneer de betrokkene of diens wettelijke vertegenwoordiger de taal van het goedgekeurde formulier voor geïnformeerde toestemming spreekt en/of volledig begrijpt maar niet kan lezen en schrijven als gevolg van een fysieke handicap of visueel gehandicapt is. Een tolk is noodzakelijk wanneer de onderzoeker niet de taal van de patiënt spreekt.

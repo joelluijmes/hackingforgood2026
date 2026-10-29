@@ -1,0 +1,350 @@
+Information form for PARTICIPANTS AGED 12-17 years
+
+FORUM2 - Sub- study FORUX - Randomisation 2 (R2)
+
+A Comparison of ruxolitinib plus corticosteroids versus corticosteroids alone in children with ALL and treatment-naïve grade II-IV Graft versus Host Disease following allogeneic Hematopoietic stem cell transplantation
+
+EU number: 2025-522052-13-00
+
+Official title of the trial: FORUM2 – Framework for Optimizing, Refining, and Unifying Management of HSCT in Pediatric ALL
+
+Dear,
+
+You are invited to participate in a part of the FORUM 2 study. This R2 sub-study is a clinical study that is done to find out what the effect of a treatment will be on your disease.
+
+This sub-study is part of a broader international research study called FORUM2, which is seeking better treatments for children and young adults with acute lymphoblastic leukemia (ALL) who have had a stem cell transplant.
+
+Before you decide if you wish to participate, we would like you to understand why the research is being done and what it would involve for you. This document will inform you clearly and in detail about the nature and purposes of the sub-study, and about what taking part will mean for you, including your rights and responsibilities.
+
+A member of the team at your local hospital involved in this study will go through this information sheet with you and answer any questions that you may have. Please ask if there is anything that is not clear.
+
+If you agree to take part, you will be asked to sign an assent form. Your parents will be asked to sign a consent form as well. You are free to withdraw at any time, without giving a reason. This will not affect the standard of care you will receive.
+
+You will also be given a copy of this information.
+
+What is the purpose of the sub-study?
+
+You have been diagnosed with acute graft-versus-host disease, or aGvHD. This is a complication that can occur after a stem cell transplant from a donor (called allogeneic hematopoietic stem cell transplantation or HSCT). When you have aGvHD, some of the donor's immune cells (which are part of the transplant) attack the body because they see it as "foreign." This can cause inflammation and damage in different parts of the body and can make recovery more difficult.
+
+Preventive treatments are able to reduce the risk of developing aGvHD, but this complication still affects 30% to 50% of patients receiving a transplant .
+
+At present, the first treatment for aGvHD is usually corticosteroids. But these do not work well for everyone and can cause serious side effects if used for a long time. That is why researchers are looking for better ways to treat aGvHD from the beginning, before it becomes more difficult to treat.
+
+Ruxolitinib is a medicine that helps calm the immune system by blocking certain signals (called pathways) involved in causing GvHD.
+
+Ruxolitinib is now approved for use in both children and adults who have either acute or chronic GvHD and who haven’t responded well to steroids or other treatments.
+
+The purpose of this sub-study is to improve treatment for children and adolescents with acute Graft-versus-Host Disease (aGvHD) by testing whether adding ruxolitinib to the usual corticosteroid therapy leads to better outcomes.
+
+By participating in this sub-study, researchers hope to offer a more effective and safer treatment option for children with aGvHD, and reduce the long-term risks associated with current long-term steroid use (such as infections, high blood sugar, bone loss, or growth delays).
+
+WHAT WILL HAPPEN IF YOU TAKE PART?
+
+If you agree to take part, first your doctor will check if you meet all the criteria to take part in the sub-study. During this screening period a number of medical assessments will be performed including:
+
+- Review of your medical history and current health status
+
+- Physical examination
+
+- Blood tests
+
+- Other clinical evaluations to rule out other possible diagnoses and confirm aGvHD
+
+All the procedures during the screening procedure are performed in the regular care as usual and are not study specific.
+
+If you are eligible and agree to take part, you will be asked to sign this assent form. Then you will be randomly assigned to one of two treatment groups, somewhat like flipping a coin. You have a 50% chance of being in either group. You and your doctors will know which treatment you are receiving.
+
+The two treatment groups are:
+
+- Group 1 – New combination treatment
+  You will receive ruxolitinib (a oral tablet or liquid taken by mouth), plus corticosteroids, plus another medicine that helps control the immune system (called cyclosporine A or tacrolimus).
+
+- Group 2 – Standard treatment
+  You will receive only corticosteroids, plus cyclosporine A or tacrolimus. This is the usual way doctors currently treat aGvHD.
+
+The main treatment period lasts approximately 6 months (24 weeks). You will need to come to the hospital or clinic up to 13 times:
+
+- once a week for the first 8 week
+
+- once every 4 weeks until week 24
+
+The doctor will check how you are doing, especially on day 28.
+
+If you are improving:
+
+- treatment continues and doses may be gradually reduced.
+
+- if you are taking ruxolitinib, it will be continued at least until day 42 and possibly until week 24 or longer, if needed.
+
+If you are not improving:
+
+- your treatment may change.
+
+- if you started with ruxolitinib and steroids, the doctor may add other treatments.
+
+- if you were taking only steroids, your doctor may decide to start ruxolitinib (this is called "crossing over").
+
+After the treatment period
+
+About 1 month after the last dose, the doctor will contact you by phone or during a visit for a safety check.
+
+Then, you will be asked to return for long-term follow-up visits:
+
+- 9 months, 12 months, 18 months, and 24 months after starting treatment.
+
+If new findings emerge, the study team will inform you. Your doctors will continue to monitor your health carefully throughout the treatment.
+
+[Afbeelding met tekst, schermopname, Lettertype, Parallel Door AI gegenereerde inhoud is mogelijk onjuist.]
+
+All visits and examinations are performed within the standard of care treatment (no study specific visits or examinations for the sub-study). The following is study specific in this sub-study:
+
+-completion of questionnaires to evaluate quality of life – see below
+
+-blood samples – see below
+
+QOL questionnaires
+
+During this sub-study, quality of life (QOL) will be assessed through questionnaires that need to be completed at the following timepoints:
+
+• before start of your treatment with ruxolitinib
+
+• day 28 after treatment start
+
+• day 56 after treatment start
+
+• day 100 after treatment start
+
+• day 168 after treatment start
+
+• day 30 after last dose of medication
+
+Specifically for the sub-study, the FACT-BNT and Eq-5D questionnaire will need to be completed by patients from 18 years onwards. For patients between 2 and 18 years, a PEDsQL and PEDsQL Stem cell transplant module questionnaire needs to be completed. Per timepoint, this will take approximately 20 minutes to complete. For this sub-study, there will in total be an extra time investment of approximately 2 hours for the completion of these questionnaires.
+
+Blood samples
+
+In addition to regular blood tests, some extra blood samples will be taken for the sub-study to help doctors learn more about:
+
+- How the body processes ruxolitinib (pharmacokinetics, or PK)
+
+- Certain biomarkers (clues in the blood that help doctors understand diseases)
+
+When pharmacokinetic samples are needed, the ruxolitinib dose is taken at the hospital, not at home. If you forget a dose or take it at the wrong time, inform the doctor immediately.
+
+Study specific blood samples will be taken at the timepoints specified in the table below.
+
+  ---------------------------------------------------------------------------------------
+                            Biomarker sample   pK sample* (blood 2.5ml)   QOL
+                            (blood 2.5ml)                                 
+  ------------------------- ------------------ -------------------------- ---------------
+  Day 1 (pre-treatment)     x                  x                          x
+
+  Day 7 ruxolitinib         x                  x                          
+
+  Day 14 ruxolitinib        x                  x                          
+
+  Day 21 ruxolitinib        x                  x                          
+
+  Day 28 ruxolitinib        x                  x                          x
+
+  Day 42 ruxolitinib        x                  x                          
+
+  Day 56 ruxolitinib        x                  x                          x
+
+  Day 84 ruxolitinib        x                                             
+
+  Day 100 ruxolitinib                                                     x
+
+  Day 112 ruxolitinib       x                                             
+
+  Day 140 ruxolitinib       x                                             
+
+  Day 168 ruxolitinib**                                                   x
+
+  End of treatment**        x                                             
+
+  30 Days after last dose                                                 x
+  ---------------------------------------------------------------------------------------
+
+*blood sample pre and post dose of ruxolitinib
+
+**Day 168 and end of treatment can be at the same time if treatment is stopped at week 24
+
+All samples will be coded to protect your identity. Your name will not appear on them—only a special code known to your doctor.
+
+Some samples will be sent to Ospedale Pediatrico Bambino Gesù, the institute that organizes the study.
+
+Genetic tests will be performed on your samples for this study to find out what the genes in your cells look like (these genes form the 'code' in the cells that makes the cells know what to do and how to do it. This code is called a cell's 'DNA' or 'genetic material' and is uniquely constructed in each person). Possible genetic changes that can be found are very important to help us determine your treatment and thus provide essential information for the study. If you do not want these analyses to be carried out, you cannot take part in the sub-study.
+
+It may happen that the results of the analysis of your biological samples by chance (and over and above the objectives of the study), reveal information that may be important to your health or that of your blood relatives. These data are called "accidental findings". You can choose whether you wish to be informed about this or not, and you can give your consent to this by ticking the box on the consent form on the last pages of this information letter.
+
+What happens to leftover blood samples
+
+We want to ask you if we can store the leftover blood samples up to 25 years for future research within the context of the study (on your disease acute lymphoblastic leukemia (ALL) and aGvHD or medication).
+
+You can withdraw from the sub-study at any time. This will not affect your regular care in any way. If you withdraw, you can choose for the leftover blood samples to:
+
+- Allow your samples to be used for future research
+
+- Or request that they be destroyed or fully anonymized (so that no one can link them back to you)
+
+HOW many participants will be included in this sub-study?
+
+The trial is expected to take place in approximately 90 centers across 20 European countries and 192 children and adolescents aged 3 months to 18 years, will be included. All participating centres are experienced transplant centres following strict international protocols. We estimate that 1 Belgian patient per year will participate in this sub-study.
+
+WHAT IS THE DURATION OF THIS SUB-STUDY?
+
+Overall, your participation in this sub-study will last about 2,5 years and includes a treatment period of more or less 6 months and a follow-up period of 2 years after start of treatment. .
+
+What is expected from you?
+
+For the study to run smoothly, it is important that you fully cooperate with the doctor and that you follow his/her instructions carefully.
+
+If you decide to take part in this trial, you will be asked to:
+
+- Keep all scheduled appointments
+
+- Take the medicine exactly as the doctor instructs. Whether it is a tablet or liquid, do not skip any doses. If you forget a dose by accident or do not feel well after taking it, inform the study doctor immediately
+
+- Tell the trial doctor about any medications you take, even if it is medicine you buy without a prescription or is a natural or herbal remedy
+
+- Tell the trial doctor if you plan to have a vaccination. Some vaccines may not be suitable during chemotherapy.
+
+- Tell the doctor about any side effect, injury, symptom, or complaint you experience, including any unplanned hospital admissions
+
+- Not to participate in another clinical trial without informing the investigator or trial staff
+
+- Make sure that, if you are sexually active, you use a method of highly effective birth control both during treatment and for one year afterwards.
+
+WHAT ARE THE POSSIBLE SIDE EFFECTS OF THE TREATMENT?
+
+You can experience side effects in both treatment arms (either corticosteroids alone or ruxolitinib and corticosteroids). Each adolescent may react differently and may experience side effects or adverse events, even serious ones, that the trial doctor cannot predict at this time. For this reason, you will be carefully monitored. Many of these reactions disappear immediately after stopping the therapies. In some cases, adverse reactions may instead become more severe, long-lasting, or never disappear. They may require hospitalization and even (rarely) be fatal. For this reason, if side effects occur during the study, they must be reported immediately to your parents and attending doctor, so they can decide to stop the drug administration and provide any necessary treatment. In addition, you and your parents will be promptly informed if information becomes available during the study that could affect the decision to participate.
+
+Ruxolitinib
+
+The most common side effects are:
+
+• Low red blood cells (anemia): may cause tiredness, pale skin, or shortness of
+breath
+
+• Low white blood cells: may increase risk of infections
+
+• Low platelets: may cause easy bruising or bleeding
+
+• Urinary tract infections (UTI)
+
+• Increased cholesterol or fats in the blood
+
+• Headache, dizziness, weight gain
+
+• Constipation, high blood pressure, or abnormal liver test results
+
+• Shingles (painful skin rash or blisters)
+
+Doctors will regularly check your blood. If blood counts drop too low, the doctor may pause or adjust the drug.
+
+You can find more detailed information of side effects in the patient information form that your parents received.
+
+It is very important that you report any new or worsened health problems immediately to your doctor, regardless of whether or not you think it has to do with the sub-study, and even when it is already described in this document. If you need to use other medication, discuss this with your doctor beforehand. If, for any reason, you consult another treating physician during the trial you must inform him/her that you are taking part in a trial. This could be important in determining a diagnosis and giving you the correct treatment if needed.
+
+Pregnancy
+
+During the sub-study you cannot be pregnant or breastfeeding or you should avoid getting someone pregnant. Ruxolitinib can be harmful for the baby if a girl is pregnant. For this reason, you must not be pregnant during the sub-study and for at least 12 months after the last treatment. If you are a boy, you cannot cause a pregnancy of donate sperm until at least 6 months after the last treatment. Your doctor will speak to you about a reliable way to prevent a pregnancy.
+
+WHAT ARE YOUR RIGHTS and what happens if you do not participate in this SUB-study?
+
+Your decision to participate in this sub-study is entirely voluntary. If for any reason and at any time you decide not to participate, you can tell your doctor. Your doctor and the nurses won't mind if you don't want to participate. The doctor will then discuss with you how your disease can be further treated. Any information we have already collected on you may still be used.
+
+If, during the course of the sub-study, your doctor feels that this sub-study is not the best treatment, the doctor may remove you from the sub-study and suggest a possibly better treatment.
+
+Also, in rare cases, the study may be stopped early if there is new evidence that one treatment is clearly superior or inferior, or if unexpected safety issues arise. You will be informed immediately should this happen.
+
+The doctor conducting this study will inform your general practitioner and/or pediatrician about your participation in this study.
+
+This study was evaluated by an Ethics Committee in Belgium. The study is thus carried out in accordance with national laws. Your data will be treated confidentially and given a code (pseudonymized) in order to respect your privacy.
+
+This means that other people cannot directly see that it belongs to you. Only the investigator will know which code belongs to which person. Other people will only see the code, so they won’t know your name. This coded data can then be shared with other researchers for future studies in the context of the same or similar disease or treatment. These studies may take place in Belgium or abroad. Such new studies must always first be approved by the ethics committee. You already agreed or disagreed to the use of your data for future studies in the assent form of the general part of the FORUM2 study. If you do not want your data to be used for future research anymore, you can let your parents or the doctors know.
+
+The sponsor will also ensure that insurance (protection against unexpected costs) is taken out to protect and/or treat you in the event of damage and/or injury resulting from your participation in this study.
+
+You can ask questions about the study at any time.
+
+WHO CAN YOU CONTACT IN CASE OF PROBLEMS OR QUESTIONS
+
+If you have any questions during your treatment or if there are any problems, you can always talk to your parents or guardians, the nurses and your doctor:
+
+Name and phone number of your doctor or somebody from his/her team:
+
+…………………………………………………………………………………………………
+
+…………………………………………………………………………………………………
+
+ ASSENT FORM FOR
+
+ADolescents aged 12-17 years
+
+FORUM2 - Sub- study FORUX - Randomisation 2 (R2)
+
+A Comparison of ruxolitinib plus corticosteroids versus corticosteroids alone in children with ALL and treatment-naïve grade II-IV Graft versus Host Disease following allogeneic Hematopoietic stem cell transplantation
+
+Reference number of study participant: _______________
+
+Protocol version and date: ______________________________
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| I have read and understood the document "Information for participants aged 12-17 years" and I received a copy.                                                                 |
+|                                                                                                                                                                                |
+| I received an explanation about the sub-study and I was able to ask all my questions.                                                                                          |
++:===============================================================================================================================================================================+
+| I understand that my participation in the sub-study is voluntary and that I can stop the sub-study at any time without having to give a reason.                                |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| I am aware that information about my disease will be collected and coded and that my coded data will be used for the current study. My privacy will be respected at all times. |
+|                                                                                                                                                                                |
+| I agree to fully cooperate with the doctor-investigator. I will inform him/her if I notice any unexpected or unusual symptoms.                                                 |
+|                                                                                                                                                                                |
+| I agree to receive treatment and have my data collected for the study as described in this information letter.                                                                 |
+|                                                                                                                                                                                |
+| I agree to participate in this R2 sub-study:                                                                                                                                   |
+|                                                                                                                                                                                |
+|   ------------------------------------                                                                                                                                         |
+|          YES         NO                                                                                                                                                        |
+|   ------------------ -----------------                                                                                                                                         |
+|                                                                                                                                                                                |
+|                                                                                                                                                                                |
+|   ------------------------------------                                                                                                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Optional: I agree with the use of the leftovers of my biological samples for further research within the context of the study (for the same disease/medication).
+
+  ------------------------------------
+         YES         NO
+  ------------------ -----------------
+                     
+
+  ------------------------------------
+
+Optional: I want to be notified of incidental findings uncovered by genetic testing that may be of importance to my health or the health of my family.
+
+  ------------------------------------
+         YES         NO
+  ------------------ -----------------
+                     
+
+  ------------------------------------
+
+  ---------------------------------------------------------------------------------
+  Name and first name of the participant            Signature            Date
+  ------------------------------------------------- -------------------- ----------
+  Name and first name of the doctor-investigator*   Signature            Date
+
+  ---------------------------------------------------------------------------------
+
+2 copies must be completed. The original is kept by the investigator in the hospital for a period of at least 25 years, the copy is given to the participant.
+
+*Tick by the investigator if agreed
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  I declare that I have provided the necessary information regarding this study (the nature, the purpose, and the foreseeable effects) orally and a copy of the information document to the participant.   
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ------
+  I confirm that no pressure has been exerted on the participant to allow him/her to participate in the study and I am prepared to answer any additional questions.                                        
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

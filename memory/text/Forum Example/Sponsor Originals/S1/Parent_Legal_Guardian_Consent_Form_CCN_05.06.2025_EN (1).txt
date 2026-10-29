@@ -1,0 +1,504 @@
+PARENT/GUARDIAN INFORMATION SHEET AND INFORMED CONSENT FORM FOR THE INCLUSION OF A MINOR IN A CLINICAL TRIAL
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Official title of the trial                                                                                                                                                                                               |
+|                                                                                                                                                                                                                           |
+| Comparing between In-Vivo PTCy and Ex-Vivo αβ T-Cell Depletion in Mismatched Donor Transplantation for Pediatric and Young Adult ALL: A Prospective Stratified Cohort Study                                               |
++:==========================================================================================================================================================================================================================+
+| Official title of the trial in more understandable terms for the patient                                                                                                                                                  |
+|                                                                                                                                                                                                                           |
+| A study comparing two different methods of eliminating T cells in transplant from mismatched donors in children and young adults: administering Cyclophosphamide after transplant and removing αβ T cells from the graft. |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Facility-context of the trial                                                                                                                                                                                             |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Coordinating center (if different from the structure where the trial will take place) and clinical trial coordinator                                                                                                      |
+|                                                                                                                                                                                                                           |
+| Coordinating center ____________________________________________________________________                                                                                                                                  |
+|                                                                                                                                                                                                                           |
+| Clinical trial coordinator__________________________________________________________________                                                                                                                              |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Register where the trial has been registered or will be registered (if applicable) and any identification code if available                                                                                               |
+|                                                                                                                                                                                                                           |
+| Identification code ____________________________                                                                                                                                                                          |
+|                                                                                                                                                                                                                           |
+| Register_______________________________________________________________________________________                                                                                                                           |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Principal investigator (indicate the local Trial Manager)                                                                                                                                                                 |
+|                                                                                                                                                                                                                           |
+| Name ___________________________________________________________________________                                                                                                                                          |
+|                                                                                                                                                                                                                           |
+| Affiliation ____________________________________________________________________________                                                                                                                                  |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                                                                                                                           |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Sponsor/Financing body                                                                                                                                                                                                    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Ethics Committee                                                                                                                                                                                                          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+This document consists of the following sections:
+
+A.  INTRODUCTION
+
+B.  INFORMATION SECTION. SUMMARY OF THE TRIAL: KEY INFORMATION
+
+C.  INFORMATION SECTION. FURTHER INFORMATION
+
+D.  INFORMED CONSENT SECTION
+
+  ATTACHMENTS
+  ADDITIONAL DOCUMENTS
+
+  Dear Sir/Madam, the information contained in the following information sheet is very detailed. We kindly ask you to accept to participate in the trial ONLY after having carefully read this information sheet and having had a FULL INTERVIEW with a member of the clinical trial group who shall dedicate the NECESSARY TIME to fully understand what is proposed to you.
+
+A.  INTRODUCTION
+
+Dear Sir/Madam (Guardian),
+
+We propose the participation of your child/the minor in the clinical trial, which we illustrate below.
+
+It is your right to be informed about the purpose and characteristics of the trial so that you can make an informed and free decision whether or not to authorise participation.
+
+This document aims to inform you about the nature and purposes of the trial, and about what the participation will entail, including your rights and responsibilities.
+
+Please read the following carefully. The researchers involved in this project, indicated at the beginning of this document, are available to answer your questions. No question that comes to your mind is trivial: don't be afraid to ask!
+
+Besides us, you can discuss the proposal contained in this document with your general practitioner/pediatrician, your family and other trusted persons. Take your time to decide. You can take home an unsigned copy of this document to think about it or to discuss it with others before making a decision.
+
+Should you decide not to allow your child/the minor to participate in the trial, your child/the minor will still receive the best possible care for patients with his/her condition/disease.
+
+In no way will your refusal be interpreted as a lack of trust.
+
+IF APPROPRIATE:
+
+To facilitate the understanding of this document, the Trial Center makes available a cultural mediator in order to transfer the contents in the manner and language most suitable for you.
+
+IF APPROPRIATE:
+
+If you are unable to sign the informed consent, the consent can be provided and recorded using specific alternative means, such as audio or video recordings, in the presence of at least one impartial witness.
+
+Once you have read this form, received answers to any questions and decided to authorise your child/the minor to participate in the trial, you will be asked to sign a consent form, of which you will receive a hard copy.
+
+The Principal Investigator
+
+B.  INFORMATION SECTION.
+
+SUMMARY OF THE TRIAL: KEY INFORMATION
+
+This section aims to briefly present the key aspects of the trial we propose that you join. The following sections will provide more details in order to give you the opportunity to express or not a fully informed consent to your child’s/the minor’s/the minor’s participation in the trial.
+
+- Why am I being asked to authorise the participation in this trial?
+
+  We are asking you to give your consent to participation in a clinical trial funded by ................ because your child/the minor suffers from acute lymphoblastic leukemia and is a candidate to receive an allogeneic stem cell transplantation from a mismatched related donor (haplo-HSCT). In this type of transplant, T cell depletion is required to in order to reduce the risk of Graft-versus-Host Disease (GvHD). The two most used methods for T-cell depletion are based on the administration of Cyclophosphamide after transplant (PTCy) and on the removal of a specific subtype of T lymphocyte (αβ T-cells) and B lymphocyte from the graft. To date, there are not comparative study in order to clarify which is the best strategy between the aforementioned two. With this trial we want to verify if there are some differences in terms of outcomes between these two different T-cell depletion platforms.
+
+  Your child/the minor is being asked to participate in this trial because s/he shows some clinical characteristics that will be better specified in section C.
+
+- What are the aims of the trial? How many centers and patients will participate?
+
+The trial is performed to answer this question:
+
+Are there any differences in survival or severe complications rates between patients who received a haplo-HSCT based on the administration of cyclophosphamide after the transplant, or on the depletion of αβ/CD19+ cells from the graft?
+
+The trial is expected to take place in approximately 133 centers in 26 countries and 150 patients will be included.
+
+- What is the routine care approach for treating our child’s/the minor’s/the minor’s disease (indicate)?
+
+Both αβ T-cell depletion and PTCY are increasingly used to reduce the risk of GvHD in the context of haplo-HSCT in patient with acute lymphoblastic leukemia lacking a matched donor
+
+- Is it my/our free choice to decide whether to participate or not?
+
+You can freely choose whether or not to authorise participation in the trial. Even after accepting, you can change your mind at any time.
+
+- If I/we decide not to consent to our child’s/the minor’s/the minor’s participation in the trial, what choices do I have?
+
+If you decide not to consent your child/the minor to join the trial, s/he can still be followed by the clinical center that is treating him/her. The T cell depletion platform for the haplo-HSCT will be chosen by your treating physicians as their standard clinical practice, and the data regarding transplant outcome will not be utilized for a comparative study.
+
+In addition, s/he can participate in another trial that may be in progress.
+
+- What happens if I /we decide to authorise participation in the trial?
+
+If you decide to authorize your child/the minor participation in the trial, the T cell depletion platform for the haplo-HSCT will be chosen by your treating physicians between one of these two options:
+
+  - PTCY: administration of Cyclophosphamide intravenously at the dose of 50 mg/kg of body weight on day +3 and +4 after HSCT. On day +5, immune suppressive prophylaxis with CSA (5mg/kg) and mofetil mycophenolate (MMF) 30 mg/kg divided in 2 doses per day will be started. These drugs will be administered first intravenously and then orally. If no GVHD is present, MMF will be progressively reduced starting from day +30 to day+40 and eventually discontinued.
+
+  - αβ T-Cell depl: the leukapheresis product collected from the donor will undergo depletion of TCR αβ T cells and B cells following the standardized protocol operating under Center’s standard procedures. The product of the depletion will be infused to your child/the minor on day 0.
+
+The follow-up duration required by the study is 5 years from HSCT date.
+
+Before taking part in the trial, your doctor will ask you to have your child/the minor perform some tests, to check if s/he has the characteristics required to join it. During the trial, invasive procedures (e.g. biopsies, bone marrow sampling, etc.) are planned, which are better detailed below.
+
+  • Medical History
+
+  • Routine blood analyis
+
+  • Microbiological analysis
+
+  • Radiological exams
+
+  • Bone marrow aspirate: cytology, cytometry, and MRD
+
+  • Lumbar puncture in case of CNS involvement
+
+  During the trial, invasive procedures (e.g. biopsies, bone marrow sampling, etc.) are planned, which are better detailed below.
+
+  The entire program of tests and examinations provided for during the trial is reported in the next section "What examinations, tests and procedures are provided for in the trial?"
+
+- What are the risks and benefits if I/we decide to authorise participation in the trial?
+
+  Participation in this trial may result in both risks and benefits. It is important to evaluate them carefully before making a decision.
+
+- Expected benefits
+
+By joining the trial, your child/the minor will undergo the type of T depletion required for haplo-HSCT chosen by him/her treating physicians between the two aforementioned options. The transplant outcome data will be merged with those of other patients participating in the protocol, and will be analized for a comparative study. By joining the trial your child/the minor will not have a direct immediate benefit, but him/her participation to the study will help the clinicians to discriminate whether there are differences in terms of transplant success between the two T - cell depletion platforms. In the future s/he could benefit from it as well as other patients undergoing transplant from an haploidentical donor with his/her disease.
+
+Clinical studies conducted in patients with acute leukaemia who received T-cell depleted haplo-HSCT have shown that this approache is effective in treating his/her disease. Both transplant platform are equally effective in treating childhood acute lymphoblastic leukaemia, based on retrospective studies. A large prospective study comparing the outcomes of PT-Cy haplo-HSCT and TCR αβ/CD19+ depleted HSCT has not yet been attempted. This study will focus on comparing the outcome of patients treated with these two transplant strategies. The choice of the T-cell depletion strategy will be based on center expertise.
+
+  Potential risks
+
+  We want to make sure that you immediately understand some possible risks: additional information can be found in the next section “What risks can my child/the minor face if s/he will participate in this trial”?
+
+The risks that your child/the minor may face by participating in this trial are the generic risks associated with the allogeneic haploidentical donor transplant procedure.
+
+Conditioning chemotherapy before a transplant leads to immune deficiency, making s/he susceptible to infections from pathogens such as bacteria, viruses and fungi. Some of these infections may be incurable or even fatal. In T-cell depleted transplant, immune recovery is often delayed and this may increase risk of infections. To minimise this risk, s/he will be given drugs such as antibiotics, as well as drugs against viruses and fungi.
+
+The conditioning therapy has similar side effects to the initial treatment, including nausea, vomiting, stomatitis, mumps, hair loss, impaired kidney and liver function, bladder inflammation, heart failure and lung problems. Other drugs may be given to treat these side effects. Production of red blood cells (needed for oxygen transport) and platelets (needed for blood clotting) is also temporarily affected. These cells must be replaced by blood transfusions.
+
+Historically, haplo-HCT has been associated with higher graft failure rates, largely due to intense bidirectional alloreactive reactions between donor and recipient. Both aforementioned strategies are employed to overcome this, though they only reduce, rather than eliminate, this risk.
+
+Graft versus Host Disease, which consists of donor T cells recognising as foreign host body cells and attacking them, may occur after transplantation. Organs affected by GvHD include the skin (e.g. rash), liver (e.g. reduced function) and intestines (e.g. watery stools). To diagnose GvHD, a biopsy of the skin or intestines may be necessary. GvHD also reduces the immune system's ability to fight infection. It is difficult to predict whether GvHD will occur, and sometimes viral infections themselves trigger this complication. To prevent this reaction, patients receiving haplo-HSCT will be given cyclophosphamide after transplant, alongside mycophenolate mofetil and cyclosporine, or will be infused with a previously manipulated αβ+ T/B cell depleted graft, depending on the choice made from the treating phisicians.
+
+Unfortunately, even years later, leukemia can still recur, so it is important that your child/the minor will have regular follow-up visit in order to detect any complications as soon as possible.
+
+Years after conditioning, late effects of chemotherapy and irradiation may occur. The most common late effects are growth retardation, pulmonary dysfunction, infertility and secondary neoplasia.
+
+- Is the consent final? Can I/we decide to withdraw our child/the minor from the clinical trial (voluntary exit)?
+
+You can decide to withdraw your child/the minor from the trial at any time and for any reason, without having to justify your decision.
+
+Should you decide not to let him/her participate anymore, please inform one of the investigating doctors as soon as possible: it is important to suspend treatment safely. The doctor may consider a final check-up test/examination.
+
+Your doctor will keep you informed of any changes in the trial that may affect your willingness to continue to authorise participation.
+
+- Are there any reasons why the trial could be stopped not by my/our will (early termination)?
+
+Yes, the investigating physician may decide to terminate your child’s/the minor’s/the minor’s participation in the trial if:
+
+- His/her health conditions were to change and participation in the trial proved potentially harmful
+
+- New information is available and the trial is no longer in his/her best interest
+
+- Your child/the minor does not follow the agreed rules for participation in the trial
+
+- For women: the minor gets pregnant during the trial
+
+- The trial is stopped by the competent authorities or by the promoter.
+
+In the event of withdrawal of consent, suspension of trial, pregnancy or otherwise, please consider the opportunity for your child/the minor to continue the scheduled follow-up exams.
+
+C.  INFORMATION SECTION. FURTHER INFORMATION
+
+1.  What is the purpose of the trial?
+
+The purpose of this trial is to compare two different methods of eliminating T cells in Haplo-HSCT in children and young adults: administering Cyclophosphamyde after transplant (PTCY) or removing αβ T cells from the graft (αβ T-Cell Depletion).
+
+In the PTCY group, the T-cell depletion is realized through the administration of Cyclophosphamide, which is able to selectively deplete alloreactive T cells, mainly involved in inducing GvHD, while sparing non-alloreactive T cells, which could protect the patient from infection. Cyclophosphamide will be administered along with CSA and mofetil mycophenolate (MMF) for GvHD prophylaxis.
+
+In the αβ T-Cell Depl group, the leukapheresis product collected from the donor will undergo depletion of TCR αβ T cells and B cell following the standardized protocol operating under Center’s standard procedures.
+
+2.  What are the patient groups compared? What is the intervention being tested?
+
+The following platforms are the only ones permitted:
+
+- Haplo-HSCT following αβTCR/CD19 depletion;
+
+- Unmanipulated haplo-HSCT followed by post-transplant cyclophosphamide administration in addition to CSA and MMF
+
+The eligibility for the study will be confirmed by checking for inclusion and exclusion criteria. Pediatric and young adult patients undergoing haplo-HSCT for ALL, and without major organ damage or uncontrolled infections will be included in the study. Transplantation will have to be performed in one of the centres that are part of the FORUM 2 study.
+
+3.  What examinations, tests and procedures are provided for if we authorise participation in the trial?
+
+Clinical trial design
+
+Patients diagnosed with ALL and aged between 0 and 25 years, who lack an HLA-identical sibling donor or a matched donor, will be stratified between GvHD prophylaxis with PT-Cy or αβ T cell and B cell depletion.
+
+The selection of the approach and the relative stratification will be determined by the treating investigator. This decision will be based on your child/minor characteristics, in addition to center-specific experience and availability.
+
+[]
+
+During the screening procedure and post-transplant visits, your child/the minor will undergo a physical, laboratory and radiological examinations, depending on his/her clinical condition, with the addition of a visit at +30, + 60, +120, +180, +270 and +360 days, and then yearly until the end of the post-transplant period.
+
+The evaluations will include:
+
+- General examination (with measurement of blood pressure and heart rate, etc.) and record of the medications s/he is taking;
+
+- Blood samples: routine analysis; immune reconstitution and chimerism analysis at the aforementioned timepoints;
+
+- Urine collection;
+
+- Radiological examinations are performed, depending on clinical assessments and during long-term follow-ups
+
+- PEDsQLTM questionnaire and PedsQL™ Stem Cell Transplant Module
+
+- Long-term follow-up visits including endocrinological, pneumological and cardiological assessment yearly
+
+- A bone marrow evaluation will be performed at +30, +60 and +100 days, as well as at +6, + 9,+ 12, +18 and +24 months after transplantation.
+
+4.  What risks can I our child/the minor face if I/we authorise participation in the trial?
+
+The risks associated with participating in this stratification study are those related to the transplant procedure, as detailed above.
+
+In particular:
+
+- Transplant related mortality (TRM), due to severe infections, Transplant-associated thrombotic microangiopathy, toxicities, acute and chronic GvHD, etc;
+
+- Graft failure;
+
+- Secondary malignancies;
+
+- Reduction or abolition of fertility;
+
+- Possible risks to the fetus in case of pregnancy
+
+5.  How will we be notified of any unexpected results following diagnostic tests?
+
+Analyses (genetic, X-ray, etc.) performed during the trial may give unexpected results (e.g. relating to the possibility of developing other diseases in the future). This information will only be provided to you upon your indication. You may also choose to receive only information that may be useful for the care of your child’s/the minor’s/the minor’s health and/or your potentially affected family members and/or to allow you to promote an informed reproductive choice.
+
+6.  Is it useful/necessary to inform our family doctor/pediatrician?
+
+If you decide to authorise participation it is important to inform your general practitioner/pediatrician. To this end, we have prepared (or will give you) a letter that you can deliver to him/her, which explains the trial procedures.
+
+7.  What will our child’s/the minor’s/the minor’s commitment be and what are our responsibilities if we decide to authorise his/her participation?
+
+  REPORT INFORMATION ON THE PARTICIPANT'S RESPONSIBILITIES, IN PARTICULAR:
+
+  • Scrupulously observe the indications and requests from the health personnel following the trial and ensure attendance at appointments.
+
+  • Please inform the clinical trial doctor on:
+
+  o any medications your child/the minor is taking including non-conventional medicine,
+
+  o any side effects that may arise during the trial,
+
+  o any exam or hospitalisation in facilities other than the trial center,
+
+  o current or previous participation in other clinical trials.
+
+  • (For girls, if appropriate): avoid pregnancy or breastfeeding during the trial.
+
+  • (For boys, if appropriate): avoid having children during the trial.
+
+• (For anyone, if appropriate): promptly inform the doctor if you or your partner think about pregnancy during the trial
+
+Furthermore, female patients of childbearing potential must agree to adhere to effective contraception during the study period
+
+8.  Will I/we have to bear costs for participation in the trial? Will I/we be reimbursed for any expenses? Will our child/the minor receive a compensation?
+
+  You will not bear costs for participation in the trial as these are fully covered by the trial center (or by the sponsor, if any). Moreover, no financial compensation is envisaged for participation in the trial.
+
+9.  What happens if our child/the minor suffers damage as a result of participating in the trial?
+
+  Participation in a clinical trial may involve drawbacks and risks that cannot be determined a priori. For this reason, the clinical trial provides insurance coverage to protect your child’s/the minor’s/the minor’s participation.
+
+  Pursuant to applicable law, insurance is provided to cover any damage suffered due to participation in the trial, for the entire period of the same, to cover the civil liability of the investigator and the promoter.
+
+  INDICATE THE INSURANCE COMPANY, THE POLICY NUMBER, THE LIMIT OF LIABILITY PER PARTICIPANT, THE AGGREGATE LIMIT OF LIABILITY. Please find the details in attachment
+
+  It is worth noting that, according to the Ministerial Decree of 14 July 2009, the insurance policy does not cover the value exceeding the ceiling and is effective exclusively for damages whose compensation request has been submitted no later than the period provided for in the policy (INDICATE THE NUMBER OF MONTHS). However, this limitation does not affect the right to obtain compensation from the person liable for any damage (to protect the trial participant).
+
+10. Who will have access to our child’s/the minor’s/the minor’s health data, including personal data, and how will they be treated during the trial?
+
+  Your data, in particular personal and health data, will be processed only to the extent that they are indispensable to the objective of the trial and for pharmacovigilance purposes, in compliance with EU Regulation 2016/679, known as GDPR (General Data Protection Regulation) and with Legislative Decree 10 August 2018, no. 101. In practical terms, the documents relating to the participant will be kept in a safe place and will not report his/her name in clear text, only known to the researchers, but an identification code.
+
+  The data, made anonymous, may be subject to control by regulatory bodies and used for scientific publications (journals, conferences).
+
+  Your clinical data collected for the purposes of the trial, as well as the results of the tests carried out, will be stored for the time required by the regulations and subsequently destroyed. They will not be destroyed only if a) it is no longer possible to trace them back to your child’s/the minor’s/the minor’s identity, because they have been anonymised during the trial itself; b) in the presence of your specific informed consent.
+
+  If the personal data are transferred to a third country or to an international organization, all the guarantees will be adopted which are provided for by Article 46 of the GDPR 679/2016.
+
+  Further information is included in the attached data processing authorization form.
+
+11. How will our child’s/the minor’s/the minor’s biological samples taken for trial purposes be treated and who will have access to them?
+
+  As for health data, also biological samples will be used for the purposes of the trial in a pseudonymised way (technique allowing to change and mask personal and sensitive data of a natural person, in order not to make them directly and easily attributable to him/her).
+
+  Once the trial is over, the samples will be destroyed. They will not be destroyed only if: a) it is no longer possible to trace them back to your child’s/the minor’s/the minor’s identity, because they have been anonymised during the trial itself, or b) in the presence of your specific informed consent and agreement with the biobank for sample storage.
+
+12. How will I/we have access to the results of the trial?
+
+  Once the trial is over and all the resulting data have been collected, they will be analysed to draw conclusions. The investigators undertake to make them available to the scientific community.
+
+  The law provides for the possibility that participants have access to the results of the trial. Therefore, you can ask the investigating physician to communicate the general results of the trial (or indicate where and how to access the trial results).
+
+13. Was the trial approved by the Ethics Committee?
+
+  The trial protocol proposed to you has been examined and approved by the Ethics Committee ......................... on ......... Among other things, the Ethics Committee has verified the compliance of the trial with the standards of Good Clinical Practice and with the ethical principles expressed in the Declaration of Helsinki and that your child’s/the minor’s/the minor’s safety, rights and well-being have been protected.
+
+14. Who can I refer to for more information on the clinical trial our child/the minor is invited to participate in?
+
+  INDICATE THE NAMES AND REFERENCES OF THE PERSONS WHO CAN BE CONTACTED FOR FURTHER INFORMATION.
+
+15. If I/we decide to authorise participation in the trial, who can I/we contact in case of need?
+
+  For any doubt and unforeseeable or unscheduled event during the trial (doubts relating to the treatment in progress, side effects, decision to abandon the trial, etc.), you can contact:
+
+INDICATE NAMES AND REFERENCES OF THE TRIAL CENTER STAFF THAT THE PARENTS/GUARDIAN CAN CONTACT (Dr. [SPECIFY NAME], [SPECIFY TELEPHONE NUMBER, E-MAIL]).
+
+INDICATE WHO CAN BE CONTACTED ON HOLIDAYS AND POSSIBLE CONTACTS ON CALL
+
+  Shoud you deem it appropriate to report events or facts relating to the trial your child/the minor has joined to subjects not directly involved in the trial itself, you can refer to the Ethics Committee that approved the trial (INDICATE), to the Health Department of the Trial Center (INDICATE), to the competent authority (AIFA).
+
+16. What happens if our child/the minor comes of age during the trial?
+
+  If your child/the minor comes of age during the trial, s/he will become legally autonomous in his/her choices. Consequently, s/he will be submitted a new informed consent.
+
+  ______________________________ ___/___/______ _________ ____________________________
+
+  Full name of the doctor Date Time Signature
+
+who delivered the note
+
+D.  INFORMED CONSENT SECTION FOR THE PARENT/S OR GUARDIAN OF THE MINOR
+
+(Notes: 1 copy for the participant, 1 copy for the trial manager)
+
+(Name of the minor, place and date of birth)__________________________________________
+
+Title of the trial:________________________________________________________________
+
+Protocol code, version and date: ___________________________________________________________
+
+Promoter of the trial/sponsor funding body: _____________________________________
+
+Principal Investigator (NAME, AFFILIATION, REFERENCES): ________________________________________
+
+_______________________________________________________________________________________
+
+I, the undersigned ______________________________________________
+
+born in _________________________________________________________________ on ___/___/______
+
+as mother/legal guardian of the abovementioned minor;
+
+I, the undersigned ______________________________________________
+
+born in _________________________________________________________________ on ___/___/______
+
+as father/legal guardian of the abovementioned minor;
+
+I/WE HEREBY DECLARE THAT
+
+▢ Dr ________________________________________has provided me/us with exhaustive explanations regarding the request for participation in the research in question, as reported in the information section contained in this consent, of which I was/we were given a copy on ____________ at ______________ (indicate date and time of delivery);
+
+▢ I/we have been clearly explained and I/we have understood the nature, the purposes, the procedures, the expected benefits, the possible risks and inconveniences and the alternative treatment methods with respect to the proposed clinical trial;
+
+▢ I had the opportunity to ask any question to the trial investigator and I received satisfactory answers;
+
+▢ I/we had sufficient time to reflect on the information received
+
+▢ I had sufficient time to discuss it with third parties;
+
+▢ I/we have been informed that the trial protocol and all the forms used have received the favourable opinion by the competent Ethics Committee;
+
+▢ I am/we are aware that the research can be interrupted at any time, by decision of the trial manager;
+
+▢ I/we have been informed that I/we will be made aware of any new data that could jeopardise the safety of the research and that, for any problem or further questions, I/we may contact the doctors where our child/the minor is being treated;
+
+▢ for the best protection of our child’s/the minor’s/the minor’s health, I am/we are aware of the importance (and of my/our responsibility) of informing the general practitioner of the trial in which we authorise our child/the minor to participate. I am/we are aware of the importance of providing the investigator with all information (drugs, side effects, etc.) concerning our child/the minor;
+
+▢ I/we have been informed that the results of the trial will be made known to the scientific community, protecting our child’s/the minor’s/the minor’s identity according to the current legislation on privacy;
+
+▢ I am/we are aware that any choice expressed in this consent form may be revoked at any time and without any justification;
+
+▢ I/we have received a copy of this consent form.
+
+I/WE HEREBY DECLARE THAT
+
+▢ We authorise our child/the minor to participate in the trial
+
+▢ I am/we are willing ▢ NOT willing that our child/the minor be contacted after the end of the trial to provide information on his/her state of health (this only applies to contacts that the study protocol does not envisage as follow-up)
+
+If applicable:
+
+▢ I/WE ACCEPT ▢ DO NOT ACCEPT that our daughter/the minor uses contraceptive drugs
+
+________________________________________ ___/___/______ _________ ______________________
+
+Full name of the mother Date Time Signature
+
+________________________________________ ___/___/______ _________ ______________________
+
+Full name of the father Date Time Signature
+
+________________________________________ ___/___/______ _________ ______________________
+
+Full name of the legal representative Date Time Signature
+
+[In case the Parent/Legal guardian cannot sign]
+
+I, the undersigned _________________________________________________ confirm that I have attended the informative meeting between Dr. ________________________and Mr./Ms. __________________________and I confirm that he/she is unable to give his/her consent in writing.
+
+________________________________________ ___/___/______ _________ ______________________
+
+Full name of the independent witness Date Time Signature
+
+[In case the Parent/Legal guardian does not understand the Italian language]
+
+I, the undersigned _________________________________________________ confirm that I have attended the informative meeting between Dr. ________________________and Mr./Ms. __________________________and I confirm that I have acted as a facilitator for the understanding of the information.
+
+________________________________________ ___/___/______ _________ ______________________
+
+Full name of the cultural mediator Date Time Signature
+
+STATEMENT OF THE DOCTOR WHO OBTAINED THE CONSENT
+
+(Name of the minor, place and date of birth)
+
+Title of the trial:________________________________________________________________
+
+Protocol code, version and date: ___________________________________________________________
+
+Promoter/sponsor of the trial__________________________________________________________________
+
+Principal Investigator (NAME, AFFILIATION, REFERENCES): ________________________________________
+
+_______________________________________________________________________________________
+
+I, the undersigned Prof./Dr. ………………………………… ……………………..… in my capacity as Principal investigator
+
+Surname Name
+
+(or as delegate of the Principal investigator)
+
+Hereby declare that
+
+the father and mother/the legal guardian have spontaneously consented to the minor’s participation in the trial
+
+I also declare that:
+
+  ▢ I have provided full explanations relating to the purpose of the trial, the procedures, the possible risks and benefits and to possible alternatives;
+
+  ▢ I have verified that the parents/legal guardian have sufficiently understood the information provided
+
+  ▢ I have given the parents/legal guardian the necessary time and the opportunity to ask questions about the trial
+
+  ▢ I have clearly described the possibility of withdrawing from the trial at any time or of changing the choices made
+
+  ▢ I have not exerted any coercion or undue influence in requesting this consent
+
+  ▢ I have provided the parents/legal guardian with information on how the results of the trial will be disclosed
+
+  ▢ I have provided the parents/legal guardian with a simplified information sheet intended for minors between the ages of 7 and 11 and I have stressed the opportunity that the above minor be informed, with the precautions and methods suitable for their age, of the characteristics of the trial s/he will join
+
+_____________________________________________________ ________
+
+Place and date Time
+
+_________________________________________________ _________________________________________________
+
+Name Surname (block letters) of the doctor who provided the Signature (and stamp)
+
+information and who obtained the consent
+
+This form is an integral part and must be kept together
+
+with the information sheet for informed consent

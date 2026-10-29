@@ -1,0 +1,883 @@
+Titre officiel de l'étude : Biological Medicine for Diffuse Intrinsic Pontine Glioma (DIPG) Eradication
+
+Numéro EU CT: 2023-506027-29-00
+
+Numéro d’étude : Biomede 2.0
+
+Promoteur de l’étude : Institut Gustave Roussy, 114 Rue Edouard Vaillant, 94805 Villejuif, (France)
+
+Nom du site : official name of site
+
+Principale adresse du site : address of site
+
+Qui contacter en cas de questions ?
+
++----------------------------+------------------------------------------------------------------+---------------------------------------------------------------------------+------------------------------------+
+| Nom                        | Fonction                                                         | En cas de                                                                 | Coordonnées de contact             |
++============================+==================================================================+===========================================================================+====================================+
+| Nom de famille, prénom     | Investigateur principal du centre de l’étude                     | Informations, problèmes ou préoccupations                                 | N° de téléphone/ E-mail            |
++----------------------------+------------------------------------------------------------------+---------------------------------------------------------------------------+------------------------------------+
+|                            | Personnel de l'étude                                             | Informations, problèmes, préoccupations,                                  | N° de téléphone                    |
++----------------------------+------------------------------------------------------------------+---------------------------------------------------------------------------+------------------------------------+
+|                            | Contact pour les questions urgentes liées à l’étude              | Informations urgentes, problèmes, préoccupations                          | N° de téléphone                    |
++----------------------------+------------------------------------------------------------------+---------------------------------------------------------------------------+------------------------------------+
+|                            | Médiateur des droits du patient du site,                         | Préoccupations relatives à vos droits en tant que participant à une étude | N° de téléphone du centre d’études |
++----------------------------+------------------------------------------------------------------+---------------------------------------------------------------------------+------------------------------------+
+| Amlin Insurance            | Compagnie d'assurance du CCN                                     | En cas de désaccord ou de plainte sur un sinistre                         | Police n° : 299.053.700            |
+| Boulevard Roi Albert II 37 |                                                                  |                                                                           |                                    |
+| 1030 Bruxelles             |                                                                  |                                                                           |                                    |
++----------------------------+------------------------------------------------------------------+---------------------------------------------------------------------------+------------------------------------+
+|                            | Délégué à la protection des données du centre de l’étude l’étude | Questions relatives à la confidentialité de vos données                   | N° de téléphone                    |
+|                            |                                                                  |                                                                           |                                    |
+|                            |                                                                  |                                                                           | E-mail : e-mail                    |
++----------------------------+------------------------------------------------------------------+---------------------------------------------------------------------------+------------------------------------+
+|                            | Autorité belge de protection des données                         | Plaintes relatives à la confidentialité de vos données                    | +32(0)2274 48 00                   |
+|                            |                                                                  |                                                                           |                                    |
+|                            |                                                                  |                                                                           | E-mail : contact@apd-gba.be        |
++----------------------------+------------------------------------------------------------------+---------------------------------------------------------------------------+------------------------------------+
+
+- Pour gérer les plaintes non résolues par l’investigateur, veuillez contacter le médiateur du centre de l'étude à l'adresse ci-dessus.
+
+- Conformément au RGPD, vous avez le droit de vous informer sur le traitement de vos données. Pour toute question à ce sujet, veuillez contacter le délégué à la protection des données du centre d'études à l'adresse ci-dessus.
+
+- Vous avez également le droit d'introduire une plainte concernant la manière dont vos données sont traitées auprès de l'autorité de contrôle belge chargée du respect de la législation en matière de protection des données : Autorité de protection des données (APD), ci-dessus.
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| L'étude en un coup d’Œil                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Bonjour,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Vous recevez ce document parce que nous aimerions inviter votre enfant à participer à une étude clinique international appelé Biomede 2.0 mené par une équipe de recherche de l'institut Gustave Roussy en France. Ces informations ont pour but de vous aider à comprendre quel traitement sera administré dans le cadre de cette étude et ce que cela signifie pour votre enfant.                                                                                                                                                                                                                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   L'étude Biomede 2.0 est une étude destiné aux enfants, adolescents et adultes ayant un nouveau diagnostic d’une tumeur qui est un gliome infiltrant du tronc cérébral ou une tumeur diffuse de la ligne médiane. Il s'agit d’une tumeur cérébrale maligne très agressive. Il n'existe actuellement aucun traitement suffisamment efficace pour guérir cette maladie dans la plupart des cas. La chimiothérapie traditionnelle s'est révélée inefficace contre cette maladie. Seule la radiothérapie est efficace, mais le plus souvent de façon temporaire. Le médecin de votre enfant vous propose d'ajouter un nouveau médicament au traitement standard de radiothérapie pour en augmenter l'efficacité, dans le cadre d'une étude clinique appelée « BIOMEDE 2.0 ». |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   L'objectif de l’étude Biomede 2.0 est d'évaluer l'efficacité de l'ONC201 par rapport à l'évérolimus en combinaison avec la radiothérapie. L'évérolimus est le meilleur des trois médicaments testés dans l'étude précédent (BIOMEDE 1.0). L’ONC201 est le nouveau médicament à l’étude. D'autres objectifs de l'étude sont d'évaluer les effets secondaires des traitements et d'évaluer la durée de la réponse au traitement. Evérolimus et ONC201 sont délivrés par une société pharmaceutique. L’étude Biomede 2.0 est une étude non commercial (ce qui signifie que l'entreprise pharmaceutique ne le dirige pas).                                                                                                                                                  |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Si vous décidez de laisser votre enfant participer à cette étude, une période de screening sera d'abord effectuée pour contrôler sa participation. Si votre enfant répond à tous les critères d'inclusion et à aucun des critères de non-inclusion, nous pourrons confirmer la participation de votre enfant à cette étude.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Si votre enfant répond à tous les critères, un ordinateur l’attribuera au hasard au groupe contenant de l'évérolimus ou de l'ONC201 en association avec le traitement de radiothérapie standard. Les patients dans le groupe avec évérolimus prendront un ou plusieurs comprimés (définis en fonction du poids de votre enfant) par voie orale, tous les jours, une fois par jour. Les patients dans le groupe ONC201 prendra une ou plusieurs gélules (définies en fonction du poids de votre enfant) par voie orale, seulement 2 jours consécutifs par semaine (J1-J2), une fois par jour.                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Avant, pendant et après le traitement, l'équipe médicale suivra votre enfant attentivement et effectuera des scanners et des tests pour évaluer l'effet du traitement combiné sur le cancer de votre enfant.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Les effets secondaires les plus fréquents du évérolimus, ONC201 et le traitement de radiothérapie standard sont décrits dans les informations ci-dessous.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Le traitement par ONC201 ou évérolimus se poursuivra tant que son efficacité et sa tolérance le permettront. La durée du traitement varie donc d'une personne à l’autre.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Si la maladie de votre enfant progresse ou revient, son traitement prendra fin. Si possible, le médecin de votre enfant pourra vous proposer de passer à l'autre traitement de l'étude (ONC201 ou évérolimus).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Après le traitement, votre enfant continuera ensuite à être suivi(e) tous les 3-4 mois pendant la première année, puis tous les 6 mois jusqu'à la cinquième année après le début du traitement.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Comme cette association de traitements est encore à l'étude, d'autres risques et désagréments inconnus à ce jour pourraient survenir. Il est donc très important que vous/votre enfant signaliez immédiatement à l'investigateur tout problème de santé nouveau ou aggravé, même si vous/votre enfant pensez qu’il n’est pas lié à l'étude. Si votre enfant présente des effets secondaires importants, l'investigateur peut juger nécessaire d'effectuer des tests supplémentaires.                                                                                                                                                                                                                                                                                    |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Si votre enfant est une fille, elle ne doit pas devenir enceinte pendant l'étude et pendant au moins 6 mois après la fin du traitement. En outre, votre enfant ne doit pas conserver d'ovules pour son propre usage ou pour un don après le début du traitement et pendant au moins 6 mois après le dernier traitement. Votre enfant ne doit pas allaiter pendant la durée de l’étude. Si votre enfant est un garçon, il ne peut pas provoquer une grossesse ou donner du sperme avant au moins 6 mois après le dernier traitement.                                                                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Un total de 368 enfants/(jeunes) adultes participeront à cette étude dans toute l’Europe pendant une période de 4 ans. Parmi eux, environ 8 participant(e)s par an viendront de Belgique. La durée totale escomptée de l'étude est jusqu’à 5 ans après le début du traitement. Si nous estimons, à un moment de l'étude, que l'administration de évérolimus ou ONC201 n'aide pas les enfants/(jeunes) adultes de cette étude, nous cesserons d'inclure d'autres patient(e)s.                                                                                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Il n'y aura pas de visites ou d'examens spécifiques à l'étude ; seuls deux IRM (scanner de la tumeur de votre enfant) fonctionnelle spécifique à l'étude (une dans la période de screening et une à la fin du radiothérapie). Les images radiologiques seront examinées par des experts externes. De plus, un morceau du matériel tumoral collecté lors d'une collecte de biopsie standard sera envoyé pour confirmation du diagnostic et des tests génétiques. C’ est décrits en détail dans les informations ci-dessous.                                                                                                                                                                                                                                              |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   La participation de votre enfant à l'étude ne vous coûtera rien de plus que le coût du traitement standard de votre enfant. Vous ne recevrez aucune compensation pour sa participation. S'il arrive quelque chose à votre enfant pendant l'étude, le promoteur de cette étude a souscrit une assurance pour couvrir les frais éventuels.                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   C'est vous qui décidez si vous laissez participer votre enfant à ce volet de l'étude Biomede 2.0. La participation de votre enfant est volontaire. Si vous décidez de ne pas laisser votre enfant participer, votre enfant recevra le traitement de radiothérapie standard sans l’évérolimus/ONC201 ou un autre traitement standard dont le médecin de votre enfant discutera avec vous.                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Au cours de cette étude, des données et des échantillons seront recueillis et traités de manière confidentielle.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Cette combinaison de traitements étant encore à l'étude, il n'est pas certain qu'elle soit bénéfique. Cependant, la participation de votre enfant aidera les chercheurs à mieux comprendre le traitement des tumeurs cérébrales et les moyens de l'améliorer à l'avenir.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| L'étude et ses documents ont été examinés et approuvés par les autorités de l'UE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| et un comité d'éthique en Belgique.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Pour toute question concernant cette étude, veuillez me contacter ou contacter mon équipe en utilisant les coordonnées figurant sur la première page de ce document.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Cordialement,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Votre investigateur.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+CHAPITRE I - DESCRIPTION DE L’éTUDE ET des DROITS de votre enfant EN tant que PARTICIPANT 
+
+Bonjour,
+
+Nous aimerions inviter votre enfant à prendre part à une étude clinique dans le but d'évaluer le régime de traitement de sa maladie. Avant de décider de laisser votre enfant participer à cette étude, prenez le temps de lire attentivement cette fiche informative et discutez-en avec l'investigateur/l'équipe médicale ou d'autres personnes de votre choix. N’hésitez pas à poser des questions s’il subsiste des points obscurs ou si vous souhaitez des informations complémentaires. C’est ce qu’on appelle le processus de « consentement éclairé » pour participer à une étude clinique. Si vous décidez de laisser votre enfant participer à l’étude, nous vous demanderons de signer le formulaire de consentement éclairé à la fin de cette fiche informative.
+
+Pourquoi cette étude est-elle réalisée ? 
+
+Un gliome infiltrant du tronc cérébral ou une tumeur diffuse de la ligne médiane est une tumeur cérébrale maligne très agressive. Il n'existe actuellement aucun traitement suffisamment efficace pour guérir cette maladie dans la plupart des cas.
+
+En raison de son emplacement dans le cerveau, il n’est peut-être pas possible d’opérer cette tumeur. La chimiothérapie traditionnelle s'est révélée inefficace contre cette maladie. Seule la radiothérapie est efficace, mais le plus souvent de façon temporaire.
+
+Le médecin de votre enfant vous propose d'ajouter un nouveau médicament au traitement standard de radiothérapie pour en augmenter l'efficacité, dans le cadre d'une étude clinique appelée « BIOMEDE 2.0 ». Le traitement sera tiré au sort parmi deux traitements possibles.
+
+L'objectif de cette étude est d'évaluer l'efficacité de l'ONC201 par rapport à l'évérolimus en combinaison avec la radiothérapie. L'évérolimus est le meilleur des trois médicaments testés dans l'étude précédent (BIOMEDE 1.0). C’est la raison pour laquelle nous utiliserons ce médicament comme comparateur dans cette nouvelle étude. L’ONC201 est le nouveau médicament à l’étude. Son efficacité sera évaluée sur la base de la durée sans progression de la maladie depuis le début du traitement, des signes cliniques et des résultats d'imagerie médicale.
+
+Evérolimus et ONC201 sont appelés « thérapies/médicaments ciblés ». Il s'agit de médicaments qui ciblent spécifiquement une protéine ou un mécanisme impliqué dans le développement de la tumeur. En théorie, ils n’ont donc aucun effet sur les cellules saines. Par conséquent, cette thérapie entraine moins d’effets secondaires qu'une chimiothérapie antitumorale traditionnelle. Celle-ci agit sur toutes les cellules du corps qui se divisent, qu'elles soient cancéreuses ou non.
+
+Les autres objectifs de l’étude sont les suivants :
+
+• Évaluer les effets secondaires de ces traitements administrés en même temps
+que la radiothérapie standards et ensuite pendant la durée totale du traitement.
+
+• Évaluer la durée de la réponse au traitement.
+
+• Évaluer les différences d'efficacité entre les deux traitements étudiés (ONC201
+et évérolimus) en fonction du site tumoral et des biomarqueurs pronostiques
+connus. Les biomarqueurs sont des molécules ou des protéines qui sont
+surexprimées ou anormalement absentes dans certains types de tumeurs. Ces
+marqueurs permettent de prédire si le traitement ciblé sera efficace. La recherche de
+biomarqueurs aide les médecins à orienter leurs choix thérapeutiques, à suivre
+l'efficacité des traitements et peut contribuer à individualiser les traitements.
+
+• Évaluer la possibilité pour les patients d'être traités au moment de la
+progression de la maladie avec une thérapie ciblée en fonction de leur profil
+moléculaire réalisé au moment du diagnostic.
+
+Les objectifs additionnels de l’étude sont les suivants :
+
+• Évaluer la valeur prédictive et pronostique des biomarqueurs (la capacité d'un biomarqueur à prédire l'évolution future d'une maladie).
+
+• Décrire les changements observés sur l'imagerie pendant le traitement.
+
+Pourquoi demande-t-on à mon enfant de participer ?
+
+Nous invitons votre enfant à participer à cette étude clinique parce que son médecin a confirmé qu’on lui avait diagnostiqué une tumeur qui est un gliome infiltrant du tronc cérébral ou une tumeur diffuse de la ligne médiane. Vous et l’équipe médicale de votre enfant considérez une participation à l’étude Biomede 2.0. Un nouveau médicament (ONC201 ou évérolimus) sera d'ajouté au traitement standard de radiothérapie pour en augmenter l'efficacité. Le traitement sera tiré au sort parmi deux traitements possibles.
+
+L'investigateur ou le personnel de l'étude discutera avec vous et votre enfant des conditions à remplir pour être autorisé à participer à l'étude. Il n'est pas garanti que la participation de votre enfant à cette étude guérisse sa tumeur cérébrale, améliore sa qualité de vie ou prolonge sa vie.
+
+Mon enfant est-il obligé de participer à une étude clinique ?
+
+La participation de votre enfant à une étude est volontaire et doit rester libre de toute contrainte. Cela signifie que vous avez le droit de ne pas laisser participer votre enfant ou de de retirer votre enfant de l'étude à n'importe quel moment, sans devoir fournir de justification et même si vous aviez préalablement accepté de l’y laisser participer. Votre décision n'affectera pas votre relation/la relation de l‘enfant avec l'investigateur ou son médecin traitant, ni la qualité de ses soins médicaux futurs.
+
+Si d'autres traitements contre la tumeur cérébrale de votre enfant sont disponibles, l'investigateur ou son délégué en discutera avec vous/votre enfant. Si votre enfant ne participe pas à l'essai, votre enfant recevra le traitement standard par radiothérapie sans ajout d'évérolimus ou d'ONC201, ou un autre traitement standard.
+
+Que se passera-t-il pendant l'étude ?
+
+Un total de 368 enfants/(jeunes) adultes participeront à cette étude dans toute l’Europe. Parmi eux, environ 8 participant(e)s par an viendront de Belgique.
+
+Dans cette étude, votre enfant recevra l'un des traitements suivants en association avec la radiothérapie standard :
+
+ ONC201 (société Chimerix)
+
+ Évérolimus (société Novartis)
+
+L'administration d’ONC201 ou d’évérolimus sera déterminée par randomisation. Cette randomisation sera effectuée par un ordinateur qui déterminera au hasard lequel des deux traitements potentiellement efficaces sera administré.
+
+La plupart des examens que nous venons de décrire font partie des soins standards de l’hôpital de votre enfant, alors que d'autres sont spécifiques à l’étude. Toutes les visites à l’hôpital font partie des soins standards.
+
+L’étude se divise en 3 phases :
+
+- Période de screening
+
+- Phase de traitement
+
+- Phase de suivi
+
+Période de screening
+
+Pendant la période de screening, votre enfant doit subir des tests avant l'administration du traitement (voir détails dans le tableau ci-dessous). À ce stade de l'étude, nous vérifions et évaluons si la participation de votre enfant est scientifiquement justifiée
+
+Les procédures suivantes seront réalisées au cours de la période de screening :
+
+Biopsie tumorale :
+
+La biopsie tumorale sera d'abord analysée dans le laboratoire local de l’hôpital où la biopsie de votre enfant a été réalisée. Elle n’est pas spécifique à l’étude. Si vous acceptez de laisser participer votre enfant à cette étude, une partie de la biopsie tumorale déjà réalisée sera envoyée en France (Villejuif) et sera examinée plus en détail pour :
+
+- confirmer le diagnostic de gliome invasif du tronc cérébral ou de tumeur diffuse de la ligne médiane,
+
+- vérifier la présence d'indicateurs biologiques (biomarqueurs),
+
+- compléter l'analyse biologique de la tumeur (par séquençage génétique) dans le but de trouver éventuellement de nouveaux biomarqueurs et de nouvelles options thérapeutiques (= recherche translationnelle).
+
+Une recherche de biomarqueurs (indicateurs biologiques) sera effectuée pour identifier le traitement optimal. Dans de très rares cas, les biomarqueurs présents dans la tumeur peuvent contre-indiquer l’administration de l’un des traitements proposés dans cette étude. Si c’est le cas, vous/votre enfant en serez informé.
+
+Données démographiques, antécédents médicaux et chirurgicaux :
+
+Le médecin investigateur recueillera les informations suivantes : l’âge de votre enfant (mois et année de naissance uniquement), ainsi que ses antécédents médicaux et chirurgicaux (maladies passées et actuelles).
+
+Il ou elle vous interrogera aussi les médicaments que votre enfant prend, comme les corticostéroïdes.
+
+Examen clinique :
+
+Le médecin-enquêteur vérifiera l’état de santé général de votre enfant et déterminera son niveau de performance (évaluation de la capacité à effectuer des activités quotidiennes, bien-être). Elle ou il procèdera à un examen clinique et neurologique complet, mesurera ses signes vitaux (tension artérielle, fréquence cardiaque par prise de pouls, prise de température) et notera sa taille et son poids. Votre enfant passera également un électrocardiogramme (ECG).
+
+Examens d’imagerie :
+
+Des tests d’imagerie seront réalisés pour mesurer et enregistrer la taille de la tumeur et pour évaluer la condition générale de votre enfant. Les différents examens d'imagerie qui seront réalisés impliquent une IRM (scanner de la tumeur de votre enfant par résonance magnétique) et une radiographie des poumons. Cette IRM inclura la perfusion intratumorale et sera donc un peu plus longue que les IRM habituelles (environ 30 minutes). Il s'agit d'une IRM fonctionnelle spécifique à l'étude. Spécifiquement pour l’étude, les images de votre enfant seront téléchargées sur une plateforme afin d’être évaluées de manière centralisée par des experts.
+
+Analyses sanguines :
+
+- Pour un bilan biologique (hématologique, biochimique, coagulation)
+
+- Pour le dépistage de l'hépatite B (sérologie)
+
+- Pour un test de grossesse : si votre enfant est une fille, elle devra effectuer un test de grossesse sanguin (ou urinaire). Le résultat de l'étude doit être négatif pour pouvoir participer à l’étude.
+
+Toutes les procédures susmentionnées au cours de la période de dépistage sont des procédures de soins standards que votre enfant subirait également s’il ne participe pas à l'étude, à l'exception de l'imagerie IRM fonctionnelle.
+
+Ce n'est qu'une fois que tous ces tests auront été effectués et que votre enfant réponde à tous les critères d'inclusion et à aucun des critères de non-inclusion que nous pourrons confirmer la participation de votre enfant à cette étude. Si votre enfant ne peut pas participer à l'étude, il recevra le traitement de radiothérapie standard. Si c’est le cas, aucun traitement expérimental ne sera ajouté à la radiothérapie.
+
+Phase de traitement
+
+Le jour 1 (J1) de la phase de traitement, votre enfant commencera :
+
+- La radiothérapie : votre enfant recevra la dose standard de radiations (54 Grays) sur 6 semaines, soit une fraction de 1,8 Gray par jour, 5 jours consécutifs par semaine (pas de radiothérapie le weekend).
+
+- L’un des traitements suivants :
+
+- Soit l’évérolimus : votre enfant prendra un ou plusieurs comprimés (définis en fonction de son poids) par voie orale, tous les jours, une fois par jour ;
+
+- Soit l’ONC201 : votre enfant prendra une ou plusieurs gélules (définies en fonction de son poids) par voie orale, seulement 2 jours consécutifs par semaine (J1-J2), une fois par jour.
+
+Pendant cette phase de traitement, un examen clinique (avec évaluation des performances) sera réalisé une fois par semaine pendant les 2 premiers mois de traitement, puis une fois par mois. Lors de ces visites, un test sanguin sera également effectué pour vérifier si votre enfant va bien et si le traitement est bien toléré. Le médecin investigateur vous demandera si votre enfant a (eu) des effets secondaires, qui seront traités si nécessaire.
+
+Une fois par mois, votre enfant subira également un examen neurologique et nous noterons son poids et sa taille. Tous ces examens seront également effectués si votre enfant ne participe pas à l'étude.
+
+En outre, il est important que vous/votre enfant signaliez à son médecin tous les traitements que votre enfant reçoit (notamment les corticostéroïdes), y compris les traitements de médecine alternative. En fonction du médicament que votre enfant prend dans le cadre de l'étude, le médecin vérifiera s'il y existe des interactions médicamenteuses avec ces autres traitements.
+
+Enfin, une première IRM de suivi sera réalisée juste après la fin de la radiothérapie, puis tous les deux mois. Cette première IRM de suivi comprendra une IRM fonctionnelle spécifique à l'étude de la perfusion intratumorale et sera donc un peu plus longue que les IRM habituelles (environ 30 minutes). Toutes les autres IRM de suivi seront réalisées comme d'habitude sans l'IRM fonctionnelle spécifique à l'étude.
+
+Si la maladie de votre enfant progresse ou revient, le traitement de votre enfant prendra fin. Si possible, le médecin de votre enfant pourra lui proposer de passer à l'autre traitement de l'étude (ONC201 ou évérolimus), comme décrit ci-dessus.
+
+Avant cette 2^(e) période de traitement, un nouveau test de grossesse et un nouveau dépistage de l'hépatite B seront effectués, si cela est indiqué.
+
+Au cours de cette 2e période de traitement, votre enfant subira les mêmes examens que lors de la 1^(re) période de traitement :
+
+- Une fois par mois : examen clinique, bilan biologique
+
+- Tous les 2 mois : IRM
+
+Le traitement par ONC201 ou évérolimus se poursuivra tant que son efficacité et sa tolérance le permettront. La durée du traitement varie donc d'une personne à l’autre.
+
+Phase de suivi
+
+Votre enfant aura une visite 28 jours après l’arrêt du traitement.
+
+Votre enfant continuera ensuite à être suivi(e) tous les 3-4 mois pendant la première année, puis tous les 6 mois jusqu'à la cinquième année après le début du traitement. Lors de ces visites de suivi, votre enfant subira un examen clinique (à la recherche d'effets secondaires tardifs), un examen neurologique et une IRM. À chaque visite, le médecin de votre enfant notera si votre enfant a pris d'autres traitements et si votre enfant a rencontré des effets secondaires.
+
+La durée totale de la participation de votre enfant à cette étude sera jusqu’à 5 ans après le début du traitement.
+
+La phase de suivi sera effectuée selon le traitement standard, donc aucune procédure spécifique à l'étude ne sera effectuée.
+
+À la fin de la participation de votre enfant à l'étude, s’il a un effet secondaire non résolu, le médecin investigateur peut contacter votre enfant jusqu'à ce que l'effet secondaire soit résolu afin de s'assurer que votre enfant bénéficie d'un suivi médical approprié. Il ou elle peut également vous contacter/contacter votre enfant si vous signalez un effet secondaire après le terme de l’étude.
+
+Aperçu des procédures
+
+Dans le tableau suivant, vous trouverez les traitements ou examens auxquels votre enfant devra se soumettre.
+
++:----------------------------------------------------------:+:-----------------------:+:-----------------------------------------------------------------------------:+:-----------------------------------:+:-----------------------------------------------------------------------------------------------------:+
+| Moment                                                                                                                                                                                                                                                                                                             |
++------------------------------------------------------------+-------------------------+-------------------------------------------------------------------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------+
+| Procédure                                                  | Au diagnostic/screening | Pendant le traitement                                                         | Au terme des périodes de traitement | Suivi tous les 3-4 mois la première année, tous les 6 mois jusqu'à 5 ans après le début du traitement |
++------------------------------------------------------------+-------------------------+-------------------------------------------------------------------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------+
+| Biopsie tumorale                                           | X                       |                                                                               |                                     |                                                                                                       |
++------------------------------------------------------------+-------------------------+-------------------------------------------------------------------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------+
+| Examen clinique                                            | X                       | X (une fois par semaine les 2 premiers mois, puis tous les mois par la suite) | X                                   | X                                                                                                     |
++------------------------------------------------------------+-------------------------+-------------------------------------------------------------------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------+
+| Antécédents médicaux                                       | X                       |                                                                               |                                     |                                                                                                       |
++------------------------------------------------------------+-------------------------+-------------------------------------------------------------------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------+
+| Examen neurologique                                        | X                       | X (une fois par mois)                                                         | X                                   | X                                                                                                     |
++------------------------------------------------------------+-------------------------+-------------------------------------------------------------------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------+
+| ECG (et échocardiographie si nécessaire)                   | X                       |                                                                               |                                     |                                                                                                       |
++------------------------------------------------------------+-------------------------+-------------------------------------------------------------------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------+
+| Radiographie des poumons                                   | X                       |                                                                               |                                     |                                                                                                       |
++------------------------------------------------------------+-------------------------+-------------------------------------------------------------------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------+
+| Imagerie IRM⁴                                              | X                       | X (tous les 2 mois)                                                           | X                                   | X                                                                                                     |
++------------------------------------------------------------+-------------------------+-------------------------------------------------------------------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------+
+| Analyse sanguine (hématologie, biochimie et coagulation ¹) | X                       | X (une fois par semaine les 2 premiers mois, puis tous les mois par la suite) | X (si possible)                     |                                                                                                       |
++------------------------------------------------------------+-------------------------+-------------------------------------------------------------------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------+
+| Test de dépistage pour l’hépatite B                        | X²                      |                                                                               |                                     |                                                                                                       |
++------------------------------------------------------------+-------------------------+-------------------------------------------------------------------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------+
+| Test de grossesse (si applicable)                          | X³                      |                                                                               |                                     |                                                                                                       |
++------------------------------------------------------------+-------------------------+-------------------------------------------------------------------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------+
+| Liste de tous les médicaments pris                         | X                       | X                                                                             | X                                   | X                                                                                                     |
++------------------------------------------------------------+-------------------------+-------------------------------------------------------------------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------+
+| Liste de tous les effets secondaires                       | X                       | X                                                                             | X                                   | X                                                                                                     |
++------------------------------------------------------------+-------------------------+-------------------------------------------------------------------------------+-------------------------------------+-------------------------------------------------------------------------------------------------------+
+
+¹ La coagulation est uniquement testée lors du screening.
+
+² Un nouveau test de dépistage de l'hépatite B est effectué si une deuxième période de traitement est entamée.
+
+³ Un nouveau test de dépistage de grossesse est effectué si une deuxième période de traitement est entamée.
+
+⁴ Les 2 premiers examens IRM comprendront une IRM fonctionnelle spécifique à l'étude qui prendra un peu plus de temps (30 min)
+
+Les examens spécifiques à l’étude ne vous seront pas facturés. Les traitements et examens qui font partie du traitement standard de votre enfant seront à votre charge ou à celle de votre mutualité (sécurité sociale belge). Toutes les procédures, à l'exception des deux IRM fonctionnelles spécifiques à l'étude (une lors du dépistage et une à la fin de la radiothérapie), sont des soins standard.
+
+Contactez le personnel de l'étude pour plus de détails ou si vous n'êtes pas affilié à une mutualité (sécurité sociale belge).
+
+Étude optionnelle
+
+Dans le cas exceptionnel où une biopsie dite « liquide » (sang ou liquide céphalo-rachidien) a été réalisée chez votre enfant à la place d’une biopsie tumorale, de nouveaux biomarqueurs pourront être analysés dans le laboratoire du promoteur en France à partir de cet échantillon. Vous êtes libre d’accepter ou de refuser que cet échantillon de votre enfant soit analysé afin de rechercher de nouveaux biomarqueurs.
+
+Si vous acceptez, l’échantillon suivant sera prélevés chez votre enfant au moment du diagnostic :
+
+- échantillon sanguin de 5 ml
+
+Ou
+
+- 1 ml de liquide céphalo-rachidien (LCR, liquide entourant le cerveau et la moelle épinière)
+
+Le prélèvement de liquide céphalo-rachidien s'effectue lors d'une ponction lombaire. Il s'agit d'une intervention au cours de laquelle un médecin prélève une petite quantité de liquide céphalo-rachidien de votre enfant à l'aide d'une fine aiguille insérée dans le bas du dos. Ce prélèvement n'est pas spécifique à l'étude et s'inscrit dans le cadre du traitement standard.
+
+Mon enfant va-t-il tirer un bénéfice de l'étude ? 
+
+Nous avons sélectionné les médicaments à inclure dans Biomede 2.0, car ils ont montré des résultats prometteurs et nous espérons donc qu'ils seront bénéfiques pour les enfants, les adolescent(e)s et les jeunes atteints d’un gliome infiltrant du tronc cérébral ou une tumeur diffuse de la ligne médiane. Nous ne pouvons toutefois pas promettre que votre enfant tirera profit de sa participation à l’étude.
+
+Les informations obtenues pendant une étude peuvent contribuer à une meilleure compréhension de l’utilisation du médicament expérimental ou au développement d’un nouveau médicament pour le traitement de votre enfant ou celui de futurs patients.
+
+Le programme de traitement pourra ou non se révéler bénéfique pour le traitement de du gliome infiltrant du tronc cérébral de votre enfant ou une tumeur diffuse de la ligne médiane dont votre enfant est atteint(e) ou pour diminuer ses symptômes. Même s'il se révèle bénéfique pour votre enfant, une récidive ou une aggravation des symptômes, de la maladie ou de l'affection sont toujours possibles.
+
+Quels sont les risques et les désagréments potentiels liés à la participation à l'étude ?
+
+1.  Quels sont les effets indésirables possibles de la radiothérapie et le traitement d’évérolimus.ONC201 ?
+
+La participation à l’étude implique des risques. Evérolimus, ONC201 et le traitement radiothérapie standard peuvent tous avoir des effets secondaires. Certains sont plus fréquents que d'autres et un même patient peut ne pas faire l’expérience de tous les effets.
+
+Evérolimus
+
+Effets secondaires fréquents (peuvent toucher plus de 1 patient sur 10) :
+
+- Diminution de la concentration sanguine des globules blancs, des globules rouges et des plaquettes
+
+- Manque d'appétit
+
+- Anorexie, perte de poids
+
+- Nausées et vomissements
+
+- Diarrhée
+
+- Éruption cutanée, acné
+
+- Inflammation de la muqueuse buccale avec ulcérations (stomatite, aphtes)
+
+- Fatigue
+
+- Maux de tête
+
+Effets secondaires moins fréquents (peuvent toucher jusqu'à 1 patient sur 10) :
+
+- Insuffisance rénale
+
+- Douleurs abdominales
+
+- Saignements
+
+ONC201
+
+Effets secondaires rares, mais potentiellement graves (peuvent toucher 1 patient sur 100) :
+
+- Infections des voies respiratoires supérieures, infections généralisées (septicémie)
+
+- Troubles neurologiques associés à des lésions cérébrales (encéphalopathie), troubles cognitifs
+
+- Difficultés respiratoires (dyspnée, détresse respiratoire)
+
+- Flux sanguin anormal au niveau du crâne, des poumons et du foie (hémorragie intracrânienne, pulmonaire, hépatique)
+
+- Obstruction d'une artère dans les poumons (embolie pulmonaire)
+
+- Complications liées à la destruction massive des cellules cancéreuses (syndrome de lyse tumorale).
+
+Traitement standard par radiothérapie
+
+- Nausées et vomissements
+
+- Maux de tête
+
+- Somnolence
+
+- Aggravation neurologique transitoire correspondant parfois à une pseudoprogression (exagération des effets de la radiothérapie par le médicament ciblé)
+
+- Perte auditive retardée.
+
+Votre enfant rencontra aussi ces effets secondaires de la radiothérapie s’il ne participe pas à cette étude.
+
+Votre enfant subira des analyses de sang régulières pendant et après le traitement et des contrôles fréquents. Si vous avez des inquiétudes pendant ou après le traitement, consultez d'urgence un médecin.
+
+Puisque cette combinaison de traitement est encore à l'étude, d'autres risques et désagréments encore inconnus à ce jour pourraient également survenir. Par conséquent, il est très important que vous/votre enfant signaliez rapidement tout nouveau problème de santé ou toute aggravation d'un problème de santé à l'investigateur, que vous/votre enfant estimez lié ou non à l'étude, et cela même lorsqu'il est déjà décrit dans ce document. Si votre enfant doit prendre d'autres médicaments, veuillez en discuter à l’avance avec l’investigateur. Si, pour quelque raison que ce soit, votre enfant consulte un autre médecin traitant pendant l'étude, vous devez l'informer que votre enfant participe à une étude et lui présenter sa carte d'urgence. Cela peut être important pour établir un diagnostic et lui donner le bon traitement si nécessaire.
+
+1.  Quels sont les risques ou les désagréments potentiels des examens prévus pendant l'étude ?
+
+Il n'y a pas de risques connus liés aux examens effectués pendant l'étude. Tous les examens sont réalisés dans le cadre du traitement standard de la maladie de votre enfant.
+
+Uniquement au moment du dépistage et à la fin de la radiothérapie, une IRM fonctionnelle spécifique à l'étude sera réalisée en même temps que l'IRM standard. Aucun risque éventuel n'est attendu mais cet examen prendra un peu plus de temps (30 minutes de plus).
+
+2.  Est-ce que mon enfant peut prendre d'autres médicaments pendant l'étude ?
+
+N'hésitez pas à demander à l’investigateur de votre enfant des explications supplémentaires concernant l'utilisation d’autres médicaments et de compléments alimentaires (notamment l’aromathérapie, la phytothérapie, l'homéopathie, etc.) pendant l'étude.
+
+3.  La participation de mon enfant à l'étude aura-t-elle d'autres répercussions sur ses activités quotidiennes ?
+
+Nous voulons nous assurer que l'étude se déroule sans heurts. C'est pourquoi nous conclurons les accords suivants avec votre enfant :
+
+- Vous veillerez à ce que votre enfant prenne tous ses médicaments de la manière expliquée par l'investigateur.
+
+- Pendant cette étude, votre enfant ne participera pas à une autre étude médical scientifique, à moins que le promoteur n'ait donné son accord avant la participation.
+
+- Votre enfant se présentera à tous ses rendez-vous.
+
+- Veuillez garder la carte de participant de votre enfant sur lui/vous (par exemple, dans son/votre portefeuille). Elle indique que votre enfant participe à cette étude et qui prévenir en cas d'urgence. Montrez cette carte lorsque votre enfant consulte un autre médecin.
+
+- Veuillez contacter l'investigateur ou un membre de l'équipe infirmière de recherche dans les situations suivantes :
+
+- Votre enfant va commencer à prendre d'autres médicaments. Y compris les médicaments homéopathiques, les remèdes naturels, les vitamines et autres médicaments sans ordonnance.
+
+- Votre enfant doit être admis(e) à l'hôpital ou y recevoir un traitement.
+
+- Votre enfant a soudainement des problèmes de santé.
+
+- Votre enfant ne souhaite plus participer à l'étude.
+
+- Votre numéro de téléphone/le numéro de téléphone de votre enfant, votre adresse/l’adresse de votre enfant ou votre adresse électronique/l’adresse électronique de votre enfant ont changé.
+
+  1.  Est-ce que mon enfant peut devenir enceinte, concevoir un enfant ou allaiter pendant la durée de l'étude ?
+
+Cette section s'adresse uniquement aux participantes susceptibles de devenir enceintes ou aux participants susceptibles de rendre leurs partenaires enceintes.
+
+Participante féminine : Étant donné que les médicaments administrés dans le cadre de cette étude pourraient causer des dommages importants à un enfant à naître ou à un nourrisson , votre enfant ne sera pas autorisée à participer à l'étude si :
+
+- Votre enfant est enceinte,
+
+- Votre enfant souhaite être enceinte dans un avenir proche ou
+
+- Votre enfant allaite.
+
+Il est également interdit de faire un don d'ovules pendant et après sa participation à l'étude, jusqu'à 6 mois après la dernière prise/administration.
+
+Si votre enfant participe à l’étude, l’investigateur de votre enfant discutera avec vous/votre enfant des méthodes contraceptives appropriées.
+
+Si malgré tout, votre enfant devient enceinte pendant l’étude, vous/votre enfant devrez en informer immédiatement l'investigateur et son médecin traitant. Pour des raisons de sécurité, l'investigateur souhaitera suivre sa grossesse et son issue et peut être amené à partager ces données avec le promoteur afin de se conformer à la réglementation sur la surveillance et la communication d'informations relatives à la sécurité du traitement à l’étude.
+
+Participant masculin:
+
+Le traitement de cette étude pourrait avoir un effet sur le sperme de votre enfant et pourrait entraîner un risque inconnu pour un éventuel enfant à naître.
+
+Si votre enfant participe à l’étude, il devra utiliser une méthode contraceptive et il ne pourra pas donner de sperme pendant toute la durée de l'étude et jusqu'à 6 mois après l'administration de la dernière dose. Si votre enfant est concerné, veuillez discuter de ce sujet avec l'investigateur.
+
+Vous/votre enfant vous engagez à informer sa partenaire féminine de sa participation à cette étude et du risque potentiel pour un enfant à naître.
+
+Si la partenaire de votre enfant devient malgré tout enceinte pendant l'étude, vous/votre enfant devrez en informer immédiatement l'investigateur. Si vous êtes d'accord, il contactera sa partenaire pour lui demander de suivre sa grossesse et son issue et de signer un consentement éclairé spécifique (pour la partenaire enceinte).
+
+Qu'en est-il si quelque chose se passe mal pendant l'étude ?
+
+Même sans faute, le promoteur est responsable du préjudice qui a été causé à votre enfant, qu'il soit directement ou indirectement lié à sa participation à l'étude. Le promoteur a souscrit une assurance appropriée (appelée « assurance responsabilité sans faute ») pour couvrir cette responsabilité, conformément à la législation européenne et belge en vigueur sur les essais cliniques. Une copie du certificat d'assurance peut être obtenue sur demande adressée à l'investigateur ou au personnel de l'étude.
+
+Si vous (ou, en cas de décès, les ayants droit de votre enfant) demandez une indemnisation pour un préjudice à la santé de votre enfant résultant directement ou indirectement de sa participation à l'étude, vous devez en informer l’investigateur de votre enfant ou le personnel de l’étude dans les meilleurs délais.
+
+Si l’investigateur estime qu'il peut y avoir un lien entre le(s) nouveau(x) problème(s) de santé ou l'aggravation de celui-ci (ceux-ci) et la participation de votre enfant, il en informera le promoteur de l'étude qui se chargera de lancer immédiatement la procédure de déclaration à la compagnie d'assurances. Si la compagnie d'assurances l'estime nécessaire, elle nommera un expert qui sera chargé d'évaluer s'il existe un lien entre son ou ses problème(s) de santé rapporté(s) et l'étude. L'assurance ne couvre pas l'évolution naturelle de la maladie de votre enfant ou de son affection ni les effets indésirables connus du traitement que votre enfant aurait reçu sans participer à l'étude (c.-à-d. son traitement standard).
+
+Si vous/votre enfant l'estimerez utile ou si vous ou lesayants droit de votre enfant êtes en désaccord soit avec l’investigateur, soit avec l'expert nommé par la compagnie d'assurances, vous pouvez contacter ou intenter une action contre la compagnie d’assurances. Vous trouverez les coordonnées nécessaires sur la première page de ce formulaire.
+
+Qu'en est-il si d'autres options de traitement ou de nouvelles informations sur le médicament à l’étude ou l’étude sont rendues disponibles pendant l'étude ?
+
+Pendant l'étude, de nouvelles informations importantes peuvent être rendues disponibles, ce qui pourrait influer sur votre décision de laisser (continuer à) participer votre enfant à l'étude. Par exemple, quand d'autres traitements pour sa tumeur cérébrale ou de nouvelles informations importantes sur évérolimus ou ONC201 à l’étude deviennent disponibles. Dans ce cas, il est du devoir de l'investigateur de discuter de ces nouvelles informations avec vous/votre enfant et de vous donner l'occasion de réévaluer sa participation à l'étude.
+
+Si vous décidez pour votre enfant de mettre fin à sa participation à l'étude ou si votre enfant n'est plus en état d'y participer, l'investigateur veillera à ce que votre enfant continue à recevoir les meilleurs soins possibles.
+
+Peut-il être prématurément mis fin à sa participation à l'étude ?
+
+Comme expliqué en détail ci-dessous, il peut être prématurément mis fin à la participation de votre enfant à l'étude si :
+
+- Vous/votre enfant décidez de retirer votre consentement ou d'arrêter le traitement avec le médicament à l'étude,
+
+- l'investigateur décide de mettre fin à la participation de votre enfant à l'étude ou de mettre à l’arrêt son traitement par le médicament à l'étude, ou
+
+- d'autres entités interrompent ou mettent fin à l'étude.
+
+Dans tous les cas, s'il est prématurément mis fin à la participation de votre enfant à l'étude, l'investigateur discutera avec vous/votre enfant de ses soins médicaux ultérieurs. Les données collectées avant la fin de sa participation continueront à être utilisées comme décrit dans ce formulaire. Ceci afin d'éviter d’influencer les résultats de l'étude (comme décrit au chapitre I. § 12.4).
+
+En fonction de la situation de votre enfant, le chercheur discutera avec vous/votre enfant de la nécessité de visites ou de procédures de suivi.
+
+Si votre enfant ressent un effet indésirable au moment de l'arrêt du médicament à l’étude, l'investigateur pourra vous contacter/contacter votre enfant ultérieurement afin de vous demander/demander votre enfant si cet effet indésirable a disparu ou pas après la fin de sa participation à l'étude.
+
+Si votre enfant ressent un nouvel effet indésirable après la fin de sa participation à l’étude, vous/votre enfant pouvez contacter l'investigateur pour demander un suivi.
+
+1.  Vous décidez de retirer votre consentement pour votre enfant
+
+Vous avez le droit de retirer votre consentement pour votre enfant pour quelque raison que ce soit et à n'importe quel moment sans devoir justifier votre décision. Cependant, pour la sécurité de votre enfant, vous devez informer l'investigateur de votre décision. Sans que cela soit obligatoire, il peut également être utile pour l'investigateur et pour le promoteur de connaître la raison de votre décision (p. ex. effets indésirables, fréquence des visites cliniques,...).
+
+Veuillez discuter avec l’investigateur de votre enfant pour évaluer les modalités pratiques de son retrait (à la lumière de sa situation), y compris les éventuelles visites ou procédures de suivi.
+
+Aucune nouvelle donnée ne sera collectée et transmise au promoteur.
+
+Si les échantillons biologiques de votre enfant (p.ex. les prélèvements de sang, d’urine) ont déjà été utilisés ou analysés avant le retrait de votre consentement, le promoteur peut en exploiter les résultats.
+
+Les échantillons biologiques qui ont été collectés (mais pas encore testés) avant le retrait de votre consentement et les données qui en résultent peuvent toujours être utilisés par le promoteur. Vous pouvez demander la destruction de ces échantillons. Dans le cas où la destruction de ces échantillons impacterait la validité de l’étude, la destruction pourra être postposée à la fin de l’étude.
+
+2.  Vous décidez d’arrêter le traitement de votre enfant avec le médicament à l’étude
+
+Vous pouvez décider d'arrêter le traitement de votre enfant par le médicament à l'étude mais accepter de continuer à participer à l'étude et d'être contacté par le personnel de l'étude.
+
+Si vous décidez d'arrêter le traitement de votre enfant par le médicament à l'étude, votre enfant peut continuer à se rendre aux consultations liées à l'étude. Le personnel de l'étude vous demandera/demandera à votre enfant s'il peut vous contacter par téléphone, par courriel ou par courrier pour s'enquérir de l’état de santé général de votre enfant et/ou être en mesure de surveiller les effets indésirables à long terme. Ces informations sont importantes pour la valeur scientifique de l'étude et pour l'interprétation correcte de ses résultats. Vous/votre enfant êtes libre de refuser ce contact régulier. Votre décision n'affectera pas ses soins médicaux futurs.
+
+3.  L'investigateur décide de mettre fin à la participation de votre enfant à l'étude ou l'arrêt du traitement par le médicament à l'étude
+
+L'investigateur peut mettre fin à la participation de votre enfant à l'étude pour les raisons suivantes :
+
+- il/elle est d'avis que c'est mieux pour votre enfant (par exemple, sur la base des résultats de ses tests, si votre enfant développe certains problèmes de santé, si le protocole définit que votre enfant ne peut pas devenir enceinte et que votre enfant devient quand même enceinte,...),
+
+- il/elle estime que votre enfant ne suit pas les instructions du personnel de l’étude données aux participants,
+
+- pour n'importe quelle autre raison qu'il vous expliquera, ou
+
+- la totalité de l’étude doit être interrompue pour tous les participants (voir section suivante).
+
+  Dans ce cas, le personnel de l’étude vous donnera les raisons et assurera un suivi approprié.
+
+1.  D'autres entités peuvent interrompre ou mettre fin à l'étude
+
+Le promoteur et les autorités compétentes belges peuvent interrompre ou mettre fin à l'étude pour les raisons suivantes:
+
+- les informations recueillies montrent que évérolimus ou ONC201 à l’étude nesont pas efficace (n'apporte pas un niveau suffisant d'amélioration de la santé des participants à l'étude),
+
+- évérolimus ou ONC201 à l’étude engendre plus d'effets indésirables (graves) que prévu, ou
+
+- pour toute autre raison qui sera dûment motivée par la partie concernée.
+
+Quel traitement mon enfant va-t-il recevoir après sa participation à l'étude ? 
+
+Après avoir reçu évérolimus ou ONC201 de l'étude, l'investigateur évaluera l’état de santé de votre enfant et discutera de la suite du traitement en fonction de sa réponse. Il prescrira le meilleur traitement standard disponible à votre enfant.
+
+Il est également possible que votre enfant participe à un autre volet de l'étude (évérolimus ou ONC201), le cas échéant. Dans ce cas, l'investigateur en discutera avec vous/votre enfant.
+
+La participation de mon enfant à l'étude entraînera-t-elle des frais supplémentaires pour moi ?
+
+Si vous décidez de laisser votre enfant participer à cette étude, il n'y aura pas de frais supplémentaires pour vous ou votre compagnie d'assurance. Vous/votre enfant ne recevrez aucune compensation financière pour sa participation. Toutes les visites et tous les examens font partie de la norme de soins, sauf les 2 IRM fonctionnelles au dépistage et après la fin de la radiothérapie.
+
+Le promoteur de l'étude fournit et paie les médicaments évérolimus et ONC201. Le coût de l'analyse de l'échantillon de tumeur supplémentaire est couvert par le promoteur de l'étude. Les échantillons de votre enfant sont considérés comme un "don". Vous/votre enfant ne recevrez aucun paiement financier si un nouveau traitement ayant une valeur commerciale est développé.
+
+Quelles sont les données collectées au sujet de mon enfant pendant l'étude et qu'en adviendra-t-il ?
+
+1.  Quelles données sont collectées et traitées pendant l’étude ?
+
+Les données à caractère personnel recueillies et traitées incluent des informations sur la santé de votre enfant et sa maladie, y compris ses antécédents médicaux, certaines informations de contexte (par exemple, son âge et son sexe) et les résultats des examens nécessaires dans le cadre de l'étude.
+
+Les données ethniques sont collectées pour s'assurer que les données d'enquête sont traitées par une population aussi large que possible.
+
+2.  Comment l'investigateur traitera-t-il les données à caractère personnel de mon enfant?
+
+L’investigateur (et le personnel de l’étude) est soumis au secret professionnel ou par un accord de confidentialité concernant les données recueillies.
+
+Cela signifie qu'il/elle ne révélera jamais l’identité de votre enfant, y compris dans une publication scientifique ou lors d'un exposé, et qu'il codera ses données (Réf.[1]) (cela signifie qu’il/elle remplacera l’identité de votre enfant par un code d’identification dans l'étude) avant de les envoyer au promoteur. En d'autres termes, ce code ne contiendra aucun identifiant personnel ou combinaison d'identifiants tels que le nom, le prénom, les initiales, la date de naissance complète ou partielle, le numéro de dossier, etc.
+
+Par conséquent, seuls l'investigateur et le personnel de l'étude placé sous la responsabilité de l'investigateur seront capables d'établir un lien entre l’identité de votre enfant et les données transmises tout au long de l'étude, sauf dans le cas des exceptions énumérées au point §12.5.
+
+Les données transmises au promoteur ne permettront pas à celui-ci de vous identifier.
+
+3.  Comment les données de mon enfant seront-elles traitées ?
+
+Les données de votre enfant relatives à l'étude seront traitées conformément à la législation européenne et belge concernant la protection des données.
+
+La raison pour laquelle les données à caractère personnel de votre enfant peuvent être traitées aux fins de l’étude est qu’elles sont traitées dans le but de mener une recherche scientifique et nous devons nous acquitter d'une tâche d'intérêt public .
+
+4.  Est-ce que j'ai accès aux données de mon enfant collectées et traitées pendant l'étude et est-ce que je peux les rectifier ?
+
+Vous avez le droit de demander à l’investigateur quelles sont les données collectées au sujet de votre enfant et quelle est leur utilité dans le cadre de l’étude.
+
+Vous avez le droit
+
+- de vérifier et d'accéder à ces données,
+
+- de recevoir les données à caractère personnel collectées concernant votre enfant,
+
+- de demander la rectification des données incorrectes,
+
+- de limiter le traitement de ses données,
+
+- de retirer votre consentement au traitement de données à caractère personnel de votre enfant . Toutefois, les données à caractère personnel collectées avant le retrait seront conservées pour éviter de fausser les résultats de l’étude.
+
+Il n'est pas possible de faire effacer toutes les données de votre enfant pour éviter de fausser les résultats de l’étude.
+
+1.  À part l'investigateur et son personnel de l’étude, qui d'autre a accès aux données à caractère personnel de mon enfant ?
+
+Pour vérifier la qualité de l’étude, il est possible que les données à caractère personnel non codées de votre enfant ou les informations pertinentes pour l’étude contenues dans son dossier médical soient examinées par des personnes extérieures au personnel de l’étude, mais toujours sous la responsabilité de ce dernier. Ces personnes doivent être soumises au secret professionnel ou à un accord de confidentialité. Les personnes suivantes pourraient donc avoir accès à ses données à caractère personnel :
+
+- le personnel désigné par le promoteur (moniteurs et auditeurs) et les personnes ou les organismes qui fournissent des services au promoteur ou collaborent avec lui. Cependant, ils ne transmettront jamais le nom de votre enfant et ses coordonnées au promoteur,
+
+- des inspecteurs des autorités de santé compétentes dans le monde entier,
+
+- un groupe d'audit indépendant,
+
+- des personnes désignées par le comité d'éthique.
+
+Pour les besoins de l'étude clinique, les données de l’étude codées peuvent être envoyées dans d'autres pays membres ou non de l'Union européenne (UE) et peuvent être révisées par :
+
+- le personnel (autre que les inspecteurs) des autorités compétentes de la Belgique (l'Agence fédérale des médicaments et des produits de santé, AFMPS) ou d'autres pays de l'UE et hors UE,
+
+- le(s) comité(s) d'éthique belge(s) chargé(s) de l'évaluation,
+
+- des chercheurs extérieurs,
+
+- le promoteur de l’étude, le personnel désigné par le promoteur et les personnes ou organismes qui fournissent des services au promoteur ou qui collaborent avec lui, et/ou
+
+- des sociétés du groupe du promoteur en Belgique et dans d'autres pays de l'UE et hors UE.
+
+- les entreprises pharmaceutiques à l'intérieur ou à l'extérieur de l'Europe à des fins de recherche, de contrôle de la sécurité ou de dépôt de demande d'autorisation de mise sur le marché. Ils ont le même devoir de confidentialité que les autres membres du personnel de l'étude. Ces tiers peuvent être basés dans des pays hors d'Europe où les réglementations en matière de protection des données diffèrent. Toute demande de ce type sera soigneusement examinée par le promoteur et ne sera accordée que si les procédures et les approbations nécessaires sont en place. Ces informations ne serviront pas à identifier votre enfant et ne seront pas combinées à d'autres informations pouvant l’identifier. Les informations ne seront pas utilisées pour prendre des décisions concernant les services futurs qui lui seront accessibles, comme une assurance. En aucun cas, votre enfant ne sera identifié de quelque manière que ce soit dans un rapport, une présentation ou une publication découlant de cette étude.
+
+- des experts indépendants qui réanalysent les données afin de vérifier les résultats de l’étude clinique (relecteur central en radiologie).
+
+La règlementation européenne et la législation belge relative à la protection des données imposent des règles en cas de transfert de données vers des pays non membres de l’UE. Le promoteur doit s’assurer de la mise en place de garanties équivalentes en matière de protection des données à caractère personnel avant de transférer les données codées de l'étude aux pays non membres de l’UE. À cet effet, s’il existe un accord sur la protection des données, une copie de cet accord peut être obtenue par l'intermédiaire de l'investigateur.
+
+Vous pouvez toujours contacter l’investigateur de votre enfant pour obtenir de plus amples informations sur ces transferts.
+
+1.  Qu'adviendra-t-il des résultats de l’étude ?
+
+Après la clôture de l’étude, une description et les résultats de cette étude clinique seront publiés dans des revues médicales spécialisées. Une copie des publications scientifiques peut être obtenue auprès de l'investigateur ou du personnel de l'étude.
+
+Une description de l'étude sera aussi disponible sur https://euclinicaltrials.eu/search-for-clinical-trials/?lang=fr. Vous pouvez faire des recherches sur ces sites web en tout temps en utilisant les informations indiquées sur la première page du formulaire de consentement éclairé. Les sites Web comprendront un résumé des résultats dans l'année qui suit la fin de l’étude conformément aux directives de la Commission européenne.
+
+Ces sites web ou ces publications ne contiendront pas d'informations permettant d’identifier votre enfant.
+
+2.  Les données de mon enfant seront-elles utilisées à d'autres fins que l'étude à laquelle il participe ?
+
+Les résultats de l'étude seront utilisés pour répondre aux questions scientifiques de l'étude. De plus, le promoteur aimerait utiliser ses données obtenues dans le cadre de cette étude dans d'autres activités de recherche et développement (et des publications scientifiques associées). Cette recherche future ne peut porter que sur la même maladie ou le même médicament. Ces activités ne peuvent concerner que :
+
+- La manière dont évérolimus/ONC201 fonctionne et le mode d'action du même groupe de molécules,
+
+- la maladie ou l’affection pour laquelle évérolimus/ONC201 est évalué dans le cadre de cette étude ou,
+
+- d'autres pathologies et problèmes de santé qui pourraient tirer un bénéfice de évérolimus/ONC201.
+
+Toute recherche supplémentaire en dehors de cette étude et donc non décrite dans les points ci-dessus doit toujours être approuvée par un comité d'éthique agréé.
+
+Vous pouvez accepter ou refuser l'utilisation des données de l’étude de votre enfant à d'autres fins en dehors du contexte de cette étude en cochant la case appropriée au chapitre II.
+
+1.  Combien de temps les données de mon enfant seront-elles conservées ?
+
+Après la fin de l’étude, sos données codées seront conservées pendant au moins 25 ans pour assurer la validité de la recherche, conformément à la législation européenne sur les études cliniques. Ce sera également le cas si vous mettez prématurément fin à la participation de votre enfant à l'étude.
+
+Quels échantillons biologiques prélèvera-t-on à mon enfant pendant l'étude et qu'en adviendra-t-il ?
+
+1.  Quels échantillons biologiques prélèvera-t-on à mon enfant pendant l'étude ?
+
+Les échantillons biologiques sont des échantillons de matériel corporel humain (par exemple du sang, des tissus, de l'urine, des selles....). Dans le cadre de cette étude, la biopsie tumorale est réalisée selon les soins standard (non spécifique à l'étude). Une partie de la biopsie tumorale déjà réalisée sera envoyée en France (Villejuif) et sera examinée pour cette étude plus en détail afin de confirmer le diagnostic, une analyse génétique et la recherche de biomarqueurs.
+
+Dans le cas exceptionnel où une biopsie dite « liquide » (sang ou liquide céphalo-rachidien) a été réalisée chez votre enfant à la place d’une biopsie tumorale, de nouveaux biomarqueurs pourront être analysés sur cet échantillon dans le laboratoire du promoteur en France. Vous êtes libre d’accepter ou de refuser que cet échantillon de votre enfant soit analysé afin de rechercher de nouveaux biomarqueurs à la fin de ce formulaire.
+
+La procédure de codage de des échantillons biologiques de votre enfant est la même que celle utilisée pour ses données à caractère personnel conformément à la législation sur l’utilisation de tissus humains (voir I §12.2). Les échantillons envoyés au promoteur ou aux organisations qui travaillent en collaboration avec le promoteur ne seront donc étiquetés qu'avec son code d'identification lié à l'étude. La traçabilité sera assurée par le promoteur. L'utilisation de ses échantillons biologiques est liée au traitement des données à caractère personnel codées qui y sont associées.
+
+Les échantillons biologiques de votre enfant sont considérés comme un « don ». Vous/votre enfant ne retirerez aucun bénéfice financier lié au développement de nouvelles thérapies, issues de l’utilisation de ses échantillons biologiques et qui pourraient avoir une valeur commerciale.
+
+2.  Qu'adviendra-t-il des échantillons biologiques prélevés dans le cadre de l’étude ?
+
+La biopsie tumorale sera analysée pour les objectifs de l'étude.
+
+Les progrès scientifiques dans ce domaine étant constants, le promoteur souhaite, avec votre consentement, conserver les échantillons biologiques résiduels de votre enfant pendant 10 ans. Ces échantillons serviront dans des recherches futures issues du même domaine que cette étude clinique et qui concernent donc la même maladie ou le même traitement/médicament que cette étude.
+
+Vous pouvez accepter ou refuser que les échantillons résiduels de votre enfant soient conservés pour des recherches futures qui restent dans le domaine de cette étude clinique en cochant la case correspondante dans le chapitre II. Le matériel sera utilisé pour des recherches futures, en dehors de l'essai auquel votre enfant participera, afin de mieux comprendre la maladie, son traitement et les réponses à ce traitement, ainsi que l'évérolimus/ONC201.
+
+Si vous acceptez, ces recherches supplémentaires ne pourront être menées que conformément à la législation relative à l'utilisation de tissus humains et avec l'accord d'un comité d'éthique reconnu.
+
+Des analyses génétiques seront également effectuées sur ses échantillons. Les analyses génétiques sont des recherches de l’ADN. L’ADN détermine, par exemple, la couleur de nos cheveux et de nos yeux. L’ADN peut aussi expliquer pourquoi certaines personnes répondent à certains médicaments et d’autres non. Il peut également expliquer pourquoi certaines personnes sont atteintes de certaines maladies et d’autres pas.
+
+Ces analyses génétiques nous fourniront des informations essentielles pour l’étude. Si vous ne voulez pas que ces analyses soient effectuées, votre enfant ne sera pas autorisé à participer à l'étude.
+
+Que se passe-t-il en cas de découverte d’informations pertinentes sur la santé de mon enfant pendant l’étude ?
+
+Il peut arriver que nous découvrions de nouvelles informations sur la santé de votre enfant pendant l’étude. Si ces informations peuvent être importantes pour sa santé, le promoteur en informe l'investigateur. Avec votre consentement, l'investigateur vous informera, vous/votre enfant et son médecin traitant, de ses résultats et de leurs conséquences potentielles. Si nécessaire, l'investigateur et/ou le médecin traitant vous conseilleront sur la marche à suivre.
+
+Vous pouvez déclarer au chercheur si vous acceptez ou refusez d’être tenu au courant d’informations importantes concernant la santé de votre enfant en cochant la case correspondante dans le chapitre II. Dans tous les cas, l’investigateur/le médecin traitant de votre enfant vous communiquera ces informations si le fait de ne pas les connaître risque de nuire gravement à sa santé ou à celle de tiers.
+
+Qui a révisé et approuvé les documents de l’étude ?
+
+Les documents de l’étude ont été révisés :
+
+- par les autorités de santé compétentes belges  (AFMPS) ou, le cas échéant, par les autorités de santé nationales compétentes d’autres états membres de l’UE, et
+
+- par un comité d'éthique belge indépendant
+
+Les autorités compétentes et les comités d'éthique ont pour tâche de protéger les personnes qui participent à une étude. Les autorités compétentes veilleront à ce que l’étude soit menée conformément à la législation applicable.
+
+Vous ne devez, en aucun cas, considérer leur approbation comme une incitation pour que votre enfant participe à l'étude.
+
+CHAPITRE II - FORMULAIRE DE CONSENTEMENT ÉCLAIRÉ DESTINÉ PARENTS/TUTEURS
+
+ÉTUDE BIOMEDE 2.0
+
+PARTICIPANT 
+
+Conditions préalables à LA participation DE VOTRE ENFANT à l’étude
+
+- Je déclare avoir lu ce formulaire et avoir compris les informations qu’il contient.
+
+- Je déclare avoir été informé et avoir compris le but de l’étude clinique, sa durée, ses risques et désagréments éventuels, les précautions que je dois prendre et ce que l'on attend de mon enfant. On m'a expliqué et j'ai compris les droits de mon enfant en tant que participant à une étude.
+
+- J'ai disposé de suffisamment de temps pour y réfléchir et en discuter avec une personne de confiance (ami, parent, médecin traitant,...).
+
+- J’ai eu l’occasion de poser toutes les questions qui me sont venues à l’esprit et j’ai obtenu une réponse satisfaisante à mes questions.
+
+- Je comprends que mon enfant participera à cette étude volontairement et sans aucune contrainte, et que je suis libre de mettre fin à sa participation à l’étude à tout moment.
+
+- Je comprends que les données concernant mon enfant seront récoltées et que la confidentialité est garantie comme décrit au chapitre I, §12.2.
+
+- Je suis conscient que les données à caractère personnel de mon enfant sont traitées comme décrit au chapitre I, § 12.
+
+- Je comprends que les représentants du promoteur, du comité d'éthique et des autorités sanitaires compétentes ont accès au dossier médical de mon enfant s'ils y sont autorisés (comme décrit au chapitre I, §12.5)
+
+- Je comprends que le suivi de l'étude permettra à certaines personnes d'avoir accès à toutes les données de mon enfant. J'autorise ces personnes à consulter ses données à des fins de contrôle.
+
+- Je comprends que les données codées de mon enfant peuvent être envoyées dans des pays en dehors de l'UE, où les lois européennes sur la protection de la vie privée ne s'appliquent pas.
+
+- Je comprends que le promoteur a souscrit une assurance au cas où mon enfant subirait des dommages en rapport avec sa participation à cette étude.
+
+- Je comprends que la participation de mon enfant à l’étude ne me coûtera rien à l’exception des frais liés au traitement standard que requiert sa maladie.
+
+- J'accepte que le/les médecin(s) traitant(s) de mon enfant soi(en)t informé(s) de sa participation à cette étude.
+
+- Si mon enfant participe à une autre étude interventionnelle, je dois en informer l'investigateur ou le personnel de l'étude. J'accepte que mon enfant ne participe pas simultanément à une autre étude interventionnelle (par exemple avec un médicament à l'étude, un dispositif médical, une technique chirurgicale expérimentale) sans en avoir informé l'investigateur ou le personnel de l’étude, qui pourrait alors refuser sa participation pour une raison motivée.
+
+- Je comprends que mon enfant doit coopérer et suivre les instructions de l'investigateur et du personnel de l’étude concernant l’étude.
+
+- Je comprends qu'il peut être mis fin à la participation de mon enfant à l’étude sans mon consentement si mon enfant a besoin d'un autre traitement, si mon enfant ne suit pas le plan de l’étude, si mon enfant subit un dommage en lien avec sa participation à l’étude ou pour toute autre raison justifiée.
+
+- Je comprends que des analyses génétiques soient effectuées sur ses échantillons biologiques.
+
+- Je certifie que tous les renseignements que j'ai fournis au sujet de des antécédents médicaux de mon enfant sont exacts, à ma connaissance. Je comprends qu'il peut lui préjudiciable de ne pas informer le chercheur des éventuelles raisons pour lesquelles mon enfant ne devrait pas participer à l'étude.
+
+- Le cas échéant, je comprends que mon enfant ne peut pas devenir enceinte ou féconder sa partenaire pendant l'étude. L'investigateur a discuté de la manière de s'assurer de ne pas devenir enceinte, de s'assurer que sa partenaire ne devienne pas enceinte.
+
+Consentements facultatifs qui ne constituent pas une condition préalable à LA participation DE VOTRE ENFANT à cette étude.
+
+DONNÉES DE L’éTUDE
+
+1.  Comme indiqué au chapitre I, §12.7, le promoteur souhaite pouvoir utiliser les données de votre enfant issues de cette étude dans le cadre d'autres activités de recherche et développement (et des publications scientifiques associées) à condition que ces objectifs de recherche aient été approuvés par un comité d'éthique agréé.
+
+  Êtes-vous d'accord avec l'utilisation des données de votre enfant obtenues dans le cadre de cette étude à d'autres fins de recherche ?
+
+  (Cochez la case appropriée)
+
++---------------------------------+---------------------------------+
+|   ☐ Je suis d'accord            |   ☐ Je ne suis pas d'accord     |
++:================================+=================================+
+
+LES ÉCHANTILLONS BIOLOGIQUES DANS LE CADRE DE L’ÉTUDE
+
+2.  Comme indiqué au chapitre I, §4, dans le cas exceptionnel où une biopsie dite « liquide » (sang ou liquide céphalo-rachidien) a été réalisée chez votre enfant à la place d’une biopsie tumorale, le promoteur souhaiterait utiliser l’échantillon afin de rechercher de nouveaux biomarqueurs.
+
+Le cas échéant, acceptez-vous l’utilisation de cet échantillon de votre enfant pour la recherche de nouveaux biomarqueurs?
+
+(Cochez la case appropriée.)
+
++---------------------------------+---------------------------------+
+|   ☐ Je suis d'accord            |   ☐ Je ne suis pas d'accord     |
++:================================+=================================+
+
+3.  Comme indiqué au chapitre I, §13.2, le promoteur souhaiterait conserver les échantillons biologiques résiduels de votre enfant pendant 10 ans pour des recherches supplémentaires dans le cadre de l’étude à laquelle votre enfant participer. Les échantillons seront utilisés pour mieux comprendre la maladie, son traitement et les réponses à ce traitement. Cette recherche ne peut être réalisée qu’à condition d’avoir été approuvée par un comité d’éthique reconnu.
+
+  Êtes-vous d'accord avec la conservation des échantillons biologiques résiduels de votre enfant pour des recherches supplémentaires dans le cadre de l’étude ?
+
+(Cochez la case appropriée.)
+
++---------------------------------+---------------------------------+
+|   ☐ Je suis d'accord            |   ☐ Je ne suis pas d'accord     |
++:================================+=================================+
+
+INFORMATIONS PERTINENTES
+
+4.  Comme décrit au chapitre I, § 14 il peut arriver que l'on trouve des informations pertinentes qui peuvent être importantes pour la santé de votre enfant ou celle de tiers.
+
+  Si cela se produit : voulez-vous que l'investigateur ou le médecin traitant de votre enfant vous en informe?
+
+(Cochez la case appropriée.)
+
++--------------------------------------+---------------------------------+
+|   ☐ Non, je ne veux pas être informé |   ☐ Oui, je veux être informé   |
++:=====================================+=================================+
+
+Je consens à mon enfant de participer à l’étude, avec les restrictions ci-dessus , et j'ai reçu une copie signée et datée de toutes les pages du présent document.
+
+Nom et prénom du participant :
+
+Date (JJ/MM/AAAA) :
+
+Heure :
+
+Signature du participant :
+
+REPRÉSENTANT LÉGAL (RÉF. [2])
+
+Je déclare avoir été informé de la demande qui m'a été faite de décider de la participation ou pas à l’étude clinique de la personne que je représente, en tenant compte de son intérêt supérieur et de ses souhaits probables. Mon consentement s’applique à tous les items repris dans le consentement du participant.
+
+J'ai également été informé que dès que la situation clinique le permettra, la personne que je représente sera mise au courant de sa participation à une étude clinique et sera libre, à ce moment, de consentir à poursuivre cette participation ou d'y mettre un terme en signant ou refusant de signer le présent document de consentement.
+
+J'ai reçu une copie signée et datée du présent document.
+
+Nom et prénom du représentant légal:
+
+Relation avec le participant:
+
+Date (JJ/MM/AAAA) :
+
+Heure :
+
+Signature du représentant légal :
+
+Témoin impartial / interprète (Réf.[3]) 
+
+Je, soussigné(e) (cochez la case appropriée),
+
+☐ Témoin impartial
+
+☐ Interprète
+
+déclare avoir été présent(e) durant tout le processus d’information au participant et je confirme que l'information sur les objectifs et les procédures de l’étude a été fournie de manière adéquate, que le participant (ou son représentant légal) a apparemment compris en quoi consistait l’étude et que le consentement à participer à l’étude a été donné librement. 
+
+Je déclare, en outre, qu'en tant que témoin impartial/interprète, je suis indépendant du promoteur et de l'investigateur.
+
+Nom et prénom du témoin impartial / de l'interprète :
+
+Qualification du témoin impartial / de l'interprète :
+
+Date (JJ/MM/AAAA) :
+
+Heure :
+
+Signature du témoin impartial / de l'interprète :
+
+INVESTIGATEUR
+
+Je soussigné, l'investigateur, confirme que :
+
+- le participant a reçu verbalement les informations nécessaires au sujet de l’étude, a reçu des explications sur le contenu de l’étude et a reçu un original signé du présent document.
+
+- J’ai vérifié si le participant a compris l’étude.
+
+- J'ai laissé suffisamment de temps au participant pour décider de participer ou pas à l’étude et poser ses questions.
+
+- Aucune pression n'a été exercée pour que le participant accepte de participer à l’étude.
+
+- Je travaille en accord avec les principes éthiques énoncés dans la dernière version de la « Déclaration d’Helsinki », des « Bonnes pratiques cliniques » et de la loi belge concernant les études cliniques.
+
+Nom et prénom de l'investigateur :
+
+Date (JJ/MM/AAAA) :
+
+Heure :
+
+Signature de l'investigateur :
+
+GLOSSAIRE
+
+AFMPS : l'Agence fédérale des médicaments et des produits de santé.
+
+APD : L'autorité de protection des données veille à ce que les données à caractère personnel soient utilisées et sécurisées soigneusement, et que votre vie privée future soit également garantie.
+
+Autres abréviations apparaissant dans le texte :
+
+Assurance responsabilité « sans faute » :
+
+Le promoteur sera responsable de tout préjudice ou dommage subi par le participant, directement ou indirectement lié à l'étude clinique. Vous n'avez pas à prouver qu'il y a eu erreur à cet égard.
+
+moniteur et auditeur
+
+Le moniteur et l'auditeur travaillent pour le promoteur.
+
+Le moniteur assure un contrôle de qualité continu tout au long de l’étude. L'auditeur mène une enquête indépendante et ponctuelle à un moment précis au cours de l'étude. Ils vérifient si l’étude est / a été réalisée conformément au protocole, si les données récoltées sont fiables et si l’étude est conforme aux lois applicables.
+
+RÉFÉRENCES
+
+[1] Dans notre document, le terme « coder »  est utilisé comme synonyme de « pseudonymiser » qui correspond au terme utilisé dans le règlement général sur la protection des données (RGPD) n° 2016/679.
+
+[2] Lorsqu’un adulte est incapable d’exprimer sa volonté, il faut faire appel à un représentant légal déterminé par ordre successif (personne que le patient a préalablement désignée pour le représenter, administrateur ou, à défaut, conjoint cohabitant, partenaire cohabitant légal, partenaire cohabitant de fait, enfant majeur, un parent, un frère ou une sœur adulte). Si la personne qui peut décider au nom du second ne souhaite pas non plus le faire ou est absente, le professionnel concerné, s’il y a lieu en concertation pluridisciplinaire, représente les intérêts du patient. La réglementation est prévue à l'article 11 de la loi du 7 mai 2017 concernant les expérimentations sur la personne humaine et aux articles 12 et 14 de la loi du 22 août 2002 sur les droits des patients.
+
+[3] Le recours à un témoin impartial est nécessaire lorsque le sujet ou son représentant légal parle et/ou comprend parfaitement la langue du formulaire de consentement éclairé approuvé, mais ne peut ni lire ni écrire en raison d'un handicap physique ou d'une déficience visuelle. Un interprète est nécessaire lorsque l'investigateur ne parle pas la langue du patient.

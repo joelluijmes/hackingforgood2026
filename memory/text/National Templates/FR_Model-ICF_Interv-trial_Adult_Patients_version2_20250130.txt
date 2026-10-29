@@ -1,0 +1,1325 @@
+Modèle de DIC pour les ETUDES CLINIQUES INTERVENTIONNELLES avec un médicament à l’étude sur des patients adultes
+
+Document guide
+
+But de ce modèle et comment l'utiliser  
+
+Ce modèle vise à préparer un formulaire de consentement éclairé (DIC, Document d’information et consentement) pour les patients adultes participant à une étude clinique interventionnelle avec un médicament à l’étude (Réf.[1]) (ci-après appelée « étude »). (Dans les versions néerlandaise et française, les termes « klinische studie / studie » et « étude clinique / étude» ont été volontairement utilisés à la place des termes légaux « klinische proef /proef » et « essai clinique /essai» qui sont moins connus par les personnes profanes.)
+
+Ce modèle est disponible en trois langues : anglais, français et néerlandais. Le promoteur est responsable de la soumission du DIC au comité éthique dans les langues officielles des régions où les participants sont recrutés.
+
+Les codes couleur suivants sont utilisés:
+
+- En mauve : le texte est obligatoire et ne peut être modifié que pour des raisons dûment justifiées. Le promoteur doit indiquer dans le dossier de demande d’autorisation quelle version du modèle de DIC a été utilisé et, le cas échéant, quels changements ont été apportés au texte écrit en mauve et le motif de ces changements. Un fichier dédié à la description du modèle de DIC utilisé et des éventuels changements apportés au texte est disponible sur le site web du CT-College (documents/sponsor-statement-template).
+
+- En noir : le texte est une proposition et peut être adapté selon les besoins de l’étude.
+
+- En bleu : le texte doit être remplacé par des informations spécifiques à l'étude.
+
+- En rouge : le texte contient des informations pour guider le promoteur sur la façon de remplir la section concernée. Ce texte doit être supprimé ainsi que cette partie ‘guide’ du document.
+
+Le bas de la page du document peut être adapté en fonction des préférences du promoteur.
+
+Le modèle contient des champs et des renvois qui peuvent être mis à jour dans MS-WORD via F9 ou via un clic droit et la sélection de "champ de mise à jour". (Pour mettre à jour toutes les références d'un document, sélectionnez l'intégralité du document (dans MS-Word via Ctrl A), puis appuyez sur F9.)
+
+Le modèle contient des titres qui sont utilisés pour formater la table des matières. Si des titres sont ajoutés au document, copiez le style des titres existants. D'autres conseils sur la mise en forme d'une table des matières automatique sont disponibles ici.
+
+Recommandations rédactionnelles
+
+Le DIC doit être rédigé dans un langage clair et compréhensible pour le participant.
+
+Le document doit pouvoir être lu et compris par des personnes qui ne sont pas des professionnels de la santé et qui n’ont reçu aucune explication orale. Il doit être compréhensible pour des individus ayant le niveau scolaire d’enfants de 12 ans.
+
+Veuillez tenir compte des conseils suivants :
+
+a.  Utilisez une construction de phrase correcte (attention aux problèmes de traduction littérale de l’anglais vers le français/néerlandais, aux choix inappropriés de termes, etc.).
+
+b.  Utilisez des phrases courtes (moins de 12 mots) et des paragraphes courts (moins de 7 lignes). Utilisez des puces ou des tirets si possible.
+
+c.  Evitez le jargon technique.
+
+d.  Veillez à toujours utiliser la même terminologie pour le même concept dans l'ensemble du document. Dans ce modèle, les termes suivants sont utilisés:
+
+    - « Etude clinique » ou « étude » (plutôt que recherche, essai …) ;
+
+    - « Personnel de l'étude » (plutôt que l'équipe des investigateurs, le personnel, l'équipe de l'étude …) ;
+
+    - « Investigateur » pour le professionnel des soins de santé en charge de l'étude ;
+
+    - « Médecins traitants » pour tous les autres médecins en charge du traitement du participant ;
+
+    - Le terme « Hôpital » est utilisé dans ce document pour les études sur les patients, ce qui n'est pas toujours correct, p. ex. dans le cas des études effectuées dans un cabinet privé. Dans ce dernier cas, le mot « Hôpital » désigne l'endroit où se déroule l'étude ;
+
+    - Dans le modèle, le terme «comparateur» peut être lu selon le cas comme «traitement standard» en cas de thérapie combinée ;
+
+    - Dans le texte mauve, le terme plus populaire “coder” est utilisé au lieu du terme « pseudonymiser ». Pour éviter toute confusion, il est conseillé d'utiliser également ce terme dans les parties spécifiques à l’étude ;
+
+    - Vous trouverez également le terme « carte d'urgence ». Cela n’empêche pas le remplacement de ce terme par un autre plus spécifique au promoteur ;
+
+    - Dans le modèle, l’expression « devenir enceinte » est utilisé au lieu de « tomber enceinte ». Il est conseillé d'utiliser également ces termes dans les parties spécifiques à l’étude.
+
+e.  Éviter d'abuser des abréviations et, si nécessaire, expliquer les abréviations utilisées dans le glossaire. Mettez en majuscules dans le texte les termes ou abréviations expliqués dans le glossaire. Lors de la première apparition d’une abréviation dans le texte, indiquer d’abord tous les termes complets suivi de l’abréviation entre parenthèses.
+
+f.  Utilisez une police claire et d’une taille suffisamment grande :
+
+    - lorsque vous imprimez sur A4 dans une ou deux colonnes, utilisez de préférence une police de caractères ≥ Arial 12;
+
+    - lors de l’impression en livret, les marges doivent être réduites et la taille de la police augmentée à ≥ Arial 16
+
+g.  Utilisez une présentation attrayante avec un texte aéré, et suffisamment de sous-titres.
+
+h.  Si possible, impliquez un patient ou une association de patients dans le développement du DIC (en ce qui concerne la compréhensibilité, la pertinence de l'information).
+
+i.  Toutes les pages du document doivent être identifiées par le même numéro de version de DIC et la même date de publication.
+
+j.  La pagination de l’ensemble du document sera présentée sous le format « page X/Y ». Où Y indique le nombre total de pages.
+
+Pour les DIC en néerlandais, nous vous renvoyons aux documents d'information « Schrijfadviezen voor de geneesmiddelenbijsluiter » (Universiteit Utrecht) et « Patiëntvriendelijke termen » du « College ter Beoordeling van Geneesmiddelen (CBG) » néerlandais qui se trouvent sur le site suivant: https://www.cbg-meb.nl/onderwerpen/hv-patientenbijsluiter.
+
+Pour les DIC en anglais, veuillez vous référer aux recommandations de rédaction pour les « Summaries of Clinical Trial Results for Laypersons », disponibles sur le lien suivant :
+
+https://health.ec.europa.eu/system/files/2020-02/2017_01_26_summaries_of_ct_results_for_laypersons_0.pdf.
+
+Nombre de ces recommandations s'appliquent également aux DIC rédigés dans une langue autre que l'anglais.
+
+Pour les DIC en français, nous vous renvoyons au FALC, FAcile à Lire et à Comprendre: https://www.falc.be/.
+
+Premières pages
+
+La première page du modèle reprend les exigences minimales en matière d'informations à mentionner sur les premières pages du DIC. Le promoteur est autorisé à ajouter des informations supplémentaires. Il est cependant interdit d’ajouter les coordonnées du délégué à la protection des données du promoteur. (Le promoteur ne connaît pas le participant et ne peut donc pas l’informer de ses droits.)
+
+En ce qui concerne les coordonnées de contact, toutes les données sont spécifiques au centre d'étude, à l'exception des données de la compagnie d'assurance du promoteur, du CT Collegeet des données de l'Autorité belge de protection des données (APD). Les coordonnées spécifiques au centre d'étude doivent être complétées après approbation du DIC par le comité d'éthique.
+
+Le numéro de téléphone mentionné comme numéro de « Contact en cas d'urgence » doit être un numéro du centre de l’étude (par exemple un numéro général) où le participant peut contacter le médecin de garde 24h/24 7j/7 pour l’aider sur toute question urgente au sujet de sa santé en rapport avec cette étude clinique. Si nécessaire, le médecin de garde contactera le personnel de l’étude. L'intention n'est pas de mentionner le numéro de téléphone des urgences de l'hôpital.
+
+Il est possible qu'aucun délégué à la protection des données (DPD) ou médiateur des droits des patients ne soit disponible au centre de l’étude, par exemple pour les essais réalisés dans des cabinets privés. Dans ces cas précis seulement, les dispositions suivantes s’appliquent :
+
+- Si aucun « délégué à la protection des données du centre de l’étude » officiel n'a été désigné, le texte du tableau des contacts peut être remplacé par la « personne de contact pour la protection des données ».
+
+Il peut s'agir d'une personne qui veille à la protection des données au sein du centre de l'étude ; il peut s'agir, par exemple, de l’investigateur principal.
+
+- Le "médiateur des droits du patient" peut être remplacé par le CT-Collège :
+
++------------------------------------------------------------------------------+----------------------------------+
+| Le "médiateur des droits du patient" peut être remplacé par le "CT-College". | e-mail:                          |
+|                                                                              |                                  |
+|                                                                              | ct.college@health.fgov.be        |
++==============================================================================+==================================+
+
+La version 1.0 du modèle DIC a été approuvée par le Groupe de travail sur le formulaire de consentement éclairé le 27/06/2019.
+
+Ce groupe de travail était composé de représentants de la BAREC (Belgian Association of Research Ethics Committees), de pharma.be (l’association belge de l’industrie (bio)pharmaceutique innovante) et d’organisations de patients, sous la coordination du Clinical Trial College (CT-College) du SPF Santé publique, Sécurité de la Chaîne alimentaire et Environnement.
+
+L’autorité belge de protection des données (APD) a été sollicitée pour émettre un avis sur la manière dont sont traités les aspects relatifs au RGPD le 28/06/2019. Sur la base de l'avis de l’APD reçu le 17/07/2019, chaque promoteur est tenu d’appliquer le principe de responsabilité et d’adapter le modèle à sa situation spécifique.
+
+Le groupe de travail sur le RGPD du RUZB/CHAB a accepté les aspects relatifs au RGPD abordés dans ce modèle au cours de leur réunion du 18/02/2019. Aucune modification n’y a été apportée dans la version 2.0. La version 1.1 contient des décisions prises par le Board du Collège et quelques adaptations mineures. La version 2.0 du modèle DIC a été approuvée par le College Board le 24/01/2025 pour répondre aux besoins des essais cliniques.
+
+Modèle
+
+FORMULAIRE DE CONSENTEMENT ÉCLAIRÉ POUR LES ÉTUDES CLINIQUES AVEC UN MÉDICAMENT À L’ÉTUDE CHEZ LES PATIENTS ADULTES
+
+[PREMIÈRES PAGES]
+
+Titre officiel et vulgarisé de l’étude tel qu’indiqué dans la base de données CTIS
+
+Titre de l'étude : Titre officiel
+
+Numéro UE d'essai : numéro EU CT officiel
+
+Numéro de l’étude : numéro de l’étude du promoteur
+
+Promoteur(s) de l’étude : Nom et adresse de la société, de l’hôpital, de l’université ou autre organisation ;
+
+[S'il y a lieu (Réf.[2])] Représentant européen : nom et adresse du représentant européen 
+
+[S'il y a lieu] Organisme de recherche clinique: Nom et adresse ORC/CRO
+
+Nom du centre de l’étude : nom officiel du centre de l’étude [comme mentionné sur le site web du SPF Santé Publique, Sécurité de la Chaîne alimentaire et Environnement (FR)].
+
+Adresse principale du centre de l’étude : adresse du centre de l’étude
+
+[Facultatif] Numéro du centre de l’étude : ajoutez le numéro d'accréditation du centre de l’étude
+
+[Si les changements ne sont pas inclus dans un addendum au DIC et qu’ une nouvelle version du DIC est rédigée, insérez un tableau avec l'historique des révisions du document pour informer le participant des changements essentiels apportés. Le promoteur a le choix d'ajouter le tableau au DIC ici ou dans un addendum. Un exemple est donné ci-dessous.]
+
+[S'il y a lieu :] Historique des révisions du document
+
++-----------------------+-----------------------+-----------------------------------------------+
+| Version N°            | Date de publication   | Description de la révision                    |
++:======================+=======================+===============================================+
+| 2.0                   | jj-mm-aaaa            | Par exemple                                   |
+|                       |                       |                                               |
+|                       |                       | I.4.1 effets secondaires supplémentaires      |
++-----------------------+-----------------------+-----------------------------------------------+
+| 3.0                   | jj-mm-aaaa            | Par exemple                                   |
+|                       |                       |                                               |
+|                       |                       | I.8 changements dus à la nouvelle législation |
++-----------------------+-----------------------+-----------------------------------------------+
+
+Qui contacter en cas de questions ?
+
+[Le promoteur a le choix d’inclure le tableau ci-dessous à cet endroit du DIC ou à la fin du document.]
+
++-------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+| Nom                                                                                             | Fonction                                                                                                                                                | En cas de                                                                 | Coordonnées de contact                                                         |
++=================================================================================================+=========================================================================================================================================================+===========================================================================+================================================================================+
+| Nom de famille, prénom                                                                          | Investigateur principal du centre de l’étude                                                                                                            | Informations, problèmes ou préoccupations                                 | N° de téléphone/ E-mail                                                        |
++-------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+|                                                                                                 | Personnel de l'étude                                                                                                                                    | Informations, problèmes, préoccupations,                                  | N° de téléphone                                                                |
++-------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+|                                                                                                 | Contact pour les questions urgentes liées à l’étude [pas le service des urgences de l’hôpital]                                                          | Informations urgentes, problèmes, préoccupations                          | N° de téléphone                                                                |
++-------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+|                                                                                                 | Médiateur des droits du patient du site, [et si ce n’est pas possible, contacter le CT College]                                                         | Préoccupations relatives à vos droits en tant que participant à une étude | N° de téléphone du centre d’études [si impossible : ct-college@health.fgov.be] |
++-------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+| Nom et adresse de la compagnie d'assurances du promoteur & coordonnées de contact de l'assureur | Compagnie d'assurances du promoteur                                                                                                                     | En cas de désaccord ou de réclamation concernant un sinistre              | Police n° : numéro                                                             |
+|                                                                                                 |                                                                                                                                                         |                                                                           |                                                                                |
+|                                                                                                 |                                                                                                                                                         |                                                                           | Adresse : Adresse de la compagnie d’assurance                                  |
+|                                                                                                 |                                                                                                                                                         |                                                                           |                                                                                |
+|                                                                                                 |                                                                                                                                                         |                                                                           | Numéro de téléphone : numéro de téléphone                                      |
+|                                                                                                 |                                                                                                                                                         |                                                                           |                                                                                |
+|                                                                                                 |                                                                                                                                                         |                                                                           | E-mail : adresse e-mail                                                        |
++-------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+|                                                                                                 | Délégué à la protection des données du centre de l’étude l’étude [ou, si cela n’est pas possible : Personne de contact pour la protection des données.] | Questions relatives à la confidentialité de vos données                   | N° de téléphone                                                                |
+|                                                                                                 |                                                                                                                                                         |                                                                           |                                                                                |
+|                                                                                                 |                                                                                                                                                         |                                                                           | E-mail : e-mail                                                                |
++-------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+|                                                                                                 | Autorité belge de protection des données                                                                                                                | Plaintes relatives à la confidentialité de vos données                    | +32(0)2274 48 00                                                               |
+|                                                                                                 |                                                                                                                                                         |                                                                           |                                                                                |
+|                                                                                                 |                                                                                                                                                         |                                                                           | E-mail : contact@apd-gba.be                                                    |
++-------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------+
+
+- Pour gérer les plaintes non résolues par l’investigateur, veuillez contacter le médiateur du centre d'études à l'adresse ci-dessus.
+
+- Conformément au RGPD, vous avez le droit de vous informer sur le traitement de vos données. Pour toute question à ce sujet, veuillez contacter le délégué à la protection des données du centre d'études à l'adresse ci-dessus.
+
+- Vous avez également le droit d'introduire une plainte concernant la manière dont vos données sont traitées auprès de l'autorité de contrôle belge chargée du respect de la législation en matière de protection des données : Autorité de protection des données (APD), ci-dessus.
+
+Version n° : N° de la version du DIC [placez le numéro de version dans le pied de page du DIC car il doit apparaître sur chaque page du document.]
+
+Sommaire
+
+Document guide 1
+
+But de ce modèle et comment l'utiliser 1
+
+Recommandations rédactionnelles 2
+
+Premières pages 3
+
+Modèle 5
+
+FORMULAIRE DE CONSENTEMENT ÉCLAIRÉ POUR LES ÉTUDES CLINIQUES AVEC UN MÉDICAMENT À L’ÉTUDE CHEZ LES PATIENTS ADULTES 5
+
+[PREMIÈRES PAGES] 5
+
+[S'il y a lieu :] Historique des révisions du document 5
+
+Qui contacter en cas de questions ? 6
+
+L'ÉTUDE EN QUELQUES MOTS 11
+
+CHAPITRE I - DESCRIPTION DE L’ETUDE ET de VOS DROITS EN tant que PARTICIPANT 13
+
+1. Pourquoi cette étude est-elle réalisée? 13
+
+2. Pourquoi me demande-t-on de participer ? 13
+
+3. Suis-je obligé de participer à une étude clinique ? 14
+
+4. Que se passera-t-il pendant l'étude ? 14
+
+5. Vais-je tirer un bénéfice de l'étude ? 15
+
+6. Quels sont les risques et les désagréments potentiels liés à la participation à l'étude ? 16
+
+6.1. Quels sont les effets secondaires possibles de [nom du ou des médicament(s) à l’étude] [s'il y a lieu :] et [nom du ou des comparateur(s)] ? 16
+
+6.2. Quels sont les risques ou les désagréments potentiels des examens prévus pendant l'étude ? 17
+
+6.3. Est-ce que je peux prendre d'autres médicaments pendant l'étude ? 18
+
+6.4. Ma participation à l'étude aura-t-elle d'autres répercussions sur mes activités quotidiennes ? 18
+
+6.5. [facultatif] Est-ce que je peux devenir enceinte, concevoir un enfant ou allaiter pendant la durée de l'étude ? 18
+
+7. Qu'en est-il si quelque chose se passe mal pendant l'étude ? 20
+
+8. Qu'en est-il si d'autres options de traitement ou de nouvelles informations sur le médicament à l’étude ou l’étude sont rendues disponibles pendant l'étude ? 21
+
+9. Peut-il être prématurément mis fin à ma participation à l'étude ? 21
+
+9.1. Vous décidez de retirer votre consentement 22
+
+9.2. Vous décidez d’arrêter le traitement avec le médicament à l’étude 22
+
+9.3. L'investigateur décide de mettre fin à votre participation à l'étude ou l'arrêt du traitement par le médicament à l'étude 23
+
+9.4. D'autres entités peuvent interrompre ou mettre fin à l'étude 23
+
+10. Quel traitement vais-je recevoir après ma participation à l'étude ? 23
+
+11. Ma participation à l'étude entraînera-t-elle des frais supplémentaires pour moi ? 24
+
+11.1. Examens et traitements pris en charge par le promoteur 24
+
+11.2. Autres dépenses prises en charge par le promoteur 24
+
+12. Quelles sont les données collectées sur moi pendant l'étude et qu'en adviendra-t-il ? 26
+
+12.1. Quelles données sont collectées et traitées pendant l’étude ? 26
+
+12.2. Comment l'investigateur traite-t-il mes données à caractère personnel ? 26
+
+12.3. Comment mes données seront-elles traitées ? 26
+
+12.4. Est-ce que j'ai accès à mes données collectées et traitées pendant l'étude et est-ce que je peux les rectifier ? 28
+
+12.5. À part l'investigateur et son personnel de l’étude, qui d'autre a accès à mes données à caractère personnel ? 29
+
+12.6. [facultatif, uniquement pour les études autologues ATMP] Excepté l'investigateur et son personnel de l’étude, qui d'autre aura accès à mes données dans cette étude autologue ATMP ? 30
+
+12.7. Qu'adviendra-t-il des résultats de l’étude ? 30
+
+12.8. Mes données seront-elles utilisées à d'autres fins que l'étude à laquelle je participe ? 31
+
+12.9. Combien de temps mes données seront-elles conservées ? 32
+
+13. Quels échantillons biologiques me prélèvera-t-on pendant l'étude et qu'en adviendra-t-il ? 32
+
+13.1. Quels échantillons biologiques me prélèvera-t-on pendant l'étude ? 32
+
+13.2. Qu'adviendra-t-il des échantillons biologiques prélevés dans le cadre de l’étude ? 33
+
+13.3. Est – ce que mes échantillons biologiques seront utilisés pour des recherches en dehors du contexte de cette étude? 34
+
+13.4. [S’il y a lieu] Est – ce que le lien entre mes échantillons biologiques et mon identité peut être rompu ? 35
+
+14. Que se passe-t-il en cas de découverte d’informations pertinentes sur ma santé pendant l’étude ? 35
+
+15. Qui a révisé et approuvé les documents de l’étude ? 36
+
+CHAPITRE II - Consentement éclairé 37
+
+PARTICIPANT 37
+
+[Si l’étude peut enrôler des personnes incapables de donner leur consentement.] REPRÉSENTANT LÉGAL (RÉF. ) 42
+
+[Si un témoin / interprète est présent.] Témoin impartial / interprète (Réf.) 43
+
+INVESTIGATEUR 43
+
+GLOSSAIRE 45
+
+RÉFÉRENCES 46
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| L'ÉTUDE EN QUELQUES MOTS                                                                                                                                                                                                                                                                                                                                                                        |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+|   Pour indiquer que ce chapitre est d'un style différent du reste du document, il est recommandé de l'imprimer sur du papier de couleur ou d'inclure son contenu dans un encadré à fond coloré.                                                                                                                                                                                                 |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+|   Veuillez inclure dans ce chapitre un bref résumé (2-3 pages maximum) des aspects principaux de l’étude. Utilisez des mots très simples dans ce chapitre afin que tout le monde comprenne ce texte.                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+|   Un exemple de ce chapitre est disponible sur le lien suivant : https://overlegorganen.gezondheid.belgie.be/nl/ct-college . Le promoteur peut vérifier la lisibilité de ce chapitre à l'aide des outils en ligne suivants pour le français et l'anglais : https://translatedlabs.com/lisibilit%C3%A9-du-texte et pour le néerlandais et l'anglais : https://www.lt3.ugent.be/readability-demo/ |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+|   Remarque : Cette partie du DIC est obligatoire et un accord au niveau belge, au sein de l'Association belge des comités d'éthique de la recherche (BAREC), consiste à accorder un refus si cette partie n'est pas présente ou inadéquate sur la base des lignes directrices ci-dessous.                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+|   En cas de discussion, de désaccord ou de contradiction concernant le contenu de ce document, seules les sections 1 et 2 sont juridiquement contraignantes pour le participant.                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Les questions suivantes servent de lignes directrices :                                                                                                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 1.  Pourquoi demandez-vous au participant potentiel de prendre part à cette étude ? Quel est le but de l’étude ? Veillez à rappeler au participant sa maladie et, le cas échéant, sa courte espérance de vie.                                                                                                                                                                                   |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 2.  Quel est le but de ce document ?                                                                                                                                                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 3.  Le participant tirera-t-il des bénéfices de cet étude ?                                                                                                                                                                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 4.  Quelles sont les caractéristiques du médicament à l'étude et comment sera-t-il administré?                                                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 5.  Quels sont les examens les plus importants (lourdeur/fréquence) et les plus douloureux ?                                                                                                                                                                                                                                                                                                    |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 6.  Quelle est la durée de l’étude (pour le participant et en général)?                                                                                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 7.  Le médicament à l’étude engendre-t-il des effets secondaires ?                                                                                                                                                                                                                                                                                                                              |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 8.  Y a-t-il une assurance en cas de problème lors de l’étude ?                                                                                                                                                                                                                                                                                                                                 |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 10. 9. La participante peut-elle être enceinte ou concevoir un enfant pendant l'étude ? Que doit payer le participant? Quels sont les frais spécifiques à l’étude et qui doit les payer ?                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 11. Les données collectées sont-elles traitées confidentiellement ?                                                                                                                                                                                                                                                                                                                             |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 12. La participation à l’étude est-elle obligatoire ?                                                                                                                                                                                                                                                                                                                                           |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 13. Qui a examiné et approuvé les documents liés à l’étude ?                                                                                                                                                                                                                                                                                                                                    |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 14. Est-il possible de continuer à recevoir le médicament après l’étude ?                                                                                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 15. Quels sont les engagements du participant ? Veuillez spécifier les engagements suivants :                                                                                                                                                                                                                                                                                                   |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+|     a.  autoriser l'investigateur à informer les médecins traitants de la participation à l’ étude                                                                                                                                                                                                                                                                                              |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+|     b.  ne pas participer simultanément à une autre étude clinique interventionnelle avec un médicament ou à une étude clinique avec un dispositif médical sans en informer l’investigateur ou le personnel de l’étude                                                                                                                                                                          |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+|     c.  communiquer les informations pertinentes sur son état de santé, ses autres médicaments ou les symptômes ressentis                                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+|     d.  toujours avoir avec lui la « carte d'urgence »                                                                                                                                                                                                                                                                                                                                          |
+|                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 16. Qui peut donner plus d’informations au participant ?                                                                                                                                                                                                                                                                                                                                        |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+CHAPITRE I - DESCRIPTION DE L’ETUDE ET de VOS DROITS EN tant que PARTICIPANT 
+
+Pourquoi cette étude est-elle réalisée? 
+
+[Dans cette section, veuillez préciser les médicaments à l'étude, cela signifie le nom du/des médicament(s) expérimenta(l)ux, et le nom du/des comparateur(s).]
+
+Nous vous invitons à participer à une étude clinique (ci-après appelée « étude ») pour évaluer le médicament à l’étude, [nom du médicament à l’étude] pour le traitement de [nom de la maladie/affection].
+
+Le but de cette étude est d'en apprendre davantage sur : [ajoutez les objectifs de l'étude; préciser le mode d'action du ou des médicaments à l’étude, le nombre de patients qui l’ (les) ont déjà reçu(s) pour cette indication et/ou une autre, .... ]
+
+Pourquoi me demande-t-on de participer ?
+
+Vous avez été diagnostiqué avec [nom de la maladie / l'affection].
+
+On vous demande de participer à cette étude parce que
+
+[Si le participant a besoin des critères d'inclusion/exclusion pour prendre une décision éclairée, ajoutez une brève description des principaux critères d'inclusion/exclusion repris dans le protocole, que le participant est en mesure de comprendre.]
+
+[Choisissez : ]
+
+[Si d’autres traitements sont disponibles :] Outre la participation à cette étude, les autres traitements suivants sont également disponibles pour traiter votre maladie/affection : [ajoutez les autres traitements disponibles]
+
+[ou]
+
+[S’il n’existe pas d’autre traitement :] À ce jour, aucun traitement approuvé par les autorités n’est disponible en Belgique pour votre maladie/affection.
+
+[Si l'espérance de vie est limitée, cette information doit également être incluse, par exemple : ] Vous souffrez de [nom de la maladie/affection] et les traitements standards disponibles visant à améliorer la survie dans le cadre de cette maladie/affection n’ont pas fonctionné. Cela signifie que votre espérance de vie est limitée. Il n'est pas garanti que votre participation à cette étude puisse guérir votre maladie/affection, puisse améliorer votre qualité de vie, ou puisse prolonger votre vie.
+
+L'investigateur ou le personnel de l'étude discutera avec vous des conditions à remplir pour être autorisé à participer à l'étude.
+
+Suis-je obligé de participer à une étude clinique ?
+
+Votre participation à une étude est volontaire et doit rester libre de toute contrainte. Cela signifie que vous avez le droit de ne pas y participer ou de vous retirer de l'étude, à n'importe quel moment, sans devoir fournir de justification et cela même si vous aviez préalablement accepté d’y participer. Votre décision n'affectera pas votre relation avec l'investigateur ou votre médecin traitant, ni la qualité de vos soins médicaux futurs.
+
+Si d'autres traitements contre votre [maladie/affection] sont disponibles, l'investigateur ou son délégué en discutera avec vous.
+
+Que se passera-t-il pendant l'étude ?
+
+[Veuillez noter qu'il n'est pas acceptable d'ajouter à cette section (ou ailleurs) un texte qui pourrait intimider ou influencer le participant à (ne pas) mettre fin à sa participation à l’étude, tel que « le promoteur peut vous retrouver si vous décidez de mettre fin à votre participation à l'étude...» ou « nous pouvons utiliser tout moyen pour vous retrouver..... » etc.]
+
+Cette étude comprendra environ [nombre] participants dans le monde, dont environ [nombre] en Belgique.
+
+Cette étude est un …
+
+[Ajoutez ici une brève description
+
+- du design de l'étude dans des termes compréhensibles pour le participant, p. ex. : expliquez ce qu'est une étude randomisée/en aveugle/croisée/placebo, comparative d'un médicament à l’étude versus placebo et/ou un comparateur. S'il y a lieu, ajoutez des renseignements sur la probabilité de randomisation du traitement.]
+
+- de la dose, la méthode et la fréquence d'administration, le nombre de visites ;
+
+- du déroulement de l'étude : phase de sélection (y compris la durée), phase de l'étude (date prévue pour le lancement de l'étude, début d'administration des médicaments à l’étude, comparateur, placebo pendant la phase de l’étude), retrait prématuré ou prévu de l'étude, phase de suivi.
+
+- les examens prévus (incluant le temps passé par le participant) et toutes les éventuelles précautions à prendre avant de se soumettre à ces examens.
+
+En fonction des études, il peut être utile de fournir au participant un plan détaillé ou un diagramme des différentes procédures auxquelles il devra se soumettre lors de chacune des différentes visites prévues. Si un diagramme est fourni, il est préférable d’ajouter quelques directives sur la façon de le lire.
+
+Que l’information soit présentée sous forme de texte ou de diagramme/schéma, le promoteur doit toujours indiquer dans une annexe quelles visites, quels traitements et examens sont certainement spécifiques à l’étude et sont donc à la charge du promoteur. Cela peut être fait par exemple en mettant ces éléments en gras.
+
+L'exactitude et l'exhaustivité de ces informations, ainsi que leur mise à jour, relèvent de la responsabilité conjointe du promoteur et de l’investigateur. L’investigateur est également responsable de la mise à jour de ces informations dans le dossier médical du participant et d'en informer le promoteur].
+
+[Choisissez l'un des textes suivants :
+
+Dans le texte et/ou les tableaux et/ou les schémas suivants, vous trouverez les traitements et les tests que vous devez subir. Certains d'entre eux sont spécifiques à l'étude et d'autres font partie du traitement standard pour votre situation. Les traitements et examens spécifiques à l'étude seront pris en charge par le promoteur et ne vous seront pas facturés. Les traitements et examens qui font partie de votre traitement standard seront à votre charge ou à celle de votre mutualité (sécurité sociale belge).
+
+Contactez le personnel de l'étude pour plus de détails ou si vous n'êtes pas affilié à une mutualité (sécurité sociale belge).
+
+[insérer les tableaux, le texte]
+
+Dans l'ensemble, votre participation à l'étude durera [choisissez] environ [nombre] semaines/mois et comportera [nombre] visites [ou] en fonction de votre état de santé.
+
+Si vous remplissez toutes les conditions requises pour être inclus dans l'étude et si vous acceptez de participer à l'étude, vous devrez passer les tests et les examens mentionnés ci-dessus. L'étude devrait durer au total [nombre] semaines/mois.
+
+Les consultations et les traitements résultant d’un effet indésirable sont également considérés comme spécifiques à l’étude.
+
+[En cas d'automédication par le participant :] Nous attendons de vous que vous utilisiez [le nom du médicament à l’étude / du comparateur] comme décrit ci-dessus.
+
+Vais-je tirer un bénéfice de l'étude ? 
+
+Les informations obtenues pendant une étude peuvent contribuer à une meilleure compréhension de l’utilisation du médicament expérimental ou au développement d’un nouveau médicament pour votre traitement ou celui de futurs patients.
+
+Le médicament à l’étude pourra ou non se révéler bénéfique pour le traitement de la [maladie /l'affection] dont vous êtes atteint(e) ou diminuer vos symptômes. Même s'il se révèle bénéfique pour vous, une récidive ou une aggravation des symptômes, de la maladie ou de l'affection sont toujours possibles.
+
+Quels sont les risques et les désagréments potentiels liés à la participation à l'étude ?
+
+1.  Quels sont les effets secondaires possibles de [nom du ou des médicament(s) à l’étude] [s'il y a lieu :] et [nom du ou des comparateur(s)] ?
+
+La participation à une étude comporte certains risques.
+
+[Choisissez parmi les énoncés suivants : ]
+
+Tous les médicaments peuvent avoir des effets secondaires. Certains sont déjà connus et d'autres ne le sont pas encore. Même si des études antérieures ont montré que [nom du ou des médicaments à l’étude / comparateur] était/étaient normalement bien toléré(s), vous pourriez quand même ressentir les effets secondaires suivants :
+
+[ou]
+
+Tous les médicaments peuvent avoir des effets secondaires connus ou imprévisibles. Au vu du rapport bénéfice/risque, des études antérieures ont montré que les effets secondaires de [nom du/des médicaments à l’étude / du comparateur] étaient acceptables. Toutefois, vous devez avoir conscience que vous risquez d'avoir les effets secondaires suivants:
+
+[Pour chaque médicament à l’étude : ajouter une liste des effets secondaires et les décrire brièvement. Mentionnez les effets secondaires par ordre de fréquence. Mentionnez les effets secondaires irréversibles (s’il y en a) en gras.
+
+[Les notions de fréquence des effets secondaires doivent être quantifiées de manière compréhensible pour le participant  : p. ex.
+
+  ------------------- -----------------------------------------------------
+  Très fréquent       Chez plus d’un patient sur 10
+
+  Fréquent            Entre 1 patient sur 100 et 1 patient sur 10
+
+  Peu fréquent        Entre 1 patient sur 1 000 et 1 patient sur 100
+
+  Rare                Entre 1 patient sur 10 000 et 1 patient sur 1 000
+
+  Très rare           Entre 1 patient sur 100 000 et 1 patient sur 10 000
+  ------------------- -----------------------------------------------------
+
+[S’il y a certains risques rares que le participant doit connaître (y compris les symptômes associés) pour pouvoir y apporter un traitement correctif rapidement, ils peuvent être décrits ici dans un paragraphe supplémentaire ; p. ex. les symptômes d’une allergie sévère au médicament à l’étude.]
+
+[Pour les effets secondaires du traitement standard, veuillez vous référer à la notice du médicament standard].
+
+Puisque ce médicament est encore à l'étude, d'autres risques et désagréments encore inconnus à ce jour pourraient également survenir. Par conséquent, il est très important que vous signaliez rapidement tout nouveau problème de santé ou toute aggravation d'un problème de santé à l'investigateur, que vous estimez lié ou non à l'étude (ou à [nom du médicament à l’étude/comparateur]), et cela même lorsqu'il est déjà décrit dans ce document. Si vous devez prendre d'autres médicaments, en discuter à l’avance avec l’investigateur. Si, pour quelle que raison que ce soit, vous consultez un autre médecin traitant pendant l'étude, vous devez l'informer que vous participez à une étude et lui présenter votre carte d'urgence. Cela peut être important pour établir un diagnostic et vous donner le bon traitement si nécessaire.
+
+[S'il y a lieu : Ajoutez une section sur
+
+- les soins auxquels le participant peut s'attendre s'il ressent des effets secondaires à la suite de la prise du médicament à l’étude/ du comparateur.
+
+- que se passe-t-il si le participant ne tire aucun bénéfice du médicament à l’étude / du comparateur ?]
+
+  1.  Quels sont les risques ou les désagréments potentiels des examens prévus pendant l'étude ?
+
+[Choisissez entre les deux options suivantes :]
+
+Il n'y a aucun risque connu lié aux examens prévus pendant l'étude.
+
+[ou]
+
+Les examens prévus dans le cadre de l'étude peuvent entraîner les désagréments et les risques suivants : …
+
+[Inclure les risques ou les désagréments les plus importants associés aux examens spécifiques qui seront effectués dans le cadre de l'étude.]
+
+[Pour les études impliquant le prélèvement d'échantillons de sang] Le prélèvement de sang (environ [nombre] ml de sang, [ou] [nombre] tubes de sang) nécessaire à l'analyse de … [à compléter] peut provoquer des douleurs, des saignements, des ecchymoses ou une infection localisée autour du site de prélèvement. De même, certains participants peuvent avoir des vertiges, voire s'évanouir au moment de la procédure. Le personnel qui assurera le prélèvement fera tout ce qui est en son pouvoir pour réduire au maximum ces désagréments.
+
+[Pour les études avec biopsies : préciser le nombre de biopsies, le site dans le corps et les risques par site dans le corps,...]
+
+[Ajoutez les risques, les désagréments et les précautions (e.g. ne pas conduire) liés, par exemple, aux rayons X, à l'IRM, à la biopsie, etc. Ajoutez la dose d’irradiation supplémentaire due aux examens en comparaison au rayonnement naturel et les risques associés à cette dose supplémentaire d’irradiation. Veuillez utiliser comme référence le texte approuvé par l’AFCN accessible via https://www.belnuc.be/tools/ et le lien intitulé « Consensus text on radiation burden for inclusion in ICF concerning diagnostic clinical trials using radiopharmaceuticals in healthy volunteers and patients».]
+
+2.  Est-ce que je peux prendre d'autres médicaments pendant l'étude ?
+
+[S’il y a lieu] Présentez les informations pertinentes relatives aux mises en garde, interactions, précautions ou contre-indications associées à l’utilisation du/des médicament(s) à l’étude/ du comparateur.]
+
+N'hésitez pas à demander à votre investigateur des explications supplémentaires concernant l'utilisation d’autres médicaments et de compléments alimentaires (y compris, entre autres, l'aromathérapie, la phytothérapie, l'homéopathie,...)..
+
+3.  Ma participation à l'étude aura-t-elle d'autres répercussions sur mes activités quotidiennes ?
+
+[S'il y a lieu : Décrivez ici la charge supplémentaire qui pèse sur le patient : changements par rapport à la vie quotidienne ou restrictions au niveau de son style de vie (par ex. interdiction de voyager, de pratiquer une activité physique, de consommer de l'alcool ou du tabac, de consommer certains aliments, boissons...). Ce point est important pour les patients qui souffrent d'une maladie chronique.]
+
+4.  [facultatif] Est-ce que je peux devenir enceinte, concevoir un enfant ou allaiter pendant la durée de l'étude ?
+
+- Pour une femme qui participe à l’étude, il est facile de comprendre que l’exposition au médicament du fœtus en développement peut constituer un risque pour l’enfant à naître.
+
+  Pour un homme qui participe à une étude, la perception du risque est moins évidente. Il convient donc d’expliquer que le médicament pourrait avoir des effets toxiques (néfastes) sur la qualité du sperme et par ce biais, être un risque pour le développement du fœtus en cas de grossesse.
+
+- L’information concernant ces risques doit clairement établir, tant pour une participante féminine qu’un participant masculin, que toute grossesse doit être évitée par la participante ou la partenaire d’un participant.
+
+- S’il n’y a aucune mesure contraceptive à prendre par les participants masculins (absence de risque) pour éviter toute grossesse chez leur partenaire, il y a lieu de le préciser.
+
+  Si des mesures de contraception sont demandées au participant par principe de précaution mais sans connaissance d’un éventuel effet toxique/néfaste sur la qualité du sperme, le participant doit en être informé.
+
+- Prévoyez les mesures à prendre si une grossesse débute malgré tout chez la partenaire d’un participant masculin.
+
+  - Si une grossesse survient chez une partenaire d’un participant, ce dernier doit être motivé à en informer l’investigateur afin de décider de la meilleure option pour elle et le fœtus/bébé. Une option pourra éventuellement entraîner l’inclusion dans un programme de surveillance de cette grossesse.
+
+  - La partenaire enceinte doit être informée de la récolte de données à caractère personnel relatives à la santé (évolution de la grossesse, naissance et premiers mois de vie de l’enfant si d’application).
+
+  - Un DIC séparé, qui doit être révisé par le Comité d’éthique, expliquera les raisons du suivi de la grossesse et donc les risques pour l’enfant à naître. Il présentera également les droits de la participante dans le cadre de (de la participation à) ce programme de surveillance (caractère volontaire de la participation, possibilité de retrait du consentement, protection vie privée, prise en charge des dommages).
+
+  - Dans les situations où le promoteur a des raisons de suspecter un effet toxique, l’information doit être explicite.
+
+  - Il convient également, en fonction de l’importance du risque, d’insister pour que le participant informe sa/ses partenaires qu’il participe à une étude clinique avec un médicament potentiellement toxique/néfaste pour le fœtus et des mesures qu’ils doivent prendre ensemble sur le plan contraceptif.
+
+  - [S'il y a lieu] Tout participant masculin doit alors également être informé qu’il doit impérativement s’abstenir de faire un don de sperme.
+
+- Prévoyez les mesures à prendre si, malgré tout, une grossesse débute chez une participante :
+
+  - Ajoutez les mesures de suivi décrites dans le protocole.
+
+[S'il y a lieu] Cette section s'adresse uniquement aux participantes susceptibles de devenir enceintes ou aux participants susceptibles de rendre leurs partenaires enceintes.
+
+Participante féminine : Etant donné que les effets de [nom du médicament à l’étude et/ou du comparateur] sur l'enfant à naître ou le nourrisson ne sont pas connus, vous ne serez pas autorisée à participer à l'étude si :
+
+- vous êtes enceinte,
+
+- vous souhaitez être enceinte dans un avenir proche ou
+
+- si vous allaitez.
+
+Il est également interdit de faire un don d'ovules pendant et après votre participation à l'étude jusqu'à [nombre] jours/mois après la dernière prise/administration de [nom du médicament à l’étude/ du comparateur] .
+
+Si vous participez à l’étude, vous devrez utiliser une des méthodes de contraception [choisissez : suivantes [ou] autorisées] : pendant l'étude [s'il y a lieu] et jusqu'à [nombre] jours/mois après la dernière dose de l'étude: [s’il y a lieu : énumérez les méthodes autorisées]. Si vous êtes concernée, veuillez discuter de ce sujet avec votre investigateur. Si vous décidez de changer de méthode contraceptive pendant l'étude, veuillez en informer l'investigateur.
+
+Vous devrez faire un test de grossesse [sang/urine] au début de l'étude avant de recevoir la première dose de [nom du médicament à l’étude / du comparateur]. [choisissez :] Si vous n'avez pas vos règles ou si votre cycle menstruel devient irrégulier, vous devrez faire des tests de grossesse répétés. [ou] Il peut être nécessaire de poursuivre les tests pendant et même après toute la phase d'administration du/des médicament(s) de l'étude.
+
+Si malgré tout, vous devenez enceinte pendant l’étude, vous devrez en informer immédiatement l'investigateur et votre médecin traitant. Pour des raisons de sécurité, l'investigateur souhaite suivre votre grossesse et son issue et peut être amené à partager ces données avec le promoteur afin de se conformer à la réglementation sur la surveillance et la communication d'informations relatives à la sécurité du medicament à l’etude.
+
+Participant masculin:
+
+[Exemple en cas de risque] Prendre du [nom du médicament à l’étude / du comparateur] pourrait avoir un effet sur votre sperme et pourrait entraîner un risque inconnu pour un éventuel enfant à naître.
+
+Si vous participez à l’étude, vous devrez utiliser une méthode contraceptive et vous ne pourrez pas donner de sperme pendant toute la durée de l'étude et jusqu'à [nombre ] mois ou [nombre] jours après l'administration de la dernière dose de [nom du médicament testé ou du médicament à l’étude]. Si vous êtes concerné, veuillez discuter de ce sujet avec l'investigateur.
+
+Vous vous engagez à informer votre partenaire féminine de votre participation à cette étude et du risque potentiel pour un enfant à naître.
+
+Si votre partenaire devient malgré tout enceinte pendant l'étude, vous devrez en informer immédiatement l'investigateur. Si vous êtes d'accord, il contactera votre partenaire pour lui demander de suivre sa grossesse et son issue et de signer un consentement éclairé spécifique (pour la partenaire enceinte).
+
+Qu'en est-il si quelque chose se passe mal pendant l'étude ?
+
+Même sans faute, le promoteur est responsable du préjudice qui vous a été causé, qu'il soit directement ou indirectement lié à votre participation à l'étude. Le promoteur a souscrit une assurance appropriée (appelée « assurance responsabilité sans faute »)  pour couvrir cette responsabilité, conformément à la législation européenne et belge en vigueur sur les essais cliniques. Une copie du certificat d'assurance peut être obtenue sur demande adressée à l'investigateur ou au personnel de l'étude.
+
+Si vous (ou, en cas de décès, vos ayants droit) demandez une indemnisation pour un préjudice à votre santé résultant directement ou indirectement de votre participation à l'étude, vous devez en informer votre investigateur ou le personnel de l’étude dans les meilleurs délais.
+
+Si l’investigateur estime qu'il peut y avoir un lien entre le(s) nouveau(x) problème(s) de santé ou l'aggravation de celui-ci (ceux-ci) et votre participation, il en informera le promoteur de l'étude qui se chargera de lancer immédiatement la procédure de déclaration à la compagnie d'assurances. Si la compagnie d'assurances l'estime nécessaire, elle nommera un expert qui sera chargé d'évaluer s'il existe un lien entre votre ou vos problème(s) de santé rapportés et l'étude. [S'il y a lieu] L'assurance ne couvre pas l'évolution naturelle de votre maladie ou de votre affection ni les effets secondaires connus du traitement que vous auriez reçu sans participer à l'étude (c.-à-d. votre traitement standard).
+
+Si vous l'estimeriez utile ou si vous ou vos ayants droit sont en désaccord soit avec l’investigateur, soit avec l'expert nommé par la compagnie d'assurances, vous pouvez contacter ou assigner la compagnie d’assurances. Vous trouverez les coordonnées nécessaires sur la première page de ce formulaire.
+
+Qu'en est-il si d'autres options de traitement ou de nouvelles informations sur le médicament à l’étude ou l’étude sont rendues disponibles pendant l'étude ?
+
+Pendant l'étude, de nouvelles informations importantes peuvent être découvertes et rendues disponibles, ce qui pourrait influer sur votre décision de (continuer à) participer à l'étude. Par exemple, quand d'autres traitements pour votre [affection /maladie] ou de nouvelles informations importantes sur le médicament à l’étude deviennent disponibles. Dans ce cas, il est du devoir de l'investigateur de discuter de ces nouvelles informations avec vous et de vous donner l'occasion de réévaluer votre participation à l'étude.
+
+Si vous décidez de mettre fin à votre participation à l'étude ou si vous n'êtes plus en état d'y participer, l'investigateur veillera à ce que vous continuiez à recevoir les meilleurs soins possibles.
+
+Peut-il être prématurément mis fin à ma participation à l'étude ?
+
+Comme expliqué en détail ci-dessous, il peut être prématurément mis fin à votre participation à l'étude si :
+
+- vous décidez de retirer votre consentement ou d'arrêter le traitement avec le médicament à l'étude,
+
+- l'investigateur décide de mettre fin à votre participation à l'étude ou l'arrêt du traitement par le médicament à l'étude, ou
+
+- d'autres entités interrompent ou mettent fin à l'étude.
+
+Dans tous les cas, s'il est prématurément mis fin à votre participation à l'étude, l'investigateur discutera avec vous de vos soins médicaux ultérieurs. Les données collectées avant la fin de votre participation continueront à être utilisées comme décrit dans ce formulaire. Ceci afin d'éviter de influencer les résultats de l'étude (comme décrit à la section I. § 12.4).
+
+En fonction de votre situation, le chercheur discutera avec vous de la nécessité de visites ou de procédures de suivi.
+
+Si vous ressentez un effet secondaire au moment de l'arrêt du médicament à l’étude, l'investigateur pourra vous contacter ultérieurement afin de vous demander si cet effet secondaire a disparu ou pas après la fin de votre participation à l'étude.
+
+Si vous ressentez un nouvel effet secondaire après la fin de votre participation à l’étude, vous pouvez contacter l'investigateur pour demander un suivi.
+
+1.  Vous décidez de retirer votre consentement
+
+Vous avez le droit de retirer votre consentement pour quelque raison que ce soit et à n'importe quel moment sans devoir justifier votre décision. Cependant, pour votre sécurité, vous devez informer l'investigateur de votre décision. Sans que cela soit obligatoire, il peut être utile pour l'investigateur et pour le promoteur de connaître la raison de votre décision (p. ex. effets secondaires, fréquence des visites cliniques, ...).
+
+Si vous retirez votre consentement, cela signifie que vous décidez d'arrêter :
+
+- le traitement avec le médicament à l’étude, et
+
+- toutes les visites et les examens liés à l'étude.
+
+Plus aucune nouvelle donnée ne sera collectée et transmise au promoteur.
+
+Si vos échantillons biologiques (p.ex. les prélèvements de sang, d’urine) ont déjà été utilisés ou analysés avant le retrait de votre consentement, le promoteur peut en exploiter les résultats.
+
+Les échantillons biologiques qui ont été collectés (mais pas encore testés) avant le retrait de votre consentement et les données qui en résultent peuvent toujours être utilisés par le promoteur. Vous pouvez demander la destruction de ces échantillons. Dans le cas où la destruction de ces échantillons impacterait la validité de l’étude, la destruction pourra être postposée à la fin de l’étude.
+
+[S'il y a lieu] Si vous avez signé un formulaire de consentement additionnel distinct pour l'utilisation de vos échantillons dans le cadre d'une recherche future et que vous choisissez de ne pas retirer ce consentement distinct, vos échantillons pourront continuer à être utilisés dans le cadre de cette recherche.
+
+1.  Vous décidez d’arrêter le traitement avec le médicament à l’étude
+
+Vous pouvez décider d'arrêter le traitement par le médicament à l'étude mais accepter de continuer à participer à l'étude et d'être contacté par le personnel de l'étude.
+
+Si vous décidez d'arrêter le traitement par le médicament à l'étude, vous pouvez continuer à vous rendre aux consultations liées à l'étude. Le personnel de l'étude vous demandera s'il peut vous contacter par téléphone, par courriel ou par courrier pour s'enquérir de votre état de santé général et/ou être en mesure de surveiller les effets secondaires à long terme. Cela se fera environ tous les [nombre] mois jusqu'à la fin de l'étude (date de fin [indiquer la date estimée de fin de l'étude]). Ils pourront également vous demander la permission de rechercher ces informations dans votre dossier médical (ou [si la réglementation locale l'autorise] dans les archives publiques) jusqu'à la fin de l'étude. Ces informations sont importantes pour la valeur scientifique de l'étude et pour l'interprétation correcte de ses résultats. Vous êtes libre de refuser ce contact régulier. Votre décision n'affectera pas vos soins médicaux futurs.
+
+[Dans ce cas, veuillez documenter clairement ce consentement et sa forme (visites, contact téléphonique uniquement, consultation de données publiques, etc.]
+
+2.  L'investigateur décide de mettre fin à votre participation à l'étude ou l'arrêt du traitement par le médicament à l'étude
+
+L'investigateur peut mettre fin à votre participation à l'étude pour les raisons suivantes :
+
+- il/elle est d'avis que c'est mieux pour vous (par exemple, sur la base des résultats de vos tests, si vous développez certains problèmes de santé, si le protocole définit que vous ne devriez pas devenir enceinte et que vous devenez quand même enceinte, ...),
+
+- il/elle estime que vous ne suivez pas les instructions du personnel de l’étude données aux participants,
+
+- pour n'importe quelle autre raison qu'il vous expliquera, ou
+
+- la totalité de l’étude doit être interrompue pour tous les participants (voir section suivante).
+
+  Dans ce cas, le personnel de l’étude vous expliquera pourquoi et assurera un suivi approprié.
+
+1.  D'autres entités peuvent interrompre ou mettre fin à l'étude
+
+Le promoteur et les autorités compétentes belges peuvent interrompre ou mettre fin à l'étude pour les raisons suivantes:
+
+- les informations recueillies montrent que le médicament à l’étude n'est pas efficace (n'apporte pas un niveau suffisant d'amélioration de la santé des participants à l'étude),
+
+- le médicament à l’étude engendre plus d'effets secondaires (graves) que prévu, ou
+
+- toute autre raison qui sera dûment motivée par la partie concernée.
+
+Quel traitement vais-je recevoir après ma participation à l'étude ? 
+
+Après avoir arrêté le traitement avec le médicament à l’étude, l'investigateur évaluera votre état de santé. Si nécessaire, il (elle) vous prescrira le meilleur traitement standard disponible ou vous dirigera vers un autre médecin traitant de votre choix.
+
+[Choisissez l’un des textes suivants]
+
+Le promoteur peut décider de vous donner accès au médicament expérimental après l'étude [cf. Déclaration d’Helsinki, art. 34] :
+
+- si le rapport bénéfice/risque est favorable pour les participants et qu'aucun autre traitement équivalent ou approprié et remboursé n'est disponible sur le marché en Belgique,
+
+- si les autorités de santé compétentes belges approuvent cet accès et,
+
+- à condition que le développement et la fabrication du médicament à l’étude soient poursuivis.
+
+[ou]
+
+Si vous avez participé à l'intégralité de l'étude, l'investigateur pourrait vous proposer de participer à une étude d’extension qui vous permettra de recevoir [nom du médicament à l’étude] pendant une nouvelle période. L’investigateur vous fera cette proposition s’il estime que cette option vous est favorable et que vous répondez aux critères d'inclusion de l'étude d’extension. La participation à cette future étude d'extension est volontaire.
+
+Ma participation à l'étude entraînera-t-elle des frais supplémentaires pour moi ?
+
+1.  Examens et traitements pris en charge par le promoteur
+
+[Le promoteur doit savoir qu'en Belgique, les patients participant à l’étude ne sont pas exclus de la sécurité sociale. Il est interdit de facturer des examens supplémentaires liés à l'étude au participant ou à la sécurité sociale.]
+
+Comme décrit au paragraphe 4, les examens et traitements spécifiques à l'étude ne vous seront pas facturés. Les traitements et examens qui font partie du traitement standard pour votre situation seront à votre charge ou à celle de votre mutualité (sécurité sociale belge).
+
+Le promoteur a pris des dispositions pour indemniser l'hôpital ou le centre d’étude pour les frais suivants :
+
+- le temps consacré à l'étude par l'investigateur et le personnel de l'étude,
+
+- les visites/consultations et tous les examens programmés spécifiques à l'étude,
+
+- le traitement expérimental (le médicament de l’étude, toute autre médication et tout matériel spécifiquement utilisé pour l'étude).
+
+  1.  Autres dépenses prises en charge par le promoteur
+
+[Le promoteur doit informer le participant des éléments suivants :
+
+- Les différents motifs de remboursement et le montant du remboursement offert pour chaque catégorie. Utilisez le tableau ci-dessous à cet effet.
+
+- La forme du remboursement (virement bancaire, fournisseur externe, etc.) doit être définie, y compris les options alternatives.
+
+- Le calendrier et les conditions des paiements].
+
+Vous recevrez un remboursement pour certains coûts liés à votre participation à l'étude. Les compensations reçues par les participants belges dans le cadre de cette étude ne sont pas soumises à l'impôt sur le revenu en Belgique.
+
+Le tableau ci-dessous décrit ce que vous serez remboursé et les montants que vous recevrez. Cette remboursement se fera sous forme de (virement bancaire, fournisseur externe, coupon, carte de paiement, etc.) Le promoteur vous versera votre compensation trimestriellement. [S’il y a lieu] Le promoteur demandera des accusés de réception aux participants. Celles-ci seront collectés par le personnel de l'étude et envoyés au promoteur sous forme codée. Vous avez le droit de revenir sur votre décision concernant toute forme de remboursement, pour quelque raison que ce soit et à tout moment, sans avoir à justifier votre décision. Si vous rencontrez des problèmes pour recevoir votre remboursement, n'hésitez pas à contacter le personnel de l'étude.
+
+Vous recevrez un remboursement pour les dépenses suivantes [Des exemples sont donnés dans le tableau suivant. Supprimer les lignes redondantes.] :
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Type                                                                                                                                                           Montant du remboursement
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------
+  Méthode de contraception obligatoire, crème solaire obligatoire, congélation d'ovules ou de sperme recommandée, restrictions alimentaires obligatoires, etc.   Remboursement des frais réels du patient, montant fixe
+
+  Frais de transport, transport en commun, frais de parking                                                                                                      [nombre] EUR par visite, [nombre] EUR par km
+
+  Repas                                                                                                                                                          [nombre] EUR par visite
+
+  Indemnités compensant l’investissement en temps et l’effort                                                                                                    [nombre] EUR par visite / étude
+
+  Frais d’hôtel                                                                                                                                                  [nombre] EUR par séjour
+
+  …                                                                                                                                                              
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[Veuillez spécifier ici s’il y a besoin des données à caractère personnel pour le remboursement. Il convient de préciser si ces données sont transmises à des fournisseurs externes. Le participant doit toujours avoir la possibilité de faire des choix équivalents en ce qui concerne le remboursement. Par exemple, si un participant ne souhaite pas être remboursé par carte de paiement, il doit avoir la possibilité d'être remboursé par une méthode qui n'implique pas la transmission de données à caractère personnel à un tiers, par exemple un virement bancaire/un bon par l'intermédiaire du centre d'études.). Cette option doit être clairement formulée dans les paragraphes ci-dessous. En outre, le consentement du participant devrait être demandé en remplissant la case prévue à cet effet dans la section II].
+
+[Exemple : Le promoteur a désigné un fournisseur externe qui vous remboursera par [forme de remboursement via le fournisseur externe, par exemple une carte de paiement]. Si le fournisseur a besoin d’ informations personnelles de votre part, il doit traiter vos données conformément à la législation européenne et belge relative à la protection des données. Cette [forme de remboursement] peut être utilisée dans plusieurs magasins. Sur ce site web, vous trouverez une liste de tous les magasins où vous pouvez utiliser le [forme de remboursement] : [site web].
+
+Vous pouvez approuver ou non cette forme de remboursement en cochant la case correspondante dans la section II. Si vous n’êtes pas d’accord, le client remboursera le centre d’études. Le centre d’études, à son tour, vous remboursera aux mêmes taux que ceux mentionnés ci-dessus par [forme de remboursement par le centre d’études, par exemple virement bancaire/ coupon].]
+
+ Quelles sont les données collectées sur moi pendant l'étude et qu'en adviendra-t-il ?
+
+1.  Quelles données sont collectées et traitées pendant l’étude ?
+
+Les données à caractère personnel recueillies et traitées concernent des informations sur votre santé et votre maladie, y compris vos antécédents médicaux, certaines informations de contexte (par exemple, votre âge, votre sexe et votre origine ethnique) et les résultats des examens nécessaires dans le cadre de l'étude.
+
+[Le cas échéant, si des données sur la race et l'ethnicité sont collectées.] Les données raciales et ethniquessont collectées pour s'assurer que les données d'enquête sont traitées par une population aussi large que possible.
+
+[Veuillez respecter à tout moment les principes de minimisation et de proportionnalité des données du RGPD. ]
+
+2.  Comment l'investigateur traite-t-il mes données à caractère personnel ?
+
+L’investigateur (et le personnel de l’étude) est soumis au secret professionnel ou par le biais d'un accord de confidentialité concernant les données recueillies.
+
+Cela signifie qu'il/elle ne révélera jamais votre identité, y compris dans une publication scientifique ou lors d'un exposé, et qu'il codera vos données (Réf.[3]) (cela signifie que remplacera votre identité par un code d’identification dans l'étude) avant de les envoyer au promoteur. En d'autres termes, ce code ne contiendra aucun identifiant personnel ou combinaison d'identifiants tels que le nom, le prénom, les initiales, la date de naissance complète ou partielle, le numéro de dossier, etc. [Une description détaillée du code d'identification doit être incluse dans le protocole.]
+
+Par conséquent, seuls l'investigateur et le personnel de l'étude placé sous la responsabilité de l'investigateur seront capables d'établir un lien entre votre identité et les données transmises tout au long de l'étude, sauf dans le cas des exceptions énumérées au point §12.5.
+
+Les données transmises au promoteur ne permettront pas à celui-ci de vous identifier.
+
+3.  Comment mes données seront-elles traitées ?
+
+[Informations sur la base légale du traitement des données.]
+
+Vos données relatives à l'étude seront traitées conformément à la législation européenne et belge concernant la protection des données.
+
+[Le promoteur est OBLIGÉ de choisir une base légale pour le traitement des données codées. Le choix effectué a des conséquences pour le promoteur et entraîne des obligations. Le choix doit être conforme à la législation belge et européenne.
+
+Il y a 4 bases légales à choisir, indiquées ci-dessous par les lettres a-d. Chaque base légale apporte aux participants certains droits et restrictions, qui sont décrits au paragraphe 12.4].
+
+La raison pour laquelle vos données à caractère personnel peuvent être traitées aux fins de l’étude est qu’elles sont traitées dans le but de mener une recherche scientifique et [choisissez l’une des options suivantes]
+
+- vous avez donné votre consentement. (a)
+
+- nous devons nous conformer à une obligation légale, à savoir [définir l'obligation légale, par exemple le transfert de données vers les autorités compétentes], à laquelle nous [nom(s) du/des responsable(s) du traitement] sommes soumis. (b)
+
+- nous devons nous acquitter d'une tâche [choisissez :] d'intérêt public [ou] accomplie dans le cadre de l’exercice de l'autorité publique qui nous est conférée, et plus précisément [définissez, par exemple le progrès scientifique]. (c)
+
+- nous [nom du responsable du traitement ayant un intérêt légitime] avons des intérêts légitimes parce que [nommez votre intérêt légitime, par exemple l’amélioration de la qualité du produit (Remarque : cela devrait être un intérêt légitime pour le promoteur ! Dans ce cas le promoteur ne peut pas être un organisme public.) ]. (d)
+
+[Il est possible pour le promoteur d'invoquer plusieurs bases de traitement pour une même étude. Néanmoins, une seul base légale peut être choisi pour chaque activité de traitement distincte. Le promoteur ne peut donc pas invoquer plusieurs bases légales pour le même traitement, ni passer d'une base à l'autre. Ce qui est possible, c'est de choisir l'intérêt légitime pour la collecte des données à caractère personnel afin de réaliser l'étude, mais d'invoquer l'obligation légale comme base de traitement pour le rapport de sécurité. Pour chaque activité de traitement, le promoteur doit clairement indiquer la base de traitement qu'il invoque].
+
+[Pour information ,
+
+- le promoteur est responsable de toutes les activités de traitement effectuées avec les données à caractère personnel des participants aux fins de l'étude
+
+- le centre/l’hôpital menant l'étude est responsable de toutes les activités de traitement qu'il effectue avec les données à caractère personnel des participants aux fins de l'étude
+
+- le centre/l’hôpital menant l'étude reste séparément responsable du traitement des données à caractère personnel dans les dossiers médicaux de ses patients en vue de la fourniture de soins médicaux à ses patients et à ses propres fins de recherche universitaire.]
+
+  1.  Est-ce que j'ai accès à mes données collectées et traitées pendant l'étude et est-ce que je peux les rectifier ?
+
+Vous avez le droit de demander à l’investigateur quelles sont les données collectées à votre sujet et quelle est leur utilité dans le cadre de l’étude.
+
+[En fonction de la base légale choisi au paragraphe 12.3, les droits et restrictions suivants sont proposés.
+
+Si la base légale choisie est l'« intérêt légitime » (d), le texte de ce chapitre POURRAIT se présenter comme suit :
+
+« Vous avez le droit de vérifier et d’accéder à vos données à caractère personnel et d’en demander la rectification si elles sont incorrectes. Toutefois, ces droits seront reportés afin que cette étude ne soit plus soumise à l’insu. Il est impossible de faire effacer toutes vos données, de s'opposer à leur traitement ou de faire limiter ce traitement. En effet, cela pourrait fausser les résultats de l’étude. » ]
+
+Vous avez le droit [choisissez parmi les options suivantes]
+
+[Les lettres accolées aux options réfèrent à la base légale décrite ci-dessus. Si par exemple la base légale « consentement (a) » est choisie, le promoteur peut alors supprimer les options suivies par un (a), et ainsi restreindre les droits. Sachez que la limitation de ces droits est une possibilité, mais que cela doit être justifié dans ce document, que ces droits sont susceptibles de rendre impossible ou gravement compromettre la réalisation des objectifs spécifiques, et que de telles dérogations sont nécessaires à la réalisation de ces objectifs.]
+
+Des protections appropriées doivent être mises en place et assurer des mesures techniques et organisationnelles, en particulier pour garantir le respect du principe de minimisation des données. Ces mesures peuvent comprendre le codage, dans la mesure où ces finalités peuvent être atteintes de cette manière. Chaque fois que ces finalités peuvent être atteintes par un traitement ultérieur ne permettant pas ou plus l'identification des personnes concernées, il convient de procéder de cette manière.
+
+Il est vivement recommandé de contacter votre délégué à la protection des données pour connaître les précautions nécessaires et appropriées.]
+
+- de vérifier et d'accéder à ces données (a, b, c, d) ,
+
+- de faire effacer toutes vos données (a, b, c, d) ,
+
+- de recevoir les données à caractère personnel collectées vous concernant. (Ce droit n'est accordé que par la base légale « consentement » et le traitement automatisé - cependant, aucune restriction n'est possible ici.)
+
+- de demander la rectification des données incorrectes (a, b, c, d) ,
+
+- de limiter le traitement de vos données. (a, b, c, d) ,
+
+- de vous opposer au traitement de vos données à caractère personnel (b, d) ,
+
+- de retirer votre consentement au traitement de données à caractère personnel (a). Toutefois, les données à caractère personnel collectées avant le retrait seront conservées pour éviter de fausser les résultats de l’étude [si, après retrait, b, c ou d peuvent être utilisés]
+
+[S'il y a lieu] Le droit [En fonction de la base légale, choisissez parmi les option suivantes, qui ont été présentées ci-dessus comme un droit pour le participant]:
+
+- de vérifier et d'accéder à ces données (a, b, c, d) ,
+
+- de faire effacer toutes vos données (a, b, c, d) ,
+
+- de demander la rectification des données incorrectes (a, b, c, d) ,
+
+- de limiter le traitement de vos données. (a, b, c, d) ,
+
+- de vous opposer au traitement de vos données à caractère personnel (a, b, d)
+
+peut être reporté pour les raisons suivantes …[ajoutez la raison pour laquelle les droits sont limités], y compris pour éviter de fausser les résultats de l’étude (p. ex. en cas d'administration du médicament en aveugle). Veuillez demander à votre investigateur quand vous pourrez avoir accès à vos données à caractère personnel.
+
+[S'il y a lieu] Il n'est pas possible [choisissez parmi les options suivantes celles que vous avez supprimées dans le premier paragraphe]
+
+- de vérifier et d'accéder à ces données (a, b, c, d) ,
+
+- de faire effacer toutes vos données (a, b, c, d) ,
+
+- de demander la rectification des données incorrectes (a, b, c, d) ,
+
+- de limiter le traitement de vos données (a, b, c, d) ,
+
+- de vous opposer au traitement de vos données à caractère personnel (a, b, d) ,
+
+pour les raisons suivantes …[ajoutez la raison pour laquelle les droits sont limités], y compris pour éviter de fausser les résultats de l’étude.
+
+1.  À part l'investigateur et son personnel de l’étude, qui d'autre a accès à mes données à caractère personnel ?
+
+Pour vérifier la qualité de l’étude, il est possible que vos données à caractère personnel non codées ou les informations contenues dans votre dossier médical, pertinentes pour l’étude, soient examinées par des personnes extérieures au personnel de l’étude, mais toujours sous la responsabilité de ce dernier. Ces personnes doivent être soumises au secret professionnel ou à un accord de confidentialité. Les personnes suivantes pourraient donc avoir accès à vos données à caractère personnel :
+
+- le personnel désigné par le promoteur (moniteurs et auditeurs) et les personnes ou les organismes qui fournissent des services au promoteur ou collaborent avec lui. Cependant, ils ne transmettront jamais votre nom et vos coordonnées au promoteur.
+
+- des inspecteurs des autorités de santé compétentes dans le monde entier
+
+- un groupe d'audit indépendant
+
+- des personnes désignées par le Comité d'éthique
+
+Pour les besoins de l'étude clinique, les données de l’étude codées peuvent être envoyées dans d'autres pays membres ou non de l'Union Européen (UE) et peuvent être révisées par
+
+- le personnel (autre que les inspecteurs) des autorités compétentes de la Belgique (l'Agence fédérale des médicaments et des produits de santé, AFMPS) ou d'autres pays de l'UE et hors UE,
+
+- le(s) comité(s) d'éthique belges chargé(s) de l'évaluation,
+
+- des chercheurs extérieurs,
+
+- le promoteur de l’étude, le personnel désigné par le promoteur et les personnes ou organismes qui fournissent des services au promoteur ou qui collaborent avec lui, et/ou
+
+- des sociétés du groupe du promoteur en Belgique et dans d'autres pays de l'UE et hors UE.
+
+La législation européenne et la législation belge relative à la protection des données imposent des règles en cas de transfert de données vers des pays non membres de l’UE. Le promoteur doit s’assurer de la mise en place de garanties équivalentes en matière de protection des données à caractère personnel avant de transférer les données codées de l'étude aux pays non membres de l’UE. À cet effet, s’il existe un accord sur la protection des données, une copie de cet accord peut être obtenue par l'intermédiaire de l'investigateur.
+
+Vous pouvez toujours contacter votre investigateur pour obtenir de plus amples informations sur ces transferts.
+
+1.  [facultatif, uniquement pour les études autologues ATMP] Excepté l'investigateur et son personnel de l’étude, qui d'autre aura accès à mes données dans cette étude autologue ATMP ?
+
+Dans cette étude, le médicament testé est un médicament de thérapie cellulaire autologue (ATMP, advanced therapy medicinal preoduct). L'ATMP est fabriqué à partir de vos propres cellules et est ensuite utilisé, après transformation, comme un médicament réservé à votre propre usage. Ce type d'étude est soumis à des règles spécifiques au niveau de l'accès aux données. Le médecin gestionnaire de l’Établissement de Production qui produit l'ATMP doit avoir accès à certaines données pertinentes collectées à votre sujet sous forme non codée pour pouvoir garantir la qualité, la sécurité et la traçabilité de ce médicament conformément à la législation belge sur l’utilisation de tissus humains.
+
+2.  Qu'adviendra-t-il des résultats de l’étude ?
+
+Après la clôture de l’étude, une description et les résultats de cette étude clinique seront publiés dans des revues médicales spécialisées. Une copie des publications scientifiques [S'il y a lieu : ] ou un résumé compréhensible pour les participants peut être obtenue auprès de l'investigateur ou du personnel de l'étude.
+
+Une description de l'étude sera aussi disponible sur https://euclinicaltrials.eu/search-for-clinical-trials/?lang=fr. Vous pouvez faire des recherches sur ces sites web en tout temps en utilisant les informations indiquées sur la première page du formulaire de consentement éclairé. [Choisissez] Les sites Web comprendront un résumé des résultats dans l'année qui suit la fin de l’étude [OU] [à la date de publication acceptée en cas de demande de report] conformément aux directives de la Commission européenne.
+
+Ces sites web ou ces publications ne contiendront pas d'informations permettant de vous identifier.
+
+[S’il y a lieu, si le promoteur souhaite utiliser les données de l’étude avant la FDA (Réf. [4]] Une description de cette étude clinique est disponible sur https://www.ClinicalTrials.gov, comme l'exige la loi américaine. Ce site web ne contient pas d’informations permettant de vous identifier en tant qu'individu. Il est toutefois possible qu’il présente un résumé des résultats. Vous pouvez effectuer des recherches sur ce site web à tout moment.
+
+3.  Mes données seront-elles utilisées à d'autres fins que l'étude à laquelle je participe ?
+
+[Choisissez :]
+
+Les résultats de l'étude ne seront utilisés que pour répondre aux questions scientifiques de l'étude.
+
+[ou]
+
+Les résultats de l'étude seront utilisés pour répondre aux questions scientifiques de l'étude. De plus, le promoteur aimerait utiliser vos données obtenues dans le cadre de cette étude dans d'autres activités de recherche et développement (et des publications scientifiques associées). Ces activités ne peuvent que concerner :
+
+- La manière dont [nom du médicament à l’étude] fonctionne et le mode d'action du même groupe de molécules ;
+
+- la maladie ou l’affection pour laquelle [nom du médicament à l’étude] est évalué dans le cadre de cette étude ou ;
+
+- d'autres pathologies et problèmes de santé et tests diagnostiques associés qui pourraient tirer un bénéfice de [nom du médicament à l’étude].
+
+Toute recherche supplémentaire en dehors de cette étude et donc non décrite dans les points ci-dessus doit toujours être approuvée par un comité d'éthique belge agréé.
+
+[Lorsque le traitement à une fin autre que celle pour laquelle les données ont été collectées n'est pas fondé sur le consentement de la personne concernée ou sur le droit de l'Union ou le droit d'un État membre, le promoteur, afin de déterminer si le traitement à une autre fin est compatible avec la finalité pour laquelle les données à caractère personnel ont été initialement collectées, tient compte, entre autres:
+
+a) de l'existence éventuelle d'un lien entre les finalités pour lesquelles les données à caractère personnel ont été collectées et les finalités du traitement ultérieur envisagé;
+
+b) du contexte dans lequel les données à caractère personnel ont été collectées, en particulier en ce qui concerne la relation entre les personnes concernées et le promoteur;
+
+c) de la nature des données à caractère personnel, en particulier si le traitement porte sur des catégories particulières de données à caractère personnel, en vertu de l'article 9 du RGDP, ou si des données à caractère personnel relatives à des condamnations pénales et à des infractions sont traitées, en vertu de l'article 10 du RGDP;
+
+d) des conséquences possibles du traitement ultérieur envisagé pour les personnes concernées;
+
+e) de l'existence de garanties appropriées, qui peuvent comprendre le chiffrement ou le codage.
+
+Il est vivement recommandé de contacter votre délégué à la protection des données afin de vous renseigner sur cette compatibilité et de décider si le consentement est la base légale choisie pour le traitement de ces autres activités de recherche et développement, et si la phrase suivante doit être incluse. Pour plus d'informations, consulter les articles 5,6 et 89 du RGDP.]
+
+[S’il y a lieu et si le « consentement » a été choisi comme base légale du traitement des données] Vous pouvez accepter ou refuser l'utilisation de vos données de l’étude à d'autres fins en dehors du contexte de cette étude en cochant la case appropriée au chapitre II.
+
+1.  Combien de temps mes données seront-elles conservées ?
+
+Après la fin de l’étude, vos données codées seront conservées pendant au moins 25 ans pour assurer la validité de la recherche, conformément à la législation européenne sur les études cliniques. Ce sera également le cas si vous mettez prématurément fin à votre participation à l'étude.
+
+Quels échantillons biologiques me prélèvera-t-on pendant l'étude et qu'en adviendra-t-il ?
+
+1.  Quels échantillons biologiques me prélèvera-t-on pendant l'étude ?
+
+Les échantillons biologiques sont des échantillons de matériel corporel humain.
+
+Dans cette étude, les échantillons biologiques suivants seront prélevés : [précisez brièvement]
+
+La procédure de codage de vos échantillons biologiques est la même que celle utilisée pour vos données à caractère personnel conformément à la législation sur l’utilisation de tissus humains (voir I §12.3). Les échantillons envoyés au promoteur ou aux organisations qui travaillent en collaboration avec le promoteur ne seront donc étiquetés qu'avec votre code d'identification lié à l'étude. La traçabilité sera assurée par le promoteur. L'utilisation de vos échantillons biologiques est liée au traitement des données personnelles codées qui y sont associées.
+
+Vos échantillons biologiques sont considérés comme un « don ». Vous ne retirerez aucun bénéfice financier lié au développement de nouvelles thérapies, dérivées de l’utilisation de vos échantillons biologiques, qui pourraient avoir une valeur commerciale.
+
+2.  Qu'adviendra-t-il des échantillons biologiques prélevés dans le cadre de l’étude ?
+
+Ces échantillons biologiques seront analysés aux fins de l'étude.
+
+[Si les échantillons résiduels sont appelés à être détruits, reprenez le texte : ] Vos échantillons biologiques résiduels seront détruits une fois que les analyses auront été réalisées dans le cadre de cette étude.
+
+[En cas de la conservation d’échantillons pour leur utilisation dans le cadre de l’étude, ajoutez les phrases suivantes :]
+
+Les progrès scientifiques dans ce domaine étant constants, le promoteur souhaite, avec votre consentement, conserver vos échantillons biologiques résiduels pendant [nombre] ans. Ces échantillons serviront dans des recherches futures qui restent dans le domaine de cette étude clinique et qui concernent donc la même maladie ou le même traitement/médicament que cette étude.
+
+[Si la conservation des échantillons pour leur utilisation dans le cadre de l’étude est facultative : ] Vous pouvez accepter ou refuser que vos échantillons résiduels soient conservés pour des recherches futures qui restent dans le domaine de cette étude clinique en cochant la case correspondante dans la section II.
+
+[En cas de prélèvements d’échantillons supplémentaires dans le cadre de l’étude, ajoutez les phrases suivantes :]
+
+Avec votre consentement, le promoteur aimerait également vous inviter à participer à des recherches supplémentaires qui restent dans le contexte de l’étude clinique actuel et qui portent donc sur la même maladie ou le même traitement/médicament que dans le cadre de cette étude.
+
+Votre participation à ces recherches supplémentaires est facultative et impliquera un don de matériel supplémentaire. Les échantillons biologiques supplémentaires seront conservés pendant [nombre] ans. Cela concerne les échantillons suivants : [ajoutez les échantillons matériel biologiques supplémentaires à collecter].
+
+[Choisissez :] Vous trouverez des informations plus détaillées sur cette recherche supplémentaire au chapitre [nombre], section [nombre]. Vous pouvez accepter ou refuser de donner du matériel biologique supplémentaire et de participer à la recherche décrite en cochant la case appropriée au chapitre II.
+
+[ou]
+
+Nous vous fournirons des renseignements spécifiques à cette recherche dans un formulaire de consentement éclairé distinct. Si vous souhaitez participer à cette recherche supplémentaire, nous vous demandons de signer ce formulaire de consentement éclairé séparément.
+
+[En cas d'analyses génétiques dans le cadre de l'étude, insérez les phrases suivantes: ]
+
+[Choisissez :]
+
+Des analyses génétiques seront également effectuées sur vos échantillons. Les analyses génétiques sont des recherches de l’ADN. L’ADN détermine, par exemple, la couleur de nos cheveux et de nos yeux. L’ADN peut aussi expliquer pourquoi certaines personnes répondent à certains médicaments et d’autres non. Il peut également expliquer pourquoi certaines personnes sont atteintes de certaines maladies et d’autres pas. Le but de ces analyses dans le cadre de cette étude est … [expliquez-en le but].
+
+Ces analyses génétiques nous fourniront des informations essentielles pour l’étude. Si vous ne voulez pas que ces analyses soient effectuées, vous ne serez pas autorisé à participer à l'étude.
+
+[ou]
+
+[choisissez :] Vous pouvez accepter ou refuser de participer à cette analyse génétique en cochant la case appropriée au Chapitre II. Le but de ces analyses est de… [expliquez-en le but].
+
+3.  Est – ce que mes échantillons biologiques seront utilisés pour des recherches en dehors du contexte de cette étude?
+
+[Lorsqu’il n’y a pas de prélèvements d’échantillons supplémentaires et les échantillons résiduels sont appelés à être détruits ou utilisés uniquement dans le cadre de l’étude, ce paragraphe 13.3 peut être supprimé.]
+
+[Remarque : les échantillons biologiques visés par ce paragraphe doivent être enregistrés dans une biobanque belge accréditée.]
+
+[En cas d'utilisation secondaire des échantillons, cela signifie qu’en cas de recherches supplémentaires qui ne concernent pas la même maladie ou le même traitement/médicament que cette étude, ajoutez les phrases suivantes :]
+
+[Si les échantillons résiduels seront utilisés pour des recherches supplémentaires en dehors du contexte de cette étude, ajoutez la phrase suivante :]
+
+Vous pouvez accepter ou refuser la conservation par le promoteur de vos échantillons biologiques résiduels pendant [nombre] ans pour des recherches supplémentaires en dehors du contexte de cette étude en cochant la case appropriée dans la section II.
+
+[En cas de prélèvements d’échantillons supplémentaires pour des recherches complémentaires en dehors du contexte de cette étude, ajoutez les phrases suivantes :]
+
+Vous pouvez accepter ou refuser que des échantillons supplémentaires soient prélevés sur vous et que ces échantillons soient conservés pendant [nombre] ans pour des recherches supplémentaires en dehors du contexte de cette étude en cochant la case appropriée dans la section II.
+
+Si vous acceptez, cette recherche supplémentaire ne pourra être effectuée que selon la loi sur le matériel corporel humain et avec l’approbation d’un comité d’éthique belge agréé.
+
+[En cas d'analyses génétiques en dehors du contexte de l'étude, insérez les phrases suivantes: ]
+
+Vous pouvez aussi accepter ou refuser que des analyses génétiques soient effectuées sur vos échantillons biologiques en dehors du contexte de cette étude en cochant la case appropriée dans la section II. Le but de ces analyses est de… [Expliquez-en le but]
+
+[Si vous souhaitez artificialiser des échantillons biologiques résiduels ou supplémentaires ou en produire/obtenir des extraits, uniquement dans le cadre de recherches non génétiques en dehors du contexte de cette étude, insérez les paragraphes suivants :]
+
+Avec votre consentement, le promoteur souhaite produire ou cultiver du matériel (par exemple des lignées ou des cultures cellulaires) à partir de vos échantillons biologiques supplémentaires ou résiduels, ou en obtenir du matériel qui ne contient pas de cellules (par exemple des protéines ou de l'ADN) et utiliser ce matériel uniquement dans le cadre de recherches non génétiques en dehors du contexte de cette étude. Dans ce cas, le promoteur rompra le lien entre vos échantillons biologiques et votre identité, comme expliqué ci-dessous au point 13.4.
+
+Vous pouvez accepter ou refuser la création/la culture de matériel à partir de vos échantillons biologiques supplémentaires ou résiduels uniquement dans le cadre de recherches non génétiques en dehors du contexte de cette étude en cochant la case correspondante dans la section II.
+
+4.  [S’il y a lieu] Est – ce que le lien entre mes échantillons biologiques et mon identité peut être rompu ?
+
+[Si les échantillons biologiques ne pourront plus être tracés, insérez les paragraphes suivants. La non – traçabilité des échantillons biologiques ne peut se faire qu’avec le consentement explicite du donneur.]
+
+Si vous êtes d’accord, il ne sera plus possible d’établir un lien entre vos échantillons biologiques et votre identité, une fois qu’ils auront été utilisés dans le cadre de cette étude.
+
+Par conséquent, il ne sera plus possible de vous informer des informations potentiellement importantes obtenues à partir des analyses de vos échantillons.
+
+Vous ne pourrez plus non plus retirer votre consentement à l'utilisation des échantillons ou demander la destruction de vos échantillons.
+
+Vous pouvez accepter ou refuser qu’il n’y aura plus de lien entre vos échantillons biologiques et votre identité après l’utilisation de vos échantillons dans le cadre de cette étude en cochant la case correspondante dans la section II.
+
+Que se passe-t-il en cas de découverte d’informations pertinentes sur ma santé pendant l’étude ?
+
+Il peut arriver que nous découvrions de nouvelles informations sur votre santé pendant l’étude. Si cette information peut être importante pour votre santé, le promoteur en informe l'investigateur. Avec votre consentement, l'investigateur vous informera, vous et votre médecin traitant, de vos résultats et de leurs conséquences potentielles. Si nécessaire, l'investigateur et/ou le médecin traitant vous conseilleront sur les étapes suivantes.
+
+Vous pouvez déclarer au chercheur si vous acceptez ou refusez d’être informé d’informations importantes concernant votre santé en cochant la case correspondante dans la section II. Dans tous les cas, l’investigateur/votre médecin traitant vous communiquera ces informations si le fait de ne pas les connaître risque de nuire gravement à votre santé ou à celle de tiers.
+
+Qui a révisé et approuvé les documents de l’étude ?
+
+Les documents de l’étude ont été révisés :
+
+- par les autorités de santé compétentes belges  (AFMPS) ou, le cas échéant, par les autorités de santé nationales compétentes d’autres états membres de l’UE, et
+
+- par un Comité d'éthique belge indépendant
+
+Les autorités compétentes et les comités d'éthique ont pour tâche de protéger les personnes qui participent à une étude. Les autorités compétentes veilleront à ce que l’étude soit menée conformément à la législation applicable.
+
+Vous ne devez, en aucun cas, considérer leur approbation comme une incitation à participer à l'étude.
+
+CHAPITRE II - Consentement éclairé
+
+Le titre officiel de l'étude pour les personnes profanes tel qu'il apparaît dans la base de données EUDRACT
+
+[Remarque générale pour le promoteur : Cette section ne peut contenir que les informations mentionnées dans les sections précédentes du présent document.]
+
+PARTICIPANT 
+
+[Limitez cette section à maximum 3 pages.]
+
+Conditions préalables à votre participation à l’étude
+
+- Je déclare avoir lu ce formulaire et avoir compris les informations dedans.
+
+- Je déclare avoir été informé et avoir compris le but de l’étude clinique, sa durée, ses risques et désagréments éventuels, les précautions que je dois prendre et ce que l'on attend de moi. On m'a expliqué et j'ai compris mes droits en tant que participant à une étude.
+
+- J'ai disposé de suffisamment de temps pour y réfléchir et en discuter avec une personne de confiance (amis, parents, médecin traitant, ...).
+
+- J’ai eu l’occasion de poser toutes les questions qui me sont venues à l’esprit et j’ai obtenu une réponse satisfaisante à mes questions.
+
+- Je comprends que je participerai à cette étude volontairement et sans aucune contrainte, et que je suis libre de mettre fin à ma participation à l’étude à tout moment.
+
+- J’ai compris que des données me concernant seront récoltées et que la confidentialité est garantie comme décrit au chapitre I, §12.2.
+
+- [si le « consentement » est choisi comme base légale, utilisez :] J'accepte que mes données à caractère personnel soient traitées comme décrit au chapitre I, §12.
+
+- [Si l'« intérêt public » est choisi comme base juridique, utiliser :] Je suis conscient que mes données à caractère personnel sont traitées comme décrit au chapitre I, § 12.
+
+- Je comprends que les représentants du promoteur, du comité d'éthique et des autorités sanitaires compétentes ont accès à mon dossier médical s'ils y sont autorisés (comme décrit au chapitre I, § 12.6)
+
+- Je comprends que le promoteur a souscrit une assurance au cas où je subirais des dommages en rapport avec ma participation à cette étude.
+
+- Je comprends qu’en participant à cette étude, je n'encourrai aucun frais à l’exception des frais liés au traitement standard que requiert ma maladie.
+
+- (s'il y a lieu) Je comprends l'importance de la contraception et je suivrai les recommandations données. J'informerai également mon (mes) partenaire(s) de ma participation à un essai clinique avec un médicament potentiellement dangereux pour le fœtus, et de prendre ensemble les mesures contraceptives nécessaires.
+
+- J'accepte que mon/mes médecin(s) traitant(s) soi(en)t informé(s) de ma participation à cette étude.
+
+- Si je participe à une autre étude interventionnelle, je dois en informer l'investigateur ou le personnel de l'étude. J'accepte de ne pas participer simultanément à une autre étude interventionnelle (par exemple avec un médicament à l'étude, un dispositif médical, une technique chirurgicale expérimentale) sans en avoir informé l'investigateur ou le personnel de l’étude, qui pourrait alors refuser ma participation pour une raison motivée.
+
+- Je comprends que je dois coopérer et suivre les instructions de l'investigateur et du personnel de l’étude concernant l’étude.
+
+- Je comprends qu'il peut être mis fin à ma participation à l’étude sans mon consentement si j'ai besoin d'un autre traitement, si je ne suis pas le plan de l’étude, si je subis un dommage en lien avec ma participation à l’étude ou pour toute autre raison justifiée.
+
+- [En cas d'analyses génétiques obligatoires]· Je comprends que des analyses génétiques soient effectuées sur mes échantillons biologiques.
+
+- Je certifie que tous les renseignements que j'ai fournis au sujet de mes antécédents médicaux sont exacts, à ma connaissance. Je comprends qu'il peut m'être préjudiciable de ne pas informer le chercheur des éventuelles raisons pour lesquelles je ne devrais pas participer à l'étude.
+
+Consentements facultatifs qui ne constituent pas une condition préalable à votre participation à cette étude.
+
+REMBOURSEMENT PAR L’INTERMEDIAIRE D’UN FOURNISSEUR EXTERNE
+
+1.  [Si l'indemnisation peut être organisée par l'intermédiaire d'un fournisseur externe pour lequel des données à caractère personnel sont collectées] Comme indiqué au chapitre I, §11.2, vous pouvez recevoir votre compensation par [forme de compensation par l'intermédiaire d'un fournisseur externe, par exemple une carte de débit] et un fournisseur externe appelé [fournisseur externe] devra traiter certaines données à caractère personnel vous concernant. Si vous n'acceptez pas de partager vos données personnelles et/ou de recevoir votre compensation sous cette forme, le promoteur remboursera le centre d'études. Le centre d'études vous remboursera à son tour aux mêmes taux que ceux mentionnés ci-dessus par [forme de compensation par le centre d'études, p. ex. virement bancaire/bon d'échange].
+
+  Êtes – vous d’accord avec la communication de vos données à caractère personnel à un fournisseur externe [fournisseur externe] pour le paiement de votre indemnisation par [forme d'indemnisation, par exemple carte de débit] ?
+
+(Cochez la case appropriée.)
+
++---------------------------------+---------------------------------+
+|   ☐ Je suis d'accord            |   ☐ Je ne suis pas d'accord     |
++:================================+=================================+
+
+DONNÉES DE L’éTUDE
+
+2.  [S’il y a lieu et si le « consentement » a été choisi comme base légale pour le traitement des données] Comme indiqué au chapitre I, §12.8, le promoteur souhaite pouvoir utiliser vos données issues de cette étude dans le cadre d'autres activités de recherche et développement (et des publications scientifiques associées) à condition que ces objectifs de recherche aient été approuvés par un comité d'éthique belge agréé.
+
+  Êtes-vous d'accord avec l'utilisation de vos données obtenues dans le cadre de cette étude à d'autres fins de recherche ?
+
+  (Cochez la case appropriée)
+
++---------------------------------+---------------------------------+
+|   ☐ Je suis d'accord            |   ☐ Je ne suis pas d'accord     |
++:================================+=================================+
+
+LES ÉCHANTILLONS BIOLOGIQUES DANS LE CADRE DE L’ÉTUDE
+
+3.  [Si des analyses génétiques facultatives sont prévues dans le protocole de l’étude en cours] Comme indiqué au chapitre I, § 13.2, le promoteur procédera à l’analyse génétique de vos échantillons biologiques dans le cadre de l’étude à laquelle vous allez participer.
+
+  Êtes-vous d'accord pour que le promoteur effectue une analyse génétique sur vos échantillons biologiques dans le cadre de l’étude?
+
+  (Cochez la case appropriée.)
+
++---------------------------------+---------------------------------+
+|   ☐ Je suis d'accord            |   ☐ Je ne suis pas d'accord     |
++:================================+=================================+
+
+4.  [Si la conservation des échantillons biologiques résiduels aux fins de recherches supplémentaires dans le cadre de l’étude est facultative] Comme indiqué au chapitre I, §13.2, le promoteur souhaiterait conserver vos échantillons biologiques résiduels pendant [nombre] ans pour des recherches supplémentaires dans le cadre de l’étude à laquelle vous allez participer.
+
+  Êtes-vous d'accord avec la conservation de vos échantillons biologiques résiduels pour des recherches supplémentaires dans le cadre de l’étude ?
+
+(Cochez la case appropriée.)
+
++---------------------------------+---------------------------------+
+|   ☐ Je suis d'accord            |   ☐ Je ne suis pas d'accord     |
++:================================+=================================+
+
+5.  [S’il y a lieu] Comme indiqué au chapitre I, § 13.2, le promoteur souhaite prélever des échantillons biologiques supplémentaires sur vous, et les conserver pendant [nombre] ans pour des recherches complémentaires dans le cadre de l’étude à laquelle vous participerez.
+
+  Êtes-vous d'accord pour que des échantillons biologiques supplémentaires soient prélevés sur vous et que ces échantillons soient conservés à des fins de recherche supplémentaire dans le cadre de l’étude ?
+
+(Cochez la case appropriée.)
+
++---------------------------------+---------------------------------+
+|   ☐ Je suis d'accord            |   ☐ Je ne suis pas d'accord     |
++:================================+=================================+
+
+LES ÉCHANTILLONS BIOLOGIQUES EN DEHORS DU CONTEXTE DE L’ÉTUDE
+
+6.  [S'il y a lieu] Comme indiqué au chapitre I, § 13.3, le promoteur souhaite conserver vos échantillons biologiques résiduels pendant [nombre] ans pour des recherches supplémentaires en dehors du contexte de l’étude à laquelle vous participez.
+
+  Êtes-vous d'accord pour que vos échantillons biologiques résiduels et les données personnelles y associées soient conservés pour des recherches supplémentaires en dehors du contexte de l’étude à laquelle vous participez ?
+
+  (Cochez la case appropriée.)
+
++---------------------------------+---------------------------------+
+|   ☐ Je suis d'accord            |   ☐ Je ne suis pas d'accord     |
++:================================+=================================+
+
+7.  [S’il y a lieu] Comme indiqué au chapitre I, § 13.3, le promoteur souhaite prélever des échantillons biologiques supplémentaires sur vous, et les conserver pendant [nombre] ans pour des recherches supplémentaires en dehors du contexte de l’étude à laquelle vous participerez.
+
+  Êtes-vous d'accord pour que vos échantillons biologiques supplémentaires soient conservés pour des recherches supplémentaires en dehors du contexte de l’étude ?
+
+(Cochez la case appropriée.)
+
++---------------------------------+---------------------------------+
+|   ☐ Je suis d'accord            |   ☐ Je ne suis pas d'accord     |
++:================================+=================================+
+
+8.  [S’il y a lieu] Comme indiqué au chapitre I, § 13.3, le promoteur voudrait procéder à l’analyse génétique de vos échantillons biologiques en dehors du contexte de l’étude à laquelle vous allez participer.
+
+  Êtes-vous d'accord pour que le promoteur effectue une analyse génétique sur vos échantillons biologiques en dehors du contexte de l’étude ?
+
+(Cochez la case appropriée.)
+
++---------------------------------+---------------------------------+
+|   ☐ Je suis d'accord            |   ☐ Je ne suis pas d'accord     |
++:================================+=================================+
+
+9.  [S’il y a lieu] Comme indiqué au chapitre I, § 13.3, page […] le promoteur souhaite produire ou cultiver du matériel (par exemple des lignées ou des cultures cellulaires) à partir de vos échantillons biologiques supplémentaires ou résiduels, ou en obtenir du matériel qui ne contient pas de cellules (par exemple des protéines ou de l'ADN) et utiliser ce matériel uniquement dans le cadre de recherches non génétiques en dehors du contexte de cette étude.
+
+Êtes-vous d’accord avec la création/la culture de matériel à partir de vos échantillons biologiques supplémentaires ou résiduels uniquement dans le cadre de recherches non génétiques en dehors du contexte de cette étude ?
+
+(Cochez la case appropriée.)
+
++---------------------------------+---------------------------------+
+|   ☐ Je suis d'accord            |   ☐ Je ne suis pas d'accord     |
++:================================+=================================+
+
+LE LIEN ROMPU ENTRE LES ÉCHANTILLONS BIOLOGIQUES ET L’IDENTITÉ
+
+10. [S’il y a lieu]. Comme indiqué au chapitre I, § 13.4., le promoteur souhaite rompre le lien entre vos échantillons biologiques et votre identité après l’utilisation de vos échantillons dans le cadre de cette étude.
+
+  Êtes-vous d'accord qu’il ne soit plus possible d’établir un lien entre votre identité et vos échantillons biologiques, une fois qu’ils auront été utilisés dans le cadre de cette étude ?
+
+  (Cochez la case appropriée.)
+
++---------------------------------+---------------------------------+
+|   ☐ Je suis d'accord            |   ☐ Je ne suis pas d'accord     |
++:================================+=================================+
+
+INFORMATIONS PERTINENTES
+
+11. Comme décrit au chapitre I, § 14 il peut arriver que l'on trouve des informations pertinentes qui peuvent être importantes pour votre santé ou celle de tiers.
+
+  Si cela se produit : voulez-vous que l'investigateur ou votre médecin traitant vous en informe?
+
+(Cochez la case appropriée.)
+
++--------------------------------------+---------------------------------+
+|   ☐ Non, je ne veux pas être informé |   ☐ Oui, je veux être informé   |
++:=====================================+=================================+
+
+Je consens à participer à l’étude, [si le participant doit répondre à des questions facultatives : ] avec les restrictions ci-dessus , et j'ai reçu une copie signée et datée de toutes les pages du présent document.
+
+Nom et prénom du participant :
+
+Date (JJ/MMM/AAAA) :
+
+[si la sélection et la randomisation ont lieu le même jour] Heure :
+
+Signature du participant :
+
+[Si l’étude peut enrôler des personnes incapables de donner leur consentement.] REPRÉSENTANT LÉGAL (RÉF. [5])
+
+Je déclare avoir été informé de la demande qui m'a été faite de décider de la participation ou pas à l’étude clinique de la personne que je représente, en tenant compte de son intérêt supérieur et de ses souhaits probables. Mon consentement s’applique à tous les items repris dans le consentement du participant.
+
+[Dans les situations où l'incapacité est temporaire.]
+
+J'ai également été informé que dès que la situation clinique le permettra, la personne que je représente sera mise au courant de sa participation à une étude clinique et sera libre, à ce moment, de consentir à poursuivre cette participation ou d'y mettre un terme en signant ou refusant de signer le présent document de consentement.
+
+J'ai reçu une copie signée et datée du présent document.
+
+Nom et prénom du représentant légal:
+
+Relation avec le participant:
+
+Date (JJ/MMM/AAAA) :
+
+[si la sélection et la randomisation ont lieu le même jour] Heure :
+
+Signature du représentant légal :
+
+[Si un témoin / interprète est présent.] Témoin impartial / interprète (Réf.[6]) 
+
+Je, soussigné(e) (cochez la case appropriée),
+
+☐ Témoin impartial
+
+☐ Interprète
+
+déclare avoir été présent(e) durant tout le processus d’information au participant et je confirme que l'information sur les objectifs et les procédures de l’étude a été fournie de manière adéquate, que le participant (ou son représentant légal) a apparemment compris en quoi consistait l’étude et que le consentement à participer à l’étude a été donné librement. 
+
+Je déclare, en outre, qu'en tant que témoin impartial/interprète, je suis indépendant du promoteur et de l'investigateur.
+
+Nom et prénom du témoin impartial / de l'interprète :
+
+Qualification du témoin impartial / de l'interprète :
+
+Date (JJ/MMM/AAAA) :
+
+[si la sélection et la randomisation ont lieu le même jour] Heure :
+
+Signature du témoin impartial / de l'interprète :
+
+INVESTIGATEUR
+
+[L'investigateur est le médecin ou le dentiste qui a mené ou supervisé l'entretien avec le participant. Il ne s’agit pas nécessairement de l'investigateur principal du centre de l’étude. Si un autre membre du personnel de l’étude participe également à l'entretien avec le participant, cette personne peut également signer le DIC en tant que délégué. Néanmoins, l'investigateur est toujours le dernier à signer.]
+
+Je, soussigné, l'investigateur, confirme que :
+
+- le participant a reçu verbalement les informations nécessaires au sujet de l’étude, a reçu des explications sur le contenu de l’étude et a reçu un original signé du présent document.
+
+- J’ai vérifié si le participant a compris l’étude.
+
+- J'ai laissé suffisamment de temps au participant pour décider de participer ou pas à l’étude et poser ses questions.
+
+- Aucune pression n'a été exercée pour que le participant accepte de participer à l’étude.
+
+- Je travaille en accord avec les principes éthiques énoncés dans la dernière version de la « Déclaration d’Helsinki », des « Bonnes pratiques Cliniques » et de la loi belge concernant les études cliniques.
+
+[Signature facultative d'un délégué]
+
+Nom et prénom du délégué de l'investigateur :
+
+Qualification du délégué de l'investigateur :
+
+Date (JJ/MMM/AAAA) :
+
+[si la sélection et la randomisation ont lieu le même jour] Heure :
+
+Signature du délégué de l'investigateur :
+
+[Signature obligatoire de l'investigateur]
+
+Nom et prénom de l'investigateur :
+
+Date (JJ/MMM/AAAA) :
+
+[si la sélection et la randomisation ont lieu le même jour] Heure :
+
+Signature de l'investigateur :
+
+GLOSSAIRE
+
+[Ajoutez dans ce chapitre une explication de termes peut-être difficiles à comprendre pour le participant sans formation médicale. Toute abréviation doit être écrite en entier dans le texte lorsqu'elle est utilisée pour la première fois.]
+
+AFMPS : l'Agence fédérale des médicaments et des produits de santé.
+
+APD : L'autorité de protection des données veille à ce que les données à caractère personnel soient utilisées et sécurisées soigneusement, et que votre vie privée future soit également garantie.
+
+Autres abréviations apparaissant dans le texte :
+
+Assurance responsabilité « sans faute » :
+
+Le promoteur sera responsable de tout préjudice ou dommage subi par le participant, directement ou indirectement liés à l'étude clinique. Vous n'avez pas à prouver qu'il y a eu erreur à cet égard.
+
+moniteur et auditeur
+
+Le moniteur et l'auditeur travaillent pour le promoteur.
+
+Le moniteur assure un contrôle de qualité continu tout au long de l’étude. L'auditeur mène une enquête indépendant et ponctuel à un moment précis au cours de l'étude. Ils vérifient si l’étude est / a été réalisée conformément au protocole, si les données rapportées sont fiables et si l’étude est conforme aux lois applicables.
+
+RÉFÉRENCES
+
+[1] La définition d'une étude d'intervention se trouve dans le document Questions et Réponses de la Commission européenne (version provisoire), qui se trouve à son tour dans Eudralex Volume 10, Chapitre V, accessible via le lien suivant : https://ec.europa.eu/health/documents/eudralex/vol-10_en#fragment1.
+
+[2] Conformément à l'article 74 du règlement 536/2014 et à l'article 12, §2 de la loi belge du 7 mai 2017 relative aux essais cliniques de médicaments à usage humain, le promoteur ou un représentant légal du promoteur doit être installé dans l'Union européenne.
+
+[3] Dans notre document, le terme « coder »  est utilisé comme synonyme de « pseudonymiser » qui correspond au terme utilisé dans le règlement général sur la protection des données (RGPD) n° 2016/679.
+
+[4] Si le promoteur souhaite utiliser les données pour la FDA, cette phrase doit être incluse dans le DIC (CFR 50.25(c)) comme décrit dans la directive (https://www.fda.gov/downloads/regulatoryinformation/guidances/ucm291085.pdf).
+
+[5] Lorsqu’un adulte est incapable d’exprimer sa volonté, il faut faire appel à un représentant légal déterminé par ordre successif (personne que le patient a préalablement désignée pour le représenter, administrateur ou, à défaut, conjoint cohabitant, partenaire cohabitant légal, partenaire cohabitant de fait, enfant majeur, un parent, un frère ou une sœur adulte). Si la personne qui peut décider au nom du second ne souhaite pas non plus le faire ou est absente, le professionnel concerné, s’il y a lieu en concertation pluridisciplinaire, représente les intérêts du patient. La réglementation est prévue à l'article 11 de la loi du 7 mai 2017 concernant les expérimentations sur la personne humaine et aux articles 12 et 14 de la loi du 22 août 2002 sur les droits des patients.
+
+[6] Le recours à un témoin impartial est nécessaire lorsque le sujet ou son représentant légal parle et/ou comprend parfaitement la langue du formulaire de consentement éclairé approuvé, mais ne peut ni lire ni écrire en raison d'un handicap physique ou d'une déficience visuelle. Un interprète est nécessaire lorsque l'investigateur ne parle pas la langue du patient.

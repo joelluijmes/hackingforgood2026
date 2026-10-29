@@ -1,0 +1,825 @@
+INFORMATION SHEET AND INFORMED CONSENT FORM FOR PARENTS/GUARDIANS
+
+FORUM2 - Sub- study FORUX - Randomisation 2 (R2)
+
+A Comparison of ruxolitinib plus corticosteroids versus corticosteroids alone in children with ALL and treatment-naïve grade II-IV Graft versus Host Disease following allogeneic Hematopoietic stem cell transplantation
+
+Official title of the trial: FORUM2 – Framework for Optimizing, Refining, and Unifying Management of HSCT in Pediatric ALL
+
+EU number: 2025-522052-13-00
+
+Trial number: FORUM2
+
+Sponsor(s) of the trial: Ospedale Pediatrico Bambino Gesù, IRCCS, Piazza di Sant’Onofrio 4, Rome, Italy
+
+Site name: official name of site
+
+Main address of site: address of site
+
+Who can I contact in case of questions?
+
++---------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+| Name                | Function                                                                                      | In case of                                                                 | Contact details                                                     |
++=====================+===============================================================================================+============================================================================+=====================================================================+
+| Surname, First name | Principal Investigator of the site                                                            | Information, problems or concerns                                          | Phone N°, E-mail                                                    |
++---------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+|                     | The trial staff                                                                               | Information, problems, concerns                                            | Phone N°, E-mail                                                    |
++---------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+|                     | Contact for urgent study-related questions                                                    | Urgent information, problems, concerns                                     | Phone N°                                                            |
++---------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+|                     | Ombudsperson for patient rights of the site [and if not possible contact the CT College.]     | Concerns/ questions about your rights as a participant in a clinical trial | Phone N° from the site [if not possible: ct-college@health.fgov.be] |
++---------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+| Amlin Insurance     | Insurance Company of the sponsor                                                              | In case of disagreement or complaint on a damage claim                     | Policy N°: 299.053.700                                              |
+|                     |                                                                                               |                                                                            |                                                                     |
+|                     |                                                                                               |                                                                            | Address: Koning Albert II-laan 37                                   |
+|                     |                                                                                               |                                                                            |                                                                     |
+|                     |                                                                                               |                                                                            | 1030 Brussel                                                        |
+|                     |                                                                                               |                                                                            |                                                                     |
+|                     |                                                                                               |                                                                            | Phone N°: 02 894 70 00                                              |
+|                     |                                                                                               |                                                                            |                                                                     |
+|                     |                                                                                               |                                                                            | E-mail: klachtenmanagement.be                                       |
+|                     |                                                                                               |                                                                            | @msamlin.com                                                        |
++---------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+|                     | Data protection officer of the site [or if not possible: Contact person for data protection.] | Questions about the confidentiality of your data                           | Phone N°                                                            |
+|                     |                                                                                               |                                                                            |                                                                     |
+|                     |                                                                                               |                                                                            | E-mail: e-mail                                                      |
++---------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+|                     | Belgian Data Protection Authority                                                             | Complaints relating to the confidentiality of your data                    | +32(0)2274 48 00                                                    |
+|                     |                                                                                               |                                                                            |                                                                     |
+|                     |                                                                                               |                                                                            | E-mail : contact@apd-gba.be                                         |
++---------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+
+● To manage complaints not resolved by the investigator, you can contact the study centre ombudsman at the above address.
+
+● According to the GDPR, you have the right to access the processing of your child’s data. For questions about this, you can contact the Study Centre's Data Protection Officer at the above address.
+
+● You also have the right to lodge a complaint about the way your child’s data are processed with the Belgian supervisory authority responsible for compliance with data protection legislation: Data Protection Authority (GBA), above.
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| The trial at a glance                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Dear                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| You are receiving this information letter because your child has been diagnosed with an acute lymphoblastic leukemia (ALL) and will need a hematopoietic stem cell transplantation (HSCT). This document specifically concerns the possible participation of your child in a sub-study (R2) of the FORUM2 Trial.                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| The FORUM2 trial is an academic platform trial which means that it is organized by different academic hospitals. This is a shared infrastructure to address multiple scientific questions over time, within a single framework. It was set up by the Ospedale Pediatrico Bambino Gesù (IRCCS) in Rome (Italy) and will include more than 1000 participants worldwide, including about 4-5 patients per year in Belgium.         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Within this framework, some patients may be invited to participate in specific sub-studies depending on if they are eligible or not. Each of these sub-studies has its own specific eligibility criteria and timelines and your explicit written consent will be asked before participation of your child in these sub-studies if he/she is eligible.                                                                           |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| This information sheet and consent form refers to the sub-study R2 (FORUX).                                                                                                                                                                                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| This sub-study is a randomized comparison of two different drug treatments for newly diagnosed acute Graft versus host disease (aGvHD) that has not received any systemic therapy.                                                                                                                                                                                                                                              |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| The purpose of this sub-study is to find better treatments for aGvHD by addressing the limitations of current first-line therapy with corticosteroids. Specifically, the sub-study aims to reduce the need for long-term steroid use and help prevent the development of steroid-refractory aGvHD (SR-aGvHD).                                                                                                                   |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Therefore, we want to verify if the combination of Ruxolitinib and Corticosteroids is safe and more effective when compared to Corticosteroids alone.                                                                                                                                                                                                                                                                           |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| The sub- study involves a randomised comparison: if you agree to your child’s participation , he/she will be assigned at random to the group to receive Ruxolitinib and Corticosteroids or Corticosteroids alone before the transplant.                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| All visits and examinations are performed within the standard of care treatment. For the sub-study questionnaires to evaluate quality of life need to be completed and some study specific blood samples need to be taken. Overall, your child’s participation in this sub-study will last about 2,5 years and includes a treatment period of more or less 6 months and a follow-up period of 2 years after start of treatment. |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Participation in the sub-study R2 is voluntary and costs you nothing extra compared to the cost of the standard treatment. You will not receive any compensation for the participation of your child in this part of the trial. If anything happens with your child during the trial, the sponsor has taken an insurance to cover any related costs.                                                                            |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Your investigator will inform your child’s treating physicians regarding his/her participation in this trial. Your child cannot participate in another interventional clinical trial without informing the investigator or trial staff. You also need to communicate all relevant information related to the state of your child’s health, other medication taken or the symptoms experienced.                                  |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| The trial and trial documents have been reviewed and approved by EU authorities and an independent Ethics Committee in Belgium. The data will be kept confidential.                                                                                                                                                                                                                                                             |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Please take the time to read this document carefully. You may wish to discuss it with family members, friends, or your doctors. Your child’s participation in the sub-study is entirely voluntary. If you choose not to participate, this will not affect your child’s future medical care.                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| If you decide that your child will participate, you are free to withdraw your consent at any time, without giving a reason and without any negative consequences on your child’s treatment.                                                                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| If you have any questions about this trial, please contact me or my team using the contact details on the first page of this document.                                                                                                                                                                                                                                                                                          |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Kind regards,                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| The researcher                                                                                                                                                                                                                                                                                                                                                                                                                  |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+CHAPTER I – DESCRIPTION OF THE TRIAL AND YOUR RIGHTS WHEN your child is PARTICIPATING
+
+Why is this sub-study being conducted?
+
+This sub-study (R2 FORUX study) is part of the larger FORUM2 platform trial, which aims to optimize the way stem cell transplantation is performed for children and young people with acute lymphoblastic leukemia (ALL).
+
+For patients with a diagnosis of high-risk or relapsed ALL, an allogeneic stem cell transplant (HSCT) is one of the recommended treatments. This means that your child will receive healthy stem cells from a suitable donor. This approach is part of routine care for this kind of ALL and has been shown to improve long-term survival.
+
+A possible complication that can occur after receiving a stem cell transplant from a donor is acute Graft-versus-Host Disease (aGvHD). Acute GvHD occurs when immune cells from the donor (contained in the graft) attack the body, mistakenly recognizing it as foreign. This immune response causes inflammation and damage to tissues, and it can seriously affect the success of the transplant.
+
+Preventive treatments (called prophylaxis) can reduce the risk of developing aGvHD, but this complication still affects 30% to 50% of patients receiving a transplant, this variability depending on individual risk factors.
+
+The standard first treatment for aGvHD is corticosteroids. Unfortunately, these only lead to full recovery in about 40% to 50% of patients. For those patients who don’t respond well to steroids (a condition known as steroid-refractory aGvHD, or SR-aGvHD), the outcome is often poor. If corticosteroids don’t work well enough, doctors may use second-line treatments.
+
+A new medication, Ruxolitinib, has shown better results than other second-line options in clinical studies conducted in patients with SR-aGvHD. Ruxolitinib is a targeted drug taken by mouth that blocks specific proteins (JAK1 and JAK2) involved in the immune response responsible for GvHD development. It is now approved for use in both children and adults who have either acute or chronic GvHD and who haven’t responded well to steroids or other systemic treatments.
+
+The purpose of this sub-study is to improve treatment for children and adolescents with newly diagnosed acute Graft-versus-Host Disease (aGvHD) by testing whether adding ruxolitinib to standard corticosteroid therapy as first treatment leads to better outcomes than using corticosteroids alone.
+
+This sub-study aims to find out if starting ruxolitinib early, together with corticosteroids, can:
+
+- Increase the likelihood of treatment success (overall response rate)
+
+- Prevent progression to more severe forms of aGvHD
+
+- Reduce the need for long-term steroid or other immunosuppressive treatments
+
+- Improve survival, recovery of the immune system, and overall quality of life
+
+By participating in this sub-study, researchers hope to offer a more effective and safer first-line treatment option for children with aGvHD, and reduce the long-term risks associated with current long-term steroid use such as infections, high blood sugar, bone loss, or growth delays.
+
+The FORUX (R2) sub-study, is a Phase III clinical trial, meaning it is designed to rigorously compare the new combination treatment against the current standard of care in a larger group of pediatric patients. If the results are positive, this combination could become the new standard first-line treatment for aGvHD in children and adolescents.
+
+The sub-study is expected to take place in approximately 90 centers across 20 European countries and 192 children and adolescents aged 3 months to 18 years, will be included. All participating centres are experienced transplant centres following strict international protocols. We estimate that 1 Belgian patient per year will be included in this sub-study.
+
+Why is my child being asked to take part?
+
+Your child has been diagnosed with acute Graft-versus-Host Disease (aGvHD), a possible complication that can occur after receiving a stem cell transplant from a donor (called an allogeneic hematopoietic stem cell transplant, or HSCT).
+
+We are asking you to give consent for your child to participate in this R2 FORUX sub-study because we want to verify if the combination of Ruxolitinib and Corticosteroids is safe and more effective when compared to Corticoids alone for the treatment of newly diagnosed aGvHD that has not received any systemic therapy.
+
+Does my child have to take part in a trial?
+
+Your child’s participation in this trial is voluntary and must remain free of any coercion. This means that you/your child have the right not to take part in the trial or to withdraw at any time without giving a reason, even if you and your child previously agreed to take part. Your decision will not affect your relationship with the investigator or your child’s treating physician nor will it affect the quality of the future medical care of your child.
+
+If other treatments are available for HSCT for ALL, the investigator or his/her delegate will discuss these treatments with you.
+
+What will happen during the sub-study? 
+
+First there will be a screening period to confirm that your child will meet the eligibility criteria to take part in the study. This is the time between signing the informed consent form and the start of treatment.
+
+The screening period will begin when your child has been diagnosed with treatment-naïve grade II aGvHD and will last no more than 7 days. During this time, several medical assessments will be performed including:
+
+- Review of your child’s medical history and current health status
+
+- Physical examination
+
+- Blood tests
+
+- Other clinical evaluations to rule out other possible diagnoses and confirm aGvHD
+
+All the procedures during the screening procedure are performed in the regular care as usual and are not study specific. Some procedures will have been done before the screening period. No study-specific procedures will be done before the signature of the ICF.
+
+Once your child has been confirmed as eligible, treatment will begin promptly, ideally within 48 hours after randomization, to reduce the risk of disease progression and avoid unnecessary delays. With the randomization, your child will be randomly assigned to one of two treatment groups, either (1) ruxolitinib in combination with corticosteroids, or (2) corticosteroids alone, which is the current standard treatment:
+
+- Group 1
+
+Your child will receive RUXOLITINIB in combination with corticosteroids (methylprednisolone 2 mg/kg/day or equivalent prednisone), along with a calcineurine (either cyclosporine A or tacrolimus).
+
+- Ruxolitinib is an oral medication that is taken by mouth in tablets or liquid formulation.
+
+- The exact dosage and schedule of ruxolitinib will be determined based on your child’s age and weight and will be administered daily alongside corticosteroids.
+
+- Group 2 – Standard Treatment (Control Group):
+  Your child will receive corticosteroids alone (methylprednisolone 2 mg/kg/day or equivalent prednisone), along with a calcineurine (either cyclosporine A or tacrolimus).
+
+  - This represents the current standard of care used in clinical practice.
+
+[Afbeelding met tekst, schermopname, Lettertype, Parallel Door AI gegenereerde inhoud is mogelijk onjuist.]
+
+The planned treatment period for aGvHD in this study is 24 weeks (approximately 6 months). Your child will regularly visit the hospital as usual. These visits will occur weekly during the first 8 weeks, and then once every 4 weeks until the end of the treatment period, which should last approximately 6 months (24 weeks) from treatment initiation.
+
+Treatment will begin on study day 1 and continue unless one of the following occurs earlier:
+
+• Treatment failure (no response or worsening of GvHD)
+
+• Mixed response (partial improvement with some worsening)
+
+• Relapse (return of symptoms)
+
+• Occurrence of serious adverse events
+
+• Withdrawal from the study or death
+
+During the treatment period, care will be adapted based on how well your child responds to therapy. Response will be formally assessed for the first time on study day 28.
+
+- If improvement is shown (partial or complete response) by day 28:
+
+• Investigational group (ruxolitinib + corticosteroids): Ruxolitinib will continue at the prescribed dose until at least day 42, while corticosteroids will be gradually tapered (slowly reduced) after achieving complete response. If stable, the physician may begin tapering ruxolitinib after day 42 based on clinical judgment. Tapering should ideally be completed by week 24, unless medically indicated to continue longer.
+
+• Corticosteroids-only group: Corticosteroids may be tapered following standard guidelines even before day 28 after achieving complete response, depending on clinical condition.
+
+- If no improvement is shown by day 28:
+
+• Investigational group: Treatment will be considered a failure. The study physician may prescribe additional systemic therapies based on medical needs. Your child will then enter the long-term follow-up phase while remaining carefully monitored within the clinical trial.
+
+• Corticosteroids-only group: The physician may start ruxolitinib at any time during the treatment period if criteria for steroid-refractory aGvHD are met. If started before day 28, this will be recorded as treatment failure for analysis purposes. If started after day 28, it will be considered a formal "cross-over" to investigational treatment.
+
+Patients who cross over to ruxolitinib after starting in the corticosteroids-only group will follow the same treatment and tapering plan as those who started with ruxolitinib. They will be monitored weekly for 8 weeks after ruxolitinib initiation and then monthly until tapering completion.
+
+In all cases, patients receiving ruxolitinib will continue to take corticosteroids and a calcineurine (cyclosporine A or tacrolimus) per standard practice, unless the physician identifies specific contraindications. Tapering of these drugs will be based on treatment response.
+
+Approximately 30 days after taking the last dose of the study drug, the study physician will contact you (by phone or to schedule a visit) for a safety follow-up assessment to check your child’s general health status .
+
+After the treatment period, your child will be asked to return to the hospital or study center for long-term follow-up visits at 9, 12, 18, and 24 months after treatment initiation. These visits are important for continued health monitoring and are done within the standard of care.
+
+Depending on treatment response or if GvHD symptoms reappear, the study physician may decide to continue or gradually taper treatment for up to an additional 24 weeks (approximately 6 months). In such cases, study visits will continue every 4 weeks as described above.
+
+The "end of treatment" visit will be scheduled upon completion of ruxolitinib intake—at week 24, week 48, or earlier depending on the study physician's clinical decision. If treatment ends before week 24, follow-up visits and assessments will continue according to the planned schedule.
+
+All visits and examinations are performed within the standard of care treatment (no study specific visits or examinations). The following is study specific in this sub-study:
+
+-completion of questionnaires to evaluate quality of life – see below
+
+-blood samples – see below
+
+Standard of care procedures or examinations for your child’s condition (i.e. standard of care) will be charged to you or reimbursed by your mutual insurance fund (Belgian social security). If you need more details or if you are not affiliated with a mutual insurance fund (Belgian social security), please contact the trial staff.
+
+QOL questionnaires
+
+During this sub-study, quality of life (QOL) will be assessed through questionnaires that need to be completed at the following timepoints:
+
+- before start of your ruxolitinib treatment
+
+- day 28 after treatment start
+
+- day 56 after treatment start
+
+- day 100 after treatment start
+
+- day 168 after treatment start
+
+- day 30 after last dose of medication
+
+Specifically for the sub-study, the FACT-BNT and Eq-5D questionnaire will need to be completed by patients from 18 years onwards. For patients between 2 and 18 years, a PEDsQL and PEDsQL Stem cell transplant module questionnaire needs to be completed. Per timepoint, this will take approximately 20 minutes to complete. For this sub-study, there will in total be an extra time investment of approximately 2 hours for the completion of these questionnaires.
+
+Blood samples
+
+In addition to routine laboratory tests, study specific blood samples will be collected for:
+
+• Biomarker analysis
+
+• Pharmacokinetic (pK) analysis—to understand how ruxolitinib is absorbed, distributed, metabolized, and eliminated by the body
+
+Blood samples will be taken at standard of care timepoints (no additional study visits needed) and will be combined with blood samples that are taken within the standard of care. It is possible that an additional puncture is needed for pharmacokinetic blood samples as this requires also blood samples taken after ruxolitinib is administered.
+
+Study specific Blood samples are taken at the timepoints specified in the table below.
+
+Samples for pharmacokinetic analysis will be collected before the first dose, weekly until day 28 (±3 days), and again on day 42 (±3 days) and day 56 (±3 days). Both pre-dose and post-dose samples will be collected.
+
+If instructed by the study physician, on days when pharmacokinetic samples are required, your child will take the ruxolitinib dose at the hospital or study center under research staff supervision. Your child should not take the drug at home on those days. If a dose is missed or taken incorrectly, it is very important to immediately inform the study physician.
+
+  -----------------------------------------------------------------------------
+                            Biomarker sample   pK sample*      QOL
+                            (blood 2.5ml)      (blood 2.5ml)   
+  ------------------------- ------------------ --------------- ----------------
+  Day 1 (pre-treatment)     x                  x               x
+
+  Day 7 ruxolitinib         x                  x               
+
+  Day 14 ruxolitinib        x                  x               
+
+  Day 21 ruxolitinib        x                  x               
+
+  Day 28 ruxolitinib        x                  x               x
+
+  Day 42 ruxolitinib        x                  x               
+
+  Day 56 ruxolitinib        x                  x               x
+
+  Day 84 ruxolitinib        x                                  
+
+  Day 100 ruxolitinib                                          x
+
+  Day 112 ruxolitinib       x                                  
+
+  Day 140 ruxolitinib       x                                  
+
+  Day 168 ruxolitinib**                                        x
+
+  End of treatment**        x                                  
+
+  30 Days after last dose                                      x
+  -----------------------------------------------------------------------------
+
+*blood sample pre and post dose of ruxolitinib
+
+**Day 168 and end of treatment can be at the same time if treatment is stopped at week 24
+
+All biological samples collected will be coded. This means that your child’s name and personal identifiers will be replaced with a unique code known only to the study team. Samples will be sent to the coordinating promotor of the study (Bambino Gesù Pediatric Hospital in Rome-Italy).
+
+Genetic analyses will also be performed on your child’s samples. These genetic analyses provide essential information for the sub-study and the future treatment of your child’s disease. If you do not wish for these analyses to be performed, your child cannot participate in the sub-study.
+
+Will my child benefit from the sub-study? 
+
+Ruxolitinib may or may not be beneficial in treating your child’s ALL or relieving the symptoms. Even if it is beneficial to your child, a potential return or worsening of symptoms, illness or disease is still possible.
+
+The information obtained during a trial may contribute to a better understanding of the use of the investigational medicinal product ruxolitinib and may improve care and outcomes of your child and future patients with ALL undergoing a stem cell transplantation.
+
+What are the possible risks and discomforts of taking part?
+
+1.  What are the possible side effects
+
+Participation in a trial involves some risk.
+
+If you decide your child will participate in this sub-study , it is important to understand that the investigational treatment, namely the combination of ruxolitinib and corticosteroids, may not be more effective than the current standard treatment of corticosteroids alone. In some cases, it may be less effective or could potentially be associated with an increased risk of leukemia relapse, although current evidence does not conclusively indicate this.
+
+If your child does not fully respond to treatment or if aGvHD symptoms worsen, additional therapies will be provided based on clinical need. Regardless of which treatment group your child was assigned to, your child will continue to be followed and monitored closely throughout the study.
+
+There is also a risk that the investigational treatment may cause more frequent or more severe side effects than the standard therapy. For example, combining ruxolitinib with corticosteroids may lead to:
+
+- An increased risk of infections.
+
+- A decrease in blood cell counts, such as red cells (anemia), white cells (leukopenia), neutrophils (neutropenia) and platelets (thrombocytopenia).
+
+In previous studies involving pediatric patients with aGvHD, the most common treatment-related side effects included:
+
+- Anemia
+
+- Low white blood cell counts
+
+- Low neutrophil counts
+
+Some patients experienced serious side effects, such as:
+
+- Infections
+
+- Fever (pyrexia)
+
+- Kidney problems (acute kidney injury)
+
+- Sepsis (a life-threatening infection)
+
+Participation in this sub-study may involve risks related to ruxolitinib and procedures such as blood sampling. Side effects may vary from person to person. This document includes both common side effects and rare but serious side effects known to be associated with ruxolitinib. You are encouraged to discuss any concerns with your child’s study doctor, including possible side effects not listed here.
+
+Many side effects resolve shortly after stopping or adjusting the medication. However, some side effects may be serious, long-lasting, or permanent, and in rare cases, could be life-threatening.
+
+Side effects of ruxolitinib
+
+In patients treated for other conditions (such as myelofibrosis or polycythemia vera), very common side effects (occurring in more than 1 in 10 people) included:
+
+- Low red blood cell count (anemia), which may cause fatigue, pale skin, or shortness of breath
+
+- Low white blood cell count (neutropenia), which may increase the risk of infection
+
+- Low platelet count (thrombocytopenia), which may lead to easy bruising or bleeding
+
+- Urinary tract infections
+
+- Increased cholesterol or triglyceride levels
+
+- Headache, dizziness, weight gain
+
+- Constipation, high blood pressure, altered liver test results
+
+- Shingles (herpes zoster), which may cause painful rash or blisters
+
+In most cases, changes in blood cell counts are reversible and can be managed by temporarily reducing or stopping ruxolitinib. Your child will be monitored regularly through blood tests, and if your child’s cell counts do not recover quickly, ruxolitinib may be paused longer or restarted at a lower dose.
+
+Common side effects (occurring in 1 to 10 out of 100 patients):
+
+- Excessive intestinal gas (flatulence)
+
+- Reduction in all three types of blood cells (pancytopenia)
+
+In rare cases (less than 1 in 100), tuberculosis has been reported. Symptoms may include chronic cough, coughing up blood, fever, night sweats, and weight loss. Immediately inform the study physician if your child experience any of these symptoms.
+
+The effect of ruxolitinib on viral replication in people with chronic hepatitis B is not known. If your child has ever had viral hepatitis, this must be discussed with the study doctor. Children with active viral infection will not be treated with ruxolitinib.
+
+There have been rare reports of progressive multifocal leukoencephalopathy (PML), a serious brain infection, among patients who underwent allogeneic stem cell transplantation, including some receiving ruxolitinib. Although it is unclear whether ruxolitinib caused PML, symptoms such as confusion, speech difficulties, weakness on one side of the body, or vision problems must be reported immediately.
+
+Cases of non-melanoma skin cancers (NMSC), including basal cell carcinoma, squamous cell carcinoma, and the rare Merkel cell carcinoma, have been reported in patients treated with ruxolitinib. These may also be related to prior treatments or underlying disease. Inform the physician if you notice new or unusual skin lesions.
+
+In animal studies, delayed bone growth and fractures were observed in very young animals treated with high doses of ruxolitinib. Although these findings occurred at doses higher than those used in this sub-study, the greatest concern applies to children under 2 years old, particularly those under 1 year. Bone growth will be monitored, and potential effects are expected to be reversible, although full growth recovery may not always occur.
+
+Suddenly stopping ruxolitinib may also lead to health risks. In patients with aGvHD or myelofibrosis, abrupt discontinuation has been associated with a return of symptoms or inflammatory reactions, including anxiety, insomnia, weakness, or worsening disease. If treatment needs to be stopped, it will be done under close medical supervision.
+
+Therefore, it is very important that you report any new or worsened health problems of your child immediately to the investigator, regardless of whether or not you think it has to do with the sub-study, and even when it is already described in this document. If your child needs to use other medication, discuss this with the investigator beforehand. If, for any reason, you consult another treating physician during the trial you must inform him/her that your child is taking part in a trial. This could be important in determining a diagnosis and giving your child the correct treatment if needed.
+
+During treatment with ruxolitinib, you must immediately inform the study doctor if your child:
+
+- Develops unusual bruising, bleeding, extreme fatigue, shortness of breath, or frequent infections
+
+- Shows signs of shingles (painful skin rash with blisters)
+
+- Has a persistent cough with blood, fever, night sweats, or weight loss (possible signs of tuberculosis)
+
+- Experiences confusion, weakness, visual disturbances, or trouble speaking or walking (possible signs of PML)
+
+- Has any changes in prescribed medications or develop any new medical issues
+
+- Develops new or changing skin lesions, which may require further examination
+
+- Becomes pregnant or, if male, are known or suspected to have fathered a pregnancy during the study
+
+  1.  What are the possible risks or discomforts of the examinations during the trial?
+
+All examinations are performed within the standard of care. The taking of blood for the study specific blood samples will be combined with routine blood punctures as much as possible. Taking of blood may cause pain, bleeding, bruising or infection localised around the injection site. Similarly, some participants may feel dizzy or even faint during the procedure. The trial staff who take the blood will do all they can to minimize these discomforts.
+
+2.  Can my child take other medicines during the trial?
+
+Do not hesitate to ask the investigator for more explanation about the use of medicines or and food supplements (including aromatherapy, phytotherapy, homeopathy..).
+
+3.  Will the participation of my child to the trial have an impact on his / her daily activities?
+
+We want to ensure that the trial runs smoothly. That is why we will make the following agreements with you:
+
+• You will make sure your child takes all your drugs in the way needed
+
+• During this trial, your child won’t participate in another medical scientific trial,
+unless sponsor approval was obtained prior to participation
+
+• Please contact the investigator or research nurse in the following situations:
+
+  o Your child will start to take other drugs. This includes homeopathic drugs,
+  natural remedies, vitamins or over-the-counter drugs.
+
+  o Your child needs to be admitted to the hospital or receive treatment there.
+
+  o Your child suddenly develops problems with its health.
+
+  o Your child no longer wants to take part in the trial.
+
+  o Your phone number, address or e-mail address has changed.
+
+4.  Can my child get pregnant, conceive a child, or can she breastfeed during the trial?
+
+Animal studies suggest ruxolitinib may harm a fetus or newborn. If pregnancy occurs or is suspected during the study or within 30 days after completing treatment, you must immediately inform the study physician and your child must stop taking the study drug. Treatment continuation during pregnancy is not permitted.
+
+Loss of fertility is expected in both males and females after HSCT, though individual risk depends on age, dose, and sex. Your treating physician will discuss in detail possible interventions for fertility preservation.
+
+If your child is female, your child must not become pregnant during the trial and for at least 12 months after completing treatment. In addition, your child must not have egg cells stored for your own use or donation after the start of the treatment and for at least 12 months after the last treatment. Your child must not breastfeed during treatment.
+
+If your child is male, your child must not cause a pregnancy or donate sperm during the trial and for at least 6 months after completing treatment.
+
+If your child can become pregnant and is heterosexually active, or if your child has a partner who can become pregnant, then the treating physician or nurse will explain the different types of contraceptives that your child should use during and after the trial.
+
+Your investigator will discuss with you and your child the suitable forms of contraception. If you decide that your child will participate in this trial, your child or your child’s female partner that can become pregnant, must use one of the recognised contraceptive methods (to prevent your child or the female partner from becoming pregnant). If your child/your child’s partner is using oral hormonal contraception, your child/your child’s partner will need to use a barrier method such as condoms too.
+
+If your child or your child’s partner become pregnant during this trial, you must tell the investigator or the trial staff immediately. If your child becomes pregnant, the treating physician will discuss what next steps to take with the treatment. The investigator will monitor the pregnancy and inform the sponsor about its outcome. For safety reasons, the investigator wants to monitor the pregnancy and its outcome and may be required to share this data with the sponsor to comply with regulations on monitoring and reporting safety information. Your child/your child’s partner will receive a separate information letter regarding this, and a separate consent will have to be granted.
+
+Also if your child does not participate in this study, your child will receive HSCT and it is also important not to become pregnant or not to cause a pregnancy outside this study.
+
+What If something goes wrong within the trial?
+
+Even if there is no fault, the sponsor is liable for harm caused to your child whether directly or indirectly related to your participation in the trial. The sponsor has taken an appropriate insurance (a so called “NO FAULT INSURANCE*”) for this liability. A copy of the insurance certificate can be obtained from the investigator or trial staff.
+
+If you (or in the event of death, your rightful claimants) seek compensation for a harm to your child’s health as a direct or indirect result of participating in the trial, you must inform your child’s investigator or trial staff promptly.
+
+If the investigator believes that a link between the new or worsened health problem(s) and the trial is possible, he/she will inform the trial sponsor. The sponsor will then immediately initiate the declaration procedure to its insurance company. If the company considers it necessary, it will appoint an expert to assess whether there is a link between your child’s reported health problem(s) and the trial. The insurance does not cover the natural progression of your child’s disease or the known side effects of the treatment your child would have received without taking part to the trial (that is your child’s standard treatment).
+
+Whenever you/your child feel it is appropriate or if you or your child’s rightful claimants disagree either with the investigator or with the expert appointed by the insurance company, you may contact the insurance company or proceedings may be brought against the insurance company. You will find the contact details on the front page of this form.
+
+What if other treatment options or new information become available during the course of the trial?
+
+During the course of the trial, important new information might become available, possibly affecting your decision for your child to (further) participate. For example, other treatments for your child’s disease or important new information may become available. It is the duty of the investigator to discuss this new information with you/your child to give the opportunity to re-consider your child’s participation in the trial.
+
+If you decide for your child to stop taking part in the trial or if your child is no longer able to participate, your child’s investigator will see to it that your child continues to receive the best possible medical care.
+
+Can my child’s participation in the trial end prematurely?
+
+As explained in detail below, your child’s trial participation may end prematurely when
+
+- you decide for your child to withdraw your consent or,
+
+- the investigator decides to end your child’s trial participation, or
+
+- other entities interrupt or end the trial.
+
+In any case, if your child’s trial participation ends prematurely, the investigator will discuss your child’s future medical care with you/your child. Data collected before you terminate your child’s participation will continue to be used as described in this form. This is to avoid skewing / biasing results of the trial (as described in chapter I. § 12.4.).
+
+Depending on your child’s situation, the investigator will discuss with you/your child whether follow-up visits or procedures are needed.
+
+1.  You decide to withdraw your consent
+
+You are entitled to withdraw your consent for your child for any reason, at any time, without having to justify your decision. However, for your child’s safety, you should inform the investigator of your decision. Although it is not mandatory, it may be useful for the investigator and for the sponsor to know the reason of this decision (for example side effects, frequency of clinical visits,…).
+
+If you withdraw your consent for your child to participate, please discuss with the investigator to evaluate the practical modalities of the withdrawal (in light of your child’s situation). No new data will be collected and sent to the sponsor.
+
+2.  The investigator decides to end your child’s trial participation
+
+The investigator may end your child’s trial participation because
+
+- he/she thinks it is better for your child
+
+- he/she determines that your child is not following the instructions given to participants, or
+
+- any other reason that will be explained,
+
+- the entire study should be discontinued for all participants (see next paragraph).
+
+If that happens, the trial staff will explain why and ensure appropriate follow-up.
+
+1.  Other entities may interrupt or end the trial
+
+The sponsor and the competent Belgian health authorities may interrupt or end the trial because
+
+- the information gathered shows that the sub-study is not effective (does not deliver a sufficient level of improvement in the health of the trial participants),
+
+- there are more (serious) side effects than anticipated, or
+
+- any other reason that will be duly motivated by such party.
+
+Which treatment will my child get after my child’s participation in the trial? 
+
+If your child stopped the study, the investigator will assess your child’s health. If necessary, he/she will prescribe your child the best standard treatment available.
+
+Will my child’s participation in the trial involve extra costs for me?
+
+As described in section 4, all visits, examinations and the treatment are standard of care. The standard procedures or examinations for your child’s condition (i.e. standard of care) will be charged to you or reimbursed by your mutual insurance fund (Belgian social security).
+
+The study does not involve any additional costs. You/your child will not receive any financial compensation for participating in this trial.
+
+Which data are collected about my child during the trial and what will happen with them?
+
+1.  Which data are collected and processed during the trial?
+
+The collected and processed personal data concern information about your child’s health and medical condition. This includes your child’s medical history, some of your child’s background information (for example your child’s age and sex) and the results of examinations required by the trial.
+
+Ethnic origin data may be collected to ensure that research data are processed in the broadest possible population.
+
+2.  How will the investigator treat my child’s personal data?
+
+The investigator (and the trial staff) is bound by professional secrecy or by a confidentiality agreement about the data collected.
+
+This means that he/she will never reveal your child’s identity, including in a scientific publication or a lecture and that he/she will encode your child’s data (Ref. [1]) (that is by replacing your child’s identity by an identification code in the trial) before sending them to the sponsor. In other words, this code will not contain any personal identifier or combination of identifiers such as name, first name, initials, full or partial date of birth, file number, etc.
+
+Therefore, the investigator and the trial staff under the responsibility of the investigator, will be the only ones able to establish a link between your child’s identity and the data transmitted during the trial, with the exceptions listed under section 12.5.
+
+The data transmitted to the sponsor will not allow the sponsor to identify your child.
+
+3.  How will my child’s data be handled?
+
+Your child’s trial data will be processed in accordance with the current European and Belgian data protection legislation.
+
+The reason that your child’s personal data may be processed for the purposes of the study is that it is processed for the conduct of scientific research and for the performance of a task carried out in the public interest.
+
+4.  Do I have access to my child’s data collected and processed during the trial and can I rectify them?
+
+You are entitled to ask the investigator what data are being collected about your child and how those data will be used in connection with the trial.
+
+You have the right
+
+- to inspect and access these data
+
+- to receive the personal data that are collected
+
+- to ask for correction if they are incorrect,
+
+- to restrict the processing of your child’s data.
+
+- to withdraw your consent for the processing of your child’s personal data. However your child’s personal data collected before withdrawal will be kept to avoid skewing of results in the trial.
+
+It is not possible to have all your child’s data erased to avoid skewing of results in the trial.
+
+1.  Who, other than the Investigator and his trial staff, has access to my child’s personal data?
+
+To verify the quality of the trial, it is possible that your child’s personal uncoded data or information in your child’s medical records relevant for the trial, will be examined by people outside the trial staff but under the responsibility of the investigator. These persons must be subject to professional secrecy or a confidentiality agreement. The following might be considered:
+
+- the personnel designated by the sponsor of the trial (monitors and auditors), and people or organisations providing services for or collaborating with the sponsor. They will however never transfer your child’s name and contact details to the sponsor.
+
+- inspectors of competent health authorities worldwide
+
+- an independent audit group
+
+- people designated by the Ethics Committee
+
+For the needs of the trial, the encoded trial data may be sent to other EU and non-EU countries and may be reviewed by
+
+- personnel (other than the inspectors) of competent health authorities of Belgium (Federal agency for medicines and health products, FAMHP) and other EU and non-EU countries,
+
+- the evaluating Belgian Ethics Committee(s),
+
+- external researchers,
+
+- the sponsor of the trial, personnel designated by the sponsor, and people or organisations providing services for or collaborating with the sponsor, and/or
+
+- group companies of the sponsor in Belgium, and in other EU and non-EU countries.
+
+The European regulation and the Belgian legislation on data protection have requirements for transferring data to non-EU countries. The sponsor must ensure equivalent guarantees regarding personal data protection standards before transferring the encoded data to non-EU countries. If for this purpose, there is a data protection agreement, a copy of this agreement may be obtained via the investigator. You can always contact your investigator to obtain more information about any such transfers.
+
+1.  What will happen to the results of the trial?
+
+After trial closure, a description and the results of this clinical trial will be published in specialised medical journals. A copy of the scientific publication or a summary for laypersons can be obtained from the investigator or the trial staff.
+
+A description of the trial will also be available on https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en and/or https://www.Clinicaltrials.gov. You can search these websites at any time using the information on the front page of the informed consent form. Within 1 year after the study's completion, the website will contain a summary of the results in accordance with the European Commission's guidelines.
+
+These websites or publications will not include information that can identify your child.
+
+2.  Will my child’s data be used for other purposes than for the trial in which he/she takes part?
+
+The results of the trial will be used to answer the scientific questions of the trial. In addition, we would like to use your child’s data obtained from this trial, in connection with other research and development activities (and the associated scientific publications). These activities can only concern research about the same disease or medication.
+
+Any additional research outside of the trial and therefore not described in the above points, must be approved by a recognized Ethics Committee.
+
+You already agreed or disagreed , to the use of your child’s trial data for other purposes in the main ICF of the FORUM2 study at the beginning.
+
+3.  How long will my child’s data be kept?
+
+After the end of the trial your child’s encoded data will be retained for at least 25 years in accordance with the European clinical trial regulation to ensure the validity of the research. This will also be the case if your child stopped trial participation prematurely.
+
+ Which biological samples are collected from my child during the trial and what will happen with them? 
+
+1.  Which biological samples are collected from my child during the trial?
+
+Biological samples are samples of human body material. In this sub-study, the following biological sample(s) will be taken from your child: blood samples - see Chapter I, section 4.
+
+The procedure to encode your child’s biological samples is the same as that used for your child’s personal data in accordance with Belgian legislation on the use of human body material (see I § 12.2). Samples sent to the sponsor or to organisations working in collaboration with the sponsor, will only be labelled with your child’s trial identification code. The sponsor ensures that the location of your child’s biological samples is always tracked. The use of your child’s biological samples is linked to the processing of the associated coded personal data of your child.
+
+Your child’s biological samples are deemed to be a “donation”. You will not receive any financial benefit associated with the development of new therapies derived from the use of your child’s biological samples, and which may have commercial value.
+
+2.  What will happen to the collected biological samples of my child?
+
+These biological samples will be analysed for the objectives of the trial. Study-specific blood samples will be sent to the promotor of the study (Bambino Gesù Pediatric Hospital in Rome-Italy).
+
+Genetic analyses will also be performed on your child’s biological samples. Genetic analyses are studies of DNA. For example, DNA determines the colour of our hair and eyes. DNA can also explain why some people respond to certain drugs and others do not. It can also explain why some people get certain diseases and others do not. The purpose of these genetic analyses is to learn for example about the levels of ruxolitinib that enter the blood stream and how quickly it is broken down in the body (pharmacokinetics).
+
+These genetic analyses will deliver essential information for the trial. If you do not want these analyses to be conducted, your child will not be allowed to participate in the trial.
+
+Since scientific progress in this area is constant, the sponsor would like to, with your consent retain the remainders of your child’s biological samples for 25 years. The sponsor will use them for additional research that remains within the context of the current clinical trial and thus within the same disease or the same treatment/drug as in this study.
+
+These samples may be used in the future for research related to this study, such as:
+
+• Understanding aGvHD biology
+
+• Improving methods to diagnose, monitor, or treat the disease
+
+• Comparing data with other clinical studies or developing new clinical endpoints
+
+There are two types of permitted future use of remaining samples of your child:
+
+1. Use by the same research group for purposes strictly related to this study
+
+2. Use by different research groups, but only within joint scientific projects aligned with the study's objectives, within the same disease or the same treatment/drug.
+
+At the end of this form, you agree or disagree to the use of the remainders of your child’s samples for research within the context of this trial by ticking the appropriate checkbox in Chapter II. Additional research outside of the trial must be approved by a recognized Ethics Committee.
+
+You may revoke your consent for your child’s participation at any time without affecting medical care. If you choose to revoke consent for future sample use, you may request:
+
+• That all remaining samples of your child be permanently anonymized (so they can no longer be linked to you), OR
+
+• That the samples of your child and associated data be destroyed
+
+What if the trial reveals meaningful information about your child’s health?
+
+We may discover new information about your child’s health during the course of the trial. If this information may be important to your child’s health, the sponsor will inform the researcher. With your consent, the researcher will inform you and your treating physician about your child’s results and the possible consequences. If necessary, the researcher and/or the treating physician will advise you on what to do next.
+
+You can let the researcher know whether or not you agree to be informed about meaningful information discovered about your child’s health by ticking the relevant checkbox in Chapter II. The researcher/your treating physician will inform you about this information in any case where not being informed may cause serious harm to your child’s health or that of third parties.
+
+Who has reviewed and approved the trial documents?
+
+The documents of the trial have been reviewed by
+
+- The Belgian competent health authorities (FAMHP) or, if applicable, by the competent national health authorities of other EU members states and
+
+- An independent Belgian Ethics Committee
+
+It is the task of the competent health authorities and the Ethics Committees to protect people who take part in a trial. The health authorities will ensure that the trial is conducted in accordance with the applicable legislation.
+
+You should not under any circumstances take their approval as an incentive for your child to take part in the trial.
+
+CHAPTER II - Informed consent FOR PARENTS/GUARDIANS 
+
+FORUM2 - Sub- study FORUX - Randomisation 2 (R2)
+
+A Comparison of ruxolitinib plus corticosteroids versus corticosteroids alone in children with ALL and treatment-naïve grade II-IV Graft versus Host Disease following allogeneic Hematopoietic stem cell transplantation
+
+Reference number of study participant: _______________
+
+Protocol version and date: ______________________________
+
+PARTICIPANT 
+
+Prerequisites for your CHILD’s participation in the trial
+
+- I declare that I have read this form and understood its information.
+
+- I declare that I have been informed of and that I understand the purpose of the sub-study, its duration and consequences, possible risks and discomforts, the precautions that my child must take and what is expected of him/her. My child’s rights have been explained to me and I have understood those rights.
+
+- I have had enough time to think about my child taking part in this sub-study and to discuss it with a trusted person (for example friends, relatives, treating physician, …).
+
+- I have had the opportunity to ask any questions that came to mind and have obtained a satisfactory response to my questions.
+
+- I understand that my child’s participation in this sub-study is voluntarily and free from any coercion and that I am free to stop at any time my child’s trial participation.
+
+- I understand that data about my child will be collected and that they will be treated confidentially as described in Chapter I, §12.2.
+
+- I am aware that my child’s personal data is being processed as described in Chapter I, § 12.
+
+- I understand that representatives of the sponsor, the ethics committee, and competent health authorities have access to my child’s medical record if authorised to do so (as described in Chapter I, §12.5).
+
+- I understand that the sponsor has taken out an insurance in case my child should suffer any damage in connection with his/her participation in this trial.
+
+- I understand that when participating in this sub-study , I will not have any costs except those related to the standard of care treatment of my child’s disease.
+
+- I understand the importance of contraception and will inform my child adequately so he/she adheres to the recommendations provided. I will also inform my child’s partner(s) about my child’s participation in a clinical trial that may be harmful to the fetus, and we will take the necessary contraceptive measures together.
+
+- I am aware that my child’s treating physician(s) being informed of my child’s participation in this trial.
+
+- If my child takes part in another interventional trial, I must inform the investigator or trial team about this. I agree for my child not to take part in any other interventional trial (e.g. with a study drug, medical device, experimental surgical technique) at the same time without first informing the investigator or the trial staff, who might not permit my child to participate for a good reason.
+
+- I understand that my child needs to cooperate and follow the investigator’s and trial staff’s instructions regarding the trial.
+
+- I understand that my child’s participation to the sub-study might end without my child’s consent if he/she needs other treatment, do not follow the trial plan, have a trial-related injury, or for any other justified reason.
+
+- I certify that all the information I have given about my child’s medical history is correct, to the best of my knowledge. I understand that it may be harmful to my child if I do not inform the investigator of possible reasons why my child could not participate in the study.
+
+Optional consents which are no prerequisite for your CHILD’s participation in this trial.
+
+BIOLOGICAL SAMPLES WITHIN THE CONTEXT OF THE TRIAL
+
+1.  As specified in Chapter I, § 13.2, the sponsor would like to retain the remainders of your child’s biological samples for 25 years for additional research within the context of the trial that your child will participate in. Additional research outside of the trial must be approved by a recognized Ethics Committee.
+
+  Do you agree with the retention of the remainders of your child’s biological samples and the accompanying personal data for additional research within the context of the trial?
+
+  (Tick as appropriate)
+
++---------------------------------+---------------------------------+
+|   ☐ I agree                     |   ☐ I do not agree              |
++:================================+=================================+
+
+MEANINGFUL INFORMATION
+
+2.  As specified in Chapter I, §14, it may occur that meaningful information is discovered that may be important for your child’s health or that of third parties.
+
+If this were to occur, would you like the researcher/your treating physician to inform you of this result?
+
+  (Tick as appropriate)
+
++---------------------------------------+---------------------------------+
+|   ☐ No, I do not wish to be informed. |   ☐ Yes, I wish to be informed. |
++:======================================+=================================+
+
+I consent for my child to take part in the R2 sub-study, with the above restrictions and I have received a signed and dated copy of all pages of this document.
+
+Name and surname of first parent/guardian:
+
+Date (DD/MMM/JJJJ):
+
+Time:
+
+Signature of first parent/guardian:
+
+Name and surname of second parent/guardian:
+
+Date (DD/MMM/JJJJ):
+
+Time:
+
+Signature of second parent/guardian:
+
+IMPARTIAL WITNESS / INTERPRETER (REF. [2] )
+
+(If present)
+
+I, the undersigned (Tick as appropriate),
+
+☐ Impartial Witness
+
+☐ Interpreter
+
+was present during the entire process of informing the parents/guardians and I confirm that the information on the objectives and procedures of the trial was adequately provided, that the parents/guardians (or his/her legal representative) apparently understood the trial and that consent to participate in the trial was freely given.
+
+I declare furthermore that acting as an impartial witness/interpreter, I am independent of the sponsor and the investigator.
+
+Impartial Witness / Interpreter surname and first name:
+
+Impartial Witness / Interpreter qualification:
+
+Date (DD/MMM/YYYY):
+
+Time:
+
+Impartial Witness / Interpreter signature:
+
+INVESTIGATOR
+
+I, the undersigned investigator, confirm that
+
+• the parents/guardians have been verbally provided with the necessary information about the trial, has been explained the content and has been given an original signed document.
+
+• I have verified that the parents/guardians have understood the trial.
+
+• I have given the parents/guardians sufficient time to agree that their child will participate and to ask any questions.
+
+• no pressure was applied to persuade the parents/guardians to agree that their child will take part in the trial.
+
+• I operate in accordance with the ethical principles set out in the latest version of the “Helsinki Declaration”, the “Good Clinical Practices” and the Belgian Law on clinical trials.
+
+Investigator’s, Surname and first name:
+
+Date (DD/MMM/YYYY):
+
+Time:
+
+Investigator’s signature:
+
+GLOSSARY
+
+FAMHP: Federal agency for medicines and health products
+
+DPA: The Data Protection Authority ensures that personal data are handled with care and thoroughly protected, and that your child’s future privacy also remains guaranteed.
+
+Other abbreviations that appear in the text:
+
+No Fault insurance:
+
+The sponsor is liable for any injury or any damage that the participant has suffered, and which is directly or indirectly related to the clinical trial. You do not have to prove any mistake in this respect.
+
+MONITOR and AUDITOR
+
+Both the monitor and auditor work for the sponsor.
+The monitor takes care of a continuous quality check during the entire process of the trial. The auditor performs an independent, one-time quality check at some time during the trial. They verify if the trial is being/was conducted according to the protocol, if the reported data are liable and if the clinical trial was conducted according to the applicable rules.
+
+REFERENCES
+
+[1] Throughout the document, the term ‘’encoding‘’ is used as a synonym for ‘’pseudonymisation‘’, the term used in General Data Protection Regulation No 2016/679.
+
+[2] The use of an impartial witness is necessary when the subject or their legal representative speaks and/or fully understands the language of the approved informed consent form but cannot read and write due to a physical disability or is visually impaired. An interpreter is necessary when the investigator does not speak the patient's language.

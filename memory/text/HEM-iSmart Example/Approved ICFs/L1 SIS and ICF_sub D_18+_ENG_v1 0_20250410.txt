@@ -1,0 +1,1151 @@
+INFORMATION SHEET FOR PARTICIPANTS FROM 18 YEARS
+
+HEM-iSMART sub-protocol D
+
+Title of the study: HEM-iSMART sub-protocol D: Trametinib + Dexamethasone + Cyclophosphamide and Cytarabine in pediatric patients with relapsed or refractory hematological malignancies
+
+Official title of the trial: International proof of concept therapeutic stratification trial of molecular abnormalities in relapsed or refractory haematological malignancies in children – sub-protocol D: Trametinib + Dexamethasone + Cyclophosphamide and Cytarabine in pediatric patients with relapsed or refractory hematological malignancies
+
+EU number: 2021-003398-79
+
+Trial number: ITCC-104
+
+Trial name: HEM-iSMART
+
+Sponsor(s) of the trial: Princess Máxima Center, Heidelberglaan 25, 3584 CS Utrecht, The Netherlands
+
+Site name: official name of site
+
+Main address of site: address of site
+
+Document Revision History
+
++-----------------------+-----------------------+-----------------------+
+| Version No.           | Version Date          | Revision description  |
++:======================+=======================+=======================+
+
+Not applicable
+
+Who can I contact in case of questions?
+
+If you have any questions about the trial, please contact the investigator.
+
+Do you have any complaints? If so, please discuss them with the investigator or the doctor treating you. If you’d rather not want to discuss the matter with them, please contact the ombudsman/woman of your hospital.
+
++---------------------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+| Name                      | Function                                                                                  | In case of                                                                 | Contact details                                                     |
++===========================+===========================================================================================+============================================================================+=====================================================================+
+| Surname, First name       | Principal Investigator of the site                                                        | Information, problems or concerns                                          | Phone N°, E-mail                                                    |
++---------------------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+|                           | The trial staff                                                                           | Information, problems, concerns                                            | Phone N°, E-mail                                                    |
++---------------------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+|                           | Emergency contact [not emergency department of hospital]                                  | Emergency                                                                  | Phone N°                                                            |
++---------------------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+|                           | Ombudsperson for patient rights of the site [and if not possible contact the CT College.] | Concerns/ questions about your rights as a participant in a clinical trial | Phone N° from the site [if not possible: ct-college@health.fgov.be] |
++---------------------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+| Lloyd’s Insurance company | Insurance Company of the sponsor                                                          | In case of disagreement or complaint on a damage claim                     | Policy N°: MCIEEA22045                                              |
+|                           |                                                                                           |                                                                            |                                                                     |
+|                           |                                                                                           |                                                                            | Address: Bastion Tower, Marsveldplein 5                             |
+|                           |                                                                                           |                                                                            |                                                                     |
+|                           |                                                                                           |                                                                            | 1050 Brussels, Belgium                                              |
+|                           |                                                                                           |                                                                            |                                                                     |
+|                           |                                                                                           |                                                                            | Phone N°.: 02 227 39 39                                             |
+|                           |                                                                                           |                                                                            |                                                                     |
+|                           |                                                                                           |                                                                            | E-mail: LloydsEurope.Info@lloyds.com                                |
++---------------------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+|                           | Data protection officer of the site                                                       | Questions relating to the confidentiality of your data                     | Phone N°                                                            |
+|                           |                                                                                           |                                                                            |                                                                     |
+|                           | [or if not possible: Contact person for data protection.]                                 |                                                                            | E-mail: e-mail                                                      |
++---------------------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+|                           | Belgian Data Protection Authority                                                         | Complaints relating to the confidentiality of your data                    | +32(0)2274 48 00                                                    |
+|                           |                                                                                           |                                                                            |                                                                     |
+|                           |                                                                                           |                                                                            | E-mail : contact@apd-gba.be                                         |
++---------------------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------+
+
+● To manage complaints not resolved by the investigator, you can contact the study centre ombudsman at the above address.
+
+● According to the GDPR, you have the right to access the processing of your data. For questions about this, you can contact the Study Centre's Data Protection Officer at the above address.
+
+● You also have the right to lodge a complaint about the way your data are processed with the Belgian supervisory authority responsible for compliance with data protection legislation: Data Protection Authority (GBA), above.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| The trial at a glance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Dear patient,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   We would like to invite you to participate in a clinical trial to evaluate experimental drugs for the treatment of your disease. An experimental treatment combination is a combination of drugs that is still under investigation to assess its efficacy, safety or mechanism of action. You have received this letter because you have some form of leukaemia or lymphoma. And unfortunately, your disease either has returned (this is called a relapse) or did not respond properly to the most recent course of treatment (this is called refractory leukaemia or refractory lymphoma). As your treating physician has informed you, there is no more standard therapy available for your disease. Treatment of your disease remains an important topic of investigation, which is why the HEM-iSMART trial was designed. This clinical trial (further on referred to as “trial”) aims to identify new combinations of drugs for children and adolescents suffering from relapsed or refractory leukaemia or lymphoma (R/R ALL or LBL) and to define the safety and efficacy of those new combinations. The goal is to improve the outcome / increase the long-term survival of children and adolescents with this disease.                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   This letter explains what kind of trial this is, what this means for you, and what the advantages and disadvantages are. If you participate in the trial, the data about your disease and treatment will be recorded.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Your data and your bodily material samples (such as blood, bone marrow, urine and cerebrospinal fluid (CSF)) to obtain trial data are collected and stored taking into account your privacy. In order to protect your privacy, your data and bodily materials will be assigned a code and we will only use this code if we process your data and bodily materials during the trial. The key to the code is stored safely at your hospital. The data in reports and publications about the trial cannot be traced to you either. The collected biological samples will be managed and stored for 25 years at various laboratories within and outside the hospital. The sponsor will want to use the remainders of the samples for future research, outside the trial that you will participate in, to better understand the disease, its treatment and the responses to this treatment, and Trametinib. The retention of the remainders of your samples goes together with the retention of the accompanying encoded personal data. We will give you clear information about this, and you will have to decide what you do or do not want. It is important to think about it carefully.                                                                                                                                                                                      |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   The authorities and an ethics committee have evaluated this trial. It is not because they have approved this trial that you should feel obliged to take part. Participating in this trial is completely voluntary and if you decide not to participate or to withdraw at a later moment, you will always receive the care you would receive when not participating in this trial. Before you decide to participate in this trial, take sufficient time to read this information sheet carefully and discuss this with the investigator/medical team or other people of your choice. Please take time to ask questions if there are any uncertainties or if you require additional information. This process is called "informed consent" for participating in a clinical study. Once you have decided to participate in the study, you will be asked to sign the consent form at the end of this information sheet. The investigator will also sign the form and thereby confirm that you have received the necessary information about the trial. You will receive a copy of the signed informed consent form. The investigator will retain the original.                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   If you agree to take part in the trial, we will carry out prior tests to check whether you meet all the conditions to be accepted for this trial. Only if you meet all the conditions to take part, we will allow your participation in the trial. It is important to note that you are not allowed to become pregnant or to get someone pregnant during the trial and for some time after it. We will discuss with you the appropriate method of contraception.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   In this trial, the investigational medicinal product Trametinib will be tested in combination with standard chemotherapy. Trametinib comes as a tablet formulation and needs to be administered once daily. You will also receive age-adapted chemotherapy (standard therapy). The amount and/or frequency of the medication to be given will depend on the dosage being investigated. More information on taking the medication can be found in Chapter I, section 4 of this information letter.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Trametinib has previously been administered to patients suffering from various types of cancer: a certain type of lung cancer, skin cancer and thyroid cancer. So far, nearly 2,000 people have been administered this medication. Trametinib has not yet been approved for use in children, but has previously been tested in children with other forms of cancer, and in adults with leukaemia and other types of cancer. Those studies showed that trametinib can be administered in combination with chemotherapy, and also that it can be safely administered to children. Dexamethasone, cyclophosphamide and cytarabine are medications that are used in the standard treatment of acute lymphoblastic leukaemia (ALL) and lymphoblastic lymphoma (LL). You have probably been administered these medications before. However, this particular combination of these medications has never been investigated before, in children or adult patients. At this point, it is uncertain whether you will benefit from it. However, your participation will help the investigators gain more insight into the treatment of relapsed and refractory leukaemia or lymphoma and ways to improve it in the future. That is precisely what we want to find out with this trial: is the combination of investigational medicinal products safe and can it fight off your disease? |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Overall, your participation in the trial will last between 1 and 6 months – depending on your health status. We would like to perform one last check-up 30 days after the final dose of study medication is administered. We would also like to keep monitoring you, until 1 year after the start of the course of treatment. As part of the monitoring procedure, you will have to come to hospital about four times. The monitoring appointments will coincide with regular follow-up appointments. During these appointments, we will physically examine you and check how you are doing.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   It is also very important that you know that all medicinal products have side effects. These side effects can be very serious. Therefore, it is really important that you report any side effects or any new health problem to your treating physician. Even if there is no fault, the sponsor is liable for harm caused to you whether directly or indirectly related to your participation in the trial. The sponsor has taken an appropriate insurance for this.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   All treatments and examinations that you will undergo or receive in the context of the trial will be free of charge for you. All other treatments or examinations that you would have undergone anyway if you did not take part in the trial, must be paid for by your health insurance and by yourself. Maximum treatment duration per patient is of 6 cycles. Only after approval from the Sponsor and if the patient fulfils the specified criteria, he/she may receive additional cycles.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   To be able to take part in this trial, you must, for your own safety, agree that we inform your treating physicians of your participation in this trial. You are not allowed to take part in another clinical trial at the same time without informing the researcher or the trial staff. We may refuse that participation to other trials for justified reasons. It is also very important that you cooperate and follow the instructions that the trial staff and I give you regarding the trial.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   This high-risk clinical trial was designed by the Princess Máxima Centre in Utrecht, the Netherlands. From now on, we will refer to the Princess Máxima Centre as the ‘sponsor’ of the trial.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Now that you have some idea what this trial is about, please take your time to read the other pages of this document. You do not have to do that all at once. It is important that you understand what you are reading. Feel free to discuss the trial with a trusted person (for example a friend, relatives, your family doctor). We are also available to help you if there is anything that is not clear. It is our job to make sure that you understand all the information.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   With my best regards                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Your treating physician and investigator                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Dr. xxx                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+CHAPTER I – DESCRIPTION OF THE TRIAL AND YOUR RIGHTS WHEN PARTICIPATING
+
+Why are we doing this trial
+
+You have relapsed or refractory leukaemia or lymphoma. As your treating physician has informed you, there is no standard therapy available for you. Treatment of this disease remains an important topic of investigation, which is why the HEM-iSMART trial was designed. This clinical trial (further on referred to as “trial”) aims to identify new combinations of agents for children and adolescents suffering from relapsed or refractory leukaemia or lymphoma (R/R ALL an LBL) and to define the safety and efficacy of those new combinations. The goal is to improve the outcome / increase the long-term survival of children and adolescents with this disease.
+
+Leukaemia or lymphoma cells may be subject to changes (mutations) that cause cancer cells to develop more quickly and keep growing afterwards. The changes that cause this effect can be measured in or on cells, or can be observed due to changes to a cell’s task. These indicators are called molecular or functional biomarkers.
+
+The trial aims to create a sustainable international platform that can help allocate patients to treatment options based on a harmonized interpretation of those molecular and functional biomarkers. So far, we have developed three different treatment options (sub-protocols). Depending on the mutations that your leukaemia or lymphoma cells have, you will be allocated to one of those treatment options.
+
+Leukaemia or lymphoma cells may be subject to changes (mutations) that cause leukaemia cells to develop more quickly and keep growing. Depending on the mutations that your leukaemia or lymphoma cells have, you are allocated to one of the three treatment options. Known changes that have such an effect are mutations in different genes known as the ‘RAS signalling pathway’. In the rest of this letter, we will refer to these mutations as ‘RAS mutations’. Patients who have been diagnosed with a RAS mutation tend to be harder to treat than those without such mutations. RAS mutations have been found in your leukaemia cells. Trametinib is a medication that blocks these RAS mutations and, as a result, may slow down the growth of cancer cells. Dexamethasone, cyclophosphamide and cytarabine are medications that may break down leukaemia and lymphoma cells.
+
+Trametinib has previously been administered to patients suffering from various types of cancer: a certain type of lung cancer, skin cancer and thyroid cancer. So far, nearly 2,000 people have been administered this medication. Trametinib has not yet been approved for use in children, but has previously been tested in children with other forms of cancer, and in adults with leukaemia and other types of cancer. Those studies showed that trametinib can be administered in combination with chemotherapy, and also that it can be safely administered to children.
+
+Dexamethasone, cyclophosphamide and cytarabine are medications that are used in the standard treatment of acute lymphoblastic leukaemia (ALL) and lymphoblastic lymphoma (LL). You have probably been administered these medications before. However, this particular combination of these medications has never been investigated before, in children or adult patients.
+
+Laboratory trials in ALL cells have shown that the combination of trametinib and dexamethasone is more effective than either trametinib or dexamethasone alone, since the two medications enhance each other’s effect.
+
+If it is found that the combination of these medications is safe, the investigators will proceed to Phase 2, in which they will focus on whether the combination is effective in treating the disease. We hope that trametinib will fight off your disease to such an extent that you will be able to undergo a stem cell transplant. If you are eligible for one, the doctor will discuss this with you.
+
+Why am I being asked to take part?
+
+You have been diagnosed with relapsed or refractory leukaemia or lymphoma. You are being asked to take part in this trial because it is believed that you are potentially a suitable candidate.
+
+You have relapsed or refractory leukaemia or lymphoma and for your condition the standard treatments aiming at improving survival have not worked. For your relapsed or refractory leukaemia or lymphoma, no treatment is currently available in Belgium that has been approved by the authorities. It cannot be guaranteed that your participation in this trial will cure your disease, improve your quality of life, or extend your life.
+
+The investigator or trial staff will discuss with you the requirements to be allowed to enter the trial.
+
+Do I have to take part in a trial?
+
+Your participation in a trial is voluntary and must remain free of any coercion. This means that you have the right not to take part in the trial or to withdraw at any time without giving a reason, even if you previously agreed to take part. Your decision will not affect your relationship with the investigator or your treating physician nor will it affect the quality of your future medical care.
+
+If other treatments are available for relapsed or refractory leukaemia or lymphoma, the investigator or his/her delegate will discuss these treatments with you.
+
+What will happen during the trial? 
+
+Taking into account the three combinations of new agents (depending on the mutations that are found), this HEM-iSMART trial will include about approximately 69 participants worldwide, including about 4 participants in Belgium.
+
+This specific trial (sub-protocol D) is for patients for whom mutations have been found in the RAS signalling pathway’. This specific trial will include about 26 participants in various European countries, including about 1 or 2 participants in Belgium.
+
+This trial consists of two phases: Phase 1 and Phase 2. Your doctor will be able to tell you which phase the trial is in currently. The purpose of Phase 1 is to ascertain the dose of the medication, Trametinib, combined with dexamethasone, cyclophosphamide and cytarabine, that is safe in patients whose symptoms did not properly respond to previous courses of treatment (i.e. who had refractory symptoms) or who have experienced a relapse (return of the disease). In Phase 1 of this trial, we will investigate two different doses of the medication. We will provide more information later in this letter. Your doctor will be able to tell you which dose is currently being investigated.
+
+If it is found that the combination of these medications is safe, the investigators will proceed to Phase 2, in which they will focus on whether the combination is effective in treating the disease.
+
+Pharmaceutical company Novartis will make the medication used in the trial available to the subjects free of charge.
+
+How long will the trial last?
+
+Are you taking part in the trial? If so, depending on the number of cycles you will undergo, the course of treatment with Trametinib will last between 1 and 6 months. If your leukaemia or lymphoma responds well to the course of treatment, the therapy may be extended at the end of the trial. Once the course of treatment has been completed, we would like to keep monitoring you, until 1 year after the start of the therapy.
+
+Step 1: are you a suitable candidate for this trial?
+
+The first thing we wish to determine is whether you are a suitable candidate for the trial. We will do so during the screening period. The investigator will perform several examinations to determine your eligibility. For instance, a physical examination, a thorough look at you medical history, a blood test, a bone marrow aspirate, a lumbar puncture, a urinalysis, an X-ray (or CT scan) of the lungs, an electrocardiogram, an echocardiogram, a pregnancy test (if relevant), a questionnaire and an eye examination. Furthermore, we will discuss any other medication(s) you may be taking.
+
+In Appendix A you will find a list of all the examinations to be performed. Most of these tests are also performed in the standard therapy, and we will be collecting the results of these tests as part of this trial. Some of the tests are not part of the standard therapy and are specifically performed as part of the trial. Tests in this category can be identified in the overview by means of an ‘*’.
+
+Once all these examinations have been performed, the investigator will discuss the results with you and tell you whether you are eligible for the Trametinib trial. You will only be allowed to take part in the trial if you meet all the inclusion criteria. If the screening results are such that you will not be allowed to take part, the treating physician will discuss any available alternatives with you.
+
+The investigator will send your general practitioner a letter to inform him/her that you are taking part in the trial. This is done for your own safety.
+
+Step 2: the study treatment
+
+In this trial, you will be administered Trametinib combined with standard chemotherapy. You will receive this combination of medications for 1 to 6 months. At the start of each new cycle, we will have another look at the right dose for you, based on your age and body weight.
+
+Trametinib
+
+Trametinib comes as a tablet formulation. At the start of each new cycle, we will have another look at the right dose for you, based on your age and body weight. You will have to take this medication once daily. Twenty-four hours must pass between each administration of the medication. More information on taking the medication can be found in the medication diary, in which you will record daily when you take the medication.
+
+The amount and/or frequency of the dexamethasone, cyclophosphamide and cytarabine to be given to you will depend on the dosage being investigated. There will be two different dosages: Dose Level 1 and Dose Level -1. We will start the trial by administering the highest dose level (Dose Level 1). We will use the same dose of trametinib in both dose levels. If Dose Level 1 is not well tolerated, we will reduce the amount of dexamethasone administered in Dose Level -1.
+
+At the end of the first 28-day cycle, we will evaluate whether the course of treatment is sufficiently effective with regard to your disease and whether you are fit enough to undergo another cycle. If this is the case, you will be started on Cycle 2.
+
+Dose Level 1: In Cycle 1, you will be administered trametinib once daily for 28 days, in combination with dexamethasone and standard chemotherapy.
+
+In all cycles, you will receive dexamethasone for the first five days. Dexamethasone is ingested in tablet form or intravenously. In other words, it can either be taken at home or be administered in the hospital.
+
+In Cycle 1, you will be intravenously administered cyclophosphamide on Day 3, and cytarabine on Days 5-8 and on Days 12-15. In Cycle 2, you will be intravenously administered cyclophosphamide on Day 1, and cytarabine on Days 3-6 and on Days 10-13. If you feel good enough, the medication can be given as a day treatment, not requiring an overnight stay. If not, you will be admitted to hospital for the administration of the medication. At the start of each cycle, you will probably need to spend a few days in hospital.
+
+More information on this is provided below.
+
+Dose Level 1, Cycle 1
+
++------------------------------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+|                                    | Day 1  | Day 2  | Day 3  | Day 5  | Day 7  |        |        | Day 14 | Day 21 | Day 28 |
++:===================================+========+========+========+========+========+========+========+========+========+========+
+|                                    |        |        |        |        |        |        |        |        |        |        |
++------------------------------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| Trametinib (oral)                  | Day 1 - 28                                                                              |
++------------------------------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+|                                    |        |        |        |        |        |        |        |        |        |        |
++------------------------------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| Dexamethason (oral or intravenous) | Day 1 – 5                         |        |        |        |        |        |        |
++------------------------------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+|                                    |        |        |        |        |        |        |        |        |        |        |
++------------------------------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| Cyclophosphamide (intravenous)     |        |        | Day 3  |        |        |        |        |        |        |        |
++------------------------------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+|                                    |        |        |        |        |        |        |        |        |        |        |
++------------------------------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+| Cytarabine (intravenous)           |        |        |        | Day 5 – 8       |        | Day 12 – 15     |        |        |
++------------------------------------+--------+--------+--------+-----------------+--------+-----------------+--------+--------+
+
+Dose Level 1, Cycle 2 and beyond
+
++------------------------------------+-------+-------+--------+--------+--------+-------+--------+--------+--------+--------+
+|                                    | Day 1 | Day 2 | Day 3  | Day 5  | Day 7  |       |        | Day 14 | Day 21 | Day 28 |
++:===================================+=======+=======+========+========+========+=======+========+========+========+========+
+|                                    |       |       |        |        |        |       |        |        |        |        |
++------------------------------------+-------+-------+--------+--------+--------+-------+--------+--------+--------+--------+
+| Trametinib (oral)                  |       | Day 1 - 28                                                                   |
++------------------------------------+-------+-------+--------+--------+--------+-------+--------+--------+--------+--------+
+|                                    |       |       |        |        |        |       |        |        |        |        |
++------------------------------------+-------+-------+--------+--------+--------+-------+--------+--------+--------+--------+
+| Dexamethason (oral or intravenous) | Day 1 – 5                       |        |       |        |        |        |        |
++------------------------------------+-------+-------+--------+--------+--------+-------+--------+--------+--------+--------+
+|                                    |       |       |        |        |        |       |        |        |        |        |
++------------------------------------+-------+-------+--------+--------+--------+-------+--------+--------+--------+--------+
+| Cyclophosphamide (intravenous)     | Day 1 |       |        |        |        |       |        |        |        |        |
++------------------------------------+-------+-------+--------+--------+--------+-------+--------+--------+--------+--------+
+|                                    |       |       |        |        |        |       |        |        |        |        |
++------------------------------------+-------+-------+--------+--------+--------+-------+--------+--------+--------+--------+
+| Cytarabine (intravenous)           |       |       | Day 3 – 6                |       | Day 10 – 13     |        |        |
++------------------------------------+-------+-------+--------------------------+-------+-----------------+--------+--------+
+
+Dose Level -1: In Cycle 1, you will be administered trametinib once daily for 28 days, in combination with dexamethasone and standard chemotherapy. In all cycles, you will receive dexamethasone for the initial five days. Dexamethasone is ingested in tablet form or administered intravenously. In other words, it can either be taken at home or be administered in hospital. The amount of dexamethasone to be administered will be lower than the amount administered in Dose Level 1.
+
+In Cycle 1, you will be intravenously administered cyclophosphamide on Day 3, and cytarabine on Days 5-8. In Cycle 2, you will be intravenously administered cyclophosphamide on Day 1, and cytarabine on Days 3-6. The dose of cyclophosphamide to be administered will be half the dose administered in Dose Level 1. If you feel good enough, the medication can be given as a day treatment, not requiring an overnight stay. If not, you will be admitted to hospital for the administration of the medication.
+
+More information on this is provided below.
+
+Dose Level -1, Cycle 1
+
++------------------------------------+-------+-------+-------+-------+-------+-------+-------+--------+--------+--------+
+|                                    | Day 1 | Day 2 | Day 3 | Day 5 | Day 7 |       |       | Day 14 | Day 21 | Day 28 |
++:===================================+=======+=======+=======+=======+=======+=======+=======+========+========+========+
+|                                    |       |       |       |       |       |       |       |        |        |        |
++------------------------------------+-------+-------+-------+-------+-------+-------+-------+--------+--------+--------+
+| Trametinib (oral)                  |       | Day 1 - 28                                                               |
++------------------------------------+-------+-------+-------+-------+-------+-------+-------+--------+--------+--------+
+|                                    |       |       |       |       |       |       |       |        |        |        |
++------------------------------------+-------+-------+-------+-------+-------+-------+-------+--------+--------+--------+
+| Dexamethason (oral or intravenous) | Day 1 – 5                     |       |       |       |        |        |        |
++------------------------------------+-------+-------+-------+-------+-------+-------+-------+--------+--------+--------+
+|                                    |       |       |       |       |       |       |       |        |        |        |
++------------------------------------+-------+-------+-------+-------+-------+-------+-------+--------+--------+--------+
+| Cyclophosphamide (intravenous)     |       |       | Day 3 |       |       |       |       |        |        |        |
++------------------------------------+-------+-------+-------+-------+-------+-------+-------+--------+--------+--------+
+|                                    |       |       |       |       |       |       |       |        |        |        |
++------------------------------------+-------+-------+-------+-------+-------+-------+-------+--------+--------+--------+
+| Cytarabine (intravenous)           |       |       |       | Day 5 – 8             |       |        |        |        |
++------------------------------------+-------+-------+-------+-----------------------+-------+--------+--------+--------+
+
+Dose Level -1, Cycle 2 and beyond
+
++------------------------------------+---------+---------+---------+---------+--------+--------+--------+--------+--------+--------+
+|                                    | Day 1   | Day 2   | Day 3   | Day 5   |        | Day 7  |        | Day 14 | Day 21 | Day 28 |
++:===================================+=========+=========+=========+=========+========+========+========+========+========+========+
+|                                    |         |         |         |         |        |        |        |        |        |        |
++------------------------------------+---------+---------+---------+---------+--------+--------+--------+--------+--------+--------+
+| Trametinib (oral)                  | Day 1 - 28                                                                                  |
++------------------------------------+---------+---------+---------+---------+--------+--------+--------+--------+--------+--------+
+|                                    |         |         |         |         |        |        |        |        |        |        |
++------------------------------------+---------+---------+---------+---------+--------+--------+--------+--------+--------+--------+
+| Dexamethason (oral or intravenous) | Day 1 – 5                             |        |        |        |        |        |        |
++------------------------------------+---------+---------+---------+---------+--------+--------+--------+--------+--------+--------+
+|                                    |         |         |         |         |        |        |        |        |        |        |
++------------------------------------+---------+---------+---------+---------+--------+--------+--------+--------+--------+--------+
+| Cyclophosphamide (intravenous)     | Day 1   |         |         |         |        |        |        |        |        |        |
++------------------------------------+---------+---------+---------+---------+--------+--------+--------+--------+--------+--------+
+|                                    |         |         |         |         |        |        |        |        |        |        |
++------------------------------------+---------+---------+---------+---------+--------+--------+--------+--------+--------+--------+
+| Cytarabine (intravenous)           |         |         | Day 3 – 6                  |        |        |        |        |        |
++------------------------------------+---------+---------+----------------------------+--------+--------+--------+--------+--------+
+
+See also Appendix A for the medication administration schedule.
+
+If the course of treatment proves sufficiently effective, you will probably receive a different type of therapy after one or two cycles, e.g. a stem cell transplant.
+
+If the course of treatment is found to be insufficiently effective after one or more cycles, the treating physician will discuss with you whether there are any other options available to you.
+
+Step 3: examinations and tests
+
+As part of this trial, you will have to visit the hospital every week if you are not actually staying overnight at the hospital.
+
+We will perform the following examinations:
+
+- Physical examination. For instance, the investigator will listen to your heart and
+lungs and measure your blood pressure.
+
+- Blood test. Your blood will be collected for testing purposes. Two 2ml tubes of
+blood will be taken each time.
+
+- Review of your patient diary, which you have to fill in daily.
+
+- Urinalysis
+
+- On Day 14 of Cycle 1, blood will be collected several times to determine the medicine blood level and 15-20 drops of cerebrospinal fluid will be collected once. This is called a pharmacokinetic assay. When we perform a pharmacokinetic assay, we analyse the amount of medication in the body at various points after administration of the medication. In this way, we seek to determine whether we are administering the right dose. We will collect blood once before trametinib dosing, and then three more times, at 4, 6 and 8 hours after trametinib dosing.
+
+At the end of each 28-day trametinib cycle, additional tests will be performed to determine if the course of treatment has been effective:
+
+- You will be asked to complete a questionnaire (only at the start and end of Cycle 1). The questions will be about your quality of life.
+
+- Pregnancy test for girls who can become pregnant.
+
+- Bone marrow examination
+
+- A scan (e.g. a CT scan), only if the leukaemia or lymphoma has spread to other parts of the body
+
+- Cerebrospinal fluid analysis
+
+- Blood test
+
+- Urinalysis
+
+- Electrocardiogram (ECG) and echocardiogram
+
+- Eye examination (if necessary)
+
+Bone marrow can be found in the innermost part of our bones. This is where blood is produced. You will be sedated when the bone marrow aspirate is performed, so you will not feel a thing. You will receive information on the examination and the sedative beforehand. A tiny needle is used to suction a small amount of bone marrow (aspirate) from the pelvis. Sometimes (in rare cases) a small piece of bone (= biopsy) will be collected, as well. The bone marrow and the piece of bone will be examined in a laboratory. A plaster will be affixed to the spot where the procedure is performed.
+
+Appendix A lists the procedures to be carried out each time you visit the hospital.
+
+Step 4: follow-up
+
+We would like to perform one last check-up 30 days after the final dose of study medication is administered. We would also like to keep monitoring you, until 1 year after the start of the course of treatment. As part of the monitoring procedure, you will have to come to hospital about four times. The monitoring appointments will coincide with regular follow-up appointments. During these appointments, we will physically examine you and check how you are doing.
+
+Overall, your participation in the trial will last between 1 and 6 months – depending on your health status.
+
+If you meet all the conditions required to be enrolled in the trial and agree to take part in the trial, you will undergo the above-mentioned tests and examinations. If you have any important side effects, the investigator might determine that it is necessary to perform additional tests which will be considered as specific to the trial.
+
+Will I benefit from the trial? 
+
+The information obtained during a trial may contribute to a better understanding of the use of the investigational medicinal product (referred to as “IMP”) or to the development of a new medicinal product for the treatment of yourself or future patients.
+
+The IMP may or may not be beneficial in treating your disease or relieving your symptoms. Even if it is beneficial to you, a potential return or worsening of symptoms, illness or disease is still possible.
+
+What are the possible risks and discomforts of taking part?
+
+Taking part in the trial may be both beneficial and detrimental to your health. We will list the benefits and risks below. We advise you to carefully consider them and discuss them with others.
+
+The study medication may reduce your symptoms, but this is by no means guaranteed. You may grow worse at any point during the course of the trial.
+
+By participating, you are assisting us in the search for better therapies against relapsed or refractory leukaemia or lymphoma. In the best-case scenario, the chemotherapy will prove to be effective, meaning that you will be able to undergo a stem cell transplant. The investigator will be able to tell you more about your prospects of recovery.
+
+1.  What are the possible side effects of trametinib?
+
+Participation in a trial involves some risk.
+
+Trametinib has not yet been approved for use in children, but has previously been tested in children with other forms of cancer, and in adults with leukaemia and other types of cancer. Those studies showed that trametinib can be administered in combination with chemotherapy, and also that it can be safely administered to children.
+
+Dexamethasone, cyclophosphamide and cytarabine are medications that are used in the standard treatment of acute lymphoblastic leukaemia (ALL) and lymphoblastic lymphoma (LL). You have probably been administered these medications before. However, this particular combination of these medications has never been investigated before, in children or adult patients.
+
+The study medications (trametinib, dexamethasone, cyclophosphamide and cytarabine) may cause side effects or adverse effects. Some of these side effects are already known, and some are not known. Even if previous studies have shown that trametinib was normally well tolerated, you may still experience side effects or adverse effects.
+
+Since you have leukaemia or lymphoma, you probably do not have many immune cells – a problem with which you will be familiar from previous courses of treatment.
+
+Contact the investigator at once if you experience any of the following adverse effects:
+
+- fever
+
+- feeling ill or extremely tired
+
+- nausea or vomiting
+
+- impaired vision (blurred vision)
+
+For a more complete overview of known side effects, refer to Appendix B.
+
+The study medications may also cause side effects we are currently unaware of. For this reason, you are requested to record any symptoms you may experience in the diary. Please call the investigator or clinical research nurse if you experience any symptoms that are new or serious, or if you have any concerns.
+
+Because this combination of medication is still under investigation, other currently unknown risks and discomforts could occur. Therefore, it is very important that you report any new or worsened health problems immediately to the investigator, regardless of whether or not you think it has to do with the trial medication and even when it is already described in this document. If you need to use other medication, discuss this with the investigator beforehand. If, for any reason, you consult another treating physician during the trial you must inform him/her that you are taking part in a trial and present your emergency card. This could be important in determining a diagnosis and giving you the correct treatment if needed.
+
+1.  What are the possible risks or discomforts of the examinations during the trial?
+
+In Appendix A you will find a list of all the examinations to be performed. Most of these tests are also performed in the standard therapy, and we will be collecting the results of these tests as part of this trial. Some of the tests are not part of the standard therapy and are specifically performed as part of the trial. Tests in this category can be identified in the overview by means of an ‘*’.
+
+You may have MRI, CT or PET-CT scans. All of these tests are to look at the extent of disease and how you are responding to treatment. X-rays may also be used as well. X-rays, CT and PET-CT scans use ionising radiation. This is thought to be associated with a very small increased risk of developing a second cancer in the future. However, you will have no additional scans than would be undertaken if you were not participating in the study
+
+The examinations that are specifically performed as part of the trial may cause the following discomforts and risks:
+
+The collection of blood and cerebrospinal fluid for pharmacokinetic assay may cause pain, bleeding, bruising or infection localised around the injection site. Similarly, some participants may feel dizzy or even faint during the procedure. The staff will do all they can to minimize these discomforts.
+
+2.  Can I take other medicines during the trial?
+
+Do not hesitate to ask your investigator for more explanation about the use of other medicines and food supplements.
+
+Grapefruit (or grapefruit juice) and trametinib are known to interact with each other. For this reason, you must not eat grapefruit or drink grapefruit juice while taking this medication. However, you can eat regular sweet oranges and drink the juice made from such oranges.
+
+3.  Will my participation to the trial have an impact on my daily activities?
+
+Participation in the trial may come with the following risks that can have an impact on your daily activities:
+
+- You may experience the side effects or adverse effects associated with the study medication as specified in Appendix B. The other medications to be administered during this trial also come with side effects, with which you will be familiar from your previous course(s) of treatment.
+
+- You may experience some discomfort due to the tests performed during the trial. For instance, the collection of blood may be a little painful. In most patients, we will use the PAC or Hickman line for blood sampling – a method you are already used to. We will also combine blood sampling for trial purposes with regular blood sampling where possible.
+
+- Taking part in the trial will require extra time from you.
+
+- If you are not admitted to the hospital for overnight stays, you will have to come to the hospital every week.
+
+- You will have to honour the arrangements you must commit to as part of the trial.
+
+We want to ensure that the trial runs smoothly. For this reason, we would like you to commit to the following arrangements:
+
+- You will take the medication as instructed by the investigator.
+
+- During this trial, you will not take part in any other clinical trials.
+
+- You will attend every appointment.
+
+- You will carry you trial participant card with you. For example, you will keep it in your wallet. This card states that you are taking part in this trial. It also explains whom to notify in the event of an emergency. Please show this card whenever you see another doctor.
+
+- Please contact the investigator in any of the following situations:
+
+  - In the event that you want to start taking other medicines. This includes homoeopathic remedies, natural remedies, vitamins or over-the-counter medicines.
+
+  - In the event that you are admitted to hospital or receiving treatment there.
+
+  - In the event that you suddenly develop health issues.
+
+  - In the event that you want to stop taking part in the trial.
+
+  - In the event that your phone number, address or e-mail address has changed.
+
+  1.  Can my partner or I get pregnant or can I breastfeed during the trial?
+
+Female participant: Because the effects of trametinib on an unborn child or infant are not known, you will not be allowed to take part in this trial if
+
+- you are pregnant
+
+- wish to become pregnant in the near future or
+
+- you are breastfeeding.
+
+It is also not allowed to do egg/ovum donation during and after your participation in the trial for up to 6 months after the last trametinib intake.
+
+If you take part in the trial, you must use one of the methods of contraception that are listed in Appendix C, during the trial and up to 6 months after the last dose of the trial. Please discuss this point with your investigator if this applies to you. Please inform the investigator in case you would decide during the trial to change your method of contraception.
+
+You will be required to have a pregnancy test (blood/urine) at trial start before the first dose of medication. It is required to continue testing during and even after the dosing phase of the trial.
+
+Male participant:
+
+Taking trametinib could have an effect on your sperm and could lead to an unknown risk for an unborn child.
+
+If you take part in the trial, you must use contraception (see Appendix C for approved forms of contraception) and you should not be sperm donor for the duration of the trial and up to 6 months after the last dose of trametinib. Please discuss this point with the investigator if this applies to you.
+
+You commit to inform your female partner(s) of your participation in this trial and of the potential risk to an unborn child.
+
+Nevertheless, if your partner becomes pregnant during the trial, you should inform immediately the investigator. If you agree, (s)he will contact your partner to ask her to be followed up during her pregnancy and its outcome and to sign a specific informed consent (for the pregnant partner).
+
+In case of pregnancy:
+
+If you or your partner becomes pregnant during the trial, you should inform immediately the investigator and your treating physician. This trial may impact the foetus. Appropriate care will then be organised.
+
+What If something goes wrong within the trial?
+
+Even if there is no fault, the sponsor is liable for harm caused to you whether directly or indirectly related to your participation in the trial. The sponsor has taken an appropriate insurance (a so called “No Fault insurance”) for this liability (Ref. [1]). A copy of the insurance certificate can be obtained from the investigator or trial staff.
+
+If you (or in the event of death, your rightful claimants) seek compensation for a harm to your health as a direct or indirect result of participating in the trial, you must inform your investigator or trial staff promptly.
+
+If the investigator believes that a link between the new or worsened health problem(s) and the trial is possible, he/she will inform the trial sponsor. The sponsor will then immediately initiate the declaration procedure to its insurance company. If the company considers it necessary, it will appoint an expert to assess whether there is a link between your reported health problem(s) and the trial. The insurance does not cover the natural progression of your disease/condition or the known side effects of the treatment you would have received without taking part to the trial (that is your standard treatment).
+
+Whenever you feel it is appropriate or if you or your rightful claimants disagree either with the investigator or with the expert appointed by the insurance company, you may contact the insurance company or proceedings may be brought against the insurance company. You will find the contact details on the second page of this form.
+
+What if other treatment options or new information on the IMP become available during the course of the trial?
+
+During the course of the trial, important new information might become available, possibly affecting your decision to (further) participate. For example other treatments for your disease or important new information on the medication may become available. It is the duty of the investigator to discuss this new information with you and to give you the opportunity to re-consider your participation in the trial.
+
+If you decide to stop taking part in the trial or if you are no longer able to participate, your investigator will see to it that you continue to receive the best possible medical care.
+
+Can my participation in the trial end prematurely?
+
+As explained in detail below, your trial participation may end prematurely when
+
+- you decide to withdraw your consent or to discontinue treatment with the study drug,
+
+- the investigator decides to end your trial participation, or to discontinue your treatment with the IMP, or
+
+- other entities interrupt or end the trial
+
+In any case, if your trial participation ends prematurely, the investigator will discuss your future medical care with you. Data collected before you terminate your participation will continue to be used as described in this form.. This is to avoid skewing / biasing results of the trial (as described in section 12.3).
+
+Depending on your situation, the investigator will discuss with you whether follow-up visits or procedures are needed.
+
+If you experience a side effect at the time you stop taking the IMP, the investigator may contact you afterwards to determine whether or not the side effect disappeared after your participation in the study ends.
+
+If you experience a new side effect after stopping the IMP, the investigator may contact you in the future to see if it has resolved or not after the end of the trial participation.
+
+1.  You decide to withdraw your consent
+
+You are entitled to withdraw your consent for any reason, at any time, without having to justify your decision. However, for your safety, you should inform the investigator of your decision. Although it is not mandatory, it may be useful for the investigator and for the sponsor to know the reason of your decision (for example side effects, frequency of clinical visits,…).
+
+If you withdraw your consent, this means you decide to stop
+
+- the treatment with the IMP, and
+
+- all trial-related examinations
+
+No new data will be collected and sent to the sponsor.
+
+If your biological samples (e.g. blood, urine, cerebrospinal fluid and bone marrow) have already been used or analysed before the withdrawal of your consent, the sponsor still has the right to use the results from those tests.
+
+The biological samples that have been collected (but not tested) before the withdrawal of your consent and the data obtained from it, can also still be used by the sponsor. You may ask for a destruction of those samples. If this impacts the validity of the trial, the destruction may be postponed till the end of the trial.
+
+In case you have ticked the separate box for consent for the use of your samples in future research, and you choose not to withdraw this separate consent, your samples can still be used for this research.
+
+1.  You decide to discontinue treatment with the study drug
+
+You may decide to stop treatment with the study drug but agree to continue participating in the study and be contacted by trial staff.
+
+If you decide to stop treatment with the study drug, you may continue to come to the study-related consultations. The trial staff will ask you if they can contact you by phone, email or post to ask about your general health status and/or to follow-up long-term side effects. This will take place approximately every 3 months for the rest of the study (end date fall 2030). They may also ask your permission to look for this information in your medical records until the end of the study. This information is important for the scientific value of the study and to correctly interpret its results. You are free to refuse such a regular contact. Your decision will not affect your future medical care.
+
+2.  The investigator decides to end your trial participation or to discontinue your treatment with the IMP
+
+The investigator may end your trial participation because
+
+- he/she thinks it is better for you (e.g. based on your test results, when you develop certain health problems, when the protocol defines that you should not get pregnant and you get pregnant anyway, ...),
+
+- he/she determines that you are not following the instructions given to participants, or
+
+- any other reason that will be explained,
+
+- the entire study should be discontinued for all participants (see next paragraph).
+
+If that happens, the trial staff will explain why and ensure appropriate follow-up.
+
+1.  Other entities may interrupt or end the trial
+
+The sponsor and the competent Belgian health authorities may interrupt or end the trial because
+
+- the information gathered shows that the IMP is not effective (does not deliver a sufficient level of improvement in the health of the trial participants),
+
+- the IMP causes more (serious) side effects than anticipated, or
+
+- any other reason that will be duly motivated by such party.
+
+Which treatment will I get after my participation in the trial? 
+
+After you stopped the treatment with the IMP, the investigator will assess your health. If necessary, he/she will prescribe you the best standard treatment available or refer you to another treating physician of your choice.
+
+You are eligible for a one-to-six-month supply of the study medications. If your leukaemia responds well to the medications, the therapy may be continued afterwards. The investigator will discuss with you whether the therapy can be extended or what other types of therapy are available to you.
+
+~~The sponsor will give you post-trial access to the IMP after this trial if~~
+
+- ~~the benefit/risk ratio is favourable for you and no satisfactory treatment is available on the market in Belgium,~~
+
+- ~~the competent Belgian health authorities approve this access and~~
+
+- ~~the development and manufacturing of the IMP is continued.~~
+
+Will my participation in the trial involve extra costs for me?
+
+1.  Examinations and treatments paid by the sponsor
+
+As described in section 4, the treatments and examinations that are trial specific will not be charged to you. The standard procedures or examinations for your condition (i.e. standard of care) will be charged to you or reimbursed by your mutual insurance fund (Belgian social security).
+
+The sponsor has arranged to compensate the hospital or site for
+
+- the time devoted to the trial by the investigator and the trial staff,
+
+- the visits/consultations and all scheduled examinations specific to the trial,
+
+- the investigational treatment (IMP and any other medication and material specifically used for the trial).
+
+You will not be held accountable to pay for any costs linked to the pregnancy tests.
+
+In Appendix A to this ICF you will find the examinations that you will have to undergo, with the specifications which ones are trial specific and which ones are part of your standard care. The treatments and examinations that are trial specific will be paid by the sponsor and will not be charged to you. The standard procedures or examinations for your condition (i.e. standard of care) will be charged to you or your mutual insurance fund (Belgian social security).
+
+If you need more details or if you are not affiliated with a mutual insurance fund (Belgian social security), please contact the trial staff.
+
+The visits and treatments which are a consequence of a side effect are also considered as trial specific.
+
+1.  Other expenses paid by the sponsor
+
+You will receive compensation for certain expenses related to your participation in the study. The reimbursement received by Belgian participants as part of this study are not subjected to income tax in Belgium.
+
+The table below describes what you will be compensated for and the amounts you will receive. This compensation will be in the form of bank transfer. The sponsor will pay your compensation quarterly. You have the right to withdraw your decision for any form of compensation for any reason at any time without having to justify your decision. If you encounter any problems in receiving your compensation, do not hesitate to contact the trial staff.
+
+You will receive a compensation for the following expenses:
+
+  ------------------------------------------------------------------------------------
+  Type                                Amount
+  ----------------------------------- ------------------------------------------------
+  Fuel                                0,19 EUR per kilometer (traject domicile-site)
+
+  ------------------------------------------------------------------------------------
+
+The trial staff shall contact you for the practical arrangements.
+
+Which data are collected about me during the trial and what will happen with them?
+
+1.  Which data are collected and processed during the trial?
+
+The collected and processed personal data concern information about your health and medical condition. This includes your medical history, some of your background information (for example your age, sex, and ethnic origin) and the results of examinations required by the trial.
+
+2.  How will the investigator treat my personal data?
+
+The investigator (and the trial staff) is bound by professional secrecy or by a confidentiality agreement about the data collected.
+
+This means that he/she will never reveal your identity, including in a scientific publication or a lecture and that he/she will encode your data (that is by replacing your identity by an identification code in the trial) before sending them to the sponsor. In other words, this code will not contain any personal identifier or combination of identifiers such as name, first name, initials, full or partial date of birth, file number, etc
+
+Therefore, the investigator and the trial staff under the responsibility of the investigator, will be the only ones able to establish a link between your identity and the data transmitted during the trial, with the exceptions listed under section 12.5.
+
+The data transmitted to the sponsor will not allow the sponsor to identify you.
+
+3.  How will my data be handled?
+
+Your trial data will be processed in accordance with the current European and Belgian data protection legislation.
+
+The reason that your personal data may be processed for the purposes of the study is that it is processed for the conduct of scientific research and we must perform a task carried out in the public interest.
+
+4.  Do I have access to my data collected and processed during the trial and can I rectify them ?
+
+You are entitled to ask the investigator what data are being collected about you and how those data will be used in connection with the trial.
+
+You have the right
+
+- to inspect and access these data
+
+- to receive the personal data that are collected
+
+- to ask for correction if they are incorrect,
+
+- to restrict the processing of your data.
+
+- to withdraw your consent for the processing of personal data. However personal data collected before withdrawal will be kept to avoid skewing of results in the trial
+
+It is not possible
+
+- to have all your data erased
+
+- to object to the processing of your personal data
+
+to avoid skewing of results in the trial. If the investigators have already collected data as part of the trial by the time you withdraw your consent, the investigators are still allowed to use those data. If any tests have already been performed on your bodily materials, the investigators will be allowed to continue using the results of those tests.
+
+1.  Who, other than the Investigator and his staff, has access to my personal data?
+
+To verify the quality of the trial, it is possible that your personal uncoded data or information in your medical records relevant for the trial, will be examined by people outside the trial staff but under the responsibility of the investigator. These persons must be subject to professional secrecy or a confidentiality agreement. The following might be considered:
+
+- the personnel designated by the sponsor of the trial (monitors and auditors), and people or organisations providing services for or collaborating with the sponsor. They will however never transfer your name and contact details to the sponsor.
+
+- inspectors of competent health authorities worldwide
+
+- an independent audit group
+
+- people designated by the Ethics Committee
+
+For the needs of the trial, the encoded trial data will be sent to other EU and non-EU countries and may be reviewed by
+
+- personnel (other than the inspectors) of competent health authorities of Belgium (Federal agency for medicines and health products, FAMHP) and other EU and non-EU countries,
+
+- the evaluating Belgian Ethics Committee(s),
+
+- external researchers,
+
+- the sponsor of the trial, personnel designated by the sponsor, and people or organisations providing services for or collaborating with the sponsor, and/or
+
+- group companies of the sponsor in Belgium, and in other EU and non-EU countries.
+
+The European regulation and the Belgian legislation on data protection have requirements for transferring data to non-EU countries. The sponsor must ensure equivalent guarantees regarding personal data protection standards before transferring the encoded data to non-EU countries. If for this purpose, there is a data protection agreement, a copy of this agreement may be obtained via the investigator.
+
+You can always contact your investigator to obtain more information about any such transfers.
+
+If you have any questions about your rights, or if you have any complaints about the processing of your personal data, please contact the data controller. In this trial, the data controller is the Princess Máxima Centre.
+
+If you have any complaints about the processing of your personal data, we recommend that you first discuss the issue with the members of the study team.
+
+If you have any questions or complaints about the processing of your personal data, please contact the Data Protection Officer <…….>
+
+Or alternatively, you can submit a complaint to the Belgian Data Protection Authority. https://www.dataprotectionauthority.be/citizen
+
+1.  What will happen to the results of the trial?
+
+After trial closure, a description and the results of this clinical trial will be published in specialised medical journals. A copy of the scientific publication can be obtained from the investigator or the trial staff.
+
+A description of the trial will also be available on https://www.clinicaltrialsregister.eu/. You can search these websites at any time using the trial number given on the front page of the informed consent form. The websites will include a summary of the results within 1 year after the end of the trial (Ref. [2]). You will find the trial by entering ‘NCT05745714’ in the search bar.
+
+These websites or publications will not include information that can identify you.
+
+2.  Will my data be used for other purposes than for the trial in which I take part?
+
+The results of the trial will be used to answer the scientific questions of the trial. In addition, the sponsor would like to use your data obtained from this trial, in connection with other research and development activities (and the associated scientific publications). These activities may concern
+
+- the way trametinib and drugs of the same group work,
+
+- the disease/condition for which trametinib is evaluated in this trial or
+
+- other diseases and health problems which could benefit from trametinib, or from related diagnostic tests.
+
+Any additional research outside of the trial, must be approved by a Belgian recognized Ethics Committee.
+
+At the end of this form you agree or disagree to the use of your trial data for other purposes by ticking the appropriate check-box in Chapter II.
+
+1.  How long will my data be kept?
+
+After the end of the trial your encoded data will be retained for at least 25 years (Ref. [3]) in accordance with the European clinical trial regulation to ensure the validity of the research. This will also be the case if you stopped trial participation prematurely.
+
+ Which biological samples are collected from me during the trial and what will happen with them? 
+
+1.  Which biological samples are collected from me during the trial?
+
+Biological samples are samples of human body material (for example blood, tissue, urine, faecal stool, ….)
+
+In this trial, the following biological sample(s) will be taken: blood, urine, cerebrospinal fluid (CSF) and bone marrow.
+
+The procedure to encode your biological samples is the same as that used for your personal data in accordance with Belgian legislation on the use of human body material (see I § 12.2). Samples sent to the sponsor or to organisations working in collaboration with the sponsor, will only be labelled with your trial identification code. The sponsor ensures that the location of your biological samples is always tracked. The use of your biological samples is linked to the processing of the associated coded personal data.
+
+Your biological samples are deemed to be a “donation”. You will not receive any financial benefit associated with the development of new therapies derived from the use of your biological samples, and which may have commercial value.
+
+2.  What will happen to the collected biological samples?
+
+The collected biological samples will be managed and stored for 25 years at various laboratories inside and outside the hospital.
+
+These biological samples will be analysed for the objectives of the trial.
+
+Since scientific progress in this area is constant, the sponsor would like to, with your consent retain the remainders of your biological samples for 25 years. The sponsor will use them for additional research that remains within the context of the current clinical trial and thus with the same disease or the same treatment/drug as in this study.
+
+You agree or disagree to the retention of the remainder of your biological samples for additional research within the context of the current clinical trial by ticking the appropriate checkbox in Chapter II.
+
+The residuary samples (collected for standard testing purposes) will be stored for 25 years in the Biobank Pediatrische Hematologie-Oncologie en Stamceltransplantatie UZ Gent, Belgium.
+
+The tubes of blood and cerebrospinal fluid collected for the pharmacokinetic assay(s) will be sent to the National Cancer Institute (NKI) in Amsterdam, the Netherlands, for pharmacokinetic testing.
+
+The bone marrow sample will be sent to the Charité Hospital in Berlin, Germany, where your reaction to the course of treatment will be assessed. This is called a centralised review.
+
+It may happen by chance and in addition to the trial objectives, that the results of the analysis of your biological samples reveal information that may be important to your health or the health of your blood relatives. These data are called ”incidental findings” and will be treated as described in Chapter I, § 15.
+
+3.  Will any additional biological samples be collected and used for additional research?
+
+In this trial, no additional biological samples will be collected.
+
+What if the trial reveals meaningful information about your health?
+
+We may discover new information about your health during the course of the trial. If this information may be important to your health, the sponsor will inform the researcher. With your consent, the researcher will inform you and your treating physician about your results and the possible consequences. If necessary, the researcher and/or the treating physician will advise you on what to do next.
+
+You can let the researcher know whether or not you agree to be informed about meaningful information discovered about your health by ticking the relevant checkbox in Chapter II. The researcher/your treating physician will inform you about this information in any case where not being informed may cause serious harm to your health or that of third parties.
+
+Who has reviewed and approved the trial documents?
+
+The documents of the trial have been reviewed by
+
+- The Belgian competent health authorities (FAMHP) or if applicable by the competent national health authorities of other EU members states and
+
+- An independent Belgian Ethics Committee
+
+It is the task of the competent health authorities and the Ethics Committees to protect people who take part in a trial. The health authorities will ensure that the trial is conducted in accordance with the applicable legislation.
+
+You should not under any circumstances take their approval as an incentive to take part in the trial.
+
+ Appendices
+
+A.  List of procedures to be performed as part of the trial
+
+B.  Overview of known side effects
+
+C.  Approved contraceptives and pregnancy
+
+Appendix A
+
++----------------------------------------------------------------------------------------------+-----------+-------------------------------------------------------------------------------+-----------------------------------------------------+--------------------------------------------+
+| CYCLE 1                                                                                      | Screening | Cycle 1                                                                       | End of course of treatment                          | 30 days after the final dose of trametinib |
+|                                                                                              |           |                                                                               |                                                     |                                            |
+|                                                                                              |           |                                                                               | (if your child does not proceed to undergo Cycle 2) |                                            |
++==============================================================================================+===========+===============+===============+===============+===============+===============+=====================================================+============================================+
+| Day of cycle                                                                                 |           | 1             | 7             | 14            | 21            | 28            |                                                     |                                            |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+| Consent                                                                                      | X         |               |               |               |               |               |                                                     |                                            |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+| Physical examination                                                                         | X         | X             | X             | X             | X             | X             | X                                                   | X                                          |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+| Skin examination*                                                                            | X         | X             | X             | X             | X             | X             | X                                                   | X                                          |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+| Collection of cerebrospinal fluid                                                            | X         | (x)           | (x)           | X             | (x)           | X             | X                                                   |                                            |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+| Bone marrow biopsy                                                                           | X         |               |               |               |               | X             | X                                                   |                                            |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+| Imaging (e.g. MRI/CT/PET) of patients with lymphoma or leukaemia with extramedullary disease | X         |               |               |               |               | X             | X                                                   |                                            |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+| Blood sampling                                                                               | X         | X             | X             | X             | X             | X             | X                                                   | X                                          |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+| Urinalysis                                                                                   | X         | X             | X             | X             | X             | X             | X                                                   | X                                          |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+| Pregnancy test                                                                               | X         |               |               |               |               | X             | X                                                   | X                                          |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+| Electrocardiogram and echocardiogram                                                         | X         |               |               |               |               | X             | X                                                   |                                            |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+| Eye examination*                                                                             | X         | as necessary                                                                                                                                                                     |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+| Thoracic X-ray                                                                               | X         |               |               |               |               |               |                                                     |                                            |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+| Quality of life questionnaire*                                                               | X         |               |               |               |               | X             |                                                     |                                            |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+| Patient diary*                                                                               |           | X             | X             | X             | X             | X             | X                                                   |                                            |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+| Collection of blood and cerebrospinal fluid for pharmacokinetic assay*                       |           |               |               | X¹            |               |               |                                                     |                                            |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+| Administration of trametinib*                                                                |           | Days 1-28                                                                     |                                                     |                                            |
++----------------------------------------------------------------------------------------------+-----------+-------------------------------------------------------------------------------+-----------------------------------------------------+--------------------------------------------+
+| Administration of dexamethasone*                                                             |           | Days 1-5                                                                      |                                                     |                                            |
++----------------------------------------------------------------------------------------------+-----------+-------------------------------------------------------------------------------+-----------------------------------------------------+--------------------------------------------+
+| Administration of cyclophosphamide*                                                          |           | Day 3                                                                         |                                                     |                                            |
++----------------------------------------------------------------------------------------------+-----------+-------------------------------------------------------------------------------+-----------------------------------------------------+--------------------------------------------+
+| Administration of cytarabine*                                                                |           | Dose Level 1: Days 5-8 and Days 12-15/Dose Level -1: Days 5-8                 |                                                     |                                            |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+| Intrathecal administration of medications                                                    | X         | (X)           | (X)           | X             | (X)           |               |                                                     |                                            |
++----------------------------------------------------------------------------------------------+-----------+---------------+---------------+---------------+---------------+---------------+-----------------------------------------------------+--------------------------------------------+
+
+(X) = as necessary, * = deviation from standard therapy
+
+¹ On this day we will collect one additional tube of blood at the following times: before trametinib dosing and at 4, 6 and 8 hours after trametinib dosing. We will also collect 15 to 20 drops of cerebrospinal fluid.
+
++-------------------------------------------+----------------------------------------------------------------+----------------------------+--------------------------------------------+
+| CYCLE 2 and beyond                        | Cycle 2 and beyond                                             | End of course of treatment | 30 days after the final dose of trametinib |
++===========================================+============+============+============+============+============+============================+============================================+
+| Day of cycle                              | 1          | 7          | 14         | 21         | 28         |                            |                                            |
++-------------------------------------------+------------+------------+------------+------------+------------+----------------------------+--------------------------------------------+
+| Physical examination                      | X          | X          | X          | X          | X          | X                          | X                                          |
++-------------------------------------------+------------+------------+------------+------------+------------+----------------------------+--------------------------------------------+
+| Collection of cerebrospinal fluid         | X          |            | X          |            | X          | X                          |                                            |
++-------------------------------------------+------------+------------+------------+------------+------------+----------------------------+--------------------------------------------+
+| Bone marrow biopsy                        |            |            | (X)        |            | X          |                            |                                            |
++-------------------------------------------+------------+------------+------------+------------+------------+----------------------------+--------------------------------------------+
+| Imaging (e.g. MRI/CT/PET)                 |            |            |            |            | X          | X                          |                                            |
++-------------------------------------------+------------+------------+------------+------------+------------+----------------------------+--------------------------------------------+
+| Blood sampling                            | X          | X          | X          | X          | X          | X                          | X                                          |
++-------------------------------------------+------------+------------+------------+------------+------------+----------------------------+--------------------------------------------+
+| Urinalysis                                | X          | X          | X          | X          | X          | X                          | X                                          |
++-------------------------------------------+------------+------------+------------+------------+------------+----------------------------+--------------------------------------------+
+| Pregnancy test                            | X          |            |            |            | X          | X                          | X                                          |
++-------------------------------------------+------------+------------+------------+------------+------------+----------------------------+--------------------------------------------+
+| Electrocardiogram and echocardiogram      |            |            |            |            | X          | X                          |                                            |
++-------------------------------------------+------------+------------+------------+------------+------------+----------------------------+--------------------------------------------+
+| Eye examination*                          | as necessary                                                                                                                             |
++-------------------------------------------+------------+------------+------------+------------+------------+----------------------------+--------------------------------------------+
+| Quality of life questionnaire*            |            |            |            |            |            | X                          |                                            |
++-------------------------------------------+------------+------------+------------+------------+------------+----------------------------+--------------------------------------------+
+| Patient diary*                            | X          | X          | X          | X          | X          | X                          |                                            |
++-------------------------------------------+------------+------------+------------+------------+------------+----------------------------+--------------------------------------------+
+| Administration of trametinib*             | Days 1-28                                                      |                            |                                            |
++-------------------------------------------+----------------------------------------------------------------+----------------------------+--------------------------------------------+
+| Administration of dexamethasone*          | Days 1-5                                                       |                            |                                            |
++-------------------------------------------+----------------------------------------------------------------+----------------------------+--------------------------------------------+
+| Administration of cyclophosphamide*       | Day 1                                                          |                            |                                            |
++-------------------------------------------+----------------------------------------------------------------+----------------------------+--------------------------------------------+
+| Administration of cytarabine*             | Dose Level 1: Days 3-6 and Days 10-13                          |                            |                                            |
+|                                           | Dose Level -1: Days 3-6                                        |                            |                                            |
++-------------------------------------------+------------+------------+------------+------------+------------+----------------------------+--------------------------------------------+
+| Intrathecal administration of medications | X          |            | X          |            |            |                            |                                            |
++-------------------------------------------+------------+------------+------------+------------+------------+----------------------------+--------------------------------------------+
+
+(X) = as necessary, * = deviation from standard therapy
+
+Appendix B
+
+Potential side effects, adverse effects and discomforts associated with trametinib
+
+Very common (at least 1 in 10 patients may experience these side effects):
+
+- High blood pressure
+
+- Bleeding (external bleeding, pain, swelling, nausea and vomiting)
+
+- Coughing
+
+- Chest tightness
+
+- Diarrhoea
+
+- Nausea
+
+- Vomiting
+
+- Constipation
+
+- Abdominal pain
+
+- Dry mouth
+
+- Skin rash
+
+- Some type of acne
+
+- Dry skin
+
+- Itching
+
+- Hair loss
+
+- Fatigue
+
+- Swelling of hands or feet
+
+- Fever
+
+- Abnormal liver function, which may mean that the liver is not functioning properly; such abnormalities tend to be mild and reversible but can be severe or life-threatening. Your liver function will be checked regularly during the course of the trial. Please notify your treating physician or clinical research nurse if you notice any of the following changes: itching, skin turning yellow, whites of the eyes turning yellow, dark urine, pain or an uncomfortable sensation in the upper right abdomen.
+
+Common (1 in 100 up to 1 in 10 patients may experience these side effects):
+
+- Inflammation of the hair follicles
+
+- Inflammation of the cuticles
+
+- Skin effects: thickening of the skin, skin fissures, warts, small and benign skin growths, small wounds, flaky or scaly patches of skin that may be an early sign of skin cancer, redness, small wounds oozing pus, and skin rash, including an acne-like rash.
+
+- Inflammation of the subcutaneous fat tissue, with red and painful bumps in the skin
+
+- Cellulitis
+
+- Anaemia
+
+- Hypersensitivity (immune system abnormalities)
+
+- Dehydration
+
+- Blurred vision
+
+- Fluid retention around the eyes or eyelids
+
+- Impaired vision
+
+- Impaired cardiac function
+
+- Reduced heart rate
+
+- Pneumonia
+
+- Stomatitis (inflammation of the oral mucosa)
+
+- Redness
+
+- Skin rash in the palm of the hand and sole of the foot
+
+- Skin fissures
+
+- Cracked skin
+
+- Facial swelling
+
+- Mucosal inflammation
+
+- Feeling weak, or lack of energy
+
+- Abnormal muscle protein values (elevated blood creatine phosphokinase levels)
+
+Infrequent side effects (fewer than 1 in 100 patients may experience these side effects):
+
+- Eye-related problems, including an occluded or bleeding retinal vein, inflammation of the eye, swelling around the eyes, retinal detachment and other retinal disorders, which may cause the patient to experience blurred vision. In many cases, these vision-related problems will pass, but in some cases they will not, and may result in blindness
+
+- Heart failure, causing the heart to be unable to pump blood around the body properly. This may result in fatigue, swelling and shortness of breath
+
+  - Retinal detachment in the eye
+
+  - Lymphoedema
+
+  - Pneumonia
+
+  - Intestinal perforation (stomach ache, nausea, vomiting and fever)
+
+  - Colitis (diarrhoea, often involving blood and slime, sometimes involving pus, stomach ache, stomach cramps and abdominal swelling
+
+  - Excessive muscle atrophy (pain, swelling, haphalgesia (pain upon physical contact) or sensitivity at the level of the affected area, loss of consciousness, confusion and dehydration, possibly with fever, paralysis or dysaesthesia of the limbs, dark urine, very little to no urine production)
+
+Appendix C
+
+If you are a girl and of childbearing age, it is vital that you do not fall pregnant during the course of the trial and for at least 6 months after the last dose of chemotherapy. In addition, you should not have any egg cells stored (either for her own use or for donation) while you are taking part in the trial and for 6 months after the last dose of chemotherapy. You must not breastfeed any infants during the trial and for at least 35 days after the last dose of chemotherapy.
+
+If you are a boy and taking part in the trial, you must not cause a pregnancy or donate sperm during the trial and for 6 months after the last dose of chemotherapy.
+
+If you are capable of becoming pregnant and are heterosexually active, or if you have a partner who may become pregnant, the treating physician or nurse will explain the different types of contraceptives that you must use during and after the trial. Approved forms of contraception include:
+
+- Hormonal contraceptives that are taken by mouth, inserted into the vagina, applied to the skin in the form of a skin patch, injected or implanted under the skin
+
+- A coil (IUD) (some IUDs contain hormones)
+
+- Refraining from having sex (complete sexual abstinence)
+
+If you become pregnant during this trial, or if your partner becomes pregnant during this trial, you must notify the investigator or the members of the study team at once. If you fall pregnant, the treating physician will discuss with you how this will impact your course of treatment. The investigator will inform the sponsor and the Medical Ethics Review Committee that monitors this trial of the pregnancy and the outcome of the pregnancy.
+
+CHAPTER II - Informed consent
+
+HEM ISMART-D: Trametinib + Dexamethasone + Chemotherapy in Children with Relapsed or Refractory Hematological Malignancies (HEM-iSMART D)
+
+PARTICIPANT 
+
+Prerequisites for your participation in the trial
+
+- I declare that I have read this form and understood its information
+
+- I declare that I have been informed of and that I understand the purpose of the clinical trial, its duration, possible risks and discomforts, the precautions that I have to take and what is expected of me. My rights have been explained to me and I have understood those rights.
+
+- I have had enough time to think about taking part in this trial and to discuss it with a trusted person (for example friends, relatives, treating physician, …).
+
+- I have had the opportunity to ask any questions that came to mind and have obtained a satisfactory response to my questions.
+
+- I understand that my participation in this trial is voluntarily and free from any coercion and that I am free to stop at any time my trial participation.
+
+- I understand that data about me will be collected and that they will be treated confidentially as described in Chapter I, §12.2.
+
+- I am aware that my personal data is being processed as described in Chapter I, § 12.
+
+- I understand that the monitoring of the trial will give certain persons access to all my data. I give these persons permission to view my data for monitoring purposes.
+
+- I give the investigators permission to collect and use bodily materials. The investigators do this for the sole purpose of answering the research question in this trial.
+
+- I understand that representatives of the sponsor, the ethics committee, and competent health authorities have access to my medical record if authorised to do so (as described in Chapter I, § 12.6).
+
+- I understand that the sponsor has taken out an insurance in case I should suffer any damage in connection with my participation in this trial.
+
+- I understand that when participating in this trial, I will not have any costs except those related to the standard of care treatment of my disease
+
+- I understand the importance of contraception and will adhere to the recommendations provided. I will also inform my partner(s) about my participation in a clinical study involving a drug that may be harmful to the fetus, and we will take the necessary contraceptive measures together.
+
+- I am aware that my treating physician(s) being informed of my participation in this trial.
+
+- If I take part in another interventional trial, I must inform the investigator or trial team about this. I agree not to take part in any other interventional trial (e.g. with a study drug, medical device, experimental surgical technique) at the same time without first informing the investigator or the trial staff, who might not permit me to participate for a good reason.I understand that I need to cooperate and follow the investigator’s and trial staff’s instructions regarding the trial.
+
+- I understand that participation to the trial might end for me without my consent if I need other treatment, do not follow the trial plan, have a trial-related injury, or for any other justified reason.
+
+- I certify that all the information I have given about my medical history is correct, to the best of my knowledge. I understand that it may be harmful to me if I do not inform the investigator of possible reasons why I could not participate in the study.
+
+mandatory consents which are prerequisite for your participation in this trial.
+
+1.  As described in Chapter I, § 12.8, your encoded data may be sent to countries outside the EU, where EU privacy laws don't apply.
+
+Do you agree your encoded data may be sent to countries outside the EU in this trial?
+
+(Tick as appropriate. If you leave this question open, we assume the answer is ‘I do not agree’.)
+
++---------------------------------+---------------------------------+
+|   ☐ I agree                     |   ☐ I do not agree              |
++:================================+=================================+
+
+Optional consents which are no prerequisite for your participation in this trial.
+
+1.  As specified in Chapter I, § 12.8 , the sponsor would like to be able to use your data obtained from this trial in connection with other research and development activities (and the associated scientific publications) on the condition that such research purposes have been approved by a Belgian recognized Ethics Committee.
+
+  Do you agree with the use of your data obtained in this trial for other research purposes?
+
+  (Tick as appropriate. If you leave this question open, we assume the answer is ‘I do not agree’.)
+
++---------------------------------+---------------------------------+
+|   ☐ I agree                     |   ☐ I do not agree              |
++:================================+=================================+
+
+2.  As specified in Chapter I, § 13.2, the sponsor would like to retain the remainders of your biological samples for 25 years for additional research within the context of the trial that you will participate in..
+
+  Do you agree with the retention of the remainders of your biological samples and the accompanying personal data for additional research within the context of the trial?
+
+  (Tick as appropriate. If you leave this question open, we assume the answer is ‘I do not agree’.)
+
++---------------------------------+---------------------------------+
+|   ☐ I agree                     |   ☐ I do not agree              |
++:================================+=================================+
+
+MEANINGFUL INFORMATION
+
+3.  As described in Chapter I, § 14it may happen that meaningful information is discovered that may be important to your health or the health of that of third parties.
+
+If this were to occur, : would you like the researcher/your treating physician to inform you of this result?
+
+  (Tick as appropriate. If you leave this question open, we assume the answer is ‘yes, I want to be informed’.)
+
++--------------------------------------+---------------------------------+
+|   ☐ No, I do not wish to be informed |   ☐ Yes, I wish to be informed  |
++:=====================================+=================================+
+
+I consent to take part in the trial and I have received a signed and dated copy of all pages of this document.
+
+Participant’s surname and first name:
+
+Date (DD/MMM/YYYY):
+
+Participant’s signature:
+
+IMPARTIAL WITNESS / INTERPRETER (REF. [4])
+
+I, the undersigned (Tick as appropriate),
+
+☐ Impartial Witness
+
+☐ Interpreter
+
+was present during the entire process of informing the participant and I confirm that the information on the objectives and procedures of the trial was adequately provided, that the participant (or his/her legal representative) apparently understood the trial and that consent to participate in the trial was freely given. 
+
+I declare furthermore that acting as an impartial witness, I am independent of the sponsor and the investigator.
+
+Impartial Witness / Interpreter surname and first name:
+
+Impartial Witness / Interpreter qualification:
+
+Date (DD/MMM/YYYY):
+
+Impartial Witness / Interpreter signature:
+
+INVESTIGATOR
+
+I, the undersigned investigator, confirm that
+
+- the participant has been verbally provided with the necessary information about the trial, has been explained the content and has been given an original signed document.
+
+- I have verified that the participant has understood the trial.
+
+- I have given the participant sufficient time to agree to take part and to ask any questions.
+
+- no pressure was applied to persuade the participant to agree to take part in the trial.
+
+- I operate in accordance with the ethical principles set out in the latest version of the “Helsinki Declaration”, the “Good Clinical Practices” and the Belgian Law (Ref. [5]).
+
+Investigator’s, Surname and first name:
+
+Date (DD/MMM/YYYY):
+
+Time:
+
+Investigator’s signature:
+
+GLOSSARY
+
+DPA: The Data Protection Authority ensures that personal data are handled with care and thoroughly protected, and that your future privacy also remains guaranteed.
+
+FAMHP: Federal agency for medicines and health products
+
+IMP: investigational medical product
+
+No Fault insurance:
+
+The sponsor is liable for any injury or any damage that the participant has suffered, and which is directly or indirectly related to the clinical trial. You do not have to prove any mistake in this respect.
+
+MONITOR and AUDITOR
+
+Both the monitor and auditor work for the sponsor. The monitor takes care of a continuous quality check during the course of a trial. The auditor performs a quality check after the trial. They verify if the trial is being/was conducted according to the protocol, if the reported data are liable and if the clinical trial was conducted according the applicable rules.
+
+REFERENCES
+
+[1] This is in accordance with Article 12 of the Belgian Law of 7 May 2017 on clinical trials with medicinal products for human use.
+
+[2] In accordance with section 4.3. of the Commission Guideline: Guidance on posting and publication of result-related information on clinical trials in relation to the implementation of Article 57(2) of Regulation (EC) No 726/2004 and Article 41(2) of Regulation (EC) No 1901/2006 - (2012/C 302/03). [From the moment the Clinical trial regulation enters into force : In accordance with article 37 of the Clinical trial regulation No 536/2014 of the European Parliament and of the council of 16 April 2014 on clinical trials on medicinal products for human use, and repealing Directive 2001/20/EC; sponsor have to provide summary results of clinical trials in a format understandable to laypersons.]
+
+[3] In accordance with article 58 of the Clinical trial regulation No 536/2014 of the European Parliament and of the council of 16 April 2014 on clinical trials on medicinal products for human use, and repealing Directive 2001/20/EC.
+
+[4] Use of an impartial witness is necessary when either the subject or the subject’s legally authorized representative speaks and/or fully understands the language of the approved informed consent form, but cannot read and write due to any physical impairment or is visually impaired. An interpreter is necessary when the investigator doesn’t speak the language of the patient.
+
+[5] Belgian Law of 7 May 2017 on clinical trials with medicinal products for human use, and the applicable royal decrees.

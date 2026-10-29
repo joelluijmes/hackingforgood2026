@@ -1,0 +1,1339 @@
+ICF SJABLOON VOOR INTERVENTIONELE KLINISCHE STUDIES MET STUDIEGENEESMIDDEL BIJ VOLWASSEN PATIËNTEN
+
++---------------+---------------+-------------------+----------------------------------------------------------------------------------------------+
+| Versie nummer | Vorige versie | Goedkeuringsdatum | Samenvatting van de wijzigingen                                                              |
++===============+===============+===================+==============================================================================================+
+| 3.1           | 3.0           | 16/05/2025        | Correctie van typefouten en grammatica in het hele document.                                 |
++---------------+---------------+-------------------+----------------------------------------------------------------------------------------------+
+| 3.2           | 3.1           | 17/07/2025        | Sectie 10.:                                                                                  |
+|               |               |                   |                                                                                              |
+|               |               |                   | - Toevoeging van extra instructies.                                                          |
+|               |               |                   |                                                                                              |
+|               |               |                   | - Aanpassing van de voorwaarden voor toegang tot het experimentele geneesmiddel na de studie |
+|               |               |                   |                                                                                              |
+|               |               |                   | Sectie 12.1.:                                                                                |
+|               |               |                   |                                                                                              |
+|               |               |                   | - Schrapping van de term “ras”                                                               |
+|               |               |                   |                                                                                              |
+|               |               |                   | - Toevoeging van extra instructies.                                                          |
++---------------+---------------+-------------------+----------------------------------------------------------------------------------------------+
+
+RICHTLIJNEN
+
+Bedoeling van het sjabloon en hoe het te gebruiken
+
+Dit sjabloon is bedoeld ter voorbereiding van een formulier voor geïnformeerde toestemming (Informed Consent Form - ICF) voor volwassen patiënten die deelnemen aan een interventionele klinische studie met een geneesmiddel (Ref.[1]), verder in dit document "studie" genoemd. (In de Nederlandstalige en Franstalige sjablonen gebruiken we de termen “klinische studie / studie” en “étude clinique / étude” in plaats van de wettelijke termen “klinische proef / proef” en “essai clinique / essai” die minder gekend zijn voor leken.)
+
+Dit sjabloon is beschikbaar in drie talen: Engels, Frans en Nederlands. De opdrachtgever dient het ICF in te dienen bij het Ethisch Comité in de officiële landstalen van de regio’s waar deelnemers gerekruteerd worden.
+
+De volgende kleurcodes worden gebruikt:
+
+- paars: de tekst is verplicht en kan enkel worden aangepast om een gemotiveerde reden. De opdrachtgever dient aan het indieningsdossier een verklaring toe te voegen die beschrijft welke versie van het ICF sjabloon werd gebruikt, en (indien van toepassing) welke wijzigingen werden aangebracht aan de paarse tekst en om welke reden. Een sjabloon voor deze verklaring is beschikbaar op de website van het CT-College (documents/sponsor-statement-template).
+
+- zwart: de tekst is een voorstel en kan aangepast worden in functie van de studievereisten.
+
+- blauw: de tekst moet worden vervangen door studiespecifieke gegevens.
+
+- rood: de tekst bevat richtlijnen voor de opdrachtgever over hoe het betreffende deel aangevuld moet worden. Deze tekst moet worden verwijderd samen met dit gedeelte van het document met richtlijnen.
+
+De voettekst van het document kan worden aangepast aan de voorkeuren van de opdrachtgever.
+
+De template bevat “velden” en “cross-referenties” die in MS-WORD kunnen worden bijgewerkt via F9 of via rechtermuisklik en selectie van “Update Field”. (Om alle referenties in een document bij te werken, selecteert men het ganse document (in MS-Word via Ctrl A), en dan drukt men op F9.)
+
+Het sjabloon bevat hoofdingen die gebruikt worden voor de opmaak van de inhoudstafel. Indien hoofdstukken worden toegevoegd aan het document, kopieer dan de stijl van de reeds bestaande hoofdingen. Meer tips bij de opmaak van een automatische inhoudstafel vindt u hier.
+
+Redactionele aanbevelingen
+
+Het ICF moet opgesteld zijn in een taal die duidelijk en begrijpelijk is voor de deelnemer. Het document moet kunnen worden gelezen en begrepen door mensen die geen gezondheidsprofessionals zijn en die geen mondelinge toelichting hebben gekregen. Het moet begrijpelijk zijn voor personen met het niveau van een 12-jarige.
+
+Gelieve de volgende adviezen in acht te nemen:
+
+a.  Gebruik de juiste zinsbouw (let op met letterlijke vertalingen uit het Engels naar het Frans/Nederlands, verkeerd gebruik van termen enz.).
+
+b.  Gebruik korte zinnen (minder dan 12 woorden) en korte paragrafen (minder dan 7 lijnen). Gebruik indien mogelijk bullet points.
+
+c.  Vermijd technisch jargon.
+
+d.  Gebruik voor hetzelfde begrip in het hele document dezelfde terminologie. In dit sjabloon werd er bijvoorbeeld gekozen de volgende termen te gebruiken:
+
+    - “Klinische studie” of “studie” (in plaats van onderzoek, proef…)
+
+    - “Studiepersoneel” (in plaats van onderzoeksteam, studieteam, personeel…)
+
+    - “Onderzoeker” voor de gezondheidsprofessional die belast is met de studie
+
+    - “Behandelende arts” voor elke andere geneesheer die belast is met de behandeling van de deelnemer
+
+    - De term "ziekenhuis" wordt in dit document voor patiënten studies gebruikt, maar dat is niet altijd correct voor studies die in de praktijk van een arts plaatsvinden. In dat laatste geval wordt de plaats van de studie bedoeld wanneer het woord "ziekenhuis" wordt gebruikt.
+
+    - In het sjabloon kan de term "referentiegeneesmiddel" naargelang de situatie worden gelezen als "de standaardbehandeling" in het geval van een gecombineerde therapie.
+
+    - In de paarse tekst van het sjabloon wordt de meer populaire term “coderen” gebruikt in de plaats van “pseudonimiseren”. Om verwarring te vermijden, is het aangewezen om ook in de studiespecifieke tekst deze term te hanteren.
+
+    - In het sjabloon wordt de term "in-geval-van-nood-kaart" (Engels: emergency card) gebruikt. De opdrachtgever kan deze term vervangen door een ander begrip, aangezien de benaming afhankelijk van de opdrachtgever kan verschillen.
+
+    - In het Franstalige sjabloon wordt de uitdrukking « devenir enceinte » gebruikt, in de plaats van « tomber enceinte ». Het is aangewezen om ook in de studiespecifieke Franse tekst deze termen te hanteren.
+
+e.  Vermijd overmatig gebruik van afkortingen en leg, indien nodig, de gebruikte afkortingen uit in de verklarende woordenlijst. Geef de termen of afkortingen die uitgelegd worden in de verklarende woordenlijst, in de tekst in hoofdletters weer. Schrijf een afkorting bij het eerste gebruik altijd voluit, gevolgd door de afkorting tussen haakjes.
+
+f.  Gebruik een duidelijk en voldoende groot lettertype:
+
+    - bij het afprinten op A4 in één of twee kolommen gebruik bij voorkeur een lettertype ≥ Arial 12;
+
+    - bij afdrukken in boekjesformaat dienen de marges verkleind te worden en het lettertype vergroot tot ≥ Arial 16.
+
+g.  Gebruik een aantrekkelijk design met voldoende (tussen)kopjes en witregels.
+
+h.  Indien mogelijk, betrek een patiënt of patiëntenvereniging bij de ontwikkeling van het ICF (i.v.m. begrijpbaarheid, relevantie van de informatie).
+
+i.  Gelieve op alle bladzijden van het document hetzelfde versienummer van het ICF en dezelfde uitgiftedatum te vermelden.
+
+j.  Gelieve alle pagina's van het document te nummeren in het formaat "pagina X/Y", waarbij Y het totaal aantal bladzijden aangeeft.
+
+Voor ICF's in het Nederlands verwijzen we u naar de informatieve documenten “Schrijfadviezen voor de geneesmiddelenbijsluiter” (Universiteit Utrecht) en “Patiëntvriendelijke termen” van het College ter Beoordeling van Geneesmiddelen (CBG), te vinden via de volgende link: https://www.cbg-meb.nl/onderwerpen/hv-patientenbijsluiter.
+
+Voor de Engelstalige ICF’s verwijzen we u naar de schrijfadviezen voor “Summaries of Clinical Trial Results for Laypersons”, te vinden via de volgende link: https://health.ec.europa.eu/system/files/2020-02/2017_01_26_summaries_of_ct_results_for_laypersons_0.pdf
+
+Veel van deze aanbevelingen zijn ook van toepassing op ICF’s in een andere taal dan het Engels.
+
+Voor ICF’s in het Frans verwijzen we u naar FALC, FAcile à Lire et à Comprendre: https://www.falc.be/.
+
+Voorblad
+
+Het voorblad van het sjabloon vermeldt de minimaal vereiste informatie die op een ICF-voorblad dient te staan. De opdrachtgever mag extra informatie toevoegen. Het is echter niet toegestaan om de contactgegevens van de functionaris voor gegevensbescherming (Data Protection Officer, DPO) van de opdrachtgever te vermelden. (De opdrachtgever kent de deelnemer niet en kan hem/haar bijgevolg niet adviseren over zijn rechten.)
+
+Bij de contactgegevens zijn alle gegevens studiecentrumspecifiek, met uitzondering van de gegevens van de verzekeringsmaatschappij van de opdrachtgever, het CT-College en de gegevens van de Belgische gegevensbeschermingsautoriteit (GBA). De studiecentrumspecifieke contactgegevens moeten aangevuld worden nadat het ICF is goedgekeurd door het Ethisch Comité.
+
+Het telefoonnummer vermeld achter "contact in dringende gevallen", moet een nummer van het ziekenhuis zijn (vb. algemeen nummer) waarop de deelnemer 24u/7dagen terecht kan bij de arts van wacht, met dringende vragen over zijn/haar gezondheid gerelateerd aan deze klinische studie. Indien nodig, zal de arts van wacht het studiepersoneel contacteren. Het is niet de bedoeling dat hier het telefoonnummer vermeld wordt van de spoedafdeling van het ziekenhuis.
+
+Het is mogelijk dat er geen functionaris voor gegevensbescherming (DPO) of ombudspersoon patiëntenrechten beschikbaar is in het studiecentrum, bijvoorbeeld voor studies die doorgaan in privépraktijken. Alleen in die specifieke gevallen gelden volgende regels:
+
+- Indien er geen officiële "functionaris voor gegevensbescherming van het studiecentrum" werd aangesteld, kan de tekst in de tabel met contactpersonen worden vervangen door de “Contactpersoon voor de bescherming van persoonsgegevens".
+
+Het kan gaan om een persoon die binnen het studiecentrum waakt over de bescherming van de persoonsgegevens; dit kan bijvoorbeeld de hoofdonderzoeker zijn.
+
+- De "ombudspersoon patiëntenrechten" kan worden vervangen door het CT-College:
+
++----------------------------------------------------------------------------------+---------------------------------+
+| De “ombudspersoon patiëntenrechten” kan worden vervangen door het “CT- College”. | e-mail:                         |
+|                                                                                  |                                 |
+|                                                                                  | ct.college@health.fgov.be       |
++==================================================================================+=================================+
+
+Het ICF Sjabloon versie 1.0 werd goedgekeurd door de Werkgroep ICF op 27/06/2019.
+
+Deze werkgroep bestond uit vertegenwoordigers van BAREC (Belgian Association of Research Ethics Committees), pharma.be (the Belgian association of the innovative (bio)pharmaceutical industry) en patiëntenorganisaties, en werd gecoördineerd door het CT-College van de FOD Volksgezondheid, Veiligheid van de Voedselketen en Leefmilieu.
+
+De Belgische Gegevensbeschermingsauthoriteit (GBA) werd om advies gevraagd over de GDPR aspecten in versie 1.0 van dit sjabloon op 28/06/2019. Op basis van het advies van de GBA zoals ontvangen op 17/07/2019, moet elke opdrachtgever het principe van verantwoordingsplicht toepassen en het sjabloon aanpassen aan zijn specifieke situatie.
+
+De GDPR werkgroep van de RUZB heeft de GDPR aspecten van versie 1.0 van het sjabloon aanvaard tijdens de vergadering van 18/02/2019. In versie 2.0 werden hieraan geen noemenswaardige wijzigingen aangebracht.
+
+Versie 1.1 bevat beslissingen van de Board van het College en enkele kleine aanpassingen.
+
+Het ICF Sjabloon versie 2.0 werd goedgekeurd door de BAREC Board op 15/07/2024 om tegemoet te komen aan de vereisten voor klinische studies. Het ICF Sjabloon versie 3.0 werd goedgekeurd door de College Board op 24/01/2025 om tegemoet te komen aan de vereisten voor klinische studies
+
+SJABLOON 
+
+FORMULIER VOOR GEÏNFORMEERDE TOESTEMMING VOOR KLINISCHE STUDIES MET STUDIEGENEESMIDDEL BIJ VOLWASSEN PATIËNTEN
+
+[VOORBLADEN]
+
+De officiële titel van de studie voor de leek zoals vermeld in de CTIS database
+
+Officiële titel van de studie: Officiële titel
+
+EU-nummer: Officieel EU CT-nummer
+
+Studie nummer: studie nummer van de opdrachtgever
+
+Opdrachtgever van de studie: Naam en adres van het bedrijf, het ziekenhuis, de universiteit of andere organisatie
+
+[Indien van toepassing (Ref. [2]):] Europese vertegenwoordiger: Naam en adres van de Europese vertegenwoordiger
+
+[Indien van toepassing] Bedrijf dat werkt voor de opdrachtgever: Naam en adres van de CRO
+
+Naam studiecentrum: officiële naam van het studiecentrum [zoals beschikbaar op de website van de FOD Volksgezondheid, Veiligheid van de Voedselketen en Leefmilieu (NL)]
+
+Hoofdadres studiecentrum: adres van het studiecentrum
+
+[Optioneel] Nummer studiecentrum: voeg erkenningsnummer van het studiecentrum toe
+
+[Indien wijzigingen niet worden opgenomen in een addendum aan het ICF en een nieuwe versie van het ICF wordt aangemaakt, voeg dan een tabel toe met de historiek van de herziening, om de deelnemer te informeren over de essentiële wijzigingen. Deze revisietabel is nuttig voor zowel de ethische commissie als de deelnemer. De opdrachtgever heeft de keuze om de tabel hier toe te voegen aan het ICF of als een bijlage. Een voorbeeld wordt hieronder gegeven.]
+
+[Indien van toepassing:] Overzicht van wijzigingen aan het document
+
+  ----------------------- ----------------------- -----------------------------------------------------
+  Versie nr.              Publicatiedatum         Beschrijving aanpassingen
+
+  2.0                     dd-mm-jjjj              Bv. I.4.1. toevoeging van enkele bijwerkingen
+
+  3.0                     dd-mm-jjjj              Bv. I.8. wijziging ten gevolge van nieuwe wetgeving
+  ----------------------- ----------------------- -----------------------------------------------------
+
+Met wie kan ik contact opnemen als ik vragen heb?
+
+[De opdrachtgever heeft de keuze om onderstaande tabel op deze plaats in het ICF op te nemen, dan wel op het einde van het document.]
+
++:-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+| Naam                                                                                                   | Functie                                                                                                                                         | Voor                                                                        | Contact-gegevens                                                                    |
++--------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+| Familienaam, voornaam                                                                                  | Hoofdonderzoeker van het studiecentrum                                                                                                          | Informatie, problemen, bezorgdheden                                         | Telefoonnr./ E-mail                                                                 |
++--------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+|                                                                                                        | Studiepersoneel                                                                                                                                 | Informatie, problemen, bezorgdheden                                         | Telefoonnr./ E-mail                                                                 |
++--------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+|                                                                                                        | Contact voor dringende vragen m.b.t. de studie [niet de spoedafdeling van het ziekenhuis]                                                       | Dringende informatie, problemen, bezorgdheden                               | Telefoonnr.                                                                         |
++--------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+|                                                                                                        | Ombudspersoon patiëntenrechten van het studiecentrum, [of indien niet mogelijk contact opnemen met het CT-College]                              | Bezorgdheden/ vragen over uw rechten als deelnemer aan een klinische studie | Telefoonnr. van het studiecentrum [indien niet mogelijk: ct-college@health.fgov.be] |
++--------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+| Naam en adres van de verzekeringsmaatschappij van de opdrachtgever & contactpersoon van de verzekeraar | Verzekeringsmaatschappij van de opdrachtgever                                                                                                   | Betwisting of klacht over een schadeclaim                                   | Polisnr:                                                                            |
+|                                                                                                        |                                                                                                                                                 |                                                                             | nummer                                                                              |
+|                                                                                                        |                                                                                                                                                 |                                                                             |                                                                                     |
+|                                                                                                        |                                                                                                                                                 |                                                                             | Adres: adres van de verzekeringsmaatschappij                                        |
+|                                                                                                        |                                                                                                                                                 |                                                                             |                                                                                     |
+|                                                                                                        |                                                                                                                                                 |                                                                             | Telefoonnr.:                                                                        |
+|                                                                                                        |                                                                                                                                                 |                                                                             |                                                                                     |
+|                                                                                                        |                                                                                                                                                 |                                                                             | E-mail: e-mail adres                                                                |
++--------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+|                                                                                                        | Functionaris voor gegevensbescherming van het studiecentrum [of indien niet mogelijk: Contactpersoon voor de bescherming van persoonsgegevens.] | Vragen over de vertrouwelijkheid van uw gegevens                            | Telefoonnr.                                                                         |
+|                                                                                                        |                                                                                                                                                 |                                                                             |                                                                                     |
+|                                                                                                        |                                                                                                                                                 |                                                                             | E-mail: e-mail                                                                      |
++--------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+|                                                                                                        | Belgische Gegevensbeschermingsautoriteit                                                                                                        | Klachten over de vertrouwelijkheid van uw gegevens                          | +32(0)2274 48 00                                                                    |
+|                                                                                                        |                                                                                                                                                 |                                                                             |                                                                                     |
+|                                                                                                        |                                                                                                                                                 |                                                                             | E-mail: contact@apd-gba.be                                                          |
++--------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+
+- Voor het beheer van klachten die niet door de onderzoeker worden opgelost, kan u terecht bij de ombudsman van het studiecentrum op bovenstaand adres.
+
+- Volgens de GDPR heeft u recht op inzage in de verwerking van uw gegevens. Voor vragen hierover kan u contact opnemen met de functionaris Gegevensbescherming van het studiecentrum op bovenstaand adres.
+
+- U hebt ook het recht om een ​​klacht in te dienen over de wijze van verwerking van uw gegevens bij de Belgische toezichthoudende autoriteit die verantwoordelijk is voor de naleving van de wetgeving inzake gegevensbescherming: Gegevensbeschermingsautoriteit (GBA), hierboven.
+
+Inhoudsopgave
+
+RICHTLIJNEN 1
+
+Bedoeling van het sjabloon en hoe het te gebruiken 1
+
+Redactionele aanbevelingen 2
+
+Voorblad 4
+
+SJABLOON 6
+
+FORMULIER VOOR GEÏNFORMEERDE TOESTEMMING VOOR KLINISCHE STUDIES MET STUDIEGENEESMIDDEL BIJ VOLWASSEN PATIËNTEN 6
+
+[VOORBLADEN] 6
+
+[Indien van toepassing:] Overzicht van wijzigingen aan het document 7
+
+Met wie kan ik contact opnemen als ik vragen heb? 7
+
+DE STUDIE IN EEN OOGOPSLAG 11
+
+HOOFDSTUK I - BESCHRIJVING VAN DE STUDIE EN UW RECHTEN BIJ DEELNAME 13
+
+1. Waarom wordt deze studie uitgevoerd? 13
+
+2. Waarom wordt mij gevraagd deel te nemen? 13
+
+3. Moet ik deelnemen aan deze studie? 14
+
+4. Wat gaat er tijdens de studie gebeuren? 14
+
+5. Zal ik voordeel halen uit de studie? 15
+
+6. Wat zijn de mogelijke risico's en ongemakken bij deelname aan de studie? 16
+
+6.1 Wat zijn de mogelijke bijwerkingen van [naam van studiegeneesmiddel(en)] [indien van toepassing:] en [naam van referentiegeneesmiddel(en)]? 16
+
+6.2 Wat zijn de mogelijke risico's of ongemakken van de onderzoeken tijdens de studie? 17
+
+6.3 Mag ik tijdens de studie andere geneesmiddelen nemen? 17
+
+6.4 Zal mijn deelname aan de studie een invloed hebben op mijn dagelijkse activiteiten? 18
+
+6.5 [optioneel] Mag ik zwanger worden, een kind verwekken, of mag ik borstvoeding geven tijdens de studie? 18
+
+7. Wat als er tijdens de studie iets fout gaat? 20
+
+8. Wat als er tijdens de studie andere behandelingen of nieuwe informatie over het studiegeneesmiddel of de studie beschikbaar worden? 21
+
+9. Kan mijn deelname aan de studie vroegtijdig eindigen? 21
+
+9.1 U besluit uw toestemming in te trekken 21
+
+9.2 U beslist te stoppen met de behandeling met het studiegeneesmiddel 22
+
+9.3 De onderzoeker besluit uw deelname aan de studie te stoppen of u te laten stoppen met de behandeling met het studiegeneesmiddel 22
+
+9.4 Andere instanties kunnen de studie onderbreken of beëindigen 23
+
+10. Welke behandeling zal ik krijgen na mijn deelname aan de studie? 23
+
+11. Zal mijn deelname aan de studie bijkomende kosten met zich meebrengen voor mij? 24
+
+11.1 Onderzoeken en behandelingen betaald door de opdrachtgever 24
+
+11.2 Andere uitgaven die betaald worden door de opdrachtgever 24
+
+12. Welke gegevens worden over mij verzameld tijdens de studie en wat gaat ermee gebeuren? 26
+
+12.1 Welke gegevens worden tijdens de studie verzameld en verwerkt? 26
+
+12.2 Hoe zal de onderzoeker mijn persoonsgegevens behandelen? 26
+
+12.3 Hoe zullen mijn gegevens verwerkt worden? 27
+
+12.4 Heb ik toegang tot mijn gegevens die tijdens de studie verzameld en verwerkt zijn en kan ik ze rechtzetten? 28
+
+12.5 Wie anders dan de onderzoeker en zijn studiepersoneel heeft toegang tot mijn persoonsgegevens? 29
+
+12.6 [optioneel, alleen voor autologe ATMP-studies] Wie heeft behalve de onderzoeker en zijn studiepersoneel ook toegang tot mijn gegevens bij deze autologe ATMP-studie? 30
+
+12.7 Wat zal er gebeuren met de resultaten van de studie? 31
+
+12.8 Zullen mijn gegevens gebruikt worden voor andere doeleinden dan de studie waaraan ik deelneem? 31
+
+12.9 Hoe lang worden mijn gegevens bijgehouden? 32
+
+13. Welke biologische stalen worden van mij verzameld tijdens de studie en wat gebeurt ermee? 32
+
+13.1 Welke biologische stalen worden van mij verzameld tijdens de studie? 32
+
+13.2 Wat gebeurt er met de verzamelde biologische stalen binnen de context van de studie? 33
+
+13.3 Zullen biologische stalen gebruikt worden voor onderzoek buiten de context van de huidige studie? 34
+
+13.4 [Indien van toepassing] Mag de link tussen mijn biologische stalen en mijn identiteit verbroken worden? 35
+
+14 Wat indien onderzoek betekenisvolle informatie over uw gezondheid oplevert? 35
+
+15 Wie heeft de documenten inzake de studie nagekeken en goedgekeurd? 36
+
+HOOFDSTUK II - GEÏNFORMEERDE TOESTEMMING 37
+
+DEELNEMER 37
+
+[Indien de studie wilsonbekwame personen kan omvatten.] WETTELIJKE VERTEGENWOORDIGER (REF. ) 43
+
+[Indien een getuige / tolk aanwezig is.] ONPARTIJDIGE GETUIGE / TOLK (REF. ) 44
+
+ONDERZOEKER 45
+
+VERKLARENDE WOORDENLIJST 46
+
+REFERENTIES 47
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DE STUDIE IN EEN OOGOPSLAG                                                                                                                                                                                                                                                                                                                                                 |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+|   Om aan te geven dat dit hoofdstuk qua stijl verschillend is van de rest van het document, wordt aangeraden het op gekleurd papier af te drukken of de inhoud op te nemen in een kader met gekleurde achtergrond.                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+|   Gelieve in dit hoofdstuk in het kort (maximum 2-3 pagina’s) een samenvatting op te nemen van de belangrijkste aspecten van de studie. Gebruik in dit hoofdstuk heel eenvoudige woorden, zodat iedereen deze tekst begrijpt.                                                                                                                                              |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+|   Een voorbeeld van dit hoofdstuk is beschikbaar via volgende link: https://overlegorganen.gezondheid.belgie.be/nl/ct-college. De opdrachtgever kan de leesbaarheid van dit hoofdstuk nagaan via volgende online tools voor Frans en Engels: https://translatedlabs.com/lisibilit%C3%A9-du-texte en voor Nederlands en Engels. https://www.lt3.ugent.be/readability-demo/. |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+|   Let op: Dit deel van het ICF is verplicht en een akkoord op Belgisch niveau, binnen BAREC, bestaat uit het toekennen van een weigering indien dit deel niet aanwezig of inadequaat is op basis van de onderstaande richtlijnen.                                                                                                                                          |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+|   In het geval van een discussie, meningsverschil of tegenstrijdigheid met betrekking van de inhoud van dit document, zijn enkel hoofdstuk 1 en 2 wettelijk bindend voor de deelnemer.                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+|   De volgende vragen kunnen als leidraad worden gebruikt:                                                                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+| 1.  Waarom wordt de deelnemer gevraagd om deel te nemen? Wat is het doel van de studie? Vermeld tevens de ziekte van de deelnemer, en indien van toepassing, zijn beperkte levensverwachting.                                                                                                                                                                              |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+| 2.  Wat is het doel van dit document?                                                                                                                                                                                                                                                                                                                                      |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+| 3.  Zal de deelnemer voordeel halen uit de studie?                                                                                                                                                                                                                                                                                                                         |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+| 4.  Wat zijn de kenmerken van het studiegeneesmiddel en hoe zal het studiegeneesmiddel worden toegediend?                                                                                                                                                                                                                                                                  |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+| 5.  Welke belangrijkste (meest frequent, meest pijnlijke) onderzoeken zal de patiënt moeten ondergaan?                                                                                                                                                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+| 6.  Wat is de duur van de studie (voor de deelnemer en in het algemeen)?                                                                                                                                                                                                                                                                                                   |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+| 7.  Zal het studiegeneesmiddel bijwerkingen hebben?                                                                                                                                                                                                                                                                                                                        |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+| 8.  Werd er een verzekering afgesloten in geval er iets mis gaat in de studie?                                                                                                                                                                                                                                                                                             |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+| 9.  Mag de deelnemer zwanger worden of een kind verwekken tijdens de studie?                                                                                                                                                                                                                                                                                               |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+| 10. Wie betaalt de studiespecifieke kosten en wat moet de deelnemer al dan niet zelf betalen?                                                                                                                                                                                                                                                                              |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+| 11. Worden de gegevens confidentieel behandeld?                                                                                                                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+| 12. Staat het de deelnemer vrij om deel te nemen aan de studie?                                                                                                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+| 13. Wie heeft de studiedocumenten nagekeken?                                                                                                                                                                                                                                                                                                                               |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+| 14. Zal de deelnemer na zijn/haar deelname aan de studie, verder kunnen behandeld worden met het studiegeneesmiddel?                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+| 15. Wat wordt er verwacht van de deelnemer? Gelieve volgende verwachtingen te vermelden:                                                                                                                                                                                                                                                                                   |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+|     - ermee akkoord gaan dat de onderzoeker de behandelende artsen op de hoogte brengt van de deelname aan de studie                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+|     - niet gelijktijdig aan een andere interventionele klinische studie met geneesmiddel of klinisch onderzoek met medisch hulpmiddel deelnemen zonder de onderzoeker of het studiepersoneel op de hoogte te brengen                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+|     - relevante informatie meedelen over zijn/haar gezondheidstoestand, andere medicatie of ondervonden symptomen                                                                                                                                                                                                                                                          |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+|     - de "in-geval-van-nood-kaart", steeds bijhebben                                                                                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                            |
+| 16. Wie zal de deelnemer meer informatie geven over de studie?                                                                                                                                                                                                                                                                                                             |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+ 
+
+HOOFDSTUK I - BESCHRIJVING VAN DE STUDIE EN UW RECHTEN BIJ DEELNAME
+
+Waarom wordt deze studie uitgevoerd?
+
+[Gelieve in dit deel de naam te vermelden van de studiegeneesmiddelen, dit betekent het/de experimente(e)l(e) geneesmiddel(en), en het/de referentiegeneesmiddel(en).]
+
+Deze klinische studie (verder "studie" genoemd) wordt uitgevoerd om het onderzochte geneesmiddel of "studiegeneesmiddel", [naam van studiegeneesmiddel], te evalueren voor de behandeling van [benaming van ziekte/aandoening].
+
+Het doel van deze studie is bij te leren over: [voeg de doelstellingen van de studie toe; vermeld het werkingsmechanisme van het/de studiegeneesmiddel(en), het aantal patiënten dat het studiegeneesmiddel reeds heeft ontvangen voor deze indicatie en/of voor elke andere indicatie, …]
+
+  Waarom wordt mij gevraagd deel te nemen?
+
+Er werd bij u [naam van de ziekte/aandoening] vastgesteld.
+
+U wordt gevraagd om deel te nemen aan deze studie omdat
+
+[Indien de deelnemer de inclusie-/exclusiecriteria nodig heeft om een weloverwogen beslissing te nemen, gelieve een bondige beschrijving toe te voegen van de voornaamste criteria voor inclusie/exclusie zoals vermeld in het protocol, en die de deelnemer kan begrijpen.]
+
+[Kies: ]
+
+[Indien een alternatieve behandeling beschikbaar is:] Naast deelnemen aan de studie zijn er voor uw ziekte/aandoening, de volgende alternatieve behandelingen beschikbaar: …
+
+[of]
+
+[Indien er geen alternatieve behandeling beschikbaar is:] Op dit moment is er in België geen door de overheid goedgekeurde behandeling beschikbaar voor uw ziekte/aandoening.
+
+[Indien de levensverwachting beperkt is, dient dit eveneens te worden vermeld, bv.:] Er werd bij u een ernstige of vergevorderde vorm van [naam van ziekte/aandoening] vastgesteld en voor uw situatie zijn er geen standaardbehandelingen meer beschikbaar die uw overlevingskansen vergroten. Dit betekent dat uw levensverwachting beperkt is. Het is niet zeker dat uw deelname aan deze studie uw ziekte/aandoening zal genezen, uw levenskwaliteit zal verbeteren of uw leven zal verlengen.
+
+De onderzoeker of het studiepersoneel zal met u de voorwaarden bespreken om tot de studie te kunnen worden toegelaten.
+
+Moet ik deelnemen aan deze studie? 
+
+Uw deelname aan deze studie gebeurt vrijwillig en mag nooit onder druk gebeuren. Dit betekent dat u het recht heeft om niet deel te nemen aan de studie. U mag u ook op elk moment terugtrekken zonder dat u hiervoor een reden hoeft te geven, zelfs al heeft u eerder toegestemd om deel te nemen. Uw beslissing zal geen invloed hebben op uw relatie met de onderzoeker of uw behandelende arts, noch op de kwaliteit van uw toekomstige medische zorgen.
+
+Indien andere behandelingen beschikbaar zijn voor uw [ziekte/aandoening], zal de onderzoeker of zijn/haar afgevaardigde die behandelingen met u bespreken.
+
+Wat gaat er tijdens de studie gebeuren? 
+
+[Let op: het is onaanvaardbaar om in deze tekst (of elders) toevoegingen te doen die de deelnemer zou kunnen intimideren of beïnvloeden bij zijn beslissing al dan niet verder deel te nemen aan de studie, zoals "de opdrachtgever kan u opsporen indien u besluit uw deelname stop te zetten ..." of "wij kunnen om het even welke middelen gebruiken om u op te sporen ..." enz.]
+
+In deze studie zullen ongeveer [aantal] deelnemers over de hele wereld betrokken zijn, waaronder ongeveer [aantal] in België.
+
+Deze studie is een …
+
+[Voeg een korte beschrijving toe van
+
+- de studie-opzet in bewoordingen die de deelnemer kan begrijpen, leg bv. uit wat gerandomiseerde/blinde/cross-over studie/placebo/screening is, waarbij het/(de) studiegeneesmiddel(en) wordt/(worden) vergeleken met de placebo en/of het referentiegeneesmiddel. Voeg indien van toepassing informatie toe over de waarschijnlijkheid van de willekeurige toewijzing van de behandeling.
+
+- de dosis, de toedieningsmethode en -frequentie, aantal bezoeken.
+
+- het verloop van de studie: screeningsfase (inclusief de duur ervan), eigenlijke studie (wanneer begin gepland, start van de dosering van het studiegeneesmiddel, het referentiegeneesmiddel, placebo in de studiefase), voortijdige of geplande terugtrekking uit de studie, opvolgingsfase.
+
+- de geplande onderzoeken (incl. de tijdsbesteding voor de deelnemer) en de eventueel te nemen voorzorgsmaatregelen voordat de deelnemer deze onderzoeken ondergaat.
+
+Afhankelijk van de studie kan het nuttig zijn de deelnemer een gedetailleerde planning, schema of flowchart te geven van de verschillende onderzoeken die hij/zij tijdens de geplande bezoeken zal moeten ondergaan. Indien er een flowchart wordt voorzien, is het best ook enkele richtlijnen toe te voegen over hoe de flowchart moet worden gelezen.
+
+Of de informatie nu wordt aangeboden als een tekst of als een flowchart, de opdrachtgever dient steeds aan te geven welke bezoeken, behandelingen en onderzoeken zeker specifiek zijn voor de studie en dus betaald worden door de opdrachtgever. Dit kan bijvoorbeeld gebeuren door deze items in het vet te zetten. Het is aan de onderzoeker om de patiënt te informeren over wat precies standaard is en wat precies studiespecifiek.
+
+De correctheid en volledigheid van deze informatie, alsook het actualiseren ervan, is de gemeenschappelijke verantwoordelijkheid van de opdrachtgever en de onderzoeker. De onderzoeker is eveneens verantwoordelijk voor het actualiseren van deze informatie in het medisch dossier van de deelnemer, en het informeren van de opdrachtgever.]
+
+[Kies één van volgende teksten:
+
+In volgende tekst en/of tabellen en/of schema's vindt u de behandelingen en onderzoeken die u moet ondergaan. Sommige daarvan zijn studiespecifiek en andere behoren tot de standaardbehandeling voor uw situatie. De behandelingen en onderzoeken die studiespecifiek zijn, zullen door de opdrachtgever worden gedekt en zullen u niet worden aangerekend. De behandelingen en onderzoeken die behoren tot uw standaardbehandeling zullen aan u worden aangerekend of vergoed worden door uw mutualiteit (Belgische sociale zekerheid).
+
+Neem contact op met het studiepersoneel voor meer details of indien u niet aangesloten bent bij een mutualiteit (Belgische sociale zekerheid).
+
+[voeg tekst, tabellen, schema’s toe]
+
+Uw deelname aan de studie zal [kies] in totaal ongeveer [aantal] weken/maanden duren en [aantal] bezoeken inhouden [of] duren zolang uw gezondheidstoestand dit toelaat. Er wordt verwacht dat de studie in totaal [aantal] weken/maanden zal duren.
+
+Indien u voldoet aan alle voorwaarden voor deelname en besluit deel te nemen aan de studie, zal u de bovenvermelde testen en onderzoeken, ondergaan. De raadplegingen en behandelingen die een gevolg zijn van een bijwerking worden ook beschouwd als studiespecifiek.
+
+[In geval van zelfmedicatie door de deelnemer:] We verwachten dat u [naam van studiegeneesmiddelen/referentiegeneesmiddel] zal gebruiken zoals hierboven beschreven.
+
+Zal ik voordeel halen uit de studie? 
+
+De informatie die tijdens de studie verkregen wordt, kan bijdragen tot een beter inzicht in het gebruik van het studiegeneesmiddel of tot de ontwikkeling van een nieuw geneesmiddel voor de behandeling van uzelf of toekomstige patiënten.
+
+Het studiegeneesmiddel kan al dan niet gunstig blijken te zijn voor de behandeling van uw [ziekte/aandoening] of het verlichten van uw symptomen. Zelfs als het effect gunstig blijkt, is een terugkeer of verergering van de symptomen, de ziekte of de aandoening nog altijd mogelijk.
+
+Wat zijn de mogelijke risico's en ongemakken bij deelname aan de studie?
+
+6.1 Wat zijn de mogelijke bijwerkingen van [naam van studiegeneesmiddel(en)] [indien van toepassing:] en [naam van referentiegeneesmiddel(en)]?
+
+Deelnemen aan een studie houdt enig risico in.
+
+[Kies tussen de volgende verklaringen: ]
+
+Elk geneesmiddel kan bijwerkingen hebben. Sommige daarvan zijn al gekend, andere niet. Ook al hebben voorgaande studies uitgewezen dat [naam van studiegeneesmiddel(en)/referentiegeneesmiddel(en)] normaal goed werd(en) verdragen, kan u toch nog de volgende bijwerkingen ondervinden:
+
+[of]
+
+Elk geneesmiddel kan bijwerkingen hebben. In het licht van de verhouding tussen de risico’s en de voordelen, is uit voorgaande studies gebleken dat de bijwerkingen van [naam van studiegeneesmiddel(en)/referentiegeneesmiddel(en)] aanvaardbaar waren. Echter moet u ervan bewust zijn dat u de volgende bijwerkingen kan ondervinden:
+
+[Per studiegeneesmiddel: voeg een lijst van de bijwerkingen toe en beschrijf ze bondig. Vermeld de bijwerkingen in volgorde van frequentie. Vermeld de onomkeerbare bijwerkingen (indien ze bestaan) in het vet.]
+
+[De frequentie van bijwerkingen moet op een voor de deelnemer begrijpelijke wijze worden gekwantificeerd, bv.
+
+  ------------------- --------------------------------------------------
+  zeer vaak           Bij meer dan 1 op 10 patiënten
+
+  vaak                Bij 1 op 10 à 100 patiënten
+
+  minder vaak         Bij 1 op 100 à 1000 patiënten
+
+  zelden              Bij 1 op 1000 à 10 000 patiënten
+
+  zeer zelden         Bij 1 op 10 000 à 100 000 patiënten
+  ------------------- --------------------------------------------------
+
+[Indien er bepaalde risico’s bestaan waarvan de deelnemer dient op de hoogte te zijn (inclusief de ermee gepaard gaande symptomen) om snel tot een juiste behandeling over te gaan, kunnen deze hier in een bijkomende paragraaf beschreven worden; bv. symptomen van een ernstige allergische reactie op het studiegeneesmiddel.]
+
+[Voor de bijwerkingen van de standaardbehandeling dient verwezen te worden naar de bijsluiter van het standaardgeneesmiddel.]
+
+Aangezien dit studiegeneesmiddel nog onderzocht wordt, zouden zich nog andere, momenteel niet bekende risico's en ongemakken kunnen voordoen. Daarom is het van groot belang dat u elk nieuw of erger geworden gezondheidsprobleem onmiddellijk bij de onderzoeker meldt. Dit geldt ook als u denkt dat het niets te maken heeft met de studie (of met [naam van studiegeneesmiddel/ referentiegeneesmiddel]), en zelfs wanneer het reeds beschreven is in dit document. Als u andere medicatie moet gebruiken, bespreek dit dan vooraf met de onderzoeker. Indien u om gelijk welke reden een andere arts raadpleegt tijdens de studie, moet u hem/haar meedelen dat u deelneemt aan een studie en uw “in-geval-van-nood-kaart” tonen. Dit kan belangrijk zijn voor een juiste diagnose en behandeling indien nodig.
+
+[Indien van toepassing: voeg een deel toe over
+
+- de zorg die de deelnemer mag verwachten indien hij bijwerkingen van studiegeneesmiddel/referentiegeneesmiddel ondervindt;
+
+- wat er gebeurt als het studiegeneesmiddel/referentiegeneesmiddel de deelnemer geen nut oplevert.
+
+6.2 Wat zijn de mogelijke risico's of ongemakken van de onderzoeken tijdens de studie?
+
+[Kies tussen de volgende twee opties:]
+
+Aan de onderzoeken tijdens de studie zijn geen gekende risico's verbonden.
+
+[of]
+
+De onderzoeken tijdens de studie kunnen de volgende ongemakken en risico's veroorzaken: ...
+
+[Vermeld de belangrijkste risico's/ongemakken die verbonden zijn aan de specifieke onderzoeken die in het kader van de studie zullen plaatsvinden.]
+
+[Voor studies met bloedafname] Het afnemen van bloed (ongeveer [aantal] ml bloed, [of] [aantal] buisjes bloed) dat nodig is voor de analyse van … [aanvullen] kan pijn, bloedingen, bloeduitstortingen of een lokale ontsteking op de plek van de injectie veroorzaken. Ook kunnen sommige deelnemers zich duizelig voelen of zelfs flauwvallen tijdens de afname. Het studiepersoneel dat de bloedafname uitvoert, zal alles in het werk stellen om deze ongemakken te beperken.
+
+[Voor studies met biopsies: specificeer aantal biopsies, plaats in het lichaam en de risico’s per plaats in het lichaam,…]
+
+[Voeg risico's, ongemakken, te treffen voorzorgsmaatregelen (bv. niet rijden) toe gekoppeld aan bv. röntgen, MRI, biopsie, enz. Vermeld de extra stralingsdosis van de onderzoeken in vergelijking met de natuurlijke achtergrondstraling en de risico’s die verbonden zijn aan deze extra stralingsdosis. Gelieve als referentie de tekst goedgekeurd door het FANC te gebruiken die kan worden teruggevonden via https://www.belnuc.be/tools/ en de link aldaar genaamd “Consensus text on radiation burden for inclusion in ICF concerning diagnostic clinical trials using radiopharmaceuticals in healthy volunteers and patients”.]
+
+6.3 Mag ik tijdens de studie andere geneesmiddelen nemen?
+
+[Indien van toepassing: verstrek de relevante informatie inzake waarschuwingen, interacties, voorzorgsmaatregelen of contra-indicaties verbonden aan het gebruik van de studiegeneesmiddelen/referentiegeneesmiddel.]
+
+Aarzel niet om de onderzoeker meer uitleg te vragen over het gebruik van andere geneesmiddelen en voedingssupplementen (inclusief onder meer aromatherapie, fytotherapie, homeopathie,…).
+
+6.4 Zal mijn deelname aan de studie een invloed hebben op mijn dagelijkse activiteiten?
+
+[Indien van toepassing: beschrijf hier de extra belasting voor de patiënt: de impact op of beperkingen in het dagelijks leven (bv. het is niet toegelaten te reizen, aan sport te doen, alcohol of tabak te gebruiken, bepaalde voeding of dranken te verbruiken,…). Dit is van belang voor chronische patiënten.]
+
+6.5 [optioneel] Mag ik zwanger worden, een kind verwekken, of mag ik borstvoeding geven tijdens de studie?
+
+- Voor vrouwen die zelf aan de studie deelnemen is het gemakkelijk te verstaan dat blootstelling van de foetus aan het geneesmiddel een risico kan inhouden voor het ongeboren kind.
+
+  Voor mannen die aan de studie meedoen, is de perceptie van het risico minder voor de hand liggend. Het is dus raadzaam uit te leggen dat het geneesmiddel een schadelijk effect kan hebben op de kwaliteit van het sperma en hierdoor een risico inhoudt voor de ontwikkeling van de foetus in geval van zwangerschap.
+
+- De informatie over deze risico’s moet zowel voor vrouwelijke als voor mannelijke deelnemers duidelijk maken dat zwangerschap bij de deelneemster of bij de partner van de mannelijke deelnemer moet vermeden worden.
+
+- Indien er geen risico is en mannelijke deelnemers geen maatregelen met betrekking tot anticonceptie dienen te nemen om te vermijden dat hun partner zwanger wordt, moet dit vermeld worden.
+
+  Indien uit voorzorg vereist is dat de deelnemer anticonceptiemaatregelen neemt zonder dat men weet heeft van een eventueel schadelijk effect op de kwaliteit van het sperma, moet de deelnemer hierover geïnformeerd worden.
+
+- Vermeld de te nemen maatregelen indien de partner van een mannelijke deelnemer (ondanks alles) zwanger wordt.
+
+  - Indien de partner van een mannelijke deelnemer zwanger wordt, moet de deelnemer worden aangemoedigd om de onderzoeker hiervan op de hoogte te brengen zodat de beste optie kan worden gekozen voor haar en de foetus/baby, een optie die kan inhouden dat men wordt opgenomen in een monitoringprogramma.
+
+  - De zwangere partner dient geïnformeerd te worden over het verzamelen van persoonlijke gezondheidsgegevens (evolutie van de zwangerschap, geboorte en eerste levensmaanden van het ongeboren kind, indien van toepassing).
+
+  - Een afzonderlijk ICF, dat door het Ethisch Comité moet worden beoordeeld, verduidelijkt de redenen voor het opvolgen van de zwangerschap en dus de risico’s voor het ongeboren kind. Het vermeldt eveneens de rechten van de deelneemster bij (deelname aan) dit monitoringprogramma (dat deelnemen vrijwillig is, dat de toestemming mag ingetrokken worden, bescherming van persoonlijke levenssfeer, aansprakelijkheid voor schade).
+
+  - Wanneer de opdrachtgever redenen heeft om een schadelijk effect te vermoeden, dient deze informatie expliciet te zijn.
+
+  - Het is eveneens belangrijk, afhankelijk van de omvang van het risico, erop aan te dringen dat de deelnemer zijn partner(s) informeert over zijn deelname aan een klinische studie met een geneesmiddel dat mogelijk schadelijk is voor de foetus en over de maatregelen die ze samen moeten nemen betreffende anticonceptie.
+
+  - [Indien van toepassing] De mannelijke deelnemer moet ook geïnformeerd worden dat hij absoluut geen sperma mag doneren.
+
+- Vermeld de te nemen maatregelen indien de deelnemer (ondanks alles) zwanger wordt.
+
+  - Vermeld de opvolgingsmaatregelen die beschreven staan in het protocol.
+
+[Indien van toepassing] Dit deel is uitsluitend bestemd voor deelnemers die zwanger zouden kunnen worden of deelnemers die hun partner(s) zwanger zouden kunnen maken.
+
+Vrouwelijke deelnemer: Omdat de effecten van [naam van studiegeneesmiddel en/of referentiegeneesmiddel] op een ongeboren kind of baby niet bekend zijn, mag u niet aan deze studie deelnemen indien :
+
+- u zwanger bent,
+
+- u wenst zwanger te worden in de nabije toekomst of
+
+- u borstvoeding geeft.
+
+Ook is het niet toegelaten eicellen te doneren gedurende en na uw deelname aan de studie, tot [aantal] dagen/maanden na de laatste inname van [naam van studiegeneesmiddel/referentiegeneesmiddel].
+
+Bij deelname aan de studie, moet u één van de [kies: volgende [of] toegelaten] anticonceptiemethodes gebruiken, tijdens de studie [indien van toepassing] en tot [aantal] dagen/maanden na de laatste dosis in de studie: [indien van toepassing: geef een lijst van de toegelaten methodes]. Gelieve dit onderwerp met de onderzoeker te bespreken indien het op u van toepassing is. Gelieve de onderzoeker op de hoogte te brengen mocht u besluiten tijdens de studie van anticonceptiemethode te veranderen.
+
+U zal bij de aanvang van de studie, vóór de eerste dosis [naam van studiegeneesmiddel/referentiegeneesmiddel], een zwangerschapstest moeten laten afnemen (bloed/urine). [kies:] Een nieuwe zwangerschapstest moet worden afgenomen als uw maandstonden uitblijven of als uw menstruatiecyclus onregelmatig wordt. [of] Het kan nodig zijn te blijven testen tijdens en zelfs na de doseringsfase van de studie.
+
+Als u toch zwanger wordt tijdens de studie, dient u onmiddellijk de onderzoeker en uw behandelende arts op de hoogte te brengen. Omwille van veiligheidsredenen wil de onderzoeker uw zwangerschap en het resultaat ervan opvolgen en kan hij verplicht zijn deze gegevens met de opdrachtgever te delen om te voldoen aan regelgeving omtrent het controleren en het melden van veiligheidsinformatie betreffende het studiegeneesmiddel.
+
+Mannelijke deelnemer:
+
+[Voorbeeld in geval van risico] Het nemen van [naam van studiegeneesmiddel/referentiegeneesmiddel] zou een effect kunnen hebben op uw sperma en zou een onbekend risico kunnen inhouden voor een ongeboren kind.
+
+Als u deelneemt aan deze studie, moet u anticonceptiva gebruiken en mag u geen sperma doneren gedurende de hele studie en tot [aantal] maanden of [aantal] dagen na de laatste dosis van [naam van studiegeneesmiddel]. Gelieve dit onderwerp met de onderzoeker te bespreken indien het voor u van toepassing is.
+
+U verbindt zich ertoe uw vrouwelijke partner op de hoogte te brengen van uw deelname aan deze studie en van het mogelijke risico voor een ongeboren kind.
+
+Als uw partner toch zwanger wordt tijdens de studie, moet u onmiddellijk de onderzoeker op de hoogte te brengen. Met uw akkoord, zal de onderzoeker uw partner vragen om haar zwangerschap en het resultaat ervan op te volgen en een specifiek formulier voor geïnformeerde toestemming (voor de zwangere partner) te ondertekenen.
+
+Wat als er tijdens de studie iets fout gaat?
+
+Zelfs als er geen sprake is van een fout, is de opdrachtgever aansprakelijk voor schade die u wordt berokkend, direct of indirect gerelateerd aan uw deelname aan de studie. De opdrachtgever heeft een passende verzekering afgesloten (een zogenaamde FOUTLOZE VERZEKERING) voor deze aansprakelijkheid in overeenstemming met de huidige Europese en Belgische wetgeving inzake klinische proeven. Een kopie van het verzekeringscertificaat is verkrijgbaar bij de onderzoeker of studiepersoneel.
+
+Als u (of in geval van overlijden, uw rechthebbenden) een schadevergoeding wilt voor schade aan uw gezondheid als direct of indirect gevolg van deelname aan de studie, moet u het studiepersoneel hiervan onmiddellijk op de hoogte stellen.
+
+Als de onderzoeker van mening is dat er mogelijk een verband bestaat tussen nieuwe of verergerde gezondheidsproble(e)m(en) en de studie, zal hij/zij de opdrachtgever van de studie hiervan op de hoogte stellen. De opdrachtgever zal dan onmiddellijk de aangifteprocedure bij zijn verzekeringsmaatschappij starten. Als de maatschappij het nodig acht, zal zij een deskundige aanstellen om te beoordelen of er een verband is tussen uw gemelde gezondheidsproble(e)m(en) en de studie. [Indien van toepassing] De verzekering dekt niet de natuurlijke progressie van uw ziekte/aandoening of de bekende bijwerkingen van de behandeling die u zou hebben gekregen zonder deelname aan de studie (dat is uw standaardbehandeling).
+
+Wanneer u dit gepast vindt of wanneer u of uw rechthebbenden het niet eens zijn met de onderzoeker of met de deskundige die door de verzekeringsmaatschappij is aangesteld, kunt u contact opnemen met de verzekeringsmaatschappij of kan een procedure worden gestart tegen de verzekeringsmaatschappij. U vindt de contactgegevens op de voorpagina van dit formulier.
+
+Wat als er tijdens de studie andere behandelingen of nieuwe informatie over het studiegeneesmiddel of de studie beschikbaar worden?
+
+In de loop van de studie zou nieuwe belangrijke informatie beschikbaar kunnen worden, die een invloed zou kunnen hebben op uw beslissing om (verder) deel te nemen. Zo kunnen bijvoorbeeld andere behandelingen voor uw [ziekte/aandoening] of belangrijke nieuwe informatie over het studiegeneesmiddel beschikbaar worden. Het is de plicht van de onderzoeker deze nieuwe informatie met u te bespreken en u de kans te geven uw deelname aan de studie te herbekijken.
+
+Indien u besluit uw deelname aan de studie te beëindigen of indien u niet langer kan deelnemen, zal de onderzoeker erop toezien dat u de best mogelijke behandeling blijft krijgen.
+
+Kan mijn deelname aan de studie vroegtijdig eindigen?
+
+Zoals verder in dit deel gedetailleerd besproken wordt, kan uw deelname aan de studie vroegtijdig eindigen wanneer
+
+- u besluit uw toestemming in te trekken of te stoppen met de behandeling met het studiegeneesmiddel,
+
+- de onderzoeker besluit uw deelname aan de studie te stoppen of te laten stoppen met de behandeling met het studiegeneesmiddel,, of
+
+- andere instanties de studie onderbreken of beëindigen.
+
+In elk geval, als uw deelname aan de studie vroegtijdig stopt, zal de onderzoeker uw verdere medische zorg met u bespreken. De gegevens verzameld vóór het beëindigen van uw deelname, zullen verder gebruikt worden zoals beschreven in dit formulier. Dit is bedoeld om een foutieve interpretatie van de studieresultaten te vermijden (zoals beschreven in hoofdstuk I.§ 12.4).
+
+Afhankelijk van uw situatie zal de onderzoeker met u bespreken of er opvolgingsbezoeken of -procedures nodig zijn.
+
+Als u een bijwerking ondervindt op het moment waarop u met het studiegeneesmiddel stopt, kan de onderzoeker nadien contact met u opnemen om na te gaan of de bijwerking verdwenen is of niet na afloop van uw deelname aan de studie.
+
+Als u na het beëindigen van uw deelname aan de studie een nieuwe bijwerking ondervindt, mag u de onderzoeker contacteren en vragen om opvolging daarvan.
+
+9.1 U besluit uw toestemming in te trekken
+
+U kan op elk moment beslissen uw toestemming in te trekken, zonder een reden op te geven. Wel moet u, voor uw eigen veiligheid, de onderzoeker op de hoogte brengen van uw beslissing. Ook al is het niet verplicht, kan het voor de onderzoeker en voor de opdrachtgever nuttig zijn om de reden van deze beslissing te kennen (bv. bijwerkingen, te veel verplaatsingen, ...).
+
+Als u uw toestemming intrekt, betekent dit dat u besluit te stoppen met
+
+- de behandeling met het studiegeneesmiddel, en
+
+- alle aan de studie verbonden raadplegingen en onderzoeken.
+
+Er zullen geen nieuwe gegevens meer verzameld en bezorgd worden aan de opdrachtgever.
+
+Als uw biologische stalen (bv. bloedstalen, urinestalen) reeds werden gebruikt of getest vóór de intrekking van uw toestemming, heeft de opdrachtgever nog steeds het recht de resultaten van die tests te gebruiken.
+
+Ook uw biologische stalen die verzameld werden (maar nog niet getest) vóór het intrekken van uw toestemming, en de gegevens die daaruit worden verkregen, kunnen nog steeds worden gebruikt door de opdrachtgever. U kan vragen om deze stalen te vernietigen. Om een foutieve interpretatie van de studieresultaten te vermijden, kan dit uitgesteld worden tot het einde van de studie.
+
+[Indien van toepassing: ] Indien u een bijkomende toestemming hebt gegeven voor het gebruik van uw stalen bij toekomstig onderzoek, en u deze bijkomende toestemming niet intrekt, kunnen uw stalen voor dat onderzoek nog steeds gebruikt worden.
+
+9.2 U beslist te stoppen met de behandeling met het studiegeneesmiddel
+
+Het is mogelijk dat u beslist om te stoppen met de behandeling met het studiegeneesmiddel, maar dat u toestemt verder deel te nemen aan de studie en te worden gecontacteerd door het studiepersoneel.
+
+Indien u beslist om te stoppen met de behandeling met het studiegeneesmiddel, kan u verder naar de studiegerelateerde raadplegingen komen. Het studiepersoneel zal u vragen of ze u per telefoon, e-mail of post kunnen contacteren om te vragen naar uw algemene gezondheidstoestand en/of bijwerkingen op lange termijn kunnen opvolgen. Dit zal ongeveer elke [aantal] maanden plaats vinden voor de rest van de studie (einddatum [vermeld de geschatte einddatum van de studie]). Het kan ook zijn dat ze uw toestemming vragen om deze informatie op te zoeken in uw medisch dossier (of [indien dit wordt toegestaan door de plaatselijke regelgeving] in publieke gegevens) tot aan het einde van de studie. Deze informatie is belangrijk voor de wetenschappelijke waarde van de studie en om de resultaten ervan juist te interpreteren. U bent vrij om zo een regelmatig contact te weigeren. Uw beslissing zal uw toekomstige medische zorg niet beïnvloeden.
+
+[Gelieve in dat geval deze toestemming en de vorm van toestemming (bezoeken, enkel telefonisch contact, raadplegen publieke gegevens, …) duidelijk te documenteren.]
+
+9.3 De onderzoeker besluit uw deelname aan de studie te stoppen of u te laten stoppen met de behandeling met het studiegeneesmiddel
+
+De onderzoeker kan uw deelname aan de studie beëindigen omdat
+
+- hij/zij het voor u het beste vindt (bv. op basis van uw testresultaten, wanneer u bepaalde gezondheidsproblemen ontwikkelt, wanneer het protocol definieert dat u niet zwanger mag worden en u toch zwanger wordt, …)
+
+- u de instructies van het studiepersoneel niet naleeft,
+
+- er een andere reden is die u zal worden uitgelegd, of
+
+- de volledige studie stopgezet moet worden voor alle deelnemers (zie volgende paragraaf).
+
+Als dat gebeurt, dan zal het studiepersoneel u uitleggen waarom en de gepaste opvolging verzekeren.
+
+4.  Andere instanties kunnen de studie onderbreken of beëindigen
+
+De opdrachtgever en de bevoegde Belgische gezondheidsautoriteiten kunnen de studie onderbreken of beëindigen
+
+- omdat uit de verzamelde informatie blijkt dat het studiegeneesmiddel niet goed genoeg werkt (onvoldoende verbetering in de gezondheid van de deelnemers aan de studie oplevert),
+
+- omdat het studiegeneesmiddel meer (ernstige) bijwerkingen veroorzaakt dan verwacht, of
+
+- om een andere reden die door de betrokken instantie zal worden uitgelegd.
+
+Welke behandeling zal ik krijgen na mijn deelname aan de studie? 
+
+Indien u stopt met de studie, zal de onderzoeker uw gezondheidstoestand evalueren. Indien nodig zal hij/zij u de beste beschikbare standaardbehandeling voorschrijven of u doorverwijzen naar een andere behandelende arts van uw keuze.
+
+[Kies één van de volgende teksten. Selectie van één van de onderstaande teksten dient gebaseerd te zijn op een gemotiveerde beoordeling door de opdrachtgever, in overleg met de onderzoeker. Deze beoordeling moet rekening houden met de aard van het studiegeneesmiddel, het werkingsmechanisme, de fase en het doel van de studie (bijv. therapeutisch, preventief,…). Indien voortgezette toediening van het studiegeneesmiddel na de studie niet verantwoord wordt geacht, is het eveneens de verantwoordelijkheid van de opdrachtgever om deze afweging transparant te documenteren, conform de geldende richtlijnen.]
+
+De opdrachtgever zal u na deze studie gratis toegang verlenen tot het studiegeneesmiddel [cfr. artikel 34 van de Verklaring van Helsinki] als
+
+- de voordelen voor de deelnemers groter zijn dan de nadelen en er geen andere gelijkwaardige of gepaste en terugbetaalde behandeling beschikbaar is op de markt in België,
+
+- de bevoegde Belgische gezondheidsautoriteiten deze toegang goedkeuren,
+
+- de ontwikkeling en productie van het studiegeneesmiddel wordt voortgezet, en
+
+- de aard en het werkingsmechanisme van het studiegeneesmiddel dit toelaten (dit is bijvoorbeeld niet mogelijk bij kortstondige toediening van een experimenteel geneesmiddel)
+
+[of]
+
+Indien u aan de volledige studie hebt deelgenomen, zou de onderzoeker u kunnen uitnodigen om deel te nemen aan een vervolgstudie. Hierdoor kan u gedurende een nieuwe periode [naam van studiegeneesmiddel] krijgen. De onderzoeker zal dit voorstellen indien hij/zij van mening is dat deze optie gunstig is voor u en indien u beantwoordt aan de inclusiecriteria voor de vervolgstudie. Deelname aan deze toekomstige vervolgstudie is vrijwillig.
+
+Zal mijn deelname aan de studie bijkomende kosten met zich meebrengen voor mij?
+
+1.  Onderzoeken en behandelingen betaald door de opdrachtgever
+
+[De opdrachtgever dient zich ervan bewust te zijn dat patiënten die aan studies deelnemen in België niet van de sociale zekerheid worden uitgesloten. Het is verboden de deelnemer/sociale zekerheid bijkomende onderzoeken die verband houden met de studie aan te rekenen.]
+
+Zoals beschreven in paragraaf 4, zullen de onderzoeken en behandeling specifiek voor de studie niet aan u worden aangerekend. De behandelingen en onderzoeken die behoren tot de standaardbehandeling van uw situatie, zullen aan u worden aangerekend of vergoed worden door uw mutualiteit (Belgische sociale zekerheid).
+
+Met andere woorden, vergoedt de opdrachtgever het ziekenhuis of studiecentrum voor
+
+- de tijd die door de onderzoeker en het studiepersoneel aan de studie wordt besteed,
+
+- de bezoeken/raadplegingen en alle geplande onderzoeken die specifiek zijn voor de studie,
+
+- de bestudeerde behandeling (studiegeneesmiddel, en elke andere medicatie en ander materiaal specifiek gebruikt voor de studie).
+
+  1.   Andere uitgaven die betaald worden door de opdrachtgever
+
+[De opdrachtgever moet de deelnemer informeren over het volgende:
+
+- De verschillende redenen voor compensatie en welk compensatiebedrag voor elke categorie wordt aangeboden. Gebruik hiervoor onderstaande tabel.
+
+- De vorm van compensatie (bankoverschrijving, externe leverancier, enz.) moet worden gedefinieerd, inclusief alternatieve opties.
+
+- De timing en voorwaarden van de betalingen.]
+
+U ontvangt een vergoeding voor bepaalde kosten die verband houden met uw deelname aan het onderzoek. De vergoeding die Belgische deelnemers in het kader van dit onderzoek ontvangen, is in België niet onderworpen aan de inkomstenbelasting.
+
+Onderstaande tabel beschrijft waarvoor u wordt gecompenseerd en welke bedragen u ontvangt. Deze vergoeding zal worden uitgekeerd in de vorm van (bankoverschrijving, externe leverancier, voucher, betaalkaarten, enz). De opdrachtgever betaalt uw vergoeding driemaandelijks. [Indien van toepassing] De opdrachtgever vraagt de deelnemers om ontvangstbewijzen. Deze ontvangstbewijzen worden verzameld door het studiepersoneel en in gecodeerde vorm naar de opdrachtgever gestuurd. U heeft het recht om uw beslissing voor een bepaalde vorm van compensatie in te trekken, om welke reden dan ook, op elk moment, zonder dat u uw beslissing hoeft te rechtvaardigen. Als u problemen ondervindt bij het ontvangen van uw compensatie, aarzel dan niet om contact op te nemen met het studiepersoneel.
+
+U ontvangt een vergoeding voor de volgende uitgaven [in de volgende tabel worden verschillende voorbeelden van vergoedingen gegeven. Verwijder overbodige regels]:
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Type                                                                                                                            Amount
+  ------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------
+  Verplichte anticonceptie, verplichte zonnebrandcrème, aan te raden invriezen van eicellen of zaadcellen, verplicht dieet, enz   Vergoeding van de werkelijke kosten van de patiënt, vast bedrag
+
+  Reiskosten, openbaar vervoer, parking                                                                                           [aantal] EUR per bezoek, [aantal] EUR per km, terugbetaling
+
+  Eten en drinken                                                                                                                 [aantal] EUR per bezoek
+
+  Hotel kosten                                                                                                                    [aantal] EUR per verblijf
+
+  Tijdsinvestering en inspanningen                                                                                                [aantal] EUR per bezoek / onderzoek
+
+  …                                                                                                                               
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[Gelieve hier meer informatie toe te voegen of er persoonsgegevens nodig zijn voor de vergoeding. Er moet vermeld worden of deze gegevens worden doorgegeven aan externe leveranciers. De deelnemer moet altijd gelijkwaardige keuzes worden geboden met betrekking tot vergoeding. Bijvoorbeeld als een deelnemer geen vergoeding voor kosten via een betaalkaart wil, moet hem de mogelijkheid worden geboden om vergoed te worden via een methode waarbij geen persoonsgegevens aan een externe partij worden doorgegeven, vb. bankoverschrijving/voucher via het studiecentrum). Deze optie moet duidelijk worden geformuleerd in de paragrafen hieronder. Alsook moet de deelnemer zijn akkoord gevraagd worden via het betreffende vakje in Hoofdstuk II.]
+
+[Voorbeeld: De opdrachtgever heeft een externe leverancier aangesteld die een [compensatievorm via externe leverancier, bv. betaalkaart] gebruikt om u te vergoeden. Als de leverancier persoonlijke informatie van u nodig heeft, moeten zij uw gegevens verwerken in overeenstemming met de huidige Europese en Belgische wetgeving inzake gegevensbescherming. Deze [compensatievorm] kan in verschillende winkels worden gebruikt. Op deze website vindt u een lijst van alle winkels waar u [compensatievorm] kunt gebruiken: [website].
+
+U gaat al dan niet akkoord met deze vorm van compensatie door het betreffende vakje in Hoofdstuk II aan te vinken. Indien u niet akkoord gaat, zal de opdrachtgever het studiecentrum vergoeden. Het studiecentrum zal op zijn beurt, u aan dezelfde tarieven als hierboven vermeld vergoeden via [compensatievorm via het studiecentrum, bv. bankoverschrijving/voucher].
+
+Welke gegevens worden over mij verzameld tijdens de studie en wat gaat ermee gebeuren?
+
+12.1 Welke gegevens worden tijdens de studie verzameld en verwerkt?
+
+De verzamelde en verwerkte persoonsgegevens gaan over uw gezondheid en medische toestand, met inbegrip van uw medische geschiedenis, een deel van uw achtergrondinformatie (bv. uw leeftijd en geslacht) en de resultaten van de studieonderzoeken.
+
+[Indien van toepassing, indien data omtrent etniciteit verzameld worden en enkel wanneer dit strikt noodzakelijk is voor de studie] Etnische gegevens worden verzameld om ervoor te zorgen dat er onderzoeksgegevens worden verwerkt in een zo breed mogelijke populatie.
+
+[Onderzoekers mogen enkel die persoonsgegevens verzamelen die noodzakelijk zijn voor het beantwoorden van de onderzoeksvraag, in overeenstemming met het beginsel van gegevensminimalisatie en proportionaliteit uit de GDPR.]
+
+2.   Hoe zal de onderzoeker mijn persoonsgegevens behandelen?
+
+De onderzoeker (en het studiepersoneel) is gebonden door het beroepsgeheim of via een vertrouwelijkheidsovereenkomst bij het verzamelen en verwerken van uw gegevens.
+
+Dit betekent dat hij/zij uw identiteit nooit zal bekendmaken, ook niet in een wetenschappelijke publicatie of een voordracht, en dat hij/zij uw gegevens zal coderen (Ref.[3]) (dit betekent dat hij/zij zal uw identiteit in de studie vervangen door een identificatiecode) alvorens ze naar de opdrachtgever te sturen. Met andere woorden, deze code zal geen persoonlijke identificator of combinatie van identificatoren bevatten zoals naam, voornaam, initialen, volledige of gedeeltelijke geboortedatum, dossiernummer, enz. [Een uitgebreide beschrijving van de identificatiecode moet opgenomen worden in het protocol]
+
+Daardoor zullen de onderzoeker en het studiepersoneel, onder de verantwoordelijkheid van de onderzoeker, de enigen zijn die uw identiteit zullen kunnen koppelen aan de gegevens die tijdens de studie zijn doorgegeven, met de uitzonderingen vermeld onder § 12.5.
+
+De gegevens die de opdrachtgever krijgt, zullen hem dus niet in staat stellen u te identificeren.
+
+3.   Hoe zullen mijn gegevens verwerkt worden?
+
+[Informatie over de wettelijke basis voor gegevensverwerking.]
+
+Uw studiegegevens zullen verwerkt worden in overeenstemming met de huidige Europese en Belgische wetgeving inzake gegevensbescherming.
+
+[De opdrachtgever is VERPLICHT om zelf een wettelijke basis te kiezen voor de verwerking van de gecodeerde gegevens. De keuze die gemaakt wordt, heeft gevolgen voor de opdrachtgever en brengt verplichtingen met zich mee. De keuze moet in overeenstemming zijn met de Belgische en Europese wetgeving.
+
+Er zijn 4 wettelijke gronden waaruit gekozen kan worden, hieronder aangegeven met de letters a-d. Elke wettelijke grond geeft de deelnemers bepaalde rechten en beperkingen, welke in paragraaf 12.4 worden beschreven.]
+
+De reden dat uw persoonsgegevens mogen worden verwerkt voor de doeleinden van de studie, is dat ze worden verwerkt voor het verrichten van wetenschappelijk onderzoek en [kies uit de volgende opties]
+
+- dat u toestemming hebt gegeven. (a)
+
+- dat we moeten voldoen aan een wettelijke verplichting, namelijk [noem de wettelijke verplichting, bv. overdracht van gegevens naar een andere bevoegde autoriteit], waaraan [naam/namen van verwerkingsverantwoordelijke(n)] onderworpen is/zijn. (b)
+
+- dat we een taak moeten uitvoeren die gebeurt [kies:] in het algemeen belang [of] in de uitoefening van de officiële bevoegdheid die ons is verleend, namelijk [noem bevoegdheid, bv. vooruitgang van de wetenschap]. (c)
+
+- dat we [naam verwerkingsverantwoordelijke met gerechtvaardigd belang] gerechtvaardigde belangen hebben omdat [noem het gerechtvaardigd belang, bv. kwaliteitsverbetering van een product; (opmerking: het betreft hier het gerechtvaardigd belang van de opdrachtgever! In dit geval mag de opdrachtgever geen overheidsorgaan zijn]. (d)
+
+[Het is mogelijk dat de opdrachtgever beroep doet op meerdere verwerkingsgronden binnen de studie. Voor elke aparte verwerkingsactiviteit mag er echter maar één rechtsgrond worden gekozen. De opdrachtgever kan zich dus niet beroepen op meerdere rechtsgronden voor één en dezelfde verwerking, of tussen grondslagen wisselen. Wat wel mogelijk is, is dat er voor het verzamelen van de persoonsgegevens om de studie uit te voeren gerechtvaardigd belang wordt gekozen, maar dat men voor de veiligheidsrapportering beroep doet op de wettelijke verplichting als verwerkingsgrond. De opdrachtgever moet per verwerkingsactiviteit duidelijk aangeven op welke verwerkingsgrond hij beroep doet.
+
+Ter informatie,
+
+- de opdrachtgever is verwerkingsverantwoordelijke voor alle verwerkingsactiviteiten die verricht worden met de persoonsgegevens van de deelnemers voor de doeleinden van de studie;
+
+- het centrum/ziekenhuis dat de studie uitvoert is verwerker voor de verwerkingsactiviteiten die het centrum/ziekenhuis uitvoert met de persoonsgegevens van de deelnemers voor de doeleinden van de studie;
+
+- het centrum/ziekenhuis dat de studie uitvoert blijft afzonderlijk verwerkingsverantwoordelijke voor de verwerking van de persoonsgegevens in het medische dossier van haar patiënten voor het verstrekken van medische zorg aan haar patiënten en voor haar eigen academische onderzoeksdoeleinden.]
+
+  2.  Heb ik toegang tot mijn gegevens die tijdens de studie verzameld en verwerkt zijn en kan ik ze rechtzetten?
+
+U heeft het recht om aan de onderzoeker te vragen welke gegevens over u worden verzameld en waarvoor ze gebruikt worden in deze studie.
+
+[Afhankelijk van de wettelijke grond gekozen in paragraaf 12.3, wordt uit volgende rechten en beperkingen gekozen.
+
+Indien “Gerechtvaardigde belang” (d) werd gekozen als wettelijke grond, ZOU de tekst in dit hoofdstuk er kunnen uitzien als volgt:
+
+“U heeft het recht om uw persoonlijke gegevens in te zien en na te kijken, en om een correctie te vragen indien ze onjuist blijken. Die rechten zullen evenwel worden uitgesteld om te vermijden dat de blindering van deze studie wordt opgeheven. Het is onmogelijk om al uw gegevens te laten wissen, om verzet aan te tekenen tegen de verwerking ervan of om die verwerking te laten beperken. Dat zou immers voor vertekende studieresultaten kunnen zorgen.”]
+
+U heeft het recht om [kies uit de volgende opties]
+
+[De letters achter de opties verwijzen naar de wettelijke basis die hierboven beschreven werd. Indien bv. de wettelijke basis consent (a) gekozen is, kan de opdrachtgever ervoor kiezen de opties gevolgd door een (a) weg te laten, met name het recht te beperken. Houd er rekening mee dat het beperken van deze rechten een mogelijkheid is, maar het moet in het document gemotiveerd worden dat deze rechten de verwezenlijking van de specifieke doelen onmogelijk maken of ernstig zullen schaden, en dat dus dergelijke afwijkingen nodig zijn om die doelen te bereiken.
+
+Geschikte veiligheidsmaatregelen moeten waarborgen dat technische en organisatorische maatregelen worden genomen, met name om ervoor te zorgen dat het beginsel van gegevensminimalisatie wordt nageleefd. Die maatregelen kunnen codering omvatten, mits op deze manier aan deze doelstellingen kan worden voldaan. Wanneer aan die doeleinden kan worden voldaan door middel van verdere verwerking die identificatie van betrokkenen niet of niet langer mogelijk maakt, is aan die doeleinden op die manier voldaan.
+
+Het wordt ten zeerste aanbevolen om contact op te nemen met uw functionaris voor gegevensbescherming om te informeren naar de noodzakelijke en passende voorzorgsmaatregelen.]
+
+- toegang te krijgen tot deze gegevens en ze na te kijken (a, b, c, d),
+
+- al uw gegevens te laten schrappen (a, b, c, d),
+
+- de verzamelde persoonsgegevens te ontvangen (dit recht heeft men enkel bij de rechtsgrond toestemming en een geautomatiseerde verwerking – hier is echter geen beperking mogelijk!),
+
+- correctie te vragen als ze niet juist zijn (a, b, c, d),
+
+- de verwerking van uw gegevens te beperken (a, b, c, d),
+
+- u te verzetten tegen het verwerken van uw persoonsgegevens (b, d),
+
+- uw toestemming in te trekken voor de verwerking van persoonsgegevens (a). Uw persoonsgegevens die al verzameld werden vóór uw terugtrekking, zullen bewaard blijven om een foutieve interpretatie van de studieresultaten te vermijden [indien na terugtrekking kan b, c of d gebruikt worden.].
+
+[Indien van toepassing] Uw recht om [kies, afhankelijk van de wettelijke grond, uit de volgende opties, die hierboven werden behouden als een recht voor de deelnemer]
+
+- toegang te krijgen tot deze gegevens en ze na te kijken (a, b, c, d),
+
+- al uw gegevens te laten schrappen (a, b, c, d),
+
+- correctie te vragen als ze niet juist zijn (a, b, c, d),
+
+- de verwerking van uw gegevens te beperken (a, b, c, d),
+
+- u te verzetten tegen het verwerken van uw persoonsgegevens (a, b, d),
+
+wordt uitgesteld om de volgende redenen, … [voeg toe waarom de rechten beperkt worden], onder meer om te voorkomen dat de resultaten van de studie foutief worden geïnterpreteerd (bv. bij het geblindeerd toedienen van medicatie). Gelieve de onderzoeker te vragen wanneer u toegang kan krijgen tot uw persoonsgegevens.
+
+[Indien van toepassing] Het is niet mogelijk om [kies uit de volgende opties die u hierboven schrapte als een recht voor de deelnemer]
+
+- toegang te krijgen tot deze gegevens en ze na te kijken (a, b, c, d),
+
+- al uw gegevens te laten schrappen (a, b, c, d),
+
+- correctie te vragen als ze niet juist zijn (a, b, c, d),
+
+- de verwerking van uw gegevens te beperken (a, b, c, d),
+
+- u te verzetten tegen het verwerken van uw persoonsgegevens (a, b, d),
+
+om de volgende redenen, … [voeg toe waarom de rechten beperkt worden], onder meer om te voorkomen dat de resultaten van de studie foutief worden geïnterpreteerd.
+
+2.   Wie anders dan de onderzoeker en zijn studiepersoneel heeft toegang tot mijn persoonsgegevens?
+
+Om de kwaliteit van de studie te controleren kan het gebeuren dat uw niet-gecodeerde persoonsgegevens of voor deze studie relevante informatie uit uw medisch dossier geïnspecteerd worden door andere mensen dan het studiepersoneel. Deze inzage gebeurt onder de verantwoordelijkheid van de onderzoeker. Deze personen zijn gebonden aan het beroepsgeheim of via een vertrouwelijkheidsovereenkomst. Het kan gaan om:
+
+- door de opdrachtgever aangeduid personeel (MONITORS en AUDITORS) en mensen of organisaties die diensten leveren aan of samenwerken met de opdrachtgever. Zij zullen echter nooit uw naam en contactgegevens doorgeven aan de opdrachtgever.
+
+- inspecteurs van de bevoegde gezondheidsautoriteiten van over de hele wereld.
+
+- een onafhankelijke auditgroep.
+
+- personen aangeduid door het Ethisch Comité.
+
+Indien nodig voor de studie mogen de gecodeerde studiegegevens naar andere landen binnen en buiten de Europese Unie (EU) worden gestuurd en worden nagekeken door:
+
+- personeel (andere dan de inspecteurs) van de bevoegde gezondheidsautoriteiten van België (Federaal Agentschap voor Geneesmiddelen en Gezondheidsproducten, FAGG) of andere landen binnen en buiten de EU,
+
+- het/de Belgisch(e) evaluerend(e) Ethisch(e) Comité(s),
+
+- externe onderzoekers,
+
+- de opdrachtgever van de studie, door de opdrachtgever aangeduid personeel en mensen of organisaties die diensten leveren aan of samenwerken met de opdrachtgever, en/of
+
+- bedrijven uit de groep van de opdrachtgever in België en in andere landen binnen en buiten de EU.
+
+De Europese regelgeving en de Belgische wetgeving over gegevensbescherming leggen beperkingen op voor de overdracht van gegevens naar niet-EU landen. De opdrachtgever moet altijd verzekeren dat uw gecodeerde studiegegevens gelijkwaardig beschermd worden bij overdracht naar een niet-EU land. Indien de opdrachtgever hiervoor een overeenkomst over databescherming afsluit, kan een kopie van deze overeenkomst worden verkregen via de onderzoeker.
+
+U kan altijd met de onderzoeker contact opnemen voor meer informatie over zulke overdracht.
+
+12.6 [optioneel, alleen voor autologe ATMP-studies] Wie heeft behalve de onderzoeker en zijn studiepersoneel ook toegang tot mijn gegevens bij deze autologe ATMP-studie?
+
+In deze studie wordt een geneesmiddel voor autologe celtherapie getest (ATMP, advanced therapy medicinal product). Een ATMP is een product gemaakt op basis van uw eigen celmateriaal, dat enkel voor uzelf gebruikt zal worden als geneesmiddel. Voor dit soort studies bestaan specifieke regels rond toegang tot gegevens. De arts-manager van de producent die het ATMP maakt, moet in ongecodeerde vorm toegang hebben tot een aantal relevante gegevens over u. Dit is noodzakelijk om de kwaliteit, veiligheid en traceerbaarheid van dit geneesmiddel te waarborgen in overeenstemming met de Belgische wetgeving op het gebruik van menselijk lichaamsmateriaal.
+
+12.7 Wat zal er gebeuren met de resultaten van de studie?
+
+Na afsluiting van de studie zal een beschrijving en de resultaten van de studie gepubliceerd worden in gespecialiseerde medische tijdschriften. Een kopie van de wetenschappelijke publicatie [indien van toepassing:] of een voor een deelnemer begrijpelijke samenvatting, is verkrijgbaar via de onderzoeker of het studiepersoneel.
+
+Een beschrijving van de studie zal ook beschikbaar zijn op https://euclinicaltrials.eu/search-for-clinical-trials/?lang=nl. Met behulp van de informatie op het voorblad van dit formulier, kan u deze website raadplegen. [Kies] Binnen 1 jaar na afsluiting van de studie [OF] [op datum van publicatie aanvaard bij een verzoek om uitstel] zal de website een samenvatting van de resultaten bevatten in overeenstemming met de richtsnoer van de Europese Commissie.
+
+Deze website of publicaties zullen geen informatie bevatten waarmee u te identificeren bent.
+
+[Indien van toepassing, nl. indien de opdrachtgever de gegevens van de studie wenst te gebruiken voor de FDA (Ref.[4]):] Een beschrijving van deze klinische studie staat op https://www.ClinicalTrials.gov, zoals vereist door de wetgeving in de Verenigde Staten. Deze website bevat geen informatie die zal leiden naar u als persoon. Wel kan de website een samenvatting van de resultaten tonen. U kan deze website op elk moment doorzoeken.
+
+12.8 Zullen mijn gegevens gebruikt worden voor andere doeleinden dan de studie waaraan ik deelneem?
+
+[Kies:]
+
+De resultaten van de studie zullen alleen worden gebruikt om een antwoord te geven op de wetenschappelijke vragen in deze studie.
+
+[of]
+
+De resultaten van de studie zullen worden gebruikt om een antwoord te geven op de wetenschappelijke vragen van deze studie. Daarnaast zou de opdrachtgever uw gegevens die uit deze studie verkregen zijn, willen gebruiken in andere onderzoeks- en ontwikkelingsactiviteiten (en de daaraan gekoppelde wetenschappelijke publicaties). Deze activiteiten kunnen enkel gaan over:
+
+- de werking van [naam van het studiegeneesmiddel] en gelijkaardige geneesmiddelen,
+
+- dezelfde ziekte/aandoening waarvoor [naam van het studiegeneesmiddel] in deze studie wordt getest, of
+
+- andere ziektes en gezondheidsproblemen waarvoor [naam van het studiegeneesmiddel] een oplossing zou kunnen bieden, of van gerelateerde diagnostische tests.
+
+Elk bijkomend of toekomstig onderzoek buiten de studie en dus niet beschreven in bovenstaande punten, moet steeds goedgekeurd worden door een erkend Belgisch Ethisch Comité.
+
+[Wanneer de verwerking voor een ander doel dan dat waarvoor de persoonsgegevens zijn verzameld, niet gebaseerd is op de toestemming van de deelnemer of op een wetgeving van de EU of een lidstaat, moet de opdrachtgever, om na te gaan of verwerking voor een ander doel verenigbaar is met het doel waarvoor de persoonsgegevens aanvankelijk worden verzameld, onder meer rekening houden met:
+
+(a) elk verband tussen de doeleinden waarvoor de persoonsgegevens zijn verzameld en de doeleinden van de beoogde verdere verwerking;
+
+(b) de context waarin de persoonsgegevens zijn verzameld, met name met betrekking tot de relatie tussen de deelnemer en de opdrachtgever;
+
+(c) de aard van de persoonsgegevens, met name de vraag of speciale categorieën persoonsgegevens worden verwerkt overeenkomstig artikel 9 van de AVG, of dat persoonsgegevens in verband met strafrechtelijke veroordelingen en strafbare feiten worden verwerkt, overeenkomstig artikel 10 van de AVG;
+
+(d) de mogelijke gevolgen van de beoogde verdere verwerking voor betrokkenen;
+
+(e) het bestaan van geschikte veiligheidsmaatregelen, waaronder encryptie of codering.
+
+Het wordt ten zeerste aanbevolen om contact op te nemen met uw functionaris voor gegevensbescherming om te informeren naar deze compatibiliteit en om te beslissen of toestemming de wettelijke basis is die zal gekozen worden voor de verwerking in deze andere onderzoeks- en ontwikkelingsactiviteiten en of de volgende zin moet worden opgenomen. Voor meer informatie raadpleeg de GDPR artikels 5, 6 en 89.]
+
+[Indien van toepassing en indien “toestemming” als wettelijke grond voor de gegevensverwerking is gekozen] U gaat al dan niet akkoord met het gebruik van uw studiegegevens voor andere doeleinden buiten de context van de studie door het betreffende vakje in Hoofdstuk II aan te vinken.
+
+12.9 Hoe lang worden mijn gegevens bijgehouden?
+
+Na afloop van de studie zullen uw gecodeerde gegevens minstens 25 jaar worden bijgehouden in overeenstemming met de Europese wetgeving inzake klinische proeven om de geldigheid van het onderzoek te verzekeren. Dat zal ook het geval zijn indien u voortijdig met uw deelname aan de studie stopt.
+
+Welke biologische stalen worden van mij verzameld tijdens de studie en wat gebeurt ermee?
+
+13.1 Welke biologische stalen worden van mij verzameld tijdens de studie?
+
+Biologische stalen zijn stalen van menselijk lichaamsmateriaal.
+
+In deze studie zal/zullen het/de volgende biologisch(e) staal/stalen genomen worden: [specifieer kort]
+
+Voor deze stalen wordt ook een coderingsprocedure gebruikt net zoals voor uw persoonsgegevens in overeenstemming met de Belgische wetgeving op het gebruik van menselijk lichaamsmateriaal (zie I § 12.2). Wanneer stalen naar de opdrachtgever worden gezonden, of naar organisaties die samenwerken met de opdrachtgever, zullen zij enkel uw identificatiecode kunnen zien. De opdrachtgever zorgt ervoor dat steeds wordt bijgehouden waar uw biologische stalen zich bevinden. Het gebruik van uw biologische stalen, hangt samen met de verwerking van de bijbehorende gecodeerde persoonsgegevens.
+
+Uw biologische stalen zijn een gift. U zal geen enkel financieel voordeel ontvangen in verband met de ontwikkeling van nieuwe therapieën die voortvloeien uit het gebruik van uw biologische stalen en die een commerciële waarde zouden kunnen hebben.
+
+2.   Wat gebeurt er met de verzamelde biologische stalen binnen de context van de studie?
+
+Deze biologische stalen zullen worden geanalyseerd met het oog op de doelstellingen van deze studie.
+
+[Indien overschotten van stalen vernietigd worden, vermeldt u hier als tekst:] Uw biologische stalen worden vernietigd na afloop van de analyses in het kader van deze studie.
+
+[Voeg in het geval van bewaring van stalen voor gebruik binnen de context van de studie de volgende zinnen toe:]
+
+Aangezien de wetenschap in dit domein voortdurend vooruitgang boekt, zou de opdrachtgever, de overschotten van uw biologische stalen nog [aantal] jaar willen bewaren. Hij doet dit voor aanvullend onderzoek dat binnen de context van de huidige klinische studie blijft en dus gaat over dezelfde ziekte of over dezelfde behandeling/hetzelfde geneesmiddel als in deze studie.
+
+[Indien bewaring van stalen voor gebruik binnen de context van de studie optioneel is:] U gaat al dan niet akkoord met het bewaren van de overschotten van uw biologische stalen voor aanvullend onderzoek binnen de context van de huidige klinische studie door in Hoofdstuk II het betreffende vakje aan te vinken.
+
+[Voeg in het geval van afname van extra stalen voor gebruik binnen de context van de studie de volgende zinnen toe:]
+
+Met uw toestemming wil de opdrachtgever u eveneens uitnodigen om deel te nemen aan aanvullend onderzoek dat binnen de context van de huidige klinische studie blijft en dus gaat over dezelfde ziekte of over dezelfde behandeling/hetzelfde geneesmiddel als in deze studie.
+
+Uw deelname aan dit aanvullend onderzoek is optioneel en houdt in dat u bijkomende biologische stalen afstaat. Deze biologische stalen zullen [aantal] jaar bewaard worden. Het betreft volgende biologische stalen: [vermeld de biologische stalen die additioneel verzameld worden].
+
+[Kies:] Meer informatie over dit aanvullend onderzoek staat in Hoofdstuk [nummer], deel [nummer]. U gaat al dan niet akkoord met het afstaan van bijkomende biologische stalen en het deelnemen aan het beschreven onderzoek door in Hoofdstuk II het betreffende vakje aan te vinken.
+
+[of]
+
+Wij zullen u in een afzonderlijk formulier voor geïnformeerde toestemming meer informatie over dit onderzoek geven. Als u wil deelnemen aan dit aanvullend onderzoek, vragen we u dit afzonderlijk formulier te ondertekenen.
+
+[Voeg in het geval van genetische analyses binnen de context van de studie de volgende zinnen toe:]
+
+[Kies:]
+
+Op uw biologische stalen zullen ook genetische analyses worden verricht. Genetische analyses zijn onderzoeken naar DNA. DNA bepaalt bijvoorbeeld de kleur van ons haar en onze ogen. DNA kan ook verklaren waarom sommige mensen wel op bepaalde geneesmiddelen reageren en anderen niet. Ook kan het verklaren waarom sommige mensen bepaalde ziekten wel krijgen en anderen niet. Het doel van de genetische analyses in deze studie is … [leg het doel uit].
+
+Deze genetische analyses leveren essentiële informatie op voor de studie. Als u niet wil dat deze analyses worden uitgevoerd, kan u niet deelnemen aan de studie.
+
+[of]
+
+U gaat al dan niet akkoord dat genetische analyses worden verricht op uw biologische stalen door het betreffende vakje in Hoofdstuk II aan te vinken. Het doel van deze analyses is … [leg het doel uit].
+
+3.   Zullen biologische stalen gebruikt worden voor onderzoek buiten de context van de huidige studie?
+
+[Indien geen bijkomende biologische stalen worden verzameld en overschotten van biologische stalen vernietigd worden of enkel gebruikt worden binnen de context van de studie, kan deze paragraaf 13.3 verwijderd worden.]
+
+[Let op: biologische stalen onder deze paragraaf dienen in een erkende Belgische Biobank te worden geregistreerd.]
+
+[In geval van secundair gebruik van stalen, dit betekent dat in het geval van bijkomend onderzoek dat niet gaat over dezelfde ziekte of over dezelfde behandeling/hetzelfde geneesmiddel als in deze studie, voegt u de volgende zinnen toe:]
+
+[Indien overschotten van biologische stalen zullen worden gebruikt voor bijkomend onderzoek buiten de context van deze studie, voegt u volgende zin toe:]
+
+U gaat al dan niet akkoord dat de opdrachtgever de overschotten van uw biologische stalen gedurende [aantal] jaar zal bewaren voor bijkomend onderzoek buiten de context van de huidige studie door het betreffende vakje in Hoofdstuk II aan te vinken.
+
+[Indien bijkomende biologische stalen zullen worden afgenomen voor bijkomend onderzoek buiten de context van deze studie, voegt u volgende zin toe:]
+
+U gaat al dan niet akkoord dat u bijkomende biologische stalen zal afstaan en dat deze stalen zullen worden bewaard gedurende [aantal] jaar voor bijkomend onderzoek buiten de context van de huidige studie door het betreffende vakje in Hoofdstuk II aan te vinken.
+
+Als u akkoord gaat, mag dit bijkomend onderzoek alleen gebeuren overeenkomstig de wetgeving op het gebruik van menselijk lichaamsmateriaal én met de goedkeuring van een erkend Belgisch Ethisch Comité.
+
+[Voeg in het geval van genetische analyses buiten de context van de studie de volgende zinnen toe:]
+
+U gaat al dan niet akkoord dat op uw biologische stalen ook genetische analyses worden verricht buiten de context van de huidige studie door het betreffende vakje in Hoofdstuk II aan te vinken. Het doel van deze analyses is … [leg het doel uit].
+
+[Indien u op basis van bijkomende biologische stalen of overschotten van biologische stalen geartificialiseerd of geëxtraheerd materiaal wenst te produceren/bekomen voor uitsluitend niet-genetisch onderzoek buiten de context van deze studie voegt u de volgende paragrafen toe.]
+
+Als u akkoord gaat wil de opdrachtgever op basis van uw bijkomende biologische stalen of overschotten van uw biologische stalen materiaal aanmaken of kweken (bijvoorbeeld cellijnen of celculturen) of hieruit materiaal bekomen dat zelf geen cellen bevat (bijvoorbeeld proteïnen of DNA) en dit materiaal uitsluitend gebruiken voor niet-genetisch onderzoek buiten de context van deze studie. In dat geval zal de opdrachtgever de link tussen uw biologische stalen en uw identiteit verbreken, zoals hieronder uitgelegd in §13.4.
+
+U gaat al dan niet akkoord met het aanmaken/kweken of bekomen van materiaal op basis van uw bijkomende biologische stalen of overschotten van uw biologische stalen voor uitsluitend niet-genetisch onderzoek buiten de context van deze studie door het betreffende vakje in Hoofdstuk II aan te vinken.
+
+4.   [Indien van toepassing] Mag de link tussen mijn biologische stalen en mijn identiteit verbroken worden?
+
+[Indien de traceerbaarheid van de biologische stalen zal worden opgeheven voegt u de volgende paragrafen toe. Opheffing van traceerbaarheid van biologische stalen is alleen mogelijk mits de expliciete toestemming van de donor.]
+
+Indien u akkoord gaat, zullen uw biologische stalen na het gebruik in de context van deze studie niet langer kunnen gekoppeld worden aan uw identiteit.
+
+Daardoor zal het niet meer mogelijk zijn om u op de hoogte te brengen van mogelijke betekenisvolle informatie die wordt bekomen uit analyses op uw stalen.
+
+U zal ook niet langer uw toestemming voor gebruik van de stalen kunnen intrekken of kunnen vragen om uw stalen te vernietigen.
+
+U gaat al dan niet akkoord dat uw biologische stalen na het gebruik in de context van deze studie niet langer zullen kunnen gekoppeld worden aan uw identiteit door het betreffende vakje in Hoofdstuk II aan te vinken.
+
+Wat indien onderzoek betekenisvolle informatie over uw gezondheid oplevert?
+
+Tijdens de studie kan het gebeuren dat we nieuwe informatie ontdekken over uw gezondheid. Indien deze informatie van belang kan zijn voor uw gezondheid, zal de opdrachtgever de onderzoeker inlichten. Met uw toestemming zal de onderzoeker u en uw behandelende arts op de hoogte brengen van uw resultaten en de mogelijke gevolgen. Indien nodig zal de onderzoeker en/of de behandelende arts u raad geven over wat u moet doen.
+
+U kan de onderzoeker op de hoogte brengen of u al dan niet akkoord gaat om over betekenisvolle informatie over uw gezondheid geïnformeerd te worden, door het betreffende vakje in Hoofdstuk II aan te vinken. De onderzoeker/uw behandelende arts zal u deze informatie in ieder geval meedelen als het niet weten ervan ernstige nadelen voor uw gezondheid of die van derden kan opleveren.
+
+Wie heeft de documenten inzake de studie nagekeken en goedgekeurd?
+
+De studiedocumenten werden nagekeken door:
+
+- de Belgische bevoegde gezondheidsautoriteiten (FAGG) of indien van toepassing, door de nationale bevoegde gezondheidsautoriteiten van andere EU lidstaten, en
+
+- een onafhankelijk Belgisch Ethisch Comité
+
+De bevoegde gezondheidsautoriteiten en de Ethische Comités hebben als taak de personen die aan een studie deelnemen te beschermen. De bevoegde gezondheidsautoriteiten zullen erop toezien dat de studie gebeurt in overeenstemming met de toepasselijke wetgeving.
+
+U mag hun goedkeuring niet opvatten als een stimulans om deel te nemen aan de studie.
+
+HOOFDSTUK II - GEÏNFORMEERDE TOESTEMMING
+
+De officiële titel van de studie voor de leek zoals vermeld in de CTIS database
+
+[Algemene opmerking voor de opdrachtgever: Dit gedeelte mag alleen informatie bevatten die vermeld staat in de vorige delen van dit document.]
+
+DEELNEMER 
+
+[Beperk dit gedeelte tot maximaal 3 pagina's.]
+
+VEREISTEN VOOR UW DEELNAME AAN DE STUDIE
+
+- Ik verklaar dat ik dit formulier heb gelezen en dat ik de informatie erin begrepen heb.
+
+- Ik verklaar dat ik geïnformeerd ben over het doel van de studie, de duur en de gevolgen ervan, mogelijke risico's en ongemakken, de voorzorgen die ik moet nemen en wat van mij verwacht wordt, en dat ik dit alles begrepen heb. Mijn rechten als deelnemer aan een studie zijn mij uitgelegd en ik heb ze begrepen.
+
+- Ik heb voldoende tijd gehad om erover na te denken en erover te praten met een vertrouwenspersoon (bv. vrienden, familie, behandelende arts, ...).
+
+- Ik heb de kans gekregen om alle vragen te stellen die bij me opkwamen en ik heb een bevredigend antwoord gekregen.
+
+- Ik begrijp dat ik vrijwillig en zonder daartoe gedwongen te zijn, zal deelnemen aan deze studie en dat ik op ieder moment mijn deelname aan de studie stop kan zetten.
+
+- Ik begrijp dat er gegevens over mij zullen worden verzameld en dat deze vertrouwelijk zullen behandeld worden zoals beschreven in Hoofdstuk I, §12.2.
+
+- [Indien “toestemming” als wettelijke basis gekozen is, gebruik:] Ik ga ermee akkoord dat mijn persoonsgegevens verwerkt worden zoals beschreven in Hoofdstuk I, § 12.
+
+- ‘[Indien “algemeen belang” als wettelijke basis gekozen is, gebruik:] Ik ben ervan op de hoogte dat mijn persoonsgegevens verwerkt worden zoals beschreven in Hoofdstuk I, § 12
+
+- Ik begrijp dat vertegenwoordigers van de opdrachtgever, het Ethisch Comité, en bevoegde gezondheidsautoriteiten inzage hebben in mijn medisch dossier indien ze hiertoe gemachtigd zijn (zoals beschreven in Hoofdstuk I, §12.5).
+
+- Ik begrijp dat de opdrachtgever een verzekering heeft afgesloten voor het geval ik schade zou lijden in verband met mijn deelname aan deze studie.
+
+- Ik begrijp dat ik bij deelname aan deze studie geen kosten heb, tenzij deze voor de standaardbehandeling van mijn ziekte.
+
+- (Indien van toepassing) Ik begrijp het belang van anticonceptie en zal de gegeven aanbevelingen opvolgen. Ik zal eveneens mijn partner(s) informeren over mijn deelname aan een klinische studie met een geneesmiddel dat mogelijk schadelijk is voor de foetus, en om samen de benodigde anticonceptiemaatregelen te treffen.
+
+- Ik ben op de hoogte dat mijn behandelende arts(en) op de hoogte wordt gebracht van mijn deelname aan deze studie.
+
+- Wanneer ik deelneem aan een andere interventionele studie, dien ik dit aan de onderzoeker of het studiepersoneel te laten weten. Ik stem ermee in dat ik niet gelijktijdig aan een andere interventionele studie (bijvoorbeeld met een studiegeneesmiddel, medisch hulpmiddel, experimentele chirurgische techniek) deelneem zonder de onderzoeker of het studiepersoneel daarvan op de hoogte te brengen, en dat deelname om gemotiveerde redenen kan geweigerd worden.
+
+- Ik begrijp dat ik moet meewerken en de instructies van de onderzoeker en van het studiepersoneel rond de studie moet volgen.
+
+- Ik begrijp dat mijn deelname aan de studie zonder mijn toestemming kan beëindigd worden als ik een andere behandeling nodig heb, het studieschema niet volg, een letsel heb dat met de studie te maken heeft of om gelijk welke andere gerechtvaardigde reden.
+
+- [In het geval van verplichte genetische analyses] Ik begrijp dat genetische analyses gebeuren op mijn biologische stalen.
+
+- Ik bevestig dat alle informatie die ik heb gegeven over mijn medische geschiedenis correct is, voor zover ik weet. Ik begrijp dat het schadelijk voor mij kan zijn als ik de onderzoeker niet informeer over mogelijke redenen waarom ik niet aan het onderzoek zou mogen deelnemen
+
+OPTIONELE TOESTEMMINGEN DIE GEEN ABSOLUTE VOORWAARDEN ZIJN VOOR UW DEELNAME AAN DEZE STUDIE
+
+vergoeding VIA EEN EXTERNE LEVERANCIER
+
+1.  [Indien de vergoeding via een externe leverancier kan worden geregeld waarvoor persoonlijke gegevens worden verzameld] Zoals vermeld in Hoofdstuk I, § 11.2 kan u uw vergoeding ontvangen via [compensatievorm via externe leverancier, bv. debet kaart] en zal een externe leverancier, genaamd [externe leverancier], bepaalde persoonsgegevens van u moeten verwerken. Als u niet akkoord gaat met het delen van uw persoonsgegevens en/of het ontvangen van de vergoeding via deze vorm van compensatie, zal de opdrachtgever het studiecentrum vergoeden. Het studiecentrum zal op zijn beurt, u aan dezelfde tarieven als hierboven vermeld vergoeden via [compensatievorm via het studiecentrum, bv. bankoverschrijving/voucher].
+
+  Gaat u ermee akkoord dat uw persoonsgegevens worden gedeeld met een externe leverancier [externe leverancier] voor de uitbetaling van uw vergoeding via [compensatievorm, bv. debet kaart]?
+
+  (Vink het gepaste vakje aan)
+
++---------------------------------+---------------------------------+
+|   ☐ Ik ga akkoord               |   ☐ Ik ga niet akkoord          |
++:================================+=================================+
+
+STUDIEgegevens
+
+1.  [Indien van toepassing en indien “toestemming” gekozen werd als wettelijke grond voor de dataverwerking] Zoals vermeld in Hoofdstuk I, § 12.8, zou de opdrachtgever uw studiegegevens willen gebruiken voor andere onderzoeks- en ontwikkelingsactiviteiten (en de daaraan gekoppelde wetenschappelijke publicaties). Deze onderzoeksdoelen moeten goedgekeurd zijn door een erkend Belgisch Ethisch Comité.
+
+  Gaat u ermee akkoord dat uw gegevens die in deze studie verkregen zijn worden gebruikt voor andere onderzoeksdoeleinden?
+
+  (Vink het gepaste vakje aan)
+
++:--------------------------------+---------------------------------+
+|   ☐ Ik ga akkoord               |   ☐ Ik ga niet akkoord          |
++---------------------------------+---------------------------------+
+
+BIOLOGISCHE STALEN BINNEN DE CONTEXT VAN DE STUDIE
+
+1.  [Indien er optionele genetische analyses gepland zijn in het huidige studieprotocol] Zoals vermeld in Hoofdstuk I, § 13.2, zou de opdrachtgever binnen de context van de studie waaraan u zal deelnemen genetische analyses willen verrichten op uw biologische stalen.
+
+  Gaat u ermee akkoord dat de opdrachtgever binnen de context van de studie genetische analyses verricht op uw biologische stalen?
+
+  (Vink het gepaste vakje aan)
+
++:--------------------------------+---------------------------------+
+|   ☐ Ik ga akkoord               |   ☐ Ik ga niet akkoord          |
++---------------------------------+---------------------------------+
+
+1.  [Indien bewaring van de overschotten van biologische stalen voor gebruik voor aanvullend onderzoek binnen de context van de studie optioneel is] Zoals vermeld in Hoofdstuk I, § 13.2 zou de opdrachtgever de overschotten van uw biologische stalen [aantal] jaren willen bewaren voor aanvullend onderzoek binnen de context van de studie waaraan u zal deelnemen. Gaat u ermee akkoord dat de overschotten van uw biologische stalen worden bewaard voor aanvullend onderzoek binnen de context van de studie?
+
+  (Vink het gepaste vakje aan)
+
++---------------------------------+---------------------------------+
+|   ☐ Ik ga akkoord               |   ☐ Ik ga niet akkoord          |
++:================================+=================================+
+
+1.  [Indien van toepassing] Zoals vermeld in Hoofdstuk I, § 13.2 zou de opdrachtgever bijkomende biologische stalen bij u willen afnemen en deze stalen [aantal] jaren willen bewaren voor aanvullend onderzoek binnen de context van de studie waaraan u zal deelnemen.
+
+Gaat u ermee akkoord dat u bijkomende biologische stalen zal afstaan en dat deze stalen worden bewaard voor aanvullen onderzoek binnen de context van de studie?
+
+  (Vink het gepaste vakje aan)
+
++---------------------------------+---------------------------------+
+|   ☐ Ik ga akkoord               |   ☐ Ik ga niet akkoord          |
++:================================+=================================+
+
+BIOLOGISCHE STALEN BUITEN DE CONTEXT VAN DE STUDIE
+
+1.  [Indien van toepassing] Zoals vermeld in Hoofdstuk I, § 13.3 zou de opdrachtgever de overschotten van uw biologische stalen [aantal] jaren willen bewaren voor bijkomend onderzoek buiten de context van de studie waaraan u zal deelnemen.
+
+  Gaat u ermee akkoord dat de overschotten van uw biologische stalen en de bijhorende persoonsgegevens worden bewaard voor bijkomend onderzoek buiten de context van de studie?
+
+  (Vink het gepaste vakje aan)
+
++:--------------------------------+---------------------------------+
+|   ☐ Ik ga akkoord               |   ☐ Ik ga niet akkoord          |
++---------------------------------+---------------------------------+
+
+1.  [Indien van toepassing] Zoals vermeld in Hoofdstuk I, § 13.3 zou de opdrachtgever bijkomende biologische stalen bij u willen afnemen en deze stalen [aantal] jaren willen bewaren voor bijkomend onderzoek buiten de context van de studie waaraan u zal deelnemen.
+
+  Gaat u ermee akkoord dat uw bijkomende biologische stalen worden bewaard voor bijkomend onderzoek buiten de context van de studie?
+
+  (Vink het gepaste vakje aan)
+
++---------------------------------+---------------------------------+
+|   ☐ Ik ga akkoord               |   ☐ Ik ga niet akkoord          |
++:================================+=================================+
+
+1.  [Indien van toepassing] Zoals vermeld in Hoofdstuk I, § 13.3, zou de opdrachtgever genetische analyses willen verrichten op uw biologische stalen buiten de context van de studie waaraan u zal deelnemen.
+
+  Gaat u ermee akkoord dat de opdrachtgever genetische analyses verricht op uw biologische stalen buiten de context van de studie?
+
+  (Vink het gepaste vakje aan)
+
++---------------------------------+---------------------------------+
+|   ☐ Ik ga akkoord               |   ☐ Ik ga niet akkoord          |
++:================================+=================================+
+
+1.  [Indien van toepassing] Zoals vermeld in Hoofdstuk I, § 13.3 zou de opdrachtgever op basis van uw bijkomende biologische stalen of overschotten van uw biologische stalen materiaal willen aanmaken of kweken (bijvoorbeeld cellijnen of celculturen) of hieruit materiaal bekomen dat zelf geen cellen bevat (bijvoorbeeld proteïnen of DNA) en dit materiaal uitsluitend gebruiken voor niet-genetisch onderzoek buiten de context van deze studie.
+
+Gaat u akkoord met het aanmaken, kweken of bekomen van materiaal op basis van uw bijkomende biologische stalen of overschotten van uw biologische stalen voor uitsluitend niet-genetisch onderzoek buiten de context van deze studie?
+
+  (Vink het gepaste vakje aan).)
+
++---------------------------------+---------------------------------+
+|   ☐ Ik ga akkoord               |   ☐ Ik ga niet akkoord          |
++:================================+=================================+
+
+VERBREKEN VAN LINK TUSSEN BIOLOGISCHE STALEN EN IDENTITEIT
+
+1.  [Indien van toepassing] Zoals vermeld in Hoofdstuk I, § 13.4 zou de opdrachtgever de link tussen uw biologische stalen en uw identiteit na het gebruik van uw biologische stalen in de context van deze studie willen verbreken.
+
+Gaat u ermee akkoord dat uw biologische stalen na het gebruik in de context van deze studie niet langer kunnen gekoppeld worden aan uw identiteit?
+
+  (Vink het gepaste vakje aan);
+
++---------------------------------+---------------------------------+
+|   ☐ Ik ga akkoord               |   ☐ Ik ga niet akkoord          |
++:================================+=================================+
+
+BETEKENISVOLLE INFORMATIE
+
+1.  Zoals beschreven in Hoofdstuk I, § 14 kan het gebeuren dat betekenisvolle informatie gevonden wordt die van belang kunnen zijn voor uw gezondheid of voor die van derden.
+
+  Als dat gebeurt, wilt u dan dat de onderzoeker/uw behandelend arts u op de hoogte brengt van dit resultaat?
+
+  (Vink het gepaste vakje aan)
+
++:---------------------------------------------------+---------------------------------------------+
+|   ☐ Neen, ik wil niet op de hoogte gebracht worden |   ☐ Ja, ik wil op de hoogte gebracht worden |
++----------------------------------------------------+---------------------------------------------+
+
+  Ik stem in met deelname aan de studie, [indien optionele vragen door de deelnemer beantwoord moeten worden:] met bovenstaande beperkingen, en ik heb een ondertekende en gedateerde kopie ontvangen van alle bladzijden van dit document.
+
+Naam en voornaam van de deelnemer:
+
+Datum (DD/MMM/JJJJ):
+
+[indien screening en randomisering op dezelfde dag gebeuren] Tijdstip:
+
+Handtekening van de deelnemer:
+
+[Indien de studie wilsonbekwame personen kan omvatten.] WETTELIJKE VERTEGENWOORDIGER (REF. [5])
+
+Ik verklaar dat men mij heeft geïnformeerd over de vraag om een beslissing te nemen over deelname aan de studie door de persoon die ik vertegenwoordig. Ik handel in zijn/haar beste belang en houd rekening met zijn of haar mogelijke wens. Mijn toestemming is van toepassing op alle punten opgenomen in het toestemmingsformulier voor de deelnemer.
+
+[In situaties waarin de wilsonbekwaamheid tijdelijk is.]
+
+Ik ben eveneens geïnformeerd dat van zodra de klinische situatie het toelaat, de persoon die ik vertegenwoordig op de hoogte zal worden gesteld van zijn/haar deelname aan deze studie. Hij/zij is op dat moment vrij om toestemming te geven voor een verdere deelname of om de deelname stop te zetten door dit toestemmingsformulier al dan niet te ondertekenen.
+
+Ik heb een ondertekende en gedateerde kopie ontvangen van dit document.
+
+Naam en voornaam van de wettelijke vertegenwoordiger:
+
+Relatie met de deelnemer:
+
+Datum (DD/MMM/JJJJ):
+
+[indien screening en randomisering op dezelfde dag gebeuren] Tijdstip:
+
+Handtekening van de wettelijke vertegenwoordiger
+
+[Indien een getuige / tolk aanwezig is.] ONPARTIJDIGE GETUIGE / TOLK (REF.[6] )
+
+Ik, ondergetekende (vink aan wat past),
+
+☐ onpartijdige getuige
+
+☐ tolk
+
+ben tijdens het volledige proces van informatieverstrekking aan de deelnemer aanwezig geweest en bevestig dat de informatie over de doelstellingen en procedures van de studie op adequate wijze is verstrekt. Ik bevestig dat de deelnemer (of diens wettelijke vertegenwoordiger) de studie naar alle waarschijnlijkheid heeft begrepen en dat de toestemming voor deelname uit vrije wil is gegeven. 
+
+Ik verklaar bovendien dat ik, optredend als onpartijdig getuige/tolk, geen banden heb met de opdrachtgever en de onderzoeker.
+
+Naam en voornaam van de onpartijdige getuige / tolk:
+
+Hoedanigheid van de onpartijdige getuige / tolk:
+
+Datum (DD/MMM/JJJJ):
+
+[indien screening en randomisering op dezelfde dag gebeuren] Tijdstip:
+
+Handtekening van de onpartijdige getuige / tolk:
+
+ONDERZOEKER
+
+[De onderzoeker is de arts of tandarts die het gesprek met de deelnemer heeft gevoerd of gesuperviseerd. Het gaat mogelijk niet om de hoofdonderzoeker van het studiecentrum. Indien een ander lid van het studiepersoneel eveneens deelneemt aan het gesprek met de deelnemer, moet deze persoon het ICF aanvullend ondertekenen als afgevaardigde. De onderzoeker ondertekent evenwel altijd als laatste.]
+
+Ik, de ondergetekende onderzoeker, bevestig
+
+- dat de deelnemer mondeling de noodzakelijke informatie over de studie heeft gekregen, dat de inhoud hem/haar is uitgelegd en dat hij/zij een origineel ondertekende versie van dit document heeft gekregen.
+
+- dat ik heb nagegaan of de deelnemer de studie heeft begrepen.
+
+- dat ik de deelnemer voldoende tijd heb gegeven om na te denken over zijn/haar deelname en om vragen te stellen.
+
+- dat geen enkele druk op de deelnemer werd uitgeoefend om hem/haar te doen toestemmen in deelname aan de studie.
+
+- dat ik werk in overeenstemming met de ethische beginselen zoals vermeld in de meest recente versie van de "Verklaring van Helsinki", de "Goede klinische praktijken" en de Belgische wet inzake klinische proeven.
+
+[Optionele handtekening door een afgevaardigde]
+
+Naam en voornaam van de afgevaardigde van de onderzoeker:
+
+Hoedanigheid van de afgevaardigde van de onderzoeker:
+
+Datum (DD/MM/JJJJ):
+
+[indien screening en randomisering op dezelfde dag gebeuren] Tijdstip:
+
+Handtekening van de afgevaardigde van de onderzoeker:
+
+[Verplichte handtekening van de onderzoeker]
+
+Naam en voornaam van de onderzoeker:
+
+Datum (DD/MMM/JJJJ):
+
+[indien screening en randomisering op dezelfde dag gebeuren] Tijdstip:
+
+Handtekening onderzoeker:
+
+VERKLARENDE WOORDENLIJST
+
+[Geef in dit hoofdstuk een verklaring voor de afkortingen en termen die misschien moeilijk te begrijpen zijn door de niet-medisch geschoolde deelnemer. De eventuele afkortingen dienen in de tekst bij eerste gebruik voluit te worden vermeld.]
+
+FAGG: Federaal Agentschap voor Geneesmiddelen en Gezondheidsproducten
+
+GBA: De Belgische Gegevensbeschermingsautoriteit zorgt ervoor dat persoonsgegevens zorgvuldig worden gebruikt en beveiligd, en dat uw privacy ook in de toekomst gewaarborgd blijft.
+
+Andere afkortingen die in de tekst voorkomen:
+
+VERZEKERING MET "FOUTLOZE" AANSPRAKELIJKHEID:
+
+De opdrachtgever is aansprakelijk voor elk letsel of elke schade aan de deelnemer die rechtstreeks of onrechtstreeks verband houdt met de studie. Hiervoor dient u geen fout aan te tonen.
+
+MONITOR en AUDITOR:
+
+Zowel de monitor als de auditor werkt voor de opdrachtgever.
+De monitor zorgt voor een continue kwaliteitscontrole tijdens het hele verloop van de studie. De auditor voert een onafhankelijk, éénmalig onderzoek op een bepaald moment tijdens het verloop van de studie. Ze controleren of de studie wordt/werd uitgevoerd volgens het protocol, of de gerapporteerde gegevens betrouwbaar zijn en of de studie in overeenstemming is met de geldende wetten.
+
+REFERENTIES
+
+[1] De definitie van een studie met interventie is te vinden in het document Vragen en Antwoorden (ontwerpversie) van de Europese Commissie, dat op zijn beurt te vinden is in Eudralex Volume 10, hoofdstuk V, toegankelijk via de volgende link: https://ec.europa.eu/health/documents/eudralex/vol-10_en#fragment1.
+
+[2] In overeenstemming met artikel 74 van de Verordening 536/2014 en artikel 12, §2 van de Belgische Wet van 7 mei 2017 inzake klinische proeven voor geneesmiddelen op menselijk gebruik, moet de opdrachtgever of een wettelijke vertegenwoordiger van de opdrachtgever gevestigd zijn in de Europese Unie.
+
+[3] Doorheen het document wordt de term “codering” gebruikt als een synoniem voor “pseudonimisering”, de term die in de Algemene Verordening Gegevensbescherming No 2016/679 wordt gebruikt.
+
+[4] Indien de opdrachtgever de gegevens wenst te gebruiken voor de FDA moet deze zin worden opgenomen in het ICF (CFR 50.25(c)) zoals beschreven in de richtlijn (https://www.fda.gov/downloads/regulatoryinformation/guidances/ucm291085.pdf).
+
+[5] Wanneer een meerderjarige niet in staat is zijn wil kenbaar te maken, moet er beroep gedaan worden op een wettelijke vertegenwoordiger die in opeenvolgende volgorde wordt bepaald (persoon die de patiënt vooraf heeft aangewezen om in zijn plaats op te treden, bewindvoerder, of bij gebreke daaraan, de samenwonende echtgenoot, de wettelijk samenwonende partner, feitelijk samenwonende partner, meerderjarig kind, een ouder, een meerderjarige broer of zus). Indien ook de persoon die krachtens het tweede lid kan optreden dat niet wenst te doen of ontbreekt, behartigt de betrokken beroepsbeoefenaar, in voorkomend geval in multidisciplinair overleg, de belangen van de patiënt. De regeling is vastgelegd in het artikel 11 van de wet van 7 mei 2017 inzake experimenten op de menselijke persoon en artikelen 12 en 14 van de wet van 22 augustus 2002 betreffende de rechten van de patiënt.
+
+[6] Het gebruik van een onpartijdige getuige is noodzakelijk wanneer de betrokkene of diens wettelijke vertegenwoordiger de taal van het goedgekeurde formulier voor geïnformeerde toestemming spreekt en/of volledig begrijpt maar niet kan lezen en schrijven als gevolg van een fysieke handicap of visueel gehandicapt is. Een tolk is noodzakelijk wanneer de onderzoeker niet de taal van de patiënt spreekt.

@@ -1,0 +1,595 @@
+[]
+Madame, Monsieur,
+
+Le médecin de votre enfant vous a confirmé que le diagnostic de la tumeur de votre enfant était un gliome infiltrant du tronc cérébral ou une tumeur diffuse de la ligne médiane. C'est une tumeur cérébrale maligne très agressive. Il n'y a pas aujourd'hui de traitement suffisamment efficace pour guérir cette maladie dans la plupart des cas.
+
+Du fait de sa localisation dans le cerveau, cette tumeur n'est pas opérable. Les chimiothérapies classiques n'ont pas montré d'efficacité dans cette maladie ; seule la radiothérapie est efficace mais le plus souvent transitoirement seulement.
+
+Le médecin de votre enfant vous propose d'ajouter un nouveau médicament au traitement standard par radiothérapie afin d'en augmenter l'efficacité, dans le cadre d’une étude clinique appelée « BIOMEDE 2.0 ». Ce traitement sera tiré au sort parmi deux traitements possibles.
+
+Le médecin vous propose donc que votre enfant participe à une étude clinique. Cette recherche est à l’initiative de Gustave Roussy qui est promoteur de cette étude. Le médecin qui suivra votre enfant pendant l’étude est appelé médecin-investigateur.
+
+Le médecin-investigateur vous a déjà informés oralement des modalités de cette recherche. Ce formulaire a pour objet de vous fournir un résumé concernant les différents aspects de l’étude, les éventuels bénéfices, risques et gênes qu’elle pourrait occasionner.
+
+Nous vous proposons de lire attentivement cette note d’information qui essaye de répondre aux questions que vous êtes susceptibles de vous poser avant de décider si vous souhaitez ou non que votre enfant participe à cette étude. Prenez le temps de bien lire ces informations et n’hésitez pas à poser des questions au médecin-investigateur si vous souhaitez avoir des précisions sur certains points. Vous pouvez également en discuter avec votre entourage ou le médecin traitant de votre enfant avant de prendre votre décision. Vous pourrez à tout moment durant l'étude vous adresser au médecin-investigateur pour lui poser des questions complémentaires.
+
+La participation de votre enfant à cette étude est entièrement libre et volontaire.
+
+Vous ou votre enfant pouvez interrompre à tout moment sa participation dans l’étude sans devoir vous justifier et un autre traitement lui sera proposé.
+
+Si vous ou votre enfant ne souhaitez pas que votre enfant participe à cette étude, on vous proposera le traitement de radiothérapie standard d’un gliome infiltrant du tronc cérébral ou d’une tumeur diffuse de la ligne médiane. Aucun traitement expérimental ne sera ajouté à la radiothérapie dans ce cas-là.
+
+/// LES OBJECTIFS DE LA RECHERCHE
+
+L'objectif principal de cette étude est d'évaluer l'efficacité de l’ONC201 comparé à l’évérolimus en association avec la radiothérapie. L’évérolimus est le meilleur des trois médicaments testés dans l’essai précédent (BIOMEDE 1.0) : raison pour laquelle nous utiliserons ce médicament comme comparateur dans ce nouvel essai. L’ONC201 est le nouveau médicament à tester.
+
+Cette efficacité sera jugée sur la durée sans progression de la maladie à partir du début du traitement et sera appréciée sur les signes cliniques et la radiologie.
+
+Les objectifs secondaires sont, entre autres, de :
+
+- Evaluer les effets indésirables de ces traitements donnés en même temps que la radiothérapie et ensuite pendant la durée totale du traitement.
+
+- Evaluer la durée du contrôle sans progression de la maladie sous traitement.
+
+- Evaluer les différences d’efficacité entre les deux traitements étudiés (ONC201 et évérolimus) selon le site de la tumeur et selon les biomarqueurs*[1] de pronostic connus.
+
+- Evaluer la possibilité pour les patients d’être traités au moment de la progression de la maladie avec une thérapie ciblée selon leur profil moléculaire réalisé au diagnostic.
+
+Les objectifs supplémentaires (dits « exploratoires ») de cette étude sont, entre autres, de :
+
+- Evaluer la valeur prédictive et pronostique de biomarqueurs.
+
+- Décrire les changements observés à l’imagerie sous traitement.
+
+/// LE TRAITEMENT DE L’ETUDE
+
+Les deux traitements étudiés sont :
+
+- l’ONC201 (du laboratoire Chimerix)
+
+- l’évérolimus VOTUBIA^(®) (du laboratoire Novartis).
+
+Ces deux médicaments sont dits de « thérapie ciblée* ».
+
+/// LA METHODOLOGIE
+
+Environ 368 patients âgés de 6 mois ou plus participeront à cette étude internationale.
+
+Dans cette étude, en association avec de la radiothérapie, votre enfant prendra soit de l’ONC201, soit de l’évérolimus. Son traitement sera défini par tirage au sort (= randomisation, du terme anglais « random » : « hasard »). Ce tirage au sort sera effectué par un ordinateur qui déterminera au hasard lequel des deux traitements potentiellement efficaces lui sera donné.
+
+Au cours de l’étude, si la maladie de votre enfant progressait, son traitement serait arrêté, et après décision du médecin-investigateur, il pourrait être proposé que votre enfant prenne l’autre traitement de l’étude (ONC201 ou évérolimus).
+
+/// LE DEROULEMENT DE L’ETUDE
+
+Cette étude est divisée en 3 phases : une période de sélection, une période de traitement et une période de suivi.
+
+Période de sélection
+
+Si vous acceptez que votre enfant participe à cette étude, il faudra signer et dater le formulaire de consentement joint à cette information. Il/elle devra passer ensuite des examens avant l’administration du traitement (voir le détail dans le tableau ci-après). Cette phase de l’étude permettra de vérifier et valider sa participation.
+
+Ce bilan médical initial comprendra les examens suivants :
+
+Données démographiques, antécédents médicaux et chirurgicaux : Le médecin-investigateur recueillera les informations suivantes : l’âge de votre enfant (mois et année de naissance uniquement), ses antécédents médicaux et chirurgicaux (maladies passées et en cours).
+
+Il vous interrogera également sur les médicaments que votre enfant prend, comme les corticostéroïdes.
+
+Examen clinique : Le médecin-investigateur vérifiera l’état de santé général de votre enfant, et déterminera son bilan de performance (évaluation de sa capacité à effectuer les activités quotidiennes, son bien-être).
+
+Il effectuera un examen clinique complet et un examen neurologique, mesurera ses signes vitaux (tension artérielle, fréquence cardiaque par la mesure du pouls, prise de sa température) et notera sa taille et son poids. Votre enfant aura également un électrocardiogramme (ECG).
+
+Examens d’imagerie : Des examens d’imagerie seront effectués pour mesurer et enregistrer la taille de sa tumeur, et vérifier son état général. Les différents examens d’imagerie qui seront effectués sont une IRM (Imagerie par Résonance Magnétique) et une radiographie des poumons.
+
+Prélèvements de sang (environ 20 mL) :
+
+- Pour un bilan biologique (hématologique, biochimique, coagulation).
+
+- Pour le dépistage du virus de l’hépatite B (sérologie)
+
+- Pour réaliser un test de grossesse : Si votre enfant est une jeune fille en âge d’avoir des enfants, elle devra effectuer un test sanguin (ou urinaire) de grossesse. Le résultat de ce test doit être négatif pour qu’elle puisse participer à l’étude.
+
+Ce n’est qu’après avoir réalisé tous ces tests, et si votre enfant répond à tous les critères d’inclusion et à aucun des critères de non-inclusion, que nous pourrons confirmer sa participation à cette étude. Si votre enfant ne peut pas y participer, on lui proposera le traitement de radiothérapie standard d’un gliome infiltrant du tronc cérébral ou d’une tumeur diffuse de la ligne médiane. Aucun traitement expérimental ne sera rajouté à la radiothérapie dans ce cas-là.
+
+Phase de traitement :
+
+Au 1^(er) jour (J1) de l’étude, votre enfant commencera :
+
+- La radiothérapie : il/elle recevra la dose standard de rayonnement (54 Grays) sur 6 semaines, soit une fraction d’1,8 Gray par jour, à raison de 5 jours consécutifs par semaine (pas de radiothérapie le week-end).
+
+- Un des traitements suivants :
+
+  - Soit l’évérolimus : il/elle prendra un ou plusieurs comprimés (défini selon son poids) par voie orale, quotidiennement, en une prise par jour ;
+
+  - Soit l’ONC201 : il/elle prendra une ou plusieurs gélules (défini selon son poids) par voie orale, seulement 2 jours consécutifs par semaine (J1-J2), en une prise par jour.
+
+Pendant cette phase de traitement, un examen clinique (avec bilan de performance) sera réalisé une fois par semaine les 2 premiers mois de traitement, puis une fois par mois. Durant ces visites, votre enfant aura une prise de sang (≈10 mL, soit 2 tubes) pour réaliser un bilan biologique, afin de surveiller notamment la tolérance au traitement, et son médecin-investigateur vous demandera si votre enfant a (eu) un événement indésirable que nous traiterons si besoin.
+
+Une fois par mois, il/elle aura également un examen neurologique, et nous recueillerons son poids et sa taille.
+
+Par ailleurs, il est important que vous signaliez à son médecin tous les traitements que votre enfant reçoit (notamment les corticostéroïdes), y compris les médicaments en vente libre et les traitements par les médecines parallèles. En fonction du médicament à l’essai que prend votre enfant, le médecin vérifiera qu’il n’y a pas d’interactions médicamenteuses avec ces autres traitements.
+
+Enfin, une première IRM de contrôle sera réalisée juste à la fin de la radiothérapie puis tous les 2 mois. Ces IRM comporteront également une étude de la perfusion intra tumorale et seront donc un peu plus longues que les IRM habituelles (30 min environ).
+
+Si sa maladie progresse ou revient, son traitement sera arrêté. Si cela est possible, le médecin de votre enfant vous proposera que votre enfant prenne l’autre traitement de l’étude (ONC201 ou évérolimus), comme décrit ci-dessus.
+
+Précédemment à cette 2^(ème) période de traitement, un nouveau test de grossesse et un nouveau dépistage de l’hépatite B seront réalisés, si indiqués.
+
+Durant cette 2^(ème) période de traitement, votre enfant aura les mêmes examens qu’à la 1^(ère) période de traitement :
+
+- Une fois par mois : examen clinique, bilan biologique
+
+- Tous les 2 mois : IRM.
+
+Votre enfant prendra cet autre traitement jusqu’à ce qu’il/elle ne le tolère plus ou que sa maladie progresse à nouveau.
+
+Phase de suivi
+
+Votre enfant aura une visite 28 jours après l’arrêt du traitement.
+
+Puis, votre enfant continuera à être surveillé(e) tous les 3-4 mois la 1^(ère) année, puis tous les 6 mois jusqu’à la 5^(ème) année après le début du traitement. Lors des visites de suivi, votre enfant aura un examen clinique (à la recherche d'effets secondaires tardifs), un examen neurologique et une IRM. Son médecin-investigateur notera à chaque fois si votre enfant a pris d’autres traitements, et s’il/elle a (eu) des événements indésirables.
+
+Durée de l’étude
+
+Le traitement par ONC201 ou évérolimus sera poursuivi tant que son efficacité et sa tolérance le permettront. La durée du traitement est donc variable d’une personne à l’autre. Après la fin de la ou des périodes de traitement, une période de suivi pourra être observée dans le cadre de cette étude (jusqu’à 5 ans maximum après le début du traitement). La durée totale de la participation de votre enfant dans cette étude sera donc égale à 5 ans au maximum.
+
+A la fin de sa participation à l’étude, si votre enfant présente un effet indésirable non résolu, le médecin-investigateur pourra vous contacter jusqu’à résolution de cet effet indésirable afin de s’assurer que votre enfant bénéficie d’un suivi médical adapté. Il pourra également vous contacter si votre enfant déclare un effet indésirable après sa sortie de l’étude.
+
+/// TABLEAU RECAPITULATIF DES VISITES 
+
++:-------------------------------------------------------------------------------------:+:---------------------:+:-----------------------------------------------------:+:------------------------------------------------:+:--------------------------------------------------------------------------------------------------------------------:+
+| Programme des visites                                                                                                                                                                                                                                                                                                                           |
++---------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+| Procédures                                                                            | Avant                 | Pendant la (ou les) période(s) de                     | A la fin de la (ou des) période(s) de traitement | Suivi tous les 3-4 mois la 1^(ère) année, puis tous les 6 mois jusqu’à la 5^(ème) année après le début du traitement |
+|                                                                                       | d’entrer dans l'étude | traitement                                            |                                                  |                                                                                                                      |
++---------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+| Entretien avec le médecin                                                             | X                     | X                                                     | X                                                | X                                                                                                                    |
++---------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+| Histoire de la maladie et antécédents médicaux                                        | X                     |                                                       |                                                  |                                                                                                                      |
++---------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+| Examen clinique dont mesure des signes vitaux, et évaluation du statut de performance | X                     | X (1x/semaine les 2 premiers mois, puis 1x/mois)      | X                                                | X                                                                                                                    |
++---------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+| Examen neurologique                                                                   | X                     | X (1x/mois)                                           | X                                                | X                                                                                                                    |
++---------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+| ECG (et échographie cardiaque si indiquée)                                            | X                     |                                                       |                                                  |                                                                                                                      |
++---------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+| Radiographie des poumons                                                              | X                     |                                                       |                                                  |                                                                                                                      |
++---------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+| IRM                                                                                   | X                     | X (1x/mois les 2 premiers mois, puis tous les 2 mois) | X                                                | X                                                                                                                    |
++---------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+| Prélèvement de sang pour bilans biologiques (hématologie, biochimie, coagulation¹)    | X                     | X (1x/semaine les 2 premiers mois, puis 1x/mois)      | X (si possible)                                  |                                                                                                                      |
++---------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+| Dépistage du virus de l’hépatite B                                                    | X²                    |                                                       |                                                  |                                                                                                                      |
++---------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+| Test de grossesse (si indiqué)                                                        | X³                    |                                                       |                                                  |                                                                                                                      |
++---------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+| Recueil des traitements concomitants comme les corticostéroïdes                       | X                     | X                                                     | X                                                | X                                                                                                                    |
++---------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+| Recueil des événements indésirables                                                   | X                     | X                                                     | X                                                | X                                                                                                                    |
++---------------------------------------------------------------------------------------+-----------------------+-------------------------------------------------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+
+¹ La coagulation sera testée uniquement avant le début de l’étude.
+
+² Un nouveau dépistage du virus de l’hépatite B sera réalisé, si indiqué, avant de commencer la 2^(ème) période de traitement.
+
+³ Un nouveau test de grossesse sera réalisé, si indiqué, avant de commencer la 2^(ème) période de traitement.
+
+/// LES BENEFICES ATTENDUS
+
+Nous espérons que l'association d'un médicament ciblé augmentera l'efficacité de la radiothérapie et prolongera ses effets sur les symptômes de la maladie. Toutefois, il est possible que la maladie de votre enfant ne réponde pas de façon satisfaisante et dans ce cas, l’autre traitement à l’étude lui sera proposé, si cela est possible.
+
+/// LES RISQUES
+
+Les effets secondaires les plus fréquemment rencontrés sont décrits ci-dessous. Il est possible que votre enfant n’en présente aucun ou bien certains. En cas d’effets indésirables ou si son état s’aggrave, avertissez immédiatement le médecin-investigateur pour qu’il/elle reçoive les soins appropriés.
+
+- Associés aux traitements à l’étude :
+
+  - Pour l'évérolimus
+
+Effets indésirables très fréquents (peut affecter plus d’1 patient sur 10) :
+
+- Maux de gorge (pharyngite), maux de gorge et nez qui coule (rhinopharyngite), infection des voies respiratoires supérieures
+
+- Maux de tête, tension au niveau des yeux, du nez ou des joues : signes d’une inflammation des sinus et des fosses nasales (sinusite)
+
+- Infection des voies urinaires
+
+- Taux élevé de cholestérol dans le sang (hypercholestérolémie)
+
+- Diminution de l’appétit
+
+- Maux de tête
+
+- Toux
+
+- Inflammation de la muqueuse buccale avec ulcérations (stomatite, aphte)
+
+- Diarrhées, vomissements
+
+- Eruption cutanée (rash), acné
+
+- Troubles menstruels tels qu’absence de règles (aménorrhée) ou règles irrégulières
+
+- Fièvre
+
+- Fatigue
+
+- Maux de tête, étourdissement : signes d’une tension artérielle élevée (hypertension).
+
+- Potentiellement grave : inflammation des poumons due à une infection (pneumonie) dont les symptômes sont : fièvre, toux, une difficulté à respirer, respiration bruyante.
+
+Effets indésirables fréquents (peut affecter jusqu’à 1 patient sur 10) :
+
+- Infection de l’oreille moyenne (otite moyenne)
+
+- Gencives gonflées, qui saignent : signes d’une inflammation des gencives (gingivite)
+
+- Inflammation de la peau (cellulite)
+
+- Taux élevé de lipides (graisses) dans le sang (hypertriglycéridémie, hyperlipidémie)
+
+- Taux faible de phosphate dans le sang (hypophosphatémie)
+
+- Taux élevé de sucre dans le sang (hyperglycémie)
+
+- Fatigue, essoufflement, étourdissement, pâleur : signes d’un taux faible de globules rouges (anémie)
+
+- Fièvre, mal de gorge ou ulcération de la bouche dus à des infections : signes d’un taux faible de globules blancs (leucopénie, neutropénie ou lymphopénie)
+
+- Saignements spontanés ou bleus : signes d’un taux faible de plaquettes (thrombopénie)
+
+- Douleur buccale
+
+- Saignement du nez (épistaxis)
+
+- Nausées, douleurs abdominales, constipation, flatulence
+
+- Douleurs abdominales, nausées, vomissements, diarrhées, gonflement et ballonnement de l’abdomen : signes d’une inflammation de la paroi de l’estomac (gastrite) ou d’une gastroentérite virale
+
+- Douleurs intenses dans le bas-ventre et le pelvis qui peuvent être fortes, accompagnées de règles irrégulières (kystes ovariens)
+
+- Sécheresse cutanée, démangeaisons (prurit)
+
+- Affection inflammatoire de la peau caractérisée par une rougeur, des démangeaisons, des kystes remplis de liquide et suintants qui finissent par peler, crouter ou durcir (dermatite acnéiforme)
+
+- Perte de cheveux (alopécie)
+
+- Présence de protéines dans les urines (protéinurie)
+
+- Troubles menstruels tels que règles abondantes (ménorragie) ou saignement vaginal
+
+- Troubles du sommeil (insomnie)
+
+- Irritabilité, agressivité
+
+- Taux élevé de lactate déshydrogénase dans le sang
+
+- Taux élevé d’hormone lutéinisante dans le sang (hormone qui déclenche l’ovulation)
+
+- Perte de poids.
+
+- Potentiellement graves :
+
+  - Gonflement, sensation de pesanteur ou d’oppression, douleur, mobilité réduite de certaines parties du corps : signes d’une accumulation anormale de liquide dans les tissus mous en raison d’une obstruction lymphatique (lymphœdème)
+
+  - Eruption, démangeaison, urticaire, difficulté à respirer ou à avaler, étourdissement : signes d’une réaction allergique grave (hypersensibilité)
+
+  - Fièvre, toux, difficultés à respirer, respiration bruyante : signes d’une inflammation des poumons (pneumopathie).
+
+Effets indésirables peu fréquents mais potentiellement graves (peut affecter jusqu’à 1 patient sur 100) :
+
+- Eruption de petites cloques remplies de liquide qui apparaissent sur une peau rouge : signes d’une infection virale qui peut potentiellement être sévère (zona)
+
+- Fièvre, frissons, accélération de la respiration et du rythme cardiaque, éruption cutanée et possible confusion et désorientation : signes d’une infection grave (sepsis)
+
+- Réaction allergique avec gonflement du visage, de la langue ou de la gorge (œdème de Quincke)
+
+- Obstruction d’une artère des poumons (embolie pulmonaire).
+
+D’autres effets indésirables graves ont été rapportés :
+
+- Insuffisance rénale dont les symptômes peuvent être une modification de la fréquence des mictions ou absence de mictions
+
+- Insuffisance cardiaque dont les symptômes peuvent être un essoufflement, des difficultés pour respirer en position allongée, un gonflement des pieds et des jambes
+
+- Blocage ou obstruction d’une veine dans la jambe (thrombose veineuse profonde) dont les symptômes peuvent être un gonflement et/ou une douleur dans une jambe, une rougeur ou une peau chaude au niveau de la zone affectée
+
+- Réactivation de l’hépatite B dont les symptômes peuvent être de la fièvre, une éruption cutanée, des douleurs articulaires, une inflammation, de la fatigue, une perte d’appétit, des nausées, une coloration jaune de la peau (jaunisse), et des douleurs dans la partie supérieure droite de l’abdomen, des selles pâles ou des urines foncées.
+
+  - Pour l’ONC201
+
+Effets indésirables peu fréquents mais potentiellement graves (peut affecter jusqu’à 1 patient sur 100) :
+
+- Infections respiratoires hautes, infections généralisées (sepsis)
+
+- Troubles neurologiques associés à une atteinte du cerveau (encéphalopathie), troubles cognitifs
+
+- Difficultés à respirer (dyspnée, détresse respiratoire)
+
+- Ecoulement anormal de sang dans la boîte crânienne, les poumons et le foie (hémorragie intracrânienne, hémorragie pulmonaire, hémorragie hépatique)
+
+- Obstruction d’une artère des poumons (embolie pulmonaire)
+
+- Complications liées à la destruction massive de cellules cancéreuses (syndrome de lyse tumorale).
+
+  - Pour la radiothérapie
+
+- Nausées et vomissements
+
+- Maux de tête
+
+- Somnolence
+
+- Aggravation neurologique transitoire correspondant parfois à une pseudoprogression (exagération des effets de la radiothérapie par le médicament ciblé)
+
+- Baisse retardée de l'audition.
+
+- Associés aux procédures et aux examens de l’étude :
+
+Certaines des activités de l’étude peuvent avoir des effets indésirables, risques et désagréments. Il est possible que votre enfant n’en présente aucun ou bien certains. Pendant l’étude, il/elle aura des prélèvements sanguins, des imageries… Il s’agit d’actes standards et de routine et le médecin-investigateur pourra vous les expliquer en détail et vous indiquer leurs risques et/ou effets indésirables éventuels.
+
+- Les risques associés aux prélèvements sanguins par voie intraveineuse :
+
+Comme pour toute prise de sang, il existe un risque d’hématome (un « bleu »), de douleur ou d’infection au site de prélèvement (à l’endroit où a été effectué la piqûre), et de malaise devant la prise de sang.
+
+- Les risques associés aux examens suivants :
+
+- Electrocardiogramme (ECG) :
+
+Cet examen indolore consiste à placer des électrodes adhésives sur le thorax et les membres pour enregistrer l’activité électrique naturelle du cœur et en évaluer le fonctionnement. Les risques peuvent inclure une irritation de la peau, une éruption cutanée causée par l’application et le décollage des électrodes. Ces électrodes détectent seulement les flux électriques produits par le coeur. L’électricité ne traversera pas le corps de votre enfant depuis la machine à ECG, et il n’y a aucun danger qu’il/elle reçoive un choc électrique.
+
+- Echographie :
+
+Lors d’une échographie, il y a émission d’ultrasons. Mais iI n'existe aucun effet secondaire des ultrasons émis par l'échographe. De plus, il n'existe aucune contre-indication particulière à l'échographie.
+
+- Imagerie par Résonance Magnétique (IRM) :
+
+L’IRM est une technique d'examen qui crée des images d'une partie du corps ou des organes à l'aide d'un appareil qui utilise un aimant très puissant (d'où le terme de magnétique) qui fait réagir un composant de notre corps qu'on appelle l'hydrogène. Une IRM permet ainsi de réaliser une succession de photographies de l'intérieur du corps (plusieurs dizaines d'images). Les images sont visualisées sur un écran d'ordinateur sous forme de coupes. En matière de champ magnétique, aucun risque n’a pu être démontré chez les patients.
+
+- Radiographie :
+
+Lors d’une radiographie, il y a émission de rayons X. Mais en matière d'irradiation des patients, aucun risque n'a pu être démontré chez les patients compte tenu des faibles doses utilisées et des précautions prises pour limiter au strict minimum la zone examinée.
+
+/// CONTRACEPTION ET GROSSESSE
+
+Ces informations sont importantes si votre enfant est pubère.
+
+Si votre enfant est une jeune fille :
+
+Les femmes enceintes ne peuvent pas participer à cette étude. Si votre enfant est une jeune fille en âge de procréer cela implique de :
+
+- Utiliser une méthode de contraception jugée efficace et appropriée par le médecin investigateur (type implant, anneau vaginal, pilule contraceptive, patch contraceptif, stérilet, abstinence sexuelle, etc…) pendant toute la durée de l’étude et pendant 6 mois au moins après la fin du traitement de l'étude ;
+
+- Réaliser un test de grossesse au cours des 7 jours précédant l'administration de la première dose du médicament de l'étude ou précédant la radiothérapie. Et, si indiqué, un nouveau test sera réalisé avant de débuter le second traitement et/ou à n’importe quel moment au cours de l’étude.
+
+Si elle ne peut pas prendre correctement sa méthode de contraception ou si elle débute une grossesse, vous devez en informer le médecin immédiatement pour qu’il arrête le traitement.
+
+L’allaitement, les dons de sang et d’ovocytes ne sont pas possibles durant la phase de traitement et jusqu’à 6 mois après l’arrêt du traitement de l’étude.
+
+Si votre enfant est un jeune homme ayant une partenaire en âge de procréer :
+
+Votre enfant doit utiliser un préservatif pendant toute la durée de l'étude et jusqu’à au moins 6 mois après l'administration de la dernière dose du traitement de l'étude. En outre, il est conseillé que sa partenaire féminine utilise un moyen de contraception efficace pendant cette même période.
+
+Si votre enfant a eu des relations sexuelles sans utiliser de préservatif ou s’il pense que sa partenaire peut être enceinte, il doit en informer le médecin immédiatement.
+
+Les dons de sang et de sperme ne sont pas possibles pendant toute la durée de cette étude et jusqu’à 6 mois après l’arrêt du traitement de l’étude.
+
+En cas de survenue de grossesse ou même de suspicion de grossesse chez la partenaire de votre enfant, le médecin responsable ou l'équipe de l'étude vous informera des risques possibles pour son enfant à naître et des options à sa disposition.
+
+/// LES ALTERNATIVES THERAPEUTIQUES
+
+Le médecin-investigateur pourra vous donner davantage d’informations à propos des risques et bénéfices liés à la participation de votre enfant à cette étude clinique par rapport à d’autres alternatives thérapeutiques. N’hésitez pas à lui poser la question avant de prendre votre décision.
+
+Dans tous les cas, votre enfant bénéficiera d’une prise en charge appropriée.
+
+Si vous ou votre enfant ne souhaitez pas que votre enfant participe à cette étude, on lui proposera le traitement de radiothérapie standard d’un gliome infiltrant du tronc cérébral ou d’une tumeur diffuse de la ligne médiane. Aucun traitement expérimental ne sera rajouté à la radiothérapie dans ce cas-là.
+
+/// PARTICIPATION VOLONTAIRE / INTERRUPTION DE PARTICIPATION
+
+La participation de votre enfant à cette étude est entièrement libre et volontaire. C’est à vous et à votre enfant de décider. L’avis de votre enfant est primordial.
+
+Votre enfant doit être affilié(e) à un régime de sécurité sociale ou bénéficiaire d’un tel régime (y compris la PUMA*) pour pouvoir y participer. Votre enfant ne peut pas participer simultanément à une autre étude évaluant un produit de santé car il y aurait un risque d’interaction et une impossibilité de conclure quant à cette recherche.
+
+Dans l’éventualité où votre enfant deviendrait majeur(e) au cours de sa participation à l’étude, une information appropriée quant à sa participation à l’étude lui sera à nouveau délivrée et la confirmation de son consentement sera recherchée.
+
+Vous pouvez décider de refuser que votre enfant participe ou décider qu’il sorte de l’étude à tout moment, sans avoir à vous justifier et sans que cela n’ait de conséquence sur son suivi médical ni sur la qualité de ses soins ultérieurs. Si l’arrêt est lié au traitement étudié, nous vous demandons simplement de bien vouloir le préciser au médecin-investigateur.
+
+Si vous interrompez la participation de votre enfant à l'étude pour une raison ou pour une autre, vous serez invités à retourner voir le médecin-investigateur pour réaliser un bilan de fin d'étude.
+
+Si vous retirez votre consentement, les informations et les échantillons recueillis dans le cadre de cette étude seront conservés et analysés, sauf si vous exprimez votre refus auprès du médecin-investigateur. Dans ce cas, les données de l’étude et les échantillons concernant votre enfant seront détruits.
+
+Le médecin-investigateur peut également décider d’arrêter la participation de votre enfant à l'étude si :
+
+- Le maintien dans l’étude est dangereux pour votre enfant ;
+
+- Votre enfant nécessite des traitements non autorisés dans cette étude ;
+
+- Vous ou votre enfant ne suivez pas les instructions de l’étude ;
+
+- L’étude est arrêtée par le promoteur.
+
+/// NOUVELLES INFORMATIONS SUR L’ETUDE ET SUR LE TRAITEMENT A L’ETUDE 
+
+Vous serez informés dans les plus brefs délais de toute nouvelle information concernant la santé de votre enfant ou toute nouvelle donnée qui pourrait influencer votre volonté que votre enfant poursuive sa participation à cette étude. Si de nouvelles informations venaient à modifier celles qui vous sont présentées dans ce document, un nouveau document vous serait remis afin que vous en soyez informés et que vous confirmiez, ou non, votre souhait que votre enfant poursuive cette étude.
+
+/// QUELLES SONT LES MODALITES DE PRISE EN CHARGE PREVUES EN FIN DE RECHERCHE ?
+
+Selon le type de tumeur et les traitements déjà reçus, votre enfant pourra recevoir d’autres traitements à la fin du traitement à l’étude. Le médecin-investigateur vous conseillera sur les différentes options de traitement disponibles.
+
+/// COÛTS POTENTIELS / INDEMNISATION
+
+Vous ou votre enfant ne serez pas payés pour la participation de votre enfant à cette étude.
+
+Le promoteur de l’étude lui fournira gratuitement les produits de l’étude aussi longtemps qu’il/elle participera à cette étude. De même, il/elle bénéficiera gratuitement de tous les examens exclusivement requis pour cette étude, et qui ne font pas partie de ses soins médicaux réguliers.
+
+Certains frais de transports éventuels pourront être pris en charge par le promoteur. Le médecin-investigateur vous expliquera les modalités de prise en charge de ces frais de transport par le promoteur.
+
+/// ASSURANCE
+
+Le promoteur de cet essai qui en assure la gestion et la responsabilité est Gustave Roussy – 114 rue Edouard Vaillant – 94 805 VILLEJUIF - France.
+
+Gustave Roussy a souscrit une assurance (n° de contrat 124895) auprès de la Société SHAM France dans les conditions prévues à l’article L. 1121-10 du Code de la Santé Publique, garantissant sa responsabilité civile et celle de tout intervenant en cas de conséquences dommageables de la recherche pour la personne qui s’y prête ou pour ses ayants droit. Si vous estimez que votre enfant a subi un préjudice du fait de sa participation à cette étude, vous devrez en informer son médecin-investigateur.
+
+/// DEMARCHES REGLEMENTAIRES
+
+Cette étude clinique a été autorisée par l’Agence Nationale de Sécurité du Médicament et des produits de santé (ANSM) le 06/08/2014, a reçu l’avis favorable d’un Comité de Protection des Personnes (CPP IDF3) le 25/08/2014 et est conforme à une méthodologie de référence en matière de protection des données personnelles fixée par la Commission Nationale de l’Informatique et des Libertés (CNIL).
+
+Conformément aux recommandations du Plan Cancer, cette notice d’information a été soumise pour relecture, avis et conseil au comité de relecture patients de la Ligue nationale contre le cancer.
+
+/// PROTECTION DES DONNEES PERSONNELLES DE VOTRE ENFANT
+
+Conformément au Règlement Général sur la Protection des Données (RGPD), Gustave Roussy, en tant que responsable du traitement des données personnelles de votre enfant, s’engage à prendre toutes les mesures nécessaires pour garantir leur sécurité et leur confidentialité.
+
+La participation de votre enfant à cette étude implique le traitement des informations le concernant collectées et générées dans le cadre de sa prise en charge[2].
+
+Les données personnelles de votre enfant ne seront analysées qu’à des fins de recherche contre le cancer. Sauf si vous vous y opposez, ses données pourront être réutilisées, de manière confidentielle et sécurisée, pour de futures recherches contre le cancer.
+
+Le traitement des données de votre enfant repose sur le consentement que vous allez signer pour qu’il/elle participe à cette étude et est justifié par l’intérêt légitime de Gustave Roussy, en tant que centre de lutte contre le cancer, à mieux comprendre les mécanismes des cancers afin de mieux les prévenir et mieux les soigner.
+
+L’accès aux informations permettant d’identifier votre enfant est strictement réservé :
+
+- aux professionnels intervenant dans l’étude et aux personnes responsables du contrôle et de l'assurance qualité de l’étude ;
+
+- au médecin traitant de votre enfant (sauf si vous vous y opposez) ;
+
+- le cas échéant, dans des conditions contractuelles strictes, à certains prestataires[3] agissant pour le compte de Gustave Roussy ;
+
+- le cas échéant, à certaines autorités de santé (ex : ANSM, Agence européenne du médicament).
+
+Les données personnelles de votre enfant sont préalablement pseudonymisées - c’est-à-dire qu’elles ne font plus apparaître son identité - en amont de leur utilisation par toute autre personne que celles citées ci-dessus.
+
+Sauf si vous vous y opposez, et après pseudonymisation, les données personnelles de votre enfant sont notamment susceptibles d’être transmises aux partenaires hospitaliers, industriels et académiques de Gustave Roussy, à des entreprises spécialisées en santé, ainsi que, le cas échéant, à certaines autorités publiques. Ses données peuvent être transférées en dehors de la France, y compris vers des pays non-européens. Dans tous les cas de figure, Gustave Roussy s’assure que tout tiers ayant accès aux données de votre enfant présente des garanties suffisantes préalablement au partage de ses données. En cas de transfert de données personnelles hors de l’Union Européenne, Gustave Roussy s’assure préalablement que ses partenaires extra-européens présentent des garanties juridiques suffisantes permettant de garantir un niveau de protection des données suffisant et approprié, conformément au Chapitre V du RGPD.
+
+Gustave Roussy tient à votre disposition, sur demande, la liste des tiers avec qui les données de votre enfant sont partagées.
+
+En garantissant préalablement l’anonymat de votre enfant, les résultats de cette étude peuvent également être communiqués à la communauté scientifique lors de séminaires, de congrès ou publiés dans la presse scientifique.
+
+Sauf si vous vous y opposez, les informations concernant votre enfant relatives à cette étude seront conservées jusqu'à la mise sur le marché du produit étudié ou jusqu'à deux ans après la dernière publication des résultats de la recherche ou, en cas d’absence de publication, jusqu'à la signature du rapport final de la recherche.
+
+Conformément à la réglementation, elles seront ensuite archivées, avec un accès restreint au minimum pendant 25 ans.
+
+/// SES DONNEES. SES DROITS.
+
+Vous pouvez demander au médecin-investigateur que le médecin traitant de votre enfant ne soit pas informé de sa participation à cette étude.
+
+Vous pouvez demander au médecin-investigateur d’être informés des résultats globaux de cette étude à son terme. En revanche, aucun rendu individualisé ne pourra être proposé aux participants de l’étude.
+
+Vous pouvez demander à avoir accès, à faire rectifier, à faire procéder à l’effacement, à obtenir une copie, à vous opposer et/ou à la limitation de l’utilisation des données personnelles de votre enfant.
+
+Vous pouvez exercer vos droits à tout moment en vous adressant au médecin-investigateur de l’étude et/ou au délégué à la protection des données de Gustave Roussy (en accompagnant votre demande d’un justificatif d’identité valide) :
+
+- par courrier : Gustave Roussy, Délégué à la protection des données, Direction de la transformation numérique et des systèmes d’information, 114, rue Edouard-Vaillant, 94 805 Villejuif Cedex –  France ;
+
+- par e-mail : donneespersonnelles@gustaveroussy.fr.
+
+Vous pouvez décider de retirer votre autorisation concernant le traitement des données personnelles de votre enfant à tout moment. Vous n’avez pas à en indiquer les raisons. Toutefois, dans l’hypothèse où vous voudriez exercer votre droit d’opposition et/ou d’effacement quant au traitement des données de votre enfant, il devra nécessairement quitter cette étude.
+
+S’il ne vous était pas donné satisfaction par Gustave Roussy, il vous serait également possible d’effectuer une réclamation auprès de la Commission Nationale de l’Informatique et des Libertés (CNIL).
+
+/// CONTACTS POUR INFORMATIONS COMPLEMENTAIRES OU EN CAS D’URGENCE
+
+Si vous souhaitez obtenir des informations complémentaires ou si vous rencontrez un problème quelconque au cours de votre participation, veuillez contacter le médecin-investigateur, ou un membre de son équipe :
+
+Ou tampon
+
+Nom : ……………………………………………………
+
+Téléphone : …………………………………………….
+
+Vous pouvez également contacter le coordonnateur de l’étude, le Dr Jacques GRILL, au numéro suivant : 01 42 11 62 09 (Gustave Roussy).
+
+/// LEXIQUE
+
+Biomarqueurs : Les biomarqueurs sont des molécules ou des protéines surexprimées ou anormalement absentes dans certains types de tumeurs. Ces marqueurs peuvent être prédictifs d’une réponse positive à une thérapie ciblée ou encore de l’évolution d’une tumeur et/ou de sa sévérité. Les biomarqueurs sont dosés dans les liquides ou les tissus humains. Certains biomarqueurs sont détectables dans la circulation sanguine. La recherche sur les biomarqueurs aide les médecins à orienter leurs choix thérapeutiques, à suivre l’efficacité des traitements et ouvrent la voie aux traitements individualisés.
+
+PUMA : Protection Universelle Maladie.
+
+Thérapie ciblée : En oncologie, les thérapies ciblées sont des médicaments qui ciblent spécifiquement une protéine ou un mécanisme impliqué dans le développement de la tumeur. Ces médicaments sont donc théoriquement sans effet sur les cellules saines. De ce fait, ils engendrent moins d’effets indésirables que les chimiothérapies antitumorales classiques. Ces dernières agissent en effet sur toutes les cellules de l’organisme qui se divisent, qu’elles soient cancéreuses ou non.
+
+FORMULAIRE DE CONSENTEMENT « TRAITEMENT »
+
+DESTINE AUX PARENTS / REPRESENTANTS LEGAUX
+
+« BIOMEDE 2.0 »
+
+[]
+
+Nous soussignons, parents/représentants légaux de l’enfant :
+
+Nom du patient : ............................................. Prénom : ….......................................................
+
+Nom : ................................................................ Prénom : ............................................................
+
+Nom : ................................................................ Prénom : ............................................................
+
+Il est proposé à notre enfant de participer à une étude clinique organisée par Gustave Roussy, et intitulée « Thérapeutiques ciblées sur les biomarqueurs dans les gliomes diffus de la ligne médiane ».
+
+Nous avons pris connaissance de la note d’information (page 1 à 15) dans son intégralité et le médecin nous a informés oralement des modalités de cette recherche.
+
+Il nous a été laissé le temps nécessaire pour poser toutes les questions que nous souhaitions et toutes les questions posées ont reçu une réponse satisfaisante.
+
+Nous avons bien compris que nous sommes libres d’accepter ou de refuser que notre enfant participe à l’étude et libres d’interrompre sa participation à tout moment, sans avoir à nous justifier ni sans que cela n'ait de conséquence sur la suite et la qualité de sa prise en charge.
+
+Nous déclarons que notre enfant est affilié(e) à un régime de sécurité sociale ou bénéficiaire d’un tel régime.
+
+Nous avons été informés :
+
+- Qu’une assurance a été souscrite par Gustave Roussy permettant de couvrir les dommages liés à l’étude conformément à l’art. L1121-10 du Code de la Santé Publique ;
+
+- Que cette étude sera conduite conformément à la réglementation en vigueur et qu’elle a reçu l’autorisation de l’Agence Nationale de Sécurité du Médicament et des produits de santé (ANSM) et l’avis favorable d’un Comité de Protection des Personnes (CPP IDF3).
+
+En participant à cette étude, nous acceptons le recueil, le traitement, le partage et la conservation des données personnelles de notre enfant dans les conditions prévues dans la notice d’information (Protection des données personnelles).
+
+Nous avons été informés que nous disposions de droits d’accès, de rectification, de portabilité, d’opposition, de limitation et d’effacement des données personnelles de notre enfant. Nous pouvons exercer nos droits à tout moment et sous toutes formes, par l’intermédiaire du médecin-investigateur et/ou du délégué à la protection des données de Gustave Roussy (Ses données. Ses droits.).
+
+Nous avons également été informés que nous pouvons :
+
+- Demander au médecin-investigateur que le médecin traitant de notre enfant ne soit pas informé de sa participation à cette étude ;
+
+- Demander au médecin-investigateur d’être informés des résultats globaux de cette étude à son terme.
+
+Nous acceptons librement et volontairement que notre enfant participe à l’étude proposée (BIOMEDE 2.0)
+
++:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:+-------+-------+
+| CocheR les cases appropriées en fonction de votre volonté (OUI/NON)                                                                                                                               | OUI   | NON   |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+-------+
+| Nous acceptons que les données personnelles de notre enfant, codées et recueillies dans le cadre de cette étude, soient utilisées pour d’autres recherches contre le cancer.                      | ⬜    | ⬜    |
+|                                                                                                                                                                                                   |       |       |
+| Notre décision est révocable à tout moment sans avoir à nous justifier et sans que cela n’ait de conséquence sur la prise en charge de notre enfant.                                              |       |       |
+|                                                                                                                                                                                                   |       |       |
+| Nous pouvons faire valoir ses droits à tout moment en nous adressant au médecin-investigateur de l’étude et/ou au délégué à la protection des données de Gustave Roussy (Ses données. Ses droits) |       |       |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+-------+
+
+Partie à remplir par les parents / représentants légaux et par le médecin
+
++:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:+:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:+-------------------------------------------------------------------------------+
+| Partie à remplir par les parents / représentants légaux                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Partie à remplir par le médecin-investigateur qui a recueilli le consentement |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+
+| Nom et prénom du père /                                                                                                                                                                                                                                                                                       | Nom et prénom de la mère / représentant légal :                                                                                                                                                                                                                                                                | Nom et prénom :                                                               |
+|                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                |                                                                               |
+| représentant légal :                                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                |                                                                               |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+
+| Signature :                                                                                                                                                                                                                                                                                                   | Signature :                                                                                                                                                                                                                                                                                                    | Signature :                                                                   |
+|                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                |                                                                               |
+| En signant ce document, je reconnais avoir pris connaissance de la notice d’information dans son intégralité, j’accepte librement et volontairement que mon enfant participe à cette étude et me suis prononcé sur le devenir de ses données personnelles codées et recueillies dans le cadre de cette étude. | En signant ce document, je reconnais avoir pris connaissance de la notice d’information dans son intégralité, j’accepte librement et volontairement que mon enfant participe à cette étude et me suis prononcée sur le devenir de ses données personnelles codées et recueillies dans le cadre de cette étude. |                                                                               |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+
+| Date :                                                                                                                                                                                                                                                                                                        | Date :                                                                                                                                                                                                                                                                                                         | Date :                                                                        |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+
+
+La signature du présent document ne dégage ni l’investigateur ni le promoteur de leurs responsabilités.
+
+Partie à compléter par le patient mineur en âge ou en capacité de lire, s'il le souhaite
+
+J’accepte de participer à cette recherche car j’ai pu parler avec le médecin et que j’ai reçu la note d’information rédigée à l’intention des enfants.
+
++-----------------------------------------------------------------------+
+| Signature du patient : Date :                                         |
++=======================================================================+
+
+(1 exemplaire original pour le médecin-investigateur, 1 copie à remettre aux parents/représentants légaux).
+
+[]
+
+[1] Les termes suivis d’un « * » sont définis dans le lexique à la fin de cette note d’information.
+
+[2] Les données personnelles collectées et générées lors de votre prise en charge sont notamment d’ordre administratif, social et médical. Certaines données exploitées peuvent également être relatives à votre vie personnelle (ex : consommation de tabac, alcool, drogues) et/ou à votre vie professionnelle (ex : catégorie socio-professionnelle, etc.), relatives à votre origine ethnique et/ou votre prétendue origine raciale, voire des données générées par l’analyse d’échantillons biologiques qui vous ont été prélevés dans le cadre de cette étude.
+
+[3] A titre d’exemple, l’archivage d’une partie des dossiers médico-administratifs des études cliniques de Gustave Roussy est effectué par un prestataire de Gustave Roussy
