@@ -17,8 +17,8 @@ from .render import COLOR_CLASSES, _rgb, _style_color
 
 log = logging.getLogger("icf.generate")
 
-AI_BUDGET_S = 90
-BATCH_SIZE = 12
+AI_BUDGET_S = 150
+BATCH_SIZE = 6
 SPONSOR_CHARS = 40_000
 AUTHOR = "ICF Studio"
 LANG_NAMES = {"en": "English", "nl": "Dutch", "fr": "French"}
@@ -168,7 +168,9 @@ def _context(ph: dict) -> str:
     return "".join(parts)[:600]
 
 
-def _fill_batch(batch: list[dict], sponsor: str, notes: str, language: str, icf_type: str):
+def _fill_batch(
+    batch: list[dict], sponsor: str, notes: str, language: str, icf_type: str, thinking: int
+):
     items = [
         {
             "id": ph["id"],
@@ -189,7 +191,7 @@ def _fill_batch(batch: list[dict], sponsor: str, notes: str, language: str, icf_
         'Return a JSON object mapping each placeholder id to its replacement text, or to "MISSING" '
         "when the sponsor documents and notes do not contain that information."
     )
-    data = ai.generate_json(prompt, SYSTEM)
+    data = ai.generate_json(prompt, SYSTEM, thinking_budget=thinking)
     return data if isinstance(data, dict) else None
 
 
@@ -224,6 +226,7 @@ def generate_icf(
     language: str,
     icf_type: str,
     progress: Callable[[str, int, int], None] | None = None,
+    thinking_budget: int = 1024,
 ) -> dict:
     def report(step: str, done: int, total: int) -> None:
         if progress:
@@ -246,8 +249,13 @@ def generate_icf(
         n = BATCH_SIZE
         batches = [placeholders[i : i + n] for i in range(0, len(placeholders), n)]
         start = time.time()
-        pool = ThreadPoolExecutor(max_workers=6)
-        futs = {pool.submit(_fill_batch, b, sponsor, notes, language, icf_type): b for b in batches}
+        pool = ThreadPoolExecutor(
+            max_workers=max(1, len(batches))
+        )  # ai._slots caps in-flight calls
+        futs = {
+            pool.submit(_fill_batch, b, sponsor, notes, language, icf_type, thinking_budget): b
+            for b in batches
+        }
         report("filling", 0, len(batches))
         done: set = set()
         pending = set(futs)

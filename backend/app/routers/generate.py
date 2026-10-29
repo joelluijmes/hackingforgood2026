@@ -1,5 +1,6 @@
 import re
 import tempfile
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Literal
 
@@ -63,7 +64,9 @@ def _latest_template(conn, language: str):
     ).fetchone()
 
 
-def _fill_template(tpl, *, sponsor_text, notes, language, icf_type, progress) -> tuple[bytes, dict]:
+def _fill_template(
+    tpl, *, sponsor_text, notes, language, icf_type, progress, thinking_budget=1024
+) -> tuple[bytes, dict]:
     from ..engine import generate as engine_generate
 
     with tempfile.TemporaryDirectory() as tmp:
@@ -78,6 +81,7 @@ def _fill_template(tpl, *, sponsor_text, notes, language, icf_type, progress) ->
                     language=language,
                     icf_type=icf_type,
                     progress=progress,
+                    thinking_budget=thinking_budget,
                 )
             return out.read_bytes(), report
         except FileNotFoundError:
@@ -195,11 +199,13 @@ def translate(doc_id: int, body: TranslateIn, user: User) -> dict:
         with db.connect() as conn:
             with storage.local_path(ver["stored_name"]) as p:
                 source_text = engine_text.docx_text(str(p))
-            for i, lang in enumerate(langs):
-                report.segment(i, len(langs), lang)
-                data, rep = _fill_template(
+            sponsor_text = f"=== {src['title']} (v{ver['number']}) ===\n{source_text}"
+            reporters = report.parallel(langs)
+
+            def fill(i: int, lang: str):
+                return _fill_template(
                     tpls[lang],
-                    sponsor_text=f"=== {src['title']} (v{ver['number']}) ===\n{source_text}",
+                    sponsor_text=sponsor_text,
                     notes=(
                         f"Fill the placeholders by translating the content of the {src_lang} "
                         "source "
@@ -208,8 +214,15 @@ def translate(doc_id: int, body: TranslateIn, user: User) -> dict:
                     ),
                     language=lang,
                     icf_type=src["icf_type"] or "adult",
-                    progress=report,
+                    progress=reporters[i],
+                    thinking_budget=0,  # mechanical translation: no reasoning needed
                 )
+
+            # target languages are independent: fill them concurrently (ai._slots caps Vertex calls)
+            with ThreadPoolExecutor(max_workers=len(langs)) as pool:
+                results = list(pool.map(lambda a: fill(*a), enumerate(langs)))
+            for i, lang in enumerate(langs):
+                data, rep = results[i]
                 title = _translated_title(src["title"], lang)
                 note = f"Translated from {src_lang} v{ver['number']}"
                 existing = conn.execute(
@@ -243,7 +256,7 @@ def translate(doc_id: int, body: TranslateIn, user: User) -> dict:
                     )
                 docs.append(doc)
                 reports.append(rep)
-                report("saving", 1, 1)
+                reporters[i]("saving", 1, 1)
         return {"docs": docs, "reports": reports}
 
     return {"task_id": tasks.start_task("translate", work, langs[0])}
@@ -292,6 +305,7 @@ def update_to_latest_template(doc_id: int, body: UpdateIn, user: User) -> dict:
                 language=lang,
                 icf_type=src["icf_type"] or "adult",
                 progress=report,
+                thinking_budget=0,
             )
             vid_note = f"Updated to template v{tpl['version'] or '?'} from v{ver['number']}"
             services.add_version(
