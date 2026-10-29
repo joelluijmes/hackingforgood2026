@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Navigate, NavLink, Outlet, Route, Routes } from 'react-router-dom';
 import type { Language } from './api';
@@ -16,11 +17,26 @@ import Viewer from './pages/Viewer';
 function Shell() {
   const { t } = useTranslation();
   const { user, loading, signOut, setLanguage } = useAuth();
+  const header = useRef<HTMLElement>(null);
+  // sticky sub-bars (document review bar) sit flush under the topbar
+  useEffect(() => {
+    const el = header.current;
+    if (!el) return;
+    const set = () =>
+      document.documentElement.style.setProperty(
+        '--topbar-h',
+        `${el.offsetHeight}px`,
+      );
+    set();
+    const ro = new ResizeObserver(set);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
   if (loading) return <div className="page muted">{t('common.loading')}</div>;
   if (!user) return <Navigate to="/login" replace />;
   return (
     <>
-      <header className="topbar">
+      <header className="topbar" ref={header}>
         <NavLink to="/" className="brand">
           <span className="brand-mark" aria-hidden="true">
             §

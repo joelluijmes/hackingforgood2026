@@ -384,11 +384,11 @@
 .rv-side {
   min-width: 0;
   position: sticky;
-  top: 136px; /* below the sticky topbar and review bar */
+  top: calc(var(--topbar-h, 64px) + 84px); /* below topbar + review bar */
   display: flex;
   flex-direction: column;
   gap: 8px;
-  max-height: calc(100vh - 152px);
+  max-height: calc(100vh - var(--topbar-h, 64px) - 100px);
 }
 .rv-side .rv-panel {
   position: static;
@@ -756,17 +756,20 @@
 /* ---- GitHub-style review bar ---- */
 .rv-bar {
   position: sticky;
-  top: 64px;
+  top: var(--topbar-h, 64px);
   z-index: 20;
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 8px 12px;
-  margin-bottom: 12px;
+  padding: 14px 20px;
+  margin-bottom: 16px;
   background: var(--surface, #fff);
   border: 1px solid var(--neutral-300, #ccc);
-  border-radius: var(--radius-control, 8px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 var(--radius-card, 12px) var(--radius-card, 12px);
+  /* white cap above hides document text scrolling between topbar and bar */
+  box-shadow:
+    0 -24px 0 0 var(--bg, #fff),
+    0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .rv-back {
   font-weight: 600;
