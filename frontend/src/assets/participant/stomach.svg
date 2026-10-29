@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" fill="none">
+  <title>Stomach illustration</title>
+  <path d="M116 18v33c0 10 8 16 17 15 10-1 13-9 13-17V36" stroke="#D57970" stroke-width="14" stroke-linecap="round"/>
+  <path d="M116 18v33c0 10 8 16 17 15 10-1 13-9 13-17V36" stroke="#F6B6A7" stroke-width="7" stroke-linecap="round"/>
+  <path d="M132 65c-2 15-11 18-25 20-22 3-37 18-37 39 0 22 17 38 41 38 25 0 52-13 61-37 8-21-2-34 8-47 7-10 4-25-7-31-12-7-27 0-30 18-2 10-3 17-11 20Z" fill="#F3A394" stroke="#B95359" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M84 119c9-13 20-17 34-18m-30 35c12-10 25-13 40-12m-25 29c12-7 24-9 36-7" stroke="#D97975" stroke-width="4" stroke-linecap="round"/>
+  <path d="M174 122c9 2 16 9 19 18" stroke="#B95359" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="49" cy="53" r="9" fill="#F5C85C"/><circle cx="192" cy="53" r="6" fill="#F5C85C"/>
+</svg>

@@ -12,9 +12,14 @@ import {
   type ParticipantAskBody,
   type ParticipantDocument,
   type ParticipantDocumentContent,
+  type ParticipantIllustration,
   type ParticipantPersona,
   type ParticipantReply,
 } from '../api';
+import bodyAtlas from '../assets/participant/body-atlas.svg';
+import fingernailIllustration from '../assets/participant/fingernail.svg';
+import stomachIllustration from '../assets/participant/stomach.svg';
+import toothIllustration from '../assets/participant/tooth.svg';
 import { useAuth } from '../components/AuthContext';
 import { isLang } from '../i18n';
 import '../participant.css';
@@ -28,7 +33,28 @@ const PERSONAS: ParticipantPersona[] = [
   'child',
 ];
 const LANGS: Language[] = ['en', 'nl', 'fr'];
+const ILLUSTRATIONS: Partial<Record<ParticipantIllustration, string>> = {
+  stomach: stomachIllustration,
+  tooth: toothIllustration,
+  fingernail: fingernailIllustration,
+};
 const errText = (e: unknown) => (e instanceof Error ? e.message : String(e));
+
+function ParticipantIllustrationView({
+  id,
+  alt,
+}: {
+  id: ParticipantIllustration;
+  alt: string;
+}) {
+  const file = ILLUSTRATIONS[id];
+  if (file) return <img src={file} alt={alt} />;
+  return (
+    <svg viewBox="0 0 240 180" role="img" aria-label={alt}>
+      <use href={`${bodyAtlas}#${id}`} />
+    </svg>
+  );
+}
 
 /** Where the portal gets its data: real participant endpoints or the staff preview. */
 type Source = {
@@ -477,6 +503,8 @@ function Interpreter({
   const [question, setQuestion] = useState('');
   const [history, setHistory] = useState<Turn[]>([]);
   const [reply, setReply] = useState<ParticipantReply | null>(null);
+  const [lastAskedPersona, setLastAskedPersona] =
+    useState<ParticipantPersona | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
 
@@ -484,6 +512,7 @@ function Interpreter({
     e.preventDefault();
     setBusy(true);
     setError('');
+    setReply(null);
     try {
       const q = question.trim();
       const answer = await source.ask({
@@ -493,6 +522,7 @@ function Interpreter({
         history: history.slice(-10),
       });
       setReply(answer);
+      setLastAskedPersona(persona);
       setHistory((h) =>
         [
           ...h,
@@ -518,6 +548,13 @@ function Interpreter({
         100,
       ),
     );
+  const illustrationId =
+    persona === 'child' &&
+    lastAskedPersona === 'child' &&
+    !reply?.requires_human_followup &&
+    reply?.source_references.length
+      ? reply?.illustration_id
+      : null;
 
   return (
     <div className="panel participant-chat">
@@ -586,6 +623,21 @@ function Interpreter({
       {error && <p className="error">{error}</p>}
       {reply && (
         <article className="participant-answer">
+          {illustrationId && (
+            <figure className="participant-illustration">
+              <ParticipantIllustrationView
+                id={illustrationId}
+                alt={t('pp.portal.illustrationAlt', {
+                  part: t(`pp.portal.bodyParts.${illustrationId}`),
+                })}
+              />
+              <figcaption>
+                {t('pp.portal.illustrationCaption', {
+                  part: t(`pp.portal.bodyParts.${illustrationId}`),
+                })}
+              </figcaption>
+            </figure>
+          )}
           {reply.source_references.length > 0 && (
             <div>
               <strong>{t('pp.portal.sources')}</strong>

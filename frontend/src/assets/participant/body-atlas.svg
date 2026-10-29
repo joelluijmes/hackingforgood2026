@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180">
+  <title>Child-friendly body-part illustration atlas</title>
+  <symbol id="brain" viewBox="0 0 240 180">
+    <path d="M120 32c-12-20-43-15-48 8-25-2-34 26-18 41-18 18-6 44 16 45 2 25 31 31 48 14 17 17 46 11 48-14 22-1 34-27 16-45 16-15 7-43-18-41-5-23-36-28-48-8Z" fill="#F1A5AE" stroke="#A94D68" stroke-width="5"/>
+    <path d="M120 34v105M87 43c13 5 14 20 5 28m-30 9c15-1 22 10 17 22m74-59c-13 5-14 20-5 28m30 9c-15-1-22 10-17 22M92 128c8-11 19-10 28-1m28 1c-8-11-19-10-28-1" fill="none" stroke="#C66E80" stroke-width="4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="head" viewBox="0 0 240 180">
+    <path d="M120 19c-43 0-69 29-69 70v24c0 35 26 53 69 53s69-18 69-53V89c0-41-26-70-69-70Z" fill="#F0B8A5" stroke="#B66E65" stroke-width="6"/>
+    <path d="M77 89c11-8 24-8 35 0m16 0c11-8 24-8 35 0" stroke="#745B66" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="95" cy="101" r="5" fill="#4E596A"/><circle cx="145" cy="101" r="5" fill="#4E596A"/>
+    <path d="M120 105v20m-14 14c9 7 19 7 28 0" stroke="#B66E65" stroke-width="5" stroke-linecap="round"/>
+    <path d="M51 91c-19-4-19 34 1 34m137-34c19-4 19 34-1 34" fill="#F0B8A5" stroke="#B66E65" stroke-width="5"/>
+  </symbol>
+  <symbol id="eye" viewBox="0 0 240 180">
+    <path d="M30 90c23-33 53-50 90-50s67 17 90 50c-23 33-53 50-90 50S53 123 30 90Z" fill="#FFFDF4" stroke="#756A86" stroke-width="6"/>
+    <circle cx="120" cy="90" r="31" fill="#67AFA5"/><circle cx="120" cy="90" r="15" fill="#30364B"/><circle cx="130" cy="79" r="7" fill="#FFFDF4"/>
+    <path d="M41 83c21-27 48-40 79-40s58 13 79 40" stroke="#D97D82" stroke-width="5" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="ear" viewBox="0 0 240 180">
+    <path d="M140 153c-9 15-30 12-34-5-5-17 7-25 17-36 14-15 26-26 25-44-1-23-18-39-40-37-20 2-32 18-31 37" fill="#F3B6A1" stroke="#B86D68" stroke-width="6" stroke-linecap="round"/>
+    <path d="M104 73c0-12 8-19 18-18 10 1 15 10 11 19-3 7-13 11-15 20-2 8 3 14 11 14 12 0 21-13 21-27" fill="none" stroke="#D8897D" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="91" cy="129" r="8" fill="#F5C85C"/>
+  </symbol>
+  <symbol id="nose" viewBox="0 0 240 180">
+    <path d="M116 27c-4 34-13 61-27 86-7 12 3 24 18 27 16 4 39 0 45-10 5-8-4-17-13-21-11-5-13-12-11-25l5-57" fill="#F1B49F" stroke="#B66E65" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M111 124c8 4 19 4 27 0" stroke="#D77F78" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="60" cy="48" r="7" fill="#F5C85C"/><circle cx="181" cy="125" r="7" fill="#F5C85C"/>
+  </symbol>
+  <symbol id="mouth" viewBox="0 0 240 180">
+    <path d="M33 88c26-28 54-39 87-25 33-14 61-3 87 25-27 32-54 48-87 48S60 120 33 88Z" fill="#D9767E" stroke="#A94D68" stroke-width="5"/>
+    <path d="M54 82c20-13 42-15 66-5 24-10 46-8 66 5-13 16-34 22-66 22s-53-6-66-22Z" fill="#FFFDF4"/>
+    <path d="M76 114c13 9 28 13 44 13s31-4 44-13" stroke="#F3A9AE" stroke-width="6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="throat" viewBox="0 0 240 180">
+    <path d="M81 26h78v43c0 16 12 28 25 39v44H56v-44c13-11 25-23 25-39V26Z" fill="#F1B49F" stroke="#B66E65" stroke-width="5"/>
+    <path d="M111 58v81m18-81v81" stroke="#D87977" stroke-width="9" stroke-linecap="round"/>
+    <path d="M93 73c8 8 17 8 27 0 10 8 19 8 27 0" stroke="#FFF1D8" stroke-width="6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="chest" viewBox="0 0 240 180">
+    <path d="M75 29c12-12 28-18 45-18s33 6 45 18l36 29-22 42-16-9v75H77V91l-16 9-22-42 36-29Z" fill="#F0B8A5" stroke="#B66E65" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M120 44v94m-34-71c12 1 23 8 34 19m34-19c-12 1-23 8-34 19m-34-2c12 1 23 8 34 19m34-19c-12 1-23 8-34 19m-34-2c12 1 23 8 34 19m34-19c-12 1-23 8-34 19" stroke="#D58A7E" stroke-width="4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="back" viewBox="0 0 240 180">
+    <path d="M78 28c12-11 26-16 42-16s30 5 42 16l35 30-18 40-20-8v78H81V90l-20 8-18-40 35-30Z" fill="#F0B8A5" stroke="#B66E65" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M120 31v123m0-103-16 10m16 9-16 10m16 9-16 10m16 9-16 10m16-48 16 10m-16 9 16 10m-16 9 16 10m-16 9 16 10" stroke="#B9826F" stroke-width="4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="abdomen" viewBox="0 0 240 180">
+    <path d="M78 18h84l-5 31 19 25-9 88H73l-9-88 19-25-5-31Z" fill="#F0B8A5" stroke="#B66E65" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M83 76c13-9 25-9 37 0 12-9 24-9 37 0m-74 18c13-9 25-9 37 0 12-9 24-9 37 0m-74 18c13-9 25-9 37 0 12-9 24-9 37 0" stroke="#D58A7E" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="120" cy="92" r="5" fill="#B66E65"/>
+  </symbol>
+  <symbol id="pelvis" viewBox="0 0 240 180">
+    <path d="M120 45c-20-22-55-18-68 3-13 20-3 43 19 51 9 3 17 1 24 11l25 34 25-34c7-10 15-8 24-11 22-8 32-31 19-51-13-21-48-25-68-3Z" fill="#FFF1D1" stroke="#B8915D" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M120 48v57m-42-13c5 20 20 28 42 28s37-8 42-28" stroke="#D0AE7D" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="81" cy="76" r="10" fill="#F1B49F"/><circle cx="159" cy="76" r="10" fill="#F1B49F"/>
+  </symbol>
+  <symbol id="heart" viewBox="0 0 240 180">
+    <path d="M120 153S45 111 45 68c0-27 35-39 56-15l19 21 19-21c21-24 56-12 56 15 0 43-75 85-75 85Z" fill="#E8787C" stroke="#A94359" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M119 75v68m-1-32c-18 0-27-12-27-27m29 43c19 0 29-13 29-29" fill="none" stroke="#F6B9AD" stroke-width="6" stroke-linecap="round"/>
+    <path d="M110 24v24m20-24v24" stroke="#D46D6E" stroke-width="10" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="lungs" viewBox="0 0 240 180">
+    <path d="M115 30v47m10-47v47" stroke="#B95669" stroke-width="9" stroke-linecap="round"/>
+    <path d="M111 67c-16 6-27 19-32 39-7 25-2 45 16 46 19 1 30-16 30-39V74m5-7c16 6 27 19 32 39 7 25 2 45-16 46-19 1-30-16-30-39V74" fill="#F2A5AE" stroke="#A94D68" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M120 78 93 103m27-8-22 23m22-48 28 25m-28-8 22 23" stroke="#D87988" stroke-width="4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="intestines" viewBox="0 0 240 180">
+    <path d="M72 43c-15 0-21 12-21 26v48c0 18 10 28 27 28h84c17 0 27-10 27-28V69c0-14-6-26-21-26" fill="none" stroke="#D77A6D" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M82 61h76c10 0 12 13 2 17l-77 0c-10 0-10 14 0 14h77c10 0 10 14 0 14H83c-10 0-10 14 0 14h75" fill="none" stroke="#F2B0A0" stroke-width="11" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="liver" viewBox="0 0 240 180">
+    <path d="M38 86c17-38 57-57 105-48 25 5 45 17 58 39 9 16 3 39-15 49-28 16-60 13-88 13-33 0-53-13-60-29-4-8-4-16 0-24Z" fill="#A94D58" stroke="#783A4C" stroke-width="6"/>
+    <path d="M143 44c-5 25-6 54-1 91" stroke="#D77B78" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="63" cy="54" r="7" fill="#F5C85C"/>
+  </symbol>
+  <symbol id="kidney" viewBox="0 0 240 180">
+    <path d="M86 39c-28-13-51 8-50 43 1 32 17 60 42 58 21-2 28-24 20-40-7-15-1-19 12-20" fill="#B95D72" stroke="#843D59" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M154 39c28-13 51 8 50 43-1 32-17 60-42 58-21-2-28-24-20-40 7-15 1-19-12-20" fill="#B95D72" stroke="#843D59" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M120 95v40" stroke="#E7B66A" stroke-width="7" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="bladder" viewBox="0 0 240 180">
+    <path d="M89 39v36m62-36v36" stroke="#D99273" stroke-width="8" stroke-linecap="round"/>
+    <path d="M76 80c0-14 12-22 24-17 12 5 28 5 40 0 12-5 24 3 24 17v29c0 24-18 39-44 39s-44-15-44-39V80Z" fill="#F0B29B" stroke="#B86D68" stroke-width="6"/>
+    <path d="M120 149v18" stroke="#B86D68" stroke-width="8" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="skin" viewBox="0 0 240 180">
+    <path d="M28 68h184v74H28z" fill="#F1B49F"/>
+    <path d="M28 68h184v20H28z" fill="#E89A87"/>
+    <path d="M28 142h184v18H28z" fill="#E8C899"/>
+    <path d="M84 38c0 19-8 24-8 39m81-39c0 19-8 24-8 39" stroke="#805A55" stroke-width="6" stroke-linecap="round"/>
+    <path d="M119 91c-18 10-20 24 0 35 20-11 18-25 0-35Z" fill="#D86F71"/>
+    <circle cx="55" cy="111" r="7" fill="#F5C85C"/><circle cx="190" cy="112" r="7" fill="#F5C85C"/>
+  </symbol>
+  <symbol id="bone" viewBox="0 0 240 180">
+    <path d="m69 47 89 89m-92-91c-12-13-30-9-34 4-4 11 2 20 13 24-4 11 2 23 14 24 9 1 16-5 19-13m89 67c12 13 30 9 34-4 4-11-2-20-13-24 4-11-2-23-14-24-9-1-16 5-19 13" fill="#FFF1D1" stroke="#B8915D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="muscle" viewBox="0 0 240 180">
+    <path d="M46 121c22-4 32-27 39-48 5-15 17-23 31-19l15 5c10 3 18 1 27-6 16-12 34-6 35 10l2 28c1 19-12 36-31 43l-79 20c-25 6-50-7-51-24-1-5 3-8 12-9Z" fill="#DB7777" stroke="#9F4B5B" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M66 119c23-8 30-29 39-48m-17 63c23-8 35-29 43-53m-19 65c22-8 39-31 48-57" stroke="#F2A8A0" stroke-width="5" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="joint" viewBox="0 0 240 180">
+    <path d="M48 39c0-12 10-21 22-21h26v54H70c-12 0-22-9-22-21V39Zm96 71h26c12 0 22 9 22 21v10c0 12-10 21-22 21h-26v-52Z" fill="#FFF1D1" stroke="#B8915D" stroke-width="5"/>
+    <path d="M93 68c0-17 12-29 27-29s27 12 27 29v43c0 17-12 29-27 29s-27-12-27-29V68Z" fill="#F1A5AE" stroke="#A94D68" stroke-width="5"/>
+    <path d="M103 67v45m34-45v45" stroke="#F8D4C4" stroke-width="6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="hand" viewBox="0 0 240 180">
+    <path d="M75 160c-12-9-19-23-19-40V78c0-9 7-16 15-16s15 7 15 16V41c0-9 7-16 15-16s15 7 15 16v31-49c0-9 7-16 15-16s15 7 15 16v49-34c0-9 7-16 15-16s15 7 15 16v66c0 29-19 51-47 51H96c-8 0-15-2-21-5Z" fill="#F0B8A5" stroke="#B66E65" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M86 107c16 9 34 12 52 7" stroke="#D58A7E" stroke-width="4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="arm" viewBox="0 0 240 180">
+    <path d="M48 119c19-15 37-39 51-66 8-15 24-18 35-8 10 9 7 22 0 35l-14 24c22-8 39-2 43 10 4 13-5 24-20 29l-55 19c-28 10-53-1-57-18-2-10 4-19 17-25Z" fill="#F0B8A5" stroke="#B66E65" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M83 115c14 7 28 8 41 4" stroke="#D58A7E" stroke-width="5" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="leg" viewBox="0 0 240 180">
+    <path d="M83 21h75l-8 54-18 34 5 42 23 10-5 14H78l-4-12 25-17 4-38-21-37V21Z" fill="#F0B8A5" stroke="#B66E65" stroke-width="6" stroke-linejoin="round"/>
+    <path d="m101 91 48 0m-46 38 36 0" stroke="#D58A7E" stroke-width="5" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="foot" viewBox="0 0 240 180">
+    <path d="M94 24c15-4 25 5 25 20v56c0 15 9 23 25 29 21 8 41 16 41 30 0 11-12 18-29 18H66c-17 0-28-8-28-20 0-11 8-20 19-31 14-14 21-32 20-54l-2-29c-1-10 7-17 19-19Z" fill="#F0B8A5" stroke="#B66E65" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M132 128c14 2 24 7 33 14m-71-68 0 21" stroke="#D58A7E" stroke-width="5" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="blood" viewBox="0 0 240 180">
+    <path d="M120 22c-25 34-47 59-47 86a47 47 0 0 0 94 0c0-27-22-52-47-86Z" fill="#D95F6B" stroke="#A33F56" stroke-width="6"/>
+    <path d="M92 110c3 14 13 23 27 25" stroke="#F8B7A5" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="48" cy="53" r="8" fill="#F5C85C"/><circle cx="190" cy="119" r="7" fill="#F5C85C"/>
+  </symbol>
+</svg>

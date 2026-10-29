@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" fill="none">
+  <title>Fingernail illustration</title>
+  <path d="M72 159V71c0-29 20-49 48-49h1c28 0 48 20 48 49v88c0 12-9 21-21 21H93c-12 0-21-9-21-21Z" fill="#F0B8A5" stroke="#B66E65" stroke-width="5"/>
+  <path d="M92 67c0-17 12-29 28-29s28 12 28 29v36c0 18-12 31-28 31s-28-13-28-31V67Z" fill="#F9E8D5" stroke="#C88E79" stroke-width="4"/>
+  <path d="M100 66c0-12 8-20 20-20s20 8 20 20v7h-40v-7Z" fill="#FFF9EF"/>
+  <path d="M92 79h56" stroke="#D89C84" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="52" cy="47" r="7" fill="#F5C85C"/><circle cx="191" cy="140" r="6" fill="#F5C85C"/>
+</svg>

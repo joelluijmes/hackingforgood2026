@@ -60,6 +60,29 @@
   margin-top: 8px;
   padding-top: 14px;
 }
+.participant-illustration {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  margin: 4px 0 16px;
+  padding: 14px;
+  border: 1px solid var(--primary-200);
+  border-radius: var(--radius-card);
+  background: var(--primary-100);
+}
+.participant-illustration img,
+.participant-illustration svg {
+  display: block;
+  width: min(100%, 280px);
+  height: auto;
+  max-height: 220px;
+}
+.participant-illustration figcaption {
+  max-width: 42ch;
+  color: var(--neutral-700);
+  text-align: center;
+  font-size: 0.9rem;
+}
 .citation-link {
   display: block;
   border: 0;

@@ -40,6 +40,36 @@ export type ParticipantPersona =
   | 'parent_guardian'
   | 'adolescent'
   | 'child';
+export type ParticipantIllustration =
+  | 'head'
+  | 'brain'
+  | 'eye'
+  | 'ear'
+  | 'nose'
+  | 'mouth'
+  | 'throat'
+  | 'heart'
+  | 'lungs'
+  | 'chest'
+  | 'back'
+  | 'abdomen'
+  | 'pelvis'
+  | 'stomach'
+  | 'intestines'
+  | 'liver'
+  | 'kidney'
+  | 'bladder'
+  | 'skin'
+  | 'bone'
+  | 'muscle'
+  | 'joint'
+  | 'hand'
+  | 'fingernail'
+  | 'arm'
+  | 'leg'
+  | 'foot'
+  | 'blood'
+  | 'tooth';
 export interface ParticipantAskBody {
   question: string;
   persona: ParticipantPersona;
@@ -48,6 +78,7 @@ export interface ParticipantAskBody {
 }
 export interface ParticipantReply {
   explanation: string;
+  illustration_id?: ParticipantIllustration | null;
   source_references: {
     doc_id: number;
     title: string;

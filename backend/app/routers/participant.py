@@ -1,6 +1,7 @@
 """Participant access to explicitly published trial documents."""
 
 import hashlib
+import re
 import secrets
 import subprocess
 from datetime import UTC, datetime, timedelta
@@ -314,6 +315,126 @@ URGENT_TERMS = (
     "symptom",
     "hurt",
 )
+ILLUSTRATION_TERMS = {
+    "head": {"en": ("head", "face"), "nl": ("hoofd", "gezicht"), "fr": ("tête", "visage")},
+    "brain": {"en": ("brain",), "nl": ("hersenen",), "fr": ("cerveau",)},
+    "eye": {"en": ("eye", "eyes"), "nl": ("oog", "ogen"), "fr": ("œil", "yeux", "oeil")},
+    "ear": {"en": ("ear", "ears"), "nl": ("oor", "oren"), "fr": ("oreille", "oreilles")},
+    "nose": {"en": ("nose",), "nl": ("neus",), "fr": ("nez",)},
+    "mouth": {"en": ("mouth",), "nl": ("mond",), "fr": ("bouche",)},
+    "throat": {"en": ("throat", "neck"), "nl": ("keel", "nek"), "fr": ("gorge", "cou")},
+    "heart": {"en": ("heart",), "nl": ("hart",), "fr": ("cœur", "coeur")},
+    "lungs": {"en": ("lung", "lungs"), "nl": ("long", "longen"), "fr": ("poumon", "poumons")},
+    "chest": {"en": ("chest", "thorax"), "nl": ("borst",), "fr": ("poitrine", "thorax")},
+    "back": {"en": ("back",), "nl": ("rug",), "fr": ("dos",)},
+    "abdomen": {
+        "en": ("abdomen", "belly", "tummy"),
+        "nl": ("buik", "buikje"),
+        "fr": ("abdomen", "ventre"),
+    },
+    "pelvis": {"en": ("pelvis", "pelvic"), "nl": ("bekken",), "fr": ("bassin",)},
+    "stomach": {
+        "en": ("stomach",),
+        "nl": ("maag",),
+        "fr": ("estomac",),
+    },
+    "intestines": {
+        "en": ("intestine", "intestines", "bowel", "bowels"),
+        "nl": ("darm", "darmen"),
+        "fr": ("intestin", "intestins"),
+    },
+    "liver": {"en": ("liver",), "nl": ("lever",), "fr": ("foie",)},
+    "kidney": {"en": ("kidney", "kidneys"), "nl": ("nier", "nieren"), "fr": ("rein", "reins")},
+    "bladder": {"en": ("bladder",), "nl": ("blaas",), "fr": ("vessie",)},
+    "skin": {"en": ("skin",), "nl": ("huid",), "fr": ("peau",)},
+    "bone": {"en": ("bone", "bones"), "nl": ("bot", "botten"), "fr": ("os", "ossement")},
+    "muscle": {
+        "en": ("muscle", "muscles"),
+        "nl": ("spier", "spieren"),
+        "fr": ("muscle", "muscles"),
+    },
+    "joint": {
+        "en": ("joint", "joints", "shoulder", "elbow", "wrist", "knee", "ankle", "hip"),
+        "nl": ("gewricht", "gewrichten", "schouder", "elleboog", "pols", "knie", "enkel", "heup"),
+        "fr": (
+            "articulation",
+            "articulations",
+            "épaule",
+            "coude",
+            "poignet",
+            "genou",
+            "cheville",
+            "hanche",
+        ),
+    },
+    "hand": {
+        "en": ("hand", "hands", "finger", "fingers", "thumb", "thumbs"),
+        "nl": ("hand", "handen", "vinger", "vingers", "duim", "duimen"),
+        "fr": ("main", "mains", "doigt", "doigts", "pouce", "pouces"),
+    },
+    "arm": {"en": ("arm", "arms"), "nl": ("arm", "armen"), "fr": ("bras",)},
+    "leg": {"en": ("leg", "legs"), "nl": ("been", "benen"), "fr": ("jambe", "jambes")},
+    "foot": {
+        "en": ("foot", "feet", "toe", "toes"),
+        "nl": ("voet", "voeten", "teen", "tenen"),
+        "fr": ("pied", "pieds", "orteil", "orteils"),
+    },
+    "blood": {"en": ("blood",), "nl": ("bloed",), "fr": ("sang",)},
+    "tooth": {
+        "en": ("tooth", "teeth"),
+        "nl": ("tand", "tanden"),
+        "fr": ("dent", "dents"),
+    },
+    "fingernail": {
+        "en": ("fingernail", "finger nail", "nail", "nails"),
+        "nl": ("vingernagel", "nagel", "nagels"),
+        "fr": ("ongle",),
+    },
+}
+PERSONAL_SYMPTOM_TERMS = (
+    "hurt",
+    "hurts",
+    "hurting",
+    "ache",
+    "aches",
+    "aching",
+    "toothache",
+    "stomachache",
+    "bellyache",
+    "headache",
+    "migraine",
+    "sore",
+    "pain",
+    "painful",
+    "sick",
+    "nausea",
+    "nauseous",
+    "fever",
+    "vomit",
+    "swollen",
+    "swelling",
+    "rash",
+    "bleeding",
+    "bleed",
+    "loose",
+    "pijn",
+    "pijnlijk",
+    "maagpijn",
+    "buikpijn",
+    "misselijk",
+    "koorts",
+    "braken",
+    "bloed",
+    "loszittend",
+    "hoofdpijn",
+    "douleur",
+    "mal",
+    "migraine",
+    "fièvre",
+    "vomir",
+    "nausée",
+    "saigne",
+)
 _VERSION_COLS = "v.id AS version_id, v.number, v.filename, v.stored_name"
 PERSONA_ICF_TYPE = {
     "adult": "adult",
@@ -410,6 +531,7 @@ def _answer(rows: list[dict], body: AskBody, contact: str, urgent: str) -> dict:
         {
             "version_id": d["version_id"],
             "version_number": d["number"],
+            "language": d.get("language") or body.language,
             "source": "published",
             "note": "",
             "sections": _sections(d),
@@ -467,7 +589,55 @@ def _answer(rows: list[dict], body: AskBody, contact: str, urgent: str) -> dict:
                     "heading": src["heading"] if src else section,
                 }
             )
-    return {**reply, "source_references": refs}
+    illustration_id = _grounded_illustration(body, reply, refs, versions)
+    return {
+        **reply,
+        "source_references": refs,
+        "illustration_id": illustration_id,
+    }
+
+
+def _has_term(text: str, terms: tuple[str, ...]) -> bool:
+    return any(re.search(rf"(?<!\w){re.escape(term)}(?!\w)", text, re.IGNORECASE) for term in terms)
+
+
+def _grounded_illustration(
+    body: AskBody, reply: dict, refs: list[dict], versions: list[dict]
+) -> str | None:
+    """Select a local visual only for a safe child answer grounded in its cited section."""
+    if body.persona != "child" or reply["requires_human_followup"] or not refs:
+        return None
+    question = body.question.lower()
+    if any(term in question for term in URGENT_TERMS) or _has_term(
+        question, PERSONAL_SYMPTOM_TERMS
+    ):
+        return None
+
+    grounded_sections = []
+    for ref in refs:
+        version = next((v for v in versions if v["version_id"] == ref["version_id"]), None)
+        if version:
+            section = next(
+                (s for s in version["sections"] if s["section_id"] == ref["section_id"]),
+                None,
+            )
+            if section:
+                grounded_sections.append((version["language"], section))
+    explanation = reply["explanation"].lower()
+    question_candidates = []
+    answer_candidates = []
+    for illustration_id, languages in ILLUSTRATION_TERMS.items():
+        answer_terms = languages[body.language]
+        if not _has_term(explanation, answer_terms):
+            continue
+        in_question = _has_term(question, answer_terms)
+        for source_language, section in grounded_sections:
+            source_terms = languages.get(source_language, answer_terms)
+            if _has_term(f"{section['heading']} {section['text']}", source_terms):
+                (question_candidates if in_question else answer_candidates).append(illustration_id)
+                break
+    candidates = question_candidates or answer_candidates
+    return candidates[0] if len(candidates) == 1 else None
 
 
 def _portal_texts(conn, project_id: int) -> tuple[str, str]:
