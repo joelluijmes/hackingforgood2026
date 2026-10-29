@@ -1,1 +1,11 @@
 .DS_Store
+
+# ICF Studio app
+backend/icf.db
+backend/storage/
+backend/.venv/
+__pycache__/
+.ruff_cache/
+frontend/node_modules/
+frontend/dist/
+.env

@@ -55,3 +55,17 @@ memory/notes/      analysis notes on the bucket documents
 scripts/convert.sh converts docx/doc/rtf/pdf/pptx to text
 ```
 Bucket contents: `National Templates/` (Belgian adult model ICF, EN/FR/NL, two versions), example studies `Forum`, `Biomede`, `HEM-iSmart` (sponsor originals + approved ICFs), `Additional Materials` (MyKids, non-medical templates, icons), `Pediatric Prescriber/` (mock API zip).
+
+## Running the app
+
+ICF Studio: FastAPI backend (`backend/`, SQLite) + Vite/React frontend (`frontend/`). Requires `uv` and Node.
+
+```
+make install   # deps
+make dev       # backend :8000 + frontend :5173 (Ctrl-C stops both)
+make lint      # ruff + biome + tsc
+make fmt       # auto-fix
+make clean-db  # reset db and uploads
+```
+
+Open http://localhost:5173 (API docs at http://localhost:8000/docs), then click "Import sample bucket".
