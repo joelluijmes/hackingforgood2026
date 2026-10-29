@@ -15,7 +15,7 @@ STORAGE_BACKEND ?= gcs
 GCS_BUCKET ?= hfg2026-bucket
 
 dev-backend: ## Run FastAPI dev server (files in GCS; STORAGE_BACKEND=local for disk)
-	cd backend && STORAGE_BACKEND=$(STORAGE_BACKEND) GCS_BUCKET=$(GCS_BUCKET) uv run fastapi dev app/main.py --port 8010
+	cd backend && STORAGE_BACKEND=$(STORAGE_BACKEND) GCS_BUCKET=$(GCS_BUCKET) uv run uvicorn app.main:app --reload --reload-dir app --host 127.0.0.1 --port 8010 < /dev/null
 
 dev-frontend: ## Run Vite dev server
 	cd frontend && pnpm dev
