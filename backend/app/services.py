@@ -99,6 +99,7 @@ def version_dict(conn, row) -> dict:
 def doc_dict(conn, row, with_versions: bool = True) -> dict:
     d = {k: row[k] for k in ("id", "project_id", "title", "role", "icf_type", "language")}
     d["created_at"] = row["created_at"]
+    d["source_doc_id"] = row["source_doc_id"]
     if with_versions:
         rows = conn.execute(
             "SELECT * FROM versions WHERE doc_id = ? ORDER BY number DESC", (row["id"],)
@@ -293,12 +294,13 @@ def create_doc_with_version(
     note: str,
     source: str,
     user_name: str,
+    source_doc_id: int | None = None,
 ) -> dict:
     items = prepare_comments(filename, data)
     cur = conn.execute(
-        "INSERT INTO project_docs (project_id, title, role, icf_type, language, created_at)"
-        " VALUES (?,?,?,?,?,?)",
-        (pid, title, role, icf_type, language, db.now_iso()),
+        "INSERT INTO project_docs (project_id, title, role, icf_type, language, created_at,"
+        " source_doc_id) VALUES (?,?,?,?,?,?,?)",
+        (pid, title, role, icf_type, language, db.now_iso(), source_doc_id),
     )
     add_version(conn, cur.lastrowid, filename, data, note, source, user_name, items)
     return doc_dict(

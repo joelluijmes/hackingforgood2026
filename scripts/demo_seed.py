@@ -50,6 +50,20 @@ def call(method, path, body=None, raw=False, headers=None, timeout=300):
     return out if raw else json.loads(out or "null")
 
 
+def wait_task(task_id, step, every=5):
+    last = 0.0
+    while True:
+        t = call("GET", f"/api/tasks/{task_id}")
+        if t["status"] == "failed":
+            raise SystemExit(f"task failed: {t['error']}")
+        if t["status"] == "done":
+            return t
+        if time.time() - last >= every:
+            step(f"  {t['kind']} {t['step']} {t['done']}/{t['total']} ({t['progress']:.0%})")
+            last = time.time()
+        time.sleep(1)
+
+
 def multipart(fields, filename, content):
     b = uuid.uuid4().hex
     parts = []
@@ -381,12 +395,13 @@ def main():
                 "title": DRAFT_TITLE,
             },
         )
-        draft = res["doc"]
-        step(f"generated draft doc {draft['id']}: {res['report']}")
+        task = wait_task(res["task_id"], step)
+        draft = task["result"]["docs"][0]
+        step(f"generated draft doc {draft['id']}: {task['result']['reports'][0]}")
     else:
         step(f"draft '{DRAFT_TITLE}' already exists (doc {draft['id']}), skipping generation")
 
-    call("PATCH", f"/api/projects/{pid}", {"stage": "pi_review"})
+    call("PATCH", f"/api/projects/{pid}", {"stage": "pi_review", "force": True})
     step("project stage -> pi_review")
 
     docs = call("GET", f"/api/projects/{pid}/documents")
@@ -408,6 +423,18 @@ def main():
         )
     else:
         step(f"reviewed version already exists (v{reviewed['number']})")
+
+    try:
+        if call("GET", "/api/admin/status")["ai"]["enabled"] and not any(
+            d.get("source_doc_id") == draft["id"] for d in docs
+        ):
+            step("translating the English draft to NL (AI, slow)")
+            tr = call(
+                "POST", f"/api/project-documents/{draft['id']}/translate", {"target_languages": ["nl"]}
+            )
+            wait_task(tr["task_id"], step)
+    except SystemExit as e:
+        step(f"translation skipped: {e}")
 
     print("\nOpen:")
     print(f"  {APP}/projects/{pid}")

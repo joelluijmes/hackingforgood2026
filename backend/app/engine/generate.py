@@ -3,7 +3,8 @@
 import json
 import logging
 import time
-from concurrent.futures import ThreadPoolExecutor, wait
+from collections.abc import Callable
+from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
 
 from docx import Document
 from docx.enum.text import WD_COLOR_INDEX
@@ -34,7 +35,8 @@ SYSTEM = (
     "RESEARCHER NOTES. Never invent or guess facts, numbers, names, drugs, addresses or dates. "
     "If the provided text does not contain the information for a placeholder, answer exactly "
     "MISSING for it. Otherwise write only the replacement text (no brackets, no explanations), "
-    "in the requested language and at a level the participant understands."
+    "ALWAYS written in the requested target language, even when the sponsor documents or notes are "
+    "in another language (translate the facts), at a level the participant understands."
 )
 
 
@@ -177,7 +179,8 @@ def _fill_batch(batch: list[dict], sponsor: str, notes: str, language: str, icf_
         for ph in batch
     ]
     prompt = (
-        f"Target language: {LANG_NAMES.get(language, 'English')}. Audience: "
+        f"Target language: {LANG_NAMES.get(language, 'English')} - write every replacement in this "
+        "language even if the sponsor documents are in another language. Audience: "
         f"{ICF_AUDIENCE.get(icf_type, 'adult participants')}.\n\n"
         f"SPONSOR DOCUMENTS:\n{sponsor}\n\nRESEARCHER NOTES:\n{notes or '(none)'}\n\n"
         "PLACEHOLDERS (JSON). In each 'context' the placeholder to replace is wrapped in << >>. "
@@ -207,12 +210,22 @@ def generate_icf(
     notes: str,
     language: str,
     icf_type: str,
+    progress: Callable[[str, int, int], None] | None = None,
 ) -> dict:
+    def report(step: str, done: int, total: int) -> None:
+        if progress:
+            try:
+                progress(step, done, total)
+            except Exception:  # noqa: BLE001
+                log.exception("progress callback failed")
+
+    report("reading", 0, 1)
     doc = Document(template_path)
     removed = _strip_preamble(doc)
     placeholders, r2 = _collect_placeholders(doc)
     removed += r2
 
+    report("reading", 1, 1)
     answers: dict[str, str] = {}
     ai_used = False
     if placeholders and ai.ai_status()["enabled"]:
@@ -222,7 +235,16 @@ def generate_icf(
         start = time.time()
         pool = ThreadPoolExecutor(max_workers=6)
         futs = {pool.submit(_fill_batch, b, sponsor, notes, language, icf_type): b for b in batches}
-        done, _ = wait(futs, timeout=AI_BUDGET_S)
+        report("filling", 0, len(batches))
+        done: set = set()
+        pending = set(futs)
+        while pending:
+            left = AI_BUDGET_S - (time.time() - start)
+            if left <= 0:
+                break
+            fin, pending = wait(pending, timeout=left, return_when=FIRST_COMPLETED)
+            done |= fin
+            report("filling", len(done), len(batches))
         pool.shutdown(wait=False, cancel_futures=True)
         log.info("generate: %d/%d batches in %.0fs", len(done), len(batches), time.time() - start)
         for f in done:
@@ -240,7 +262,8 @@ def generate_icf(
                     answers[ph["id"]] = ans
 
     filled = flagged = 0
-    for ph in placeholders:
+    report("comments", 0, len(placeholders))
+    for n, ph in enumerate(placeholders, 1):
         runs = ph["runs"]
         ans = answers.get(ph["id"])
         if ans:
@@ -271,6 +294,8 @@ def generate_icf(
                 initials="ICF",
             )
             flagged += 1
+        report("comments", n, len(placeholders))
+    report("saving", 0, 1)
     doc.save(out_path)
     return {
         "placeholders_total": len(placeholders),

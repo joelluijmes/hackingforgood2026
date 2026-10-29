@@ -1,9 +1,10 @@
 from typing import Annotated, Literal
 
 from fastapi import APIRouter, Depends, File, Form, HTTPException, Response, UploadFile
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
-from .. import db, seed, services, storage
+from .. import db, progress, seed, services, storage
 from ..auth import User, current_user
 
 router = APIRouter(prefix="/api", dependencies=[Depends(current_user)], tags=["projects"])
@@ -22,6 +23,7 @@ class ProjectPatch(BaseModel):
     study: str | None = None
     description: str | None = None
     stage: Stage | None = None
+    force: bool = False
 
 
 def _project_row(conn, pid: int):
@@ -72,11 +74,38 @@ def get_project(pid: int) -> dict:
         return services.project_dict(conn, _project_row(conn, pid))
 
 
-@router.patch("/projects/{pid}")
-def patch_project(pid: int, body: ProjectPatch) -> dict:
+def _progress_docs(conn, pid: int) -> list[dict]:
+    docs = []
+    for d in conn.execute("SELECT * FROM project_docs WHERE project_id = ?", (pid,)):
+        vs = [
+            services.version_dict(conn, v)
+            for v in conn.execute("SELECT * FROM versions WHERE doc_id = ?", (d["id"],))
+        ]
+        docs.append({**services.doc_dict(conn, d, with_versions=False), "versions": vs})
+    return docs
+
+
+@router.get("/projects/{pid}/progress")
+def project_progress(pid: int) -> dict:
     with db.connect() as conn:
         row = _project_row(conn, pid)
-        vals = {k: v for k, v in body.model_dump().items() if v is not None}
+        return progress.compute(row["stage"], _progress_docs(conn, pid))
+
+
+@router.patch("/projects/{pid}")
+def patch_project(pid: int, body: ProjectPatch):
+    with db.connect() as conn:
+        row = _project_row(conn, pid)
+        vals = {k: v for k, v in body.model_dump(exclude={"force"}).items() if v is not None}
+        new_stage = vals.get("stage")
+        if new_stage and not body.force:
+            order = progress.STAGES
+            if order.index(new_stage) > order.index(row["stage"]):
+                missing = progress.missing_to_leave(row["stage"], _progress_docs(conn, pid))
+                if missing:
+                    return JSONResponse(
+                        {"detail": "requirements_not_met", "missing": missing}, status_code=409
+                    )
         if "name" in vals:
             vals["name"] = vals["name"].strip() or row["name"]
         if vals:

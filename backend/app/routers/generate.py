@@ -1,3 +1,4 @@
+import re
 import tempfile
 from pathlib import Path
 from typing import Literal
@@ -5,16 +6,17 @@ from typing import Literal
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, Field
 
-from .. import db, storage
+from .. import db, services, storage, tasks
 from ..auth import User, current_user
-from ..services import create_doc_with_version
-from .projects import _project_row
+from .projects import _doc_row, _project_row
 
 router = APIRouter(prefix="/api", dependencies=[Depends(current_user)], tags=["generate"])
 
+LANG_NAMES = {"en": "English", "nl": "Dutch", "fr": "French"}
+
 
 class GenerateIn(BaseModel):
-    template_id: int
+    template_id: int | None = None
     icf_type: Literal["adult", "parent", "adolescent", "child"] = "adult"
     language: Literal["en", "nl", "fr"] = "en"
     sponsor_version_ids: list[int] = Field(default_factory=list)
@@ -22,58 +24,205 @@ class GenerateIn(BaseModel):
     title: str | None = None
 
 
-@router.post("/projects/{pid}/generate")
-def generate(pid: int, body: GenerateIn, user: User) -> dict:
+class TranslateIn(BaseModel):
+    target_languages: list[Literal["nl", "fr"]]
+    version_id: int | None = None
+
+
+def _latest_template(conn, language: str):
+    return conn.execute(
+        "SELECT * FROM documents WHERE kind = 'template' AND language = ? AND audience = 'adult'"
+        " AND lower(filename) LIKE '%.docx' ORDER BY COALESCE(released, '') DESC,"
+        " COALESCE(version, '') DESC, id DESC LIMIT 1",
+        (language,),
+    ).fetchone()
+
+
+def _fill_template(tpl, *, sponsor_text, notes, language, icf_type, progress) -> tuple[bytes, dict]:
     from ..engine import generate as engine_generate
+
+    with tempfile.TemporaryDirectory() as tmp:
+        out = Path(tmp) / "draft.docx"
+        try:
+            with storage.local_path(tpl["stored_name"]) as tpl_path:
+                report = engine_generate.generate_icf(
+                    str(tpl_path),
+                    str(out),
+                    sponsor_text=sponsor_text,
+                    notes=notes,
+                    language=language,
+                    icf_type=icf_type,
+                    progress=progress,
+                )
+            return out.read_bytes(), report
+        except FileNotFoundError:
+            raise RuntimeError("Template file missing from storage") from None
+
+
+def _sponsor_text(conn, version_ids: list[int]) -> str:
     from ..engine import text as engine_text
 
+    parts = []
+    for vid in version_ids:
+        v = conn.execute("SELECT * FROM versions WHERE id = ?", (vid,)).fetchone()
+        if not v or not v["filename"].lower().endswith(".docx"):
+            continue
+        try:
+            with storage.local_path(v["stored_name"]) as vpath:
+                txt = engine_text.docx_text(str(vpath))
+        except Exception:  # noqa: BLE001, S112
+            continue
+        parts.append(f"=== {v['filename']} ===\n{txt}")
+    return "\n\n".join(parts)
+
+
+@router.post("/projects/{pid}/generate", status_code=202)
+def generate(pid: int, body: GenerateIn, user: User) -> dict:
     with db.connect() as conn:
         _project_row(conn, pid)
-        tpl = conn.execute(
-            "SELECT * FROM documents WHERE id = ? AND kind = 'template'", (body.template_id,)
-        ).fetchone()
-        if not tpl or not tpl["filename"].lower().endswith(".docx"):
-            raise HTTPException(404, "Template not found (or not a .docx)")
-        parts = []
-        for vid in body.sponsor_version_ids:
-            v = conn.execute("SELECT * FROM versions WHERE id = ?", (vid,)).fetchone()
-            if not v or not v["filename"].lower().endswith(".docx"):
-                continue
-            try:
-                with storage.local_path(v["stored_name"]) as vpath:
-                    txt = engine_text.docx_text(str(vpath))
-            except Exception:
-                continue
-            parts.append(f"=== {v['filename']} ===\n{txt}")
-        with tempfile.TemporaryDirectory() as tmp:
-            out = Path(tmp) / "draft.docx"
-            try:
-                with storage.local_path(tpl["stored_name"]) as tpl_path:
-                    report = engine_generate.generate_icf(
-                        str(tpl_path),
-                        str(out),
-                        sponsor_text="\n\n".join(parts),
-                        notes=body.notes,
-                        language=body.language,
-                        icf_type=body.icf_type,
+        if body.template_id is None:
+            tpl = _latest_template(conn, body.language)
+            if not tpl:
+                raise HTTPException(422, "no_template_for_language")
+        else:
+            tpl = conn.execute(
+                "SELECT * FROM documents WHERE id = ? AND kind = 'template'", (body.template_id,)
+            ).fetchone()
+            if not tpl or not tpl["filename"].lower().endswith(".docx"):
+                raise HTTPException(404, "Template not found (or not a .docx)")
+            if tpl["language"] != body.language:
+                raise HTTPException(422, "template_language_mismatch")
+    user_name = user["name"]
+
+    def work(report) -> dict:
+        with db.connect() as conn:
+            sponsor = _sponsor_text(conn, body.sponsor_version_ids)
+            data, rep = _fill_template(
+                tpl,
+                sponsor_text=sponsor,
+                notes=body.notes,
+                language=body.language,
+                icf_type=body.icf_type,
+                progress=report,
+            )
+            title = (body.title or "").strip() or f"ICF {body.icf_type} ({body.language.upper()})"
+            doc = services.create_doc_with_version(
+                conn,
+                pid,
+                title=title,
+                role="icf",
+                icf_type=body.icf_type,
+                language=body.language,
+                filename=f"{title}.docx".replace("/", "-"),
+                data=data,
+                note="Generated from template",
+                source="generated",
+                user_name=user_name,
+            )
+        report("saving", 1, 1)
+        return {"docs": [doc], "reports": [rep]}
+
+    return {"task_id": tasks.start_task("generate", work, body.language)}
+
+
+def _translated_title(title: str, lang: str) -> str:
+    suffix = f"({lang.upper()})"
+    if re.search(r"\((EN|NL|FR)\)\s*$", title, re.I):
+        return re.sub(r"\((EN|NL|FR)\)\s*$", suffix, title, flags=re.I)
+    return f"{title} {suffix}"
+
+
+@router.post("/project-documents/{doc_id}/translate", status_code=202)
+def translate(doc_id: int, body: TranslateIn, user: User) -> dict:
+    langs = list(dict.fromkeys(body.target_languages))
+    if not langs:
+        raise HTTPException(422, "target_languages is empty")
+    with db.connect() as conn:
+        src = _doc_row(conn, doc_id)
+        if body.version_id is not None:
+            ver = conn.execute(
+                "SELECT * FROM versions WHERE id = ? AND doc_id = ?", (body.version_id, doc_id)
+            ).fetchone()
+            if not ver:
+                raise HTTPException(404, "Version not found")
+        else:
+            ver = conn.execute(
+                "SELECT * FROM versions WHERE doc_id = ? ORDER BY number DESC LIMIT 1", (doc_id,)
+            ).fetchone()
+        if not ver or not ver["filename"].lower().endswith(".docx"):
+            raise HTTPException(422, "Source version must be a .docx")
+        tpls = {}
+        for lang in langs:
+            tpls[lang] = _latest_template(conn, lang)
+            if not tpls[lang]:
+                raise HTTPException(422, "no_template_for_language")
+    user_name = user["name"]
+    src_lang = (src["language"] or "en").upper()
+
+    def work(report) -> dict:
+        from ..engine import text as engine_text
+
+        docs, reports = [], []
+        with db.connect() as conn:
+            with storage.local_path(ver["stored_name"]) as p:
+                source_text = engine_text.docx_text(str(p))
+            for i, lang in enumerate(langs):
+                report.segment(i, len(langs), lang)
+                data, rep = _fill_template(
+                    tpls[lang],
+                    sponsor_text=f"=== {src['title']} (v{ver['number']}) ===\n{source_text}",
+                    notes=(
+                        f"Fill the placeholders by translating the content of the {src_lang} "
+                        "source "
+                        f"ICF into {LANG_NAMES[lang]}. Keep names, numbers and dates exactly as in "
+                        "the source."
+                    ),
+                    language=lang,
+                    icf_type=src["icf_type"] or "adult",
+                    progress=report,
+                )
+                title = _translated_title(src["title"], lang)
+                note = f"Translated from {src_lang} v{ver['number']}"
+                existing = conn.execute(
+                    "SELECT id FROM project_docs WHERE source_doc_id = ? AND language = ?"
+                    " ORDER BY id LIMIT 1",
+                    (doc_id, lang),
+                ).fetchone()
+                filename = f"{title}.docx".replace("/", "-")
+                if existing:
+                    services.add_version(
+                        conn, existing["id"], filename, data, note, "generated", user_name
                     )
-                data = out.read_bytes()
-            except FileNotFoundError:
-                raise HTTPException(404, "Template file missing from storage") from None
-            except Exception as exc:
-                raise HTTPException(500, f"Generation failed: {exc}") from exc
-        title = (body.title or "").strip() or f"ICF {body.icf_type} ({body.language.upper()})"
-        doc = create_doc_with_version(
-            conn,
-            pid,
-            title=title,
-            role="icf",
-            icf_type=body.icf_type,
-            language=body.language,
-            filename=f"{title}.docx".replace("/", "-"),
-            data=data,
-            note="Generated from template",
-            source="generated",
-            user_name=user["name"],
-        )
-        return {"doc": doc, "report": report}
+                    row = conn.execute(
+                        "SELECT * FROM project_docs WHERE id = ?", (existing["id"],)
+                    ).fetchone()
+                    doc = services.doc_dict(conn, row)
+                else:
+                    doc = services.create_doc_with_version(
+                        conn,
+                        src["project_id"],
+                        title=title,
+                        role="icf",
+                        icf_type=src["icf_type"],
+                        language=lang,
+                        filename=filename,
+                        data=data,
+                        note=note,
+                        source="generated",
+                        user_name=user_name,
+                        source_doc_id=doc_id,
+                    )
+                docs.append(doc)
+                reports.append(rep)
+                report("saving", 1, 1)
+        return {"docs": docs, "reports": reports}
+
+    return {"task_id": tasks.start_task("translate", work, langs[0])}
+
+
+@router.get("/tasks/{task_id}")
+def get_task(task_id: str) -> dict:
+    t = tasks.get_task(task_id)
+    if t is None:
+        raise HTTPException(404, "Task not found")
+    return t
