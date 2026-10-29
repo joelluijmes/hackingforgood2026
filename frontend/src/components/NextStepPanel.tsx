@@ -10,6 +10,7 @@ import {
 } from '../api';
 import { docStatus } from '../docStatus';
 import Dialog, { errMsg } from './Dialog';
+import ParticipantAdminPanel from './ParticipantAdminPanel';
 import { STAGES } from './StageStepper';
 
 /** Requirement key -> translated label (details become counts / lists). */
@@ -148,6 +149,9 @@ export default function NextStepPanel({
         total: translated.length,
       });
       break;
+    case 'participants':
+      status = t('next.participants.status');
+      break;
     default:
       status = t('next.approved.status');
   }
@@ -155,6 +159,7 @@ export default function NextStepPanel({
   let primary: ReactNode = null;
   let docRows: ProjectDoc[] = [];
   let withApprove = false;
+  const inEthics = stage === 'ethics_review';
   if (firstUnmet) {
     switch (firstUnmet.key) {
       case 'has_sponsor_docs':
@@ -199,11 +204,10 @@ export default function NextStepPanel({
         );
         break;
       case 'ethics_reviewed': {
-        docRows = translated.filter((d) => !reviewed(d));
         const withOpen = translated.find(
           (d) => !d.approved && (latest(d)?.comments_open ?? 0) > 0,
         );
-        if (!docRows.length && withOpen)
+        if (translated.every(reviewed) && withOpen)
           primary = (
             <Link
               className="btn primary"
@@ -228,6 +232,12 @@ export default function NextStepPanel({
     );
   }
 
+  if (inEthics) {
+    docRows = translated;
+    withApprove = true;
+  }
+  const toApprove = translated.filter((d) => !reviewed(d));
+
   // secondary: only what is still useful once the requirement is satisfied
   const secondary: ReactNode[] = [];
   if (!firstUnmet && stage === 'intake')
@@ -243,7 +253,24 @@ export default function NextStepPanel({
       </button>,
     );
 
-  if (stage === 'ethics_review' || stage === 'approved')
+  if (inEthics && toApprove.length > 0)
+    secondary.push(
+      <button
+        key="all"
+        type="button"
+        className="btn"
+        disabled={busy}
+        onClick={() =>
+          run(async () => {
+            for (const d of toApprove) await api.approveDoc(d.id);
+          })
+        }
+      >
+        {t('next.act.approveAll', { count: toApprove.length })}
+      </button>,
+    );
+
+  if (inEthics || stage === 'approved' || stage === 'participants') {
     secondary.push(
       <a
         key="zip"
@@ -254,6 +281,19 @@ export default function NextStepPanel({
         {t('next.act.openDownload')}
       </a>,
     );
+    for (const l of ['en', 'nl', 'fr'] as const)
+      if (icfs.some((d) => d.language === l))
+        secondary.push(
+          <a
+            key={l}
+            className="btn sm ghost"
+            href={api.projectExportUrl(projectId, l)}
+            download
+          >
+            {t('next.act.downloadLang', { lang: l.toUpperCase() })}
+          </a>,
+        );
+  }
 
   return (
     <section className="card step-card">
@@ -264,8 +304,16 @@ export default function NextStepPanel({
           <span className="muted"> · {t(`next.${stage}.what`)}</span>
         </h2>
         <p className="sc-status">{status}</p>
+        {stage === 'participants' && (
+          <ParticipantAdminPanel projectId={projectId} docs={docs} approved />
+        )}
         {docRows.length > 0 && (
           <table className="sc-docs">
+            <colgroup>
+              <col />
+              <col className="c-chip" />
+              <col className="c-act" />
+            </colgroup>
             <tbody>
               {docRows.map((d) => {
                 const v = latest(d);
@@ -284,11 +332,21 @@ export default function NextStepPanel({
                     </td>
                     <td className="sc-doc-actions">
                       {v && (
-                        <Link className="btn sm" to={`/versions/${v.id}`}>
+                        <Link
+                          className="btn sm outline"
+                          to={`/versions/${v.id}`}
+                        >
                           {t('next.act.openForReview')}
                         </Link>
                       )}
-                      <details className="menu">
+                      {/* biome-ignore lint/a11y/useKeyWithClickEvents: menu closes after an item click; keyboard activation also fires click */}
+                      <details
+                        className="menu"
+                        onClick={(e) => {
+                          if ((e.target as HTMLElement).closest('.menu-list'))
+                            e.currentTarget.open = false;
+                        }}
+                      >
                         <summary
                           className="btn sm ghost"
                           aria-label={t('next.act.more')}
@@ -304,13 +362,22 @@ export default function NextStepPanel({
                           >
                             {t('next.act.uploadReviewed')}
                           </button>
-                          {withApprove && (
+                          {withApprove && !d.approved && (
                             <button
                               type="button"
                               disabled={busy}
                               onClick={() => run(() => api.approveDoc(d.id))}
                             >
                               {t('next.act.approveAsIs')}
+                            </button>
+                          )}
+                          {withApprove && d.approved && (
+                            <button
+                              type="button"
+                              disabled={busy}
+                              onClick={() => run(() => api.unapproveDoc(d.id))}
+                            >
+                              {t('next.act.withdrawApproval')}
                             </button>
                           )}
                           {v && (

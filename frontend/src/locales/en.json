@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "ICF Studio",
+    "appName": "BLOOM Studio",
     "loading": "Loading…",
     "working": "Working…",
     "pleaseWait": "Please wait…",
@@ -58,7 +58,8 @@
     "projects": "Projects",
     "templates": "Templates",
     "language": "Your language",
-    "admin": "Admin"
+    "admin": "Admin",
+    "settings": "Global defaults"
   },
   "projects": {
     "title": "Projects",
@@ -151,6 +152,10 @@
     "approved": {
       "label": "Approved",
       "hint": "Final version"
+    },
+    "participants": {
+      "label": "Participant portal",
+      "hint": "Share with participants"
     }
   },
   "roles": {
@@ -597,7 +602,7 @@
     },
     "approved": {
       "what": "Final version",
-      "status": "All done. The ICF package is approved."
+      "status": "The ICF package is approved. Next, optionally share it with participants."
     },
     "act": {
       "upload": "Upload sponsor documents",
@@ -611,7 +616,14 @@
       "openDownload": "Download all (zip)",
       "openForReview": "Open for review",
       "more": "More actions",
-      "download": "Download"
+      "download": "Download",
+      "approveAll": "Approve all ({{count}})",
+      "withdrawApproval": "Withdraw approval",
+      "downloadLang": "Download {{lang}}"
+    },
+    "participants": {
+      "what": "Share with participants",
+      "status": "Optional: publish the approved ICFs to the participant portal and invite participants."
     }
   },
   "docStatus": {
@@ -654,5 +666,134 @@
     "savedDecisions": "Review decisions saved.",
     "nextStep": "Next: go back to the project, compare, or keep reviewing.",
     "continue": "Continue reviewing"
+  },
+  "pp": {
+    "admin": {
+      "title": "Participant portal",
+      "intro": "Invited participants can only read the document versions you publish here.",
+      "needApproval": "Approve the trial before publishing participant documents.",
+      "settings": "Portal settings",
+      "enable": "Enable participant sign-in for this trial",
+      "enableHint": "Needs a trial contact and urgent-help instructions.",
+      "contact": "Trial team contact",
+      "contactPh": "Email or phone number",
+      "urgent": "Urgent-help instructions",
+      "urgentPh": "Tell participants what to do in an emergency",
+      "save": "Save portal settings",
+      "saved": "Saved",
+      "docsTitle": "Published document versions",
+      "docsHint": "Choose which version of each document participants see.",
+      "noDocs": "No ICF documents in this project yet.",
+      "colDoc": "Document",
+      "colVersion": "Published version",
+      "colAction": "Action",
+      "notPublished": "Not published",
+      "version": "Version {{n}}",
+      "publish": "Publish",
+      "unpublish": "Unpublish",
+      "publishedBadge": "Published",
+      "invitesTitle": "Invitations",
+      "invitesHint": "Create a private link (valid 7 days) for a participant or family.",
+      "email": "Participant email",
+      "send": "Send invite",
+      "noInvites": "No invitations yet.",
+      "copy": "Copy link",
+      "copied": "Copied",
+      "newLink": "Private link for {{email}}. Share it only with this participant.",
+      "status_pending": "Pending",
+      "status_accepted": "Accepted",
+      "status_expired": "Expired",
+      "expires": "expires {{date}}"
+    },
+    "preview": {
+      "title": "Preview the portal as",
+      "hint": "See exactly what a participant sees and try the interpreter. No invitation needed.",
+      "language": "Language",
+      "adult": "Adult",
+      "parent_guardian": "Parent",
+      "adolescent": "Adolescent (12-17)",
+      "child": "Child (8-11)",
+      "banner": "Preview as {{persona}} participant - staff view",
+      "exit": "Exit preview",
+      "demo": "Not published yet - demo. Showing the latest versions of the matching ICF.",
+      "noDocs": "No matching ICF exists for this participant type yet.",
+      "staffOnly": "Sign in to ICF Studio as staff to use the preview."
+    },
+    "portal": {
+      "brand": "ICF Participant Portal",
+      "setupTitle": "Set up your participant account",
+      "name": "Your name",
+      "password": "Password (at least 10 characters)",
+      "language": "Language",
+      "createAccount": "Create account",
+      "signInTitle": "Sign in to your trial",
+      "signInHint": "Your trial team must invite you before you can access participant documents.",
+      "email": "Email",
+      "signIn": "Sign in",
+      "signOut": "Sign out",
+      "staffOnlyLogin": "This is the participant portal. Please sign in through ICF Studio.",
+      "staffAccount": "This account is for ICF Studio staff.",
+      "eyebrow": "Participant access",
+      "yourTrials": "Your clinical trials",
+      "shared": "Trial information shared with you by your study team.",
+      "noTrials": "No active trial access is linked to this account. Contact your study team.",
+      "trial": "Trial",
+      "docsTitle": "Available documents",
+      "noDocs": "Your study team has not published documents yet.",
+      "version": "Version {{n}}",
+      "askTitle": "Ask about the trial",
+      "you": "You",
+      "guide": "Study guide",
+      "askingAs": "I am asking as",
+      "answerIn": "Answer in",
+      "adult": "Adult participant",
+      "parent_guardian": "Parent or guardian",
+      "adolescent": "Teenager (12-17)",
+      "child": "Child (8-11)",
+      "question": "Your question",
+      "questionPh": "Ask about the study, visits, or what the documents say…",
+      "ask": "Ask",
+      "thinking": "Thinking…",
+      "sources": "Sources for the latest answer",
+      "followup": "Please contact your study team for personal or medical advice.",
+      "publishedVersion": "Published version {{n}}",
+      "close": "Close"
+    }
+  },
+  "facts": {
+    "title": "Study profile",
+    "filled": "{{filled}} of {{total}} key facts filled",
+    "infer": "Infer from sponsor documents",
+    "inferring": "Reading sponsor documents…",
+    "save": "Save",
+    "saved": "Saved",
+    "override": "Override",
+    "inherited": "Inherited from global defaults",
+    "revert": "Use global default",
+    "src_inferred": "inferred",
+    "src_global": "global",
+    "src_manual": "manual",
+    "reviewTitle": "Suggested facts from sponsor documents",
+    "reviewHint": "Review each suggestion; only accepted ones are saved (marked as inferred).",
+    "accept": "Accept",
+    "reject": "Skip",
+    "acceptSelected": "Save accepted ({{n}})",
+    "none": "No new facts were found in the sponsor documents.",
+    "current": "Current",
+    "noSponsor": "Upload a sponsor document first.",
+    "aiOff": "AI is not available.",
+    "aiFail": "The AI call failed, try again.",
+    "hint": "Reused in every ICF generation: filled facts are used verbatim, missing ones raise a comment pointing here.",
+    "group": {
+      "study": "Study",
+      "site": "Site",
+      "contacts": "Contacts",
+      "privacy": "Data protection",
+      "ethics": "Ethics committee",
+      "insurance": "Insurance"
+    },
+    "settingsTitle": "Global defaults",
+    "settingsLead": "BSPHO-wide facts that every project inherits and can override in its study profile.",
+    "about": "Study profile: structured project and site facts (contacts, insurer, DPO) with global BSPHO defaults, inferred from sponsor documents and fed into ICF generation"
   }
 }

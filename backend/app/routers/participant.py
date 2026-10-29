@@ -219,7 +219,7 @@ def publish_doc(doc_id: int, body: PublishVersion, user=Depends(auth.current_sta
         ).fetchone()
         if not version:
             raise HTTPException(422, "Version does not belong to this document")
-        if project["stage"] != "approved":
+        if project["stage"] not in ("approved", "participants"):
             raise HTTPException(
                 409, "Trial must be approved before publishing participant documents"
             )
@@ -289,50 +289,6 @@ def participant_trials(user=Participant):
         ]
 
 
-@router.get("/participant/trials/{project_id}/documents")
-def participant_documents(project_id: int, user=Participant):
-    with db.connect() as conn:
-        allowed = conn.execute(
-            "SELECT 1 FROM participant_memberships m "
-            "JOIN participant_portals p ON p.project_id=m.project_id "
-            "WHERE m.user_id=? AND m.project_id=? AND p.enabled=1",
-            (user["id"], project_id),
-        ).fetchone()
-        if not allowed:
-            raise HTTPException(404, "Trial unavailable")
-        return [
-            dict(r)
-            for r in conn.execute(
-                "SELECT d.id,d.title,d.icf_type,d.language,d.role, "
-                "v.id AS version_id,v.number AS version_number FROM project_docs d "
-                "JOIN participant_publications p ON p.doc_id=d.id "
-                "JOIN versions v ON v.id=p.version_id "
-                "WHERE d.project_id=? ORDER BY d.id",
-                (project_id,),
-            )
-        ]
-
-
-@router.get("/participant/trials/{project_id}/documents/{doc_id}")
-def participant_document(project_id: int, doc_id: int, user=Participant):
-    with db.connect() as conn:
-        if not conn.execute(
-            "SELECT 1 FROM participant_memberships m "
-            "JOIN participant_portals p ON p.project_id=m.project_id "
-            "WHERE m.user_id=? AND m.project_id=? AND p.enabled=1",
-            (user["id"], project_id),
-        ).fetchone():
-            raise HTTPException(404, "Trial unavailable")
-        doc = _published_doc(conn, project_id, doc_id)
-        return {
-            "id": doc["id"],
-            "title": doc["title"],
-            "version_id": doc["version_id"],
-            "version_number": doc["number"],
-            "sections": _sections(doc),
-        }
-
-
 class AskBody(BaseModel):
     question: str = Field(min_length=1, max_length=3000)
     persona: Literal["adult", "parent_guardian", "adolescent", "child"] = "adult"
@@ -340,68 +296,108 @@ class AskBody(BaseModel):
     history: list[dict] = Field(default_factory=list, max_length=12)
 
 
-@router.post("/participant/trials/{project_id}/ask")
-def ask(project_id: int, body: AskBody, user=Participant):
-    with db.connect() as conn:
-        if not conn.execute(
-            "SELECT 1 FROM participant_memberships m "
-            "JOIN participant_portals p ON p.project_id=m.project_id "
-            "WHERE m.user_id=? AND m.project_id=? AND p.enabled=1",
-            (user["id"], project_id),
-        ).fetchone():
-            raise HTTPException(404, "Trial unavailable")
-        settings = conn.execute(
-            "SELECT contact,urgent_guidance FROM participant_portals WHERE project_id=?",
-            (project_id,),
+URGENT_TERMS = (
+    "chest pain",
+    "can't breathe",
+    "cannot breathe",
+    "seizure",
+    "overdose",
+    "suicid",
+    "unconscious",
+    "emergency",
+    "side effect",
+    "sick",
+    "fever",
+    "vomit",
+    "pain",
+    "reaction",
+    "symptom",
+    "hurt",
+)
+_VERSION_COLS = "v.id AS version_id, v.number, v.filename, v.stored_name"
+PERSONA_ICF_TYPE = {
+    "adult": "adult",
+    "parent_guardian": "parent",
+    "adolescent": "adolescent",
+    "child": "child",
+}
+
+
+def _require_membership(conn, user, project_id: int) -> None:
+    if not conn.execute(
+        "SELECT 1 FROM participant_memberships m "
+        "JOIN participant_portals p ON p.project_id=m.project_id "
+        "WHERE m.user_id=? AND m.project_id=? AND p.enabled=1",
+        (user["id"], project_id),
+    ).fetchone():
+        raise HTTPException(404, "Trial unavailable")
+
+
+def _published_rows(conn, project_id: int) -> list[dict]:
+    rows = conn.execute(
+        f"SELECT d.*, {_VERSION_COLS} FROM project_docs d "
+        "JOIN participant_publications p ON p.doc_id=d.id "
+        "JOIN versions v ON v.id=p.version_id AND v.doc_id=d.id "
+        "WHERE d.project_id=? AND d.role!='sponsor' ORDER BY d.id",
+        (project_id,),
+    ).fetchall()
+    return [dict(r) for r in rows]
+
+
+def _preview_rows(conn, project_id: int, persona: str, language: str) -> tuple[list[dict], bool]:
+    """Published docs, else the latest versions of the persona's ICF type (demo)."""
+    published = _published_rows(conn, project_id)
+    if published:
+        return published, False
+    rows = []
+    for d in conn.execute(
+        "SELECT * FROM project_docs WHERE project_id=? AND role!='sponsor' AND icf_type=? "
+        "ORDER BY id",
+        (project_id, PERSONA_ICF_TYPE[persona]),
+    ).fetchall():
+        v = conn.execute(
+            f"SELECT {_VERSION_COLS} FROM versions v WHERE v.doc_id=? "
+            "AND (lower(v.filename) LIKE '%.docx' OR lower(v.filename) LIKE '%.pdf') "
+            "ORDER BY v.number DESC LIMIT 1",
+            (d["id"],),
         ).fetchone()
-        docs = conn.execute(
-            "SELECT d.*,v.id version_id,v.number,v.filename,v.stored_name "
-            "FROM project_docs d JOIN participant_publications p ON p.doc_id=d.id "
-            "JOIN versions v ON v.id=p.version_id WHERE d.project_id=?",
-            (project_id,),
-        ).fetchall()
-        versions = [
-            {
-                "version_id": d["version_id"],
-                "version_number": d["number"],
-                "source": "published",
-                "note": "",
-                "sections": _sections(d),
-            }
-            for d in docs
-        ]
+        if v:
+            rows.append({**dict(d), **dict(v)})
+    same_lang = [r for r in rows if r["language"] == language]
+    return (same_lang or rows), True
+
+
+def _doc_summary(r) -> dict:
+    return {
+        "id": r["id"],
+        "title": r["title"],
+        "icf_type": r["icf_type"],
+        "language": r["language"],
+        "role": r["role"],
+        "version_id": r["version_id"],
+        "version_number": r["number"],
+    }
+
+
+def _document_content(r) -> dict:
+    return {**_doc_summary(r), "sections": _sections(r)}
+
+
+def _answer(rows: list[dict], body: AskBody, contact: str, urgent: str) -> dict:
+    """Shared interpreter logic for real participants and the staff preview."""
     q = body.question.lower()
-    urgent_terms = (
-        "chest pain",
-        "can't breathe",
-        "cannot breathe",
-        "seizure",
-        "overdose",
-        "suicid",
-        "unconscious",
-        "emergency",
-        "side effect",
-        "sick",
-        "fever",
-        "vomit",
-        "pain",
-        "reaction",
-        "symptom",
-        "hurt",
-    )
-    if any(term in q for term in urgent_terms):
+    if any(term in q for term in URGENT_TERMS):
         return {
             "explanation": (
                 "I can’t assess symptoms or tell you what treatment to use. "
-                f"Please contact the trial team at {settings['contact']}. "
-                "If this may be urgent, follow these instructions: "
-                f"{settings['urgent_guidance']}"
+                f"Please contact the trial team at {contact}. "
+                f"If this may be urgent, follow these instructions: {urgent}"
             ),
             "source_references": [],
             "unanswered_questions": ["A member of the clinical team should advise you."],
             "requires_human_followup": True,
         }
-    if not versions:
+    if not rows:
         return {
             "explanation": (
                 "There are no readable participant documents published for this trial yet."
@@ -410,7 +406,16 @@ def ask(project_id: int, body: AskBody, user=Participant):
             "unanswered_questions": [],
             "requires_human_followup": True,
         }
-    context = {"versions": versions}
+    versions = [
+        {
+            "version_id": d["version_id"],
+            "version_number": d["number"],
+            "source": "published",
+            "note": "",
+            "sections": _sections(d),
+        }
+        for d in rows
+    ]
     history = [
         m
         for m in body.history
@@ -424,12 +429,12 @@ def ask(project_id: int, body: AskBody, user=Participant):
         age_group=None,
         language=body.language,
         request={"question": body.question, "history": history},
-        context=context,
+        context={"versions": versions},
     )
     if not reply:
         return {
             "explanation": "I can’t answer that right now. Please contact the trial team at "
-            + settings["contact"],
+            + contact,
             "source_references": [],
             "unanswered_questions": [body.question],
             "requires_human_followup": True,
@@ -441,9 +446,9 @@ def ask(project_id: int, body: AskBody, user=Participant):
             vid = int(vid.lstrip("v"))
         except ValueError:
             continue
-        d = next((d for d in docs if d["version_id"] == vid), None)
+        d = next((d for d in rows if d["version_id"] == vid), None)
         if d:
-            source_section = next(
+            src = next(
                 (
                     s
                     for v in versions
@@ -459,7 +464,112 @@ def ask(project_id: int, body: AskBody, user=Participant):
                     "title": d["title"],
                     "version_id": vid,
                     "section_id": section,
-                    "heading": source_section["heading"] if source_section else section,
+                    "heading": src["heading"] if src else section,
                 }
             )
     return {**reply, "source_references": refs}
+
+
+def _portal_texts(conn, project_id: int) -> tuple[str, str]:
+    s = conn.execute(
+        "SELECT contact,urgent_guidance FROM participant_portals WHERE project_id=?",
+        (project_id,),
+    ).fetchone()
+    contact = (s["contact"] if s else "") or "the trial team (no contact configured yet)"
+    urgent = (s["urgent_guidance"] if s else "") or "call your local emergency number"
+    return contact, urgent
+
+
+@router.get("/participant/trials/{project_id}/documents")
+def participant_documents(project_id: int, user=Participant):
+    with db.connect() as conn:
+        _require_membership(conn, user, project_id)
+        return [_doc_summary(r) for r in _published_rows(conn, project_id)]
+
+
+@router.get("/participant/trials/{project_id}/documents/{doc_id}")
+def participant_document(project_id: int, doc_id: int, user=Participant):
+    with db.connect() as conn:
+        _require_membership(conn, user, project_id)
+        return _document_content(_published_doc(conn, project_id, doc_id))
+
+
+@router.post("/participant/trials/{project_id}/ask")
+def ask(project_id: int, body: AskBody, user=Participant):
+    with db.connect() as conn:
+        _require_membership(conn, user, project_id)
+        rows = _published_rows(conn, project_id)
+        contact, urgent = _portal_texts(conn, project_id)
+    return _answer(rows, body, contact, urgent)
+
+
+# --- staff preview of the participant experience (no membership, no invites) ---
+Persona = Literal["adult", "parent_guardian", "adolescent", "child"]
+Lang = Literal["en", "nl", "fr"]
+
+
+def _preview_project(conn, project_id: int):
+    p = conn.execute("SELECT id,name,study FROM projects WHERE id=?", (project_id,)).fetchone()
+    if not p:
+        raise HTTPException(404, "Trial not found")
+    return p
+
+
+@router.get("/projects/{project_id}/portal-preview/documents")
+def preview_documents(
+    project_id: int,
+    persona: Persona = "adult",
+    lang: Lang = "en",
+    user=Depends(auth.current_staff),
+):
+    with db.connect() as conn:
+        p = _preview_project(conn, project_id)
+        rows, demo = _preview_rows(conn, project_id, persona, lang)
+        return {"trial": dict(p), "demo": demo, "documents": [_doc_summary(r) for r in rows]}
+
+
+@router.get("/projects/{project_id}/portal-preview/documents/{doc_id}")
+def preview_document(
+    project_id: int,
+    doc_id: int,
+    persona: Persona = "adult",
+    lang: Lang = "en",
+    user=Depends(auth.current_staff),
+):
+    with db.connect() as conn:
+        _preview_project(conn, project_id)
+        rows, _ = _preview_rows(conn, project_id, persona, lang)
+    row = next((r for r in rows if r["id"] == doc_id), None)
+    if not row:
+        raise HTTPException(404, "Document not available in this preview")
+    return _document_content(row)
+
+
+@router.post("/projects/{project_id}/portal-preview/ask")
+def preview_ask(project_id: int, body: AskBody, user=Depends(auth.current_staff)):
+    with db.connect() as conn:
+        _preview_project(conn, project_id)
+        rows, _ = _preview_rows(conn, project_id, body.persona, body.language)
+        contact, urgent = _portal_texts(conn, project_id)
+    return _answer(rows, body, contact, urgent)
+
+
+@router.get("/projects/{project_id}/participant-invitations")
+def list_invitations(project_id: int, user=Depends(auth.current_staff)):
+    with db.connect() as conn:
+        rows = conn.execute(
+            "SELECT email,expires_at,used_at FROM participant_invites WHERE project_id=? "
+            "ORDER BY rowid DESC",
+            (project_id,),
+        ).fetchall()
+    now = db.now_iso()
+    return [
+        {
+            "email": r["email"],
+            "expires_at": r["expires_at"],
+            "status": "accepted"
+            if r["used_at"]
+            else ("expired" if r["expires_at"] < now else "pending"),
+        }
+        for r in rows
+    ]

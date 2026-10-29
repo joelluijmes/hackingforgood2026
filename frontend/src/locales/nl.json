@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "ICF Studio",
+    "appName": "BLOOM Studio",
     "loading": "Laden…",
     "working": "Bezig…",
     "pleaseWait": "Even geduld…",
@@ -58,7 +58,8 @@
     "projects": "Projecten",
     "templates": "Sjablonen",
     "language": "Uw taal",
-    "admin": "Beheer"
+    "admin": "Beheer",
+    "settings": "Algemene standaarden"
   },
   "projects": {
     "title": "Projecten",
@@ -151,6 +152,10 @@
     "approved": {
       "label": "Goedgekeurd",
       "hint": "Definitieve versie"
+    },
+    "participants": {
+      "label": "Deelnemersportaal",
+      "hint": "Delen met deelnemers"
     }
   },
   "roles": {
@@ -597,7 +602,7 @@
     },
     "approved": {
       "what": "Eindversie",
-      "status": "Klaar. Het ICF-pakket is goedgekeurd."
+      "status": "Het ICF-pakket is goedgekeurd. Deel het optioneel met deelnemers."
     },
     "act": {
       "upload": "Sponsordocumenten uploaden",
@@ -611,7 +616,14 @@
       "openDownload": "Alles downloaden (zip)",
       "openForReview": "Openen voor review",
       "more": "Meer acties",
-      "download": "Downloaden"
+      "download": "Downloaden",
+      "approveAll": "Alles goedkeuren ({{count}})",
+      "withdrawApproval": "Goedkeuring intrekken",
+      "downloadLang": "Download {{lang}}"
+    },
+    "participants": {
+      "what": "Delen met deelnemers",
+      "status": "Optioneel: publiceer de goedgekeurde ICF's op het deelnemersportaal en nodig deelnemers uit."
     }
   },
   "docStatus": {
@@ -654,5 +666,134 @@
     "savedDecisions": "Reviewbeslissingen opgeslagen.",
     "nextStep": "Volgende stap: terug naar het project, vergelijken of verder reviewen.",
     "continue": "Verder reviewen"
+  },
+  "pp": {
+    "admin": {
+      "title": "Deelnemersportaal",
+      "intro": "Uitgenodigde deelnemers kunnen alleen de documentversies lezen die u hier publiceert.",
+      "needApproval": "Keur de studie goed voordat u deelnemersdocumenten publiceert.",
+      "settings": "Portaalinstellingen",
+      "enable": "Aanmelden voor deelnemers inschakelen voor deze studie",
+      "enableHint": "Vereist een contactpersoon en instructies voor dringende hulp.",
+      "contact": "Contact studieteam",
+      "contactPh": "E-mailadres of telefoonnummer",
+      "urgent": "Instructies voor dringende hulp",
+      "urgentPh": "Vertel deelnemers wat ze bij nood moeten doen",
+      "save": "Portaalinstellingen opslaan",
+      "saved": "Opgeslagen",
+      "docsTitle": "Gepubliceerde documentversies",
+      "docsHint": "Kies welke versie van elk document deelnemers zien.",
+      "noDocs": "Nog geen ICF-documenten in dit project.",
+      "colDoc": "Document",
+      "colVersion": "Gepubliceerde versie",
+      "colAction": "Actie",
+      "notPublished": "Niet gepubliceerd",
+      "version": "Versie {{n}}",
+      "publish": "Publiceren",
+      "unpublish": "Intrekken",
+      "publishedBadge": "Gepubliceerd",
+      "invitesTitle": "Uitnodigingen",
+      "invitesHint": "Maak een privélink (7 dagen geldig) voor een deelnemer of gezin.",
+      "email": "E-mail deelnemer",
+      "send": "Uitnodiging sturen",
+      "noInvites": "Nog geen uitnodigingen.",
+      "copy": "Link kopiëren",
+      "copied": "Gekopieerd",
+      "newLink": "Privélink voor {{email}}. Deel deze alleen met deze deelnemer.",
+      "status_pending": "In afwachting",
+      "status_accepted": "Geaccepteerd",
+      "status_expired": "Verlopen",
+      "expires": "verloopt {{date}}"
+    },
+    "preview": {
+      "title": "Bekijk het portaal als",
+      "hint": "Zie precies wat een deelnemer ziet en probeer de interpreter uit. Geen uitnodiging nodig.",
+      "language": "Taal",
+      "adult": "Volwassene",
+      "parent_guardian": "Ouder",
+      "adolescent": "Adolescent (12-17)",
+      "child": "Kind (8-11)",
+      "banner": "Voorbeeld als {{persona}} - weergave voor medewerkers",
+      "exit": "Voorbeeld sluiten",
+      "demo": "Nog niet gepubliceerd - demo. Toont de laatste versies van de passende ICF.",
+      "noDocs": "Voor dit type deelnemer bestaat nog geen passende ICF.",
+      "staffOnly": "Meld u als medewerker aan bij ICF Studio om het voorbeeld te gebruiken."
+    },
+    "portal": {
+      "brand": "ICF-deelnemersportaal",
+      "setupTitle": "Maak uw deelnemersaccount aan",
+      "name": "Uw naam",
+      "password": "Wachtwoord (minstens 10 tekens)",
+      "language": "Taal",
+      "createAccount": "Account aanmaken",
+      "signInTitle": "Aanmelden voor uw studie",
+      "signInHint": "Uw studieteam moet u eerst uitnodigen voordat u documenten kunt bekijken.",
+      "email": "E-mail",
+      "signIn": "Aanmelden",
+      "signOut": "Afmelden",
+      "staffOnlyLogin": "Dit is het deelnemersportaal. Meld u aan via ICF Studio.",
+      "staffAccount": "Dit account is voor medewerkers van ICF Studio.",
+      "eyebrow": "Toegang voor deelnemers",
+      "yourTrials": "Uw klinische studies",
+      "shared": "Studie-informatie die uw studieteam met u deelt.",
+      "noTrials": "Er is geen actieve studietoegang aan dit account gekoppeld. Neem contact op met uw studieteam.",
+      "trial": "Studie",
+      "docsTitle": "Beschikbare documenten",
+      "noDocs": "Uw studieteam heeft nog geen documenten gepubliceerd.",
+      "version": "Versie {{n}}",
+      "askTitle": "Stel een vraag over de studie",
+      "you": "U",
+      "guide": "Studiegids",
+      "askingAs": "Ik stel de vraag als",
+      "answerIn": "Antwoord in",
+      "adult": "Volwassen deelnemer",
+      "parent_guardian": "Ouder of voogd",
+      "adolescent": "Tiener (12-17)",
+      "child": "Kind (8-11)",
+      "question": "Uw vraag",
+      "questionPh": "Vraag iets over de studie, de bezoeken of wat de documenten zeggen…",
+      "ask": "Vragen",
+      "thinking": "Even denken…",
+      "sources": "Bronnen voor het laatste antwoord",
+      "followup": "Neem contact op met uw studieteam voor persoonlijk of medisch advies.",
+      "publishedVersion": "Gepubliceerde versie {{n}}",
+      "close": "Sluiten"
+    }
+  },
+  "facts": {
+    "title": "Studieprofiel",
+    "filled": "{{filled}} van {{total}} kerngegevens ingevuld",
+    "infer": "Afleiden uit sponsordocumenten",
+    "inferring": "Sponsordocumenten lezen…",
+    "save": "Opslaan",
+    "saved": "Opgeslagen",
+    "override": "Overschrijven",
+    "inherited": "Overgenomen uit algemene standaarden",
+    "revert": "Algemene standaard gebruiken",
+    "src_inferred": "afgeleid",
+    "src_global": "algemeen",
+    "src_manual": "handmatig",
+    "reviewTitle": "Voorgestelde gegevens uit sponsordocumenten",
+    "reviewHint": "Controleer elk voorstel; alleen geaccepteerde worden opgeslagen (als afgeleid gemarkeerd).",
+    "accept": "Accepteren",
+    "reject": "Overslaan",
+    "acceptSelected": "Geaccepteerde opslaan ({{n}})",
+    "none": "Er zijn geen nieuwe gegevens gevonden in de sponsordocumenten.",
+    "current": "Huidig",
+    "noSponsor": "Upload eerst een sponsordocument.",
+    "aiOff": "AI is niet beschikbaar.",
+    "aiFail": "De AI-aanroep mislukte, probeer opnieuw.",
+    "hint": "Hergebruikt bij elke ICF-generatie: ingevulde gegevens worden letterlijk gebruikt, ontbrekende geven een opmerking die hiernaar verwijst.",
+    "group": {
+      "study": "Studie",
+      "site": "Centrum",
+      "contacts": "Contacten",
+      "privacy": "Gegevensbescherming",
+      "ethics": "Ethisch comité",
+      "insurance": "Verzekering"
+    },
+    "settingsTitle": "Algemene standaarden",
+    "settingsLead": "BSPHO-brede gegevens die elk project overneemt en in het studieprofiel kan overschrijven.",
+    "about": "Studieprofiel: gestructureerde project- en centrumgegevens (contacten, verzekeraar, DPO) met algemene BSPHO-standaarden, afgeleid uit sponsordocumenten en gebruikt bij ICF-generatie"
   }
 }

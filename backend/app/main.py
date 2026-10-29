@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from . import auth, convert, db, seed, storage, tasks
 from .routers import (
     editing,
+    facts,
     generate,
     interpreter,
     library,
@@ -16,7 +17,7 @@ from .routers import (
     review,
 )
 
-app = FastAPI(title="ICF Studio API")
+app = FastAPI(title="BLOOM Studio API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
@@ -29,6 +30,9 @@ app.add_middleware(
 def _startup() -> None:
     db.init()
     auth.seed_demo_user()
+    from . import facts as facts_mod
+
+    facts_mod.seed_global_defaults()
 
 
 @app.get("/api/health")
@@ -163,7 +167,8 @@ def _clear_generated() -> dict:
         conn.execute(
             "UPDATE projects SET stage = CASE WHEN EXISTS (SELECT 1 FROM project_docs d"
             " WHERE d.project_id = projects.id AND d.role = 'sponsor') THEN 'drafting'"
-            " ELSE 'intake' END WHERE stage IN ('pi_review', 'ethics_review', 'approved')"
+            " ELSE 'intake' END WHERE stage IN"
+            " ('pi_review', 'ethics_review', 'approved', 'participants')"
             " AND NOT EXISTS (SELECT 1 FROM project_docs d WHERE d.project_id = projects.id"
             " AND d.role = 'icf')"
         )
@@ -191,6 +196,7 @@ for r in (
     review.router,
     generate.router,
     editing.router,
+    facts.router,
     interpreter.router,
     participant.router,
 ):

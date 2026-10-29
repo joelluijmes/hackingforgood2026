@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Navigate, NavLink, Outlet, Route, Routes } from 'react-router-dom';
 import type { Language } from './api';
 import { useAuth } from './components/AuthContext';
+import BloomMark from './components/BloomMark';
 import About from './pages/About';
 import Admin from './pages/Admin';
 import DiffView from './pages/DiffView';
@@ -11,6 +12,7 @@ import Login from './pages/Login';
 import ParticipantPortal from './pages/ParticipantPortal';
 import Project from './pages/Project';
 import Projects from './pages/Projects';
+import Settings from './pages/Settings';
 import Templates from './pages/Templates';
 import VersionViewer from './pages/VersionViewer';
 import Viewer from './pages/Viewer';
@@ -41,9 +43,7 @@ function Shell() {
     <>
       <header className="topbar" ref={header}>
         <NavLink to="/" className="brand">
-          <span className="brand-mark" aria-hidden="true">
-            §
-          </span>
+          <BloomMark size={30} />
           {t('common.appName')}
         </NavLink>
         <nav>
@@ -54,6 +54,7 @@ function Shell() {
             {t('nav.projects')}
           </NavLink>
           <NavLink to="/templates">{t('nav.templates')}</NavLink>
+          <NavLink to="/settings">{t('nav.settings')}</NavLink>
         </nav>
         <NavLink to="/admin" className="nav-admin">
           {t('nav.admin')}
@@ -89,6 +90,10 @@ export default function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/participant" element={<ParticipantPortal />} />
       <Route
+        path="/participant/preview/:projectId"
+        element={<ParticipantPortal />}
+      />
+      <Route
         path="/participant/invite/:token"
         element={<ParticipantPortal />}
       />
@@ -98,6 +103,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects/:id" element={<Project />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/settings" element={<Settings />} />
         <Route path="/templates" element={<Templates />} />
         <Route path="/templates/:id" element={<Viewer />} />
         <Route path="/versions/:vid" element={<VersionViewer />} />

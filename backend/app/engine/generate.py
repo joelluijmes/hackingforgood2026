@@ -172,7 +172,13 @@ def _context(ph: dict) -> str:
 
 
 def _fill_batch(
-    batch: list[dict], sponsor: str, notes: str, language: str, icf_type: str, thinking: int
+    batch: list[dict],
+    sponsor: str,
+    notes: str,
+    language: str,
+    icf_type: str,
+    thinking: int,
+    facts: str = "",
 ):
     items = [
         {
@@ -187,6 +193,7 @@ def _fill_batch(
         f"Target language: {LANG_NAMES.get(language, 'English')} - write every replacement in this "
         "language even if the sponsor documents are in another language. Audience: "
         f"{ICF_AUDIENCE.get(icf_type, 'adult participants')}.\n\n"
+        f"{facts + chr(10) * 2 if facts else ''}"
         f"SPONSOR DOCUMENTS:\n{sponsor}\n\nRESEARCHER NOTES:\n{notes or '(none)'}\n\n"
         "PLACEHOLDERS (JSON). In each 'context' the placeholder to replace is wrapped in << >>. "
         "Your answer replaces exactly the wrapped text.\n"
@@ -254,9 +261,11 @@ def generate_icf(
     progress: Callable[[str, int, int], None] | None = None,
     thinking_budget: int = 1024,
     facts: str = "",
+    missing_hint: Callable[[str], str] | None = None,
 ) -> dict:
+    sec_notes = notes
     if facts and facts.strip():  # authoritative known facts (site, contacts, insurer...)
-        notes = (
+        sec_notes = (
             "KNOWN FACTS (authoritative; use verbatim for site, contact, insurance and similar "
             "details; do not flag these as missing):\n" + facts.strip() + "\n\n" + (notes or "")
         )
@@ -283,7 +292,7 @@ def generate_icf(
             doc,
             units,
             sponsor_text=sponsor_text or "",
-            notes=notes,
+            notes=sec_notes,
             language=language,
             icf_type=icf_type,
             report=report,
@@ -293,6 +302,7 @@ def generate_icf(
     if sec is None:
         report("reading", 1, 1)
     answers: dict[str, str] = {}
+    missing_keys: dict[str, str] = {}  # placeholder id -> study-profile fact key (MISSING:<key>)
     ai_used = bool(sec and sec["ai_used"])
     # legacy placeholder-by-placeholder filling: whole pipeline in "placeholders" mode, and as the
     # fallback when the section pipeline produced nothing (e.g. only a weak model is reachable)
@@ -305,7 +315,9 @@ def generate_icf(
             max_workers=max(1, len(batches))
         )  # ai._slots caps in-flight calls
         futs = {
-            pool.submit(_fill_batch, b, sponsor, notes, language, icf_type, thinking_budget): b
+            pool.submit(
+                _fill_batch, b, sponsor, notes, language, icf_type, thinking_budget, facts
+            ): b
             for b in batches
         }
         report("filling", 0, len(batches))
@@ -333,6 +345,8 @@ def generate_icf(
                 ans = _valid(data.get(ph["id"]))
                 if ans:
                     answers[ph["id"]] = ans
+                elif isinstance(data.get(ph["id"]), str) and ":" in data[ph["id"]]:
+                    missing_keys[ph["id"]] = data[ph["id"]].split(":", 1)[1].strip()
 
     filled = sec["filled"] if sec else 0
     flagged = 0
@@ -371,7 +385,12 @@ def generate_icf(
             shown = ph["text"] if len(ph["text"]) <= 200 else ph["text"][:200] + "..."
             doc.add_comment(
                 runs,
-                text=f"Missing: {shown} - please add this information",
+                text=f"Missing: {shown} - please add this information"
+                + (
+                    " in the study profile" + missing_hint(missing_keys[ph["id"]])
+                    if missing_hint and ph["id"] in missing_keys
+                    else ""
+                ),
                 author=AUTHOR,
                 initials="ICF",
             )

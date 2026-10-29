@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Navigate } from 'react-router-dom';
 import { api } from '../api';
 import { useAuth } from '../components/AuthContext';
+import BloomMark from '../components/BloomMark';
 import { errMsg } from '../components/Dialog';
 import LangSwitcher from '../components/LangSwitcher';
 
@@ -33,9 +34,7 @@ export default function Login() {
     <div className="login">
       <form className="panel login-card" onSubmit={submit}>
         <div className="brand">
-          <span className="brand-mark" aria-hidden="true">
-            §
-          </span>
+          <BloomMark size={30} />
           {t('common.appName')}
           <span className="login-lang">
             <LangSwitcher />

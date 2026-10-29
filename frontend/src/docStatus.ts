@@ -21,8 +21,10 @@ export function docStatus(
 ): DocStatus {
   const reviewed = d.source === 'reviewed' || !!d.approved;
   const translated = !!d.language && d.language !== 'en';
-  if (stage === 'approved') return { key: 'final', tone: 'ok' };
+  if (stage === 'approved' || stage === 'participants')
+    return { key: 'final', tone: 'ok' };
   if (stage === 'ethics_review') {
+    if (d.approved) return { key: 'approvedAsIs', tone: 'ok' };
     if (translated)
       return d.source === 'reviewed'
         ? { key: 'ethicsFeedback', tone: 'warn' }

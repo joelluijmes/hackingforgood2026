@@ -65,9 +65,16 @@ def _latest_template(conn, language: str):
 
 
 def _fill_template(
-    tpl, *, sponsor_text, notes, language, icf_type, progress, thinking_budget=1024
+    tpl, *, sponsor_text, notes, language, icf_type, progress, thinking_budget=1024, pid=None
 ) -> tuple[bytes, dict]:
+    from .. import facts as facts_mod
     from ..engine import generate as engine_generate
+
+    facts_text = ""
+    if pid is not None:
+        with db.connect() as conn:
+            facts_text = facts_mod.facts_prompt(conn, pid)
+        facts_text = (facts_text + "\n\n" if facts_text else "") + facts_mod.profile_keys_prompt()
 
     with tempfile.TemporaryDirectory() as tmp:
         out = Path(tmp) / "draft.docx"
@@ -82,6 +89,8 @@ def _fill_template(
                     icf_type=icf_type,
                     progress=progress,
                     thinking_budget=thinking_budget,
+                    facts=facts_text,
+                    missing_hint=facts_mod.missing_hint,
                 )
             return out.read_bytes(), report
         except FileNotFoundError:
@@ -150,6 +159,7 @@ def generate(pid: int, body: GenerateIn, user: User) -> dict:
                 language=body.language,
                 icf_type=body.icf_type,
                 progress=report,
+                pid=pid,
             )
             title = (body.title or "").strip() or f"ICF {body.icf_type} ({body.language.upper()})"
             doc = services.create_doc_with_version(
@@ -231,6 +241,7 @@ def translate(doc_id: int, body: TranslateIn, user: User) -> dict:
                     icf_type=src["icf_type"] or "adult",
                     progress=reporters[i],
                     thinking_budget=0,  # mechanical translation: no reasoning needed
+                    pid=src["project_id"],
                 )
 
             # target languages are independent: fill them concurrently (ai._slots caps Vertex calls)
@@ -321,6 +332,7 @@ def update_to_latest_template(doc_id: int, body: UpdateIn, user: User) -> dict:
                 icf_type=src["icf_type"] or "adult",
                 progress=report,
                 thinking_budget=0,
+                pid=src["project_id"],
             )
             vid_note = f"Updated to template v{tpl['version'] or '?'} from v{ver['number']}"
             services.add_version(

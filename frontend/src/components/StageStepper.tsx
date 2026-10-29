@@ -7,6 +7,7 @@ export const STAGES: Stage[] = [
   'pi_review',
   'ethics_review',
   'approved',
+  'participants',
 ];
 
 /** Horizontal wizard header; completed stages are clickable to go back. */

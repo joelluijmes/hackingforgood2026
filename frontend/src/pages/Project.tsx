@@ -25,12 +25,12 @@ import DocCard from '../components/DocCard';
 import GenerateDialog from '../components/GenerateDialog';
 import IcfMatrix, { isReviewed } from '../components/IcfMatrix';
 import NextStepPanel from '../components/NextStepPanel';
-import ParticipantAdminPanel from '../components/ParticipantAdminPanel';
 import {
   NewVersionDialog,
   UploadDocDialog,
 } from '../components/ProjectDialogs';
 import StageStepper from '../components/StageStepper';
+import StudyProfile from '../components/StudyProfile';
 import TaskBanner, { type TaskMeta } from '../components/TaskBanner';
 
 const GROUPS: Role[] = ['sponsor', 'icf', 'other'];
@@ -265,7 +265,9 @@ export default function Project() {
   // NL/FR only after PI review (or when such ICFs already exist, e.g. uploaded)
   const showTranslations =
     !!progress &&
-    (['pi_review', 'ethics_review', 'approved'].includes(progress.stage) ||
+    (['pi_review', 'ethics_review', 'approved', 'participants'].includes(
+      progress.stage,
+    ) ||
       progress.matrix.some((r) => r.languages.nl || r.languages.fr));
 
   const done = () => {
@@ -336,22 +338,17 @@ export default function Project() {
         onError={setError}
       />
 
+      <StudyProfile
+        projectId={projectId}
+        hasSponsorDocs={docs.some((d) => d.role === 'sponsor')}
+        onProjectChanged={load}
+      />
+
       <TaskBanner
         tasks={tasks}
         onFinished={load}
         onDismiss={(id) => saveTasks(tasks.filter((x) => x.id !== id))}
       />
-
-      {project.stage === 'approved' && (
-        <Section
-          title={t('project.groups.participant')}
-          count={0}
-          open={open.participant ?? true}
-          onToggle={(o) => setOpen((x) => ({ ...x, participant: o }))}
-        >
-          <ParticipantAdminPanel projectId={projectId} docs={docs} approved />
-        </Section>
-      )}
 
       <Section
         title={showTranslations ? t('matrix.title') : t('matrix.draftsTitle')}

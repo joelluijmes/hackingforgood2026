@@ -1,6 +1,6 @@
 """Pure stage-gate logic: which requirements must hold to leave each project stage."""
 
-STAGES = ["intake", "drafting", "pi_review", "ethics_review", "approved"]
+STAGES = ["intake", "drafting", "pi_review", "ethics_review", "approved", "participants"]
 TYPES = ["adult", "parent", "adolescent", "child"]
 LANGS = ["en", "nl", "fr"]
 
@@ -57,7 +57,7 @@ def _requirements(stage: str, docs: list[dict]) -> list[dict]:
             ),
         ]
     if stage == "ethics_review":
-        reviewed = any(_reviewed(d) for d in translated)
+        reviewed = bool(translated) and all(_reviewed(d) for d in translated)
         n = _open_comments(translated)
         return [_req("ethics_reviewed", reviewed and n == 0, True, str(n))]
     return []

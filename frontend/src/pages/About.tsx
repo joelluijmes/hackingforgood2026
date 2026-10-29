@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import '../about.css';
 
@@ -74,6 +73,11 @@ const INVENTORY: { group: string; items: [string, Status, string?][] }[] = [
         'blue placeholders filled, red guidance removed, purple text kept',
       ],
       ['Creation always in English; NL/FR only after PI review', 'done'],
+      [
+        'Study profile: project and site facts with global BSPHO defaults',
+        'done',
+        'contacts, insurer, DPO; inferred from sponsor docs; fed into generation',
+      ],
       [
         'Mixed translation into NL/FR templates',
         'done',
@@ -201,7 +205,6 @@ const LABEL: Record<Status, string> = {
 };
 
 export default function About() {
-  const { t } = useTranslation();
   const all = INVENTORY.flatMap((g) => g.items);
   const count = (s: Status) => all.filter((i) => i[1] === s).length;
 
@@ -209,7 +212,7 @@ export default function About() {
     <div className="page home about">
       <section className="hero">
         <p className="eyebrow">Guide and inventory</p>
-        <h1>What is inside {t('common.appName')}</h1>
+        <h1>What is inside BLOOM Studio</h1>
         <p className="lead">
           Turns sponsor documents into Belgian-compliant informed consent forms
           for paediatric haemato-oncology trials. Four ICF types, three

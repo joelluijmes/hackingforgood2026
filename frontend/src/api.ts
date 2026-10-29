@@ -9,7 +9,8 @@ export type Stage =
   | 'drafting'
   | 'pi_review'
   | 'ethics_review'
-  | 'approved';
+  | 'approved'
+  | 'participants';
 export type Role = 'sponsor' | 'icf' | 'other';
 export type IcfType = Audience;
 export type VersionSource =
@@ -28,11 +29,74 @@ export interface User {
   role: 'staff' | 'participant';
 }
 
+// --- Study profile (docs/api-contract.md "Study profile") ---
+export interface FactDef {
+  key: string;
+  label: string;
+  group: 'study' | 'site' | 'contacts' | 'privacy' | 'ethics' | 'insurance';
+  kind: 'text' | 'phone' | 'email' | 'multiline';
+  scope: 'global' | 'project' | 'both';
+  hint: string;
+}
+export type FactSource = 'manual' | 'inferred' | 'global' | '';
+export interface ProjectFacts {
+  schema: FactDef[];
+  facts: Record<string, { value: string; source: FactSource }>;
+  globals: Record<string, string>;
+  key_facts: string[];
+  filled: number;
+  total: number;
+}
+export interface GlobalFacts {
+  schema: FactDef[];
+  values: Record<string, string>;
+}
+export interface FactSuggestion {
+  key: string;
+  value: string;
+  current: string;
+  current_source: FactSource;
+}
+
 export interface ParticipantPortalSettings {
   enabled: boolean;
   contact: string;
   urgent_guidance: string;
   publications: { doc_id: number; version_id: number; number: number }[];
+}
+export type ParticipantPersona =
+  | 'adult'
+  | 'parent_guardian'
+  | 'adolescent'
+  | 'child';
+export interface ParticipantAskBody {
+  question: string;
+  persona: ParticipantPersona;
+  language: Language;
+  history: { role: 'user' | 'assistant'; text: string }[];
+}
+export interface ParticipantReply {
+  explanation: string;
+  source_references: {
+    doc_id: number;
+    title: string;
+    version_id: number;
+    section_id: string;
+    heading: string;
+  }[];
+  unanswered_questions: string[];
+  requires_human_followup: boolean;
+}
+export interface ParticipantInvitation {
+  email: string;
+  expires_at: string;
+  status: 'pending' | 'accepted' | 'expired';
+}
+/** Staff preview: `demo` is true when nothing is published and the latest ICF versions are shown. */
+export interface PortalPreview {
+  trial: { id: number; name: string; study: string };
+  demo: boolean;
+  documents: ParticipantDocument[];
 }
 export interface ParticipantDocument {
   id: number;
@@ -620,27 +684,37 @@ export const api = {
     req<ParticipantDocumentContent>(
       `/participant/trials/${projectId}/documents/${docId}`,
     ),
-  participantAsk: (
+  participantAsk: (projectId: number, b: ParticipantAskBody) =>
+    req<ParticipantReply>(
+      `/participant/trials/${projectId}/ask`,
+      json('POST', b),
+    ),
+  participantInvitations: (projectId: number) =>
+    req<ParticipantInvitation[]>(
+      `/projects/${projectId}/participant-invitations`,
+    ),
+  portalPreviewDocuments: (
     projectId: number,
-    b: {
-      question: string;
-      persona: 'adult' | 'parent_guardian' | 'adolescent' | 'child';
-      language: Language;
-      history: { role: 'user' | 'assistant'; text: string }[];
-    },
+    persona: ParticipantPersona,
+    lang: Language,
   ) =>
-    req<{
-      explanation: string;
-      source_references: {
-        doc_id: number;
-        title: string;
-        version_id: number;
-        section_id: string;
-        heading: string;
-      }[];
-      unanswered_questions: string[];
-      requires_human_followup: boolean;
-    }>(`/participant/trials/${projectId}/ask`, json('POST', b)),
+    req<PortalPreview>(
+      `/projects/${projectId}/portal-preview/documents?persona=${persona}&lang=${lang}`,
+    ),
+  portalPreviewDocument: (
+    projectId: number,
+    docId: number,
+    persona: ParticipantPersona,
+    lang: Language,
+  ) =>
+    req<ParticipantDocumentContent>(
+      `/projects/${projectId}/portal-preview/documents/${docId}?persona=${persona}&lang=${lang}`,
+    ),
+  portalPreviewAsk: (projectId: number, b: ParticipantAskBody) =>
+    req<ParticipantReply>(
+      `/projects/${projectId}/portal-preview/ask`,
+      json('POST', b),
+    ),
 
   // template library
   listDocuments: (kind?: Kind) =>
@@ -683,6 +757,25 @@ export const api = {
   deleteProject: (id: number) =>
     req<void>(`/projects/${id}`, { method: 'DELETE' }),
 
+  // study profile (project facts + global defaults)
+  getGlobalFacts: () => req<GlobalFacts>('/global-facts'),
+  putGlobalFacts: (values: Record<string, string | null>) =>
+    req<GlobalFacts>('/global-facts', json('PUT', { values })),
+  getProjectFacts: (pid: number) => req<ProjectFacts>(`/projects/${pid}/facts`),
+  putProjectFacts: (
+    pid: number,
+    values: Record<string, string | null>,
+    source: 'manual' | 'inferred' = 'manual',
+  ) =>
+    req<ProjectFacts>(
+      `/projects/${pid}/facts`,
+      json('PUT', { values, source }),
+    ),
+  inferProjectFacts: (pid: number) =>
+    req<{ suggestions: FactSuggestion[] }>(`/projects/${pid}/facts/infer`, {
+      method: 'POST',
+    }),
+
   // project documents + versions
   listProjectDocs: (projectId: number) =>
     req<ProjectDoc[]>(`/projects/${projectId}/documents`),
@@ -719,7 +812,8 @@ export const api = {
       body: form(file, { note: meta.note, source: meta.source }),
     }),
   getVersion: (vid: number) => req<VersionDetail>(`/versions/${vid}`),
-  projectExportUrl: (pid: number) => withToken(`/api/projects/${pid}/export`),
+  projectExportUrl: (pid: number, lang?: Language) =>
+    withToken(`/api/projects/${pid}/export${lang ? `?lang=${lang}` : ''}`),
   versionFileUrl: (vid: number) => withToken(`/api/versions/${vid}/file`),
   getVersionHtml: (vid: number) => req<VersionHtml>(`/versions/${vid}/html`),
 

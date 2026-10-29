@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "ICF Studio",
+    "appName": "BLOOM Studio",
     "loading": "Chargement…",
     "working": "En cours…",
     "pleaseWait": "Veuillez patienter…",
@@ -58,7 +58,8 @@
     "projects": "Projets",
     "templates": "Modèles",
     "language": "Votre langue",
-    "admin": "Admin"
+    "admin": "Admin",
+    "settings": "Valeurs par défaut"
   },
   "projects": {
     "title": "Projets",
@@ -151,6 +152,10 @@
     "approved": {
       "label": "Approuvé",
       "hint": "Version finale"
+    },
+    "participants": {
+      "label": "Portail participants",
+      "hint": "Partager avec les participants"
     }
   },
   "roles": {
@@ -597,7 +602,7 @@
     },
     "approved": {
       "what": "Version finale",
-      "status": "Terminé. Le dossier ICF est approuvé."
+      "status": "Le dossier ICF est approuvé. Vous pouvez ensuite le partager avec les participants."
     },
     "act": {
       "upload": "Téléverser les documents du promoteur",
@@ -611,7 +616,14 @@
       "openDownload": "Tout télécharger (zip)",
       "openForReview": "Ouvrir pour relecture",
       "more": "Plus d'actions",
-      "download": "Télécharger"
+      "download": "Télécharger",
+      "approveAll": "Tout approuver ({{count}})",
+      "withdrawApproval": "Retirer l'approbation",
+      "downloadLang": "Télécharger {{lang}}"
+    },
+    "participants": {
+      "what": "Partager avec les participants",
+      "status": "Facultatif : publiez les ICF approuvés sur le portail participants et invitez les participants."
     }
   },
   "docStatus": {
@@ -654,5 +666,134 @@
     "savedDecisions": "Décisions de revue enregistrées.",
     "nextStep": "Ensuite : retour au projet, comparer ou continuer la revue.",
     "continue": "Continuer la revue"
+  },
+  "pp": {
+    "admin": {
+      "title": "Portail des participants",
+      "intro": "Les participants invités ne peuvent lire que les versions de documents que vous publiez ici.",
+      "needApproval": "Approuvez l'essai avant de publier des documents pour les participants.",
+      "settings": "Paramètres du portail",
+      "enable": "Activer la connexion des participants pour cet essai",
+      "enableHint": "Nécessite un contact et des instructions d'aide urgente.",
+      "contact": "Contact de l'équipe de l'essai",
+      "contactPh": "E-mail ou numéro de téléphone",
+      "urgent": "Instructions d'aide urgente",
+      "urgentPh": "Indiquez aux participants que faire en cas d'urgence",
+      "save": "Enregistrer les paramètres",
+      "saved": "Enregistré",
+      "docsTitle": "Versions de documents publiées",
+      "docsHint": "Choisissez la version de chaque document que voient les participants.",
+      "noDocs": "Aucun document ICF dans ce projet pour l'instant.",
+      "colDoc": "Document",
+      "colVersion": "Version publiée",
+      "colAction": "Action",
+      "notPublished": "Non publié",
+      "version": "Version {{n}}",
+      "publish": "Publier",
+      "unpublish": "Retirer",
+      "publishedBadge": "Publié",
+      "invitesTitle": "Invitations",
+      "invitesHint": "Créez un lien privé (valable 7 jours) pour un participant ou une famille.",
+      "email": "E-mail du participant",
+      "send": "Envoyer l'invitation",
+      "noInvites": "Aucune invitation pour l'instant.",
+      "copy": "Copier le lien",
+      "copied": "Copié",
+      "newLink": "Lien privé pour {{email}}. Ne le partagez qu'avec ce participant.",
+      "status_pending": "En attente",
+      "status_accepted": "Acceptée",
+      "status_expired": "Expirée",
+      "expires": "expire le {{date}}"
+    },
+    "preview": {
+      "title": "Prévisualiser le portail en tant que",
+      "hint": "Voyez exactement ce que voit un participant et testez l'interprète. Aucune invitation nécessaire.",
+      "language": "Langue",
+      "adult": "Adulte",
+      "parent_guardian": "Parent",
+      "adolescent": "Adolescent (12-17)",
+      "child": "Enfant (8-11)",
+      "banner": "Aperçu en tant que participant {{persona}} - vue du personnel",
+      "exit": "Quitter l'aperçu",
+      "demo": "Pas encore publié - démo. Affiche les dernières versions de l'ICF correspondant.",
+      "noDocs": "Aucun ICF correspondant n'existe pour ce type de participant.",
+      "staffOnly": "Connectez-vous à ICF Studio en tant que membre du personnel pour utiliser l'aperçu."
+    },
+    "portal": {
+      "brand": "Portail participants ICF",
+      "setupTitle": "Créez votre compte participant",
+      "name": "Votre nom",
+      "password": "Mot de passe (au moins 10 caractères)",
+      "language": "Langue",
+      "createAccount": "Créer le compte",
+      "signInTitle": "Connexion à votre essai",
+      "signInHint": "Votre équipe doit vous inviter avant que vous puissiez accéder aux documents.",
+      "email": "E-mail",
+      "signIn": "Se connecter",
+      "signOut": "Se déconnecter",
+      "staffOnlyLogin": "Ceci est le portail des participants. Connectez-vous via ICF Studio.",
+      "staffAccount": "Ce compte est réservé au personnel d'ICF Studio.",
+      "eyebrow": "Accès participant",
+      "yourTrials": "Vos essais cliniques",
+      "shared": "Informations sur l'essai partagées par votre équipe.",
+      "noTrials": "Aucun accès actif à un essai n'est lié à ce compte. Contactez votre équipe.",
+      "trial": "Essai",
+      "docsTitle": "Documents disponibles",
+      "noDocs": "Votre équipe n'a pas encore publié de documents.",
+      "version": "Version {{n}}",
+      "askTitle": "Posez une question sur l'essai",
+      "you": "Vous",
+      "guide": "Guide de l'étude",
+      "askingAs": "Je pose la question en tant que",
+      "answerIn": "Répondre en",
+      "adult": "Participant adulte",
+      "parent_guardian": "Parent ou tuteur",
+      "adolescent": "Adolescent (12-17)",
+      "child": "Enfant (8-11)",
+      "question": "Votre question",
+      "questionPh": "Posez une question sur l'étude, les visites ou ce que disent les documents…",
+      "ask": "Demander",
+      "thinking": "Je réfléchis…",
+      "sources": "Sources de la dernière réponse",
+      "followup": "Contactez votre équipe pour un avis personnel ou médical.",
+      "publishedVersion": "Version publiée {{n}}",
+      "close": "Fermer"
+    }
+  },
+  "facts": {
+    "title": "Profil de l'étude",
+    "filled": "{{filled}} données clés sur {{total}} renseignées",
+    "infer": "Déduire des documents du promoteur",
+    "inferring": "Lecture des documents du promoteur…",
+    "save": "Enregistrer",
+    "saved": "Enregistré",
+    "override": "Remplacer",
+    "inherited": "Hérité des valeurs par défaut globales",
+    "revert": "Utiliser la valeur globale",
+    "src_inferred": "déduit",
+    "src_global": "global",
+    "src_manual": "manuel",
+    "reviewTitle": "Données suggérées depuis les documents du promoteur",
+    "reviewHint": "Vérifiez chaque suggestion; seules celles acceptées sont enregistrées (marquées comme déduites).",
+    "accept": "Accepter",
+    "reject": "Ignorer",
+    "acceptSelected": "Enregistrer les acceptées ({{n}})",
+    "none": "Aucune nouvelle donnée trouvée dans les documents du promoteur.",
+    "current": "Actuel",
+    "noSponsor": "Téléversez d'abord un document du promoteur.",
+    "aiOff": "L'IA n'est pas disponible.",
+    "aiFail": "L'appel à l'IA a échoué, réessayez.",
+    "hint": "Réutilisé à chaque génération d'ICF: les données renseignées sont utilisées telles quelles, les manquantes génèrent un commentaire renvoyant ici.",
+    "group": {
+      "study": "Étude",
+      "site": "Site",
+      "contacts": "Contacts",
+      "privacy": "Protection des données",
+      "ethics": "Comité d'éthique",
+      "insurance": "Assurance"
+    },
+    "settingsTitle": "Valeurs par défaut",
+    "settingsLead": "Données communes à toute la BSPHO que chaque projet hérite et peut remplacer dans son profil d'étude.",
+    "about": "Profil de l'étude: données structurées du projet et du site (contacts, assureur, DPO) avec valeurs BSPHO par défaut, déduites des documents du promoteur et utilisées pour la génération des ICF"
   }
 }

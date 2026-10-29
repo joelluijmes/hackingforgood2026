@@ -1,5 +1,5 @@
-import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import BloomMark from '../components/BloomMark';
 import '../landing.css';
 
 const STEPS = [
@@ -18,18 +18,19 @@ const STEPS = [
 ];
 
 export default function Home() {
-  const { t } = useTranslation();
   return (
     <div className="landing">
       <section className="landing-hero">
-        <p className="eyebrow">BSPHO × Hacking for Good</p>
+        <BloomMark size={84} />
+        <p className="wordmark">BLOOM</p>
+        <p className="expansion">Studio · BSPHO's Light Online cOnsent Maker</p>
         <h1>
           Consent forms that children, parents and ethics committees can trust.
         </h1>
         <p className="lead">
-          {t('common.appName')} turns sponsor documents into Belgian-compliant
-          informed consent forms, so research teams spend their time on
-          children, not on paperwork.
+          BLOOM Studio turns sponsor documents into Belgian-compliant informed
+          consent forms, so research teams spend their time on children, not on
+          paperwork.
         </p>
         <div className="row center">
           <Link to="/projects" className="btn primary big">
