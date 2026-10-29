@@ -277,7 +277,7 @@ export default function Project() {
     return (
       <div className="page">
         <p className="error">{error}</p>
-        <Link to="/">{t('common.backToProjects')}</Link>
+        <Link to="/projects">{t('common.backToProjects')}</Link>
       </div>
     );
   }
@@ -288,7 +288,7 @@ export default function Project() {
     <div className="page">
       <div className="page-head">
         <div>
-          <Link to="/" className="muted">
+          <Link to="/projects" className="muted">
             {t('project.backToProjects')}
           </Link>
           <h1>{project.name}</h1>

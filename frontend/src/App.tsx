@@ -4,6 +4,7 @@ import type { Language } from './api';
 import { useAuth } from './components/AuthContext';
 import Admin from './pages/Admin';
 import DiffView from './pages/DiffView';
+import Home from './pages/Home';
 import Login from './pages/Login';
 import Project from './pages/Project';
 import Projects from './pages/Projects';
@@ -27,6 +28,9 @@ function Shell() {
         </NavLink>
         <nav>
           <NavLink to="/" end>
+            {t('nav.home')}
+          </NavLink>
+          <NavLink to="/projects" end>
             {t('nav.projects')}
           </NavLink>
           <NavLink to="/templates">{t('nav.templates')}</NavLink>
@@ -64,7 +68,8 @@ export default function App() {
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route element={<Shell />}>
-        <Route path="/" element={<Projects />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<Project />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/templates" element={<Templates />} />

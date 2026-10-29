@@ -197,7 +197,7 @@ export default function VersionViewer() {
     return (
       <div className="page">
         <p className="error">{error}</p>
-        <Link to="/">{t('common.backToProjects')}</Link>
+        <Link to="/projects">{t('common.backToProjects')}</Link>
       </div>
     );
   }
