@@ -58,6 +58,15 @@ The template library keeps the Belgian EN/NL/FR national templates with versions
 
 Open items: adolescent and child ICFs still use the adult template (HIRUZ templates not available), illustrations for child ICFs, frontend deployment, quality evaluation of AI-filled text against the approved ICFs (`scripts/eval_icf/`).
 
+## Team
+
+Built by the team at Hacking for Good for BSPHO:
+
+- [Joël Luijmes](https://github.com/joelluijmes) (joelluijmes)
+- [Andrews John Samuel](https://github.com/andrewsjohnsamuel) (andrewsjohnsamuel)
+- [mariariatom](https://github.com/mariariatom)
+- [mohammadtahaisapoor](https://github.com/mohammadtahaisapoor)
+
 ---
 
 # Background: the assignment
