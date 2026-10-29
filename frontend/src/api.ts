@@ -290,6 +290,15 @@ export interface PropagationTarget {
   edits: EditProposal[];
 }
 
+export interface PendingChange {
+  id: number;
+  instruction: string;
+  edit_count: number;
+  result_version_id: number;
+  created_by: string;
+  created_at: string;
+}
+
 export interface PropagationResult {
   version_id: number;
   version?: Version;
@@ -605,6 +614,23 @@ export const api = {
       `/changes/${changeId}/propagate/apply`,
       json('POST', { targets }),
     ),
+  propagatePreviewBatch: (changeIds: number[]) =>
+    req<PropagationTarget[]>(
+      '/changes/propagate/preview',
+      json('POST', { change_ids: changeIds }),
+    ),
+  propagateApplyBatch: (
+    changeIds: number[],
+    targets: { version_id: number; edits: EditProposal[] }[],
+  ) =>
+    req<PropagationResult[]>(
+      '/changes/propagate/apply',
+      json('POST', { change_ids: changeIds, targets }),
+    ),
+  pendingChanges: (vid: number) =>
+    req<PendingChange[]>(`/versions/${vid}/changes`),
+  dismissChange: (changeId: number) =>
+    req<{ ok: boolean }>(`/changes/${changeId}/dismiss`, { method: 'POST' }),
   ecResponseUrl: (vid: number, lang?: Lang) =>
     withToken(
       `/api/versions/${vid}/ec-response/file${lang ? `?lang=${lang}` : ''}`,

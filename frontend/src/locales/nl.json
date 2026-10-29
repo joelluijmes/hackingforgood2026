@@ -407,7 +407,16 @@
     "editText": "Tekst bewerken",
     "showChanges": "Wijzigingen tonen",
     "paragraph": "Alinea",
-    "mandatory": "Wijzigt verplichte sjabloontekst ({{score}}% overeenkomst met het nationale sjabloon). Motiveer deze afwijking voor het Ethisch Comité."
+    "mandatory": "Wijzigt verplichte sjabloontekst ({{score}}% overeenkomst met het nationale sjabloon). Motiveer deze afwijking voor het Ethisch Comité.",
+    "pendingTitle_one": "{{count}} toegepaste wijziging nog niet overgenomen in de andere formulieren",
+    "pendingTitle_other": "{{count}} toegepaste wijzigingen nog niet overgenomen in de andere formulieren",
+    "selectAll": "Alles selecteren",
+    "noInstruction": "(wijziging)",
+    "editCount_one": "{{count}} aanpassing",
+    "editCount_other": "{{count}} aanpassingen",
+    "propagateSel_one": "{{count}} wijziging doorvoeren",
+    "propagateSel_other": "{{count}} wijzigingen samen doorvoeren",
+    "skipPropagation": "Overslaan"
   },
   "propagate": {
     "title": "Deze wijziging toepassen op de andere formulieren",

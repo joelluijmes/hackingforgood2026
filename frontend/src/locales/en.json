@@ -407,7 +407,16 @@
     "editText": "Edit text",
     "showChanges": "Show changes",
     "paragraph": "Paragraph",
-    "mandatory": "Changes mandatory template wording ({{score}}% match with the national template). Justify this deviation for the Ethics Committee."
+    "mandatory": "Changes mandatory template wording ({{score}}% match with the national template). Justify this deviation for the Ethics Committee.",
+    "pendingTitle_one": "{{count}} applied edit not yet carried over to the other forms",
+    "pendingTitle_other": "{{count}} applied edits not yet carried over to the other forms",
+    "selectAll": "Select all",
+    "noInstruction": "(edit)",
+    "editCount_one": "{{count}} change",
+    "editCount_other": "{{count}} changes",
+    "propagateSel_one": "Propagate {{count}} edit",
+    "propagateSel_other": "Propagate {{count}} edits together",
+    "skipPropagation": "Skip"
   },
   "propagate": {
     "title": "Apply this change to the other forms",

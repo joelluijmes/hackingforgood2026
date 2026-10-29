@@ -126,6 +126,9 @@ def init() -> None:
         pcols = {r["name"] for r in conn.execute("PRAGMA table_info(project_docs)")}
         if "source_doc_id" not in pcols:
             conn.execute("ALTER TABLE project_docs ADD COLUMN source_doc_id INTEGER")
+        ccols = {r["name"] for r in conn.execute("PRAGMA table_info(changes)")}
+        if "propagated_at" not in ccols:
+            conn.execute("ALTER TABLE changes ADD COLUMN propagated_at TEXT")
         for table in ("documents", "versions"):  # additive migration
             cols = {r["name"] for r in conn.execute(f"PRAGMA table_info({table})")}
             if "checksum_sha256" not in cols:
