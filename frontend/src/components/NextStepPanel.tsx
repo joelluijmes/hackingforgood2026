@@ -332,7 +332,10 @@ export default function NextStepPanel({
                     </td>
                     <td className="sc-doc-actions">
                       {v && (
-                        <Link className="btn sm" to={`/versions/${v.id}`}>
+                        <Link
+                          className="btn sm outline"
+                          to={`/versions/${v.id}`}
+                        >
                           {t('next.act.openForReview')}
                         </Link>
                       )}

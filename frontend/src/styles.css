@@ -1506,7 +1506,7 @@ details.section > .stack {
   padding: 0;
   margin-bottom: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
 }
 .sc-block {
   padding: 24px;
@@ -1719,10 +1719,10 @@ table.sc-docs {
   table-layout: fixed;
 }
 table.sc-docs col.c-chip {
-  width: 170px;
+  width: 150px;
 }
 table.sc-docs col.c-act {
-  width: 230px;
+  width: 190px;
 }
 table.sc-docs .sc-doc-title {
   white-space: normal;
@@ -1748,4 +1748,12 @@ table.sc-docs td {
 }
 .btn.sm.ghost {
   background: transparent;
+}
+.btn.sm.outline {
+  background: transparent;
+  border: 1px solid var(--neutral-300);
+  color: var(--neutral-900);
+}
+.btn.sm.outline:hover {
+  background: var(--neutral-100);
 }
