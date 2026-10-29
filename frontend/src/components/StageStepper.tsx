@@ -21,23 +21,23 @@ export default function StageStepper({
 }) {
   const { t } = useTranslation();
   return (
-    <ol className="stepper" aria-label={t('stages.ariaLabel')}>
+    <ol className="wizard" aria-label={t('stages.ariaLabel')}>
       {progress.stages.map((s, i) => {
         const inner = (
           <>
-            <span className="dot">{s.state === 'done' ? '✓' : i + 1}</span>
-            <span className="step-text">
+            <span className="wz-dot">{s.state === 'done' ? '✓' : i + 1}</span>
+            <span className="wz-text">
               <b>{t(`stages.${s.key}.label`)}</b>
               <small>{t(`stages.${s.key}.hint`)}</small>
             </span>
           </>
         );
         return (
-          <li key={s.key} className={`step ${s.state}`}>
+          <li key={s.key} className={`wz ${s.state}`}>
             {s.state === 'done' ? (
               <button
                 type="button"
-                className="step-body clickable"
+                className="wz-body clickable"
                 disabled={disabled}
                 onClick={() => onBack(s.key)}
                 title={t('tracker.goBack')}
@@ -46,7 +46,7 @@ export default function StageStepper({
               </button>
             ) : (
               <div
-                className="step-body"
+                className="wz-body"
                 aria-current={s.state === 'current' ? 'step' : undefined}
               >
                 {inner}
