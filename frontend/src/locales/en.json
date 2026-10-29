@@ -296,7 +296,11 @@
     "showTranslation": "Show translation",
     "showOriginal": "Show original",
     "translationUnavailable": "Translation unavailable",
-    "showGenerated": "Show generated notes ({{count}})",
+    "fillsSummary": "{{count}} passages filled from sponsor documents",
+    "showFills": "Highlight in document",
+    "addComment": "Add comment",
+    "addPlaceholder": "Your comment on this text…",
+    "addSave": "Post comment",
     "fixWithAi": "Fix with AI"
   },
   "generate": {

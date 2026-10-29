@@ -68,6 +68,8 @@ export interface DocHtml {
 
 export interface VersionHtml extends DocHtml {
   comment_ids: string[];
+  /** passages filled quietly from sponsor documents (highlight only, no comment) */
+  fill_count: number;
 }
 
 export interface SeedResult {
@@ -558,6 +560,11 @@ export const api = {
   listComments: (vid: number, lang?: Lang) =>
     req<ReviewComment[]>(
       `/versions/${vid}/comments${lang ? `?lang=${lang}` : ''}`,
+    ),
+  addComment: (vid: number, text: string, anchor_text: string) =>
+    req<ReviewComment>(
+      `/versions/${vid}/comments`,
+      json('POST', { text, anchor_text }),
     ),
   decideComment: (id: number, status: CommentStatus, note?: string) =>
     req<ReviewComment>(

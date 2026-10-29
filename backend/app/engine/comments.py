@@ -100,4 +100,70 @@ def extract_comments(path: str) -> list[dict]:
     return out
 
 
-__all__ = ["extract_comments", "etree"]
+
+
+def _split_run(run, offset: int):
+    """Split a text run at `offset` chars; returns (left, right) runs (left keeps the element)."""
+    import copy
+
+    from docx.text.run import Run
+
+    el = run._r
+    new = copy.deepcopy(el)
+    text = run.text
+    run.text = text[:offset]
+    el.addnext(new)
+    right = Run(new, run._parent)
+    right.text = text[offset:]
+    return run, right
+
+
+def add_user_comment(
+    src: str, dst: str, *, anchor: str, text: str, author: str, initials: str
+) -> tuple[str, str]:
+    """Anchor a new Word comment on `anchor` (first match in one paragraph); save to `dst`.
+
+    Returns (ext_id, matched_text). Raises ValueError when the text cannot be located.
+    """
+    import re
+
+    from docx import Document
+    from docx.text.paragraph import Paragraph
+
+    doc = Document(src)
+    lines = [ln.strip() for ln in re.split(r"[\n\r]+", anchor) if ln.strip()]
+    cands = [" ".join(anchor.split())] + sorted(lines, key=len, reverse=True)
+    for p_el in doc.element.body.iter(q("p")):
+        p = Paragraph(p_el, doc._body)
+        runs = [r for r in p.runs if r.text]
+        full = "".join(r.text for r in runs)
+        for cand in cands:
+            if not cand:
+                continue
+            pat = r"\s+".join(re.escape(w) for w in cand.split())
+            m = re.search(pat, full)
+            if not m:
+                continue
+            start, end = m.span()
+            pos, sel = 0, []
+            for r in runs:
+                n = len(r.text)
+                a, b = max(start - pos, 0), min(end - pos, n)
+                if a < b:
+                    cur = r
+                    if a > 0:
+                        _, cur = _split_run(cur, a)
+                        b -= a
+                    if b < len(cur.text):
+                        cur, _ = _split_run(cur, b)
+                    sel.append(cur)
+                pos += n
+            if not sel:
+                continue
+            c = doc.add_comment(sel, text=text, author=author, initials=initials)
+            doc.save(dst)
+            return str(c.comment_id), m.group(0)
+    raise ValueError("selected text not found in the document")
+
+
+__all__ = ["add_user_comment", "extract_comments", "etree"]
