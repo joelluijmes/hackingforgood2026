@@ -1,3 +1,6 @@
+import io
+import re
+import zipfile
 from typing import Annotated, Literal
 
 from fastapi import APIRouter, Depends, File, Form, HTTPException, Response, UploadFile
@@ -9,7 +12,7 @@ from ..auth import User, current_user
 
 router = APIRouter(prefix="/api", dependencies=[Depends(current_user)], tags=["projects"])
 
-Stage = Literal["intake", "drafting", "pi_review", "translation", "ethics_review", "approved"]
+Stage = Literal["intake", "drafting", "pi_review", "ethics_review", "approved"]
 
 
 class ProjectIn(BaseModel):
@@ -90,6 +93,43 @@ def project_progress(pid: int) -> dict:
     with db.connect() as conn:
         row = _project_row(conn, pid)
         return progress.compute(row["stage"], _progress_docs(conn, pid))
+
+
+@router.get("/projects/{pid}/export")
+def export_project(pid: int) -> Response:
+    """Zip with the latest version of every ICF, named <icf>_<lang>_v<n>.docx."""
+    with db.connect() as conn:
+        row = _project_row(conn, pid)
+        buf = io.BytesIO()
+        used: set[str] = set()
+        with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as zf:
+            for d in conn.execute(
+                "SELECT * FROM project_docs WHERE project_id = ? AND role = 'icf' ORDER BY id",
+                (pid,),
+            ):
+                v = conn.execute(
+                    "SELECT * FROM versions WHERE doc_id = ? ORDER BY number DESC LIMIT 1",
+                    (d["id"],),
+                ).fetchone()
+                if not v:
+                    continue
+                try:
+                    data = storage.get(v["stored_name"])
+                except FileNotFoundError:
+                    continue
+                ext = "." + v["filename"].rsplit(".", 1)[-1] if "." in v["filename"] else ".docx"
+                base = f"{d['icf_type'] or 'adult'}_{d['language'] or 'en'}"
+                name = f"{base}_v{v['number']}{ext}"
+                if name in used:
+                    name = f"{base}_d{d['id']}_v{v['number']}{ext}"
+                used.add(name)
+                zf.writestr(name, data)
+    slug = re.sub(r"[^A-Za-z0-9]+", "_", row["name"]).strip("_") or "project"
+    return Response(
+        buf.getvalue(),
+        media_type="application/zip",
+        headers={"Content-Disposition": f'attachment; filename="{slug}_ICFs.zip"'},
+    )
 
 
 @router.patch("/projects/{pid}")

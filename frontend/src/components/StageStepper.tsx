@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { type ReactNode, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ApiError, api, type ProjectProgress, type Stage } from '../api';
 import Dialog, { errMsg } from './Dialog';
@@ -7,7 +7,6 @@ export const STAGES: Stage[] = [
   'intake',
   'drafting',
   'pi_review',
-  'translation',
   'ethics_review',
   'approved',
 ];
@@ -46,10 +45,13 @@ export default function StageTracker({
   projectId,
   progress,
   onChanged,
+  reqAction,
 }: {
   projectId: number;
   progress: ProjectProgress;
   onChanged: () => void | Promise<void>;
+  /** extra action rendered next to an unmet requirement (e.g. Translate all) */
+  reqAction?: (key: string) => ReactNode;
 }) {
   const { t } = useTranslation();
   const reqLabel = useReqLabel();
@@ -139,6 +141,7 @@ export default function StageTracker({
                       {r.met ? '✓' : r.blocking ? '✗' : 'i'}
                     </span>
                     <span>{reqLabel(r.key, r.detail)}</span>
+                    {!r.met && reqAction?.(r.key)}
                   </li>
                 );
               })}

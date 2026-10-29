@@ -8,7 +8,6 @@ export type Stage =
   | 'intake'
   | 'drafting'
   | 'pi_review'
-  | 'translation'
   | 'ethics_review'
   | 'approved';
 export type Role = 'sponsor' | 'icf' | 'other';
@@ -69,6 +68,8 @@ export interface DocHtml {
 
 export interface VersionHtml extends DocHtml {
   comment_ids: string[];
+  /** passages filled quietly from sponsor documents (highlight only, no comment) */
+  fill_count: number;
 }
 
 export interface SeedResult {
@@ -288,6 +289,15 @@ export interface PropagationTarget {
   status: 'proposed' | 'not_applicable' | 'error';
   reason: string;
   edits: EditProposal[];
+}
+
+export interface PendingChange {
+  id: number;
+  instruction: string;
+  edit_count: number;
+  result_version_id: number;
+  created_by: string;
+  created_at: string;
 }
 
 export interface PropagationResult {
@@ -542,6 +552,7 @@ export const api = {
       body: form(file, { note: meta.note, source: meta.source }),
     }),
   getVersion: (vid: number) => req<VersionDetail>(`/versions/${vid}`),
+  projectExportUrl: (pid: number) => withToken(`/api/projects/${pid}/export`),
   versionFileUrl: (vid: number) => withToken(`/api/versions/${vid}/file`),
   getVersionHtml: (vid: number) => req<VersionHtml>(`/versions/${vid}/html`),
 
@@ -549,6 +560,11 @@ export const api = {
   listComments: (vid: number, lang?: Lang) =>
     req<ReviewComment[]>(
       `/versions/${vid}/comments${lang ? `?lang=${lang}` : ''}`,
+    ),
+  addComment: (vid: number, text: string, anchor_text: string) =>
+    req<ReviewComment>(
+      `/versions/${vid}/comments`,
+      json('POST', { text, anchor_text }),
     ),
   decideComment: (id: number, status: CommentStatus, note?: string) =>
     req<ReviewComment>(
@@ -586,6 +602,12 @@ export const api = {
   task: (id: string) => req<Task>(`/tasks/${id}`),
   progress: (projectId: number) =>
     req<ProjectProgress>(`/projects/${projectId}/progress`),
+  adminReset: (importSamples: boolean) =>
+    req<{
+      reset: boolean;
+      local_files_removed: number;
+      seed: SeedResult | null;
+    }>(`/admin/reset?import_samples=${importSamples}`, { method: 'POST' }),
   adminStatus: () => req<AdminStatus>('/admin/status'),
   aiStatus: () => req<AiStatus>('/ai/status'),
 
@@ -614,6 +636,23 @@ export const api = {
       `/changes/${changeId}/propagate/apply`,
       json('POST', { targets }),
     ),
+  propagatePreviewBatch: (changeIds: number[]) =>
+    req<PropagationTarget[]>(
+      '/changes/propagate/preview',
+      json('POST', { change_ids: changeIds }),
+    ),
+  propagateApplyBatch: (
+    changeIds: number[],
+    targets: { version_id: number; edits: EditProposal[] }[],
+  ) =>
+    req<PropagationResult[]>(
+      '/changes/propagate/apply',
+      json('POST', { change_ids: changeIds, targets }),
+    ),
+  pendingChanges: (vid: number) =>
+    req<PendingChange[]>(`/versions/${vid}/changes`),
+  dismissChange: (changeId: number) =>
+    req<{ ok: boolean }>(`/changes/${changeId}/dismiss`, { method: 'POST' }),
   ecResponseUrl: (vid: number, lang?: Lang) =>
     withToken(
       `/api/versions/${vid}/ec-response/file${lang ? `?lang=${lang}` : ''}`,

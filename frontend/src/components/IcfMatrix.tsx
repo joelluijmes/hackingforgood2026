@@ -105,7 +105,7 @@ export default function IcfMatrix({
                       <td key={l}>
                         <button
                           type="button"
-                          className="btn"
+                          className="btn ghost"
                           onClick={() => onGenerate(row.icf_type)}
                         >
                           {t('matrix.generate')}
@@ -116,7 +116,7 @@ export default function IcfMatrix({
                     <td key={l}>
                       <button
                         type="button"
-                        className="btn"
+                        className="btn ghost"
                         disabled={
                           !en || !ok || busyLangs.has(`${en.doc_id}:${l}`)
                         }

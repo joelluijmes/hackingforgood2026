@@ -91,3 +91,13 @@ def get_task(task_id: str) -> dict | None:
         if t["status"] == "running":
             out["elapsed_s"] = round(time.time() - t["started"], 1)
         return out
+
+
+def running_count() -> int:
+    with _lock:
+        return sum(1 for t in _tasks.values() if t["status"] == "running")
+
+
+def clear() -> None:
+    with _lock:
+        _tasks.clear()

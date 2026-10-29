@@ -106,7 +106,24 @@
     "countDeclined_one": "{{count}} refusé",
     "countDeclined_other": "{{count}} refusés",
     "latestSummary": "v{{n}} · {{source}}",
-    "translatedFrom": "Traduit de {{title}}"
+    "translatedFrom": "Traduit de {{title}}",
+    "next": {
+      "title": "Étape suivante",
+      "intake": "Téléversez les documents du promoteur (protocole, formulaires de consentement) pour cette étude.",
+      "uploadSponsor": "Téléverser les documents du promoteur",
+      "drafting": "Générez le projet d'ICF en anglais à partir des documents du promoteur.",
+      "generateDraft": "Générer le projet d'ICF",
+      "pi": "Ouvrez les projets et envoyez-les au PI. Téléversez la copie relue (avec commentaires) comme nouvelle version, puis statuez sur chaque commentaire. Vous pouvez aussi traduire en NL/FR ici.",
+      "openDraft": "Ouvrir",
+      "ethics": "Envoyez les ICF au comité d'éthique : téléchargez-les tous dans un zip, puis téléversez chaque document relu (avec les commentaires du comité) comme nouvelle version. Vous approuvez ou refusez ensuite chaque commentaire comme d'habitude.",
+      "downloadAll": "Tout télécharger pour le comité d'éthique",
+      "download": "Télécharger",
+      "uploadReviewed": "Téléverser la version relue",
+      "approved": "Toutes les étapes sont terminées. Téléchargez les versions finales de tous les ICF.",
+      "downloadFinal": "Télécharger les ICF finaux (zip)",
+      "latest": "dernière v{{n}}",
+      "noIcfs": "Pas encore de documents ICF."
+    }
   },
   "stages": {
     "ariaLabel": "Étape du projet",
@@ -120,11 +137,7 @@
     },
     "pi_review": {
       "label": "Relecture investigateur",
-      "hint": "Envoyer, téléverser la copie relue"
-    },
-    "translation": {
-      "label": "Traduction",
-      "hint": "Versions NL / FR"
+      "hint": "Relire, traduire, téléverser la copie relue"
     },
     "ethics_review": {
       "label": "Comité d'éthique",
@@ -283,7 +296,11 @@
     "showTranslation": "Afficher la traduction",
     "showOriginal": "Afficher l'original",
     "translationUnavailable": "Traduction indisponible",
-    "showGenerated": "Afficher les notes générées ({{count}})",
+    "fillsSummary": "{{count}} passages remplis à partir des documents du promoteur",
+    "showFills": "Surligner dans le document",
+    "addComment": "Ajouter un commentaire",
+    "addPlaceholder": "Votre commentaire sur ce texte…",
+    "addSave": "Publier le commentaire",
     "fixWithAi": "Corriger avec l'IA"
   },
   "generate": {
@@ -324,7 +341,15 @@
     "aiOff": "Désactivée",
     "storage": "Stockage",
     "counts": "Totaux",
-    "countsLine": "{{projects}} projets, {{docs}} documents de projet, {{templates}} modèles, {{users}} utilisateurs"
+    "countsLine": "{{projects}} projets, {{docs}} documents de projet, {{templates}} modèles, {{users}} utilisateurs",
+    "resetTitle": "Réinitialiser",
+    "resetEmpty": "Réinitialiser à vide",
+    "resetSamples": "Réinitialiser + importer les exemples",
+    "resetting": "Réinitialisation...",
+    "resetConfirm": "Ceci supprime DÉFINITIVEMENT TOUS les projets, documents de projet, versions, commentaires, tâches et la bibliothèque de modèles de cette application{{local}}. L'utilisateur démo et votre connexion sont conservés. Les fichiers du bucket GCS ne sont PAS supprimés.{{samples}}",
+    "resetLocal": " et tous les fichiers stockés localement",
+    "resetSamplesNote": " Ensuite, les exemples du bucket sont réimportés.",
+    "resetExplain": "Remet l'application à l'état initial : supprime tous les projets, documents, versions et la bibliothèque de modèles. L'utilisateur démo est conservé. Utilisez « Réinitialiser + importer les exemples » pour l'état juste après le premier import."
   },
   "req": {
     "has_sponsor_docs": "Téléversez au moins un document du promoteur",
@@ -368,7 +393,11 @@
     },
     "needReview": "Disponible après la revue du PI",
     "translateAnyway": "traduire quand même",
-    "updateTemplate": "Mettre à jour vers le dernier modèle"
+    "updateTemplate": "Mettre à jour vers le dernier modèle",
+    "translateAll": "Tout traduire",
+    "translateAllTitle": "Traduire toutes les versions NL/FR manquantes",
+    "generateAll": "Générer tous les ICF",
+    "generateAllTitle": "Générer tous les types d'ICF anglais manquants (adulte, parents, adolescent, enfant)"
   },
   "task": {
     "titleGenerate": "Génération du formulaire {{lang}} ({{icf}})",
@@ -411,7 +440,16 @@
     "editText": "Modifier le texte",
     "showChanges": "Afficher les changements",
     "paragraph": "Paragraphe",
-    "mandatory": "Modifie un texte obligatoire du modèle ({{score}} % de correspondance avec le modèle national). Justifiez cet écart auprès du Comité d'éthique."
+    "mandatory": "Modifie un texte obligatoire du modèle ({{score}} % de correspondance avec le modèle national). Justifiez cet écart auprès du Comité d'éthique.",
+    "pendingTitle_one": "{{count}} modification appliquée pas encore reportée sur les autres formulaires",
+    "pendingTitle_other": "{{count}} modifications appliquées pas encore reportées sur les autres formulaires",
+    "selectAll": "Tout sélectionner",
+    "noInstruction": "(modification)",
+    "editCount_one": "{{count}} changement",
+    "editCount_other": "{{count}} changements",
+    "propagateSel_one": "Propager {{count}} modification",
+    "propagateSel_other": "Propager {{count}} modifications ensemble",
+    "skipPropagation": "Ignorer"
   },
   "propagate": {
     "title": "Appliquer cette modification aux autres formulaires",

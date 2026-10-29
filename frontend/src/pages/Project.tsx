@@ -22,7 +22,8 @@ import {
 import { errMsg } from '../components/Dialog';
 import DocCard from '../components/DocCard';
 import GenerateDialog from '../components/GenerateDialog';
-import IcfMatrix from '../components/IcfMatrix';
+import IcfMatrix, { isReviewed } from '../components/IcfMatrix';
+import NextStepPanel from '../components/NextStepPanel';
 import {
   NewVersionDialog,
   UploadDocDialog,
@@ -100,7 +101,8 @@ export default function Project() {
         opened.current = true;
         // sponsor docs collapsed once an ICF draft exists
         setOpen({
-          sponsor: !d.some((x) => x.role === 'icf'),
+          sponsor: p.stage === 'intake',
+          matrix: ['drafting', 'pi_review'].includes(p.stage),
           icf: true,
           other: true,
         });
@@ -126,7 +128,16 @@ export default function Project() {
       // storage unavailable: tasks just won't survive a reload
     }
   }
-  const addTask = (m: TaskMeta) => saveTasks([...tasks, m]);
+  const addTask = (m: TaskMeta) =>
+    setTasks((cur) => {
+      const list = [...cur, m];
+      try {
+        sessionStorage.setItem(`icf-tasks-${projectId}`, JSON.stringify(list));
+      } catch {
+        // ignore
+      }
+      return list;
+    });
 
   async function translate(
     en: MatrixCell,
@@ -169,6 +180,46 @@ export default function Project() {
       });
     } catch (e) {
       setError(errMsg(e));
+    }
+  }
+
+  async function translateAll() {
+    for (const row of progress?.matrix ?? []) {
+      const en = row.languages.en;
+      if (!en || !isReviewed(en)) continue;
+      const langs = (['nl', 'fr'] as const).filter((l) => !row.languages[l]);
+      if (langs.length && !busy.has(`${en.doc_id}`))
+        await translate(en, row.icf_type, langs);
+    }
+  }
+
+  async function generateAll() {
+    setError('');
+    const have = new Set(
+      (docs ?? [])
+        .filter((d) => d.role === 'icf' && d.language === 'en')
+        .map((d) => d.icf_type ?? 'adult'),
+    );
+    const sponsorIds = (docs ?? [])
+      .filter((d) => d.role === 'sponsor' && d.versions.length)
+      .map((d) => Math.max(...d.versions.map((v) => v.id)));
+    for (const icf of ['adult', 'parent', 'adolescent', 'child'] as IcfType[]) {
+      if (
+        have.has(icf) ||
+        tasks.some((m) => m.kind === 'generate' && m.icfType === icf)
+      )
+        continue;
+      try {
+        const r = await api.generate(projectId, {
+          icf_type: icf,
+          language: 'en',
+          sponsor_version_ids: sponsorIds,
+          notes: '',
+        });
+        addTask({ id: r.task_id, kind: 'generate', langs: 'en', icfType: icf });
+      } catch (e) {
+        setError(errMsg(e));
+      }
     }
   }
 
@@ -252,10 +303,27 @@ export default function Project() {
         </div>
       </div>
 
+      <NextStepPanel
+        projectId={projectId}
+        stage={project.stage}
+        docs={docs}
+        onUpload={() => setDialog('upload')}
+        onGenerate={() => openGenerate()}
+        onGenerateAll={generateAll}
+        onTranslateAll={translateAll}
+        onNewVersion={setVersionFor}
+      />
       <StageTracker
         projectId={projectId}
         progress={progress}
         onChanged={load}
+        reqAction={(k) =>
+          k === 'translations_complete' ? (
+            <button type="button" className="btn" onClick={translateAll}>
+              {t('matrix.translateAll')}
+            </button>
+          ) : null
+        }
       />
       {error && <p className="error">{error}</p>}
 
@@ -265,8 +333,35 @@ export default function Project() {
         onDismiss={(id) => saveTasks(tasks.filter((x) => x.id !== id))}
       />
 
-      <section className="group">
-        <h2>{t('matrix.title')}</h2>
+      <Section
+        title={t('matrix.title')}
+        count={progress.matrix.length}
+        open={open.matrix ?? true}
+        onToggle={(o) => setOpen((x) => ({ ...x, matrix: o }))}
+      >
+        <div className="row">
+          <button
+            type="button"
+            className="btn"
+            title={t('matrix.generateAllTitle')}
+            onClick={generateAll}
+          >
+            {t('matrix.generateAll')}
+          </button>
+          <button
+            type="button"
+            className="btn"
+            disabled={!progress.matrix.some((r) => isReviewed(r.languages.en))}
+            title={
+              progress.matrix.some((r) => isReviewed(r.languages.en))
+                ? t('matrix.translateAllTitle')
+                : t('matrix.needReview')
+            }
+            onClick={translateAll}
+          >
+            {t('matrix.translateAll')}
+          </button>
+        </div>
         <IcfMatrix
           matrix={progress.matrix}
           busyLangs={busy}
@@ -274,7 +369,7 @@ export default function Project() {
           onTranslate={translate}
           onUpdate={updateTemplate}
         />
-      </section>
+      </Section>
 
       {docs.length === 0 && (
         <div className="empty">

@@ -51,6 +51,8 @@ class _Renderer:
         self.colors = {"purple": 0, "red": 0, "blue": 0, "black": 0}
         self.used_anchors: set[str] = set()
         self.comment_ids: list[str] = []
+        self.fills = 0
+        self.fill_ids: set[str] = set()  # open icf_fill bookmarks
         self.active: list[str] = []  # comment ranges open at this point in the document
         self._num_cache: dict[tuple[str, str], str] = {}
 
@@ -107,8 +109,16 @@ class _Renderer:
                 cid = child.get(q("id"))
                 if cid in self.active:
                     self.active.remove(cid)
+            elif tag == "bookmarkStart":
+                if (child.get(q("name")) or "").startswith("icf_fill"):
+                    self.fill_ids.add(child.get(q("id")))
+                    self.fills += 1
+            elif tag == "bookmarkEnd":
+                self.fill_ids.discard(child.get(q("id")))
             elif tag == "r":
                 h, t = self._run_html(child, p, para_color)
+                if h and self.fill_ids:
+                    h = f'<mark class="fill">{h}</mark>'
                 if h:
                     pieces.append((tuple(self.active), h, self._tc(child)))
                     plain.append(t)
@@ -297,4 +307,5 @@ def render_docx(path: str) -> dict:
             "colors": r.colors,
         },
         "comment_ids": r.comment_ids,
+        "fill_count": r.fills,
     }

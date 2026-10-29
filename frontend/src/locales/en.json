@@ -106,7 +106,24 @@
     "countDeclined_one": "{{count}} declined",
     "countDeclined_other": "{{count}} declined",
     "latestSummary": "v{{n}} · {{source}}",
-    "translatedFrom": "Translated from {{title}}"
+    "translatedFrom": "Translated from {{title}}",
+    "next": {
+      "title": "Next step",
+      "intake": "Upload the sponsor documents (protocol, sponsor consent forms) for this study.",
+      "uploadSponsor": "Upload sponsor documents",
+      "drafting": "Generate the English ICF draft from the sponsor documents.",
+      "generateDraft": "Generate ICF draft",
+      "pi": "Open the drafts and send them to the PI. Upload the reviewed copy (with comments) as a new version, then decide each comment. Translate to NL/FR here too.",
+      "openDraft": "Open",
+      "ethics": "Send the ICFs to the ethics committee: download them all as one zip, then upload each reviewed document (with the committee's comments) as a new version. You then approve or decline each comment as usual.",
+      "downloadAll": "Download all for ethics committee",
+      "download": "Download",
+      "uploadReviewed": "Upload reviewed version",
+      "approved": "All stages are complete. Download the final versions of all ICFs.",
+      "downloadFinal": "Download final ICFs (zip)",
+      "latest": "latest v{{n}}",
+      "noIcfs": "No ICF documents yet."
+    }
   },
   "stages": {
     "ariaLabel": "Project stage",
@@ -120,11 +137,7 @@
     },
     "pi_review": {
       "label": "PI review",
-      "hint": "Send out, upload reviewed copy"
-    },
-    "translation": {
-      "label": "Translation",
-      "hint": "NL / FR versions"
+      "hint": "Review, translate, upload reviewed copy"
     },
     "ethics_review": {
       "label": "Ethics review",
@@ -283,7 +296,11 @@
     "showTranslation": "Show translation",
     "showOriginal": "Show original",
     "translationUnavailable": "Translation unavailable",
-    "showGenerated": "Show generated notes ({{count}})",
+    "fillsSummary": "{{count}} passages filled from sponsor documents",
+    "showFills": "Highlight in document",
+    "addComment": "Add comment",
+    "addPlaceholder": "Your comment on this text…",
+    "addSave": "Post comment",
     "fixWithAi": "Fix with AI"
   },
   "generate": {
@@ -324,7 +341,15 @@
     "aiOff": "Disabled",
     "storage": "Storage",
     "counts": "Counts",
-    "countsLine": "{{projects}} projects, {{docs}} project documents, {{templates}} templates, {{users}} users"
+    "countsLine": "{{projects}} projects, {{docs}} project documents, {{templates}} templates, {{users}} users",
+    "resetTitle": "Reset",
+    "resetEmpty": "Reset to empty",
+    "resetSamples": "Reset + import samples",
+    "resetting": "Resetting...",
+    "resetConfirm": "This permanently deletes ALL projects, project documents, versions, comments, tasks and the template library from this app{{local}}. The demo user and your login stay. Files in the GCS bucket are NOT deleted.{{samples}}",
+    "resetLocal": " and all locally stored files",
+    "resetSamplesNote": " Afterwards the bucket samples are imported again.",
+    "resetExplain": "Resets the app to its initial state: removes all projects, documents, versions and the template library. The demo user stays. Use 'Reset + import samples' to get the state right after the first sample import."
   },
   "req": {
     "has_sponsor_docs": "Upload at least one sponsor document",
@@ -368,7 +393,11 @@
     },
     "needReview": "Available after PI review",
     "translateAnyway": "translate anyway",
-    "updateTemplate": "Update to latest template"
+    "updateTemplate": "Update to latest template",
+    "translateAll": "Translate all",
+    "translateAllTitle": "Translate all missing NL/FR versions",
+    "generateAll": "Generate all ICFs",
+    "generateAllTitle": "Generate all missing English ICF types (adult, parent, adolescent, child)"
   },
   "task": {
     "titleGenerate": "Generating {{lang}} ICF ({{icf}})",
@@ -411,7 +440,16 @@
     "editText": "Edit text",
     "showChanges": "Show changes",
     "paragraph": "Paragraph",
-    "mandatory": "Changes mandatory template wording ({{score}}% match with the national template). Justify this deviation for the Ethics Committee."
+    "mandatory": "Changes mandatory template wording ({{score}}% match with the national template). Justify this deviation for the Ethics Committee.",
+    "pendingTitle_one": "{{count}} applied edit not yet carried over to the other forms",
+    "pendingTitle_other": "{{count}} applied edits not yet carried over to the other forms",
+    "selectAll": "Select all",
+    "noInstruction": "(edit)",
+    "editCount_one": "{{count}} change",
+    "editCount_other": "{{count}} changes",
+    "propagateSel_one": "Propagate {{count}} edit",
+    "propagateSel_other": "Propagate {{count}} edits together",
+    "skipPropagation": "Skip"
   },
   "propagate": {
     "title": "Apply this change to the other forms",

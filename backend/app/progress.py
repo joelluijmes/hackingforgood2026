@@ -1,6 +1,6 @@
 """Pure stage-gate logic: which requirements must hold to leave each project stage."""
 
-STAGES = ["intake", "drafting", "pi_review", "translation", "ethics_review", "approved"]
+STAGES = ["intake", "drafting", "pi_review", "ethics_review", "approved"]
 TYPES = ["adult", "parent", "adolescent", "child"]
 LANGS = ["en", "nl", "fr"]
 
@@ -38,18 +38,17 @@ def _requirements(stage: str, docs: list[dict]) -> list[dict]:
     if stage == "pi_review":
         reviewed = any(v["source"] == "reviewed" for d in en for v in d["versions"])
         n = _open_comments(en)
-        return [
-            _req("has_reviewed_version", reviewed),
-            _req("comments_decided", n == 0 and bool(en), True, str(n)),
-        ]
-    if stage == "translation":
         missing = []
         for d in en:
             for lang in ("nl", "fr"):
                 if not _cell(icfs, _icf_type(d), lang, d["id"]):
                     missing.append(f"{_icf_type(d)}:{lang}")
         return [
-            _req("translations_complete", bool(en) and not missing, True, ",".join(missing) or None)
+            _req("has_reviewed_version", reviewed),
+            _req("comments_decided", n == 0 and bool(en), True, str(n)),
+            _req(
+                "translations_complete", bool(en) and not missing, True, ",".join(missing) or None
+            ),
         ]
     if stage == "ethics_review":
         reviewed = any(v["source"] == "reviewed" for d in translated for v in d["versions"])
