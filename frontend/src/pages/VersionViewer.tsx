@@ -121,9 +121,17 @@ export default function VersionViewer() {
           s.classList.add('flash');
         }
       }
-      document
-        .getElementById(`rv-c-${c.id}`)
-        ?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      // centre the card inside the panel (not the page, the panel is sticky)
+      const card = document.getElementById(`rv-c-${c.id}`);
+      const box = card?.closest<HTMLElement>('.rv-panel');
+      if (card && box) {
+        const c0 = card.getBoundingClientRect();
+        const b0 = box.getBoundingClientRect();
+        box.scrollTo({
+          top: box.scrollTop + (c0.top - b0.top) - (b0.height - c0.height) / 2,
+          behavior: 'smooth',
+        });
+      }
     },
     [spansFor],
   );
