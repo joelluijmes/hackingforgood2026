@@ -88,7 +88,7 @@
     "emptyText": "Upload the sponsor documents to get started.",
     "groups": {
       "sponsor": "Sponsor documents",
-      "icf": "ICF drafts",
+      "icf": "All ICF documents and versions",
       "other": "Other"
     },
     "confirmDeleteDoc": "Delete \"{{title}}\" and all its versions?",
@@ -397,7 +397,7 @@
     "notMet": "Requirements are not met yet."
   },
   "matrix": {
-    "title": "Languages",
+    "title": "ICF overview",
     "type": "ICF type",
     "generate": "Generate",
     "translateFromEn": "Translate from EN",

@@ -343,7 +343,10 @@ export default function Project() {
 
       <Section
         title={showTranslations ? t('matrix.title') : t('matrix.draftsTitle')}
-        count={progress.matrix.length}
+        count={progress.matrix.reduce(
+          (n, r) => n + Object.values(r.languages).filter(Boolean).length,
+          0,
+        )}
         open={open.matrix ?? true}
         onToggle={(o) => setOpen((x) => ({ ...x, matrix: o }))}
       >

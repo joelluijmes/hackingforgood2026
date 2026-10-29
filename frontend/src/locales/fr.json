@@ -88,7 +88,7 @@
     "emptyText": "Téléversez les documents du promoteur pour commencer.",
     "groups": {
       "sponsor": "Documents du promoteur",
-      "icf": "Projets d'ICF",
+      "icf": "Tous les documents ICF et versions",
       "other": "Autres"
     },
     "confirmDeleteDoc": "Supprimer « {{title}} » et toutes ses versions ?",
@@ -397,7 +397,7 @@
     "notMet": "Les conditions ne sont pas encore remplies."
   },
   "matrix": {
-    "title": "Langues",
+    "title": "Aperçu des ICF",
     "type": "Type de formulaire",
     "generate": "Générer",
     "translateFromEn": "Traduire depuis EN",

@@ -88,7 +88,7 @@
     "emptyText": "Upload de documenten van de opdrachtgever om te starten.",
     "groups": {
       "sponsor": "Documenten van de opdrachtgever",
-      "icf": "ICF-ontwerpen",
+      "icf": "Alle ICF-documenten en versies",
       "other": "Overige"
     },
     "confirmDeleteDoc": "\"{{title}}\" en alle versies verwijderen?",
@@ -397,7 +397,7 @@
     "notMet": "De vereisten zijn nog niet vervuld."
   },
   "matrix": {
-    "title": "Talen",
+    "title": "ICF-overzicht",
     "type": "ICF-type",
     "generate": "Genereren",
     "translateFromEn": "Vertalen vanuit EN",
