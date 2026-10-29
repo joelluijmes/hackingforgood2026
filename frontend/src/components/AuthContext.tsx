@@ -51,10 +51,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     auth.token = null;
     setUser(null);
   }, []);
+  // Switch the UI immediately; persist in the background and fall back if saving fails.
   const setLanguage = useCallback(async (language: Language) => {
-    const u = await api.updateMe({ language });
-    setUser(u);
-    await applyLanguage(u.language);
+    await applyLanguage(language);
+    setUser((u) => (u ? { ...u, language } : u));
+    try {
+      await api.updateMe({ language });
+    } catch {
+      /* the choice still applies for this session and is remembered locally */
+    }
   }, []);
 
   const value = useMemo(

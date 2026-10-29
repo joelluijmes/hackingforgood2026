@@ -8,6 +8,8 @@ type Filter = 'all' | CommentStatus;
 const trunc = (s: string, n = 140) => (s.length > n ? `${s.slice(0, n)}…` : s);
 
 /** Read-only comment body: author, language, quote and text in the user's language. */
+const isGenerated = (c: ReviewComment) => c.author === 'ICF Studio';
+
 export function CommentBody({ c, lang }: { c: ReviewComment; lang: Lang }) {
   const { t, i18n } = useTranslation();
   const [orig, setOrig] = useState(false);
@@ -181,7 +183,6 @@ export default function CommentPanel({
   const [genOverride, setGenOverride] = useState<boolean | null>(null);
 
   // Notes written by the app itself (gaps / filled placeholders) can bury the reviewers' comments.
-  const isGenerated = (c: ReviewComment) => c.author === 'ICF Studio';
   const generatedCount = comments.filter(isGenerated).length;
   const showGenerated = genOverride ?? generatedCount === comments.length;
   const list = useMemo(

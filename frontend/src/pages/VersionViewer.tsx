@@ -10,13 +10,15 @@ import {
   type VersionHtml,
 } from '../api';
 import CommentPanel from '../components/CommentPanel';
+import { isLang } from '../i18n';
 import '../review.css';
 
 const rootIn = (list: ReviewComment[], c: ReviewComment) =>
   (c.parent_id !== null && list.find((x) => x.id === c.parent_id)) || c;
 
 export default function VersionViewer() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = (isLang(i18n.language) ? i18n.language : 'en') as Lang;
   const vid = Number(useParams().vid);
   const nav = useNavigate();
   const [detail, setDetail] = useState<VersionDetail | null>(null);
@@ -24,7 +26,6 @@ export default function VersionViewer() {
   const [htmlErr, setHtmlErr] = useState('');
   const [noRender, setNoRender] = useState(false);
   const [comments, setComments] = useState<ReviewComment[]>([]);
-  const [lang, setLang] = useState<Lang>('en');
   const [docs, setDocs] = useState<ProjectDoc[]>([]);
   const [error, setError] = useState('');
   const [showTc, setShowTc] = useState(true);
@@ -44,17 +45,12 @@ export default function VersionViewer() {
     setError('');
     (async () => {
       try {
-        const [d, me] = await Promise.all([api.getVersion(vid), api.me()]);
+        const d = await api.getVersion(vid);
         if (!live) return;
         setDetail(d);
-        setLang(me.language);
         api.listProjectDocs(d.project.id).then(
           (x) => live && setDocs(x),
           () => {},
-        );
-        api.listComments(vid, me.language).then(
-          (x) => live && setComments(x),
-          (e) => live && setError(String(e.message ?? e)),
         );
         if (d.version.preview === 'docx') {
           api.getVersionHtml(vid).then(
@@ -70,6 +66,18 @@ export default function VersionViewer() {
       live = false;
     };
   }, [vid]);
+
+  // Comments are translated into the UI language, so reload them when it changes.
+  useEffect(() => {
+    let live = true;
+    api.listComments(vid, lang).then(
+      (x) => live && setComments(x),
+      (e) => live && setError(String(e.message ?? e)),
+    );
+    return () => {
+      live = false;
+    };
+  }, [vid, lang]);
 
   const spansFor = useCallback((ext: string) => {
     const root = paper.current;

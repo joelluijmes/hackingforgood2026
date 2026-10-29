@@ -430,8 +430,10 @@ export const api = {
     ),
 
   // diff + generate + ai
-  diff: (from: number, to: number) =>
-    req<DiffResult>(`/diff?from=${from}&to=${to}`),
+  diff: (from: number, to: number, lang?: Lang) =>
+    req<DiffResult>(
+      `/diff?from=${from}&to=${to}${lang ? `&lang=${lang}` : ''}`,
+    ),
   generate: (projectId: number, b: GenerateRequest) =>
     req<{ doc: ProjectDoc; report: GenerateReport }>(
       `/projects/${projectId}/generate`,

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { api, type DiffResult, type Lang, type Version } from '../api';
 import { CommentBody } from '../components/CommentPanel';
+import { isLang } from '../i18n';
 import '../review.css';
 
 function Collapsed({ texts }: { texts: string[] }) {
@@ -38,7 +39,8 @@ function Collapsed({ texts }: { texts: string[] }) {
 }
 
 export default function DiffView() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = (isLang(i18n.language) ? i18n.language : 'en') as Lang;
   const [sp] = useSearchParams();
   const nav = useNavigate();
   const from = Number(sp.get('from'));
@@ -46,7 +48,6 @@ export default function DiffView() {
   const [diff, setDiff] = useState<DiffResult | null>(null);
   const [versions, setVersions] = useState<Version[]>([]);
   const [title, setTitle] = useState('');
-  const [lang, setLang] = useState<Lang>('en');
   const [error, setError] = useState('');
   const [pickError, setPickError] = useState(false);
 
@@ -59,11 +60,7 @@ export default function DiffView() {
       setPickError(true);
       return;
     }
-    api.me().then(
-      (m) => live && setLang(m.language),
-      () => {},
-    );
-    api.diff(from, to).then(
+    api.diff(from, to, lang).then(
       (d) => live && setDiff(d),
       (e) => live && setError(e instanceof Error ? e.message : String(e)),
     );
@@ -79,7 +76,7 @@ export default function DiffView() {
     return () => {
       live = false;
     };
-  }, [from, to]);
+  }, [from, to, lang]);
 
   const go = (f: number, t: number) => nav(`/diff?from=${f}&to=${t}`);
   const opts = [...versions].sort((a, b) => a.number - b.number);
