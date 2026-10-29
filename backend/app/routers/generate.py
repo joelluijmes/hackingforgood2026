@@ -27,6 +27,21 @@ class GenerateIn(BaseModel):
 class TranslateIn(BaseModel):
     target_languages: list[Literal["nl", "fr"]]
     version_id: int | None = None
+    force: bool = False
+
+
+class UpdateIn(BaseModel):
+    version_id: int | None = None
+
+
+def _en_reviewed(conn, doc_id: int) -> bool:
+    """EN ICF counts as PI-reviewed (single place; extend with doc-level approved flag)."""
+    return (
+        conn.execute(
+            "SELECT 1 FROM versions WHERE doc_id = ? AND source = 'reviewed' LIMIT 1", (doc_id,)
+        ).fetchone()
+        is not None
+    )
 
 
 def _latest_template(conn, language: str):
@@ -78,6 +93,8 @@ def _sponsor_text(conn, version_ids: list[int]) -> str:
 
 @router.post("/projects/{pid}/generate", status_code=202)
 def generate(pid: int, body: GenerateIn, user: User) -> dict:
+    if body.language != "en":
+        raise HTTPException(422, "creation_english_only")
     with db.connect() as conn:
         _project_row(conn, pid)
         if body.template_id is None:
@@ -139,6 +156,8 @@ def translate(doc_id: int, body: TranslateIn, user: User) -> dict:
         raise HTTPException(422, "target_languages is empty")
     with db.connect() as conn:
         src = _doc_row(conn, doc_id)
+        if (src["language"] or "en") == "en" and not body.force and not _en_reviewed(conn, doc_id):
+            raise HTTPException(422, "translate_requires_review")
         if body.version_id is not None:
             ver = conn.execute(
                 "SELECT * FROM versions WHERE id = ? AND doc_id = ?", (body.version_id, doc_id)
@@ -218,6 +237,68 @@ def translate(doc_id: int, body: TranslateIn, user: User) -> dict:
         return {"docs": docs, "reports": reports}
 
     return {"task_id": tasks.start_task("translate", work, langs[0])}
+
+
+@router.post("/project-documents/{doc_id}/update-template", status_code=202)
+def update_to_latest_template(doc_id: int, body: UpdateIn, user: User) -> dict:
+    """Update mode: rebuild an uploaded ICF on the latest template of its own language."""
+    with db.connect() as conn:
+        src = _doc_row(conn, doc_id)
+        if src["role"] != "icf":
+            raise HTTPException(422, "Only ICF documents can be updated")
+        lang = src["language"]
+        if lang not in LANG_NAMES:
+            raise HTTPException(422, "Document language must be set (en/nl/fr)")
+        if body.version_id is not None:
+            ver = conn.execute(
+                "SELECT * FROM versions WHERE id = ? AND doc_id = ?", (body.version_id, doc_id)
+            ).fetchone()
+        else:
+            ver = conn.execute(
+                "SELECT * FROM versions WHERE doc_id = ? ORDER BY number DESC LIMIT 1", (doc_id,)
+            ).fetchone()
+        if not ver or not ver["filename"].lower().endswith(".docx"):
+            raise HTTPException(422, "Source version must be a .docx")
+        tpl = _latest_template(conn, lang)
+        if not tpl:
+            raise HTTPException(422, "no_template_for_language")
+    user_name = user["name"]
+
+    def work(report) -> dict:
+        from ..engine import text as engine_text
+
+        with db.connect() as conn:
+            with storage.local_path(ver["stored_name"]) as p:
+                source_text = engine_text.docx_text(str(p))
+            data, rep = _fill_template(
+                tpl,
+                sponsor_text=f"=== {src['title']} (v{ver['number']}) ===\n{source_text}",
+                notes=(
+                    f"The source is an existing {LANG_NAMES[lang]} ICF written with an older "
+                    "template. Fill the placeholders of the new template with the content of the "
+                    f"source ICF, in {LANG_NAMES[lang]}, keeping names, numbers and dates "
+                    "exactly. Flag anything the source does not cover."
+                ),
+                language=lang,
+                icf_type=src["icf_type"] or "adult",
+                progress=report,
+            )
+            vid_note = f"Updated to template v{tpl['version'] or '?'} from v{ver['number']}"
+            services.add_version(
+                conn,
+                doc_id,
+                f"{src['title']}.docx".replace("/", "-"),
+                data,
+                vid_note,
+                "generated",
+                user_name,
+            )
+            row = conn.execute("SELECT * FROM project_docs WHERE id = ?", (doc_id,)).fetchone()
+            doc = services.doc_dict(conn, row)
+        report("saving", 1, 1)
+        return {"docs": [doc], "reports": [rep]}
+
+    return {"task_id": tasks.start_task("translate", work, lang)}
 
 
 @router.get("/tasks/{task_id}")

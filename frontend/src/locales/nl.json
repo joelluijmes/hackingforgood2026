@@ -308,7 +308,8 @@
     "templateLine": "Sjabloon: Belgisch model-ICF - volwassen patiënten, {{lang}} v{{version}}",
     "latest": "(laatste)",
     "otherVersion": "Andere versie gebruiken",
-    "noTemplateForLang": "Geen sjabloon beschikbaar voor {{lang}}. Upload er eerst een onder Sjablonen."
+    "noTemplateForLang": "Geen sjabloon beschikbaar voor {{lang}}. Upload er eerst een onder Sjablonen.",
+    "englishOnly": "Eerste ICF’s worden altijd in het Engels gegenereerd; NL/FR volgen via vertaling."
   },
   "admin": {
     "title": "Beheer",
@@ -364,7 +365,10 @@
       "parent": "Ouders",
       "adolescent": "Adolescent 12–17",
       "child": "Kind 8–11"
-    }
+    },
+    "needReview": "Beschikbaar na PI-review",
+    "translateAnyway": "toch vertalen",
+    "updateTemplate": "Updaten naar nieuwste template"
   },
   "task": {
     "titleGenerate": "{{lang}} ICF genereren ({{icf}})",
@@ -421,5 +425,8 @@
       "not_applicable": "Niet van toepassing",
       "error": "Mislukt"
     }
+  },
+  "upload": {
+    "autoDetect": "Automatisch detecteren"
   }
 }

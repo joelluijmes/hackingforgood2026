@@ -568,10 +568,19 @@ export const api = {
     ),
   translate: (
     docId: number,
-    b: { target_languages: ('nl' | 'fr')[]; version_id?: number },
+    b: {
+      target_languages: ('nl' | 'fr')[];
+      version_id?: number;
+      force?: boolean;
+    },
   ) =>
     req<{ task_id: string }>(
       `/project-documents/${docId}/translate`,
+      json('POST', b),
+    ),
+  updateToTemplate: (docId: number, b: { version_id?: number } = {}) =>
+    req<{ task_id: string }>(
+      `/project-documents/${docId}/update-template`,
       json('POST', b),
     ),
   task: (id: string) => req<Task>(`/tasks/${id}`),

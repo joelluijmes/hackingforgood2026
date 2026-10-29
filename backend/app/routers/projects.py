@@ -136,6 +136,21 @@ def list_project_docs(pid: int) -> list[dict]:
         return [services.doc_dict(conn, r) for r in rows]
 
 
+def _detect_lang(data: bytes) -> str | None:
+    import tempfile
+
+    from ..engine import ai
+    from ..engine import text as engine_text
+
+    try:
+        with tempfile.NamedTemporaryFile(suffix=".docx") as f:
+            f.write(data)
+            f.flush()
+            return ai.detect_language(engine_text.docx_text(f.name)[:3000])
+    except Exception:  # noqa: BLE001
+        return None
+
+
 @router.post("/projects/{pid}/documents")
 def upload_project_doc(
     pid: int,
@@ -154,6 +169,10 @@ def upload_project_doc(
         raise HTTPException(422, "invalid icf_type")
     language = services.check_lang(language)
     filename, _, data, auto_note = services.read_upload(file)
+    if role == "icf":
+        icf_type = icf_type or "adult"
+        if not language and filename.lower().endswith(".docx"):
+            language = _detect_lang(data)
     with db.connect() as conn:
         _project_row(conn, pid)
         return services.create_doc_with_version(

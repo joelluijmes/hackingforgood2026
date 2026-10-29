@@ -8,7 +8,7 @@ import {
   type ProjectDoc,
 } from '../api';
 import Dialog, { errMsg } from './Dialog';
-import { IcfOptions, LangOptions } from './Options';
+import { IcfOptions } from './Options';
 import type { TaskMeta } from './TaskBanner';
 
 interface Props {
@@ -37,7 +37,7 @@ export default function GenerateDialog({
   const [templates, setTemplates] = useState<Document[] | null>(null);
   const [templateId, setTemplateId] = useState('');
   const [icf, setIcf] = useState<IcfType>(preset?.icf ?? 'adult');
-  const [language, setLanguage] = useState<Language>(preset?.language ?? 'en');
+  const language: Language = 'en';
   const [picked, setPicked] = useState<Set<number>>(
     new Set(sponsors.map((d) => d.versions[0].id)),
   );
@@ -110,19 +110,8 @@ export default function GenerateDialog({
               <IcfOptions />
             </select>
           </label>
-          <label>
-            {t('common.language')}
-            <select
-              value={language}
-              onChange={(e) => {
-                setLanguage(e.target.value as Language);
-                setTemplateId('');
-              }}
-            >
-              <LangOptions />
-            </select>
-          </label>
         </div>
+        <p className="muted small">{t('generate.englishOnly')}</p>
         <div className="tpl-line">
           {templates === null ? (
             <span className="muted">{t('common.loading')}</span>

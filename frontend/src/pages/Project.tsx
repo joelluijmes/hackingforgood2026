@@ -11,6 +11,7 @@ import {
   type AiStatus,
   api,
   type IcfType,
+  type Lang,
   type Language,
   type MatrixCell,
   type ProjectDoc,
@@ -131,12 +132,14 @@ export default function Project() {
     en: MatrixCell,
     icf: IcfType,
     langs: ('nl' | 'fr')[],
+    force?: boolean,
   ) {
     setError('');
     try {
       const r = await api.translate(en.doc_id, {
         target_languages: langs,
         version_id: en.version_id,
+        force,
       });
       addTask({
         id: r.task_id,
@@ -145,6 +148,24 @@ export default function Project() {
         icfType: icf,
         docId: en.doc_id,
         targets: langs,
+      });
+    } catch (e) {
+      setError(errMsg(e));
+    }
+  }
+
+  async function updateTemplate(c: MatrixCell, icf: IcfType, lang: Lang) {
+    setError('');
+    try {
+      const r = await api.updateToTemplate(c.doc_id, {
+        version_id: c.version_id,
+      });
+      addTask({
+        id: r.task_id,
+        kind: 'translate',
+        langs: lang.toUpperCase(),
+        icfType: icf,
+        docId: c.doc_id,
       });
     } catch (e) {
       setError(errMsg(e));
@@ -251,6 +272,7 @@ export default function Project() {
           busyLangs={busy}
           onGenerate={(icf) => openGenerate({ icf, language: 'en' })}
           onTranslate={translate}
+          onUpdate={updateTemplate}
         />
       </section>
 

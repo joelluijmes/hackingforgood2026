@@ -308,7 +308,8 @@
     "templateLine": "Template: Belgian model ICF - adult patients, {{lang}} v{{version}}",
     "latest": "(latest)",
     "otherVersion": "Use another version",
-    "noTemplateForLang": "No template available for {{lang}}. Upload one under Templates first."
+    "noTemplateForLang": "No template available for {{lang}}. Upload one under Templates first.",
+    "englishOnly": "Initial ICFs are always generated in English; NL/FR follow by translation."
   },
   "admin": {
     "title": "Admin",
@@ -364,7 +365,10 @@
       "parent": "Parents",
       "adolescent": "Adolescent 12–17",
       "child": "Child 8–11"
-    }
+    },
+    "needReview": "Available after PI review",
+    "translateAnyway": "translate anyway",
+    "updateTemplate": "Update to latest template"
   },
   "task": {
     "titleGenerate": "Generating {{lang}} ICF ({{icf}})",
@@ -421,5 +425,8 @@
       "not_applicable": "Not applicable",
       "error": "Failed"
     }
+  },
+  "upload": {
+    "autoDetect": "Auto-detect"
   }
 }

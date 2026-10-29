@@ -116,3 +116,10 @@ Frontend client mirroring this file: `frontend/src/api.ts` (single source of typ
   - `state`: stages before the current stage = `done`, the current = `current`, others `todo`.
   - `MatrixRow = {icf_type: IcfType, languages: {en: MatrixCell|null, nl: MatrixCell|null, fr: MatrixCell|null}}`; `MatrixCell = {doc_id, version_id, version_number, source: VersionSource, comments_open: number}` (latest version of the doc of that type+language; NL/FR cells come from docs with `source_doc_id` or matching icf_type+language). Rows = icf types present among the project's sponsor docs and ICF docs; if none, a single `adult` row.
 - `PATCH /api/projects/{id}` `{..., stage?, force?: boolean}`: moving FORWARD (to a later stage than the current one) when the current stage's blocking requirements are unmet -> **409** `{detail:"requirements_not_met", missing:[requirement keys]}` unless `force` is true; moving backward is always allowed.
+
+
+## Creation = English only, translation gate, update mode
+- `POST /api/projects/{id}/generate` with `language != "en"` -> 422 `creation_english_only`.
+- `POST /api/project-documents/{doc_id}/translate` body gains `force?: boolean`. For an EN source doc without a version of source `reviewed`, returns 422 `translate_requires_review` unless `force: true`.
+- `POST /api/projects/{id}/documents` with role `icf`: `icf_type` defaults to `adult`; if `language` is empty and the file is .docx the language is auto-detected (`engine.ai.detect_language`).
+- `POST /api/project-documents/{doc_id}/update-template` JSON `{version_id?}` -> 202 `{task_id}` (Task kind `translate`). Update mode: rebuilds the ICF (any language) on the latest template of the same language with the source ICF as content; adds a NEW VERSION (source `generated`, note `Updated to template v<x> from v<n>`) to the same doc.
