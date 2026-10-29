@@ -12,6 +12,7 @@ import {
 import { errMsg } from '../components/Dialog';
 import DocCard from '../components/DocCard';
 import GenerateDialog from '../components/GenerateDialog';
+import IcfMatrix from '../components/IcfMatrix';
 import {
   NewVersionDialog,
   UploadDocDialog,
@@ -136,6 +137,7 @@ export default function Project() {
           <p>{t('project.emptyText')}</p>
         </div>
       )}
+      <IcfMatrix docs={docs} />
       {GROUPS.map((g) => {
         const list = docs.filter((d) => d.role === g);
         if (list.length === 0) return null;

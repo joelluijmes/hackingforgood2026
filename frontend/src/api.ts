@@ -13,7 +13,12 @@ export type Stage =
   | 'approved';
 export type Role = 'sponsor' | 'icf' | 'other';
 export type IcfType = Audience;
-export type VersionSource = 'upload' | 'generated' | 'reviewed';
+export type VersionSource =
+  | 'upload'
+  | 'generated'
+  | 'reviewed'
+  | 'edited'
+  | 'propagated';
 export type CommentStatus = 'open' | 'approved' | 'declined';
 
 export interface User {
@@ -190,6 +195,48 @@ export interface GenerateReport {
   flagged: number;
   removed_guidance_paragraphs: number;
   ai_used: boolean;
+}
+
+/** One proposed paragraph rewrite (chat or propagation). */
+export interface EditProposal {
+  idx: number;
+  old: string;
+  new: string;
+  reason: string;
+  section: string;
+  /** Set when the old text matches mandatory (purple) national-template wording. */
+  mandatory: { score: number; template_text: string } | null;
+}
+
+export interface ChatMessage {
+  role: 'user' | 'assistant';
+  text: string;
+}
+
+export interface ChatReply {
+  reply: string;
+  edits: EditProposal[];
+}
+
+export interface ApplyResult {
+  version: Version;
+  change_id: number;
+  skipped: { idx: number; why: string }[];
+}
+
+export interface PropagationTarget {
+  doc: Omit<ProjectDoc, 'versions'>;
+  version_id: number;
+  version_number: number;
+  status: 'proposed' | 'not_applicable' | 'error';
+  reason: string;
+  edits: EditProposal[];
+}
+
+export interface PropagationResult {
+  version_id: number;
+  version?: Version;
+  error?: string;
 }
 
 export interface AiStatus {
@@ -441,6 +488,36 @@ export const api = {
     ),
   adminStatus: () => req<AdminStatus>('/admin/status'),
   aiStatus: () => req<AiStatus>('/ai/status'),
+
+  // chat-with-the-form editing + propagation
+  chat: (
+    vid: number,
+    b: { message: string; history: ChatMessage[]; comment_id?: number },
+  ) => req<ChatReply>(`/versions/${vid}/chat`, json('POST', b)),
+  applyEdits: (
+    vid: number,
+    b: {
+      edits: Pick<EditProposal, 'idx' | 'old' | 'new' | 'reason'>[];
+      instruction: string;
+      comment_id?: number;
+    },
+  ) => req<ApplyResult>(`/versions/${vid}/apply`, json('POST', b)),
+  propagatePreview: (changeId: number) =>
+    req<PropagationTarget[]>(`/changes/${changeId}/propagate/preview`, {
+      method: 'POST',
+    }),
+  propagateApply: (
+    changeId: number,
+    targets: { version_id: number; edits: EditProposal[] }[],
+  ) =>
+    req<PropagationResult[]>(
+      `/changes/${changeId}/propagate/apply`,
+      json('POST', { targets }),
+    ),
+  ecResponseUrl: (vid: number, lang?: Lang) =>
+    withToken(
+      `/api/versions/${vid}/ec-response/file${lang ? `?lang=${lang}` : ''}`,
+    ),
 
   // v1 placeholders (no longer linked from the UI)
   jobCreation: (b: CreationJob) => job('/jobs/creation', b),

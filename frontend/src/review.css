@@ -377,3 +377,270 @@
   font-size: 14px;
   color: var(--neutral-700);
 }
+
+/* ---- side panel tabs + "Edit with AI" ---- */
+.rv-side {
+  position: sticky;
+  top: 76px; /* below the sticky topbar */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: calc(100vh - 92px);
+}
+.rv-side .rv-panel {
+  position: static;
+  min-height: 0;
+  flex: 1;
+}
+.rv-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  background: var(--neutral-100);
+  border-radius: var(--radius-pill);
+}
+.rv-tabs button {
+  flex: 1;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: none;
+  color: var(--neutral-700);
+  cursor: pointer;
+}
+.rv-tabs button[aria-selected="true"] {
+  background: #fff;
+  color: var(--primary-1100);
+  box-shadow: var(--shadow);
+}
+.rv-tabs button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.ed-panel {
+  overflow: hidden;
+}
+.ed-hint {
+  font-size: 13px;
+  margin: 8px 0 0;
+}
+.ed-ctx {
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid #f0d98a;
+  background: #fffbea;
+  border-radius: var(--radius-control);
+  font-size: 13px;
+}
+.ed-ctx-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.ed-chat {
+  flex: 1;
+  min-height: 120px;
+  overflow: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ed-empty {
+  font-size: 13px;
+}
+.ed-msg {
+  max-width: 90%;
+  padding: 8px 12px;
+  border-radius: 14px;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+.ed-msg.user {
+  align-self: flex-end;
+  background: var(--primary-1000);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+.ed-msg.assistant {
+  align-self: flex-start;
+  background: var(--neutral-100);
+  border-bottom-left-radius: 4px;
+}
+.ed-msg-meta {
+  font-size: 12px;
+  color: var(--neutral-700);
+  margin-top: 4px;
+}
+.ed-proposals {
+  border-top: 1px solid var(--neutral-200);
+  padding: 12px;
+  max-height: 55%;
+  overflow: auto;
+  display: grid;
+  gap: 8px;
+}
+.ed-proposals h3 {
+  margin: 0;
+  font-size: 15px;
+}
+.ed-card {
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--radius-control);
+  padding: 10px;
+  background: #fff;
+}
+.ed-card.off {
+  opacity: 0.55;
+}
+.ed-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+.ed-card-head label {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  cursor: pointer;
+}
+.ed-section {
+  font-weight: 600;
+  color: var(--neutral-700);
+}
+.ed-mandatory {
+  margin-top: 6px;
+  padding: 6px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  background: #f3e9fb;
+  color: var(--purple);
+  border: 1px solid #d9c2ee;
+}
+.ed-diff {
+  margin: 6px 0 0;
+  font-size: 14px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.ed-diff ins {
+  background: #f0ffec;
+  color: #2d6621;
+  text-decoration: none;
+}
+.ed-diff del {
+  background: var(--error-100);
+  color: var(--error-1100);
+}
+.ed-textarea,
+.ed-input textarea {
+  width: 100%;
+  font: inherit;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--radius-control);
+  resize: vertical;
+  margin-top: 6px;
+}
+.ed-input {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+  padding: 12px;
+  border-top: 1px solid var(--neutral-200);
+}
+.ed-input textarea {
+  margin: 0;
+}
+.ed-err {
+  padding: 0 12px;
+}
+
+/* ---- propagation dialog ---- */
+.pg-list {
+  display: grid;
+  gap: 12px;
+  max-height: 60vh;
+  overflow: auto;
+  margin-bottom: 8px;
+}
+.pg-target {
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--radius-card);
+  padding: 12px;
+  display: grid;
+  gap: 8px;
+}
+.pg-target.not_applicable {
+  background: var(--neutral-100);
+}
+.pg-head {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pg-results {
+  display: grid;
+  gap: 6px;
+  padding-left: 18px;
+}
+
+/* ---- ICF set matrix ---- */
+.mx {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 6px;
+  margin-bottom: 16px;
+}
+.mx thead th:first-child {
+  width: 140px;
+}
+.mx th {
+  text-align: left;
+  font-size: 13px;
+  color: var(--neutral-700);
+  font-weight: 600;
+}
+.mx td {
+  background: var(--neutral-100);
+  border-radius: var(--radius-control);
+  padding: 6px;
+  vertical-align: top;
+}
+.mx-empty {
+  color: var(--neutral-500);
+  text-align: center;
+}
+.mx-cell {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid var(--neutral-300);
+  text-decoration: none;
+  color: inherit;
+}
+.mx-cell:hover {
+  border-color: var(--primary-1000);
+}
+.mx-ver {
+  font-weight: 700;
+}
+@media (max-width: 900px) {
+  .rv-side {
+    position: static;
+    max-height: none;
+  }
+}

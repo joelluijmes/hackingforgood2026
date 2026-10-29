@@ -278,4 +278,114 @@ def seed_bucket(user_name: str = "") -> dict:
                 study=None,
             )
             items.append({"name": TEMPLATE_NAME, "kind": "template"})
+        items.extend(seed_review_demo(zf, user_name))
     return {"imported": len(items), **stats, "items": items}
+
+
+# ---------- EC review demo: Forum R1 approved ICFs + a version returned by the EC ----------
+
+DEMO_PROJECT = "Forum R1 – EC review (demo)"
+DEMO_PREFIX = "Forum Example/Approved ICFs/R1/"
+# (paragraph start, reviewer, comment) – mock EC remarks, deliberately not in English
+DEMO_COMMENTS = [
+    (
+        "The other group will receive a reduced dose of 8 Gy",
+        "EC reviewer (NL)",
+        "Voor de deelnemer is niet duidelijk wat een lagere dosis betekent. Gelieve in eenvoudige "
+        "taal toe te voegen dat 8 Gy mogelijk minder late bijwerkingen geeft, maar dat nog niet "
+        "bewezen is dat deze dosis even doeltreffend is als 12 Gy.",
+    ),
+    (
+        "You are receiving this information letter because",
+        "Comité d'éthique (FR)",
+        "Veuillez expliquer l'abréviation « HSCT » en termes simples lors de sa première "
+        "utilisation (greffe de cellules souches).",
+    ),
+    (
+        "Standard of care procedures or examinations for your condition",
+        "Comité d'éthique (FR)",
+        "Précisez explicitement que la participation à cette sous-étude n'entraîne aucun coût "
+        "supplémentaire pour le participant.",
+    ),
+    (
+        "Your investigator will discuss with you the suitable forms of contraception",
+        "EC reviewer (NL)",
+        "Hoe lang moet anticonceptie gebruikt worden na de laatste bestraling? Gelieve de duur "
+        "te vermelden zoals beschreven in het protocol.",
+    ),
+]
+_DEMO_LABEL = {"adult": "Adult", "parent": "Parents", "adolescent": "12–17y", "child": "8–11y"}
+
+
+def _with_ec_comments(data: bytes) -> bytes:
+    import io
+
+    from docx import Document
+
+    from .engine._xml import q
+
+    doc = Document(io.BytesIO(data))
+    for start, author, text in DEMO_COMMENTS:
+        for p in doc.paragraphs + [p for t in doc.tables for r in t.rows for c in r.cells
+                                   for p in c.paragraphs]:  # fmt: skip
+            if p.text.strip().startswith(start):
+                runs = [r for r in p.runs if r.text.strip() and r._r.getparent().tag != q("del")]
+                if runs:
+                    initials = "".join(w[0] for w in author.split()[:2]).upper()
+                    doc.add_comment(runs, text=text, author=author, initials=initials)
+                break
+    out = io.BytesIO()
+    doc.save(out)
+    return out.getvalue()
+
+
+def seed_review_demo(zf: zipfile.ZipFile, user_name: str) -> list[dict]:
+    members = [
+        i for i in zf.infolist()
+        if i.filename.removeprefix("bucket/").startswith(DEMO_PREFIX)
+        and i.filename.lower().endswith(".docx")
+    ]  # fmt: skip
+    if not members:
+        return []
+    with db.connect() as conn:
+        if conn.execute("SELECT 1 FROM projects WHERE name = ?", (DEMO_PROJECT,)).fetchone():
+            return []
+        pid = conn.execute(
+            "INSERT INTO projects (name, study, description, stage, created_at, created_by_name)"
+            " VALUES (?,?,?,?,?,?)",
+            (DEMO_PROJECT, "Forum",
+             "FORUM2 sub-study R1 (8 vs 12 Gy TBI): the 12 approved ICFs. The EN adult form came "
+             "back from the Ethics Committee with comments in Dutch and French.",
+             "ethics_review", db.now_iso(), user_name),
+        ).lastrowid  # fmt: skip
+    order = {"adult": 0, "parent": 1, "adolescent": 2, "child": 3}
+    lang_order = {"en": 0, "nl": 1, "fr": 2}
+    rows = []
+    for info in members:
+        filename = PurePosixPath(info.filename).name
+        aud = guess_audience(filename) or "adult"
+        lang = guess_language(filename)
+        rows.append((order.get(aud, 9), lang_order.get(lang, 9), info, filename, aud, lang))
+    items = []
+    for _, _, info, filename, aud, lang in sorted(rows, key=lambda r: r[:2]):
+        data = zf.read(info)
+        title = f"R1 · {_DEMO_LABEL[aud]} · {lang.upper()}"
+        with db.connect() as conn:
+            doc = services.create_doc_with_version(
+                conn, pid, title=title, role="icf", icf_type=aud, language=lang,
+                filename=filename, data=data,
+                note="Approved version submitted to the Ethics Committee", source="upload",
+                user_name=user_name,
+            )  # fmt: skip
+        items.append({"name": title, "kind": "project_doc"})
+        if aud == "adult" and lang == "en":
+            reviewed = _with_ec_comments(data)
+            comments = services.prepare_comments(filename, reviewed)
+            with db.connect() as conn:
+                services.add_version(
+                    conn, doc["id"], filename, reviewed,
+                    "Returned by the Ethics Committee with comments", "reviewed",
+                    "Ethics Committee",
+                    comments,
+                )  # fmt: skip
+    return items
