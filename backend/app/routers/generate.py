@@ -88,21 +88,36 @@ def _fill_template(
             raise RuntimeError("Template file missing from storage") from None
 
 
-def _sponsor_text(conn, version_ids: list[int]) -> str:
+_text_cache: dict[int, str] = {}  # version id -> extracted text (versions are immutable)
+
+
+def _version_text(v) -> str:
     from ..engine import text as engine_text
 
-    parts = []
-    for vid in version_ids:
-        v = conn.execute("SELECT * FROM versions WHERE id = ?", (vid,)).fetchone()
-        if not v or not v["filename"].lower().endswith(".docx"):
-            continue
-        try:
-            with storage.local_path(v["stored_name"]) as vpath:
-                txt = engine_text.docx_text(str(vpath))
-        except Exception:  # noqa: BLE001, S112
-            continue
-        parts.append(f"=== {v['filename']} ===\n{txt}")
-    return "\n\n".join(parts)
+    if v["id"] in _text_cache:
+        return _text_cache[v["id"]]
+    try:
+        with storage.local_path(v["stored_name"]) as vpath:
+            txt = engine_text.docx_text(str(vpath))
+    except Exception:  # noqa: BLE001
+        return ""
+    _text_cache[v["id"]] = f"=== {v['filename']} ===\n{txt}"
+    return _text_cache[v["id"]]
+
+
+def _sponsor_text(conn, version_ids: list[int]) -> str:
+    """Sponsor docs are downloaded from storage in parallel and cached per version."""
+    from concurrent.futures import ThreadPoolExecutor
+
+    rows = [
+        r
+        for vid in version_ids
+        if (r := conn.execute("SELECT * FROM versions WHERE id = ?", (vid,)).fetchone())
+        and r["filename"].lower().endswith(".docx")
+    ]
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        parts = list(pool.map(_version_text, rows))
+    return "\n\n".join(p for p in parts if p)
 
 
 @router.post("/projects/{pid}/generate", status_code=202)
