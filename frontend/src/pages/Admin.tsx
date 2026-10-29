@@ -37,17 +37,19 @@ export default function Admin() {
     setSeeding(false);
   }
 
-  async function reset(withSamples: boolean) {
+  async function reset(withSamples: boolean, keepLibrary = false) {
     const local = status?.storage.backend === 'local';
-    const msg = t('admin.resetConfirm', {
-      local: local ? t('admin.resetLocal') : '',
-      samples: withSamples ? t('admin.resetSamplesNote') : '',
-    });
+    const msg = keepLibrary
+      ? t('admin.clearConfirm')
+      : t('admin.resetConfirm', {
+          local: local ? t('admin.resetLocal') : '',
+          samples: withSamples ? t('admin.resetSamplesNote') : '',
+        });
     if (!window.confirm(msg)) return;
     setResetting(true);
     setResetError('');
     try {
-      const r = await api.adminReset(withSamples);
+      const r = await api.adminReset(withSamples, keepLibrary);
       setResult(r.seed);
       await load();
     } catch (e) {
@@ -111,6 +113,14 @@ export default function Admin() {
         <h2>{t('admin.resetTitle')}</h2>
         <p>{t('admin.resetExplain')}</p>
         <div className="row">
+          <button
+            type="button"
+            className="btn"
+            onClick={() => reset(false, true)}
+            disabled={resetting || seeding}
+          >
+            {resetting ? t('admin.resetting') : t('admin.clearProjects')}
+          </button>
           <button
             type="button"
             className="btn"

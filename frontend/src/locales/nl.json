@@ -370,7 +370,9 @@
     "resetConfirm": "Dit verwijdert PERMANENT ALLE projecten, projectdocumenten, versies, opmerkingen, taken en de sjabloonbibliotheek uit deze app{{local}}. De demogebruiker en je login blijven bestaan. Bestanden in de GCS-bucket worden NIET verwijderd.{{samples}}",
     "resetLocal": " en alle lokaal opgeslagen bestanden",
     "resetSamplesNote": " Daarna worden de voorbeelden uit de bucket opnieuw geïmporteerd.",
-    "resetExplain": "Zet de app terug naar de beginstatus: verwijdert alle projecten, documenten, versies en de sjabloonbibliotheek. De demogebruiker blijft. Gebruik 'Resetten + voorbeelden importeren' voor de status direct na de eerste import."
+    "resetExplain": "Zet de app terug naar de beginstatus: verwijdert alle projecten, documenten, versies en de sjabloonbibliotheek. De demogebruiker blijft. Gebruik 'Resetten + voorbeelden importeren' voor de status direct na de eerste import.",
+    "clearProjects": "Projecten wissen (sjablonen behouden)",
+    "clearConfirm": "Dit verwijdert ALLE projecten, documenten, versies, opmerkingen, taken en gegenereerde bestanden. De sjabloonbibliotheek en geïmporteerde voorbeelden blijven staan, opnieuw importeren is niet nodig. Bestanden in de GCS-bucket worden NIET verwijderd."
   },
   "req": {
     "has_sponsor_docs": "Upload minstens één sponsordocument",

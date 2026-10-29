@@ -370,7 +370,9 @@
     "resetConfirm": "Ceci supprime DÉFINITIVEMENT TOUS les projets, documents de projet, versions, commentaires, tâches et la bibliothèque de modèles de cette application{{local}}. L'utilisateur démo et votre connexion sont conservés. Les fichiers du bucket GCS ne sont PAS supprimés.{{samples}}",
     "resetLocal": " et tous les fichiers stockés localement",
     "resetSamplesNote": " Ensuite, les exemples du bucket sont réimportés.",
-    "resetExplain": "Remet l'application à l'état initial : supprime tous les projets, documents, versions et la bibliothèque de modèles. L'utilisateur démo est conservé. Utilisez « Réinitialiser + importer les exemples » pour l'état juste après le premier import."
+    "resetExplain": "Remet l'application à l'état initial : supprime tous les projets, documents, versions et la bibliothèque de modèles. L'utilisateur démo est conservé. Utilisez « Réinitialiser + importer les exemples » pour l'état juste après le premier import.",
+    "clearProjects": "Effacer les projets (garder les modèles)",
+    "clearConfirm": "Ceci supprime TOUS les projets, documents, versions, commentaires, tâches et fichiers générés. La bibliothèque de modèles et les exemples importés restent, aucune réimportation n'est nécessaire. Les fichiers du bucket GCS ne sont PAS supprimés."
   },
   "req": {
     "has_sponsor_docs": "Téléversez au moins un document du promoteur",

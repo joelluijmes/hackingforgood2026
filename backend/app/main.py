@@ -60,10 +60,21 @@ def admin_status() -> dict:
 
 _reset_lock = threading.Lock()
 _KEEP_TABLES = {"users", "sessions"}
+# keep_library=true: only these (app-generated) tables are cleared, templates/samples stay
+_PROJECT_TABLES = (
+    "changes",
+    "comment_translations",
+    "comments",
+    "versions",
+    "project_docs",
+    "projects",
+)
 
 
 @app.post("/api/admin/reset")
-def admin_reset(request: Request, user: auth.User, import_samples: bool = False) -> dict:
+def admin_reset(
+    request: Request, user: auth.User, import_samples: bool = False, keep_library: bool = False
+) -> dict:
     """Wipe all app data (keeps demo user, the caller and their session); never touches GCS."""
     if not _reset_lock.acquire(blocking=False):
         raise HTTPException(409, "A reset is already running")
@@ -72,6 +83,8 @@ def admin_reset(request: Request, user: auth.User, import_samples: bool = False)
             raise HTTPException(409, "Generate/translate tasks are still running; wait and retry")
         if import_samples and not seed.BUCKET_ZIP.exists():
             raise HTTPException(404, "data/bucket.zip not found")
+        if keep_library:
+            return _clear_projects()
         header = request.headers.get("authorization", "")
         token = header[7:].strip()
         with db.connect() as conn:
@@ -110,6 +123,25 @@ def admin_reset(request: Request, user: auth.User, import_samples: bool = False)
         return out
     finally:
         _reset_lock.release()
+
+
+def _clear_projects() -> dict:
+    """Delete projects, versions, comments and generated files; keep the template library."""
+    with db.connect() as conn:
+        keys = [r["stored_name"] for r in conn.execute("SELECT stored_name FROM versions")]
+        for t in _PROJECT_TABLES:
+            conn.execute(f'DELETE FROM "{t}"')  # noqa: S608
+            conn.execute("DELETE FROM sqlite_sequence WHERE name = ?", (t,))
+    tasks.clear()
+    removed = 0
+    if os.environ.get("STORAGE_BACKEND", "local").strip().lower() == "local":
+        for key in keys:
+            try:
+                storage.delete(key)
+                removed += 1
+            except Exception:  # noqa: BLE001, S110
+                pass
+    return {"reset": True, "local_files_removed": removed, "seed": None}
 
 
 for r in (
