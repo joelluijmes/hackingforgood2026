@@ -40,6 +40,15 @@ export default function VersionViewer() {
   const [docs, setDocs] = useState<ProjectDoc[]>([]);
   const [error, setError] = useState('');
   const [showTc, setShowTc] = useState(true);
+  const [showFills, setShowFills] = useState(false);
+  const [sel, setSel] = useState<{
+    text: string;
+    x: number;
+    y: number;
+  } | null>(null);
+  const [adding, setAdding] = useState(false);
+  const [draft, setDraft] = useState('');
+  const [addErr, setAddErr] = useState('');
   const [activeId, setActiveId] = useState<number | null>(null);
   const paper = useRef<HTMLDivElement>(null);
   const commentsRef = useRef<ReviewComment[]>([]);
@@ -145,6 +154,45 @@ export default function VersionViewer() {
     activate(matches[(i + 1) % matches.length]);
   };
 
+  const onSelect = () => {
+    if (adding) return;
+    const s = window.getSelection();
+    const root = paper.current;
+    if (!s || s.isCollapsed || !root || !s.rangeCount) return setSel(null);
+    const r = s.getRangeAt(0);
+    const text = s.toString().trim();
+    if (!text || !root.contains(r.commonAncestorContainer)) return setSel(null);
+    const rect = r.getBoundingClientRect();
+    setSel({
+      text,
+      x: Math.min(rect.left, window.innerWidth - 280),
+      y: rect.bottom + 6,
+    });
+  };
+
+  const closeAdd = () => {
+    setSel(null);
+    setAdding(false);
+    setDraft('');
+    setAddErr('');
+  };
+
+  const submitAdd = async () => {
+    if (!sel || !draft.trim()) return;
+    try {
+      const c = await api.addComment(vid, draft.trim(), sel.text);
+      setComments((all) => [...all, c]);
+      const h = await api.getVersionHtml(vid);
+      setHtml(h);
+      closeAdd();
+      window.getSelection()?.removeAllRanges();
+      setTab('comments');
+      setActiveId(c.id);
+    } catch (e) {
+      setAddErr(e instanceof Error ? e.message : String(e));
+    }
+  };
+
   if (error && !detail) {
     return (
       <div className="page">
@@ -218,12 +266,13 @@ export default function VersionViewer() {
             <div className="muted">{t('versionViewer.rendering')}</div>
           )}
           {html && (
-            // biome-ignore lint/a11y/useKeyWithClickEvents: comments are also reachable via the panel
             // biome-ignore lint/a11y/noStaticElementInteractions: delegated click on highlights
             <div
               ref={paper}
-              className={`paper ${showTc ? '' : 'hide-tc'}`}
+              className={`paper ${showTc ? '' : 'hide-tc'} ${showFills ? 'show-fills' : ''}`}
               onClick={onDocClick}
+              onMouseUp={onSelect}
+              onKeyUp={onSelect}
               // biome-ignore lint/security/noDangerouslySetInnerHtml: escaped server-side
               dangerouslySetInnerHTML={{ __html: html.html }}
             />
@@ -257,6 +306,9 @@ export default function VersionViewer() {
               lang={lang}
               activeId={activeId}
               onActivate={activate}
+              fillCount={html?.fill_count ?? 0}
+              showFills={showFills}
+              onToggleFills={setShowFills}
               onFix={(c) => {
                 activate(c);
                 setFixing(c);
@@ -281,6 +333,47 @@ export default function VersionViewer() {
           )}
         </div>
       </div>
+      {sel && (
+        <div
+          className={`rv-add ${adding ? '' : 'collapsed'}`}
+          style={{ left: sel.x, top: sel.y }}
+        >
+          {adding ? (
+            <>
+              <textarea
+                rows={3}
+                // biome-ignore lint/a11y/noAutofocus: opened by an explicit click
+                autoFocus
+                placeholder={t('comments.addPlaceholder')}
+                value={draft}
+                onChange={(e) => setDraft(e.target.value)}
+              />
+              {addErr && <div className="rv-err">{addErr}</div>}
+              <div className="rv-actions">
+                <button
+                  type="button"
+                  className="btn primary"
+                  disabled={!draft.trim()}
+                  onClick={submitAdd}
+                >
+                  {t('comments.addSave')}
+                </button>
+                <button type="button" className="btn ghost" onClick={closeAdd}>
+                  {t('common.cancel')}
+                </button>
+              </div>
+            </>
+          ) : (
+            <button
+              type="button"
+              className="btn primary"
+              onClick={() => setAdding(true)}
+            >
+              {t('comments.addComment')}
+            </button>
+          )}
+        </div>
+      )}
       {changeId !== null && (
         <PropagateDialog
           changeId={changeId}

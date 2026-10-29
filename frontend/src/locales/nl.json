@@ -283,7 +283,11 @@
     "showTranslation": "Vertaling tonen",
     "showOriginal": "Origineel tonen",
     "translationUnavailable": "Vertaling niet beschikbaar",
-    "showGenerated": "Toon gegenereerde opmerkingen ({{count}})",
+    "fillsSummary": "{{count}} passages ingevuld uit sponsordocumenten",
+    "showFills": "Markeer in document",
+    "addComment": "Opmerking toevoegen",
+    "addPlaceholder": "Je opmerking bij deze tekst…",
+    "addSave": "Opmerking plaatsen",
     "fixWithAi": "Oplossen met AI"
   },
   "generate": {

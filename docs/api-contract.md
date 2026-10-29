@@ -40,12 +40,14 @@ Frontend client mirroring this file: `frontend/src/api.ts` (single source of typ
 - `GET /api/versions/{vid}/html` -> `VersionHtml = DocHtml & {comment_ids: string[]}` (docx only, else 422). Rendered HTML contains:
   - commented ranges wrapped as `<span class="cmt" data-cid="<ext_id>">…</span>` (nested/multiple ids: space-separated in `data-cid`)
   - tracked changes as `<ins class="tc-ins" data-author=… data-date=…>` and `<del class="tc-del" …>`
+  - passages the generator filled from sponsor documents (bookmark `icf_fill_N`, no Word comment) as `<mark class="fill">…</mark>`; `fill_count` = number of them. Generated drafts only carry Word comments (author "ICF Studio") for real gaps (`Missing: … - please add this information`); routine fills are never commented, so `comments_open` counts only real comments.
   - same colour classes and headings/anchors as templates
   All text HTML-escaped.
 
 ## Comments (Word comments from reviewed documents)
 - `Comment = {id, version_id, ext_id, author, initials, date, text, anchor_text, language: Lang|null, translated_text: string|null, translated_to: Lang|null, parent_id: number|null, status: "open"|"approved"|"declined", decided_by: string|null, decided_at: string|null, decision_note: string|null}`; `Lang = "en"|"nl"|"fr"`
 - `GET /api/versions/{vid}/comments?lang=<Lang>` -> Comment[] in document order (replies follow parents; `parent_id` links replies). `lang` defaults to the caller's language. If a comment's language differs from `lang` and AI is available, `translated_text` holds the translation (cached in SQLite table `comment_translations`) and `translated_to` = lang; otherwise both null.
+- `POST /api/versions/{vid}/comments` `{text, anchor_text}` -> Comment (user comment, author = caller, status open). The backend finds `anchor_text` in one paragraph of the stored .docx, wraps it in a Word comment range authored by the user (so it survives export), rewrites the stored file in place and stores the comment row. 422 when the text cannot be located / not a docx.
 - `POST /api/comments/{id}/decision` `{status:"open"|"approved"|"declined", note?}` -> Comment (records user + timestamp)
 
 ## Diff (new reviewed version vs previous)

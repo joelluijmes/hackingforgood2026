@@ -28,6 +28,53 @@ def list_comments(vid: int, user: User, lang: str | None = None) -> list[dict]:
         return services.comments_for_version(conn, vid, lang)
 
 
+class NewComment(BaseModel):
+    text: str
+    anchor_text: str
+
+
+@router.post("/versions/{vid}/comments")
+def add_comment(vid: int, body: NewComment, user: User) -> dict:
+    """User comment anchored on selected text; written into the stored docx as a Word comment."""
+    import tempfile
+    from pathlib import Path
+
+    from ..engine import comments as engine_comments
+
+    text, anchor = body.text.strip(), body.anchor_text.strip()
+    if not text or not anchor:
+        raise HTTPException(422, "Comment text and selected text are required")
+    with db.connect() as conn:
+        v = _ensure_version(conn, vid)
+    if not v["filename"].lower().endswith(".docx"):
+        raise HTTPException(422, "Comments can only be added to .docx versions")
+    initials = "".join(w[0] for w in user["name"].split()[:2]).upper() or "U"
+    try:
+        with tempfile.TemporaryDirectory() as tmp, storage.local_path(v["stored_name"]) as src:
+            dst = Path(tmp) / "out.docx"
+            ext_id, matched = engine_comments.add_user_comment(
+                str(src), str(dst), anchor=anchor, text=text, author=user["name"],
+                initials=initials,
+            )  # fmt: skip
+            data = dst.read_bytes()
+    except FileNotFoundError:
+        raise HTTPException(404, "File missing from storage") from None
+    except ValueError as exc:
+        raise HTTPException(422, str(exc)) from exc
+    storage.put(v["stored_name"], data)
+    with db.connect() as conn:
+        conn.execute("UPDATE versions SET size = ? WHERE id = ?", (len(data), vid))
+        cur = conn.execute(
+            "INSERT INTO comments (version_id, ext_id, author, initials, date, text, anchor_text,"
+            " language, status) VALUES (?,?,?,?,?,?,?,?,'open')",
+            (vid, ext_id, user["name"], initials, db.now_iso(), text,
+             " ".join(matched.split())[:300], user["language"]),
+        )  # fmt: skip
+        conn.commit()
+        row = conn.execute("SELECT * FROM comments WHERE id = ?", (cur.lastrowid,)).fetchone()
+        return services.comment_dict(row)
+
+
 class Decision(BaseModel):
     status: Literal["open", "approved", "declined"]
     note: str | None = None

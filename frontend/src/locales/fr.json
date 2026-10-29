@@ -283,7 +283,11 @@
     "showTranslation": "Afficher la traduction",
     "showOriginal": "Afficher l'original",
     "translationUnavailable": "Traduction indisponible",
-    "showGenerated": "Afficher les notes générées ({{count}})",
+    "fillsSummary": "{{count}} passages remplis à partir des documents du promoteur",
+    "showFills": "Surligner dans le document",
+    "addComment": "Ajouter un commentaire",
+    "addPlaceholder": "Votre commentaire sur ce texte…",
+    "addSave": "Publier le commentaire",
     "fixWithAi": "Corriger avec l'IA"
   },
   "generate": {
