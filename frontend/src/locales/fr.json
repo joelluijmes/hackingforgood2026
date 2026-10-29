@@ -149,7 +149,9 @@
   "sources": {
     "upload": "Téléversé",
     "generated": "Généré",
-    "reviewed": "Relu"
+    "reviewed": "Relu",
+    "edited": "Modifié",
+    "propagated": "Propagé"
   },
   "kinds": {
     "sponsor": "Promoteur",
@@ -181,7 +183,10 @@
     "compareWithPrevious": "Comparer avec la version précédente",
     "showTrackedChanges": "Afficher les modifications suivies",
     "notRenderable": "Ce type de fichier ne peut pas être affiché. Téléchargez-le.",
-    "rendering": "Affichage du document…"
+    "rendering": "Affichage du document…",
+    "tabComments": "Commentaires",
+    "tabEdit": "Modifier avec l'IA",
+    "ecResponse": "Tableau de réponse CE"
   },
   "viewer": {
     "words_one": "mot",
@@ -278,7 +283,8 @@
     "showTranslation": "Afficher la traduction",
     "showOriginal": "Afficher l'original",
     "translationUnavailable": "Traduction indisponible",
-    "showGenerated": "Afficher les notes générées ({{count}})"
+    "showGenerated": "Afficher les notes générées ({{count}})",
+    "fixWithAi": "Corriger avec l'IA"
   },
   "generate": {
     "title": "Générer un projet d'ICF",
@@ -351,7 +357,14 @@
     "translateBoth": "Traduire en NL + FR",
     "needEn": "Générez d'abord le formulaire anglais",
     "chip": "v{{n}} · {{source}}",
-    "note": "Les versions NL/FR sont construites à partir du modèle belge NL/FR ; le contenu du formulaire anglais remplit les champs."
+    "note": "Les versions NL/FR sont construites à partir du modèle belge NL/FR ; le contenu du formulaire anglais remplit les champs.",
+    "open": "{{count}} ouverts",
+    "rows": {
+      "adult": "Adulte 18+",
+      "parent": "Parents",
+      "adolescent": "Adolescent 12–17",
+      "child": "Enfant 8–11"
+    }
   },
   "task": {
     "titleGenerate": "Génération du formulaire {{lang}} ({{icf}})",
@@ -370,6 +383,43 @@
       "comments": "Ajout des commentaires de relecture",
       "saving": "Enregistrement du document",
       "done": "Terminé"
+    }
+  },
+  "edit": {
+    "title": "Modifier avec l'IA",
+    "hint": "Décrivez une modification. Les modifications sont enregistrées comme modifications suivies Word dans une nouvelle version, puis peuvent être reportées sur les autres formulaires.",
+    "workingOn": "Commentaire en cours",
+    "clear": "Effacer",
+    "empty": "Essayez : « Expliquez HSCT en termes simples à sa première utilisation » ou choisissez un commentaire et cliquez sur « Corriger avec l'IA ».",
+    "reading": "Lecture du formulaire…",
+    "defaultPrompt": "Traitez ce commentaire du Comité d'éthique.",
+    "defaultReply": "Voici ma proposition.",
+    "proposedCount_one": "{{count}} modification proposée",
+    "proposedCount_other": "{{count}} modifications proposées",
+    "noEdits": "Aucune modification proposée",
+    "proposed": "Modifications proposées",
+    "apply_one": "Appliquer {{count}} modification comme modification suivie",
+    "apply_other": "Appliquer {{count}} modifications comme modifications suivies",
+    "saving": "Enregistrement…",
+    "discard": "Rejeter",
+    "placeholder": "Demandez une modification…",
+    "send": "Envoyer",
+    "editText": "Modifier le texte",
+    "showChanges": "Afficher les changements",
+    "paragraph": "Paragraphe",
+    "mandatory": "Modifie un texte obligatoire du modèle ({{score}} % de correspondance avec le modèle national). Justifiez cet écart auprès du Comité d'éthique."
+  },
+  "propagate": {
+    "title": "Appliquer cette modification aux autres formulaires",
+    "loading": "Vertex AI adapte la modification pour chaque public et chaque langue… cela prend environ une demi-minute.",
+    "apply_one": "Appliquer à {{count}} formulaire",
+    "apply_other": "Appliquer à {{count}} formulaires",
+    "done": "Terminé",
+    "created": "v{{number}} créée",
+    "status": {
+      "proposed": "Modification proposée",
+      "not_applicable": "Non applicable",
+      "error": "Échec"
     }
   }
 }

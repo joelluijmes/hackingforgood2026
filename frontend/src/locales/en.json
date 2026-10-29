@@ -149,7 +149,9 @@
   "sources": {
     "upload": "Upload",
     "generated": "Generated",
-    "reviewed": "Reviewed"
+    "reviewed": "Reviewed",
+    "edited": "Edited",
+    "propagated": "Propagated"
   },
   "kinds": {
     "sponsor": "Sponsor",
@@ -181,7 +183,10 @@
     "compareWithPrevious": "Compare with previous version",
     "showTrackedChanges": "Show tracked changes",
     "notRenderable": "This file type cannot be rendered. Download it instead.",
-    "rendering": "Rendering document…"
+    "rendering": "Rendering document…",
+    "tabComments": "Comments",
+    "tabEdit": "Edit with AI",
+    "ecResponse": "EC response table"
   },
   "viewer": {
     "words_one": "word",
@@ -278,7 +283,8 @@
     "showTranslation": "Show translation",
     "showOriginal": "Show original",
     "translationUnavailable": "Translation unavailable",
-    "showGenerated": "Show generated notes ({{count}})"
+    "showGenerated": "Show generated notes ({{count}})",
+    "fixWithAi": "Fix with AI"
   },
   "generate": {
     "title": "Generate ICF draft",
@@ -351,7 +357,14 @@
     "translateBoth": "Translate to NL + FR",
     "needEn": "Generate the English ICF first",
     "chip": "v{{n}} · {{source}}",
-    "note": "NL/FR versions are built from the Belgian NL/FR template; the English ICF content fills the placeholders."
+    "note": "NL/FR versions are built from the Belgian NL/FR template; the English ICF content fills the placeholders.",
+    "open": "{{count}} open",
+    "rows": {
+      "adult": "Adult 18+",
+      "parent": "Parents",
+      "adolescent": "Adolescent 12–17",
+      "child": "Child 8–11"
+    }
   },
   "task": {
     "titleGenerate": "Generating {{lang}} ICF ({{icf}})",
@@ -370,6 +383,43 @@
       "comments": "Adding review comments",
       "saving": "Saving the document",
       "done": "Done"
+    }
+  },
+  "edit": {
+    "title": "Edit with AI",
+    "hint": "Describe a change. Edits are saved as Word tracked changes in a new version, and can then be carried over to the other forms.",
+    "workingOn": "Working on comment",
+    "clear": "Clear",
+    "empty": "Try: “Explain HSCT in plain words where it is first used” or pick a comment and click “Fix with AI”.",
+    "reading": "Reading the form…",
+    "defaultPrompt": "Address this Ethics Committee comment.",
+    "defaultReply": "Here is my proposal.",
+    "proposedCount_one": "{{count}} proposed edit",
+    "proposedCount_other": "{{count}} proposed edits",
+    "noEdits": "No edits proposed",
+    "proposed": "Proposed edits",
+    "apply_one": "Apply {{count}} edit as tracked changes",
+    "apply_other": "Apply {{count}} edits as tracked changes",
+    "saving": "Saving…",
+    "discard": "Discard",
+    "placeholder": "Ask for a change…",
+    "send": "Send",
+    "editText": "Edit text",
+    "showChanges": "Show changes",
+    "paragraph": "Paragraph",
+    "mandatory": "Changes mandatory template wording ({{score}}% match with the national template). Justify this deviation for the Ethics Committee."
+  },
+  "propagate": {
+    "title": "Apply this change to the other forms",
+    "loading": "Asking Vertex AI to adapt the change for each audience and language… this takes about half a minute.",
+    "apply_one": "Apply to {{count}} form",
+    "apply_other": "Apply to {{count}} forms",
+    "done": "Done",
+    "created": "v{{number}} created",
+    "status": {
+      "proposed": "Change proposed",
+      "not_applicable": "Not applicable",
+      "error": "Failed"
     }
   }
 }

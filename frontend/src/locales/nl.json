@@ -149,7 +149,9 @@
   "sources": {
     "upload": "Upload",
     "generated": "Gegenereerd",
-    "reviewed": "Nagekeken"
+    "reviewed": "Nagekeken",
+    "edited": "Bewerkt",
+    "propagated": "Doorgevoerd"
   },
   "kinds": {
     "sponsor": "Opdrachtgever",
@@ -181,7 +183,10 @@
     "compareWithPrevious": "Vergelijken met vorige versie",
     "showTrackedChanges": "Wijzigingen bijhouden tonen",
     "notRenderable": "Dit bestandstype kan niet worden weergegeven. Download het.",
-    "rendering": "Document weergeven…"
+    "rendering": "Document weergeven…",
+    "tabComments": "Opmerkingen",
+    "tabEdit": "Bewerken met AI",
+    "ecResponse": "Antwoordtabel EC"
   },
   "viewer": {
     "words_one": "woord",
@@ -278,7 +283,8 @@
     "showTranslation": "Vertaling tonen",
     "showOriginal": "Origineel tonen",
     "translationUnavailable": "Vertaling niet beschikbaar",
-    "showGenerated": "Toon gegenereerde opmerkingen ({{count}})"
+    "showGenerated": "Toon gegenereerde opmerkingen ({{count}})",
+    "fixWithAi": "Oplossen met AI"
   },
   "generate": {
     "title": "ICF-ontwerp genereren",
@@ -351,7 +357,14 @@
     "translateBoth": "Vertalen naar NL + FR",
     "needEn": "Genereer eerst het Engelse toestemmingsformulier",
     "chip": "v{{n}} · {{source}}",
-    "note": "NL/FR-versies worden opgebouwd uit het Belgische NL/FR-sjabloon; de inhoud van het Engelse ICF vult de plaatsaanduidingen."
+    "note": "NL/FR-versies worden opgebouwd uit het Belgische NL/FR-sjabloon; de inhoud van het Engelse ICF vult de plaatsaanduidingen.",
+    "open": "{{count}} open",
+    "rows": {
+      "adult": "Volwassene 18+",
+      "parent": "Ouders",
+      "adolescent": "Adolescent 12–17",
+      "child": "Kind 8–11"
+    }
   },
   "task": {
     "titleGenerate": "{{lang}} ICF genereren ({{icf}})",
@@ -370,6 +383,43 @@
       "comments": "Opmerkingen toevoegen",
       "saving": "Document opslaan",
       "done": "Klaar"
+    }
+  },
+  "edit": {
+    "title": "Bewerken met AI",
+    "hint": "Beschrijf een wijziging. Bewerkingen worden als bijgehouden wijzigingen in Word opgeslagen in een nieuwe versie en kunnen daarna naar de andere formulieren worden doorgevoerd.",
+    "workingOn": "Bezig met opmerking",
+    "clear": "Wissen",
+    "empty": "Probeer: “Leg HSCT in eenvoudige woorden uit waar het voor het eerst voorkomt” of kies een opmerking en klik op “Oplossen met AI”.",
+    "reading": "Formulier lezen…",
+    "defaultPrompt": "Verwerk deze opmerking van het Ethisch Comité.",
+    "defaultReply": "Dit is mijn voorstel.",
+    "proposedCount_one": "{{count}} voorgestelde bewerking",
+    "proposedCount_other": "{{count}} voorgestelde bewerkingen",
+    "noEdits": "Geen bewerkingen voorgesteld",
+    "proposed": "Voorgestelde bewerkingen",
+    "apply_one": "{{count}} bewerking toepassen als bijgehouden wijziging",
+    "apply_other": "{{count}} bewerkingen toepassen als bijgehouden wijzigingen",
+    "saving": "Opslaan…",
+    "discard": "Verwerpen",
+    "placeholder": "Vraag een wijziging…",
+    "send": "Versturen",
+    "editText": "Tekst bewerken",
+    "showChanges": "Wijzigingen tonen",
+    "paragraph": "Alinea",
+    "mandatory": "Wijzigt verplichte sjabloontekst ({{score}}% overeenkomst met het nationale sjabloon). Motiveer deze afwijking voor het Ethisch Comité."
+  },
+  "propagate": {
+    "title": "Deze wijziging toepassen op de andere formulieren",
+    "loading": "Vertex AI past de wijziging aan voor elke doelgroep en taal… dit duurt ongeveer een halve minuut.",
+    "apply_one": "Toepassen op {{count}} formulier",
+    "apply_other": "Toepassen op {{count}} formulieren",
+    "done": "Klaar",
+    "created": "v{{number}} aangemaakt",
+    "status": {
+      "proposed": "Wijziging voorgesteld",
+      "not_applicable": "Niet van toepassing",
+      "error": "Mislukt"
     }
   }
 }

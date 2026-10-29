@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import {
   api,
   type Lang,
@@ -10,6 +10,8 @@ import {
   type VersionHtml,
 } from '../api';
 import CommentPanel from '../components/CommentPanel';
+import EditPanel from '../components/EditPanel';
+import PropagateDialog from '../components/PropagateDialog';
 import { isLang } from '../i18n';
 import '../review.css';
 
@@ -21,6 +23,15 @@ export default function VersionViewer() {
   const lang = (isLang(i18n.language) ? i18n.language : 'en') as Lang;
   const vid = Number(useParams().vid);
   const nav = useNavigate();
+  const location = useLocation();
+  const [tab, setTab] = useState<'comments' | 'edit'>('comments');
+  const [fixing, setFixing] = useState<ReviewComment | null>(null);
+  const [changeId, setChangeId] = useState<number | null>(null);
+  // after "apply", the new version is opened with the change id to offer propagation
+  useEffect(() => {
+    const id = (location.state as { changeId?: number } | null)?.changeId;
+    if (id) setChangeId(id);
+  }, [location.state]);
   const [detail, setDetail] = useState<VersionDetail | null>(null);
   const [html, setHtml] = useState<VersionHtml | null>(null);
   const [htmlErr, setHtmlErr] = useState('');
@@ -43,6 +54,7 @@ export default function VersionViewer() {
     setComments([]);
     setActiveId(null);
     setError('');
+    setFixing(null);
     (async () => {
       try {
         const d = await api.getVersion(vid);
@@ -176,6 +188,11 @@ export default function VersionViewer() {
             {t('versionViewer.compareWithPrevious')}
           </Link>
         )}
+        {comments.length > 0 && (
+          <a className="btn" href={api.ecResponseUrl(vid, lang)}>
+            {t('versionViewer.ecResponse')}
+          </a>
+        )}
       </div>
       {error && <p className="error">{error}</p>}
       <div className="rv-cols">
@@ -212,14 +229,67 @@ export default function VersionViewer() {
             />
           )}
         </div>
-        <CommentPanel
-          comments={comments}
-          setComments={setComments}
-          lang={lang}
-          activeId={activeId}
-          onActivate={activate}
-        />
+        <div className="rv-side">
+          <div className="rv-tabs" role="tablist">
+            <button
+              type="button"
+              role="tab"
+              aria-selected={tab === 'comments'}
+              onClick={() => setTab('comments')}
+            >
+              {t('versionViewer.tabComments')}
+              {comments.length > 0 && ` (${comments.length})`}
+            </button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected={tab === 'edit'}
+              disabled={version.preview !== 'docx'}
+              onClick={() => setTab('edit')}
+            >
+              {t('versionViewer.tabEdit')}
+            </button>
+          </div>
+          {tab === 'comments' ? (
+            <CommentPanel
+              comments={comments}
+              setComments={setComments}
+              lang={lang}
+              activeId={activeId}
+              onActivate={activate}
+              onFix={(c) => {
+                activate(c);
+                setFixing(c);
+                setTab('edit');
+              }}
+            />
+          ) : (
+            <EditPanel
+              key={vid}
+              vid={vid}
+              icfType={doc.icf_type}
+              language={doc.language}
+              lang={lang}
+              comment={fixing}
+              onClearComment={() => setFixing(null)}
+              onApplied={(r) =>
+                nav(`/versions/${r.version.id}`, {
+                  state: { changeId: r.change_id },
+                })
+              }
+            />
+          )}
+        </div>
       </div>
+      {changeId !== null && (
+        <PropagateDialog
+          changeId={changeId}
+          onClose={() => {
+            setChangeId(null);
+            nav('.', { replace: true, state: null });
+          }}
+        />
+      )}
     </div>
   );
 }

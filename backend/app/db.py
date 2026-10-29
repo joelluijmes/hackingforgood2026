@@ -88,6 +88,19 @@ CREATE TABLE IF NOT EXISTS comment_translations (
     text TEXT NOT NULL,
     PRIMARY KEY (comment_id, lang)
 );
+CREATE TABLE IF NOT EXISTS changes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    project_id INTEGER NOT NULL,
+    doc_id INTEGER NOT NULL,
+    source_version_id INTEGER NOT NULL,
+    result_version_id INTEGER NOT NULL,
+    instruction TEXT NOT NULL DEFAULT '',
+    icf_type TEXT,
+    language TEXT,
+    edits_json TEXT NOT NULL,
+    created_by TEXT NOT NULL DEFAULT '',
+    created_at TEXT NOT NULL
+);
 CREATE INDEX IF NOT EXISTS idx_versions_doc ON versions(doc_id);
 CREATE INDEX IF NOT EXISTS idx_comments_version ON comments(version_id);
 """

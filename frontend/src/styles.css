@@ -861,6 +861,16 @@ fieldset.inline {
   color: var(--primary-1100);
   border-color: transparent;
 }
+.chip.src-edited {
+  background: #f3e9fb;
+  color: var(--purple);
+  border-color: transparent;
+}
+.chip.src-propagated {
+  background: #e3f4e6;
+  color: #1d5a2b;
+  border-color: transparent;
+}
 .chip.src-generated {
   background: #fff4d6;
   color: #6b4b00;

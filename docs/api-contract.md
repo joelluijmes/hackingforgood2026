@@ -64,6 +64,20 @@ Frontend client mirroring this file: `frontend/src/api.ts` (single source of typ
 - `GET /api/ai/status` -> `{enabled: boolean, provider: "vertex"|"none", model: string|null, project: string|null}`
 - Vertex AI Gemini via `google-genai` (`genai.Client(vertexai=True, project=…, location=…)`), project from env `GOOGLE_CLOUD_PROJECT` or `gcloud config get-value project`, location env `GOOGLE_CLOUD_LOCATION` default `europe-west4`, model env `VERTEX_MODEL` default `gemini-2.5-flash`. If unavailable the app must still work (heuristic language detection by stopwords en/nl/fr, no translation, placeholders just highlighted).
 
+## Edit with AI, propagation, EC response (review/edit for the PI)
+- Paragraph index `idx` = position of the `w:p` in `body.iter(w:p)` of that version's docx (tables included); stable for one file.
+- `GET /api/versions/{vid}/paragraphs` -> `[{idx, text, section, heading}]` (non-empty paragraphs)
+- `POST /api/versions/{vid}/chat` `{message, history: [{role:"user"|"assistant", text}], comment_id?}` -> `{reply, edits: EditProposal[]}`; 503 when Vertex is unavailable, 502 on an unusable answer.
+  `EditProposal = {idx, old, new, reason, section, mandatory: {score, template_text} | null}`. `mandatory` is set (adult/parent forms only) when `old` matches a mostly-purple paragraph of the newest national template in the library for the doc's language (ratio >= 0.75): the PI must justify that deviation.
+- `POST /api/versions/{vid}/apply` `{edits: [{idx, old, new, reason?}], instruction, comment_id?}` -> `{version: Version, change_id, skipped: [{idx, why}]}`. Writes a new version (source `edited`) whose edits are Word tracked changes (`w:ins`/`w:del`, author = user name, run formatting kept). Comment decisions + translations carry over to the new version; `comment_id` marks that comment approved ("Addressed in vN") in both versions. Records a `change`.
+- `GET /api/changes/{id}` -> change `{id, project_id, doc_id, source_version_id, result_version_id, instruction, icf_type, language, edits, created_by, created_at}`
+- `POST /api/changes/{id}/propagate/preview` -> `[{doc, version_id, version_number, status: "proposed"|"not_applicable"|"error", reason, edits: EditProposal[]}]` for every other `icf` doc in the project (latest .docx version). Gemini adapts the change per audience/language (parents: "your child"; 12-17 / 8-11 simpler or not applicable; NL/FR keep official template wording). Parallel, ~30 s for 11 forms.
+- `POST /api/changes/{id}/propagate/apply` `{targets: [{version_id, edits}]}` -> `[{version_id, version?: Version, error?}]` (new versions, source `propagated`).
+- `GET /api/versions/{vid}/ec-response/file?lang=` -> .docx table: EC comment (original), translation, decision, response note. Accepts `?token=` like other `/file` routes.
+- `Version.source` adds `"edited" | "propagated"`.
+- Seed: `POST /api/seed/bucket` also creates project "Forum R1 – EC review (demo)" (stage ethics_review) with the 12 approved Forum R1 ICFs; the EN adult form gets a v2 (source `reviewed`) with four mock EC comments in Dutch and French.
+- Vertex on Windows: `ai._gcloud` resolves `gcloud.cmd` and sets `CLOUDSDK_PYTHON` to the backend interpreter when unset (gcloud needs Python >= 3.10).
+
 ## Placeholders from v1 (keep working)
 `POST /api/jobs/{creation|translation|update}` still return 501 (frontend no longer links to them).
 
@@ -74,7 +88,7 @@ Frontend client mirroring this file: `frontend/src/api.ts` (single source of typ
 - API behaviour is unchanged; file routes return the bytes with `Content-Disposition: attachment`, a missing object gives 404 `File missing from storage`.
 
 ## Frontend routes
-`/login` · `/` projects · `/projects/:id` · `/templates` · `/templates/:id` (template colour viewer) · `/versions/:vid` (document + comments review) · `/diff?from=<vid>&to=<vid>`
+`/login` · `/` projects · `/projects/:id` (with ICF set matrix: 4 audiences × EN/NL/FR) · `/templates` · `/templates/:id` (template colour viewer) · `/versions/:vid` (document + comments review + "Edit with AI" tab, propagation dialog after apply) · `/diff?from=<vid>&to=<vid>`
 
 ---
 

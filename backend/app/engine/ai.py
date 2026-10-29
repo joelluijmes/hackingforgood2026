@@ -4,7 +4,9 @@ import json
 import logging
 import os
 import re
+import shutil
 import subprocess
+import sys
 import threading
 import time
 
@@ -24,21 +26,34 @@ _state: dict = {
 }
 
 
+def _gcloud(*args: str, timeout: int = 20) -> str:
+    """Run gcloud and return stdout ('' on failure).
+
+    Resolves gcloud.cmd on Windows (subprocess cannot run .cmd shims by bare name) and points
+    gcloud at this interpreter when CLOUDSDK_PYTHON is unset, since gcloud needs Python >= 3.10
+    and otherwise picks up whatever `python` is first on PATH.
+    """
+    exe = shutil.which("gcloud")
+    if not exe:
+        return ""
+    env = dict(os.environ)
+    env.setdefault("CLOUDSDK_PYTHON", sys.executable)
+    try:
+        out = subprocess.run([exe, *args], capture_output=True, text=True, timeout=timeout, env=env)
+    except Exception as e:  # noqa: BLE001
+        log.warning("gcloud %s failed: %s", " ".join(args), e)
+        return ""
+    if out.returncode != 0:
+        log.warning("gcloud %s failed: %s", " ".join(args), out.stderr.strip()[:300])
+    return out.stdout.strip()
+
+
 def _project() -> str | None:
     if not _state["project_resolved"]:
         proj = os.environ.get("GOOGLE_CLOUD_PROJECT") or os.environ.get("GCLOUD_PROJECT")
         if not proj:
-            try:
-                out = subprocess.run(
-                    ["gcloud", "config", "get-value", "project"],
-                    capture_output=True,
-                    text=True,
-                    timeout=10,
-                )
-                proj = out.stdout.strip() or None
-                if proj == "(unset)":
-                    proj = None
-            except Exception:
+            proj = _gcloud("config", "get-value", "project", timeout=10) or None
+            if proj == "(unset)":
                 proj = None
         _state["project"] = proj
         _state["project_resolved"] = True
@@ -77,9 +92,7 @@ def _make_client():
     if _state["mode"] == "gcloud":
         from google.oauth2.credentials import Credentials
 
-        tok = subprocess.run(
-            ["gcloud", "auth", "print-access-token"], capture_output=True, text=True, timeout=20
-        ).stdout.strip()
+        tok = _gcloud("auth", "print-access-token")
         if not tok:
             raise RuntimeError("gcloud access token unavailable")
         kwargs["credentials"] = Credentials(tok)

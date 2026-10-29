@@ -133,6 +133,8 @@ def delete_version_files(conn, where: str, args: tuple) -> None:
         conn.execute("DELETE FROM comment_translations WHERE comment_id IN"
                      " (SELECT id FROM comments WHERE version_id = ?)", (r["id"],))  # fmt: skip
         conn.execute("DELETE FROM comments WHERE version_id = ?", (r["id"],))
+        conn.execute("DELETE FROM changes WHERE source_version_id = ? OR result_version_id = ?",
+                     (r["id"], r["id"]))  # fmt: skip
         conn.execute("DELETE FROM versions WHERE id = ?", (r["id"],))
         storage.delete(r["stored_name"])
 
@@ -213,6 +215,28 @@ def store_comments(conn, vid: int, items: list[dict]) -> None:
             conn.execute(
                 "UPDATE comments SET parent_id = ? WHERE id = ?", (parent, ids[c["ext_id"]])
             )
+
+
+def carry_decisions(conn, from_vid: int, to_vid: int) -> None:
+    """Copy review decisions + cached translations to the same comments in a derived version."""
+    old = {
+        (r["author"], r["text"]): r
+        for r in conn.execute("SELECT * FROM comments WHERE version_id = ?", (from_vid,))
+    }
+    for r in conn.execute("SELECT * FROM comments WHERE version_id = ?", (to_vid,)).fetchall():
+        o = old.get((r["author"], r["text"]))
+        if not o:
+            continue
+        conn.execute(
+            "UPDATE comments SET status = ?, decided_by = ?, decided_at = ?, decision_note = ?"
+            " WHERE id = ?",
+            (o["status"], o["decided_by"], o["decided_at"], o["decision_note"], r["id"]),
+        )
+        conn.execute(
+            "INSERT OR IGNORE INTO comment_translations (comment_id, lang, text)"
+            " SELECT ?, lang, text FROM comment_translations WHERE comment_id = ?",
+            (r["id"], o["id"]),
+        )
 
 
 COMMENT_KEYS = (

@@ -62,9 +62,11 @@ export function CommentBody({ c, lang }: { c: ReviewComment; lang: Lang }) {
 function Decide({
   c,
   onDecide,
+  onFix,
 }: {
   c: ReviewComment;
   onDecide: (c: ReviewComment, s: CommentStatus, note?: string) => void;
+  onFix?: (c: ReviewComment) => void;
 }) {
   const { t, i18n } = useTranslation();
   const [pending, setPending] = useState<CommentStatus | null>(null);
@@ -160,6 +162,18 @@ function Decide({
       >
         {t('comments.decline')}
       </button>
+      {onFix && (
+        <button
+          type="button"
+          className="btn ghost"
+          onClick={(e) => {
+            e.stopPropagation();
+            onFix(c);
+          }}
+        >
+          {t('comments.fixWithAi')}
+        </button>
+      )}
     </div>
   );
 }
@@ -170,12 +184,14 @@ export default function CommentPanel({
   lang,
   activeId,
   onActivate,
+  onFix,
 }: {
   comments: ReviewComment[];
   setComments: (f: (prev: ReviewComment[]) => ReviewComment[]) => void;
   lang: Lang;
   activeId: number | null;
   onActivate: (c: ReviewComment) => void;
+  onFix?: (c: ReviewComment) => void;
 }) {
   const { t } = useTranslation();
   const [filter, setFilter] = useState<Filter>('all');
@@ -265,7 +281,7 @@ export default function CommentPanel({
       }}
     >
       <CommentBody c={c} lang={lang} />
-      <Decide c={c} onDecide={decide} />
+      <Decide c={c} onDecide={decide} onFix={reply ? undefined : onFix} />
       {!reply && repliesOf(c.id).length > 0 && (
         <div className="rv-replies">
           {repliesOf(c.id).map((r) => card(r, true))}
