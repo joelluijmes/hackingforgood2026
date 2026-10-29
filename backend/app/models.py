@@ -50,7 +50,7 @@ class HtmlResult(BaseModel):
 
 class SeedItem(BaseModel):
     name: str
-    kind: Kind
+    kind: Literal["template", "project_doc"]
 
 
 class SeedResult(BaseModel):

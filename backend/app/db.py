@@ -22,6 +22,76 @@ CREATE TABLE IF NOT EXISTS documents (
 )
 """
 
+SCHEMA_V2 = """
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT NOT NULL UNIQUE,
+    name TEXT NOT NULL,
+    language TEXT NOT NULL DEFAULT 'en',
+    pw_hash TEXT NOT NULL,
+    created_at TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS sessions (
+    token TEXT PRIMARY KEY,
+    user_id INTEGER NOT NULL,
+    created_at TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS projects (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    study TEXT NOT NULL DEFAULT '',
+    description TEXT NOT NULL DEFAULT '',
+    stage TEXT NOT NULL DEFAULT 'intake',
+    created_at TEXT NOT NULL,
+    created_by_name TEXT NOT NULL DEFAULT ''
+);
+CREATE TABLE IF NOT EXISTS project_docs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    project_id INTEGER NOT NULL,
+    title TEXT NOT NULL,
+    role TEXT NOT NULL,
+    icf_type TEXT,
+    language TEXT,
+    created_at TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS versions (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    doc_id INTEGER NOT NULL,
+    number INTEGER NOT NULL,
+    filename TEXT NOT NULL,
+    stored_name TEXT NOT NULL,
+    size INTEGER NOT NULL,
+    note TEXT NOT NULL DEFAULT '',
+    source TEXT NOT NULL DEFAULT 'upload',
+    uploaded_by TEXT NOT NULL DEFAULT '',
+    uploaded_at TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS comments (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    version_id INTEGER NOT NULL,
+    ext_id TEXT NOT NULL,
+    author TEXT NOT NULL DEFAULT '',
+    initials TEXT NOT NULL DEFAULT '',
+    date TEXT,
+    text TEXT NOT NULL DEFAULT '',
+    anchor_text TEXT NOT NULL DEFAULT '',
+    language TEXT,
+    parent_id INTEGER,
+    status TEXT NOT NULL DEFAULT 'open',
+    decided_by TEXT,
+    decided_at TEXT,
+    decision_note TEXT
+);
+CREATE TABLE IF NOT EXISTS comment_translations (
+    comment_id INTEGER NOT NULL,
+    lang TEXT NOT NULL,
+    text TEXT NOT NULL,
+    PRIMARY KEY (comment_id, lang)
+);
+CREATE INDEX IF NOT EXISTS idx_versions_doc ON versions(doc_id);
+CREATE INDEX IF NOT EXISTS idx_comments_version ON comments(version_id);
+"""
+
 PDF_EXT = ".pdf"
 DOCX_EXT = ".docx"
 
@@ -36,6 +106,7 @@ def init() -> None:
     STORAGE_DIR.mkdir(exist_ok=True)
     with connect() as conn:
         conn.execute(SCHEMA)
+        conn.executescript(SCHEMA_V2)
 
 
 def now_iso() -> str:

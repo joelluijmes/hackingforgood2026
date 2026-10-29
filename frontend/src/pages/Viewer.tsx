@@ -51,7 +51,7 @@ export default function Viewer() {
     return (
       <div className="page">
         <p className="error">{error}</p>
-        <Link to="/">Back to library</Link>
+        <Link to="/templates">Back to templates</Link>
       </div>
     );
   }
@@ -79,8 +79,8 @@ export default function Viewer() {
     <div className="page wide">
       <div className="page-head">
         <div>
-          <Link to="/" className="muted">
-            ← Library
+          <Link to="/templates" className="muted">
+            ← Templates
           </Link>
           <h1>{doc.name}</h1>
           <div className="chips">

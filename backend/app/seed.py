@@ -5,7 +5,7 @@ import uuid
 import zipfile
 from pathlib import Path, PurePosixPath
 
-from . import db
+from . import db, services
 
 BUCKET_ZIP = db.BASE_DIR.parent / "data" / "bucket.zip"
 MAX_MEMBER_BYTES = 100 * 1024 * 1024
@@ -46,11 +46,11 @@ def guess_version(filename: str) -> str | None:
     return None
 
 
-def _exists(filename: str, kind: str) -> bool:
+def _template_exists(filename: str) -> bool:
     with db.connect() as conn:
         return (
             conn.execute(
-                "SELECT 1 FROM documents WHERE filename = ? AND kind = ?", (filename, kind)
+                "SELECT 1 FROM documents WHERE filename = ? AND kind = 'template'", (filename,)
             ).fetchone()
             is not None
         )
@@ -71,37 +71,85 @@ def _candidates(zf: zipfile.ZipFile):
             yield info, "sponsor", parts
 
 
-def seed_bucket() -> dict:
+def _project_doc_exists(conn, pid: int, filename: str) -> bool:
+    return (
+        conn.execute(
+            "SELECT 1 FROM versions v JOIN project_docs d ON d.id = v.doc_id"
+            " WHERE d.project_id = ? AND v.filename = ?",
+            (pid, filename),
+        ).fetchone()
+        is not None
+    )
+
+
+def _seed_sponsor(data: bytes, parts: list[str], user_name: str) -> bool:
+    study = parts[0].removesuffix(" Example")
+    name = f"{study} (sample)"
+    filename = parts[-1]
+    with db.connect() as conn:
+        row = conn.execute("SELECT id FROM projects WHERE name = ?", (name,)).fetchone()
+        if row:
+            pid = row["id"]
+        else:
+            cur = conn.execute(
+                "INSERT INTO projects (name, study, description, stage, created_at,"
+                " created_by_name) VALUES (?,?,?,?,?,?)",
+                (name, study, "Imported from the sample bucket", "intake", db.now_iso(), user_name),
+            )
+            pid = cur.lastrowid
+        if _project_doc_exists(conn, pid, filename):
+            return False
+        stored = f"{uuid.uuid4().hex}.docx"
+        (db.STORAGE_DIR / stored).write_bytes(data)
+        services.create_doc_with_version(
+            conn,
+            pid,
+            title=Path(filename).stem,
+            role="sponsor",
+            icf_type=guess_audience(filename),
+            language=guess_language(filename),
+            filename=filename,
+            stored=stored,
+            size=len(data),
+            note="",
+            source="upload",
+            user_name=user_name,
+        )
+    return True
+
+
+def seed_bucket(user_name: str = "") -> dict:
     items: list[dict] = []
     skipped = 0
     with zipfile.ZipFile(BUCKET_ZIP) as zf:
         for info, kind, parts in _candidates(zf):
             filename = parts[-1]
-            if _exists(filename, kind) or info.file_size > MAX_MEMBER_BYTES:
+            if info.file_size > MAX_MEMBER_BYTES or (
+                kind == "template" and _template_exists(filename)
+            ):
                 skipped += 1
                 continue
             data = zf.read(info)
+            name = Path(filename).stem
+            if kind == "sponsor":
+                if _seed_sponsor(data, parts, user_name):
+                    items.append({"name": name, "kind": "project_doc"})
+                else:
+                    skipped += 1
+                continue
             stored = f"{uuid.uuid4().hex}.docx"
             (db.STORAGE_DIR / stored).write_bytes(data)
-            if kind == "template":
-                m = re.match(r"(EN|NL|FR)_", filename)
-                language = m.group(1).lower() if m else guess_language(filename)
-                audience, study = "adult", None
-            else:
-                language = guess_language(filename)
-                audience = guess_audience(filename)
-                study = parts[0].removesuffix(" Example")
-            name = Path(filename).stem
+            m = re.match(r"(EN|NL|FR)_", filename)
             db.insert_document(
-                kind=kind,
+                kind="template",
                 name=name,
                 filename=filename,
                 stored_name=stored,
                 size=len(data),
-                language=language,
-                audience=audience,
+                language=m.group(1).lower() if m else guess_language(filename),
+                audience="adult",
                 version=guess_version(filename),
-                study=study,
+                study=None,
             )
-            items.append({"name": name, "kind": kind})
+            items.append({"name": name, "kind": "template"})
     return {"imported": len(items), "skipped": skipped, "items": items}

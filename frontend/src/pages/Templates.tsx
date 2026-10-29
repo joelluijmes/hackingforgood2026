@@ -1,17 +1,15 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { api, type Document, formatSize, type Kind } from '../api';
+import { api, type Document, formatSize } from '../api';
 import UploadDialog from '../components/UploadDialog';
 
 const LANG: Record<string, string> = { en: 'EN', nl: 'NL', fr: 'FR' };
 
-export default function Library() {
-  const [kind, setKind] = useState<Kind>('sponsor');
+export default function Templates() {
   const [docs, setDocs] = useState<Document[] | null>(null);
   const [error, setError] = useState('');
   const [lang, setLang] = useState('');
   const [aud, setAud] = useState('');
-  const [study, setStudy] = useState('');
   const [upload, setUpload] = useState(false);
   const [seeding, setSeeding] = useState(false);
   const [toast, setToast] = useState('');
@@ -19,31 +17,20 @@ export default function Library() {
   const load = useCallback(async () => {
     setError('');
     try {
-      setDocs(await api.listDocuments(kind));
+      setDocs(await api.listDocuments('template'));
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
       setDocs([]);
     }
-  }, [kind]);
+  }, []);
 
   useEffect(() => {
     setDocs(null);
     load();
   }, [load]);
 
-  const studies = useMemo(
-    () =>
-      [
-        ...new Set((docs ?? []).map((d) => d.study).filter(Boolean)),
-      ] as string[],
-    [docs],
-  );
-
   const shown = (docs ?? []).filter(
-    (d) =>
-      (!lang || d.language === lang) &&
-      (!aud || d.audience === aud) &&
-      (!study || d.study === study),
+    (d) => (!lang || d.language === lang) && (!aud || d.audience === aud),
   );
 
   async function seed() {
@@ -72,9 +59,9 @@ export default function Library() {
     <div className="page">
       <div className="page-head">
         <div>
-          <h1>Library</h1>
+          <h1>Templates</h1>
           <p className="muted">
-            Sponsor documents and the national ICF templates, in one place.
+            The national ICF templates that drafts are generated from.
           </p>
         </div>
         <div className="row">
@@ -91,24 +78,9 @@ export default function Library() {
             className="btn primary"
             onClick={() => setUpload(true)}
           >
-            Upload
+            Upload template
           </button>
         </div>
-      </div>
-
-      <div className="tabs" role="tablist">
-        {(['sponsor', 'template'] as Kind[]).map((k) => (
-          <button
-            key={k}
-            type="button"
-            role="tab"
-            aria-selected={kind === k}
-            className={kind === k ? 'tab active' : 'tab'}
-            onClick={() => setKind(k)}
-          >
-            {k === 'sponsor' ? 'Sponsor documents' : 'Templates'}
-          </button>
-        ))}
       </div>
 
       <div className="filters">
@@ -133,18 +105,6 @@ export default function Library() {
           <option value="adolescent">Adolescent</option>
           <option value="child">Child</option>
         </select>
-        <select
-          aria-label="Study"
-          value={study}
-          onChange={(e) => setStudy(e.target.value)}
-        >
-          <option value="">All studies</option>
-          {studies.map((s) => (
-            <option key={s} value={s}>
-              {s}
-            </option>
-          ))}
-        </select>
         <span className="muted">
           {shown.length} document{shown.length === 1 ? '' : 's'}
         </span>
@@ -162,17 +122,14 @@ export default function Library() {
             ❡
           </div>
           <h3>Nothing here yet</h3>
-          <p>
-            Upload a {kind === 'sponsor' ? 'sponsor document' : 'template'} or
-            import the sample bucket to get started.
-          </p>
+          <p>Upload a template or import the sample bucket to get started.</p>
         </div>
       )}
 
       <div className="cards">
         {shown.map((d) => (
           <article key={d.id} className="card">
-            <Link to={`/documents/${d.id}`} className="card-title">
+            <Link to={`/templates/${d.id}`} className="card-title">
               {d.name}
             </Link>
             <div className="card-file" title={d.filename}>
@@ -184,7 +141,6 @@ export default function Library() {
               )}
               {d.audience && <span className="chip">{d.audience}</span>}
               {d.version && <span className="chip">v {d.version}</span>}
-              {d.study && <span className="chip study">{d.study}</span>}
             </div>
             <div className="card-foot">
               <span className="muted">
@@ -215,7 +171,6 @@ export default function Library() {
       )}
       {upload && (
         <UploadDialog
-          kind={kind}
           onClose={() => setUpload(false)}
           onDone={() => {
             setUpload(false);
