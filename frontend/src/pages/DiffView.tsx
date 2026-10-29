@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { api, type DiffResult, type Lang, type Version } from '../api';
 import { CommentBody } from '../components/CommentPanel';
 import '../review.css';
 
 function Collapsed({ texts }: { texts: string[] }) {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   if (open)
     return (
@@ -20,7 +22,7 @@ function Collapsed({ texts }: { texts: string[] }) {
           className="df-collapsed"
           onClick={() => setOpen(false)}
         >
-          Collapse
+          {t('diff.collapse')}
         </button>
       </div>
     );
@@ -30,12 +32,13 @@ function Collapsed({ texts }: { texts: string[] }) {
       className="df-collapsed"
       onClick={() => setOpen(true)}
     >
-      {texts.length} unchanged paragraph{texts.length === 1 ? '' : 's'}
+      {t('diff.unchangedParagraphs', { count: texts.length })}
     </button>
   );
 }
 
 export default function DiffView() {
+  const { t } = useTranslation();
   const [sp] = useSearchParams();
   const nav = useNavigate();
   const from = Number(sp.get('from'));
@@ -45,13 +48,15 @@ export default function DiffView() {
   const [title, setTitle] = useState('');
   const [lang, setLang] = useState<Lang>('en');
   const [error, setError] = useState('');
+  const [pickError, setPickError] = useState(false);
 
   useEffect(() => {
     let live = true;
     setDiff(null);
     setError('');
+    setPickError(false);
     if (!from || !to) {
-      setError('Pick two versions to compare.');
+      setPickError(true);
       return;
     }
     api.me().then(
@@ -93,13 +98,13 @@ export default function DiffView() {
     <div className="page wide">
       <div className="rv-head">
         <div className="rv-crumb">
-          <Link to={`/versions/${to}`}>Back to version</Link>
+          <Link to={`/versions/${to}`}>{t('diff.backToVersion')}</Link>
         </div>
-        <h1>Compare versions{title ? ` of ${title}` : ''}</h1>
+        <h1>{title ? t('diff.titleOf', { title }) : t('diff.title')}</h1>
         {opts.length > 0 && (
           <div className="df-sel">
             <label>
-              From{' '}
+              {t('diff.from')}{' '}
               <select
                 className="rv-sel"
                 value={from}
@@ -113,7 +118,7 @@ export default function DiffView() {
               </select>
             </label>
             <label>
-              To{' '}
+              {t('diff.to')}{' '}
               <select
                 className="rv-sel"
                 value={to}
@@ -130,32 +135,41 @@ export default function DiffView() {
         )}
       </div>
       {error && <p className="error">{error}</p>}
-      {!diff && !error && <div className="muted">Comparing…</div>}
+      {pickError && <p className="error">{t('diff.pickTwo')}</p>}
+      {!diff && !error && !pickError && (
+        <div className="muted">{t('diff.comparing')}</div>
+      )}
       {diff && (
         <>
           <div className="df-stats">
-            <span className="chip">{diff.stats.inserted} inserted</span>
-            <span className="chip">{diff.stats.deleted} deleted</span>
-            <span className="chip">{diff.stats.changed} changed</span>
-            <span className="chip">{diff.stats.unchanged} unchanged</span>
             <span className="chip">
-              {diff.stats.tracked_changes} tracked changes
+              {t('diff.inserted', { count: diff.stats.inserted })}
+            </span>
+            <span className="chip">
+              {t('diff.deleted', { count: diff.stats.deleted })}
+            </span>
+            <span className="chip">
+              {t('diff.changed', { count: diff.stats.changed })}
+            </span>
+            <span className="chip">
+              {t('diff.unchanged', { count: diff.stats.unchanged })}
+            </span>
+            <span className="chip">
+              {t('diff.trackedChanges', { count: diff.stats.tracked_changes })}
             </span>
           </div>
           <p>
             <Link to={`/versions/${diff.to.id}`}>
-              Review comments in v{diff.to.number}
+              {t('diff.reviewComments', { number: diff.to.number })}
             </Link>
           </p>
           {diff.blocks.length === 0 && (
-            <div className="empty">Both versions are empty.</div>
+            <div className="empty">{t('diff.bothEmpty')}</div>
           )}
           {diff.stats.inserted + diff.stats.deleted + diff.stats.changed ===
             0 &&
             diff.blocks.length > 0 && (
-              <div className="empty">
-                No text differences between these versions.
-              </div>
+              <div className="empty">{t('diff.noDifferences')}</div>
             )}
           {groups.map((g, i) =>
             'eq' in g ? (
@@ -185,10 +199,10 @@ export default function DiffView() {
             ),
           )}
           <section className="df-section">
-            <h2>Comments in this version</h2>
+            <h2>{t('diff.commentsIn')}</h2>
             <div className="df-clist">
               {diff.comments.added.length === 0 && (
-                <div className="muted">No new comments.</div>
+                <div className="muted">{t('diff.noNew')}</div>
               )}
               {diff.comments.added.map((c) => (
                 <div key={c.id} className="rv-card">
@@ -198,10 +212,10 @@ export default function DiffView() {
             </div>
           </section>
           <section className="df-section">
-            <h2>Comments no longer present</h2>
+            <h2>{t('diff.commentsGone')}</h2>
             <div className="df-clist">
               {diff.comments.removed.length === 0 && (
-                <div className="muted">No comments were removed.</div>
+                <div className="muted">{t('diff.noRemoved')}</div>
               )}
               {diff.comments.removed.map((c) => (
                 <div key={c.id} className="rv-card">

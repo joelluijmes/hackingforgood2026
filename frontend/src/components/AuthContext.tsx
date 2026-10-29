@@ -8,6 +8,7 @@ import {
   useState,
 } from 'react';
 import { api, auth, type Language, LOGOUT_EVENT, type User } from '../api';
+import { applyLanguage } from '../i18n';
 
 interface AuthState {
   user: User | null;
@@ -27,7 +28,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     if (!auth.token) return;
     api
       .me()
-      .then(setUser)
+      .then((u) => {
+        setUser(u);
+        applyLanguage(u.language);
+      })
       .catch(() => setUser(null))
       .finally(() => setLoading(false));
   }, []);
@@ -41,13 +45,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const signIn = useCallback((token: string, u: User) => {
     auth.token = token;
     setUser(u);
+    applyLanguage(u.language);
   }, []);
   const signOut = useCallback(() => {
     auth.token = null;
     setUser(null);
   }, []);
   const setLanguage = useCallback(async (language: Language) => {
-    setUser(await api.updateMe({ language }));
+    const u = await api.updateMe({ language });
+    setUser(u);
+    await applyLanguage(u.language);
   }, []);
 
   const value = useMemo(

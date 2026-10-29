@@ -1034,3 +1034,12 @@ fieldset.inline {
     display: none;
   }
 }
+.login-lang {
+  margin-left: auto;
+}
+.login-lang .lang-select {
+  width: auto;
+  min-height: 32px;
+  padding: 2px 8px;
+  font-size: 14px;
+}

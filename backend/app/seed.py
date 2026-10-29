@@ -1,11 +1,10 @@
 """Import sample documents from data/bucket.zip, read in memory only."""
 
 import re
-import uuid
 import zipfile
 from pathlib import Path, PurePosixPath
 
-from . import db, services
+from . import db, services, storage
 
 BUCKET_ZIP = db.BASE_DIR.parent / "data" / "bucket.zip"
 MAX_MEMBER_BYTES = 100 * 1024 * 1024
@@ -99,8 +98,6 @@ def _seed_sponsor(data: bytes, parts: list[str], user_name: str) -> bool:
             pid = cur.lastrowid
         if _project_doc_exists(conn, pid, filename):
             return False
-        stored = f"{uuid.uuid4().hex}.docx"
-        (db.STORAGE_DIR / stored).write_bytes(data)
         services.create_doc_with_version(
             conn,
             pid,
@@ -109,8 +106,7 @@ def _seed_sponsor(data: bytes, parts: list[str], user_name: str) -> bool:
             icf_type=guess_audience(filename),
             language=guess_language(filename),
             filename=filename,
-            stored=stored,
-            size=len(data),
+            data=data,
             note="",
             source="upload",
             user_name=user_name,
@@ -137,8 +133,8 @@ def seed_bucket(user_name: str = "") -> dict:
                 else:
                     skipped += 1
                 continue
-            stored = f"{uuid.uuid4().hex}.docx"
-            (db.STORAGE_DIR / stored).write_bytes(data)
+            stored = storage.template_key(Path(filename).suffix or ".docx")
+            storage.put(stored, data, services.DOCX_MIME)
             m = re.match(r"(EN|NL|FR)_", filename)
             db.insert_document(
                 kind="template",
@@ -146,6 +142,7 @@ def seed_bucket(user_name: str = "") -> dict:
                 filename=filename,
                 stored_name=stored,
                 size=len(data),
+                checksum=storage.sha256(data),
                 language=m.group(1).lower() if m else guess_language(filename),
                 audience="adult",
                 version=guess_version(filename),

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import {
   api,
@@ -9,6 +10,7 @@ import {
   type ProjectDoc,
 } from '../api';
 import Dialog, { errMsg } from './Dialog';
+import { IcfOptions, LangOptions } from './Options';
 
 interface Props {
   projectId: number;
@@ -23,6 +25,8 @@ export default function GenerateDialog({
   onClose,
   onDone,
 }: Props) {
+  const { t } = useTranslation();
+  const tIcf = (a: string) => t(`icfTypes.${a}`);
   const sponsors = docs.filter((d) => d.role === 'sponsor' && d.versions[0]);
   const [templates, setTemplates] = useState<Document[] | null>(null);
   const [templateId, setTemplateId] = useState('');
@@ -52,9 +56,9 @@ export default function GenerateDialog({
 
   function pickTemplate(id: string) {
     setTemplateId(id);
-    const t = templates?.find((x) => String(x.id) === id);
-    if (t?.audience) setIcf(t.audience);
-    if (t?.language) setLanguage(t.language);
+    const tpl = templates?.find((x) => String(x.id) === id);
+    if (tpl?.audience) setIcf(tpl.audience);
+    if (tpl?.language) setLanguage(tpl.language);
   }
 
   async function submit(e: React.FormEvent) {
@@ -82,32 +86,32 @@ export default function GenerateDialog({
     const r = result.report;
     return (
       <Dialog
-        title="Draft generated"
+        title={t('generate.doneTitle')}
         onClose={onClose}
         onSubmit={(e) => {
           e.preventDefault();
           onClose();
         }}
-        submitLabel="Close"
+        submitLabel={t('common.close')}
       >
         <dl className="report">
-          <dt>Placeholders</dt>
+          <dt>{t('generate.placeholders')}</dt>
           <dd>{r.placeholders_total}</dd>
-          <dt>Filled</dt>
+          <dt>{t('generate.filled')}</dt>
           <dd>{r.filled}</dd>
-          <dt>Flagged with a comment</dt>
+          <dt>{t('generate.flagged')}</dt>
           <dd>{r.flagged}</dd>
-          <dt>Guidance paragraphs removed</dt>
+          <dt>{t('generate.removedGuidance')}</dt>
           <dd>{r.removed_guidance_paragraphs}</dd>
-          <dt>AI used</dt>
-          <dd>{r.ai_used ? 'Yes' : 'No'}</dd>
+          <dt>{t('generate.aiUsed')}</dt>
+          <dd>{r.ai_used ? t('common.yes') : t('common.no')}</dd>
         </dl>
         {result.doc.versions[0] && (
           <Link
             className="btn primary"
             to={`/versions/${result.doc.versions[0].id}`}
           >
-            Open the new draft
+            {t('generate.openDraft')}
           </Link>
         )}
       </Dialog>
@@ -117,15 +121,15 @@ export default function GenerateDialog({
   if (busy) {
     return (
       <Dialog
-        title="Generate ICF draft"
+        title={t('generate.title')}
         onClose={() => {}}
         onSubmit={(e) => e.preventDefault()}
-        submitLabel="Generate"
+        submitLabel={t('generate.submit')}
         busy
       >
         <div className="spinner-row">
           <span className="spinner" aria-hidden="true" />
-          Generating from template... this can take a minute
+          {t('generate.generating')}
         </div>
       </Dialog>
     );
@@ -133,61 +137,58 @@ export default function GenerateDialog({
 
   return (
     <Dialog
-      title="Generate ICF draft"
+      title={t('generate.title')}
       onClose={onClose}
       onSubmit={submit}
-      submitLabel="Generate"
+      submitLabel={t('generate.submit')}
       disabled={!templateId}
       error={error}
       wide
     >
       <div className="stack">
         <label>
-          Template
+          {t('generate.template')}
           <select
             value={templateId}
             onChange={(e) => pickTemplate(e.target.value)}
           >
-            {templates === null && <option>Loading…</option>}
-            {templates?.length === 0 && <option>No templates yet</option>}
-            {templates?.map((t) => (
-              <option key={t.id} value={t.id}>
-                {t.name} ({t.language?.toUpperCase() ?? '?'}
-                {t.version ? `, v ${t.version}` : ''}
-                {t.audience ? `, ${t.audience}` : ''})
+            {templates === null && <option>{t('common.loading')}</option>}
+            {templates?.length === 0 && (
+              <option>{t('generate.noTemplates')}</option>
+            )}
+            {templates?.map((tpl) => (
+              <option key={tpl.id} value={tpl.id}>
+                {tpl.name} ({tpl.language?.toUpperCase() ?? '?'}
+                {tpl.version ? `, v ${tpl.version}` : ''}
+                {tpl.audience ? `, ${tIcf(tpl.audience)}` : ''})
               </option>
             ))}
           </select>
         </label>
         <div className="grid2">
           <label>
-            ICF type
+            {t('generate.icfType')}
             <select
               value={icf}
               onChange={(e) => setIcf(e.target.value as IcfType)}
             >
-              <option value="adult">Adult</option>
-              <option value="parent">Parent</option>
-              <option value="adolescent">Adolescent</option>
-              <option value="child">Child</option>
+              <IcfOptions />
             </select>
           </label>
           <label>
-            Language
+            {t('common.language')}
             <select
               value={language}
               onChange={(e) => setLanguage(e.target.value as Language)}
             >
-              <option value="en">English</option>
-              <option value="nl">Nederlands</option>
-              <option value="fr">Français</option>
+              <LangOptions />
             </select>
           </label>
         </div>
         <fieldset>
-          <legend>Sponsor documents (latest version)</legend>
+          <legend>{t('generate.sponsorDocs')}</legend>
           {sponsors.length === 0 && (
-            <p className="muted">No sponsor documents in this project.</p>
+            <p className="muted">{t('generate.noSponsorDocs')}</p>
           )}
           {sponsors.map((d) => {
             const v = d.versions[0];
@@ -209,16 +210,16 @@ export default function GenerateDialog({
           })}
         </fieldset>
         <label>
-          Notes
+          {t('generate.notes')}
           <textarea
             rows={3}
             value={notes}
-            placeholder="Anything the draft should take into account"
+            placeholder={t('generate.notesPlaceholder')}
             onChange={(e) => setNotes(e.target.value)}
           />
         </label>
         <label>
-          Title (optional)
+          {t('generate.titleOptional')}
           <input value={title} onChange={(e) => setTitle(e.target.value)} />
         </label>
       </div>

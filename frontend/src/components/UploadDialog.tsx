@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { type Audience, api, type Language } from '../api';
 import Dialog, { errMsg, FileDrop } from './Dialog';
+import { IcfOptions, LangOptions } from './Options';
 
 interface Props {
   onClose: () => void;
@@ -9,6 +11,7 @@ interface Props {
 
 /** Upload a national template to the library (kind fixed to template). */
 export default function UploadDialog({ onClose, onDone }: Props) {
+  const { t } = useTranslation();
   const [file, setFile] = useState<File | null>(null);
   const [name, setName] = useState('');
   const [language, setLanguage] = useState<Language | ''>('');
@@ -39,10 +42,10 @@ export default function UploadDialog({ onClose, onDone }: Props) {
 
   return (
     <Dialog
-      title="Upload template"
+      title={t('templates.upload')}
       onClose={onClose}
       onSubmit={submit}
-      submitLabel="Upload"
+      submitLabel={t('common.upload')}
       disabled={!file}
       busy={busy}
       error={error}
@@ -50,44 +53,37 @@ export default function UploadDialog({ onClose, onDone }: Props) {
       <FileDrop file={file} onFile={setFile} />
       <div className="grid2">
         <label>
-          Name
+          {t('common.name')}
           <input
             value={name}
-            placeholder="defaults to filename"
+            placeholder={t('common.defaultsToFilename')}
             onChange={(e) => setName(e.target.value)}
           />
         </label>
         <label>
-          Version
+          {t('common.version')}
           <input
             value={version}
-            placeholder="e.g. 2025-07-18"
+            placeholder={t('templates.versionPlaceholder')}
             onChange={(e) => setVersion(e.target.value)}
           />
         </label>
         <label>
-          Language
+          {t('common.language')}
           <select
             value={language}
             onChange={(e) => setLanguage(e.target.value as Language | '')}
           >
-            <option value="">Unknown</option>
-            <option value="en">English</option>
-            <option value="nl">Nederlands</option>
-            <option value="fr">Français</option>
+            <LangOptions empty={t('common.unknown')} />
           </select>
         </label>
         <label>
-          Audience
+          {t('templates.audience')}
           <select
             value={audience}
             onChange={(e) => setAudience(e.target.value as Audience | '')}
           >
-            <option value="">Unknown</option>
-            <option value="adult">Adult</option>
-            <option value="parent">Parent</option>
-            <option value="adolescent">Adolescent</option>
-            <option value="child">Child</option>
+            <IcfOptions empty={t('common.unknown')} />
           </select>
         </label>
       </div>

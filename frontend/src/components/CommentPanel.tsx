@@ -1,17 +1,15 @@
 import { useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { api, type CommentStatus, type Lang, type ReviewComment } from '../api';
+import { formatDate } from '../format';
 import '../review.css';
 
 type Filter = 'all' | CommentStatus;
-const fmt = (d: string | null) => {
-  if (!d) return '';
-  const t = new Date(d);
-  return Number.isNaN(t.getTime()) ? d : t.toLocaleDateString();
-};
 const trunc = (s: string, n = 140) => (s.length > n ? `${s.slice(0, n)}…` : s);
 
 /** Read-only comment body: author, language, quote and text in the user's language. */
 export function CommentBody({ c, lang }: { c: ReviewComment; lang: Lang }) {
+  const { t, i18n } = useTranslation();
   const [orig, setOrig] = useState(false);
   const translated = !!c.translated_text && c.translated_to === lang;
   const differs = !!c.language && c.language !== lang;
@@ -22,7 +20,9 @@ export function CommentBody({ c, lang }: { c: ReviewComment; lang: Lang }) {
           {c.initials || c.author.slice(0, 2)}
         </span>
         <span className="who">{c.author}</span>
-        <span className="muted">{fmt(c.date)}</span>
+        <span className="muted">
+          {c.date ? formatDate(c.date, i18n.language) : ''}
+        </span>
         {c.language && (
           <span className="rv-pill">{c.language.toUpperCase()}</span>
         )}
@@ -35,7 +35,10 @@ export function CommentBody({ c, lang }: { c: ReviewComment; lang: Lang }) {
       </p>
       {translated && (
         <div className="rv-note">
-          Translated from {c.language?.toUpperCase()} ·{' '}
+          {t('comments.translatedFrom', {
+            language: c.language ? t(`languages.${c.language}`) : '',
+          })}{' '}
+          ·{' '}
           <button
             type="button"
             onClick={(e) => {
@@ -43,12 +46,12 @@ export function CommentBody({ c, lang }: { c: ReviewComment; lang: Lang }) {
               setOrig(!orig);
             }}
           >
-            {orig ? 'Show translation' : 'Show original'}
+            {orig ? t('comments.showTranslation') : t('comments.showOriginal')}
           </button>
         </div>
       )}
       {differs && !translated && (
-        <div className="rv-note">Translation unavailable</div>
+        <div className="rv-note">{t('comments.translationUnavailable')}</div>
       )}
     </>
   );
@@ -61,15 +64,20 @@ function Decide({
   c: ReviewComment;
   onDecide: (c: ReviewComment, s: CommentStatus, note?: string) => void;
 }) {
+  const { t, i18n } = useTranslation();
   const [pending, setPending] = useState<CommentStatus | null>(null);
   const [note, setNote] = useState('');
   if (c.status !== 'open') {
     return (
       <div className="rv-actions">
         <span className={`rv-status ${c.status}`}>
-          {c.status === 'approved' ? 'Approved' : 'Declined'}
-          {c.decided_by ? ` by ${c.decided_by}` : ''}
-          {c.decided_at ? ` · ${fmt(c.decided_at)}` : ''}
+          {c.status === 'approved'
+            ? t('comments.statusApproved')
+            : t('comments.statusDeclined')}
+          {c.decided_by
+            ? ` ${t('comments.decidedBy', { name: c.decided_by })}`
+            : ''}
+          {c.decided_at ? ` · ${formatDate(c.decided_at, i18n.language)}` : ''}
         </span>
         <button
           type="button"
@@ -79,10 +87,12 @@ function Decide({
             onDecide(c, 'open');
           }}
         >
-          Undo
+          {t('comments.undo')}
         </button>
         {c.decision_note && (
-          <div className="rv-note">Note: {c.decision_note}</div>
+          <div className="rv-note">
+            {t('comments.decisionNote', { note: c.decision_note })}
+          </div>
         )}
       </div>
     );
@@ -97,7 +107,7 @@ function Decide({
       >
         <textarea
           rows={2}
-          placeholder="Optional note"
+          placeholder={t('comments.optionalNote')}
           value={note}
           onChange={(e) => setNote(e.target.value)}
         />
@@ -111,14 +121,16 @@ function Decide({
               setNote('');
             }}
           >
-            Confirm {pending === 'approved' ? 'approval' : 'decline'}
+            {pending === 'approved'
+              ? t('comments.confirmApproval')
+              : t('comments.confirmDecline')}
           </button>
           <button
             type="button"
             className="btn ghost"
             onClick={() => setPending(null)}
           >
-            Cancel
+            {t('common.cancel')}
           </button>
         </div>
       </div>
@@ -134,7 +146,7 @@ function Decide({
           setPending('approved');
         }}
       >
-        Approve
+        {t('comments.approve')}
       </button>
       <button
         type="button"
@@ -144,7 +156,7 @@ function Decide({
           setPending('declined');
         }}
       >
-        Decline
+        {t('comments.decline')}
       </button>
     </div>
   );
@@ -163,6 +175,7 @@ export default function CommentPanel({
   activeId: number | null;
   onActivate: (c: ReviewComment) => void;
 }) {
+  const { t } = useTranslation();
   const [filter, setFilter] = useState<Filter>('all');
   const [error, setError] = useState('');
 
@@ -251,11 +264,11 @@ export default function CommentPanel({
   );
 
   return (
-    <aside className="rv-panel" aria-label="Comments">
+    <aside className="rv-panel" aria-label={t('comments.title')}>
       <div className="rv-panel-head">
-        <h2>Comments</h2>
+        <h2>{t('comments.title')}</h2>
         <div className="muted">
-          {reviewed} of {comments.length} reviewed
+          {t('comments.reviewed', { done: reviewed, total: comments.length })}
         </div>
         <div className="rv-progress">
           <div
@@ -272,11 +285,11 @@ export default function CommentPanel({
               aria-pressed={filter === f}
               onClick={() => setFilter(f)}
             >
-              {f[0].toUpperCase() + f.slice(1)} ({counts[f]})
+              {t(`comments.filters.${f}`)} ({counts[f]})
             </button>
           ))}
           <button type="button" onClick={nextOpen} disabled={!counts.open}>
-            Next open
+            {t('comments.nextOpen')}
           </button>
         </div>
         {error && <div className="rv-err">{error}</div>}
@@ -285,8 +298,8 @@ export default function CommentPanel({
         {shown.length === 0 && (
           <div className="empty">
             {comments.length
-              ? 'No comments in this filter.'
-              : 'No comments in this version.'}
+              ? t('comments.noneInFilter')
+              : t('comments.noneInVersion')}
           </div>
         )}
         {shown.map((c) => card(c))}

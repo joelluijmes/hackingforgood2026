@@ -1,16 +1,14 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
-import { api, type DocHtml, type Document, formatSize } from '../api';
+import { api, type DocHtml, type Document } from '../api';
+import { formatSize } from '../format';
 
 type Color = 'purple' | 'black' | 'blue' | 'red';
-const LEGEND: { key: Color; label: string; hint: string }[] = [
-  { key: 'purple', label: 'Purple', hint: 'Mandatory text' },
-  { key: 'black', label: 'Black', hint: 'Proposal text' },
-  { key: 'blue', label: 'Blue', hint: 'Trial-specific fill-in' },
-  { key: 'red', label: 'Red', hint: 'Guidance' },
-];
+const LEGEND: Color[] = ['purple', 'black', 'blue', 'red'];
 
 export default function Viewer() {
+  const { t, i18n } = useTranslation();
   const { id } = useParams();
   const docId = Number(id);
   const [doc, setDoc] = useState<Document | null>(null);
@@ -51,11 +49,11 @@ export default function Viewer() {
     return (
       <div className="page">
         <p className="error">{error}</p>
-        <Link to="/templates">Back to templates</Link>
+        <Link to="/templates">{t('versionViewer.backTemplates')}</Link>
       </div>
     );
   }
-  if (!doc) return <div className="page muted">Loading…</div>;
+  if (!doc) return <div className="page muted">{t('common.loading')}</div>;
 
   const jump = (anchor: string) =>
     document
@@ -80,22 +78,24 @@ export default function Viewer() {
       <div className="page-head">
         <div>
           <Link to="/templates" className="muted">
-            ← Templates
+            {t('versionViewer.backTemplates')}
           </Link>
           <h1>{doc.name}</h1>
           <div className="chips">
-            <span className="chip">{doc.kind}</span>
+            <span className="chip">{t(`kinds.${doc.kind}`)}</span>
             {doc.language && (
               <span className="chip lang">{doc.language.toUpperCase()}</span>
             )}
-            {doc.audience && <span className="chip">{doc.audience}</span>}
+            {doc.audience && (
+              <span className="chip">{t(`icfTypes.${doc.audience}`)}</span>
+            )}
             {doc.version && <span className="chip">v {doc.version}</span>}
             {doc.study && <span className="chip study">{doc.study}</span>}
-            <span className="muted">{formatSize(doc.size)}</span>
+            <span className="muted">{formatSize(doc.size, i18n.language)}</span>
           </div>
         </div>
         <a className="btn" href={api.fileUrl(doc.id)}>
-          Download
+          {t('common.download')}
         </a>
       </div>
 
@@ -104,10 +104,10 @@ export default function Viewer() {
       )}
       {doc.preview === 'none' && (
         <div className="empty">
-          <h3>No preview available</h3>
-          <p>{doc.filename} can only be downloaded.</p>
+          <h3>{t('viewer.noPreview')}</h3>
+          <p>{t('viewer.downloadOnly', { filename: doc.filename })}</p>
           <a className="btn primary" href={api.fileUrl(doc.id)}>
-            Download file
+            {t('viewer.downloadFile')}
           </a>
         </div>
       )}
@@ -117,62 +117,64 @@ export default function Viewer() {
           {content && (
             <div className="stats">
               <div>
-                <strong>{content.stats.words}</strong> words
+                <strong>{content.stats.words}</strong>{' '}
+                {t('viewer.words', { count: content.stats.words })}
               </div>
               <div>
-                <strong>{content.stats.paragraphs}</strong> paragraphs
+                <strong>{content.stats.paragraphs}</strong>{' '}
+                {t('viewer.paragraphs', { count: content.stats.paragraphs })}
               </div>
               <div>
-                <strong>{content.stats.tables}</strong> tables
+                <strong>{content.stats.tables}</strong>{' '}
+                {t('viewer.tables', { count: content.stats.tables })}
               </div>
               <div>
-                <strong>{content.headings.length}</strong> headings
+                <strong>{content.headings.length}</strong>{' '}
+                {t('viewer.headings', { count: content.headings.length })}
               </div>
             </div>
           )}
           <div className="viewer">
             <aside className="sidebar">
               {doc.kind === 'template' && colors && (
-                <section className="legend" aria-label="Colour code">
-                  <h4>Colour code</h4>
+                <section className="legend" aria-label={t('viewer.colourCode')}>
+                  <h4>{t('viewer.colourCode')}</h4>
                   {LEGEND.map((l) => (
                     <div
-                      key={l.key}
-                      className={`legend-row${dim[l.key] ? ' off' : ''}`}
+                      key={l}
+                      className={`legend-row${dim[l] ? ' off' : ''}`}
                     >
-                      <span className={`swatch s-${l.key}`} />
+                      <span className={`swatch s-${l}`} />
                       <span className="legend-text">
-                        <b>{l.label}</b> · {colors[l.key]}
-                        <small>{l.hint}</small>
+                        <b>{t(`viewer.colours.${l}.label`)}</b> · {colors[l]}
+                        <small>{t(`viewer.colours.${l}.hint`)}</small>
                       </span>
                       <button
                         type="button"
-                        className={`mini${focus === l.key ? ' on' : ''}`}
-                        title="Highlight only this colour"
-                        aria-pressed={focus === l.key}
-                        onClick={() => setFocus(focus === l.key ? null : l.key)}
+                        className={`mini${focus === l ? ' on' : ''}`}
+                        title={t('viewer.soloTitle')}
+                        aria-pressed={focus === l}
+                        onClick={() => setFocus(focus === l ? null : l)}
                       >
-                        Solo
+                        {t('viewer.solo')}
                       </button>
                       <button
                         type="button"
                         className="mini"
-                        aria-pressed={dim[l.key]}
-                        title="Dim this colour"
-                        onClick={() =>
-                          setDim((s) => ({ ...s, [l.key]: !s[l.key] }))
-                        }
+                        aria-pressed={dim[l]}
+                        title={t('viewer.dimTitle')}
+                        onClick={() => setDim((s) => ({ ...s, [l]: !s[l] }))}
                       >
-                        {dim[l.key] ? 'Show' : 'Dim'}
+                        {dim[l] ? t('viewer.show') : t('viewer.dim')}
                       </button>
                     </div>
                   ))}
                 </section>
               )}
-              <nav aria-label="Outline">
-                <h4>Outline</h4>
+              <nav aria-label={t('viewer.outline')}>
+                <h4>{t('viewer.outline')}</h4>
                 {content && content.headings.length === 0 && (
-                  <p className="muted">No headings found.</p>
+                  <p className="muted">{t('viewer.noHeadings')}</p>
                 )}
                 <ul className="outline">
                   {content?.headings.map((h) => (
@@ -198,7 +200,7 @@ export default function Viewer() {
                 <div dangerouslySetInnerHTML={{ __html: content.html }} />
               </div>
             ) : (
-              <div className="paper muted">Rendering document…</div>
+              <div className="paper muted">{t('viewer.rendering')}</div>
             )}
           </div>
         </>

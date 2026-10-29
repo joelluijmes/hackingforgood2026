@@ -1,0 +1,292 @@
+{
+  "common": {
+    "appName": "ICF Studio",
+    "loading": "Laden…",
+    "working": "Bezig…",
+    "pleaseWait": "Even geduld…",
+    "cancel": "Annuleren",
+    "close": "Sluiten",
+    "create": "Aanmaken",
+    "delete": "Verwijderen",
+    "download": "Downloaden",
+    "upload": "Uploaden",
+    "open": "Openen",
+    "name": "Naam",
+    "title": "Titel",
+    "note": "Opmerking",
+    "language": "Taal",
+    "unknown": "Onbekend",
+    "none": "Geen",
+    "yes": "Ja",
+    "no": "Nee",
+    "version": "Versie",
+    "defaultsToFilename": "standaard de bestandsnaam",
+    "importSample": "Voorbeeldbestanden importeren",
+    "importing": "Importeren…",
+    "imported": "{{imported}} geïmporteerd, {{skipped}} overgeslagen.",
+    "backToProjects": "Terug naar projecten",
+    "dropFile": "Sleep een bestand hierheen",
+    "orBrowse": "of klik om te bladeren",
+    "docxRecommended": ".docx aanbevolen",
+    "pageNotFound": "Pagina niet gevonden."
+  },
+  "languages": {
+    "en": "Engels",
+    "nl": "Nederlands",
+    "fr": "Frans"
+  },
+  "languagesNative": {
+    "en": "English",
+    "nl": "Nederlands",
+    "fr": "Français"
+  },
+  "auth": {
+    "signIn": "Aanmelden",
+    "signOut": "Afmelden",
+    "createAccount": "Account aanmaken",
+    "email": "E-mailadres",
+    "password": "Wachtwoord",
+    "name": "Naam",
+    "yourLanguage": "Uw taal",
+    "demo": "Demo-account: demo@bspho.be / demo1234",
+    "haveAccount": "Al een account? Meld u aan",
+    "newHere": "Nieuw hier? Maak een account aan"
+  },
+  "nav": {
+    "projects": "Projecten",
+    "templates": "Sjablonen",
+    "language": "Uw taal"
+  },
+  "projects": {
+    "title": "Projecten",
+    "subtitle": "Eén project per studie: documenten van de opdrachtgever, ICF-ontwerpen en elke nagekeken versie.",
+    "new": "Nieuw project",
+    "create": "Project aanmaken",
+    "emptyTitle": "Nog geen projecten",
+    "emptyText": "Start met de voorbeeldbestanden of maak een eigen project aan.",
+    "documents_one": "{{count}} document",
+    "documents_other": "{{count}} documenten",
+    "openComments_one": "{{count}} open opmerking",
+    "openComments_other": "{{count}} open opmerkingen",
+    "confirmDelete": "Project \"{{name}}\" en al zijn documenten verwijderen?",
+    "name": "Naam",
+    "namePlaceholder": "bv. Forum-studie",
+    "study": "Studie",
+    "description": "Beschrijving"
+  },
+  "project": {
+    "backToProjects": "← Projecten",
+    "aiOn": "AI: Vertex · {{model}}",
+    "aiOff": "AI uit",
+    "uploadDocument": "Document uploaden",
+    "generate": "ICF-ontwerp genereren",
+    "emptyTitle": "Nog geen documenten",
+    "emptyText": "Upload de documenten van de opdrachtgever om te starten.",
+    "groups": {
+      "sponsor": "Documenten van de opdrachtgever",
+      "icf": "ICF-ontwerpen",
+      "other": "Overige"
+    },
+    "confirmDeleteDoc": "\"{{title}}\" en alle versies verwijderen?",
+    "uploadTitle": "Document uploaden",
+    "role": "Rol",
+    "icfType": "ICF-type",
+    "newVersionTitle": "Nieuwe versie van {{title}}",
+    "notePlaceholder": "bv. nazicht onderzoeker, ronde 1",
+    "reviewedCopy": "Dit is een nagekeken kopie met opmerkingen",
+    "uploadNewVersion": "Nieuwe versie uploaden",
+    "compare": "Vergelijken met vorige",
+    "countOpen_one": "{{count}} open",
+    "countOpen_other": "{{count}} open",
+    "countApproved_one": "{{count}} goedgekeurd",
+    "countApproved_other": "{{count}} goedgekeurd",
+    "countDeclined_one": "{{count}} afgewezen",
+    "countDeclined_other": "{{count}} afgewezen"
+  },
+  "stages": {
+    "ariaLabel": "Fase van het project",
+    "intake": {
+      "label": "Intake",
+      "hint": "Documenten opdrachtgever verzamelen"
+    },
+    "drafting": {
+      "label": "Opstellen",
+      "hint": "ICF-ontwerp genereren"
+    },
+    "pi_review": {
+      "label": "Nazicht onderzoeker",
+      "hint": "Versturen, nagekeken kopie uploaden"
+    },
+    "translation": {
+      "label": "Vertaling",
+      "hint": "NL- en FR-versies"
+    },
+    "ethics_review": {
+      "label": "Ethisch comité",
+      "hint": "Beoordeling ethisch comité"
+    },
+    "approved": {
+      "label": "Goedgekeurd",
+      "hint": "Definitieve versie"
+    }
+  },
+  "roles": {
+    "sponsor": "Document opdrachtgever",
+    "icf": "ICF-ontwerp",
+    "other": "Overig"
+  },
+  "icfTypes": {
+    "adult": "Volwassene",
+    "parent": "Ouder",
+    "adolescent": "Adolescent",
+    "child": "Kind"
+  },
+  "sources": {
+    "upload": "Upload",
+    "generated": "Gegenereerd",
+    "reviewed": "Nagekeken"
+  },
+  "kinds": {
+    "sponsor": "Opdrachtgever",
+    "template": "Sjabloon"
+  },
+  "templates": {
+    "title": "Sjablonen",
+    "subtitle": "De nationale ICF-sjablonen waarmee ontwerpen worden gegenereerd.",
+    "upload": "Sjabloon uploaden",
+    "allLanguages": "Alle talen",
+    "allAudiences": "Alle doelgroepen",
+    "audience": "Doelgroep",
+    "documents_one": "{{count}} document",
+    "documents_other": "{{count}} documenten",
+    "backendError": "Geen verbinding met de server: {{error}}. Draait die op poort 8000?",
+    "emptyTitle": "Nog niets hier",
+    "emptyText": "Upload een sjabloon of importeer de voorbeeldbestanden om te starten.",
+    "confirmDelete": "\"{{name}}\" verwijderen?",
+    "versionPlaceholder": "bv. 2025-07-18"
+  },
+  "versionViewer": {
+    "backTemplates": "← Sjablonen",
+    "versionLabel": "Versie",
+    "compareWithPrevious": "Vergelijken met vorige versie",
+    "showTrackedChanges": "Wijzigingen bijhouden tonen",
+    "notRenderable": "Dit bestandstype kan niet worden weergegeven. Download het.",
+    "rendering": "Document weergeven…"
+  },
+  "viewer": {
+    "words_one": "woord",
+    "words_other": "woorden",
+    "paragraphs_one": "alinea",
+    "paragraphs_other": "alinea's",
+    "tables_one": "tabel",
+    "tables_other": "tabellen",
+    "headings_one": "kop",
+    "headings_other": "koppen",
+    "colourCode": "Kleurcode",
+    "colours": {
+      "purple": {
+        "label": "Paars",
+        "hint": "Verplichte tekst"
+      },
+      "black": {
+        "label": "Zwart",
+        "hint": "Voorstel van tekst"
+      },
+      "blue": {
+        "label": "Blauw",
+        "hint": "Studiespecifiek invulveld"
+      },
+      "red": {
+        "label": "Rood",
+        "hint": "Richtlijn"
+      }
+    },
+    "solo": "Enkel",
+    "soloTitle": "Enkel deze kleur markeren",
+    "dim": "Dempen",
+    "dimTitle": "Deze kleur dempen",
+    "show": "Tonen",
+    "outline": "Inhoud",
+    "noHeadings": "Geen koppen gevonden.",
+    "rendering": "Document weergeven…",
+    "noPreview": "Geen voorbeeld beschikbaar",
+    "downloadOnly": "{{filename}} kan enkel worden gedownload.",
+    "downloadFile": "Bestand downloaden"
+  },
+  "diff": {
+    "backToVersion": "Terug naar versie",
+    "title": "Versies vergelijken",
+    "titleOf": "Versies van {{title}} vergelijken",
+    "from": "Van",
+    "to": "Naar",
+    "pickTwo": "Kies twee versies om te vergelijken.",
+    "comparing": "Vergelijken…",
+    "reviewComments": "Opmerkingen nakijken in v{{number}}",
+    "bothEmpty": "Beide versies zijn leeg.",
+    "noDifferences": "Geen tekstverschillen tussen deze versies.",
+    "collapse": "Inklappen",
+    "unchangedParagraphs_one": "{{count}} ongewijzigde alinea",
+    "unchangedParagraphs_other": "{{count}} ongewijzigde alinea's",
+    "commentsIn": "Opmerkingen in deze versie",
+    "noNew": "Geen nieuwe opmerkingen.",
+    "commentsGone": "Opmerkingen die niet meer voorkomen",
+    "noRemoved": "Er zijn geen opmerkingen verwijderd.",
+    "inserted_one": "{{count}} toegevoegd",
+    "inserted_other": "{{count}} toegevoegd",
+    "deleted_one": "{{count}} verwijderd",
+    "deleted_other": "{{count}} verwijderd",
+    "changed_one": "{{count}} gewijzigd",
+    "changed_other": "{{count}} gewijzigd",
+    "unchanged_one": "{{count}} ongewijzigd",
+    "unchanged_other": "{{count}} ongewijzigd",
+    "trackedChanges_one": "{{count}} bijgehouden wijziging",
+    "trackedChanges_other": "{{count}} bijgehouden wijzigingen"
+  },
+  "comments": {
+    "title": "Opmerkingen",
+    "reviewed": "{{done}} van {{total}} nagekeken",
+    "filters": {
+      "all": "Alle",
+      "open": "Open",
+      "approved": "Goedgekeurd",
+      "declined": "Afgewezen"
+    },
+    "nextOpen": "Volgende open",
+    "noneInFilter": "Geen opmerkingen in deze filter.",
+    "noneInVersion": "Geen opmerkingen in deze versie.",
+    "approve": "Goedkeuren",
+    "decline": "Afwijzen",
+    "confirmApproval": "Goedkeuring bevestigen",
+    "confirmDecline": "Afwijzing bevestigen",
+    "undo": "Ongedaan maken",
+    "optionalNote": "Optionele opmerking",
+    "decisionNote": "Opmerking: {{note}}",
+    "statusApproved": "Goedgekeurd",
+    "statusDeclined": "Afgewezen",
+    "decidedBy": "door {{name}}",
+    "translatedFrom": "Vertaald uit het {{language}}",
+    "showTranslation": "Vertaling tonen",
+    "showOriginal": "Origineel tonen",
+    "translationUnavailable": "Vertaling niet beschikbaar"
+  },
+  "generate": {
+    "title": "ICF-ontwerp genereren",
+    "submit": "Genereren",
+    "template": "Sjabloon",
+    "noTemplates": "Nog geen sjablonen",
+    "icfType": "ICF-type",
+    "sponsorDocs": "Documenten opdrachtgever (laatste versie)",
+    "noSponsorDocs": "Geen documenten van de opdrachtgever in dit project.",
+    "notes": "Opmerkingen",
+    "notesPlaceholder": "Alles waarmee het ontwerp rekening moet houden",
+    "titleOptional": "Titel (optioneel)",
+    "generating": "Genereren vanuit sjabloon… dit kan een minuut duren",
+    "doneTitle": "Ontwerp gegenereerd",
+    "placeholders": "Tijdelijke aanduidingen",
+    "filled": "Ingevuld",
+    "flagged": "Met opmerking gemarkeerd",
+    "removedGuidance": "Verwijderde richtlijnalinea's",
+    "aiUsed": "AI gebruikt",
+    "openDraft": "Nieuw ontwerp openen"
+  }
+}

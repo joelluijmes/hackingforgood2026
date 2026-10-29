@@ -1,4 +1,5 @@
 import { type ReactNode, useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface Props {
   title: string;
@@ -14,6 +15,7 @@ interface Props {
 
 /** Modal form shell: title, body, error line, Cancel + submit. */
 export default function Dialog(p: Props) {
+  const { t } = useTranslation();
   const ref = useRef<HTMLDialogElement>(null);
   useEffect(() => {
     ref.current?.showModal();
@@ -30,14 +32,14 @@ export default function Dialog(p: Props) {
         {p.error && <p className="error">{p.error}</p>}
         <div className="actions">
           <button type="button" className="btn ghost" onClick={p.onClose}>
-            Cancel
+            {t('common.cancel')}
           </button>
           <button
             type="submit"
             className="btn primary"
             disabled={p.disabled || p.busy}
           >
-            {p.busy ? 'Working…' : p.submitLabel}
+            {p.busy ? t('common.working') : p.submitLabel}
           </button>
         </div>
       </form>
@@ -52,6 +54,7 @@ export function FileDrop({
   file: File | null;
   onFile: (f: File | null) => void;
 }) {
+  const { t } = useTranslation();
   return (
     <label className="drop">
       <input
@@ -63,9 +66,9 @@ export function FileDrop({
         <strong>{file.name}</strong>
       ) : (
         <span>
-          <strong>Drop a file here</strong> or click to browse
+          <strong>{t('common.dropFile')}</strong> {t('common.orBrowse')}
           <br />
-          <small>.docx recommended</small>
+          <small>{t('common.docxRecommended')}</small>
         </span>
       )}
     </label>

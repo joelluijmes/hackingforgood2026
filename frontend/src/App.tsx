@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { Navigate, NavLink, Outlet, Route, Routes } from 'react-router-dom';
 import type { Language } from './api';
 import { useAuth } from './components/AuthContext';
@@ -10,8 +11,9 @@ import VersionViewer from './pages/VersionViewer';
 import Viewer from './pages/Viewer';
 
 function Shell() {
+  const { t } = useTranslation();
   const { user, loading, signOut, setLanguage } = useAuth();
-  if (loading) return <div className="page muted">Loading…</div>;
+  if (loading) return <div className="page muted">{t('common.loading')}</div>;
   if (!user) return <Navigate to="/login" replace />;
   return (
     <>
@@ -20,17 +22,17 @@ function Shell() {
           <span className="brand-mark" aria-hidden="true">
             §
           </span>
-          ICF Studio
+          {t('common.appName')}
         </NavLink>
         <nav>
           <NavLink to="/" end>
-            Projects
+            {t('nav.projects')}
           </NavLink>
-          <NavLink to="/templates">Templates</NavLink>
+          <NavLink to="/templates">{t('nav.templates')}</NavLink>
         </nav>
         <div className="topbar-user">
           <select
-            aria-label="Your language"
+            aria-label={t('nav.language')}
             className="lang-select"
             value={user.language}
             onChange={(e) => setLanguage(e.target.value as Language)}
@@ -41,7 +43,7 @@ function Shell() {
           </select>
           <span className="user-name">{user.name}</span>
           <button type="button" className="btn ghost" onClick={signOut}>
-            Sign out
+            {t('auth.signOut')}
           </button>
         </div>
       </header>
@@ -53,6 +55,7 @@ function Shell() {
 }
 
 export default function App() {
+  const { t } = useTranslation();
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
@@ -65,7 +68,7 @@ export default function App() {
         <Route path="/diff" element={<DiffView />} />
         <Route
           path="*"
-          element={<div className="empty">Page not found.</div>}
+          element={<div className="empty">{t('common.pageNotFound')}</div>}
         />
       </Route>
     </Routes>

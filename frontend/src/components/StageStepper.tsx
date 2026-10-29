@@ -1,46 +1,16 @@
+import { useTranslation } from 'react-i18next';
 import type { Stage } from '../api';
 
 type Tone = 'app' | 'manual' | 'external';
 
-export const STAGES: { key: Stage; label: string; tone: Tone; hint: string }[] =
-  [
-    {
-      key: 'intake',
-      label: 'Intake',
-      tone: 'manual',
-      hint: 'Collect sponsor documents',
-    },
-    {
-      key: 'drafting',
-      label: 'Drafting',
-      tone: 'app',
-      hint: 'Generate ICF draft',
-    },
-    {
-      key: 'pi_review',
-      label: 'PI review',
-      tone: 'manual',
-      hint: 'Send out, upload reviewed copy',
-    },
-    {
-      key: 'translation',
-      label: 'Translation',
-      tone: 'app',
-      hint: 'NL / FR versions',
-    },
-    {
-      key: 'ethics_review',
-      label: 'Ethics review',
-      tone: 'external',
-      hint: 'Ethics committee',
-    },
-    {
-      key: 'approved',
-      label: 'Approved',
-      tone: 'external',
-      hint: 'Final version',
-    },
-  ];
+export const STAGES: { key: Stage; tone: Tone }[] = [
+  { key: 'intake', tone: 'manual' },
+  { key: 'drafting', tone: 'app' },
+  { key: 'pi_review', tone: 'manual' },
+  { key: 'translation', tone: 'app' },
+  { key: 'ethics_review', tone: 'external' },
+  { key: 'approved', tone: 'external' },
+];
 
 export default function StageStepper({
   stage,
@@ -49,9 +19,10 @@ export default function StageStepper({
   stage: Stage;
   onChange: (s: Stage) => void;
 }) {
+  const { t } = useTranslation();
   const current = STAGES.findIndex((s) => s.key === stage);
   return (
-    <ol className="stages" aria-label="Project stage">
+    <ol className="stages" aria-label={t('stages.ariaLabel')}>
       {STAGES.map((s, i) => (
         <li key={s.key}>
           <button
@@ -61,8 +32,8 @@ export default function StageStepper({
             onClick={() => onChange(s.key)}
           >
             <span className="dot">{i < current ? '✓' : i + 1}</span>
-            <b>{s.label}</b>
-            <small>{s.hint}</small>
+            <b>{t(`stages.${s.key}.label`)}</b>
+            <small>{t(`stages.${s.key}.hint`)}</small>
           </button>
         </li>
       ))}

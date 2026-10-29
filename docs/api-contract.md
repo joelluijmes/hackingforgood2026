@@ -1,6 +1,6 @@
 # ICF Studio – API contract (v2: projects, versions, comments, diff, generate, auth)
 
-All routes are prefixed `/api`, JSON unless noted. Backend FastAPI + SQLite (stdlib sqlite3), files under `backend/storage/`.
+All routes are prefixed `/api`, JSON unless noted. Backend FastAPI + SQLite (stdlib sqlite3), files in object storage (see Storage).
 Frontend client mirroring this file: `frontend/src/api.ts` (single source of types; keep in sync).
 
 ## Auth (minimal)
@@ -64,6 +64,12 @@ Frontend client mirroring this file: `frontend/src/api.ts` (single source of typ
 
 ## Placeholders from v1 (keep working)
 `POST /api/jobs/{creation|translation|update}` still return 501 (frontend no longer links to them).
+
+## Storage
+- `backend/app/storage.py`: `put(key, data, content_type)`, `put_file(key, path)`, `get(key)`, `delete(key)`, `local_path(key)` (context manager yielding a real file path; GCS objects are cached in a temp dir keyed by object generation+md5).
+- Env: `STORAGE_BACKEND=local` (default, `backend/storage/`) or `gcs` (`GCS_BUCKET` required, ADC auth); `ICF_DB_PATH` selects the SQLite file.
+- Keys (stored in `documents.stored_name` / `versions.stored_name`): `templates/<uuid>.<ext>`, `projects/<project_id>/<doc_id>/v<number>-<uuid>.<ext>`. `checksum_sha256` column holds the SHA-256 of the bytes. A key without `/` is a legacy local filename and is always read from `backend/storage/`.
+- API behaviour is unchanged; file routes return the bytes with `Content-Disposition: attachment`, a missing object gives 404 `File missing from storage`.
 
 ## Frontend routes
 `/login` · `/` projects · `/projects/:id` · `/templates` · `/templates/:id` (template colour viewer) · `/versions/:vid` (document + comments review) · `/diff?from=<vid>&to=<vid>`

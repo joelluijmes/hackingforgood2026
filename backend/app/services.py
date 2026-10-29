@@ -1,13 +1,15 @@
 """Shared helpers: serialisation of projects/docs/versions/comments, uploads, translation."""
 
 import logging
-import uuid
+import mimetypes
+import tempfile
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+from urllib.parse import quote
 
-from fastapi import HTTPException, UploadFile
+from fastapi import HTTPException, Response, UploadFile
 
-from . import db
+from . import db, storage
 
 log = logging.getLogger(__name__)
 ALLOWED_EXT = {".docx", ".doc", ".pdf"}
@@ -21,13 +23,28 @@ def read_upload(file: UploadFile) -> tuple[str, str, bytes]:
         raise HTTPException(
             422, f"Unsupported file type {ext or '(none)'}; use .docx, .doc or .pdf"
         )
-    return filename, f"{uuid.uuid4().hex}{ext}", file.file.read()
+    return filename, ext, file.file.read()
 
 
-def store(stored: str, data: bytes) -> Path:
-    path = db.STORAGE_DIR / stored
-    path.write_bytes(data)
-    return path
+def mime_for(filename: str) -> str:
+    if filename.lower().endswith(".docx"):
+        return DOCX_MIME
+    return mimetypes.guess_type(filename)[0] or "application/octet-stream"
+
+
+def download_response(key: str, filename: str) -> Response:
+    try:
+        data = storage.get(key)
+    except FileNotFoundError:
+        raise HTTPException(404, "File missing from storage") from None
+    try:
+        filename.encode("ascii")
+        disposition = f'attachment; filename="{filename}"'
+    except UnicodeEncodeError:
+        disposition = f"attachment; filename*=utf-8''{quote(filename)}"
+    return Response(
+        data, media_type=mime_for(filename), headers={"Content-Disposition": disposition}
+    )
 
 
 def check_lang(value: str | None, field: str = "language") -> str | None:
@@ -103,7 +120,7 @@ def delete_version_files(conn, where: str, args: tuple) -> None:
                      " (SELECT id FROM comments WHERE version_id = ?)", (r["id"],))  # fmt: skip
         conn.execute("DELETE FROM comments WHERE version_id = ?", (r["id"],))
         conn.execute("DELETE FROM versions WHERE id = ?", (r["id"],))
-        (db.STORAGE_DIR / r["stored_name"]).unlink(missing_ok=True)
+        storage.delete(r["stored_name"])
 
 
 # ---------- versions + comments ----------
@@ -113,33 +130,40 @@ def add_version(
     conn,
     doc_id: int,
     filename: str,
-    stored: str,
-    size: int,
+    data: bytes,
     note: str,
     source: str,
     user_name: str,
     items: list[dict] | None = None,
 ) -> int:
+    """Store ``data`` in object storage as the next version of ``doc_id`` and index it."""
     if items is None:
-        items = prepare_comments(filename, stored)
+        items = prepare_comments(filename, data)
     number = conn.execute(
         "SELECT COALESCE(MAX(number), 0) + 1 FROM versions WHERE doc_id = ?", (doc_id,)
     ).fetchone()[0]
+    pid = conn.execute("SELECT project_id FROM project_docs WHERE id = ?", (doc_id,)).fetchone()[0]
+    key = storage.version_key(pid, doc_id, number, Path(filename).suffix)
+    storage.put(key, data, mime_for(filename))
     cur = conn.execute(
         "INSERT INTO versions (doc_id, number, filename, stored_name, size, note, source,"
-        " uploaded_by, uploaded_at) VALUES (?,?,?,?,?,?,?,?,?)",
-        (doc_id, number, filename, stored, size, note, source, user_name, db.now_iso()),
-    )
+        " uploaded_by, uploaded_at, checksum_sha256) VALUES (?,?,?,?,?,?,?,?,?,?)",
+        (doc_id, number, filename, key, len(data), note, source, user_name, db.now_iso(),
+         storage.sha256(data)),
+    )  # fmt: skip
     vid = cur.lastrowid
     store_comments(conn, vid, items)
     return vid
 
 
-def prepare_comments(filename: str, stored: str) -> list[dict]:
+def prepare_comments(filename: str, data: bytes) -> list[dict]:
     """Extract + detect languages. Slow (AI): call before opening any write transaction."""
     if not filename.lower().endswith(".docx"):
         return []
-    return extract_comments(db.STORAGE_DIR / stored)
+    with tempfile.TemporaryDirectory() as tmp:
+        path = Path(tmp) / "doc.docx"
+        path.write_bytes(data)
+        return extract_comments(path)
 
 
 def extract_comments(path: Path) -> list[dict]:
@@ -252,19 +276,18 @@ def create_doc_with_version(
     icf_type: str | None,
     language: str | None,
     filename: str,
-    stored: str,
-    size: int,
+    data: bytes,
     note: str,
     source: str,
     user_name: str,
 ) -> dict:
-    items = prepare_comments(filename, stored)
+    items = prepare_comments(filename, data)
     cur = conn.execute(
         "INSERT INTO project_docs (project_id, title, role, icf_type, language, created_at)"
         " VALUES (?,?,?,?,?,?)",
         (pid, title, role, icf_type, language, db.now_iso()),
     )
-    add_version(conn, cur.lastrowid, filename, stored, size, note, source, user_name, items)
+    add_version(conn, cur.lastrowid, filename, data, note, source, user_name, items)
     return doc_dict(
         conn, conn.execute("SELECT * FROM project_docs WHERE id = ?", (cur.lastrowid,)).fetchone()
     )

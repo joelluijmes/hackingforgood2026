@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { api, type Project } from '../api';
 import Dialog, { errMsg } from '../components/Dialog';
-import { STAGES } from '../components/StageStepper';
+import { formatDate } from '../format';
 
 function NewProjectDialog({
   onClose,
@@ -11,6 +12,7 @@ function NewProjectDialog({
   onClose: () => void;
   onDone: () => void;
 }) {
+  const { t } = useTranslation();
   const [name, setName] = useState('');
   const [study, setStudy] = useState('');
   const [description, setDescription] = useState('');
@@ -31,30 +33,30 @@ function NewProjectDialog({
   }
   return (
     <Dialog
-      title="New project"
+      title={t('projects.new')}
       onClose={onClose}
       onSubmit={submit}
-      submitLabel="Create"
+      submitLabel={t('common.create')}
       disabled={!name.trim()}
       busy={busy}
       error={error}
     >
       <div className="stack">
         <label>
-          Name
+          {t('projects.name')}
           <input
             required
             value={name}
-            placeholder="e.g. Forum study"
+            placeholder={t('projects.namePlaceholder')}
             onChange={(e) => setName(e.target.value)}
           />
         </label>
         <label>
-          Study
+          {t('projects.study')}
           <input value={study} onChange={(e) => setStudy(e.target.value)} />
         </label>
         <label>
-          Description
+          {t('projects.description')}
           <textarea
             rows={3}
             value={description}
@@ -67,6 +69,7 @@ function NewProjectDialog({
 }
 
 export default function Projects() {
+  const { t, i18n } = useTranslation();
   const [projects, setProjects] = useState<Project[] | null>(null);
   const [error, setError] = useState('');
   const [creating, setCreating] = useState(false);
@@ -90,7 +93,9 @@ export default function Projects() {
     setSeeding(true);
     try {
       const r = await api.seed();
-      setToast(`Imported ${r.imported}, skipped ${r.skipped}.`);
+      setToast(
+        t('common.imported', { imported: r.imported, skipped: r.skipped }),
+      );
       await load();
     } catch (e) {
       setToast(errMsg(e));
@@ -99,8 +104,7 @@ export default function Projects() {
   }
 
   async function remove(p: Project) {
-    if (!window.confirm(`Delete project "${p.name}" and all its documents?`))
-      return;
+    if (!window.confirm(t('projects.confirmDelete', { name: p.name }))) return;
     try {
       await api.deleteProject(p.id);
       await load();
@@ -113,30 +117,27 @@ export default function Projects() {
     <div className="page">
       <div className="page-head">
         <div>
-          <h1>Projects</h1>
-          <p className="muted">
-            One project per study: sponsor documents, ICF drafts and every
-            reviewed version.
-          </p>
+          <h1>{t('projects.title')}</h1>
+          <p className="muted">{t('projects.subtitle')}</p>
         </div>
         <button
           type="button"
           className="btn primary"
           onClick={() => setCreating(true)}
         >
-          New project
+          {t('projects.new')}
         </button>
       </div>
 
       {error && <p className="error">{error}</p>}
-      {projects === null && <p className="muted">Loading…</p>}
+      {projects === null && <p className="muted">{t('common.loading')}</p>}
       {projects && projects.length === 0 && !error && (
         <div className="empty">
           <div className="empty-icon" aria-hidden="true">
             ❡
           </div>
-          <h3>No projects yet</h3>
-          <p>Start from the sample bucket or create your own project.</p>
+          <h3>{t('projects.emptyTitle')}</h3>
+          <p>{t('projects.emptyText')}</p>
           <div className="row center">
             <button
               type="button"
@@ -144,14 +145,14 @@ export default function Projects() {
               onClick={seed}
               disabled={seeding}
             >
-              {seeding ? 'Importing…' : 'Import sample bucket'}
+              {seeding ? t('common.importing') : t('common.importSample')}
             </button>
             <button
               type="button"
               className="btn primary"
               onClick={() => setCreating(true)}
             >
-              Create project
+              {t('projects.create')}
             </button>
           </div>
         </div>
@@ -165,29 +166,26 @@ export default function Projects() {
             </Link>
             {p.study && <div className="card-file">{p.study}</div>}
             <div className="chips">
-              <span className="chip lang">
-                {STAGES.find((s) => s.key === p.stage)?.label ?? p.stage}
-              </span>
+              <span className="chip lang">{t(`stages.${p.stage}.label`)}</span>
               <span className="chip">
-                {p.doc_count} document{p.doc_count === 1 ? '' : 's'}
+                {t('projects.documents', { count: p.doc_count })}
               </span>
               {p.open_comments > 0 && (
                 <span className="chip warn">
-                  {p.open_comments} open comments
+                  {t('projects.openComments', { count: p.open_comments })}
                 </span>
               )}
             </div>
             <div className="card-foot">
               <span className="muted">
-                {p.created_by_name} ·{' '}
-                {new Date(p.created_at).toLocaleDateString()}
+                {p.created_by_name} · {formatDate(p.created_at, i18n.language)}
               </span>
               <button
                 type="button"
                 className="link danger"
                 onClick={() => remove(p)}
               >
-                Delete
+                {t('common.delete')}
               </button>
             </div>
           </article>

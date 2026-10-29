@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import {
   api,
@@ -15,11 +16,13 @@ const rootIn = (list: ReviewComment[], c: ReviewComment) =>
   (c.parent_id !== null && list.find((x) => x.id === c.parent_id)) || c;
 
 export default function VersionViewer() {
+  const { t } = useTranslation();
   const vid = Number(useParams().vid);
   const nav = useNavigate();
   const [detail, setDetail] = useState<VersionDetail | null>(null);
   const [html, setHtml] = useState<VersionHtml | null>(null);
   const [htmlErr, setHtmlErr] = useState('');
+  const [noRender, setNoRender] = useState(false);
   const [comments, setComments] = useState<ReviewComment[]>([]);
   const [lang, setLang] = useState<Lang>('en');
   const [docs, setDocs] = useState<ProjectDoc[]>([]);
@@ -35,6 +38,7 @@ export default function VersionViewer() {
     setDetail(null);
     setHtml(null);
     setHtmlErr('');
+    setNoRender(false);
     setComments([]);
     setActiveId(null);
     setError('');
@@ -57,8 +61,7 @@ export default function VersionViewer() {
             (h) => live && setHtml(h),
             (e) => live && setHtmlErr(String(e.message ?? e)),
           );
-        } else
-          setHtmlErr('This file type cannot be rendered. Download it instead.');
+        } else setNoRender(true);
       } catch (e) {
         if (live) setError(e instanceof Error ? e.message : String(e));
       }
@@ -126,11 +129,11 @@ export default function VersionViewer() {
     return (
       <div className="page">
         <p className="error">{error}</p>
-        <Link to="/">Back to projects</Link>
+        <Link to="/">{t('common.backToProjects')}</Link>
       </div>
     );
   }
-  if (!detail) return <div className="page muted">Loading…</div>;
+  if (!detail) return <div className="page muted">{t('common.loading')}</div>;
 
   const { version, doc, project } = detail;
   const versions = docs.find((d) => d.id === doc.id)?.versions ?? [version];
@@ -147,22 +150,22 @@ export default function VersionViewer() {
         </div>
         <h1>{doc.title}</h1>
         <select
-          aria-label="Version"
+          aria-label={t('versionViewer.versionLabel')}
           value={vid}
           onChange={(e) => nav(`/versions/${e.target.value}`)}
         >
           {versions.map((v) => (
             <option key={v.id} value={v.id}>
-              v{v.number} · {v.source}
+              v{v.number} · {t(`sources.${v.source}`)}
             </option>
           ))}
         </select>
         <a className="btn" href={api.versionFileUrl(vid)}>
-          Download
+          {t('common.download')}
         </a>
         {prev && (
           <Link className="btn" to={`/diff?from=${prev.id}&to=${vid}`}>
-            Compare with previous version
+            {t('versionViewer.compareWithPrevious')}
           </Link>
         )}
       </div>
@@ -176,15 +179,18 @@ export default function VersionViewer() {
                 checked={showTc}
                 onChange={(e) => setShowTc(e.target.checked)}
               />
-              Show tracked changes
+              {t('versionViewer.showTrackedChanges')}
             </label>
             <span className="muted">
               {version.filename} · v{version.number}
             </span>
           </div>
           {htmlErr && <div className="empty">{htmlErr}</div>}
-          {!html && !htmlErr && (
-            <div className="muted">Rendering document…</div>
+          {noRender && (
+            <div className="empty">{t('versionViewer.notRenderable')}</div>
+          )}
+          {!html && !htmlErr && !noRender && (
+            <div className="muted">{t('versionViewer.rendering')}</div>
           )}
           {html && (
             // biome-ignore lint/a11y/useKeyWithClickEvents: comments are also reachable via the panel

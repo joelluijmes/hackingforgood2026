@@ -66,6 +66,12 @@ make dev       # backend :8000 + frontend :5173 (Ctrl-C stops both)
 make lint      # ruff + biome + tsc
 make fmt       # auto-fix
 make clean-db  # reset db and uploads
+make demo      # with the servers running: seed demo project, AI draft and a reviewed v2 with comments
 ```
+
+Environment (backend): `STORAGE_BACKEND=local|gcs` (`make dev` defaults to `gcs`; `make dev STORAGE_BACKEND=local` keeps files in `backend/storage/`),
+`GCS_BUCKET` (default `hfg2026-bucket` in the Makefile; required for `gcs`, uses Application Default Credentials: `gcloud auth application-default login`),
+`ICF_DB_PATH` (SQLite file, default `backend/icf.db`; use separate files for parallel dev servers). SQLite holds metadata only; documents live in the bucket
+(`templates/...`, `projects/<id>/<doc>/v<n>-...`). `make clean-db` does not delete bucket objects.
 
 Open http://localhost:5173 (API docs at http://localhost:8000/docs), then click "Import sample bucket".

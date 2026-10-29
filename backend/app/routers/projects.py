@@ -1,10 +1,9 @@
 from typing import Annotated, Literal
 
 from fastapi import APIRouter, Depends, File, Form, HTTPException, Response, UploadFile
-from fastapi.responses import FileResponse
 from pydantic import BaseModel
 
-from .. import db, seed, services
+from .. import db, seed, services, storage
 from ..auth import User, current_user
 
 router = APIRouter(prefix="/api", dependencies=[Depends(current_user)], tags=["projects"])
@@ -125,10 +124,9 @@ def upload_project_doc(
     if icf_type not in (None, "adult", "parent", "adolescent", "child"):
         raise HTTPException(422, "invalid icf_type")
     language = services.check_lang(language)
-    filename, stored, data = services.read_upload(file)
+    filename, _, data = services.read_upload(file)
     with db.connect() as conn:
         _project_row(conn, pid)
-        services.store(stored, data)
         return services.create_doc_with_version(
             conn,
             pid,
@@ -137,8 +135,7 @@ def upload_project_doc(
             icf_type=icf_type,
             language=language or seed.guess_language(filename),
             filename=filename,
-            stored=stored,
-            size=len(data),
+            data=data,
             note=(note or "").strip(),
             source="upload",
             user_name=user["name"],
@@ -165,12 +162,11 @@ def upload_version(
     source = (source or "").strip() or "upload"
     if source not in ("upload", "reviewed"):
         raise HTTPException(422, "source must be upload or reviewed")
-    filename, stored, data = services.read_upload(file)
+    filename, _, data = services.read_upload(file)
     with db.connect() as conn:
         _doc_row(conn, did)
-        services.store(stored, data)
         vid = services.add_version(
-            conn, did, filename, stored, len(data), (note or "").strip(), source, user["name"]
+            conn, did, filename, data, (note or "").strip(), source, user["name"]
         )
         return services.version_dict(conn, _version_row(conn, vid))
 
@@ -188,19 +184,10 @@ def get_version(vid: int) -> dict:
 
 
 @router.get("/versions/{vid}/file")
-def version_file(vid: int) -> FileResponse:
+def version_file(vid: int) -> Response:
     with db.connect() as conn:
         v = _version_row(conn, vid)
-    path = db.STORAGE_DIR / v["stored_name"]
-    if not path.exists():
-        raise HTTPException(404, "File missing from storage")
-    mime = services.DOCX_MIME if v["filename"].lower().endswith(".docx") else None
-    return FileResponse(
-        path,
-        media_type=mime or "application/octet-stream",
-        filename=v["filename"],
-        content_disposition_type="attachment",
-    )
+    return services.download_response(v["stored_name"], v["filename"])
 
 
 @router.get("/versions/{vid}/html")
@@ -211,10 +198,10 @@ def version_html(vid: int) -> dict:
         v = _version_row(conn, vid)
     if db.preview_for(v["filename"]) != "docx":
         raise HTTPException(422, "HTML view is only available for .docx documents")
-    path = db.STORAGE_DIR / v["stored_name"]
-    if not path.exists():
-        raise HTTPException(404, "File missing from storage")
     try:
-        return render.render_docx(str(path))
+        with storage.local_path(v["stored_name"]) as path:
+            return render.render_docx(str(path))
+    except FileNotFoundError:
+        raise HTTPException(404, "File missing from storage") from None
     except Exception as exc:
         raise HTTPException(422, f"Could not read this .docx: {exc}") from exc

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
 import {
   type AiStatus,
@@ -17,13 +18,10 @@ import {
 } from '../components/ProjectDialogs';
 import StageStepper from '../components/StageStepper';
 
-const GROUPS: { role: Role; label: string }[] = [
-  { role: 'sponsor', label: 'Sponsor documents' },
-  { role: 'icf', label: 'ICF drafts' },
-  { role: 'other', label: 'Other' },
-];
+const GROUPS: Role[] = ['sponsor', 'icf', 'other'];
 
 export default function Project() {
+  const { t } = useTranslation();
   const projectId = Number(useParams().id);
   const [project, setProject] = useState<ProjectT | null>(null);
   const [docs, setDocs] = useState<ProjectDoc[] | null>(null);
@@ -62,7 +60,8 @@ export default function Project() {
   }
 
   async function removeDoc(d: ProjectDoc) {
-    if (!window.confirm(`Delete "${d.title}" and all its versions?`)) return;
+    if (!window.confirm(t('project.confirmDeleteDoc', { title: d.title })))
+      return;
     try {
       await api.deleteProjectDoc(d.id);
       await load();
@@ -81,18 +80,19 @@ export default function Project() {
     return (
       <div className="page">
         <p className="error">{error}</p>
-        <Link to="/">Back to projects</Link>
+        <Link to="/">{t('common.backToProjects')}</Link>
       </div>
     );
   }
-  if (!project || !docs) return <div className="page muted">Loading…</div>;
+  if (!project || !docs)
+    return <div className="page muted">{t('common.loading')}</div>;
 
   return (
     <div className="page">
       <div className="page-head">
         <div>
           <Link to="/" className="muted">
-            ← Projects
+            {t('project.backToProjects')}
           </Link>
           <h1>{project.name}</h1>
           <div className="chips">
@@ -100,7 +100,9 @@ export default function Project() {
               <span className="chip study">{project.study}</span>
             )}
             <span className={`chip ${ai?.enabled ? 'ok' : ''}`}>
-              {ai?.enabled ? `AI: Vertex · ${ai.model}` : 'AI off'}
+              {ai?.enabled
+                ? t('project.aiOn', { model: ai.model })
+                : t('project.aiOff')}
             </span>
           </div>
           {project.description && (
@@ -113,14 +115,14 @@ export default function Project() {
             className="btn"
             onClick={() => setDialog('upload')}
           >
-            Upload document
+            {t('project.uploadDocument')}
           </button>
           <button
             type="button"
             className="btn primary"
             onClick={() => setDialog('generate')}
           >
-            Generate ICF draft
+            {t('project.generate')}
           </button>
         </div>
       </div>
@@ -130,16 +132,16 @@ export default function Project() {
 
       {docs.length === 0 && (
         <div className="empty">
-          <h3>No documents yet</h3>
-          <p>Upload the sponsor documents to get started.</p>
+          <h3>{t('project.emptyTitle')}</h3>
+          <p>{t('project.emptyText')}</p>
         </div>
       )}
       {GROUPS.map((g) => {
-        const list = docs.filter((d) => d.role === g.role);
+        const list = docs.filter((d) => d.role === g);
         if (list.length === 0) return null;
         return (
-          <section key={g.role} className="group">
-            <h2>{g.label}</h2>
+          <section key={g} className="group">
+            <h2>{t(`project.groups.${g}`)}</h2>
             <div className="stack">
               {list.map((d) => (
                 <DocCard

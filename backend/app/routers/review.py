@@ -3,7 +3,7 @@ from typing import Annotated, Literal
 from fastapi import APIRouter, Depends, HTTPException, Query
 from pydantic import BaseModel
 
-from .. import db, services
+from .. import db, services, storage
 from ..auth import User, current_user
 
 router = APIRouter(prefix="/api", dependencies=[Depends(current_user)], tags=["review"])
@@ -70,9 +70,13 @@ def diff(
             if not v["filename"].lower().endswith(".docx"):
                 raise HTTPException(422, "Diff is only available for .docx versions")
         try:
-            result = engine_diff.diff_docs(
-                str(db.STORAGE_DIR / a["stored_name"]), str(db.STORAGE_DIR / b["stored_name"])
-            )
+            with (
+                storage.local_path(a["stored_name"]) as pa,
+                storage.local_path(b["stored_name"]) as pb,
+            ):
+                result = engine_diff.diff_docs(str(pa), str(pb))
+        except FileNotFoundError:
+            raise HTTPException(404, "File missing from storage") from None
         except Exception as exc:
             raise HTTPException(422, f"Could not diff these documents: {exc}") from exc
 

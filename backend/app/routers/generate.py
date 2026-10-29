@@ -1,10 +1,11 @@
-import uuid
+import tempfile
+from pathlib import Path
 from typing import Literal
 
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, Field
 
-from .. import db
+from .. import db, storage
 from ..auth import User, current_user
 from ..services import create_doc_with_version
 from .projects import _project_row
@@ -39,24 +40,28 @@ def generate(pid: int, body: GenerateIn, user: User) -> dict:
             if not v or not v["filename"].lower().endswith(".docx"):
                 continue
             try:
-                txt = engine_text.docx_text(str(db.STORAGE_DIR / v["stored_name"]))
+                with storage.local_path(v["stored_name"]) as vpath:
+                    txt = engine_text.docx_text(str(vpath))
             except Exception:
                 continue
             parts.append(f"=== {v['filename']} ===\n{txt}")
-        stored = f"{uuid.uuid4().hex}.docx"
-        out = db.STORAGE_DIR / stored
-        try:
-            report = engine_generate.generate_icf(
-                str(db.STORAGE_DIR / tpl["stored_name"]),
-                str(out),
-                sponsor_text="\n\n".join(parts),
-                notes=body.notes,
-                language=body.language,
-                icf_type=body.icf_type,
-            )
-        except Exception as exc:
-            out.unlink(missing_ok=True)
-            raise HTTPException(500, f"Generation failed: {exc}") from exc
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp) / "draft.docx"
+            try:
+                with storage.local_path(tpl["stored_name"]) as tpl_path:
+                    report = engine_generate.generate_icf(
+                        str(tpl_path),
+                        str(out),
+                        sponsor_text="\n\n".join(parts),
+                        notes=body.notes,
+                        language=body.language,
+                        icf_type=body.icf_type,
+                    )
+                data = out.read_bytes()
+            except FileNotFoundError:
+                raise HTTPException(404, "Template file missing from storage") from None
+            except Exception as exc:
+                raise HTTPException(500, f"Generation failed: {exc}") from exc
         title = (body.title or "").strip() or f"ICF {body.icf_type} ({body.language.upper()})"
         doc = create_doc_with_version(
             conn,
@@ -66,8 +71,7 @@ def generate(pid: int, body: GenerateIn, user: User) -> dict:
             icf_type=body.icf_type,
             language=body.language,
             filename=f"{title}.docx".replace("/", "-"),
-            stored=stored,
-            size=out.stat().st_size,
+            data=data,
             note="Generated from template",
             source="generated",
             user_name=user["name"],

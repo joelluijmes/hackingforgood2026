@@ -1,10 +1,10 @@
+import os
 import sqlite3
 from datetime import UTC, datetime
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-DB_PATH = BASE_DIR / "icf.db"
-STORAGE_DIR = BASE_DIR / "storage"
+DB_PATH = Path(os.environ.get("ICF_DB_PATH") or BASE_DIR / "icf.db")
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS documents (
@@ -103,10 +103,14 @@ def connect() -> sqlite3.Connection:
 
 
 def init() -> None:
-    STORAGE_DIR.mkdir(exist_ok=True)
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     with connect() as conn:
         conn.execute(SCHEMA)
         conn.executescript(SCHEMA_V2)
+        for table in ("documents", "versions"):  # additive migration
+            cols = {r["name"] for r in conn.execute(f"PRAGMA table_info({table})")}
+            if "checksum_sha256" not in cols:
+                conn.execute(f"ALTER TABLE {table} ADD COLUMN checksum_sha256 TEXT")  # noqa: S608
 
 
 def now_iso() -> str:
@@ -123,7 +127,7 @@ def preview_for(filename: str) -> str:
 
 
 def to_document(row: sqlite3.Row) -> dict:
-    d = {k: row[k] for k in row.keys() if k != "stored_name"}  # noqa: SIM118
+    d = {k: row[k] for k in row.keys() if k not in ("stored_name", "checksum_sha256")}  # noqa: SIM118
     d["preview"] = preview_for(row["filename"])
     return d
 
@@ -135,6 +139,7 @@ def insert_document(
     filename: str,
     stored_name: str,
     size: int,
+    checksum: str | None = None,
     language: str | None = None,
     audience: str | None = None,
     version: str | None = None,
@@ -143,9 +148,9 @@ def insert_document(
     with connect() as conn:
         cur = conn.execute(
             "INSERT INTO documents (kind, name, filename, stored_name, language, audience,"
-            " version, study, size, uploaded_at) VALUES (?,?,?,?,?,?,?,?,?,?)",
+            " version, study, size, uploaded_at, checksum_sha256) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
             (kind, name, filename, stored_name, language, audience, version, study, size,
-             now_iso()),
+             now_iso(), checksum),
         )  # fmt: skip
         row = conn.execute("SELECT * FROM documents WHERE id = ?", (cur.lastrowid,)).fetchone()
     return to_document(row)

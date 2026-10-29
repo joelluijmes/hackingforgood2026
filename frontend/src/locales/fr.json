@@ -1,0 +1,292 @@
+{
+  "common": {
+    "appName": "ICF Studio",
+    "loading": "Chargement…",
+    "working": "En cours…",
+    "pleaseWait": "Veuillez patienter…",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "create": "Créer",
+    "delete": "Supprimer",
+    "download": "Télécharger",
+    "upload": "Téléverser",
+    "open": "Ouvrir",
+    "name": "Nom",
+    "title": "Titre",
+    "note": "Remarque",
+    "language": "Langue",
+    "unknown": "Inconnue",
+    "none": "Aucun",
+    "yes": "Oui",
+    "no": "Non",
+    "version": "Version",
+    "defaultsToFilename": "nom du fichier par défaut",
+    "importSample": "Importer les fichiers d'exemple",
+    "importing": "Importation…",
+    "imported": "{{imported}} importés, {{skipped}} ignorés.",
+    "backToProjects": "Retour aux projets",
+    "dropFile": "Déposez un fichier ici",
+    "orBrowse": "ou cliquez pour parcourir",
+    "docxRecommended": ".docx recommandé",
+    "pageNotFound": "Page introuvable."
+  },
+  "languages": {
+    "en": "Anglais",
+    "nl": "Néerlandais",
+    "fr": "Français"
+  },
+  "languagesNative": {
+    "en": "English",
+    "nl": "Nederlands",
+    "fr": "Français"
+  },
+  "auth": {
+    "signIn": "Se connecter",
+    "signOut": "Se déconnecter",
+    "createAccount": "Créer un compte",
+    "email": "Adresse e-mail",
+    "password": "Mot de passe",
+    "name": "Nom",
+    "yourLanguage": "Votre langue",
+    "demo": "Compte de démonstration : demo@bspho.be / demo1234",
+    "haveAccount": "Déjà un compte ? Connectez-vous",
+    "newHere": "Nouveau ici ? Créez un compte"
+  },
+  "nav": {
+    "projects": "Projets",
+    "templates": "Modèles",
+    "language": "Votre langue"
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Un projet par étude : documents du promoteur, projets d'ICF et chaque version relue.",
+    "new": "Nouveau projet",
+    "create": "Créer un projet",
+    "emptyTitle": "Aucun projet pour l'instant",
+    "emptyText": "Commencez avec les fichiers d'exemple ou créez votre propre projet.",
+    "documents_one": "{{count}} document",
+    "documents_other": "{{count}} documents",
+    "openComments_one": "{{count}} commentaire ouvert",
+    "openComments_other": "{{count}} commentaires ouverts",
+    "confirmDelete": "Supprimer le projet « {{name}} » et tous ses documents ?",
+    "name": "Nom",
+    "namePlaceholder": "p. ex. étude Forum",
+    "study": "Étude",
+    "description": "Description"
+  },
+  "project": {
+    "backToProjects": "← Projets",
+    "aiOn": "IA : Vertex · {{model}}",
+    "aiOff": "IA désactivée",
+    "uploadDocument": "Téléverser un document",
+    "generate": "Générer un projet d'ICF",
+    "emptyTitle": "Aucun document pour l'instant",
+    "emptyText": "Téléversez les documents du promoteur pour commencer.",
+    "groups": {
+      "sponsor": "Documents du promoteur",
+      "icf": "Projets d'ICF",
+      "other": "Autres"
+    },
+    "confirmDeleteDoc": "Supprimer « {{title}} » et toutes ses versions ?",
+    "uploadTitle": "Téléverser un document",
+    "role": "Rôle",
+    "icfType": "Type d'ICF",
+    "newVersionTitle": "Nouvelle version de {{title}}",
+    "notePlaceholder": "p. ex. relecture investigateur, tour 1",
+    "reviewedCopy": "Copie relue avec commentaires",
+    "uploadNewVersion": "Téléverser une nouvelle version",
+    "compare": "Comparer avec la précédente",
+    "countOpen_one": "{{count}} ouvert",
+    "countOpen_other": "{{count}} ouverts",
+    "countApproved_one": "{{count}} approuvé",
+    "countApproved_other": "{{count}} approuvés",
+    "countDeclined_one": "{{count}} refusé",
+    "countDeclined_other": "{{count}} refusés"
+  },
+  "stages": {
+    "ariaLabel": "Étape du projet",
+    "intake": {
+      "label": "Réception",
+      "hint": "Rassembler les documents du promoteur"
+    },
+    "drafting": {
+      "label": "Rédaction",
+      "hint": "Générer le projet d'ICF"
+    },
+    "pi_review": {
+      "label": "Relecture investigateur",
+      "hint": "Envoyer, téléverser la copie relue"
+    },
+    "translation": {
+      "label": "Traduction",
+      "hint": "Versions NL / FR"
+    },
+    "ethics_review": {
+      "label": "Comité d'éthique",
+      "hint": "Évaluation par le comité d'éthique"
+    },
+    "approved": {
+      "label": "Approuvé",
+      "hint": "Version finale"
+    }
+  },
+  "roles": {
+    "sponsor": "Document du promoteur",
+    "icf": "Projet d'ICF",
+    "other": "Autre"
+  },
+  "icfTypes": {
+    "adult": "Adulte",
+    "parent": "Parent",
+    "adolescent": "Adolescent",
+    "child": "Enfant"
+  },
+  "sources": {
+    "upload": "Téléversé",
+    "generated": "Généré",
+    "reviewed": "Relu"
+  },
+  "kinds": {
+    "sponsor": "Promoteur",
+    "template": "Modèle"
+  },
+  "templates": {
+    "title": "Modèles",
+    "subtitle": "Les modèles nationaux d'ICF à partir desquels les projets sont générés.",
+    "upload": "Téléverser un modèle",
+    "allLanguages": "Toutes les langues",
+    "allAudiences": "Tous les publics",
+    "audience": "Public",
+    "documents_one": "{{count}} document",
+    "documents_other": "{{count}} documents",
+    "backendError": "Impossible de joindre le serveur : {{error}}. Fonctionne-t-il sur le port 8000 ?",
+    "emptyTitle": "Rien ici pour l'instant",
+    "emptyText": "Téléversez un modèle ou importez les fichiers d'exemple pour commencer.",
+    "confirmDelete": "Supprimer « {{name}} » ?",
+    "versionPlaceholder": "p. ex. 2025-07-18"
+  },
+  "versionViewer": {
+    "backTemplates": "← Modèles",
+    "versionLabel": "Version",
+    "compareWithPrevious": "Comparer avec la version précédente",
+    "showTrackedChanges": "Afficher les modifications suivies",
+    "notRenderable": "Ce type de fichier ne peut pas être affiché. Téléchargez-le.",
+    "rendering": "Affichage du document…"
+  },
+  "viewer": {
+    "words_one": "mot",
+    "words_other": "mots",
+    "paragraphs_one": "paragraphe",
+    "paragraphs_other": "paragraphes",
+    "tables_one": "tableau",
+    "tables_other": "tableaux",
+    "headings_one": "titre",
+    "headings_other": "titres",
+    "colourCode": "Code couleur",
+    "colours": {
+      "purple": {
+        "label": "Mauve",
+        "hint": "Texte obligatoire"
+      },
+      "black": {
+        "label": "Noir",
+        "hint": "Texte proposé"
+      },
+      "blue": {
+        "label": "Bleu",
+        "hint": "À remplacer par les données de l'étude"
+      },
+      "red": {
+        "label": "Rouge",
+        "hint": "Instructions"
+      }
+    },
+    "solo": "Seul",
+    "soloTitle": "Mettre en évidence cette couleur uniquement",
+    "dim": "Atténuer",
+    "dimTitle": "Atténuer cette couleur",
+    "show": "Afficher",
+    "outline": "Plan",
+    "noHeadings": "Aucun titre trouvé.",
+    "rendering": "Affichage du document…",
+    "noPreview": "Aucun aperçu disponible",
+    "downloadOnly": "{{filename}} peut uniquement être téléchargé.",
+    "downloadFile": "Télécharger le fichier"
+  },
+  "diff": {
+    "backToVersion": "Retour à la version",
+    "title": "Comparer les versions",
+    "titleOf": "Comparer les versions de {{title}}",
+    "from": "De",
+    "to": "À",
+    "pickTwo": "Choisissez deux versions à comparer.",
+    "comparing": "Comparaison…",
+    "reviewComments": "Relire les commentaires de la v{{number}}",
+    "bothEmpty": "Les deux versions sont vides.",
+    "noDifferences": "Aucune différence de texte entre ces versions.",
+    "collapse": "Réduire",
+    "unchangedParagraphs_one": "{{count}} paragraphe inchangé",
+    "unchangedParagraphs_other": "{{count}} paragraphes inchangés",
+    "commentsIn": "Commentaires de cette version",
+    "noNew": "Aucun nouveau commentaire.",
+    "commentsGone": "Commentaires disparus",
+    "noRemoved": "Aucun commentaire n'a été supprimé.",
+    "inserted_one": "{{count}} ajouté",
+    "inserted_other": "{{count}} ajoutés",
+    "deleted_one": "{{count}} supprimé",
+    "deleted_other": "{{count}} supprimés",
+    "changed_one": "{{count}} modifié",
+    "changed_other": "{{count}} modifiés",
+    "unchanged_one": "{{count}} inchangé",
+    "unchanged_other": "{{count}} inchangés",
+    "trackedChanges_one": "{{count}} modification suivie",
+    "trackedChanges_other": "{{count}} modifications suivies"
+  },
+  "comments": {
+    "title": "Commentaires",
+    "reviewed": "{{done}} sur {{total}} traités",
+    "filters": {
+      "all": "Tous",
+      "open": "Ouverts",
+      "approved": "Approuvés",
+      "declined": "Refusés"
+    },
+    "nextOpen": "Prochain ouvert",
+    "noneInFilter": "Aucun commentaire dans ce filtre.",
+    "noneInVersion": "Aucun commentaire dans cette version.",
+    "approve": "Approuver",
+    "decline": "Refuser",
+    "confirmApproval": "Confirmer l'approbation",
+    "confirmDecline": "Confirmer le refus",
+    "undo": "Annuler la décision",
+    "optionalNote": "Remarque facultative",
+    "decisionNote": "Remarque : {{note}}",
+    "statusApproved": "Approuvé",
+    "statusDeclined": "Refusé",
+    "decidedBy": "par {{name}}",
+    "translatedFrom": "Traduit de : {{language}}",
+    "showTranslation": "Afficher la traduction",
+    "showOriginal": "Afficher l'original",
+    "translationUnavailable": "Traduction indisponible"
+  },
+  "generate": {
+    "title": "Générer un projet d'ICF",
+    "submit": "Générer",
+    "template": "Modèle",
+    "noTemplates": "Aucun modèle pour l'instant",
+    "icfType": "Type d'ICF",
+    "sponsorDocs": "Documents du promoteur (dernière version)",
+    "noSponsorDocs": "Aucun document du promoteur dans ce projet.",
+    "notes": "Remarques",
+    "notesPlaceholder": "Tout ce dont le projet doit tenir compte",
+    "titleOptional": "Titre (facultatif)",
+    "generating": "Génération à partir du modèle… cela peut prendre une minute",
+    "doneTitle": "Projet généré",
+    "placeholders": "Champs à compléter",
+    "filled": "Complétés",
+    "flagged": "Signalés par un commentaire",
+    "removedGuidance": "Paragraphes d'instructions supprimés",
+    "aiUsed": "IA utilisée",
+    "openDraft": "Ouvrir le nouveau projet"
+  }
+}

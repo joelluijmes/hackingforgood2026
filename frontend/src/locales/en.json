@@ -1,0 +1,292 @@
+{
+  "common": {
+    "appName": "ICF Studio",
+    "loading": "Loading…",
+    "working": "Working…",
+    "pleaseWait": "Please wait…",
+    "cancel": "Cancel",
+    "close": "Close",
+    "create": "Create",
+    "delete": "Delete",
+    "download": "Download",
+    "upload": "Upload",
+    "open": "Open",
+    "name": "Name",
+    "title": "Title",
+    "note": "Note",
+    "language": "Language",
+    "unknown": "Unknown",
+    "none": "None",
+    "yes": "Yes",
+    "no": "No",
+    "version": "Version",
+    "defaultsToFilename": "defaults to filename",
+    "importSample": "Import sample bucket",
+    "importing": "Importing…",
+    "imported": "Imported {{imported}}, skipped {{skipped}}.",
+    "backToProjects": "Back to projects",
+    "dropFile": "Drop a file here",
+    "orBrowse": "or click to browse",
+    "docxRecommended": ".docx recommended",
+    "pageNotFound": "Page not found."
+  },
+  "languages": {
+    "en": "English",
+    "nl": "Dutch",
+    "fr": "French"
+  },
+  "languagesNative": {
+    "en": "English",
+    "nl": "Nederlands",
+    "fr": "Français"
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "createAccount": "Create account",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "yourLanguage": "Your language",
+    "demo": "Demo account: demo@bspho.be / demo1234",
+    "haveAccount": "Have an account? Sign in",
+    "newHere": "New here? Create an account"
+  },
+  "nav": {
+    "projects": "Projects",
+    "templates": "Templates",
+    "language": "Your language"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "One project per study: sponsor documents, ICF drafts and every reviewed version.",
+    "new": "New project",
+    "create": "Create project",
+    "emptyTitle": "No projects yet",
+    "emptyText": "Start from the sample bucket or create your own project.",
+    "documents_one": "{{count}} document",
+    "documents_other": "{{count}} documents",
+    "openComments_one": "{{count}} open comment",
+    "openComments_other": "{{count}} open comments",
+    "confirmDelete": "Delete project \"{{name}}\" and all its documents?",
+    "name": "Name",
+    "namePlaceholder": "e.g. Forum study",
+    "study": "Study",
+    "description": "Description"
+  },
+  "project": {
+    "backToProjects": "← Projects",
+    "aiOn": "AI: Vertex · {{model}}",
+    "aiOff": "AI off",
+    "uploadDocument": "Upload document",
+    "generate": "Generate ICF draft",
+    "emptyTitle": "No documents yet",
+    "emptyText": "Upload the sponsor documents to get started.",
+    "groups": {
+      "sponsor": "Sponsor documents",
+      "icf": "ICF drafts",
+      "other": "Other"
+    },
+    "confirmDeleteDoc": "Delete \"{{title}}\" and all its versions?",
+    "uploadTitle": "Upload document",
+    "role": "Role",
+    "icfType": "ICF type",
+    "newVersionTitle": "New version of {{title}}",
+    "notePlaceholder": "e.g. PI review round 1",
+    "reviewedCopy": "This is a reviewed copy with comments",
+    "uploadNewVersion": "Upload new version",
+    "compare": "Compare with previous",
+    "countOpen_one": "{{count}} open",
+    "countOpen_other": "{{count}} open",
+    "countApproved_one": "{{count}} approved",
+    "countApproved_other": "{{count}} approved",
+    "countDeclined_one": "{{count}} declined",
+    "countDeclined_other": "{{count}} declined"
+  },
+  "stages": {
+    "ariaLabel": "Project stage",
+    "intake": {
+      "label": "Intake",
+      "hint": "Collect sponsor documents"
+    },
+    "drafting": {
+      "label": "Drafting",
+      "hint": "Generate ICF draft"
+    },
+    "pi_review": {
+      "label": "PI review",
+      "hint": "Send out, upload reviewed copy"
+    },
+    "translation": {
+      "label": "Translation",
+      "hint": "NL / FR versions"
+    },
+    "ethics_review": {
+      "label": "Ethics review",
+      "hint": "Ethics committee"
+    },
+    "approved": {
+      "label": "Approved",
+      "hint": "Final version"
+    }
+  },
+  "roles": {
+    "sponsor": "Sponsor document",
+    "icf": "ICF draft",
+    "other": "Other"
+  },
+  "icfTypes": {
+    "adult": "Adult",
+    "parent": "Parent",
+    "adolescent": "Adolescent",
+    "child": "Child"
+  },
+  "sources": {
+    "upload": "Upload",
+    "generated": "Generated",
+    "reviewed": "Reviewed"
+  },
+  "kinds": {
+    "sponsor": "Sponsor",
+    "template": "Template"
+  },
+  "templates": {
+    "title": "Templates",
+    "subtitle": "The national ICF templates that drafts are generated from.",
+    "upload": "Upload template",
+    "allLanguages": "All languages",
+    "allAudiences": "All audiences",
+    "audience": "Audience",
+    "documents_one": "{{count}} document",
+    "documents_other": "{{count}} documents",
+    "backendError": "Could not reach the backend: {{error}}. Is it running on port 8000?",
+    "emptyTitle": "Nothing here yet",
+    "emptyText": "Upload a template or import the sample bucket to get started.",
+    "confirmDelete": "Delete \"{{name}}\"?",
+    "versionPlaceholder": "e.g. 2025-07-18"
+  },
+  "versionViewer": {
+    "backTemplates": "← Templates",
+    "versionLabel": "Version",
+    "compareWithPrevious": "Compare with previous version",
+    "showTrackedChanges": "Show tracked changes",
+    "notRenderable": "This file type cannot be rendered. Download it instead.",
+    "rendering": "Rendering document…"
+  },
+  "viewer": {
+    "words_one": "word",
+    "words_other": "words",
+    "paragraphs_one": "paragraph",
+    "paragraphs_other": "paragraphs",
+    "tables_one": "table",
+    "tables_other": "tables",
+    "headings_one": "heading",
+    "headings_other": "headings",
+    "colourCode": "Colour code",
+    "colours": {
+      "purple": {
+        "label": "Purple",
+        "hint": "Mandatory text"
+      },
+      "black": {
+        "label": "Black",
+        "hint": "Proposal text"
+      },
+      "blue": {
+        "label": "Blue",
+        "hint": "Trial-specific fill-in"
+      },
+      "red": {
+        "label": "Red",
+        "hint": "Guidance"
+      }
+    },
+    "solo": "Solo",
+    "soloTitle": "Highlight only this colour",
+    "dim": "Dim",
+    "dimTitle": "Dim this colour",
+    "show": "Show",
+    "outline": "Outline",
+    "noHeadings": "No headings found.",
+    "rendering": "Rendering document…",
+    "noPreview": "No preview available",
+    "downloadOnly": "{{filename}} can only be downloaded.",
+    "downloadFile": "Download file"
+  },
+  "diff": {
+    "backToVersion": "Back to version",
+    "title": "Compare versions",
+    "titleOf": "Compare versions of {{title}}",
+    "from": "From",
+    "to": "To",
+    "pickTwo": "Pick two versions to compare.",
+    "comparing": "Comparing…",
+    "reviewComments": "Review comments in v{{number}}",
+    "bothEmpty": "Both versions are empty.",
+    "noDifferences": "No text differences between these versions.",
+    "collapse": "Collapse",
+    "unchangedParagraphs_one": "{{count}} unchanged paragraph",
+    "unchangedParagraphs_other": "{{count}} unchanged paragraphs",
+    "commentsIn": "Comments in this version",
+    "noNew": "No new comments.",
+    "commentsGone": "Comments no longer present",
+    "noRemoved": "No comments were removed.",
+    "inserted_one": "{{count}} inserted",
+    "inserted_other": "{{count}} inserted",
+    "deleted_one": "{{count}} deleted",
+    "deleted_other": "{{count}} deleted",
+    "changed_one": "{{count}} changed",
+    "changed_other": "{{count}} changed",
+    "unchanged_one": "{{count}} unchanged",
+    "unchanged_other": "{{count}} unchanged",
+    "trackedChanges_one": "{{count}} tracked change",
+    "trackedChanges_other": "{{count}} tracked changes"
+  },
+  "comments": {
+    "title": "Comments",
+    "reviewed": "{{done}} of {{total}} reviewed",
+    "filters": {
+      "all": "All",
+      "open": "Open",
+      "approved": "Approved",
+      "declined": "Declined"
+    },
+    "nextOpen": "Next open",
+    "noneInFilter": "No comments in this filter.",
+    "noneInVersion": "No comments in this version.",
+    "approve": "Approve",
+    "decline": "Decline",
+    "confirmApproval": "Confirm approval",
+    "confirmDecline": "Confirm decline",
+    "undo": "Undo",
+    "optionalNote": "Optional note",
+    "decisionNote": "Note: {{note}}",
+    "statusApproved": "Approved",
+    "statusDeclined": "Declined",
+    "decidedBy": "by {{name}}",
+    "translatedFrom": "Translated from {{language}}",
+    "showTranslation": "Show translation",
+    "showOriginal": "Show original",
+    "translationUnavailable": "Translation unavailable"
+  },
+  "generate": {
+    "title": "Generate ICF draft",
+    "submit": "Generate",
+    "template": "Template",
+    "noTemplates": "No templates yet",
+    "icfType": "ICF type",
+    "sponsorDocs": "Sponsor documents (latest version)",
+    "noSponsorDocs": "No sponsor documents in this project.",
+    "notes": "Notes",
+    "notesPlaceholder": "Anything the draft should take into account",
+    "titleOptional": "Title (optional)",
+    "generating": "Generating from template... this can take a minute",
+    "doneTitle": "Draft generated",
+    "placeholders": "Placeholders",
+    "filled": "Filled",
+    "flagged": "Flagged with a comment",
+    "removedGuidance": "Guidance paragraphs removed",
+    "aiUsed": "AI used",
+    "openDraft": "Open the new draft"
+  }
+}

@@ -1,16 +1,18 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Navigate } from 'react-router-dom';
 import { api, type Language } from '../api';
 import { useAuth } from '../components/AuthContext';
 import { errMsg } from '../components/Dialog';
+import LangSwitcher from '../components/LangSwitcher';
 
 export default function Login() {
+  const { t, i18n } = useTranslation();
   const { user, signIn } = useAuth();
   const [register, setRegister] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [language, setLanguage] = useState<Language>('en');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
 
@@ -22,7 +24,12 @@ export default function Login() {
     setError('');
     try {
       const r = register
-        ? await api.register({ email, name, password, language })
+        ? await api.register({
+            email,
+            name,
+            password,
+            language: i18n.language as Language,
+          })
         : await api.login(email, password);
       signIn(r.token, r.user);
     } catch (err) {
@@ -38,12 +45,15 @@ export default function Login() {
           <span className="brand-mark" aria-hidden="true">
             §
           </span>
-          ICF Studio
+          {t('common.appName')}
+          <span className="login-lang">
+            <LangSwitcher />
+          </span>
         </div>
-        <h1>{register ? 'Create account' : 'Sign in'}</h1>
+        <h1>{register ? t('auth.createAccount') : t('auth.signIn')}</h1>
         {register && (
           <label>
-            Name
+            {t('auth.name')}
             <input
               required
               value={name}
@@ -52,7 +62,7 @@ export default function Login() {
           </label>
         )}
         <label>
-          Email
+          {t('auth.email')}
           <input
             type="email"
             required
@@ -62,7 +72,7 @@ export default function Login() {
           />
         </label>
         <label>
-          Password
+          {t('auth.password')}
           <input
             type="password"
             required
@@ -71,26 +81,15 @@ export default function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </label>
-        {register && (
-          <label>
-            Your language
-            <select
-              value={language}
-              onChange={(e) => setLanguage(e.target.value as Language)}
-            >
-              <option value="en">English</option>
-              <option value="nl">Nederlands</option>
-              <option value="fr">Français</option>
-            </select>
-          </label>
-        )}
         {error && <p className="error">{error}</p>}
         <button type="submit" className="btn primary" disabled={busy}>
-          {busy ? 'Please wait…' : register ? 'Create account' : 'Sign in'}
+          {busy
+            ? t('common.pleaseWait')
+            : register
+              ? t('auth.createAccount')
+              : t('auth.signIn')}
         </button>
-        {!register && (
-          <p className="muted">Demo account: demo@bspho.be / demo1234</p>
-        )}
+        {!register && <p className="muted">{t('auth.demo')}</p>}
         <button
           type="button"
           className="link"
@@ -99,9 +98,7 @@ export default function Login() {
             setError('');
           }}
         >
-          {register
-            ? 'Have an account? Sign in'
-            : 'New here? Create an account'}
+          {register ? t('auth.haveAccount') : t('auth.newHere')}
         </button>
       </form>
     </div>

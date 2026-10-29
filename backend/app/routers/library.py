@@ -1,12 +1,10 @@
-import mimetypes
-import uuid
 from pathlib import Path
 from typing import Annotated, get_args
 
 from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
-from fastapi.responses import FileResponse, JSONResponse, Response
+from fastapi.responses import JSONResponse, Response
 
-from .. import db, seed
+from .. import db, seed, services, storage
 from ..auth import User, current_user
 from ..models import (
     Audience,
@@ -19,7 +17,6 @@ from ..models import (
     TranslationJob,
     UpdateJob,
 )
-from ..services import DOCX_MIME
 
 router = APIRouter(prefix="/api", dependencies=[Depends(current_user)], tags=["library"])
 
@@ -65,15 +62,16 @@ def upload_document(
     language = _check(language, get_args(Language), "language")
     audience = _check(audience, get_args(Audience), "audience")
     filename = Path((file.filename or "upload").replace("\\", "/")).name or "upload"
-    stored = f"{uuid.uuid4().hex}{Path(filename).suffix.lower()}"
+    stored = storage.template_key(Path(filename).suffix)
     data = file.file.read()
-    (db.STORAGE_DIR / stored).write_bytes(data)
+    storage.put(stored, data, services.mime_for(filename))
     return db.insert_document(
         kind=kind,
         name=(name or "").strip() or Path(filename).stem,
         filename=filename,
         stored_name=stored,
         size=len(data),
+        checksum=storage.sha256(data),
         language=language,
         audience=audience,
         version=(version or "").strip() or None,
@@ -91,25 +89,14 @@ def delete_document(doc_id: int) -> Response:
     row = _row_or_404(doc_id)
     with db.connect() as conn:
         conn.execute("DELETE FROM documents WHERE id = ?", (doc_id,))
-    (db.STORAGE_DIR / row["stored_name"]).unlink(missing_ok=True)
+    storage.delete(row["stored_name"])
     return Response(status_code=204)
 
 
 @router.get("/documents/{doc_id}/file")
-def download_document(doc_id: int) -> FileResponse:
+def download_document(doc_id: int) -> Response:
     row = _row_or_404(doc_id)
-    path = db.STORAGE_DIR / row["stored_name"]
-    if not path.exists():
-        raise HTTPException(404, "File missing from storage")
-    mime = mimetypes.guess_type(row["filename"])[0]
-    if row["filename"].lower().endswith(".docx"):
-        mime = DOCX_MIME
-    return FileResponse(
-        path,
-        media_type=mime or "application/octet-stream",
-        filename=row["filename"],
-        content_disposition_type="attachment",
-    )
+    return services.download_response(row["stored_name"], row["filename"])
 
 
 @router.get("/documents/{doc_id}/html", response_model=HtmlResult)
@@ -119,11 +106,11 @@ def document_html(doc_id: int) -> dict:
     row = _row_or_404(doc_id)
     if db.preview_for(row["filename"]) != "docx":
         raise HTTPException(422, "HTML view is only available for .docx documents")
-    path = db.STORAGE_DIR / row["stored_name"]
-    if not path.exists():
-        raise HTTPException(404, "File missing from storage")
     try:
-        return render.render_docx(str(path))
+        with storage.local_path(row["stored_name"]) as path:
+            return render.render_docx(str(path))
+    except FileNotFoundError:
+        raise HTTPException(404, "File missing from storage") from None
     except Exception as exc:
         raise HTTPException(422, f"Could not read this .docx: {exc}") from exc
 

@@ -1,11 +1,14 @@
 import { useCallback, useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { api, type Document, formatSize } from '../api';
+import { api, type Document } from '../api';
+import { IcfOptions, LangOptions } from '../components/Options';
 import UploadDialog from '../components/UploadDialog';
-
-const LANG: Record<string, string> = { en: 'EN', nl: 'NL', fr: 'FR' };
+import { formatDate, formatSize } from '../format';
 
 export default function Templates() {
+  const { t, i18n } = useTranslation();
+  const L = i18n.language;
   const [docs, setDocs] = useState<Document[] | null>(null);
   const [error, setError] = useState('');
   const [lang, setLang] = useState('');
@@ -37,7 +40,9 @@ export default function Templates() {
     setSeeding(true);
     try {
       const r = await api.seed();
-      setToast(`Imported ${r.imported}, skipped ${r.skipped}.`);
+      setToast(
+        t('common.imported', { imported: r.imported, skipped: r.skipped }),
+      );
       await load();
     } catch (e) {
       setToast(e instanceof Error ? e.message : String(e));
@@ -46,7 +51,7 @@ export default function Templates() {
   }
 
   async function remove(d: Document) {
-    if (!window.confirm(`Delete "${d.name}"?`)) return;
+    if (!window.confirm(t('templates.confirmDelete', { name: d.name }))) return;
     try {
       await api.deleteDocument(d.id);
       await load();
@@ -59,10 +64,8 @@ export default function Templates() {
     <div className="page">
       <div className="page-head">
         <div>
-          <h1>Templates</h1>
-          <p className="muted">
-            The national ICF templates that drafts are generated from.
-          </p>
+          <h1>{t('templates.title')}</h1>
+          <p className="muted">{t('templates.subtitle')}</p>
         </div>
         <div className="row">
           <button
@@ -71,58 +74,51 @@ export default function Templates() {
             onClick={seed}
             disabled={seeding}
           >
-            {seeding ? 'Importing…' : 'Import sample bucket'}
+            {seeding ? t('common.importing') : t('common.importSample')}
           </button>
           <button
             type="button"
             className="btn primary"
             onClick={() => setUpload(true)}
           >
-            Upload template
+            {t('templates.upload')}
           </button>
         </div>
       </div>
 
       <div className="filters">
         <select
-          aria-label="Language"
+          aria-label={t('common.language')}
           value={lang}
           onChange={(e) => setLang(e.target.value)}
         >
-          <option value="">All languages</option>
-          <option value="en">English</option>
-          <option value="nl">Nederlands</option>
-          <option value="fr">Français</option>
+          <option value="">{t('templates.allLanguages')}</option>
+          <LangOptions />
         </select>
         <select
-          aria-label="Audience"
+          aria-label={t('templates.audience')}
           value={aud}
           onChange={(e) => setAud(e.target.value)}
         >
-          <option value="">All audiences</option>
-          <option value="adult">Adult</option>
-          <option value="parent">Parent</option>
-          <option value="adolescent">Adolescent</option>
-          <option value="child">Child</option>
+          <option value="">{t('templates.allAudiences')}</option>
+          <IcfOptions />
         </select>
         <span className="muted">
-          {shown.length} document{shown.length === 1 ? '' : 's'}
+          {t('templates.documents', { count: shown.length })}
         </span>
       </div>
 
       {error && (
-        <p className="error">
-          Could not reach the backend: {error}. Is it running on port 8000?
-        </p>
+        <p className="error">{t('templates.backendError', { error })}</p>
       )}
-      {docs === null && <p className="muted">Loading…</p>}
+      {docs === null && <p className="muted">{t('common.loading')}</p>}
       {docs && shown.length === 0 && !error && (
         <div className="empty">
           <div className="empty-icon" aria-hidden="true">
             ❡
           </div>
-          <h3>Nothing here yet</h3>
-          <p>Upload a template or import the sample bucket to get started.</p>
+          <h3>{t('templates.emptyTitle')}</h3>
+          <p>{t('templates.emptyText')}</p>
         </div>
       )}
 
@@ -137,26 +133,27 @@ export default function Templates() {
             </div>
             <div className="chips">
               {d.language && (
-                <span className="chip lang">{LANG[d.language]}</span>
+                <span className="chip lang">{d.language.toUpperCase()}</span>
               )}
-              {d.audience && <span className="chip">{d.audience}</span>}
+              {d.audience && (
+                <span className="chip">{t(`icfTypes.${d.audience}`)}</span>
+              )}
               {d.version && <span className="chip">v {d.version}</span>}
             </div>
             <div className="card-foot">
               <span className="muted">
-                {formatSize(d.size)} ·{' '}
-                {new Date(d.uploaded_at).toLocaleDateString()}
+                {formatSize(d.size, L)} · {formatDate(d.uploaded_at, L)}
               </span>
               <span className="row">
                 <a className="link" href={api.fileUrl(d.id)}>
-                  Download
+                  {t('common.download')}
                 </a>
                 <button
                   type="button"
                   className="link danger"
                   onClick={() => remove(d)}
                 >
-                  Delete
+                  {t('common.delete')}
                 </button>
               </span>
             </div>
