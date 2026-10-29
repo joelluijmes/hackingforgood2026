@@ -74,4 +74,11 @@ Environment (backend): `STORAGE_BACKEND=local|gcs` (`make dev` defaults to `gcs`
 `ICF_DB_PATH` (SQLite file, default `backend/icf.db`; use separate files for parallel dev servers). SQLite holds metadata only; documents live in the bucket
 (`templates/...`, `projects/<id>/<doc>/v<n>-...`). `make clean-db` does not delete bucket objects.
 
+Backend container (bundles LibreOffice for .doc/.rtf -> .docx conversion; pandoc comes with `pypandoc-binary`; the converter chain in `backend/app/convert.py` is pluggable, e.g. a Google Drive fallback could be added):
+```
+docker build -t icf-studio-backend backend
+docker run -p 8010:8010 -e STORAGE_BACKEND=gcs -e GCS_BUCKET=<bucket> icf-studio-backend
+```
+`GET /api/admin/status` reports AI, storage and converter availability.
+
 Open http://localhost:5173 (API docs at http://localhost:8010/docs), then click "Import sample bucket".

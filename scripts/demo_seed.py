@@ -338,9 +338,9 @@ def main():
     step(f"seed bucket: imported {r['imported']}, skipped {r['skipped']}")
 
     projects = call("GET", "/api/projects")
-    proj = next((p for p in projects if p["name"].startswith("Forum")), None)
+    proj = next((p for p in projects if p["name"].startswith("FORUM2 - R1")), None)
     if not proj:
-        raise SystemExit("project 'Forum (sample)' not found")
+        raise SystemExit("project 'FORUM2 - R1 (8 vs 12 Gy)' not found")
     pid = proj["id"]
     docs = call("GET", f"/api/projects/{pid}/documents")
 
@@ -353,7 +353,6 @@ def main():
                 if d["role"] == "sponsor"
                 and d["icf_type"] == "adult"
                 and d["language"] == "en"
-                and "r1" in d["title"].lower()
             ),
             None,
         )
@@ -366,9 +365,7 @@ def main():
         ]
         if not templates:
             raise SystemExit("English adult template not found")
-        tpl = next((t for t in templates if "2_2" in t["name"] or "2.2" in t["name"]), None) or max(
-            templates, key=lambda t: t["version"] or ""
-        )
+        tpl = max(templates, key=lambda t: (t.get("released") or "", t["version"] or ""))
         step(
             f"generating from template '{tpl['name']}' + sponsor '{sponsor['title']}' (AI, can take a while)"
         )

@@ -9,21 +9,34 @@ from urllib.parse import quote
 
 from fastapi import HTTPException, Response, UploadFile
 
-from . import db, storage
+from . import convert, db, storage
 
 log = logging.getLogger(__name__)
-ALLOWED_EXT = {".docx", ".doc", ".pdf"}
+ALLOWED_EXT = {".docx", ".doc", ".rtf", ".pdf"}
 DOCX_MIME = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
 
 
-def read_upload(file: UploadFile) -> tuple[str, str, bytes]:
+def convert_legacy(filename: str, data: bytes) -> tuple[str, bytes, str]:
+    """Convert .rtf/.doc to .docx. Returns (filename, data, auto_note); raises 422 on failure."""
+    if not convert.needs_conversion(filename):
+        return filename, data, ""
+    try:
+        data, new_name = convert.to_docx(data, filename)
+    except convert.ConversionError as exc:
+        raise HTTPException(422, f"Could not convert {filename} to .docx: {exc}") from exc
+    return new_name, data, convert.converted_note(filename)
+
+
+def read_upload(file: UploadFile) -> tuple[str, str, bytes, str]:
+    """Returns (filename, ext, data, auto_note); .rtf/.doc are converted to .docx."""
     filename = Path((file.filename or "upload").replace("\\", "/")).name or "upload"
     ext = Path(filename).suffix.lower()
     if ext not in ALLOWED_EXT:
         raise HTTPException(
-            422, f"Unsupported file type {ext or '(none)'}; use .docx, .doc or .pdf"
+            422, f"Unsupported file type {ext or '(none)'}; use .docx, .doc, .rtf or .pdf"
         )
-    return filename, ext, file.file.read()
+    filename, data, auto_note = convert_legacy(filename, file.file.read())
+    return filename, Path(filename).suffix.lower(), data, auto_note
 
 
 def mime_for(filename: str) -> str:

@@ -31,6 +31,7 @@ export interface Document {
   language: Language | null;
   audience: Audience | null;
   version: string | null;
+  released: string | null;
   study: string | null;
   size: number;
   uploaded_at: string;
@@ -68,6 +69,8 @@ export interface VersionHtml extends DocHtml {
 export interface SeedResult {
   imported: number;
   skipped: number;
+  converted: number;
+  failed: { name: string; reason: string }[];
   items: { name: string; kind: 'template' | 'project_doc' }[];
 }
 
@@ -77,6 +80,7 @@ export interface UploadMeta {
   language?: Language | '';
   audience?: Audience | '';
   version?: string;
+  released?: string;
   study?: string;
 }
 
@@ -193,6 +197,18 @@ export interface AiStatus {
   provider: 'vertex' | 'none';
   model: string | null;
   project: string | null;
+}
+
+export interface AdminStatus {
+  ai: AiStatus;
+  storage: { backend: 'local' | 'gcs'; bucket: string | null };
+  converters: { pandoc: boolean; libreoffice: boolean };
+  counts: {
+    projects: number;
+    project_docs: number;
+    templates: number;
+    users: number;
+  };
 }
 
 export interface JobResponse {
@@ -345,6 +361,7 @@ export const api = {
         language: meta.language,
         audience: meta.audience,
         version: meta.version,
+        released: meta.released,
         study: meta.study,
       }),
     }),
@@ -420,6 +437,7 @@ export const api = {
       `/projects/${projectId}/generate`,
       json('POST', b),
     ),
+  adminStatus: () => req<AdminStatus>('/admin/status'),
   aiStatus: () => req<AiStatus>('/ai/status'),
 
   // v1 placeholders (no longer linked from the UI)

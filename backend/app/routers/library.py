@@ -54,6 +54,7 @@ def upload_document(
     language: Annotated[str | None, Form()] = None,
     audience: Annotated[str | None, Form()] = None,
     version: Annotated[str | None, Form()] = None,
+    released: Annotated[str | None, Form()] = None,
     study: Annotated[str | None, Form()] = None,
 ) -> dict:
     kind = _check(kind, get_args(Kind), "kind") or ""
@@ -62,8 +63,10 @@ def upload_document(
     language = _check(language, get_args(Language), "language")
     audience = _check(audience, get_args(Audience), "audience")
     filename = Path((file.filename or "upload").replace("\\", "/")).name or "upload"
+    if Path(filename).suffix.lower() not in (".docx", ".doc", ".rtf", ".pdf"):
+        raise HTTPException(422, "Unsupported file type; use .docx, .doc, .rtf or .pdf")
+    filename, data, _ = services.convert_legacy(filename, file.file.read())
     stored = storage.template_key(Path(filename).suffix)
-    data = file.file.read()
     storage.put(stored, data, services.mime_for(filename))
     return db.insert_document(
         kind=kind,
@@ -75,6 +78,7 @@ def upload_document(
         language=language,
         audience=audience,
         version=(version or "").strip() or None,
+        released=(released or "").strip() or None,
         study=(study or "").strip() or None,
     )
 

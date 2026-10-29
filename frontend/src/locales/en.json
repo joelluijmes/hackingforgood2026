@@ -28,7 +28,8 @@
     "dropFile": "Drop a file here",
     "orBrowse": "or click to browse",
     "docxRecommended": ".docx recommended",
-    "pageNotFound": "Page not found."
+    "pageNotFound": "Page not found.",
+    "convertHint": ".rtf and .doc files are converted to .docx."
   },
   "languages": {
     "en": "English",
@@ -55,7 +56,8 @@
   "nav": {
     "projects": "Projects",
     "templates": "Templates",
-    "language": "Your language"
+    "language": "Your language",
+    "admin": "Admin"
   },
   "projects": {
     "title": "Projects",
@@ -63,7 +65,7 @@
     "new": "New project",
     "create": "Create project",
     "emptyTitle": "No projects yet",
-    "emptyText": "Start from the sample bucket or create your own project.",
+    "emptyText": "Create your first project, or load the sample data from the Admin page.",
     "documents_one": "{{count}} document",
     "documents_other": "{{count}} documents",
     "openComments_one": "{{count}} open comment",
@@ -72,7 +74,8 @@
     "name": "Name",
     "namePlaceholder": "e.g. Forum study",
     "study": "Study",
-    "description": "Description"
+    "description": "Description",
+    "sampleData": "Sample data (Admin)"
   },
   "project": {
     "backToProjects": "← Projects",
@@ -152,7 +155,7 @@
   },
   "templates": {
     "title": "Templates",
-    "subtitle": "The national ICF templates that drafts are generated from.",
+    "subtitle": "Belgian national ICF templates that drafts are generated from, with their versions.",
     "upload": "Upload template",
     "allLanguages": "All languages",
     "allAudiences": "All audiences",
@@ -161,9 +164,14 @@
     "documents_other": "{{count}} documents",
     "backendError": "Could not reach the backend: {{error}}. Is it running on port 8000?",
     "emptyTitle": "Nothing here yet",
-    "emptyText": "Upload a template or import the sample bucket to get started.",
+    "emptyText": "Upload a template or import the sample data on the Admin page.",
     "confirmDelete": "Delete \"{{name}}\"?",
-    "versionPlaceholder": "e.g. 2025-07-18"
+    "versionPlaceholder": "e.g. 2.2",
+    "latest": "Latest",
+    "olderVersions_one": "Older versions ({{count}})",
+    "olderVersions_other": "Older versions ({{count}})",
+    "uploadVersion": "Upload new version",
+    "released": "Released (optional)"
   },
   "versionViewer": {
     "backTemplates": "← Templates",
@@ -288,5 +296,20 @@
     "removedGuidance": "Guidance paragraphs removed",
     "aiUsed": "AI used",
     "openDraft": "Open the new draft"
+  },
+  "admin": {
+    "title": "Admin",
+    "subtitle": "Sample data and system status.",
+    "sampleData": "Sample data",
+    "sampleExplain": "Imports the national ICF templates (EN, NL, FR with all versions) and the sponsor originals of the sample studies as 8 projects (FORUM2, BIOMEDE 2.0, HEM-iSMART, MyKids). .rtf and .doc files are converted to .docx. Safe to run again: existing items are skipped.",
+    "result": "Imported {{imported}}, skipped {{skipped}}, converted {{converted}} to docx.",
+    "failed_one": "{{count}} file failed",
+    "failed_other": "{{count}} files failed",
+    "status": "System status",
+    "ai": "AI",
+    "aiOff": "Disabled",
+    "storage": "Storage",
+    "counts": "Counts",
+    "countsLine": "{{projects}} projects, {{docs}} project documents, {{templates}} templates, {{users}} users"
   }
 }

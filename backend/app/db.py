@@ -107,6 +107,9 @@ def init() -> None:
     with connect() as conn:
         conn.execute(SCHEMA)
         conn.executescript(SCHEMA_V2)
+        dcols = {r["name"] for r in conn.execute("PRAGMA table_info(documents)")}
+        if "released" not in dcols:
+            conn.execute("ALTER TABLE documents ADD COLUMN released TEXT")
         for table in ("documents", "versions"):  # additive migration
             cols = {r["name"] for r in conn.execute(f"PRAGMA table_info({table})")}
             if "checksum_sha256" not in cols:
@@ -143,14 +146,16 @@ def insert_document(
     language: str | None = None,
     audience: str | None = None,
     version: str | None = None,
+    released: str | None = None,
     study: str | None = None,
 ) -> dict:
     with connect() as conn:
         cur = conn.execute(
             "INSERT INTO documents (kind, name, filename, stored_name, language, audience,"
-            " version, study, size, uploaded_at, checksum_sha256) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
-            (kind, name, filename, stored_name, language, audience, version, study, size,
-             now_iso(), checksum),
+            " version, released, study, size, uploaded_at, checksum_sha256)"
+            " VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
+            (kind, name, filename, stored_name, language, audience, version, released, study,
+             size, now_iso(), checksum),
         )  # fmt: skip
         row = conn.execute("SELECT * FROM documents WHERE id = ?", (cur.lastrowid,)).fetchone()
     return to_document(row)

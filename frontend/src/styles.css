@@ -1043,3 +1043,60 @@ fieldset.inline {
   padding: 2px 8px;
   font-size: 14px;
 }
+
+.topbar .nav-admin {
+  margin-left: auto;
+  font-size: 13px;
+  color: var(--neutral-500);
+  text-decoration: none;
+}
+.topbar .nav-admin:hover,
+.topbar .nav-admin.active {
+  color: var(--primary-1100);
+}
+.family {
+  margin-bottom: 1rem;
+}
+.family-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.family h3 {
+  margin: 0 0 0.25rem;
+}
+.versions {
+  margin-top: 0.75rem;
+  border-top: 1px solid var(--neutral-200);
+  padding-top: 0.5rem;
+}
+.versions summary {
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--neutral-700);
+}
+.vrow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem 0;
+  flex-wrap: wrap;
+}
+.admin-section {
+  margin-bottom: 2rem;
+}
+.kv {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.4rem 1.5rem;
+  margin: 0;
+}
+.kv dt {
+  color: var(--neutral-500);
+}
+.kv dd {
+  margin: 0;
+}

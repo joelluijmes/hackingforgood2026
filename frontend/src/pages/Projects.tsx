@@ -73,7 +73,6 @@ export default function Projects() {
   const [projects, setProjects] = useState<Project[] | null>(null);
   const [error, setError] = useState('');
   const [creating, setCreating] = useState(false);
-  const [seeding, setSeeding] = useState(false);
   const [toast, setToast] = useState('');
 
   const load = useCallback(async () => {
@@ -88,20 +87,6 @@ export default function Projects() {
   useEffect(() => {
     load();
   }, [load]);
-
-  async function seed() {
-    setSeeding(true);
-    try {
-      const r = await api.seed();
-      setToast(
-        t('common.imported', { imported: r.imported, skipped: r.skipped }),
-      );
-      await load();
-    } catch (e) {
-      setToast(errMsg(e));
-    }
-    setSeeding(false);
-  }
 
   async function remove(p: Project) {
     if (!window.confirm(t('projects.confirmDelete', { name: p.name }))) return;
@@ -139,14 +124,9 @@ export default function Projects() {
           <h3>{t('projects.emptyTitle')}</h3>
           <p>{t('projects.emptyText')}</p>
           <div className="row center">
-            <button
-              type="button"
-              className="btn"
-              onClick={seed}
-              disabled={seeding}
-            >
-              {seeding ? t('common.importing') : t('common.importSample')}
-            </button>
+            <Link className="btn" to="/admin">
+              {t('projects.sampleData')}
+            </Link>
             <button
               type="button"
               className="btn primary"
@@ -164,7 +144,9 @@ export default function Projects() {
             <Link to={`/projects/${p.id}`} className="card-title">
               {p.name}
             </Link>
-            {p.study && <div className="card-file">{p.study}</div>}
+            {p.study && p.study !== p.name && (
+              <div className="card-file">{p.study}</div>
+            )}
             <div className="chips">
               <span className="chip lang">{t(`stages.${p.stage}.label`)}</span>
               <span className="chip">

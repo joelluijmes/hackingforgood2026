@@ -59,7 +59,7 @@ export function FileDrop({
     <label className="drop">
       <input
         type="file"
-        accept=".docx,.pdf"
+        accept=".docx,.doc,.rtf,.pdf"
         onChange={(e) => onFile(e.target.files?.[0] ?? null)}
       />
       {file ? (
@@ -69,6 +69,8 @@ export function FileDrop({
           <strong>{t('common.dropFile')}</strong> {t('common.orBrowse')}
           <br />
           <small>{t('common.docxRecommended')}</small>
+          <br />
+          <small>{t('common.convertHint')}</small>
         </span>
       )}
     </label>

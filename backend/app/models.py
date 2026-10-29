@@ -16,6 +16,7 @@ class Document(BaseModel):
     language: Language | None
     audience: Audience | None
     version: str | None
+    released: str | None
     study: str | None
     size: int
     uploaded_at: str
@@ -53,9 +54,16 @@ class SeedItem(BaseModel):
     kind: Literal["template", "project_doc"]
 
 
+class SeedFailure(BaseModel):
+    name: str
+    reason: str
+
+
 class SeedResult(BaseModel):
     imported: int
     skipped: int
+    converted: int
+    failed: list[SeedFailure]
     items: list[SeedItem]
 
 

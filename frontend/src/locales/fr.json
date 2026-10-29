@@ -28,7 +28,8 @@
     "dropFile": "Déposez un fichier ici",
     "orBrowse": "ou cliquez pour parcourir",
     "docxRecommended": ".docx recommandé",
-    "pageNotFound": "Page introuvable."
+    "pageNotFound": "Page introuvable.",
+    "convertHint": "Les fichiers .rtf et .doc sont convertis en .docx."
   },
   "languages": {
     "en": "Anglais",
@@ -55,7 +56,8 @@
   "nav": {
     "projects": "Projets",
     "templates": "Modèles",
-    "language": "Votre langue"
+    "language": "Votre langue",
+    "admin": "Admin"
   },
   "projects": {
     "title": "Projets",
@@ -63,7 +65,7 @@
     "new": "Nouveau projet",
     "create": "Créer un projet",
     "emptyTitle": "Aucun projet pour l'instant",
-    "emptyText": "Commencez avec les fichiers d'exemple ou créez votre propre projet.",
+    "emptyText": "Créez votre premier projet ou chargez les données d’exemple depuis la page Admin.",
     "documents_one": "{{count}} document",
     "documents_other": "{{count}} documents",
     "openComments_one": "{{count}} commentaire ouvert",
@@ -72,7 +74,8 @@
     "name": "Nom",
     "namePlaceholder": "p. ex. étude Forum",
     "study": "Étude",
-    "description": "Description"
+    "description": "Description",
+    "sampleData": "Données d’exemple (Admin)"
   },
   "project": {
     "backToProjects": "← Projets",
@@ -152,7 +155,7 @@
   },
   "templates": {
     "title": "Modèles",
-    "subtitle": "Les modèles nationaux d'ICF à partir desquels les projets sont générés.",
+    "subtitle": "Modèles nationaux belges de ICF à partir desquels les projets sont générés, avec leurs versions.",
     "upload": "Téléverser un modèle",
     "allLanguages": "Toutes les langues",
     "allAudiences": "Tous les publics",
@@ -161,9 +164,14 @@
     "documents_other": "{{count}} documents",
     "backendError": "Impossible de joindre le serveur : {{error}}. Fonctionne-t-il sur le port 8000 ?",
     "emptyTitle": "Rien ici pour l'instant",
-    "emptyText": "Téléversez un modèle ou importez les fichiers d'exemple pour commencer.",
+    "emptyText": "Téléversez un modèle ou importez les données d’exemple depuis la page Admin.",
     "confirmDelete": "Supprimer « {{name}} » ?",
-    "versionPlaceholder": "p. ex. 2025-07-18"
+    "versionPlaceholder": "p. ex. 2.2",
+    "latest": "Dernière",
+    "olderVersions_one": "Versions antérieures ({{count}})",
+    "olderVersions_other": "Versions antérieures ({{count}})",
+    "uploadVersion": "Téléverser une nouvelle version",
+    "released": "Date de publication (facultatif)"
   },
   "versionViewer": {
     "backTemplates": "← Modèles",
@@ -288,5 +296,20 @@
     "removedGuidance": "Paragraphes d'instructions supprimés",
     "aiUsed": "IA utilisée",
     "openDraft": "Ouvrir le nouveau projet"
+  },
+  "admin": {
+    "title": "Admin",
+    "subtitle": "Données d’exemple et état du système.",
+    "sampleData": "Données d’exemple",
+    "sampleExplain": "Importe les modèles nationaux d’ICF (EN, NL, FR avec toutes les versions) et les documents originaux des promoteurs des études d’exemple sous forme de 8 projets (FORUM2, BIOMEDE 2.0, HEM-iSMART, MyKids). Les fichiers .rtf et .doc sont convertis en .docx. Peut être relancé : les éléments existants sont ignorés.",
+    "result": "{{imported}} importé(s), {{skipped}} ignoré(s), {{converted}} converti(s) en docx.",
+    "failed_one": "{{count}} fichier en échec",
+    "failed_other": "{{count}} fichiers en échec",
+    "status": "État du système",
+    "ai": "IA",
+    "aiOff": "Désactivée",
+    "storage": "Stockage",
+    "counts": "Totaux",
+    "countsLine": "{{projects}} projets, {{docs}} documents de projet, {{templates}} modèles, {{users}} utilisateurs"
   }
 }

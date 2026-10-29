@@ -124,7 +124,7 @@ def upload_project_doc(
     if icf_type not in (None, "adult", "parent", "adolescent", "child"):
         raise HTTPException(422, "invalid icf_type")
     language = services.check_lang(language)
-    filename, _, data = services.read_upload(file)
+    filename, _, data, auto_note = services.read_upload(file)
     with db.connect() as conn:
         _project_row(conn, pid)
         return services.create_doc_with_version(
@@ -136,7 +136,7 @@ def upload_project_doc(
             language=language or seed.guess_language(filename),
             filename=filename,
             data=data,
-            note=(note or "").strip(),
+            note=(note or "").strip() or auto_note,
             source="upload",
             user_name=user["name"],
         )
@@ -162,11 +162,11 @@ def upload_version(
     source = (source or "").strip() or "upload"
     if source not in ("upload", "reviewed"):
         raise HTTPException(422, "source must be upload or reviewed")
-    filename, _, data = services.read_upload(file)
+    filename, _, data, auto_note = services.read_upload(file)
     with db.connect() as conn:
         _doc_row(conn, did)
         vid = services.add_version(
-            conn, did, filename, data, (note or "").strip(), source, user["name"]
+            conn, did, filename, data, (note or "").strip() or auto_note, source, user["name"]
         )
         return services.version_dict(conn, _version_row(conn, vid))
 

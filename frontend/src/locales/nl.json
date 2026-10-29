@@ -28,7 +28,8 @@
     "dropFile": "Sleep een bestand hierheen",
     "orBrowse": "of klik om te bladeren",
     "docxRecommended": ".docx aanbevolen",
-    "pageNotFound": "Pagina niet gevonden."
+    "pageNotFound": "Pagina niet gevonden.",
+    "convertHint": ".rtf- en .doc-bestanden worden omgezet naar .docx."
   },
   "languages": {
     "en": "Engels",
@@ -55,7 +56,8 @@
   "nav": {
     "projects": "Projecten",
     "templates": "Sjablonen",
-    "language": "Uw taal"
+    "language": "Uw taal",
+    "admin": "Beheer"
   },
   "projects": {
     "title": "Projecten",
@@ -63,7 +65,7 @@
     "new": "Nieuw project",
     "create": "Project aanmaken",
     "emptyTitle": "Nog geen projecten",
-    "emptyText": "Start met de voorbeeldbestanden of maak een eigen project aan.",
+    "emptyText": "Maak uw eerste project aan of laad voorbeeldgegevens via de beheerpagina.",
     "documents_one": "{{count}} document",
     "documents_other": "{{count}} documenten",
     "openComments_one": "{{count}} open opmerking",
@@ -72,7 +74,8 @@
     "name": "Naam",
     "namePlaceholder": "bv. Forum-studie",
     "study": "Studie",
-    "description": "Beschrijving"
+    "description": "Beschrijving",
+    "sampleData": "Voorbeeldgegevens (beheer)"
   },
   "project": {
     "backToProjects": "← Projecten",
@@ -152,7 +155,7 @@
   },
   "templates": {
     "title": "Sjablonen",
-    "subtitle": "De nationale ICF-sjablonen waarmee ontwerpen worden gegenereerd.",
+    "subtitle": "Belgische nationale ICF-sjablonen waarmee ontwerpen worden gegenereerd, met hun versies.",
     "upload": "Sjabloon uploaden",
     "allLanguages": "Alle talen",
     "allAudiences": "Alle doelgroepen",
@@ -161,9 +164,14 @@
     "documents_other": "{{count}} documenten",
     "backendError": "Geen verbinding met de server: {{error}}. Draait die op poort 8000?",
     "emptyTitle": "Nog niets hier",
-    "emptyText": "Upload een sjabloon of importeer de voorbeeldbestanden om te starten.",
+    "emptyText": "Upload een sjabloon of importeer de voorbeeldgegevens op de beheerpagina.",
     "confirmDelete": "\"{{name}}\" verwijderen?",
-    "versionPlaceholder": "bv. 2025-07-18"
+    "versionPlaceholder": "bv. 2.2",
+    "latest": "Laatste",
+    "olderVersions_one": "Oudere versies ({{count}})",
+    "olderVersions_other": "Oudere versies ({{count}})",
+    "uploadVersion": "Nieuwe versie uploaden",
+    "released": "Publicatiedatum (optioneel)"
   },
   "versionViewer": {
     "backTemplates": "← Sjablonen",
@@ -288,5 +296,20 @@
     "removedGuidance": "Verwijderde richtlijnalinea's",
     "aiUsed": "AI gebruikt",
     "openDraft": "Nieuw ontwerp openen"
+  },
+  "admin": {
+    "title": "Beheer",
+    "subtitle": "Voorbeeldgegevens en systeemstatus.",
+    "sampleData": "Voorbeeldgegevens",
+    "sampleExplain": "Importeert de nationale ICF-sjablonen (EN, NL, FR met alle versies) en de originele sponsordocumenten van de voorbeeldstudies als 8 projecten (FORUM2, BIOMEDE 2.0, HEM-iSMART, MyKids). .rtf- en .doc-bestanden worden omgezet naar .docx. Kan opnieuw worden uitgevoerd: bestaande items worden overgeslagen.",
+    "result": "{{imported}} geïmporteerd, {{skipped}} overgeslagen, {{converted}} omgezet naar docx.",
+    "failed_one": "{{count}} bestand mislukt",
+    "failed_other": "{{count}} bestanden mislukt",
+    "status": "Systeemstatus",
+    "ai": "AI",
+    "aiOff": "Uitgeschakeld",
+    "storage": "Opslag",
+    "counts": "Aantallen",
+    "countsLine": "{{projects}} projecten, {{docs}} projectdocumenten, {{templates}} sjablonen, {{users}} gebruikers"
   }
 }

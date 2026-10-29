@@ -9,6 +9,7 @@ dependencies = [
     "python-docx>=1.1",
     "google-genai>=2.34.0",
     "google-cloud-storage>=3.17.1",
+    "pypandoc-binary>=1.17",
 ]
 
 [dependency-groups]

@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Navigate, NavLink, Outlet, Route, Routes } from 'react-router-dom';
 import type { Language } from './api';
 import { useAuth } from './components/AuthContext';
+import Admin from './pages/Admin';
 import DiffView from './pages/DiffView';
 import Login from './pages/Login';
 import Project from './pages/Project';
@@ -30,6 +31,9 @@ function Shell() {
           </NavLink>
           <NavLink to="/templates">{t('nav.templates')}</NavLink>
         </nav>
+        <NavLink to="/admin" className="nav-admin">
+          {t('nav.admin')}
+        </NavLink>
         <div className="topbar-user">
           <select
             aria-label={t('nav.language')}
@@ -62,6 +66,7 @@ export default function App() {
       <Route element={<Shell />}>
         <Route path="/" element={<Projects />} />
         <Route path="/projects/:id" element={<Project />} />
+        <Route path="/admin" element={<Admin />} />
         <Route path="/templates" element={<Templates />} />
         <Route path="/templates/:id" element={<Viewer />} />
         <Route path="/versions/:vid" element={<VersionViewer />} />

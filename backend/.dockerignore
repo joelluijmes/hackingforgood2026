@@ -1,0 +1,6 @@
+.venv
+__pycache__
+*.pyc
+icf.db
+storage/
+.ruff_cache
