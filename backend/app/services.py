@@ -100,6 +100,13 @@ def doc_dict(conn, row, with_versions: bool = True) -> dict:
     d = {k: row[k] for k in ("id", "project_id", "title", "role", "icf_type", "language")}
     d["created_at"] = row["created_at"]
     d["source_doc_id"] = row["source_doc_id"]
+    # approved "as is": only while the approved version is still the latest
+    latest = conn.execute("SELECT MAX(id) FROM versions WHERE doc_id = ?", (row["id"],)).fetchone()[
+        0
+    ]
+    d["approved"] = bool(row["approved_version_id"]) and row["approved_version_id"] == latest
+    d["approved_by"] = row["approved_by"] if d["approved"] else None
+    d["approved_at"] = row["approved_at"] if d["approved"] else None
     if with_versions:
         rows = conn.execute(
             "SELECT * FROM versions WHERE doc_id = ? ORDER BY number DESC", (row["id"],)

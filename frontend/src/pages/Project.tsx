@@ -17,16 +17,18 @@ import {
   type ProjectProgress,
   type Project as ProjectT,
   type Role,
+  type Stage,
 } from '../api';
 import { errMsg } from '../components/Dialog';
 import DocCard from '../components/DocCard';
 import GenerateDialog from '../components/GenerateDialog';
 import IcfMatrix from '../components/IcfMatrix';
+import NextStepPanel from '../components/NextStepPanel';
 import {
   NewVersionDialog,
   UploadDocDialog,
 } from '../components/ProjectDialogs';
-import StageTracker from '../components/StageStepper';
+import StageStepper from '../components/StageStepper';
 import TaskBanner, { type TaskMeta } from '../components/TaskBanner';
 
 const GROUPS: Role[] = ['sponsor', 'icf', 'other'];
@@ -156,6 +158,26 @@ export default function Project() {
     setDialog('generate');
   }
 
+  async function translateMissing() {
+    for (const row of progress?.matrix ?? []) {
+      const en = row.languages.en;
+      if (!en) continue;
+      const langs = (['nl', 'fr'] as const).filter((l) => !row.languages[l]);
+      if (langs.length) await translate(en, row.icf_type, [...langs]);
+    }
+  }
+
+  async function backTo(stage: Stage) {
+    const name = t(`stages.${stage}.label`);
+    if (!window.confirm(t('tracker.confirmBack', { stage: name }))) return;
+    try {
+      await api.updateProject(projectId, { stage, force: false });
+      await load();
+    } catch (e) {
+      setError(errMsg(e));
+    }
+  }
+
   const busy = new Set<string>();
   for (const m of tasks)
     for (const l of m.targets ?? []) {
@@ -213,29 +235,20 @@ export default function Project() {
             <p className="muted desc">{project.description}</p>
           )}
         </div>
-        <div className="row">
-          <button
-            type="button"
-            className="btn"
-            onClick={() => setDialog('upload')}
-          >
-            {t('project.uploadDocument')}
-          </button>
-          <button
-            type="button"
-            className="btn primary"
-            onClick={() => openGenerate()}
-          >
-            {t('project.generate')}
-          </button>
-        </div>
+        <details className="menu">
+          <summary className="btn">{t('project.addMenu')}</summary>
+          <div className="menu-list">
+            <button type="button" onClick={() => setDialog('upload')}>
+              {t('project.uploadDocument')}
+            </button>
+            <button type="button" onClick={() => openGenerate()}>
+              {t('project.generate')}
+            </button>
+          </div>
+        </details>
       </div>
 
-      <StageTracker
-        projectId={projectId}
-        progress={progress}
-        onChanged={load}
-      />
+      <StageStepper progress={progress} onBack={backTo} />
       {error && <p className="error">{error}</p>}
 
       <TaskBanner
@@ -244,7 +257,19 @@ export default function Project() {
         onDismiss={(id) => saveTasks(tasks.filter((x) => x.id !== id))}
       />
 
-      <section className="group">
+      <NextStepPanel
+        projectId={projectId}
+        progress={progress}
+        docs={docs}
+        onChanged={load}
+        onUpload={() => setDialog('upload')}
+        onGenerate={() => openGenerate()}
+        onTranslateMissing={translateMissing}
+        onNewVersion={setVersionFor}
+        onError={setError}
+      />
+
+      <section className="group docs-area">
         <h2>{t('matrix.title')}</h2>
         <IcfMatrix
           matrix={progress.matrix}
@@ -278,6 +303,7 @@ export default function Project() {
                 sourceTitle={docs.find((x) => x.id === d.source_doc_id)?.title}
                 onNewVersion={() => setVersionFor(d)}
                 onDelete={() => removeDoc(d)}
+                onChanged={load}
               />
             ))}
           </Section>

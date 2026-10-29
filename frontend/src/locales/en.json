@@ -106,7 +106,10 @@
     "countDeclined_one": "{{count}} declined",
     "countDeclined_other": "{{count}} declined",
     "latestSummary": "v{{n}} · {{source}}",
-    "translatedFrom": "Translated from {{title}}"
+    "translatedFrom": "Translated from {{title}}",
+    "addMenu": "Add document",
+    "approvedAsIs": "Approved as is",
+    "withdrawApproval": "Withdraw approval"
   },
   "stages": {
     "ariaLabel": "Project stage",
@@ -329,7 +332,7 @@
     "has_sponsor_docs": "Upload at least one sponsor document",
     "has_en_draft": "Generate an English ICF draft",
     "draft_types_missing": "No draft yet for: {{list}}",
-    "has_reviewed_version": "Upload the reviewed copy (with comments) from the PI",
+    "has_reviewed_version": "Every English ICF is reviewed (reviewed copy uploaded) or approved as is",
     "comments_decided_one": "Decide all open comments ({{count}} open)",
     "comments_decided_other": "Decide all open comments ({{count}} open)",
     "translations_complete": "Create NL and FR versions (missing: {{list}})",
@@ -420,6 +423,49 @@
       "proposed": "Change proposed",
       "not_applicable": "Not applicable",
       "error": "Failed"
+    }
+  },
+  "next": {
+    "stepLabel": "Step",
+    "checklistLabel": "Checklist",
+    "intake": {
+      "what": "Collect the sponsor documents",
+      "have_one": "{{count}} sponsor document uploaded",
+      "have_other": "{{count}} sponsor documents uploaded",
+      "none": "No sponsor documents yet. Upload the protocol and the sponsor consent forms."
+    },
+    "drafting": {
+      "what": "Generate the ICF draft",
+      "have_one": "{{count}} English ICF draft exists",
+      "have_other": "{{count}} English ICF drafts exist",
+      "none": "No English ICF draft yet."
+    },
+    "pi_review": {
+      "what": "PI review",
+      "status": "{{done}} of {{total}} English ICFs reviewed or approved"
+    },
+    "translation": {
+      "what": "NL and FR versions",
+      "status_one": "{{count}} translated version so far",
+      "status_other": "{{count}} translated versions so far"
+    },
+    "ethics_review": {
+      "what": "Ethics committee",
+      "status": "{{done}} of {{total}} translated ICFs reviewed or approved"
+    },
+    "approved": {
+      "what": "Final version",
+      "status": "All done. The ICF package is approved."
+    },
+    "act": {
+      "upload": "Upload sponsor documents",
+      "addMore": "Add more documents",
+      "generate": "Generate ICF draft",
+      "generateAnother": "Generate another draft",
+      "uploadReviewed": "Upload reviewed copy",
+      "approveAsIs": "Approve as is",
+      "reviewComments": "Decide comments",
+      "translate": "Translate missing versions"
     }
   }
 }

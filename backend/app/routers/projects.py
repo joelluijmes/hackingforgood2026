@@ -180,6 +180,34 @@ def delete_project_doc(did: int) -> Response:
     return Response(status_code=204)
 
 
+@router.post("/project-documents/{did}/approve")
+def approve_doc(did: int, user: User) -> dict:
+    """Approve the latest version as is (no changes needed)."""
+    with db.connect() as conn:
+        _doc_row(conn, did)
+        latest = conn.execute("SELECT MAX(id) FROM versions WHERE doc_id = ?", (did,)).fetchone()[0]
+        if not latest:
+            raise HTTPException(422, "Document has no version")
+        conn.execute(
+            "UPDATE project_docs SET approved_version_id = ?, approved_by = ?, approved_at = ?"
+            " WHERE id = ?",
+            (latest, user["name"], db.now_iso(), did),
+        )
+        return services.doc_dict(conn, _doc_row(conn, did))
+
+
+@router.delete("/project-documents/{did}/approve")
+def unapprove_doc(did: int) -> dict:
+    with db.connect() as conn:
+        _doc_row(conn, did)
+        conn.execute(
+            "UPDATE project_docs SET approved_version_id = NULL, approved_by = NULL,"
+            " approved_at = NULL WHERE id = ?",
+            (did,),
+        )
+        return services.doc_dict(conn, _doc_row(conn, did))
+
+
 @router.post("/project-documents/{did}/versions")
 def upload_version(
     did: int,

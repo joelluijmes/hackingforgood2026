@@ -127,6 +127,9 @@ export interface ProjectDoc {
   language: Language | null;
   created_at: string;
   source_doc_id: number | null;
+  approved: boolean;
+  approved_by: string | null;
+  approved_at: string | null;
   versions: Version[];
 }
 
@@ -240,6 +243,7 @@ export interface MatrixCell {
   version_number: number;
   source: VersionSource;
   comments_open: number;
+  approved: boolean;
 }
 
 export interface MatrixRow {
@@ -575,6 +579,12 @@ export const api = {
       json('POST', b),
     ),
   task: (id: string) => req<Task>(`/tasks/${id}`),
+  approveDoc: (docId: number) =>
+    req<ProjectDoc>(`/project-documents/${docId}/approve`, { method: 'POST' }),
+  unapproveDoc: (docId: number) =>
+    req<ProjectDoc>(`/project-documents/${docId}/approve`, {
+      method: 'DELETE',
+    }),
   progress: (projectId: number) =>
     req<ProjectProgress>(`/projects/${projectId}/progress`),
   adminStatus: () => req<AdminStatus>('/admin/status'),

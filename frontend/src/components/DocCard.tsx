@@ -51,12 +51,14 @@ export default function DocCard({
   doc,
   onNewVersion,
   onDelete,
+  onChanged,
   sourceTitle,
 }: {
   doc: ProjectDoc;
   sourceTitle?: string;
   onNewVersion: () => void;
   onDelete: () => void;
+  onChanged?: () => void;
 }) {
   const { t } = useTranslation();
   const latest = doc.versions[0];
@@ -72,6 +74,9 @@ export default function DocCard({
             )}
             {doc.icf_type && (
               <span className="chip">{t(`icfTypes.${doc.icf_type}`)}</span>
+            )}
+            {doc.approved && (
+              <span className="chip ok">{t('project.approvedAsIs')}</span>
             )}
             {latest && (
               <span className="muted small">
@@ -96,6 +101,24 @@ export default function DocCard({
           <button type="button" className="btn" onClick={onNewVersion}>
             {t('project.uploadNewVersion')}
           </button>
+          {doc.role === 'icf' &&
+            (doc.approved ? (
+              <button
+                type="button"
+                className="btn"
+                onClick={() => api.unapproveDoc(doc.id).then(onChanged)}
+              >
+                {t('project.withdrawApproval')}
+              </button>
+            ) : (
+              <button
+                type="button"
+                className="btn"
+                onClick={() => api.approveDoc(doc.id).then(onChanged)}
+              >
+                {t('next.act.approveAsIs')}
+              </button>
+            ))}
           <button type="button" className="link danger" onClick={onDelete}>
             {t('common.delete')}
           </button>

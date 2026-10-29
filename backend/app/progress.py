@@ -10,11 +10,17 @@ def _latest(doc: dict) -> dict | None:
 
 
 def _open_comments(docs: list[dict]) -> int:
-    return sum((_latest(d) or {}).get("comments_open", 0) for d in docs)
+    # an approved-as-is document has nothing left to decide
+    return sum((_latest(d) or {}).get("comments_open", 0) for d in docs if not d.get("approved"))
 
 
 def _req(key: str, met: bool, blocking: bool = True, detail: str | None = None) -> dict:
     return {"key": key, "met": met, "blocking": blocking, "detail": detail}
+
+
+def _reviewed(d: dict) -> bool:
+    """A reviewed (commented) version exists, or the doc was approved as is."""
+    return bool(d.get("approved")) or any(v["source"] == "reviewed" for v in d["versions"])
 
 
 def _icf_type(d: dict) -> str:
@@ -36,10 +42,10 @@ def _requirements(stage: str, docs: list[dict]) -> list[dict]:
             _req("draft_types_missing", not missing, False, ",".join(missing) or None),
         ]
     if stage == "pi_review":
-        reviewed = any(v["source"] == "reviewed" for d in en for v in d["versions"])
+        pending = [d for d in en if not _reviewed(d)]
         n = _open_comments(en)
         return [
-            _req("has_reviewed_version", reviewed),
+            _req("has_reviewed_version", bool(en) and not pending),
             _req("comments_decided", n == 0 and bool(en), True, str(n)),
         ]
     if stage == "translation":
@@ -52,7 +58,7 @@ def _requirements(stage: str, docs: list[dict]) -> list[dict]:
             _req("translations_complete", bool(en) and not missing, True, ",".join(missing) or None)
         ]
     if stage == "ethics_review":
-        reviewed = any(v["source"] == "reviewed" for d in translated for v in d["versions"])
+        reviewed = any(_reviewed(d) for d in translated)
         n = _open_comments(translated)
         return [_req("ethics_reviewed", reviewed and n == 0, True, str(n))]
     return []
@@ -84,6 +90,7 @@ def _matrix(docs: list[dict]) -> list[dict]:
                     "version_number": v["number"],
                     "source": v["source"],
                     "comments_open": v.get("comments_open", 0),
+                    "approved": bool(d.get("approved")),
                 }
                 if d and v
                 else None

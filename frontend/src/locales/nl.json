@@ -106,7 +106,10 @@
     "countDeclined_one": "{{count}} afgewezen",
     "countDeclined_other": "{{count}} afgewezen",
     "latestSummary": "v{{n}} · {{source}}",
-    "translatedFrom": "Vertaald van {{title}}"
+    "translatedFrom": "Vertaald van {{title}}",
+    "addMenu": "Document toevoegen",
+    "approvedAsIs": "Ongewijzigd goedgekeurd",
+    "withdrawApproval": "Goedkeuring intrekken"
   },
   "stages": {
     "ariaLabel": "Fase van het project",
@@ -329,7 +332,7 @@
     "has_sponsor_docs": "Upload minstens één sponsordocument",
     "has_en_draft": "Genereer een Engelse ICF-versie",
     "draft_types_missing": "Nog geen versie voor: {{list}}",
-    "has_reviewed_version": "Upload de nagekeken kopie (met opmerkingen) van de PI",
+    "has_reviewed_version": "Elke Engelse ICF is nagekeken (gecommentarieerde versie geüpload) of ongewijzigd goedgekeurd",
     "comments_decided_one": "Beslis over alle openstaande opmerkingen ({{count}} open)",
     "comments_decided_other": "Beslis over alle openstaande opmerkingen ({{count}} open)",
     "translations_complete": "Maak NL- en FR-versies (ontbreekt: {{list}})",
@@ -420,6 +423,49 @@
       "proposed": "Wijziging voorgesteld",
       "not_applicable": "Niet van toepassing",
       "error": "Mislukt"
+    }
+  },
+  "next": {
+    "stepLabel": "Stap",
+    "checklistLabel": "Checklist",
+    "intake": {
+      "what": "Sponsordocumenten verzamelen",
+      "have_one": "{{count}} sponsordocument geüpload",
+      "have_other": "{{count}} sponsordocumenten geüpload",
+      "none": "Nog geen sponsordocumenten. Upload het protocol en de toestemmingsformulieren van de sponsor."
+    },
+    "drafting": {
+      "what": "ICF-ontwerp genereren",
+      "have_one": "{{count}} Engels ICF-ontwerp aanwezig",
+      "have_other": "{{count}} Engelse ICF-ontwerpen aanwezig",
+      "none": "Nog geen Engels ICF-ontwerp."
+    },
+    "pi_review": {
+      "what": "Nazicht door PI",
+      "status": "{{done}} van {{total}} Engelse ICF's nagekeken of goedgekeurd"
+    },
+    "translation": {
+      "what": "NL- en FR-versies",
+      "status_one": "{{count}} vertaalde versie tot nu toe",
+      "status_other": "{{count}} vertaalde versies tot nu toe"
+    },
+    "ethics_review": {
+      "what": "Ethisch comité",
+      "status": "{{done}} van {{total}} vertaalde ICF's nagekeken of goedgekeurd"
+    },
+    "approved": {
+      "what": "Eindversie",
+      "status": "Klaar. Het ICF-pakket is goedgekeurd."
+    },
+    "act": {
+      "upload": "Sponsordocumenten uploaden",
+      "addMore": "Meer documenten toevoegen",
+      "generate": "ICF-ontwerp genereren",
+      "generateAnother": "Nog een ontwerp genereren",
+      "uploadReviewed": "Nagekeken versie uploaden",
+      "approveAsIs": "Ongewijzigd goedkeuren",
+      "reviewComments": "Opmerkingen beslissen",
+      "translate": "Ontbrekende versies vertalen"
     }
   }
 }

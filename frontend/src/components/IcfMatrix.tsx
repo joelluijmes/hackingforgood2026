@@ -67,6 +67,11 @@ export default function IcfMatrix({
                               source: t(`sources.${c.source}`),
                             })}
                           </span>
+                          {c.approved && (
+                            <span className="chip ok">
+                              {t('project.approvedAsIs')}
+                            </span>
+                          )}
                           {c.comments_open > 0 && (
                             <span className="chip warn">
                               {t('project.countOpen', {

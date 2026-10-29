@@ -106,7 +106,10 @@
     "countDeclined_one": "{{count}} refusé",
     "countDeclined_other": "{{count}} refusés",
     "latestSummary": "v{{n}} · {{source}}",
-    "translatedFrom": "Traduit de {{title}}"
+    "translatedFrom": "Traduit de {{title}}",
+    "addMenu": "Ajouter un document",
+    "approvedAsIs": "Approuvé tel quel",
+    "withdrawApproval": "Retirer l'approbation"
   },
   "stages": {
     "ariaLabel": "Étape du projet",
@@ -329,7 +332,7 @@
     "has_sponsor_docs": "Téléversez au moins un document du promoteur",
     "has_en_draft": "Générez une version anglaise du formulaire de consentement",
     "draft_types_missing": "Pas encore de version pour : {{list}}",
-    "has_reviewed_version": "Téléversez la copie relue (avec commentaires) du PI",
+    "has_reviewed_version": "Chaque ICF anglais est revu (copie revue téléversée) ou approuvé tel quel",
     "comments_decided_one": "Statuez sur tous les commentaires ouverts ({{count}} ouvert)",
     "comments_decided_other": "Statuez sur tous les commentaires ouverts ({{count}} ouverts)",
     "translations_complete": "Créez les versions NL et FR (manquant : {{list}})",
@@ -420,6 +423,49 @@
       "proposed": "Modification proposée",
       "not_applicable": "Non applicable",
       "error": "Échec"
+    }
+  },
+  "next": {
+    "stepLabel": "Étape",
+    "checklistLabel": "Liste de contrôle",
+    "intake": {
+      "what": "Rassembler les documents du promoteur",
+      "have_one": "{{count}} document du promoteur téléversé",
+      "have_other": "{{count}} documents du promoteur téléversés",
+      "none": "Aucun document du promoteur. Téléversez le protocole et les formulaires de consentement du promoteur."
+    },
+    "drafting": {
+      "what": "Générer le projet d'ICF",
+      "have_one": "{{count}} projet d'ICF anglais existe",
+      "have_other": "{{count}} projets d'ICF anglais existent",
+      "none": "Pas encore de projet d'ICF anglais."
+    },
+    "pi_review": {
+      "what": "Revue par le PI",
+      "status": "{{done}} sur {{total}} ICF anglais revus ou approuvés"
+    },
+    "translation": {
+      "what": "Versions NL et FR",
+      "status_one": "{{count}} version traduite pour l'instant",
+      "status_other": "{{count}} versions traduites pour l'instant"
+    },
+    "ethics_review": {
+      "what": "Comité d'éthique",
+      "status": "{{done}} sur {{total}} ICF traduits revus ou approuvés"
+    },
+    "approved": {
+      "what": "Version finale",
+      "status": "Terminé. Le dossier ICF est approuvé."
+    },
+    "act": {
+      "upload": "Téléverser les documents du promoteur",
+      "addMore": "Ajouter d'autres documents",
+      "generate": "Générer le projet d'ICF",
+      "generateAnother": "Générer un autre projet",
+      "uploadReviewed": "Téléverser la copie revue",
+      "approveAsIs": "Approuver tel quel",
+      "reviewComments": "Décider des commentaires",
+      "translate": "Traduire les versions manquantes"
     }
   }
 }
