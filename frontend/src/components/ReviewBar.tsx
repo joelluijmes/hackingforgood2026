@@ -150,12 +150,7 @@ export default function ReviewBar({
         ← {t('review.backToProject')}
       </Link>
       <div className="rv-bar-info">
-        <strong>
-          {ids.length > 0
-            ? t('comments.stagedCount', { count: ids.length })
-            : t('review.noStaged')}
-        </strong>
-        <span className="muted">
+        <span className="rv-bar-count">
           {t('comments.reviewed', { done: stat.reviewed, total: stat.total })}
         </span>
         <progress
@@ -163,17 +158,22 @@ export default function ReviewBar({
           max={Math.max(stat.total, 1)}
           aria-hidden="true"
         />
+        {ids.length > 0 && (
+          <span className="rv-badge">
+            {t('comments.stagedCount', { count: ids.length })}
+          </span>
+        )}
+        {ids.length > 0 && (
+          <button
+            type="button"
+            className="rv-linkbtn"
+            disabled={busy}
+            onClick={() => setStaged(() => ({}))}
+          >
+            {t('comments.discard')}
+          </button>
+        )}
       </div>
-      {ids.length > 0 && (
-        <button
-          type="button"
-          className="btn ghost"
-          disabled={busy}
-          onClick={() => setStaged(() => ({}))}
-        >
-          {t('comments.discard')}
-        </button>
-      )}
       <div className="rv-finish">
         <button
           type="button"
