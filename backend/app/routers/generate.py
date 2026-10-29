@@ -1,5 +1,6 @@
 import re
 import tempfile
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Literal
 
@@ -27,6 +28,31 @@ class GenerateIn(BaseModel):
 class TranslateIn(BaseModel):
     target_languages: list[Literal["nl", "fr"]]
     version_id: int | None = None
+    force: bool = False
+
+
+class UpdateIn(BaseModel):
+    version_id: int | None = None
+
+
+def _en_reviewed(conn, doc_id: int) -> bool:
+    """EN ICF counts as PI-reviewed (single place; extend with doc-level approved flag)."""
+    if (
+        conn.execute(
+            "SELECT 1 FROM versions WHERE doc_id = ? AND source = 'reviewed' LIMIT 1", (doc_id,)
+        ).fetchone()
+        is not None
+    ):
+        return True
+    # approved "as is" and the approved version is still the latest
+    return (
+        conn.execute(
+            "SELECT 1 FROM project_docs WHERE id = ? AND approved_version_id IS NOT NULL"
+            " AND approved_version_id = (SELECT MAX(id) FROM versions WHERE doc_id = ?)",
+            (doc_id, doc_id),
+        ).fetchone()
+        is not None
+    )
 
 
 def _latest_template(conn, language: str):
@@ -38,7 +64,9 @@ def _latest_template(conn, language: str):
     ).fetchone()
 
 
-def _fill_template(tpl, *, sponsor_text, notes, language, icf_type, progress) -> tuple[bytes, dict]:
+def _fill_template(
+    tpl, *, sponsor_text, notes, language, icf_type, progress, thinking_budget=1024
+) -> tuple[bytes, dict]:
     from ..engine import generate as engine_generate
 
     with tempfile.TemporaryDirectory() as tmp:
@@ -53,31 +81,49 @@ def _fill_template(tpl, *, sponsor_text, notes, language, icf_type, progress) ->
                     language=language,
                     icf_type=icf_type,
                     progress=progress,
+                    thinking_budget=thinking_budget,
                 )
             return out.read_bytes(), report
         except FileNotFoundError:
             raise RuntimeError("Template file missing from storage") from None
 
 
-def _sponsor_text(conn, version_ids: list[int]) -> str:
+_text_cache: dict[int, str] = {}  # version id -> extracted text (versions are immutable)
+
+
+def _version_text(v) -> str:
     from ..engine import text as engine_text
 
-    parts = []
-    for vid in version_ids:
-        v = conn.execute("SELECT * FROM versions WHERE id = ?", (vid,)).fetchone()
-        if not v or not v["filename"].lower().endswith(".docx"):
-            continue
-        try:
-            with storage.local_path(v["stored_name"]) as vpath:
-                txt = engine_text.docx_text(str(vpath))
-        except Exception:  # noqa: BLE001, S112
-            continue
-        parts.append(f"=== {v['filename']} ===\n{txt}")
-    return "\n\n".join(parts)
+    if v["id"] in _text_cache:
+        return _text_cache[v["id"]]
+    try:
+        with storage.local_path(v["stored_name"]) as vpath:
+            txt = engine_text.docx_text(str(vpath))
+    except Exception:  # noqa: BLE001
+        return ""
+    _text_cache[v["id"]] = f"=== {v['filename']} ===\n{txt}"
+    return _text_cache[v["id"]]
+
+
+def _sponsor_text(conn, version_ids: list[int]) -> str:
+    """Sponsor docs are downloaded from storage in parallel and cached per version."""
+    from concurrent.futures import ThreadPoolExecutor
+
+    rows = [
+        r
+        for vid in version_ids
+        if (r := conn.execute("SELECT * FROM versions WHERE id = ?", (vid,)).fetchone())
+        and r["filename"].lower().endswith(".docx")
+    ]
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        parts = list(pool.map(_version_text, rows))
+    return "\n\n".join(p for p in parts if p)
 
 
 @router.post("/projects/{pid}/generate", status_code=202)
 def generate(pid: int, body: GenerateIn, user: User) -> dict:
+    if body.language != "en":
+        raise HTTPException(422, "creation_english_only")
     with db.connect() as conn:
         _project_row(conn, pid)
         if body.template_id is None:
@@ -139,6 +185,8 @@ def translate(doc_id: int, body: TranslateIn, user: User) -> dict:
         raise HTTPException(422, "target_languages is empty")
     with db.connect() as conn:
         src = _doc_row(conn, doc_id)
+        if (src["language"] or "en") == "en" and not body.force and not _en_reviewed(conn, doc_id):
+            raise HTTPException(422, "translate_requires_review")
         if body.version_id is not None:
             ver = conn.execute(
                 "SELECT * FROM versions WHERE id = ? AND doc_id = ?", (body.version_id, doc_id)
@@ -166,11 +214,13 @@ def translate(doc_id: int, body: TranslateIn, user: User) -> dict:
         with db.connect() as conn:
             with storage.local_path(ver["stored_name"]) as p:
                 source_text = engine_text.docx_text(str(p))
-            for i, lang in enumerate(langs):
-                report.segment(i, len(langs), lang)
-                data, rep = _fill_template(
+            sponsor_text = f"=== {src['title']} (v{ver['number']}) ===\n{source_text}"
+            reporters = report.parallel(langs)
+
+            def fill(i: int, lang: str):
+                return _fill_template(
                     tpls[lang],
-                    sponsor_text=f"=== {src['title']} (v{ver['number']}) ===\n{source_text}",
+                    sponsor_text=sponsor_text,
                     notes=(
                         f"Fill the placeholders by translating the content of the {src_lang} "
                         "source "
@@ -179,8 +229,15 @@ def translate(doc_id: int, body: TranslateIn, user: User) -> dict:
                     ),
                     language=lang,
                     icf_type=src["icf_type"] or "adult",
-                    progress=report,
+                    progress=reporters[i],
+                    thinking_budget=0,  # mechanical translation: no reasoning needed
                 )
+
+            # target languages are independent: fill them concurrently (ai._slots caps Vertex calls)
+            with ThreadPoolExecutor(max_workers=len(langs)) as pool:
+                results = list(pool.map(lambda a: fill(*a), enumerate(langs)))
+            for i, lang in enumerate(langs):
+                data, rep = results[i]
                 title = _translated_title(src["title"], lang)
                 note = f"Translated from {src_lang} v{ver['number']}"
                 existing = conn.execute(
@@ -214,10 +271,73 @@ def translate(doc_id: int, body: TranslateIn, user: User) -> dict:
                     )
                 docs.append(doc)
                 reports.append(rep)
-                report("saving", 1, 1)
+                reporters[i]("saving", 1, 1)
         return {"docs": docs, "reports": reports}
 
     return {"task_id": tasks.start_task("translate", work, langs[0])}
+
+
+@router.post("/project-documents/{doc_id}/update-template", status_code=202)
+def update_to_latest_template(doc_id: int, body: UpdateIn, user: User) -> dict:
+    """Update mode: rebuild an uploaded ICF on the latest template of its own language."""
+    with db.connect() as conn:
+        src = _doc_row(conn, doc_id)
+        if src["role"] != "icf":
+            raise HTTPException(422, "Only ICF documents can be updated")
+        lang = src["language"]
+        if lang not in LANG_NAMES:
+            raise HTTPException(422, "Document language must be set (en/nl/fr)")
+        if body.version_id is not None:
+            ver = conn.execute(
+                "SELECT * FROM versions WHERE id = ? AND doc_id = ?", (body.version_id, doc_id)
+            ).fetchone()
+        else:
+            ver = conn.execute(
+                "SELECT * FROM versions WHERE doc_id = ? ORDER BY number DESC LIMIT 1", (doc_id,)
+            ).fetchone()
+        if not ver or not ver["filename"].lower().endswith(".docx"):
+            raise HTTPException(422, "Source version must be a .docx")
+        tpl = _latest_template(conn, lang)
+        if not tpl:
+            raise HTTPException(422, "no_template_for_language")
+    user_name = user["name"]
+
+    def work(report) -> dict:
+        from ..engine import text as engine_text
+
+        with db.connect() as conn:
+            with storage.local_path(ver["stored_name"]) as p:
+                source_text = engine_text.docx_text(str(p))
+            data, rep = _fill_template(
+                tpl,
+                sponsor_text=f"=== {src['title']} (v{ver['number']}) ===\n{source_text}",
+                notes=(
+                    f"The source is an existing {LANG_NAMES[lang]} ICF written with an older "
+                    "template. Fill the placeholders of the new template with the content of the "
+                    f"source ICF, in {LANG_NAMES[lang]}, keeping names, numbers and dates "
+                    "exactly. Flag anything the source does not cover."
+                ),
+                language=lang,
+                icf_type=src["icf_type"] or "adult",
+                progress=report,
+                thinking_budget=0,
+            )
+            vid_note = f"Updated to template v{tpl['version'] or '?'} from v{ver['number']}"
+            services.add_version(
+                conn,
+                doc_id,
+                f"{src['title']}.docx".replace("/", "-"),
+                data,
+                vid_note,
+                "generated",
+                user_name,
+            )
+            row = conn.execute("SELECT * FROM project_docs WHERE id = ?", (doc_id,)).fetchone()
+            doc = services.doc_dict(conn, row)
+        report("saving", 1, 1)
+        return {"docs": [doc], "reports": [rep]}
+
+    return {"task_id": tasks.start_task("translate", work, lang)}
 
 
 @router.get("/tasks/{task_id}")

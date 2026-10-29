@@ -54,6 +54,7 @@
     "newHere": "New here? Create an account"
   },
   "nav": {
+    "home": "Home",
     "projects": "Projects",
     "templates": "Templates",
     "language": "Your language",
@@ -87,8 +88,9 @@
     "emptyText": "Upload the sponsor documents to get started.",
     "groups": {
       "sponsor": "Sponsor documents",
-      "icf": "ICF drafts",
-      "other": "Other"
+      "icf": "All ICF documents and versions",
+      "other": "Other",
+      "participant": "Participant portal"
     },
     "confirmDeleteDoc": "Delete \"{{title}}\" and all its versions?",
     "uploadTitle": "Upload document",
@@ -106,7 +108,27 @@
     "countDeclined_one": "{{count}} declined",
     "countDeclined_other": "{{count}} declined",
     "latestSummary": "v{{n}} · {{source}}",
-    "translatedFrom": "Translated from {{title}}"
+    "translatedFrom": "Translated from {{title}}",
+    "next": {
+      "title": "Next step",
+      "intake": "Upload the sponsor documents (protocol, sponsor consent forms) for this study.",
+      "uploadSponsor": "Upload sponsor documents",
+      "drafting": "Generate the English ICF draft from the sponsor documents.",
+      "generateDraft": "Generate ICF draft",
+      "pi": "Open the drafts and send them to the PI. Upload the reviewed copy (with comments) as a new version, then decide each comment. Translate to NL/FR here too.",
+      "openDraft": "Open",
+      "ethics": "Send the ICFs to the ethics committee: download them all as one zip, then upload each reviewed document (with the committee's comments) as a new version. You then approve or decline each comment as usual.",
+      "downloadAll": "Download all for ethics committee",
+      "download": "Download",
+      "uploadReviewed": "Upload reviewed version",
+      "approved": "All stages are complete. Download the final versions of all ICFs.",
+      "downloadFinal": "Download final ICFs (zip)",
+      "latest": "latest v{{n}}",
+      "noIcfs": "No ICF documents yet."
+    },
+    "addMenu": "Add document",
+    "approvedAsIs": "Approved as is",
+    "withdrawApproval": "Withdraw approval"
   },
   "stages": {
     "ariaLabel": "Project stage",
@@ -120,11 +142,7 @@
     },
     "pi_review": {
       "label": "PI review",
-      "hint": "Send out, upload reviewed copy"
-    },
-    "translation": {
-      "label": "Translation",
-      "hint": "NL / FR versions"
+      "hint": "Review, translate, upload reviewed copy"
     },
     "ethics_review": {
       "label": "Ethics review",
@@ -341,22 +359,43 @@
     "nextOpen": "Next open",
     "noneInFilter": "No comments in this filter.",
     "noneInVersion": "No comments in this version.",
-    "approve": "Approve",
-    "decline": "Decline",
+    "approve": "Resolve",
+    "decline": "Dismiss",
     "confirmApproval": "Confirm approval",
     "confirmDecline": "Confirm decline",
     "undo": "Undo",
     "optionalNote": "Optional note",
     "decisionNote": "Note: {{note}}",
-    "statusApproved": "Approved",
-    "statusDeclined": "Declined",
+    "statusApproved": "Resolved",
+    "statusDeclined": "Dismissed",
     "decidedBy": "by {{name}}",
     "translatedFrom": "Translated from {{language}}",
     "showTranslation": "Show translation",
     "showOriginal": "Show original",
     "translationUnavailable": "Translation unavailable",
-    "showGenerated": "Show generated notes ({{count}})",
-    "fixWithAi": "Fix with AI"
+    "fillsSummary": "{{count}} passages filled from sponsor documents",
+    "showFills": "Highlight in document",
+    "addComment": "Add comment",
+    "addPlaceholder": "Your comment on this text…",
+    "addSave": "Post comment",
+    "fixWithAi": "Fix with AI",
+    "provideText": "Provide the text",
+    "stage": "Stage",
+    "leave": "Leave as placeholder",
+    "leftAsPlaceholder": "Left as placeholder",
+    "unstage": "Remove",
+    "stagedText": "Staged text: {{text}}",
+    "stagedReopen": "Staged: reopen",
+    "stagedLeave": "Staged: leave as placeholder",
+    "stagedResolve": "Staged: resolve",
+    "stagedDismiss": "Staged: dismiss",
+    "stagedCount_one": "{{count}} staged change",
+    "stagedCount_other": "{{count}} staged changes",
+    "reviewApply": "Review & apply",
+    "applyAll": "Apply all",
+    "discard": "Discard",
+    "resolveAll": "Resolve all remaining ({{count}})",
+    "leaveAll": "Leave all placeholders ({{count}})"
   },
   "generate": {
     "title": "Generate ICF draft",
@@ -380,7 +419,8 @@
     "templateLine": "Template: Belgian model ICF - adult patients, {{lang}} v{{version}}",
     "latest": "(latest)",
     "otherVersion": "Use another version",
-    "noTemplateForLang": "No template available for {{lang}}. Upload one under Templates first."
+    "noTemplateForLang": "No template available for {{lang}}. Upload one under Templates first.",
+    "englishOnly": "Initial ICFs are always generated in English; NL/FR follow by translation."
   },
   "admin": {
     "title": "Admin",
@@ -395,13 +435,23 @@
     "aiOff": "Disabled",
     "storage": "Storage",
     "counts": "Counts",
-    "countsLine": "{{projects}} projects, {{docs}} project documents, {{templates}} templates, {{users}} users"
+    "countsLine": "{{projects}} projects, {{docs}} project documents, {{templates}} templates, {{users}} users",
+    "resetTitle": "Reset",
+    "resetEmpty": "Reset to empty",
+    "resetSamples": "Reset + import samples",
+    "resetting": "Resetting...",
+    "resetConfirm": "This permanently deletes ALL projects, project documents, versions, comments, tasks and the template library from this app{{local}}. The demo user and your login stay. Files in the GCS bucket are NOT deleted.{{samples}}",
+    "resetLocal": " and all locally stored files",
+    "resetSamplesNote": " Afterwards the bucket samples are imported again.",
+    "resetExplain": "Resets the app to its initial state: removes all projects, documents, versions and the template library. The demo user stays. Use 'Reset + import samples' to get the state right after the first sample import.",
+    "clearProjects": "Clear generated documents",
+    "clearConfirm": "This deletes all app-generated ICF versions (drafts, AI edits, translations) with their comments. Projects, sponsor documents, uploaded and reviewed files, and the template library stay. Projects whose drafts disappear fall back to the Drafting stage. Files in the GCS bucket are NOT deleted."
   },
   "req": {
     "has_sponsor_docs": "Upload at least one sponsor document",
     "has_en_draft": "Generate an English ICF draft",
     "draft_types_missing": "No draft yet for: {{list}}",
-    "has_reviewed_version": "Upload the reviewed copy (with comments) from the PI",
+    "has_reviewed_version": "Every English ICF is reviewed (reviewed copy uploaded) or approved as is",
     "comments_decided_one": "Decide all open comments ({{count}} open)",
     "comments_decided_other": "Decide all open comments ({{count}} open)",
     "translations_complete": "Create NL and FR versions (missing: {{list}})",
@@ -422,7 +472,7 @@
     "notMet": "Requirements are not met yet."
   },
   "matrix": {
-    "title": "Languages",
+    "title": "ICF overview",
     "type": "ICF type",
     "generate": "Generate",
     "translateFromEn": "Translate from EN",
@@ -436,7 +486,15 @@
       "parent": "Parents",
       "adolescent": "Adolescent 12–17",
       "child": "Child 8–11"
-    }
+    },
+    "draftsTitle": "Draft ICFs",
+    "needReview": "Available after PI review",
+    "translateAnyway": "translate anyway",
+    "updateTemplate": "Update to latest template",
+    "translateAll": "Translate all",
+    "translateAllTitle": "Translate all missing NL/FR versions",
+    "generateAll": "Generate all ICFs",
+    "generateAllTitle": "Generate all missing English ICF types (adult, parent, adolescent, child)"
   },
   "task": {
     "titleGenerate": "Generating {{lang}} ICF ({{icf}})",
@@ -455,7 +513,9 @@
       "comments": "Adding review comments",
       "saving": "Saving the document",
       "done": "Done"
-    }
+    },
+    "runningMany": "Working on {{total}} documents · {{done}} of {{total}} done",
+    "details": "Details"
   },
   "edit": {
     "title": "Edit with AI",
@@ -479,7 +539,16 @@
     "editText": "Edit text",
     "showChanges": "Show changes",
     "paragraph": "Paragraph",
-    "mandatory": "Changes mandatory template wording ({{score}}% match with the national template). Justify this deviation for the Ethics Committee."
+    "mandatory": "Changes mandatory template wording ({{score}}% match with the national template). Justify this deviation for the Ethics Committee.",
+    "pendingTitle_one": "{{count}} applied edit not yet carried over to the other forms",
+    "pendingTitle_other": "{{count}} applied edits not yet carried over to the other forms",
+    "selectAll": "Select all",
+    "noInstruction": "(edit)",
+    "editCount_one": "{{count}} change",
+    "editCount_other": "{{count}} changes",
+    "propagateSel_one": "Propagate {{count}} edit",
+    "propagateSel_other": "Propagate {{count}} edits together",
+    "skipPropagation": "Skip"
   },
   "propagate": {
     "title": "Apply this change to the other forms",
@@ -493,5 +562,96 @@
       "not_applicable": "Not applicable",
       "error": "Failed"
     }
+  },
+  "upload": {
+    "autoDetect": "Auto-detect"
+  },
+  "next": {
+    "stepLabel": "Step",
+    "checklistLabel": "Checklist",
+    "intake": {
+      "what": "Collect the sponsor documents",
+      "have_one": "{{count}} sponsor document uploaded",
+      "have_other": "{{count}} sponsor documents uploaded",
+      "none": "No sponsor documents yet. Upload the protocol and the sponsor consent forms."
+    },
+    "drafting": {
+      "what": "Generate the ICF draft",
+      "have_one": "{{count}} English ICF draft exists",
+      "have_other": "{{count}} English ICF drafts exist",
+      "none": "No English ICF draft yet."
+    },
+    "pi_review": {
+      "what": "PI review",
+      "status": "{{done}} of {{total}} English ICFs reviewed or approved"
+    },
+    "translation": {
+      "what": "NL and FR versions",
+      "status_one": "{{count}} translated version so far",
+      "status_other": "{{count}} translated versions so far"
+    },
+    "ethics_review": {
+      "what": "Ethics committee",
+      "status": "{{done}} of {{total}} translated ICFs reviewed or approved"
+    },
+    "approved": {
+      "what": "Final version",
+      "status": "All done. The ICF package is approved."
+    },
+    "act": {
+      "upload": "Upload sponsor documents",
+      "addMore": "Add more documents",
+      "generate": "Generate ICF draft",
+      "generateAnother": "Generate another draft",
+      "uploadReviewed": "Upload reviewed copy",
+      "approveAsIs": "Approve as is",
+      "reviewComments": "Decide comments",
+      "translate": "Translate missing versions",
+      "openDownload": "Download all (zip)",
+      "openForReview": "Open for review",
+      "more": "More actions",
+      "download": "Download"
+    }
+  },
+  "docStatus": {
+    "draft": "Draft",
+    "awaitingReview": "Awaiting PI review",
+    "reviewed": "PI reviewed",
+    "approvedAsIs": "Approved as is",
+    "translated": "Translated",
+    "inEthics": "Sent to ethics",
+    "ethicsFeedback": "Ethics feedback in",
+    "final": "Final",
+    "uploaded": "Uploaded"
+  },
+  "review": {
+    "backToProject": "Back to project",
+    "noStaged": "No staged changes",
+    "finish": "Finish review",
+    "finishTitle": "Finish your review",
+    "nothingStaged": "No staged changes. You can still approve the document as it is or request changes.",
+    "sumTexts_one": "{{count}} text replacement (creates a new version)",
+    "sumTexts_other": "{{count}} text replacements (creates a new version)",
+    "sumResolved": "{{count}} resolved",
+    "sumDismissed": "{{count}} dismissed",
+    "sumLeft": "{{count}} left as placeholder",
+    "sumReopened": "{{count}} reopened",
+    "notePlaceholder": "Leave a summary note (optional)",
+    "optSave": "Save changes",
+    "optSaveHint": "Apply the staged changes and keep reviewing.",
+    "optSaveNone": "Nothing staged to save.",
+    "optApprove": "Approve document",
+    "optApproveHint": "Apply the staged changes, then mark the document as approved.",
+    "optRequest": "Request changes",
+    "optRequestHint": "Apply the staged changes, keep the document unapproved and go back to the project for another round.",
+    "openWarn_one": "{{count}} comment is still open - approve anyway",
+    "openWarn_other": "{{count}} comments are still open - approve anyway",
+    "submitSave": "Save changes",
+    "submitApprove": "Approve document",
+    "submitRequest": "Request changes",
+    "savedVersion": "Version v{{number}} created.",
+    "savedDecisions": "Review decisions saved.",
+    "nextStep": "Next: go back to the project, compare, or keep reviewing.",
+    "continue": "Continue reviewing"
   }
 }

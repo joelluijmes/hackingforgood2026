@@ -24,7 +24,7 @@ export function UploadDocDialog({
   const [file, setFile] = useState<File | null>(null);
   const [title, setTitle] = useState('');
   const [role, setRole] = useState<Role>('sponsor');
-  const [icf, setIcf] = useState<IcfType | ''>('');
+  const [icf, setIcf] = useState<IcfType | ''>('adult');
   const [language, setLanguage] = useState<Language | ''>('');
   const [note, setNote] = useState('');
   const [busy, setBusy] = useState(false);
@@ -39,7 +39,7 @@ export function UploadDocDialog({
       await api.createProjectDoc(projectId, file, {
         title,
         role,
-        icf_type: icf,
+        icf_type: role === 'icf' ? icf || 'adult' : icf,
         language,
         note,
       });
@@ -95,7 +95,7 @@ export function UploadDocDialog({
             value={language}
             onChange={(e) => setLanguage(e.target.value as Language | '')}
           >
-            <LangOptions empty={t('common.unknown')} />
+            <LangOptions empty={t('upload.autoDetect')} />
           </select>
         </label>
       </div>

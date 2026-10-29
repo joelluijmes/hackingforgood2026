@@ -13,12 +13,12 @@ from docx.text.run import Run
 
 from . import ai
 from ._xml import q
-from .render import COLOR_CLASSES, _rgb, _style_color
+from .render import COLOR_CLASSES, _rgb, _style_color, is_toc_paragraph
 
 log = logging.getLogger("icf.generate")
 
-AI_BUDGET_S = 90
-BATCH_SIZE = 12
+AI_BUDGET_S = 150
+BATCH_SIZE = 6
 SPONSOR_CHARS = 40_000
 AUTHOR = "ICF Studio"
 LANG_NAMES = {"en": "English", "nl": "Dutch", "fr": "French"}
@@ -104,6 +104,8 @@ def _collect_placeholders(doc) -> tuple[list[dict], int]:
     placeholders: list[dict] = []
     section = ""
     for p_el in list(doc.element.body.iter(q("p"))):
+        if is_toc_paragraph(p_el):  # never fill, strip or flag the table of contents
+            continue
         p = Paragraph(p_el, doc._body)
         style_name = p.style.name if p.style is not None else ""
         para_color = _style_color(p.style) if p.style is not None else None
@@ -168,7 +170,9 @@ def _context(ph: dict) -> str:
     return "".join(parts)[:600]
 
 
-def _fill_batch(batch: list[dict], sponsor: str, notes: str, language: str, icf_type: str):
+def _fill_batch(
+    batch: list[dict], sponsor: str, notes: str, language: str, icf_type: str, thinking: int
+):
     items = [
         {
             "id": ph["id"],
@@ -189,7 +193,7 @@ def _fill_batch(batch: list[dict], sponsor: str, notes: str, language: str, icf_
         'Return a JSON object mapping each placeholder id to its replacement text, or to "MISSING" '
         "when the sponsor documents and notes do not contain that information."
     )
-    data = ai.generate_json(prompt, SYSTEM)
+    data = ai.generate_json(prompt, SYSTEM, thinking_budget=thinking)
     return data if isinstance(data, dict) else None
 
 
@@ -202,6 +206,42 @@ def _valid(ans) -> str | None:
     return ans
 
 
+def _mark_fill(r_el, n: int) -> None:
+    """Wrap a filled run in a bookmark `icf_fill_N` so the viewer can highlight it (no comment)."""
+    from docx.oxml import OxmlElement
+
+    start, end = OxmlElement("w:bookmarkStart"), OxmlElement("w:bookmarkEnd")
+    bid = str(900000 + n)
+    start.set(q("id"), bid)
+    start.set(q("name"), f"icf_fill_{n}")
+    end.set(q("id"), bid)
+    r_el.addprevious(start)
+    r_el.addnext(end)
+
+
+def _refresh_toc_on_open(doc) -> None:
+    """Ask Word to refresh fields (TOC page numbers / removed guidance entries) when opening."""
+    from docx.oxml import OxmlElement
+
+    settings = doc.settings.element
+    if settings.find(q("updateFields")) is not None:
+        return
+    el = OxmlElement("w:updateFields")
+    el.set(q("val"), "true")
+    later = {  # schema order: updateFields precedes these
+        "hdrShapeDefaults", "footnotePr", "endnotePr", "compat", "docVars", "rsids", "mathPr",
+        "attachedSchema", "themeFontLang", "clrSchemeMapping", "doNotIncludeSubdocsInStats",
+        "doNotAutoCompressPictures", "forceUpgrade", "captions", "readModeInkLockDown",
+        "smartTagType", "schemaLibrary", "shapeDefaults", "doNotEmbedSmartTags", "decimalSymbol",
+        "listSeparator",
+    }  # fmt: skip
+    nxt = next((c for c in settings if c.tag.rsplit("}", 1)[-1] in later), None)
+    if nxt is not None:
+        nxt.addprevious(el)
+    else:
+        settings.append(el)
+
+
 def generate_icf(
     template_path: str,
     out_path: str,
@@ -211,6 +251,7 @@ def generate_icf(
     language: str,
     icf_type: str,
     progress: Callable[[str, int, int], None] | None = None,
+    thinking_budget: int = 1024,
 ) -> dict:
     def report(step: str, done: int, total: int) -> None:
         if progress:
@@ -233,8 +274,13 @@ def generate_icf(
         n = BATCH_SIZE
         batches = [placeholders[i : i + n] for i in range(0, len(placeholders), n)]
         start = time.time()
-        pool = ThreadPoolExecutor(max_workers=6)
-        futs = {pool.submit(_fill_batch, b, sponsor, notes, language, icf_type): b for b in batches}
+        pool = ThreadPoolExecutor(
+            max_workers=max(1, len(batches))
+        )  # ai._slots caps in-flight calls
+        futs = {
+            pool.submit(_fill_batch, b, sponsor, notes, language, icf_type, thinking_budget): b
+            for b in batches
+        }
         report("filling", 0, len(batches))
         done: set = set()
         pending = set(futs)
@@ -276,12 +322,7 @@ def generate_icf(
                 from docx.shared import RGBColor
 
                 first.font.color.rgb = RGBColor(0, 0, 0)
-            doc.add_comment(
-                first,
-                text="Filled from sponsor documents - please verify",
-                author=AUTHOR,
-                initials="ICF",
-            )
+            _mark_fill(first._r, filled)  # quiet marker, no Word comment
             filled += 1
         else:
             for r in runs:
@@ -289,13 +330,14 @@ def generate_icf(
             shown = ph["text"] if len(ph["text"]) <= 200 else ph["text"][:200] + "..."
             doc.add_comment(
                 runs,
-                text=f"Information missing: {shown}",
+                text=f"Missing: {shown} - please add this information",
                 author=AUTHOR,
                 initials="ICF",
             )
             flagged += 1
         report("comments", n, len(placeholders))
     report("saving", 0, 1)
+    _refresh_toc_on_open(doc)
     doc.save(out_path)
     return {
         "placeholders_total": len(placeholders),

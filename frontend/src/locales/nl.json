@@ -54,6 +54,7 @@
     "newHere": "Nieuw hier? Maak een account aan"
   },
   "nav": {
+    "home": "Start",
     "projects": "Projecten",
     "templates": "Sjablonen",
     "language": "Uw taal",
@@ -87,8 +88,9 @@
     "emptyText": "Upload de documenten van de opdrachtgever om te starten.",
     "groups": {
       "sponsor": "Documenten van de opdrachtgever",
-      "icf": "ICF-ontwerpen",
-      "other": "Overige"
+      "icf": "Alle ICF-documenten en versies",
+      "other": "Overige",
+      "participant": "Deelnemersportaal"
     },
     "confirmDeleteDoc": "\"{{title}}\" en alle versies verwijderen?",
     "uploadTitle": "Document uploaden",
@@ -106,7 +108,27 @@
     "countDeclined_one": "{{count}} afgewezen",
     "countDeclined_other": "{{count}} afgewezen",
     "latestSummary": "v{{n}} · {{source}}",
-    "translatedFrom": "Vertaald van {{title}}"
+    "translatedFrom": "Vertaald van {{title}}",
+    "next": {
+      "title": "Volgende stap",
+      "intake": "Upload de documenten van de opdrachtgever (protocol, toestemmingsformulieren) voor deze studie.",
+      "uploadSponsor": "Sponsordocumenten uploaden",
+      "drafting": "Genereer het Engelse ICF-ontwerp uit de sponsordocumenten.",
+      "generateDraft": "ICF-ontwerp genereren",
+      "pi": "Open de ontwerpen en stuur ze naar de PI. Upload de nagekeken kopie (met opmerkingen) als nieuwe versie en beslis over elke opmerking. Vertalen naar NL/FR kan hier ook.",
+      "openDraft": "Openen",
+      "ethics": "Stuur de ICF's naar het ethisch comité: download ze allemaal als één zip en upload daarna elk nagekeken document (met de opmerkingen van het comité) als nieuwe versie. Daarna keur je elke opmerking goed of af zoals gewoonlijk.",
+      "downloadAll": "Alles downloaden voor het ethisch comité",
+      "download": "Downloaden",
+      "uploadReviewed": "Nagekeken versie uploaden",
+      "approved": "Alle fasen zijn afgerond. Download de definitieve versies van alle ICF's.",
+      "downloadFinal": "Definitieve ICF's downloaden (zip)",
+      "latest": "laatste v{{n}}",
+      "noIcfs": "Nog geen ICF-documenten."
+    },
+    "addMenu": "Document toevoegen",
+    "approvedAsIs": "Ongewijzigd goedgekeurd",
+    "withdrawApproval": "Goedkeuring intrekken"
   },
   "stages": {
     "ariaLabel": "Fase van het project",
@@ -120,11 +142,7 @@
     },
     "pi_review": {
       "label": "Nazicht onderzoeker",
-      "hint": "Versturen, nagekeken kopie uploaden"
-    },
-    "translation": {
-      "label": "Vertaling",
-      "hint": "NL- en FR-versies"
+      "hint": "Nakijken, vertalen, nagekeken kopie uploaden"
     },
     "ethics_review": {
       "label": "Ethisch comité",
@@ -341,22 +359,43 @@
     "nextOpen": "Volgende open",
     "noneInFilter": "Geen opmerkingen in deze filter.",
     "noneInVersion": "Geen opmerkingen in deze versie.",
-    "approve": "Goedkeuren",
-    "decline": "Afwijzen",
+    "approve": "Oplossen",
+    "decline": "Negeren",
     "confirmApproval": "Goedkeuring bevestigen",
     "confirmDecline": "Afwijzing bevestigen",
     "undo": "Ongedaan maken",
     "optionalNote": "Optionele opmerking",
     "decisionNote": "Opmerking: {{note}}",
-    "statusApproved": "Goedgekeurd",
-    "statusDeclined": "Afgewezen",
+    "statusApproved": "Opgelost",
+    "statusDeclined": "Genegeerd",
     "decidedBy": "door {{name}}",
     "translatedFrom": "Vertaald uit het {{language}}",
     "showTranslation": "Vertaling tonen",
     "showOriginal": "Origineel tonen",
     "translationUnavailable": "Vertaling niet beschikbaar",
-    "showGenerated": "Toon gegenereerde opmerkingen ({{count}})",
-    "fixWithAi": "Oplossen met AI"
+    "fillsSummary": "{{count}} passages ingevuld uit sponsordocumenten",
+    "showFills": "Markeer in document",
+    "addComment": "Opmerking toevoegen",
+    "addPlaceholder": "Je opmerking bij deze tekst…",
+    "addSave": "Opmerking plaatsen",
+    "fixWithAi": "Oplossen met AI",
+    "provideText": "Tekst invullen",
+    "stage": "Klaarzetten",
+    "leave": "Placeholder laten staan",
+    "leftAsPlaceholder": "Placeholder laten staan",
+    "unstage": "Verwijderen",
+    "stagedText": "Klaargezette tekst: {{text}}",
+    "stagedReopen": "Klaargezet: heropenen",
+    "stagedLeave": "Klaargezet: placeholder laten staan",
+    "stagedResolve": "Klaargezet: oplossen",
+    "stagedDismiss": "Klaargezet: negeren",
+    "stagedCount_one": "{{count}} klaargezette wijziging",
+    "stagedCount_other": "{{count}} klaargezette wijzigingen",
+    "reviewApply": "Bekijken en toepassen",
+    "applyAll": "Alles toepassen",
+    "discard": "Verwerpen",
+    "resolveAll": "Alle resterende oplossen ({{count}})",
+    "leaveAll": "Alle placeholders laten staan ({{count}})"
   },
   "generate": {
     "title": "ICF-ontwerp genereren",
@@ -380,7 +419,8 @@
     "templateLine": "Sjabloon: Belgisch model-ICF - volwassen patiënten, {{lang}} v{{version}}",
     "latest": "(laatste)",
     "otherVersion": "Andere versie gebruiken",
-    "noTemplateForLang": "Geen sjabloon beschikbaar voor {{lang}}. Upload er eerst een onder Sjablonen."
+    "noTemplateForLang": "Geen sjabloon beschikbaar voor {{lang}}. Upload er eerst een onder Sjablonen.",
+    "englishOnly": "Eerste ICF’s worden altijd in het Engels gegenereerd; NL/FR volgen via vertaling."
   },
   "admin": {
     "title": "Beheer",
@@ -395,13 +435,23 @@
     "aiOff": "Uitgeschakeld",
     "storage": "Opslag",
     "counts": "Aantallen",
-    "countsLine": "{{projects}} projecten, {{docs}} projectdocumenten, {{templates}} sjablonen, {{users}} gebruikers"
+    "countsLine": "{{projects}} projecten, {{docs}} projectdocumenten, {{templates}} sjablonen, {{users}} gebruikers",
+    "resetTitle": "Resetten",
+    "resetEmpty": "Resetten naar leeg",
+    "resetSamples": "Resetten + voorbeelden importeren",
+    "resetting": "Bezig met resetten...",
+    "resetConfirm": "Dit verwijdert PERMANENT ALLE projecten, projectdocumenten, versies, opmerkingen, taken en de sjabloonbibliotheek uit deze app{{local}}. De demogebruiker en je login blijven bestaan. Bestanden in de GCS-bucket worden NIET verwijderd.{{samples}}",
+    "resetLocal": " en alle lokaal opgeslagen bestanden",
+    "resetSamplesNote": " Daarna worden de voorbeelden uit de bucket opnieuw geïmporteerd.",
+    "resetExplain": "Zet de app terug naar de beginstatus: verwijdert alle projecten, documenten, versies en de sjabloonbibliotheek. De demogebruiker blijft. Gebruik 'Resetten + voorbeelden importeren' voor de status direct na de eerste import.",
+    "clearProjects": "Gegenereerde documenten wissen",
+    "clearConfirm": "Dit verwijdert alle door de app gegenereerde ICF-versies (concepten, AI-bewerkingen, vertalingen) met hun opmerkingen. Projecten, sponsordocumenten, geüploade en gereviewde bestanden en de sjabloonbibliotheek blijven. Projecten zonder concepten gaan terug naar de fase Opstellen. Bestanden in de GCS-bucket worden NIET verwijderd."
   },
   "req": {
     "has_sponsor_docs": "Upload minstens één sponsordocument",
     "has_en_draft": "Genereer een Engelse ICF-versie",
     "draft_types_missing": "Nog geen versie voor: {{list}}",
-    "has_reviewed_version": "Upload de nagekeken kopie (met opmerkingen) van de PI",
+    "has_reviewed_version": "Elke Engelse ICF is nagekeken (gecommentarieerde versie geüpload) of ongewijzigd goedgekeurd",
     "comments_decided_one": "Beslis over alle openstaande opmerkingen ({{count}} open)",
     "comments_decided_other": "Beslis over alle openstaande opmerkingen ({{count}} open)",
     "translations_complete": "Maak NL- en FR-versies (ontbreekt: {{list}})",
@@ -422,7 +472,7 @@
     "notMet": "De vereisten zijn nog niet vervuld."
   },
   "matrix": {
-    "title": "Talen",
+    "title": "ICF-overzicht",
     "type": "ICF-type",
     "generate": "Genereren",
     "translateFromEn": "Vertalen vanuit EN",
@@ -436,7 +486,15 @@
       "parent": "Ouders",
       "adolescent": "Adolescent 12–17",
       "child": "Kind 8–11"
-    }
+    },
+    "draftsTitle": "Concept-ICF's",
+    "needReview": "Beschikbaar na PI-review",
+    "translateAnyway": "toch vertalen",
+    "updateTemplate": "Updaten naar nieuwste template",
+    "translateAll": "Alles vertalen",
+    "translateAllTitle": "Alle ontbrekende NL/FR-versies vertalen",
+    "generateAll": "Alle ICF's genereren",
+    "generateAllTitle": "Alle ontbrekende Engelse ICF-types genereren (volwassene, ouders, adolescent, kind)"
   },
   "task": {
     "titleGenerate": "{{lang}} ICF genereren ({{icf}})",
@@ -455,7 +513,9 @@
       "comments": "Opmerkingen toevoegen",
       "saving": "Document opslaan",
       "done": "Klaar"
-    }
+    },
+    "runningMany": "Bezig met {{total}} documenten · {{done}} van {{total}} klaar",
+    "details": "Details"
   },
   "edit": {
     "title": "Bewerken met AI",
@@ -479,7 +539,16 @@
     "editText": "Tekst bewerken",
     "showChanges": "Wijzigingen tonen",
     "paragraph": "Alinea",
-    "mandatory": "Wijzigt verplichte sjabloontekst ({{score}}% overeenkomst met het nationale sjabloon). Motiveer deze afwijking voor het Ethisch Comité."
+    "mandatory": "Wijzigt verplichte sjabloontekst ({{score}}% overeenkomst met het nationale sjabloon). Motiveer deze afwijking voor het Ethisch Comité.",
+    "pendingTitle_one": "{{count}} toegepaste wijziging nog niet overgenomen in de andere formulieren",
+    "pendingTitle_other": "{{count}} toegepaste wijzigingen nog niet overgenomen in de andere formulieren",
+    "selectAll": "Alles selecteren",
+    "noInstruction": "(wijziging)",
+    "editCount_one": "{{count}} aanpassing",
+    "editCount_other": "{{count}} aanpassingen",
+    "propagateSel_one": "{{count}} wijziging doorvoeren",
+    "propagateSel_other": "{{count}} wijzigingen samen doorvoeren",
+    "skipPropagation": "Overslaan"
   },
   "propagate": {
     "title": "Deze wijziging toepassen op de andere formulieren",
@@ -493,5 +562,96 @@
       "not_applicable": "Niet van toepassing",
       "error": "Mislukt"
     }
+  },
+  "upload": {
+    "autoDetect": "Automatisch detecteren"
+  },
+  "next": {
+    "stepLabel": "Stap",
+    "checklistLabel": "Checklist",
+    "intake": {
+      "what": "Sponsordocumenten verzamelen",
+      "have_one": "{{count}} sponsordocument geüpload",
+      "have_other": "{{count}} sponsordocumenten geüpload",
+      "none": "Nog geen sponsordocumenten. Upload het protocol en de toestemmingsformulieren van de sponsor."
+    },
+    "drafting": {
+      "what": "ICF-ontwerp genereren",
+      "have_one": "{{count}} Engels ICF-ontwerp aanwezig",
+      "have_other": "{{count}} Engelse ICF-ontwerpen aanwezig",
+      "none": "Nog geen Engels ICF-ontwerp."
+    },
+    "pi_review": {
+      "what": "Nazicht door PI",
+      "status": "{{done}} van {{total}} Engelse ICF's nagekeken of goedgekeurd"
+    },
+    "translation": {
+      "what": "NL- en FR-versies",
+      "status_one": "{{count}} vertaalde versie tot nu toe",
+      "status_other": "{{count}} vertaalde versies tot nu toe"
+    },
+    "ethics_review": {
+      "what": "Ethisch comité",
+      "status": "{{done}} van {{total}} vertaalde ICF's nagekeken of goedgekeurd"
+    },
+    "approved": {
+      "what": "Eindversie",
+      "status": "Klaar. Het ICF-pakket is goedgekeurd."
+    },
+    "act": {
+      "upload": "Sponsordocumenten uploaden",
+      "addMore": "Meer documenten toevoegen",
+      "generate": "ICF-ontwerp genereren",
+      "generateAnother": "Nog een ontwerp genereren",
+      "uploadReviewed": "Nagekeken versie uploaden",
+      "approveAsIs": "Ongewijzigd goedkeuren",
+      "reviewComments": "Opmerkingen beslissen",
+      "translate": "Ontbrekende versies vertalen",
+      "openDownload": "Alles downloaden (zip)",
+      "openForReview": "Openen voor review",
+      "more": "Meer acties",
+      "download": "Downloaden"
+    }
+  },
+  "docStatus": {
+    "draft": "Concept",
+    "awaitingReview": "Wacht op PI-review",
+    "reviewed": "PI-gereviewd",
+    "approvedAsIs": "Goedgekeurd zoals is",
+    "translated": "Vertaald",
+    "inEthics": "Naar ethisch comité",
+    "ethicsFeedback": "Feedback ethisch comité binnen",
+    "final": "Definitief",
+    "uploaded": "Geüpload"
+  },
+  "review": {
+    "backToProject": "Terug naar project",
+    "noStaged": "Geen klaargezette wijzigingen",
+    "finish": "Review afronden",
+    "finishTitle": "Rond je review af",
+    "nothingStaged": "Geen klaargezette wijzigingen. Je kunt het document nog steeds goedkeuren zoals het is of wijzigingen aanvragen.",
+    "sumTexts_one": "{{count}} tekstvervanging (maakt een nieuwe versie)",
+    "sumTexts_other": "{{count}} tekstvervangingen (maakt een nieuwe versie)",
+    "sumResolved": "{{count}} opgelost",
+    "sumDismissed": "{{count}} afgewezen",
+    "sumLeft": "{{count}} als plaatshouder gelaten",
+    "sumReopened": "{{count}} heropend",
+    "notePlaceholder": "Laat een samenvattende notitie achter (optioneel)",
+    "optSave": "Wijzigingen opslaan",
+    "optSaveHint": "Pas de klaargezette wijzigingen toe en blijf reviewen.",
+    "optSaveNone": "Niets om op te slaan.",
+    "optApprove": "Document goedkeuren",
+    "optApproveHint": "Pas de klaargezette wijzigingen toe en keur het document daarna goed.",
+    "optRequest": "Wijzigingen aanvragen",
+    "optRequestHint": "Pas de klaargezette wijzigingen toe, laat het document ongekeurd en ga terug naar het project voor een nieuwe ronde.",
+    "openWarn_one": "{{count}} opmerking staat nog open - toch goedkeuren",
+    "openWarn_other": "{{count}} opmerkingen staan nog open - toch goedkeuren",
+    "submitSave": "Wijzigingen opslaan",
+    "submitApprove": "Document goedkeuren",
+    "submitRequest": "Wijzigingen aanvragen",
+    "savedVersion": "Versie v{{number}} aangemaakt.",
+    "savedDecisions": "Reviewbeslissingen opgeslagen.",
+    "nextStep": "Volgende stap: terug naar het project, vergelijken of verder reviewen.",
+    "continue": "Verder reviewen"
   }
 }

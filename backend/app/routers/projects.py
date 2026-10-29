@@ -1,3 +1,6 @@
+import io
+import re
+import zipfile
 from typing import Annotated, Literal
 
 from fastapi import APIRouter, Depends, File, Form, HTTPException, Response, UploadFile
@@ -9,7 +12,7 @@ from ..auth import User, current_staff
 
 router = APIRouter(prefix="/api", dependencies=[Depends(current_staff)], tags=["projects"])
 
-Stage = Literal["intake", "drafting", "pi_review", "translation", "ethics_review", "approved"]
+Stage = Literal["intake", "drafting", "pi_review", "ethics_review", "approved"]
 
 
 class ProjectIn(BaseModel):
@@ -92,6 +95,43 @@ def project_progress(pid: int) -> dict:
         return progress.compute(row["stage"], _progress_docs(conn, pid))
 
 
+@router.get("/projects/{pid}/export")
+def export_project(pid: int) -> Response:
+    """Zip with the latest version of every ICF, named <icf>_<lang>_v<n>.docx."""
+    with db.connect() as conn:
+        row = _project_row(conn, pid)
+        buf = io.BytesIO()
+        used: set[str] = set()
+        with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as zf:
+            for d in conn.execute(
+                "SELECT * FROM project_docs WHERE project_id = ? AND role = 'icf' ORDER BY id",
+                (pid,),
+            ):
+                v = conn.execute(
+                    "SELECT * FROM versions WHERE doc_id = ? ORDER BY number DESC LIMIT 1",
+                    (d["id"],),
+                ).fetchone()
+                if not v:
+                    continue
+                try:
+                    data = storage.get(v["stored_name"])
+                except FileNotFoundError:
+                    continue
+                ext = "." + v["filename"].rsplit(".", 1)[-1] if "." in v["filename"] else ".docx"
+                base = f"{d['icf_type'] or 'adult'}_{d['language'] or 'en'}"
+                name = f"{base}_v{v['number']}{ext}"
+                if name in used:
+                    name = f"{base}_d{d['id']}_v{v['number']}{ext}"
+                used.add(name)
+                zf.writestr(name, data)
+    slug = re.sub(r"[^A-Za-z0-9]+", "_", row["name"]).strip("_") or "project"
+    return Response(
+        buf.getvalue(),
+        media_type="application/zip",
+        headers={"Content-Disposition": f'attachment; filename="{slug}_ICFs.zip"'},
+    )
+
+
 @router.patch("/projects/{pid}")
 def patch_project(pid: int, body: ProjectPatch):
     with db.connect() as conn:
@@ -136,6 +176,21 @@ def list_project_docs(pid: int) -> list[dict]:
         return [services.doc_dict(conn, r) for r in rows]
 
 
+def _detect_lang(data: bytes) -> str | None:
+    import tempfile
+
+    from ..engine import ai
+    from ..engine import text as engine_text
+
+    try:
+        with tempfile.NamedTemporaryFile(suffix=".docx") as f:
+            f.write(data)
+            f.flush()
+            return ai.detect_language(engine_text.docx_text(f.name)[:3000])
+    except Exception:  # noqa: BLE001
+        return None
+
+
 @router.post("/projects/{pid}/documents")
 def upload_project_doc(
     pid: int,
@@ -154,6 +209,10 @@ def upload_project_doc(
         raise HTTPException(422, "invalid icf_type")
     language = services.check_lang(language)
     filename, _, data, auto_note = services.read_upload(file)
+    if role == "icf":
+        icf_type = icf_type or "adult"
+        if not language and filename.lower().endswith(".docx"):
+            language = _detect_lang(data)
     with db.connect() as conn:
         _project_row(conn, pid)
         return services.create_doc_with_version(
@@ -178,6 +237,34 @@ def delete_project_doc(did: int) -> Response:
         services.delete_version_files(conn, "doc_id = ?", (did,))
         conn.execute("DELETE FROM project_docs WHERE id = ?", (did,))
     return Response(status_code=204)
+
+
+@router.post("/project-documents/{did}/approve")
+def approve_doc(did: int, user: User) -> dict:
+    """Approve the latest version as is (no changes needed)."""
+    with db.connect() as conn:
+        _doc_row(conn, did)
+        latest = conn.execute("SELECT MAX(id) FROM versions WHERE doc_id = ?", (did,)).fetchone()[0]
+        if not latest:
+            raise HTTPException(422, "Document has no version")
+        conn.execute(
+            "UPDATE project_docs SET approved_version_id = ?, approved_by = ?, approved_at = ?"
+            " WHERE id = ?",
+            (latest, user["name"], db.now_iso(), did),
+        )
+        return services.doc_dict(conn, _doc_row(conn, did))
+
+
+@router.delete("/project-documents/{did}/approve")
+def unapprove_doc(did: int) -> dict:
+    with db.connect() as conn:
+        _doc_row(conn, did)
+        conn.execute(
+            "UPDATE project_docs SET approved_version_id = NULL, approved_by = NULL,"
+            " approved_at = NULL WHERE id = ?",
+            (did,),
+        )
+        return services.doc_dict(conn, _doc_row(conn, did))
 
 
 @router.post("/project-documents/{did}/versions")

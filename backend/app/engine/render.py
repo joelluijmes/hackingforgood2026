@@ -42,6 +42,28 @@ def _heading_level(style_name: str) -> int | None:
     return min(max(int(m.group(1)), 1), 4) if m else 1
 
 
+_TOC_STYLE = re.compile(r"^(toc\s*\d*|tocheading|toc\s*heading|tableofcontents.*|tabledesmati.*)$")
+
+
+def _norm(text: str) -> str:
+    return re.sub(r"[^\w]+", " ", text.lower()).strip()
+
+
+def is_toc_paragraph(p_el) -> bool:
+    """True for table-of-contents paragraphs: TOC styles, the TOC content control or _Toc links."""
+    st = p_el.find(f"{q('pPr')}/{q('pStyle')}")
+    if st is not None and _TOC_STYLE.match((st.get(q("val")) or "").lower()):
+        return True
+    for a in p_el.iterancestors(q("sdt")):
+        g = a.find(f"{q('sdtPr')}/{q('docPartObj')}/{q('docPartGallery')}")
+        if g is not None and "table of contents" in (g.get(q("val")) or "").lower():
+            return True
+    for h in p_el.iter(q("hyperlink")):
+        if (h.get(q("anchor")) or "").startswith("_Toc"):
+            return any("PAGEREF" in (t.text or "") for t in h.iter(q("instrText")))
+    return False
+
+
 class _Renderer:
     def __init__(self, doc):
         self.doc = doc
@@ -51,8 +73,13 @@ class _Renderer:
         self.colors = {"purple": 0, "red": 0, "blue": 0, "black": 0}
         self.used_anchors: set[str] = set()
         self.comment_ids: list[str] = []
+        self.fills = 0
+        self.fill_ids: set[str] = set()  # open icf_fill bookmarks
         self.active: list[str] = []  # comment ranges open at this point in the document
         self._num_cache: dict[tuple[str, str], str] = {}
+        self.bm_anchor: dict[str, str] = {}  # _Toc bookmark name -> heading id
+        self.text_anchor: dict[str, str] = {}  # normalised heading text -> heading id
+        self.toc_links: list[tuple[str, str]] = []  # (bookmark, normalised text) per TOC link
 
     # -- inline -------------------------------------------------------------
     def _run_html(self, r_el, p, para_color) -> tuple[str, str]:
@@ -107,8 +134,16 @@ class _Renderer:
                 cid = child.get(q("id"))
                 if cid in self.active:
                     self.active.remove(cid)
+            elif tag == "bookmarkStart":
+                if (child.get(q("name")) or "").startswith("icf_fill"):
+                    self.fill_ids.add(child.get(q("id")))
+                    self.fills += 1
+            elif tag == "bookmarkEnd":
+                self.fill_ids.discard(child.get(q("id")))
             elif tag == "r":
                 h, t = self._run_html(child, p, para_color)
+                if h and self.fill_ids:
+                    h = f'<mark class="fill">{h}</mark>'
                 if h:
                     pieces.append((tuple(self.active), h, self._tc(child)))
                     plain.append(t)
@@ -211,9 +246,54 @@ class _Renderer:
         return kind
 
     # -- blocks -------------------------------------------------------------
+    def toc_paragraph(self, p_el) -> tuple[str, str | None]:
+        """TOC entry as an internal link (resolved to a heading id once all headings are known)."""
+        parts: list[str] = [""]
+        for el in p_el.iter(q("t"), q("tab")):
+            if any(True for _ in el.iterancestors(q("del"))):
+                continue
+            if el.tag == q("tab"):
+                parts.append("")
+            else:
+                parts[-1] += el.text or ""
+        if len(parts) > 1 and (not parts[-1].strip() or parts[-1].strip().isdigit()):
+            parts.pop()  # page number
+        title = " ".join(x.strip() for x in parts if x.strip())
+        if not title:
+            return "", None
+        st = p_el.find(f"{q('pPr')}/{q('pStyle')}")
+        sty = (st.get(q("val")) if st is not None else "") or ""
+        m = re.search(r"(\d+)$", sty)
+        lvl = m.group(1) if m else "1"
+        if "heading" in sty.lower():
+            return f'<p class="toc-title">{escape(title)}</p>', None
+        h = p_el.find(f".//{q('hyperlink')}")
+        bm = (h.get(q("anchor")) if h is not None else "") or ""
+        self.toc_links.append((bm, _norm(title)))
+        tok = f"#toc-link-{len(self.toc_links) - 1}"
+        return (
+            f'<p class="toc toc-{lvl}"><a class="toc-link" href="{tok}">{escape(title)}</a></p>',
+            None,
+        )
+
+    def resolve_toc(self, html: str) -> str:
+        def sub(m):
+            bm, txt = self.toc_links[int(m.group(1))]
+            anchor = self.bm_anchor.get(bm) or self.text_anchor.get(txt)
+            if not anchor:  # fall back to a heading whose text contains the entry
+                anchor = next((a for t, a in self.text_anchor.items() if txt and txt in t), None)
+            return f'href="#{anchor}"' if anchor else 'href="#" data-dead="1"'
+
+        html = re.sub(r'href="#toc-link-(\d+)"', sub, html)
+        # entries for sections removed from the draft (guidance) would vanish on a TOC refresh
+        dead = r'<p class="toc toc-\d"><a class="toc-link" href="#" data-dead="1">.*?</p>\n?'
+        return re.sub(dead, "", html)
+
     def paragraph(self, p_el) -> tuple[str, str | None]:
         from docx.text.paragraph import Paragraph
 
+        if is_toc_paragraph(p_el):
+            return self.toc_paragraph(p_el)
         p = Paragraph(p_el, self.doc._body)
         style_name = p.style.name if p.style is not None else ""
         para_color = _style_color(p.style) if p.style is not None else None
@@ -230,6 +310,9 @@ class _Renderer:
                 anchor, n = f"{base}-{n}", n + 1
             self.used_anchors.add(anchor)
             self.headings.append({"level": level, "text": plain.strip(), "anchor": anchor})
+            self.text_anchor.setdefault(_norm(plain), anchor)
+            for b in p_el.iter(q("bookmarkStart")):
+                self.bm_anchor.setdefault(b.get(q("name")) or "", anchor)
             return f'<h{level} id="{anchor}">{inner}</h{level}>', None
         kind = self._list_kind(p)
         if kind:
@@ -286,7 +369,7 @@ class _Renderer:
 def render_docx(path: str) -> dict:
     doc = load_docx(path)
     r = _Renderer(doc)
-    html = r.blocks(doc.element.body)
+    html = r.resolve_toc(r.blocks(doc.element.body))
     return {
         "html": html,
         "headings": r.headings,
@@ -297,4 +380,5 @@ def render_docx(path: str) -> dict:
             "colors": r.colors,
         },
         "comment_ids": r.comment_ids,
+        "fill_count": r.fills,
     }

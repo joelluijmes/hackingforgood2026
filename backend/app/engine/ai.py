@@ -16,6 +16,8 @@ LANGS = ("en", "nl", "fr")
 LANG_NAMES = {"en": "English", "nl": "Dutch", "fr": "French"}
 
 _lock = threading.Lock()
+# parallel generate/translate tasks share Vertex quota: cap in-flight calls
+_slots = threading.BoundedSemaphore(int(os.environ.get("AI_CONCURRENCY", "16")))
 _state: dict = {
     "project": None,
     "project_resolved": False,
@@ -113,7 +115,16 @@ def _is_auth_error(e: Exception) -> bool:
     return code in (401, 403) or "PERMISSION_DENIED" in str(e) or "UNAUTHENTICATED" in str(e)
 
 
-def _generate(contents: str, system: str | None = None, json_output: bool = False) -> str | None:
+def _is_rate_limit(e: Exception) -> bool:
+    return getattr(e, "code", None) == 429 or "RESOURCE_EXHAUSTED" in str(e)
+
+
+def _generate(
+    contents: str,
+    system: str | None = None,
+    json_output: bool = False,
+    thinking_budget: int | None = None,
+) -> str | None:
     """One Gemini call with credential fallback (ADC first, then gcloud's active account)."""
     if not ai_status()["enabled"]:
         return None
@@ -124,13 +135,32 @@ def _generate(contents: str, system: str | None = None, json_output: bool = Fals
         cfg["system_instruction"] = system
     if json_output:
         cfg["response_mime_type"] = "application/json"
+    budget = str(
+        thinking_budget
+        if thinking_budget is not None
+        else os.environ.get("AI_THINKING_BUDGET", "0")
+    )
+    if "flash" in _model() and budget.lstrip("-").isdigit():
+        # extraction/translation needs no reasoning; thinking made each call 5-20 s slower
+        cfg["thinking_config"] = types.ThinkingConfig(thinking_budget=int(budget))
     config = types.GenerateContentConfig(**cfg)
-    for attempt in range(3):
+    throttled = 0
+    attempt = -1
+    while attempt < 2:
+        attempt += 1
         try:
             client = _get_client(force=attempt > 0 and _state["client"] is None)
-            resp = client.models.generate_content(model=_model(), contents=contents, config=config)
+            with _slots:
+                resp = client.models.generate_content(
+                    model=_model(), contents=contents, config=config
+                )
             return resp.text
         except Exception as e:  # noqa: BLE001 - never raise
+            if _is_rate_limit(e) and throttled < 4:
+                throttled += 1
+                attempt -= 1  # rate limits don't use up a credential attempt
+                time.sleep(2**throttled)  # 2, 4, 8, 16 s
+                continue
             if attempt == 0 and _is_auth_error(e) and _state["mode"] == "adc":
                 log.warning("Vertex ADC denied, falling back to gcloud account token: %s", e)
                 _state["mode"] = "gcloud"
@@ -155,10 +185,10 @@ def generate_text(prompt: str, system: str | None = None) -> str | None:
         return None
 
 
-def generate_json(prompt: str, system: str | None = None):
+def generate_json(prompt: str, system: str | None = None, thinking_budget: int | None = None):
     """Gemini call with JSON output parsed to Python; None on failure."""
     try:
-        text = _generate(prompt, system, json_output=True)
+        text = _generate(prompt, system, json_output=True, thinking_budget=thinking_budget)
         if not text:
             return None
         text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text.strip())

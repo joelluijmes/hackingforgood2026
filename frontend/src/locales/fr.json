@@ -54,6 +54,7 @@
     "newHere": "Nouveau ici ? Créez un compte"
   },
   "nav": {
+    "home": "Accueil",
     "projects": "Projets",
     "templates": "Modèles",
     "language": "Votre langue",
@@ -87,8 +88,9 @@
     "emptyText": "Téléversez les documents du promoteur pour commencer.",
     "groups": {
       "sponsor": "Documents du promoteur",
-      "icf": "Projets d'ICF",
-      "other": "Autres"
+      "icf": "Tous les documents ICF et versions",
+      "other": "Autres",
+      "participant": "Portail des participants"
     },
     "confirmDeleteDoc": "Supprimer « {{title}} » et toutes ses versions ?",
     "uploadTitle": "Téléverser un document",
@@ -106,7 +108,27 @@
     "countDeclined_one": "{{count}} refusé",
     "countDeclined_other": "{{count}} refusés",
     "latestSummary": "v{{n}} · {{source}}",
-    "translatedFrom": "Traduit de {{title}}"
+    "translatedFrom": "Traduit de {{title}}",
+    "next": {
+      "title": "Étape suivante",
+      "intake": "Téléversez les documents du promoteur (protocole, formulaires de consentement) pour cette étude.",
+      "uploadSponsor": "Téléverser les documents du promoteur",
+      "drafting": "Générez le projet d'ICF en anglais à partir des documents du promoteur.",
+      "generateDraft": "Générer le projet d'ICF",
+      "pi": "Ouvrez les projets et envoyez-les au PI. Téléversez la copie relue (avec commentaires) comme nouvelle version, puis statuez sur chaque commentaire. Vous pouvez aussi traduire en NL/FR ici.",
+      "openDraft": "Ouvrir",
+      "ethics": "Envoyez les ICF au comité d'éthique : téléchargez-les tous dans un zip, puis téléversez chaque document relu (avec les commentaires du comité) comme nouvelle version. Vous approuvez ou refusez ensuite chaque commentaire comme d'habitude.",
+      "downloadAll": "Tout télécharger pour le comité d'éthique",
+      "download": "Télécharger",
+      "uploadReviewed": "Téléverser la version relue",
+      "approved": "Toutes les étapes sont terminées. Téléchargez les versions finales de tous les ICF.",
+      "downloadFinal": "Télécharger les ICF finaux (zip)",
+      "latest": "dernière v{{n}}",
+      "noIcfs": "Pas encore de documents ICF."
+    },
+    "addMenu": "Ajouter un document",
+    "approvedAsIs": "Approuvé tel quel",
+    "withdrawApproval": "Retirer l'approbation"
   },
   "stages": {
     "ariaLabel": "Étape du projet",
@@ -120,11 +142,7 @@
     },
     "pi_review": {
       "label": "Relecture investigateur",
-      "hint": "Envoyer, téléverser la copie relue"
-    },
-    "translation": {
-      "label": "Traduction",
-      "hint": "Versions NL / FR"
+      "hint": "Relire, traduire, téléverser la copie relue"
     },
     "ethics_review": {
       "label": "Comité d'éthique",
@@ -341,22 +359,43 @@
     "nextOpen": "Prochain ouvert",
     "noneInFilter": "Aucun commentaire dans ce filtre.",
     "noneInVersion": "Aucun commentaire dans cette version.",
-    "approve": "Approuver",
-    "decline": "Refuser",
+    "approve": "Résoudre",
+    "decline": "Ignorer",
     "confirmApproval": "Confirmer l'approbation",
     "confirmDecline": "Confirmer le refus",
     "undo": "Annuler la décision",
     "optionalNote": "Remarque facultative",
     "decisionNote": "Remarque : {{note}}",
-    "statusApproved": "Approuvé",
-    "statusDeclined": "Refusé",
+    "statusApproved": "Résolu",
+    "statusDeclined": "Ignoré",
     "decidedBy": "par {{name}}",
     "translatedFrom": "Traduit de : {{language}}",
     "showTranslation": "Afficher la traduction",
     "showOriginal": "Afficher l'original",
     "translationUnavailable": "Traduction indisponible",
-    "showGenerated": "Afficher les notes générées ({{count}})",
-    "fixWithAi": "Corriger avec l'IA"
+    "fillsSummary": "{{count}} passages remplis à partir des documents du promoteur",
+    "showFills": "Surligner dans le document",
+    "addComment": "Ajouter un commentaire",
+    "addPlaceholder": "Votre commentaire sur ce texte…",
+    "addSave": "Publier le commentaire",
+    "fixWithAi": "Corriger avec l'IA",
+    "provideText": "Saisir le texte",
+    "stage": "Préparer",
+    "leave": "Laisser le champ réservé",
+    "leftAsPlaceholder": "Champ réservé conservé",
+    "unstage": "Retirer",
+    "stagedText": "Texte préparé : {{text}}",
+    "stagedReopen": "Préparé : rouvrir",
+    "stagedLeave": "Préparé : laisser le champ réservé",
+    "stagedResolve": "Préparé : résoudre",
+    "stagedDismiss": "Préparé : ignorer",
+    "stagedCount_one": "{{count}} modification préparée",
+    "stagedCount_other": "{{count}} modifications préparées",
+    "reviewApply": "Vérifier et appliquer",
+    "applyAll": "Tout appliquer",
+    "discard": "Annuler",
+    "resolveAll": "Résoudre tout le reste ({{count}})",
+    "leaveAll": "Laisser tous les champs réservés ({{count}})"
   },
   "generate": {
     "title": "Générer un projet d'ICF",
@@ -380,7 +419,8 @@
     "templateLine": "Modèle : formulaire belge modèle - patients adultes, {{lang}} v{{version}}",
     "latest": "(dernière)",
     "otherVersion": "Utiliser une autre version",
-    "noTemplateForLang": "Aucun modèle disponible pour {{lang}}. Téléversez-en un dans Modèles d'abord."
+    "noTemplateForLang": "Aucun modèle disponible pour {{lang}}. Téléversez-en un dans Modèles d'abord.",
+    "englishOnly": "Les ICF initiaux sont toujours générés en anglais ; NL/FR suivent par traduction."
   },
   "admin": {
     "title": "Admin",
@@ -395,13 +435,23 @@
     "aiOff": "Désactivée",
     "storage": "Stockage",
     "counts": "Totaux",
-    "countsLine": "{{projects}} projets, {{docs}} documents de projet, {{templates}} modèles, {{users}} utilisateurs"
+    "countsLine": "{{projects}} projets, {{docs}} documents de projet, {{templates}} modèles, {{users}} utilisateurs",
+    "resetTitle": "Réinitialiser",
+    "resetEmpty": "Réinitialiser à vide",
+    "resetSamples": "Réinitialiser + importer les exemples",
+    "resetting": "Réinitialisation...",
+    "resetConfirm": "Ceci supprime DÉFINITIVEMENT TOUS les projets, documents de projet, versions, commentaires, tâches et la bibliothèque de modèles de cette application{{local}}. L'utilisateur démo et votre connexion sont conservés. Les fichiers du bucket GCS ne sont PAS supprimés.{{samples}}",
+    "resetLocal": " et tous les fichiers stockés localement",
+    "resetSamplesNote": " Ensuite, les exemples du bucket sont réimportés.",
+    "resetExplain": "Remet l'application à l'état initial : supprime tous les projets, documents, versions et la bibliothèque de modèles. L'utilisateur démo est conservé. Utilisez « Réinitialiser + importer les exemples » pour l'état juste après le premier import.",
+    "clearProjects": "Effacer les documents générés",
+    "clearConfirm": "Ceci supprime toutes les versions d'ICF générées par l'application (brouillons, modifications IA, traductions) avec leurs commentaires. Les projets, documents du promoteur, fichiers téléversés et relus, et la bibliothèque de modèles restent. Les projets sans brouillon reviennent à l'étape de rédaction. Les fichiers du bucket GCS ne sont PAS supprimés."
   },
   "req": {
     "has_sponsor_docs": "Téléversez au moins un document du promoteur",
     "has_en_draft": "Générez une version anglaise du formulaire de consentement",
     "draft_types_missing": "Pas encore de version pour : {{list}}",
-    "has_reviewed_version": "Téléversez la copie relue (avec commentaires) du PI",
+    "has_reviewed_version": "Chaque ICF anglais est revu (copie revue téléversée) ou approuvé tel quel",
     "comments_decided_one": "Statuez sur tous les commentaires ouverts ({{count}} ouvert)",
     "comments_decided_other": "Statuez sur tous les commentaires ouverts ({{count}} ouverts)",
     "translations_complete": "Créez les versions NL et FR (manquant : {{list}})",
@@ -422,7 +472,7 @@
     "notMet": "Les conditions ne sont pas encore remplies."
   },
   "matrix": {
-    "title": "Langues",
+    "title": "Aperçu des ICF",
     "type": "Type de formulaire",
     "generate": "Générer",
     "translateFromEn": "Traduire depuis EN",
@@ -436,7 +486,15 @@
       "parent": "Parents",
       "adolescent": "Adolescent 12–17",
       "child": "Enfant 8–11"
-    }
+    },
+    "draftsTitle": "ICF en brouillon",
+    "needReview": "Disponible après la revue du PI",
+    "translateAnyway": "traduire quand même",
+    "updateTemplate": "Mettre à jour vers le dernier modèle",
+    "translateAll": "Tout traduire",
+    "translateAllTitle": "Traduire toutes les versions NL/FR manquantes",
+    "generateAll": "Générer tous les ICF",
+    "generateAllTitle": "Générer tous les types d'ICF anglais manquants (adulte, parents, adolescent, enfant)"
   },
   "task": {
     "titleGenerate": "Génération du formulaire {{lang}} ({{icf}})",
@@ -455,7 +513,9 @@
       "comments": "Ajout des commentaires de relecture",
       "saving": "Enregistrement du document",
       "done": "Terminé"
-    }
+    },
+    "runningMany": "Traitement de {{total}} documents · {{done}} sur {{total}} terminés",
+    "details": "Détails"
   },
   "edit": {
     "title": "Modifier avec l'IA",
@@ -479,7 +539,16 @@
     "editText": "Modifier le texte",
     "showChanges": "Afficher les changements",
     "paragraph": "Paragraphe",
-    "mandatory": "Modifie un texte obligatoire du modèle ({{score}} % de correspondance avec le modèle national). Justifiez cet écart auprès du Comité d'éthique."
+    "mandatory": "Modifie un texte obligatoire du modèle ({{score}} % de correspondance avec le modèle national). Justifiez cet écart auprès du Comité d'éthique.",
+    "pendingTitle_one": "{{count}} modification appliquée pas encore reportée sur les autres formulaires",
+    "pendingTitle_other": "{{count}} modifications appliquées pas encore reportées sur les autres formulaires",
+    "selectAll": "Tout sélectionner",
+    "noInstruction": "(modification)",
+    "editCount_one": "{{count}} changement",
+    "editCount_other": "{{count}} changements",
+    "propagateSel_one": "Propager {{count}} modification",
+    "propagateSel_other": "Propager {{count}} modifications ensemble",
+    "skipPropagation": "Ignorer"
   },
   "propagate": {
     "title": "Appliquer cette modification aux autres formulaires",
@@ -493,5 +562,96 @@
       "not_applicable": "Non applicable",
       "error": "Échec"
     }
+  },
+  "upload": {
+    "autoDetect": "Détection automatique"
+  },
+  "next": {
+    "stepLabel": "Étape",
+    "checklistLabel": "Liste de contrôle",
+    "intake": {
+      "what": "Rassembler les documents du promoteur",
+      "have_one": "{{count}} document du promoteur téléversé",
+      "have_other": "{{count}} documents du promoteur téléversés",
+      "none": "Aucun document du promoteur. Téléversez le protocole et les formulaires de consentement du promoteur."
+    },
+    "drafting": {
+      "what": "Générer le projet d'ICF",
+      "have_one": "{{count}} projet d'ICF anglais existe",
+      "have_other": "{{count}} projets d'ICF anglais existent",
+      "none": "Pas encore de projet d'ICF anglais."
+    },
+    "pi_review": {
+      "what": "Revue par le PI",
+      "status": "{{done}} sur {{total}} ICF anglais revus ou approuvés"
+    },
+    "translation": {
+      "what": "Versions NL et FR",
+      "status_one": "{{count}} version traduite pour l'instant",
+      "status_other": "{{count}} versions traduites pour l'instant"
+    },
+    "ethics_review": {
+      "what": "Comité d'éthique",
+      "status": "{{done}} sur {{total}} ICF traduits revus ou approuvés"
+    },
+    "approved": {
+      "what": "Version finale",
+      "status": "Terminé. Le dossier ICF est approuvé."
+    },
+    "act": {
+      "upload": "Téléverser les documents du promoteur",
+      "addMore": "Ajouter d'autres documents",
+      "generate": "Générer le projet d'ICF",
+      "generateAnother": "Générer un autre projet",
+      "uploadReviewed": "Téléverser la copie revue",
+      "approveAsIs": "Approuver tel quel",
+      "reviewComments": "Décider des commentaires",
+      "translate": "Traduire les versions manquantes",
+      "openDownload": "Tout télécharger (zip)",
+      "openForReview": "Ouvrir pour relecture",
+      "more": "Plus d'actions",
+      "download": "Télécharger"
+    }
+  },
+  "docStatus": {
+    "draft": "Brouillon",
+    "awaitingReview": "En attente de relecture PI",
+    "reviewed": "Relu par le PI",
+    "approvedAsIs": "Approuvé tel quel",
+    "translated": "Traduit",
+    "inEthics": "Envoyé au comité d'éthique",
+    "ethicsFeedback": "Retour du comité reçu",
+    "final": "Final",
+    "uploaded": "Téléversé"
+  },
+  "review": {
+    "backToProject": "Retour au projet",
+    "noStaged": "Aucune modification préparée",
+    "finish": "Terminer la revue",
+    "finishTitle": "Terminez votre revue",
+    "nothingStaged": "Aucune modification préparée. Vous pouvez quand même approuver le document tel quel ou demander des modifications.",
+    "sumTexts_one": "{{count}} remplacement de texte (crée une nouvelle version)",
+    "sumTexts_other": "{{count}} remplacements de texte (crée une nouvelle version)",
+    "sumResolved": "{{count}} résolu(s)",
+    "sumDismissed": "{{count}} rejeté(s)",
+    "sumLeft": "{{count}} laissé(s) comme espace réservé",
+    "sumReopened": "{{count}} rouvert(s)",
+    "notePlaceholder": "Laissez une note de synthèse (facultatif)",
+    "optSave": "Enregistrer les modifications",
+    "optSaveHint": "Appliquer les modifications préparées et continuer la revue.",
+    "optSaveNone": "Rien à enregistrer.",
+    "optApprove": "Approuver le document",
+    "optApproveHint": "Appliquer les modifications préparées, puis marquer le document comme approuvé.",
+    "optRequest": "Demander des modifications",
+    "optRequestHint": "Appliquer les modifications préparées, laisser le document non approuvé et retourner au projet pour un nouveau tour.",
+    "openWarn_one": "{{count}} commentaire reste ouvert - approuver quand même",
+    "openWarn_other": "{{count}} commentaires restent ouverts - approuver quand même",
+    "submitSave": "Enregistrer les modifications",
+    "submitApprove": "Approuver le document",
+    "submitRequest": "Demander des modifications",
+    "savedVersion": "Version v{{number}} créée.",
+    "savedDecisions": "Décisions de revue enregistrées.",
+    "nextStep": "Ensuite : retour au projet, comparer ou continuer la revue.",
+    "continue": "Continuer la revue"
   }
 }

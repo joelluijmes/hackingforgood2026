@@ -1,14 +1,18 @@
+import type { TFunction } from 'i18next';
 import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { api, type CommentStatus, type Lang, type ReviewComment } from '../api';
+import type { CommentStatus, Lang, ReviewComment } from '../api';
 import { formatDate } from '../format';
 import '../review.css';
 
 type Filter = 'all' | CommentStatus;
 const trunc = (s: string, n = 140) => (s.length > n ? `${s.slice(0, n)}…` : s);
 
+/** Legacy drafts carried one "filled, please verify" comment per fill; those are fill markers now. */
+export const isLegacyFill = (c: ReviewComment) =>
+  c.author === 'ICF Studio' && c.text.startsWith('Filled from sponsor');
+
 /** Read-only comment body: author, language, quote and text in the user's language. */
-const isGenerated = (c: ReviewComment) => c.author === 'ICF Studio';
 
 export function CommentBody({ c, lang }: { c: ReviewComment; lang: Lang }) {
   const { t, i18n } = useTranslation();
@@ -59,18 +63,49 @@ export function CommentBody({ c, lang }: { c: ReviewComment; lang: Lang }) {
   );
 }
 
+/** A locally staged review change; nothing is sent until "Apply". */
+export type Staged =
+  | { kind: 'decision'; status: CommentStatus; note?: string }
+  | { kind: 'text'; text: string };
+
+/** Generator gap comments ("Missing: ... - please add this information"). */
+export const isGap = (c: ReviewComment) =>
+  c.author === 'ICF Studio' && c.text.startsWith('Missing:');
+
+const stop = (e: React.SyntheticEvent) => e.stopPropagation();
+
 function Decide({
   c,
-  onDecide,
+  staged,
+  onStage,
   onFix,
 }: {
   c: ReviewComment;
-  onDecide: (c: ReviewComment, s: CommentStatus, note?: string) => void;
+  staged: Staged | undefined;
+  onStage: (c: ReviewComment, s: Staged | null) => void;
   onFix?: (c: ReviewComment) => void;
 }) {
   const { t, i18n } = useTranslation();
-  const [pending, setPending] = useState<CommentStatus | null>(null);
-  const [note, setNote] = useState('');
+  const [providing, setProviding] = useState(false);
+  const [text, setText] = useState('');
+  const gap = isGap(c);
+  if (staged) {
+    return (
+      <div className="rv-actions">
+        <span className="rv-status staged">{describe(t, staged, gap, 60)}</span>
+        <button
+          type="button"
+          className="rv-undo"
+          onClick={(e) => {
+            stop(e);
+            onStage(c, null);
+          }}
+        >
+          {t('comments.unstage')}
+        </button>
+      </div>
+    );
+  }
   if (c.status !== 'open') {
     return (
       <div className="rv-actions">
@@ -87,8 +122,8 @@ function Decide({
           type="button"
           className="rv-undo"
           onClick={(e) => {
-            e.stopPropagation();
-            onDecide(c, 'open');
+            stop(e);
+            onStage(c, { kind: 'decision', status: 'open' });
           }}
         >
           {t('comments.undo')}
@@ -101,42 +136,71 @@ function Decide({
       </div>
     );
   }
-  if (pending) {
+  if (gap) {
     return (
       // biome-ignore lint/a11y/noStaticElementInteractions: stops card click only
-      <div
-        className="rv-decide"
-        onClick={(e) => e.stopPropagation()}
-        onKeyDown={(e) => e.stopPropagation()}
-      >
-        <textarea
-          rows={2}
-          placeholder={t('comments.optionalNote')}
-          value={note}
-          onChange={(e) => setNote(e.target.value)}
-        />
-        <div className="rv-actions">
-          <button
-            type="button"
-            className={`btn ${pending === 'approved' ? 'primary' : 'outline'}`}
-            onClick={() => {
-              onDecide(c, pending, note.trim() || undefined);
-              setPending(null);
-              setNote('');
-            }}
-          >
-            {pending === 'approved'
-              ? t('comments.confirmApproval')
-              : t('comments.confirmDecline')}
-          </button>
-          <button
-            type="button"
-            className="btn ghost"
-            onClick={() => setPending(null)}
-          >
-            {t('common.cancel')}
-          </button>
-        </div>
+      <div className="rv-decide" onClick={stop} onKeyDown={stop}>
+        {providing ? (
+          <>
+            <textarea
+              rows={2}
+              // biome-ignore lint/a11y/noAutofocus: opened by an explicit click
+              autoFocus
+              placeholder={t('comments.provideText')}
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+            />
+            <div className="rv-actions">
+              <button
+                type="button"
+                className="btn primary"
+                disabled={!text.trim()}
+                onClick={() => {
+                  onStage(c, { kind: 'text', text: text.trim() });
+                  setProviding(false);
+                  setText('');
+                }}
+              >
+                {t('comments.stage')}
+              </button>
+              <button
+                type="button"
+                className="btn ghost"
+                onClick={() => setProviding(false)}
+              >
+                {t('common.cancel')}
+              </button>
+            </div>
+          </>
+        ) : (
+          <div className="rv-actions">
+            <button
+              type="button"
+              className="btn primary"
+              onClick={() => setProviding(true)}
+            >
+              {t('comments.provideText')}
+            </button>
+            {onFix && (
+              <button type="button" className="btn" onClick={() => onFix(c)}>
+                {t('comments.fixWithAi')}
+              </button>
+            )}
+            <button
+              type="button"
+              className="btn ghost"
+              onClick={() =>
+                onStage(c, {
+                  kind: 'decision',
+                  status: 'approved',
+                  note: t('comments.leftAsPlaceholder'),
+                })
+              }
+            >
+              {t('comments.leave')}
+            </button>
+          </div>
+        )}
       </div>
     );
   }
@@ -146,8 +210,8 @@ function Decide({
         type="button"
         className="btn primary"
         onClick={(e) => {
-          e.stopPropagation();
-          setPending('approved');
+          stop(e);
+          onStage(c, { kind: 'decision', status: 'approved' });
         }}
       >
         {t('comments.approve')}
@@ -156,8 +220,8 @@ function Decide({
         type="button"
         className="btn outline"
         onClick={(e) => {
-          e.stopPropagation();
-          setPending('declined');
+          stop(e);
+          onStage(c, { kind: 'decision', status: 'declined' });
         }}
       >
         {t('comments.decline')}
@@ -167,7 +231,7 @@ function Decide({
           type="button"
           className="btn ghost"
           onClick={(e) => {
-            e.stopPropagation();
+            stop(e);
             onFix(c);
           }}
         >
@@ -178,16 +242,37 @@ function Decide({
   );
 }
 
+export function describe(t: TFunction, s: Staged, gap: boolean, n: number) {
+  if (s.kind === 'text')
+    return t('comments.stagedText', { text: trunc(s.text, n) });
+  if (s.status === 'open') return t('comments.stagedReopen');
+  if (gap) return t('comments.stagedLeave');
+  return s.status === 'approved'
+    ? t('comments.stagedResolve')
+    : t('comments.stagedDismiss');
+}
+
 export default function CommentPanel({
   comments,
-  setComments,
+  staged,
+  setStaged,
   lang,
   activeId,
   onActivate,
   onFix,
+  fillCount = 0,
+  showFills = false,
+  onToggleFills,
 }: {
+  /** staged review changes; owned by the page, applied from the review bar */
+  staged: Record<number, Staged>;
+  setStaged: (
+    f: (prev: Record<number, Staged>) => Record<number, Staged>,
+  ) => void;
+  fillCount?: number;
+  showFills?: boolean;
+  onToggleFills?: (v: boolean) => void;
   comments: ReviewComment[];
-  setComments: (f: (prev: ReviewComment[]) => ReviewComment[]) => void;
   lang: Lang;
   activeId: number | null;
   onActivate: (c: ReviewComment) => void;
@@ -195,15 +280,19 @@ export default function CommentPanel({
 }) {
   const { t } = useTranslation();
   const [filter, setFilter] = useState<Filter>('all');
-  const [error, setError] = useState('');
-  const [genOverride, setGenOverride] = useState<boolean | null>(null);
-
-  // Notes written by the app itself (gaps / filled placeholders) can bury the reviewers' comments.
-  const generatedCount = comments.filter(isGenerated).length;
-  const showGenerated = genOverride ?? generatedCount === comments.length;
+  // staged changes are shown instantly as if already saved
   const list = useMemo(
-    () => (showGenerated ? comments : comments.filter((c) => !isGenerated(c))),
-    [comments, showGenerated],
+    () =>
+      comments
+        .filter((c) => !isLegacyFill(c))
+        .map((c) => {
+          const s = staged[c.id];
+          if (!s) return c;
+          const status: CommentStatus =
+            s.kind === 'text' ? 'approved' : s.status;
+          return { ...c, status };
+        }),
+    [comments, staged],
   );
 
   const counts = useMemo(() => {
@@ -222,37 +311,22 @@ export default function CommentPanel({
   );
   const reviewed = counts.approved + counts.declined;
 
-  const decide = async (
-    c: ReviewComment,
-    status: CommentStatus,
-    note?: string,
-  ) => {
-    const prev = c;
-    setError('');
-    const me = '…';
-    setComments((all) =>
-      all.map((x) =>
-        x.id === c.id
-          ? {
-              ...x,
-              status,
-              decision_note: note ?? null,
-              decided_by: status === 'open' ? null : me,
-              decided_at: status === 'open' ? null : new Date().toISOString(),
-            }
-          : x,
-      ),
-    );
-    try {
-      const saved = await api.decideComment(c.id, status, note);
-      setComments((all) =>
-        all.map((x) => (x.id === c.id ? { ...x, ...saved } : x)),
-      );
-    } catch (e) {
-      setComments((all) => all.map((x) => (x.id === c.id ? prev : x)));
-      setError(e instanceof Error ? e.message : String(e));
-    }
-  };
+  const stage = (c: ReviewComment, s: Staged | null) =>
+    setStaged((all) => {
+      const { [c.id]: _drop, ...rest } = all;
+      return s ? { ...rest, [c.id]: s } : rest;
+    });
+
+  const openNow = list.filter((c) => c.status === 'open');
+  const openGaps = openNow.filter(isGap);
+  const openOthers = openNow.filter((c) => !isGap(c));
+  const bulk = (items: ReviewComment[], note?: string) =>
+    setStaged((all) => {
+      const next = { ...all };
+      for (const c of items)
+        next[c.id] = { kind: 'decision', status: 'approved', note };
+      return next;
+    });
 
   const nextOpen = () => {
     const open = roots.filter((c) => c.status === 'open');
@@ -266,7 +340,7 @@ export default function CommentPanel({
     <div
       key={c.id}
       id={`rv-c-${c.id}`}
-      className={`rv-card ${c.status} ${activeId === c.id ? 'active' : ''}`}
+      className={`rv-card ${c.status} ${staged[c.id] ? 'staged' : ''} ${activeId === c.id ? 'active' : ''}`}
       role="button"
       tabIndex={0}
       onClick={() => onActivate(c)}
@@ -281,7 +355,12 @@ export default function CommentPanel({
       }}
     >
       <CommentBody c={c} lang={lang} />
-      <Decide c={c} onDecide={decide} onFix={reply ? undefined : onFix} />
+      <Decide
+        c={comments.find((x) => x.id === c.id) ?? c}
+        staged={staged[c.id]}
+        onStage={stage}
+        onFix={reply ? undefined : onFix}
+      />
       {!reply && repliesOf(c.id).length > 0 && (
         <div className="rv-replies">
           {repliesOf(c.id).map((r) => card(r, true))}
@@ -319,17 +398,34 @@ export default function CommentPanel({
             {t('comments.nextOpen')}
           </button>
         </div>
-        {generatedCount > 0 && generatedCount < comments.length && (
+        {(openOthers.length > 0 || openGaps.length > 0) && (
+          <div className="rv-filters">
+            {openOthers.length > 0 && (
+              <button type="button" onClick={() => bulk(openOthers)}>
+                {t('comments.resolveAll', { count: openOthers.length })}
+              </button>
+            )}
+            {openGaps.length > 0 && (
+              <button
+                type="button"
+                onClick={() => bulk(openGaps, t('comments.leftAsPlaceholder'))}
+              >
+                {t('comments.leaveAll', { count: openGaps.length })}
+              </button>
+            )}
+          </div>
+        )}
+        {fillCount > 0 && onToggleFills && (
           <label className="rv-gen">
             <input
               type="checkbox"
-              checked={showGenerated}
-              onChange={(e) => setGenOverride(e.target.checked)}
+              checked={showFills}
+              onChange={(e) => onToggleFills(e.target.checked)}
             />
-            {t('comments.showGenerated', { count: generatedCount })}
+            {t('comments.fillsSummary', { count: fillCount })} ·{' '}
+            {t('comments.showFills')}
           </label>
         )}
-        {error && <div className="rv-err">{error}</div>}
       </div>
       <div className="rv-list">
         {shown.length === 0 && (

@@ -35,7 +35,7 @@
 }
 .rv-cols {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 380px;
+  grid-template-columns: minmax(0, 1fr) clamp(380px, 34vw, 520px);
   gap: 24px;
   align-items: start;
 }
@@ -151,9 +151,11 @@
 .rv-list {
   padding: 12px;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 10px;
 }
 .rv-card {
+  min-width: 0;
   border: 1px solid var(--neutral-300);
   border-radius: var(--radius-card);
   padding: 12px;
@@ -380,12 +382,13 @@
 
 /* ---- side panel tabs + "Edit with AI" ---- */
 .rv-side {
+  min-width: 0;
   position: sticky;
-  top: 76px; /* below the sticky topbar */
+  top: calc(var(--topbar-h, 64px) + 84px); /* below topbar + review bar */
   display: flex;
   flex-direction: column;
   gap: 8px;
-  max-height: calc(100vh - 92px);
+  max-height: calc(100vh - var(--topbar-h, 64px) - 100px);
 }
 .rv-side .rv-panel {
   position: static;
@@ -1007,4 +1010,238 @@
 .paper.hide-tc .tc-fmt {
   background: none;
   border-bottom: 0;
+}
+
+/* ---- quiet "filled from sponsor documents" marks (no comment) ---- */
+.paper mark.fill {
+  background: none;
+  color: inherit;
+}
+.paper.show-fills mark.fill {
+  background: #e3f4e6;
+  border-bottom: 2px solid #9ccfa4;
+  border-radius: 2px;
+}
+
+/* ---- floating "Add comment" on a text selection ---- */
+.rv-add {
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px;
+  background: #fff;
+  border: 1px solid var(--neutral-300, #ccc);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  width: 260px;
+}
+.rv-add.collapsed {
+  width: auto;
+}
+.rv-add textarea {
+  width: 100%;
+  resize: vertical;
+}
+.rv-add .rv-actions {
+  margin: 0;
+}
+
+.rv-status.staged {
+  color: var(--accent, #b45309);
+  font-weight: 600;
+}
+.rv-card.staged {
+  outline: 2px dashed var(--accent, #b45309);
+  outline-offset: -2px;
+}
+.rv-tray {
+  position: sticky;
+  bottom: 0;
+  background: var(--surface, #fff);
+  border-top: 2px solid var(--accent, #b45309);
+  padding: 8px 12px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.12);
+  z-index: 5;
+}
+.rv-tray-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+.rv-tray-bar strong {
+  flex: 1 1 100%;
+}
+.rv-tray-list {
+  list-style: none;
+  margin: 0 0 8px;
+  padding: 0;
+  max-height: 200px;
+  overflow: auto;
+}
+.rv-tray-list li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--border, #ddd);
+}
+.rv-tray-what {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  font-size: 0.85em;
+}
+.rv-tray-what input {
+  width: 100%;
+}
+
+.rv-panel {
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+/* ---- GitHub-style review bar ---- */
+.rv-bar {
+  position: sticky;
+  top: var(--topbar-h, 64px);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  margin-bottom: 16px;
+  background: var(--surface, #fff);
+  border: 1px solid var(--neutral-300, #ccc);
+  border-radius: 0 0 var(--radius-card, 12px) var(--radius-card, 12px);
+  /* white cap above hides document text scrolling between topbar and bar */
+  box-shadow:
+    0 -24px 0 0 var(--bg, #fff),
+    0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.rv-back {
+  font-weight: 600;
+  white-space: nowrap;
+}
+.rv-bar-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+.rv-bar-info progress {
+  width: 120px;
+}
+.rv-finish {
+  position: relative;
+}
+.rv-pop {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  width: min(420px, 92vw);
+  max-height: 80vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+  background: var(--surface, #fff);
+  border: 1px solid var(--neutral-300, #ccc);
+  border-radius: var(--radius-control, 8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+.rv-pop h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.rv-pop textarea {
+  width: 100%;
+  font: inherit;
+  box-sizing: border-box;
+}
+.rv-sum {
+  margin: 0;
+  padding-left: 18px;
+}
+.rv-opts {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.rv-opt {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.rv-opt.on {
+  background: var(--neutral-100, #f3f4f6);
+}
+.rv-opt span {
+  display: flex;
+  flex-direction: column;
+}
+.rv-warn {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: var(--accent, #b45309);
+  font-size: 0.9em;
+}
+.rv-saved {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  background: #ecfdf3;
+  border: 1px solid #86d9a8;
+  border-radius: var(--radius-control, 8px);
+}
+.rv-saved span {
+  flex: 1 1 260px;
+}
+.rv-saved .btn {
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .rv-bar {
+    flex-wrap: wrap;
+  }
+}
+
+/* ---- table of contents entries: internal links to headings ---- */
+.paper p.toc {
+  margin: 2px 0;
+}
+.paper p.toc-2 {
+  padding-left: 1.25em;
+}
+.paper p.toc-3 {
+  padding-left: 2.5em;
+}
+.paper a.toc-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.paper a.toc-link:hover {
+  text-decoration: underline;
+}
+.paper a.toc-link[data-dead] {
+  cursor: default;
+}
+.paper p.toc-title {
+  font-weight: 700;
+  margin: 12px 0 6px;
 }

@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { api, type ProjectDoc, type Version } from '../api';
+import { api, type ProjectDoc, type Stage, type Version } from '../api';
+import { docStatus } from '../docStatus';
 import { formatDate } from '../format';
 
 function VersionRow({ v, prev }: { v: Version; prev: Version | undefined }) {
@@ -51,15 +52,27 @@ export default function DocCard({
   doc,
   onNewVersion,
   onDelete,
+  onChanged,
   sourceTitle,
+  stage,
 }: {
   doc: ProjectDoc;
   sourceTitle?: string;
+  stage?: Stage;
   onNewVersion: () => void;
   onDelete: () => void;
+  onChanged?: () => void;
 }) {
   const { t } = useTranslation();
   const latest = doc.versions[0];
+  const st =
+    latest && stage
+      ? docStatus(stage, {
+          ...latest,
+          approved: doc.approved,
+          language: doc.language,
+        })
+      : null;
   return (
     <details className="card doc collapsible">
       <summary>
@@ -73,12 +86,14 @@ export default function DocCard({
             {doc.icf_type && (
               <span className="chip">{t(`icfTypes.${doc.icf_type}`)}</span>
             )}
+            {doc.role === 'icf' && latest && stage && (
+              <span className={`chip st-${st?.tone}`}>
+                {t(`docStatus.${st?.key}`)}
+              </span>
+            )}
             {latest && (
               <span className="muted small">
-                {t('project.latestSummary', {
-                  n: latest.number,
-                  source: t(`sources.${latest.source}`),
-                })}
+                v{latest.number}
                 {latest.comments_open > 0 &&
                   ` · ${t('project.countOpen', { count: latest.comments_open })}`}
               </span>
@@ -96,6 +111,24 @@ export default function DocCard({
           <button type="button" className="btn" onClick={onNewVersion}>
             {t('project.uploadNewVersion')}
           </button>
+          {doc.role === 'icf' &&
+            (doc.approved ? (
+              <button
+                type="button"
+                className="btn"
+                onClick={() => api.unapproveDoc(doc.id).then(onChanged)}
+              >
+                {t('project.withdrawApproval')}
+              </button>
+            ) : (
+              <button
+                type="button"
+                className="btn"
+                onClick={() => api.approveDoc(doc.id).then(onChanged)}
+              >
+                {t('next.act.approveAsIs')}
+              </button>
+            ))}
           <button type="button" className="link danger" onClick={onDelete}>
             {t('common.delete')}
           </button>

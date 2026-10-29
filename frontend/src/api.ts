@@ -8,7 +8,6 @@ export type Stage =
   | 'intake'
   | 'drafting'
   | 'pi_review'
-  | 'translation'
   | 'ethics_review'
   | 'approved';
 export type Role = 'sponsor' | 'icf' | 'other';
@@ -36,11 +35,21 @@ export interface ParticipantPortalSettings {
   publications: { doc_id: number; version_id: number; number: number }[];
 }
 export interface ParticipantDocument {
-  id: number; title: string; icf_type: IcfType | null; language: Language | null;
-  role: Role; version_id: number; version_number: number;
+  id: number;
+  title: string;
+  icf_type: IcfType | null;
+  language: Language | null;
+  role: Role;
+  version_id: number;
+  version_number: number;
 }
 export interface ParticipantDocumentContent extends ParticipantDocument {
-  sections: { section_id: string; heading: string; text: string; anchor: string | null }[];
+  sections: {
+    section_id: string;
+    heading: string;
+    text: string;
+    anchor: string | null;
+  }[];
 }
 
 export interface Document {
@@ -84,6 +93,8 @@ export interface DocHtml {
 
 export interface VersionHtml extends DocHtml {
   comment_ids: string[];
+  /** passages filled quietly from sponsor documents (highlight only, no comment) */
+  fill_count: number;
 }
 
 export interface SeedResult {
@@ -142,6 +153,9 @@ export interface ProjectDoc {
   language: Language | null;
   created_at: string;
   source_doc_id: number | null;
+  approved: boolean;
+  approved_by: string | null;
+  approved_at: string | null;
   versions: Version[];
 }
 
@@ -331,6 +345,7 @@ export interface MatrixCell {
   version_number: number;
   source: VersionSource;
   comments_open: number;
+  approved: boolean;
 }
 
 export interface MatrixRow {
@@ -379,6 +394,15 @@ export interface PropagationTarget {
   status: 'proposed' | 'not_applicable' | 'error';
   reason: string;
   edits: EditProposal[];
+}
+
+export interface PendingChange {
+  id: number;
+  instruction: string;
+  edit_count: number;
+  result_version_id: number;
+  created_by: string;
+  created_at: string;
 }
 
 export interface PropagationResult {
@@ -555,16 +579,68 @@ export const api = {
   me: () => req<User>('/auth/me'),
   updateMe: (b: { name?: string; language?: Language }) =>
     req<User>('/auth/me', json('PATCH', b)),
-  participantPortal: (projectId: number) => req<ParticipantPortalSettings>(`/projects/${projectId}/participant-portal`),
-  saveParticipantPortal: (projectId: number, body: Omit<ParticipantPortalSettings, 'publications'>) => req<{ok:boolean}>(`/projects/${projectId}/participant-portal`,json('PUT',body)),
-  inviteParticipant: (projectId: number,email:string) => req<{email:string;token:string;expires_at:string}>(`/projects/${projectId}/participant-invitations`,json('POST',{email})),
-  publishParticipantVersion: (docId:number,versionId:number) => req<{published:boolean;version_id:number}>(`/project-documents/${docId}/participant-publication`,json('PUT',{version_id:versionId})),
-  unpublishParticipantVersion: (docId:number) => req<{published:boolean}>(`/project-documents/${docId}/participant-publication`,{method:'DELETE'}),
-  acceptParticipantInvite: (token:string,b:{name:string;password:string;language:Language}) => req<{token:string;user:User}>(`/participant/invitations/${encodeURIComponent(token)}/accept`,json('POST',b)),
-  participantTrials: () => req<{id:number;name:string;study:string}[]>('/participant/trials'),
-  participantDocuments: (projectId:number) => req<ParticipantDocument[]>(`/participant/trials/${projectId}/documents`),
-  participantDocument: (projectId:number,docId:number) => req<ParticipantDocumentContent>(`/participant/trials/${projectId}/documents/${docId}`),
-  participantAsk: (projectId:number,b:{question:string;persona:'adult'|'parent_guardian'|'adolescent'|'child';language:Language;history:{role:'user'|'assistant';text:string}[]}) => req<{explanation:string;source_references:{doc_id:number;title:string;version_id:number;section_id:string;heading:string}[];unanswered_questions:string[];requires_human_followup:boolean}>(`/participant/trials/${projectId}/ask`,json('POST',b)),
+  participantPortal: (projectId: number) =>
+    req<ParticipantPortalSettings>(`/projects/${projectId}/participant-portal`),
+  saveParticipantPortal: (
+    projectId: number,
+    body: Omit<ParticipantPortalSettings, 'publications'>,
+  ) =>
+    req<{ ok: boolean }>(
+      `/projects/${projectId}/participant-portal`,
+      json('PUT', body),
+    ),
+  inviteParticipant: (projectId: number, email: string) =>
+    req<{ email: string; token: string; expires_at: string }>(
+      `/projects/${projectId}/participant-invitations`,
+      json('POST', { email }),
+    ),
+  publishParticipantVersion: (docId: number, versionId: number) =>
+    req<{ published: boolean; version_id: number }>(
+      `/project-documents/${docId}/participant-publication`,
+      json('PUT', { version_id: versionId }),
+    ),
+  unpublishParticipantVersion: (docId: number) =>
+    req<{ published: boolean }>(
+      `/project-documents/${docId}/participant-publication`,
+      { method: 'DELETE' },
+    ),
+  acceptParticipantInvite: (
+    token: string,
+    b: { name: string; password: string; language: Language },
+  ) =>
+    req<{ token: string; user: User }>(
+      `/participant/invitations/${encodeURIComponent(token)}/accept`,
+      json('POST', b),
+    ),
+  participantTrials: () =>
+    req<{ id: number; name: string; study: string }[]>('/participant/trials'),
+  participantDocuments: (projectId: number) =>
+    req<ParticipantDocument[]>(`/participant/trials/${projectId}/documents`),
+  participantDocument: (projectId: number, docId: number) =>
+    req<ParticipantDocumentContent>(
+      `/participant/trials/${projectId}/documents/${docId}`,
+    ),
+  participantAsk: (
+    projectId: number,
+    b: {
+      question: string;
+      persona: 'adult' | 'parent_guardian' | 'adolescent' | 'child';
+      language: Language;
+      history: { role: 'user' | 'assistant'; text: string }[];
+    },
+  ) =>
+    req<{
+      explanation: string;
+      source_references: {
+        doc_id: number;
+        title: string;
+        version_id: number;
+        section_id: string;
+        heading: string;
+      }[];
+      unanswered_questions: string[];
+      requires_human_followup: boolean;
+    }>(`/participant/trials/${projectId}/ask`, json('POST', b)),
 
   // template library
   listDocuments: (kind?: Kind) =>
@@ -643,6 +719,7 @@ export const api = {
       body: form(file, { note: meta.note, source: meta.source }),
     }),
   getVersion: (vid: number) => req<VersionDetail>(`/versions/${vid}`),
+  projectExportUrl: (pid: number) => withToken(`/api/projects/${pid}/export`),
   versionFileUrl: (vid: number) => withToken(`/api/versions/${vid}/file`),
   getVersionHtml: (vid: number) => req<VersionHtml>(`/versions/${vid}/html`),
 
@@ -673,11 +750,30 @@ export const api = {
     req<ReviewComment[]>(
       `/versions/${vid}/comments${lang ? `?lang=${lang}` : ''}`,
     ),
+  addComment: (vid: number, text: string, anchor_text: string) =>
+    req<ReviewComment>(
+      `/versions/${vid}/comments`,
+      json('POST', { text, anchor_text }),
+    ),
   decideComment: (id: number, status: CommentStatus, note?: string) =>
     req<ReviewComment>(
       `/comments/${id}/decision`,
       json('POST', { status, note }),
     ),
+
+  commentBatch: (
+    vid: number,
+    b: {
+      decisions: { comment_id: number; status: CommentStatus; note?: string }[];
+      replacements: { comment_id: number; text: string }[];
+      note?: string;
+    },
+  ) =>
+    req<{
+      version: Version | null;
+      decided: number;
+      skipped: { comment_id: number; why: string }[];
+    }>(`/versions/${vid}/comments/batch`, json('POST', b)),
 
   // diff + generate + ai
   diff: (from: number, to: number, lang?: Lang) =>
@@ -691,15 +787,41 @@ export const api = {
     ),
   translate: (
     docId: number,
-    b: { target_languages: ('nl' | 'fr')[]; version_id?: number },
+    b: {
+      target_languages: ('nl' | 'fr')[];
+      version_id?: number;
+      force?: boolean;
+    },
   ) =>
     req<{ task_id: string }>(
       `/project-documents/${docId}/translate`,
       json('POST', b),
     ),
+  updateToTemplate: (docId: number, b: { version_id?: number } = {}) =>
+    req<{ task_id: string }>(
+      `/project-documents/${docId}/update-template`,
+      json('POST', b),
+    ),
   task: (id: string) => req<Task>(`/tasks/${id}`),
+  approveDoc: (docId: number) =>
+    req<ProjectDoc>(`/project-documents/${docId}/approve`, { method: 'POST' }),
+  unapproveDoc: (docId: number) =>
+    req<ProjectDoc>(`/project-documents/${docId}/approve`, {
+      method: 'DELETE',
+    }),
   progress: (projectId: number) =>
     req<ProjectProgress>(`/projects/${projectId}/progress`),
+  adminReset: (importSamples: boolean, generatedOnly = false) =>
+    req<{
+      reset: boolean;
+      local_files_removed: number;
+      seed: SeedResult | null;
+    }>(
+      `/admin/reset?import_samples=${importSamples}&generated_only=${generatedOnly}`,
+      {
+        method: 'POST',
+      },
+    ),
   adminStatus: () => req<AdminStatus>('/admin/status'),
   aiStatus: () => req<AiStatus>('/ai/status'),
 
@@ -728,6 +850,23 @@ export const api = {
       `/changes/${changeId}/propagate/apply`,
       json('POST', { targets }),
     ),
+  propagatePreviewBatch: (changeIds: number[]) =>
+    req<PropagationTarget[]>(
+      '/changes/propagate/preview',
+      json('POST', { change_ids: changeIds }),
+    ),
+  propagateApplyBatch: (
+    changeIds: number[],
+    targets: { version_id: number; edits: EditProposal[] }[],
+  ) =>
+    req<PropagationResult[]>(
+      '/changes/propagate/apply',
+      json('POST', { change_ids: changeIds, targets }),
+    ),
+  pendingChanges: (vid: number) =>
+    req<PendingChange[]>(`/versions/${vid}/changes`),
+  dismissChange: (changeId: number) =>
+    req<{ ok: boolean }>(`/changes/${changeId}/dismiss`, { method: 'POST' }),
   ecResponseUrl: (vid: number, lang?: Lang) =>
     withToken(
       `/api/versions/${vid}/ec-response/file${lang ? `?lang=${lang}` : ''}`,

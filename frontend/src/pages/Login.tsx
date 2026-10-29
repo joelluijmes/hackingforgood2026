@@ -64,9 +64,7 @@ export default function Login() {
         </label>
         {error && <p className="error">{error}</p>}
         <button type="submit" className="btn primary" disabled={busy}>
-          {busy
-            ? t('common.pleaseWait')
-            : t('auth.signIn')}
+          {busy ? t('common.pleaseWait') : t('auth.signIn')}
         </button>
         <p className="muted">{t('auth.demo')}</p>
       </form>

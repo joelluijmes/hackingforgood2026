@@ -10,6 +10,8 @@ export default function Admin() {
   const [seeding, setSeeding] = useState(false);
   const [result, setResult] = useState<SeedResult | null>(null);
   const [seedError, setSeedError] = useState('');
+  const [resetting, setResetting] = useState(false);
+  const [resetError, setResetError] = useState('');
 
   const load = useCallback(async () => {
     try {
@@ -33,6 +35,27 @@ export default function Admin() {
       setSeedError(errMsg(e));
     }
     setSeeding(false);
+  }
+
+  async function reset(withSamples: boolean, generatedOnly = false) {
+    const local = status?.storage.backend === 'local';
+    const msg = generatedOnly
+      ? t('admin.clearConfirm')
+      : t('admin.resetConfirm', {
+          local: local ? t('admin.resetLocal') : '',
+          samples: withSamples ? t('admin.resetSamplesNote') : '',
+        });
+    if (!window.confirm(msg)) return;
+    setResetting(true);
+    setResetError('');
+    try {
+      const r = await api.adminReset(withSamples, generatedOnly);
+      setResult(r.seed);
+      await load();
+    } catch (e) {
+      setResetError(errMsg(e));
+    }
+    setResetting(false);
   }
 
   const yn = (b: boolean) => (b ? t('common.yes') : t('common.no'));
@@ -84,6 +107,40 @@ export default function Admin() {
             )}
           </div>
         )}
+      </section>
+
+      <section className="admin-section card">
+        <h2>{t('admin.resetTitle')}</h2>
+        <p>{t('admin.resetExplain')}</p>
+        <div className="row">
+          <button
+            type="button"
+            className="btn"
+            onClick={() => reset(false, true)}
+            disabled={resetting || seeding}
+          >
+            {resetting ? t('admin.resetting') : t('admin.clearProjects')}
+          </button>
+          <button
+            type="button"
+            className="btn"
+            style={{ color: '#b42318', borderColor: '#b42318' }}
+            onClick={() => reset(false)}
+            disabled={resetting || seeding}
+          >
+            {resetting ? t('admin.resetting') : t('admin.resetEmpty')}
+          </button>
+          <button
+            type="button"
+            className="btn"
+            style={{ color: '#b42318', borderColor: '#b42318' }}
+            onClick={() => reset(true)}
+            disabled={resetting || seeding}
+          >
+            {resetting ? t('admin.resetting') : t('admin.resetSamples')}
+          </button>
+        </div>
+        {resetError && <p className="error">{resetError}</p>}
       </section>
 
       <section className="admin-section card">
