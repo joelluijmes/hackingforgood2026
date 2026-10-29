@@ -5,7 +5,7 @@ for BSPHO: Adult, Parental, Adolescent (12-17), Children (8-11) in EN, NL, FR (.
 Build the **adult** ICF first (the Belgian national template, CT-College model ICF, is adult-only and mandatory), parental is derived from adult;
 adolescent/children are adapted from the sponsor's child documents using HIRUZ templates, with simpler language.
 
-## What we are building: ICF Studio (working app in `backend/` + `frontend/`)
+## What we are building: BLOOM Studio (formerly ICF Studio; working app in `backend/` + `frontend/`)
 
 A project-based document manager for BSPHO researchers. Per project (one study / consent package, e.g. "FORUM2 - R1 (8 vs 12 Gy)"):
 1. Upload sponsor documents (docx; rtf/doc are converted to docx on upload via pypandoc, then LibreOffice).

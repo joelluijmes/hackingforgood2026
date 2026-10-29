@@ -1,4 +1,4 @@
-# ICF Studio – API contract (v2: projects, versions, comments, diff, generate, auth)
+# BLOOM Studio – API contract (v2: projects, versions, comments, diff, generate, auth)
 
 All routes are prefixed `/api`, JSON unless noted. Backend FastAPI + SQLite (stdlib sqlite3), files in object storage (see Storage).
 Frontend client mirroring this file: `frontend/src/api.ts` (single source of types; keep in sync).
