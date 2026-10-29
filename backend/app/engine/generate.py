@@ -2,6 +2,7 @@
 
 import json
 import logging
+import os
 import time
 from collections.abc import Callable
 from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
@@ -263,13 +264,32 @@ def generate_icf(
     report("reading", 0, 1)
     doc = Document(template_path)
     removed = _strip_preamble(doc)
-    placeholders, r2 = _collect_placeholders(doc)
-    removed += r2
+    ai_on = bool(ai.ai_status()["enabled"])
+    mode = os.environ.get("ICF_GEN_MODE", "sections")
+    sec: dict | None = None
+    if mode == "sections" and ai_on:
+        from . import sections
 
-    report("reading", 1, 1)
+        units = sections.build_units(doc)
+        report("reading", 1, 1)
+        sec = sections.fill_sections(
+            doc,
+            units,
+            sponsor_text=sponsor_text or "",
+            notes=notes,
+            language=language,
+            icf_type=icf_type,
+            report=report,
+        )
+    placeholders, r2 = _collect_placeholders(doc)  # strips leftover guidance, collects blue left
+    removed += r2
+    if sec is None:
+        report("reading", 1, 1)
     answers: dict[str, str] = {}
-    ai_used = False
-    if placeholders and ai.ai_status()["enabled"]:
+    ai_used = bool(sec and sec["ai_used"])
+    # legacy placeholder-by-placeholder filling: whole pipeline in "placeholders" mode, and as the
+    # fallback when the section pipeline produced nothing (e.g. only a weak model is reachable)
+    if placeholders and ai_on and (sec is None or sec["chunks_ok"] < sec["chunks"]):
         sponsor = (sponsor_text or "")[:SPONSOR_CHARS]
         n = BATCH_SIZE
         batches = [placeholders[i : i + n] for i in range(0, len(placeholders), n)]
@@ -307,9 +327,23 @@ def generate_icf(
                 if ans:
                     answers[ph["id"]] = ans
 
-    filled = flagged = 0
-    report("comments", 0, len(placeholders))
-    for n, ph in enumerate(placeholders, 1):
+    filled = sec["filled"] if sec else 0
+    flagged = 0
+    total_steps = len(placeholders) + (len(sec["gap_runs"]) if sec else 0)
+    report("comments", 0, total_steps)
+    k = 0
+    for run, desc in sec["gap_runs"] if sec else []:  # gaps written by the section pipeline
+        shown = desc if len(desc) <= 200 else desc[:200] + "..."
+        doc.add_comment(
+            [run],
+            text=f"Missing: {shown.strip('[]')} - please add this information",
+            author=AUTHOR,
+            initials="ICF",
+        )
+        flagged += 1
+        k += 1
+        report("comments", k, total_steps)
+    for n, ph in enumerate(placeholders, k + 1):
         runs = ph["runs"]
         ans = answers.get(ph["id"])
         if ans:
@@ -335,7 +369,7 @@ def generate_icf(
                 initials="ICF",
             )
             flagged += 1
-        report("comments", n, len(placeholders))
+        report("comments", n, total_steps)
     report("saving", 0, 1)
     _refresh_toc_on_open(doc)
     doc.save(out_path)

@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import logging
 import os
 import time
 
@@ -18,6 +19,7 @@ from score import score, summary  # noqa: E402
 
 
 def main() -> None:
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(name)s %(message)s")
     ap = argparse.ArgumentParser()
     ap.add_argument("case", choices=list(CASES))
     ap.add_argument("--tag", default="run")

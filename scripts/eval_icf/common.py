@@ -110,8 +110,8 @@ def _run_color(r_el, para_color):
 def doc_blocks(path: str, mark: bool = True) -> list[dict]:
     """Paragraphs of a docx: {text, style, level, purple} (tracked changes accepted).
 
-    With mark=True, yellow-highlighted runs (gaps) are wrapped as [[GAP: ..]] and leftover blue
-    placeholder runs as [[BLUE: ..]].
+    With mark=True, yellow-highlighted runs (gaps) are wrapped as ⟦GAP: ..⟧ and leftover blue
+    placeholder runs as ⟦BLUE: ..⟧.
     """
     doc = Document(path)
     out = []
@@ -143,7 +143,7 @@ def doc_blocks(path: str, mark: bool = True) -> list[dict]:
             continue
         marked = ""
         for kind, t in segs:
-            marked += f"[[GAP: {t}]]" if kind == "gap" else f"[[BLUE: {t}]]" if kind == "blue" else t
+            marked += f"⟦GAP: {t}⟧" if kind == "gap" else f"⟦BLUE: {t}⟧" if kind == "blue" else t
         nonblank = [(k, t) for k, t in segs if t.strip()]
         out.append(
             {

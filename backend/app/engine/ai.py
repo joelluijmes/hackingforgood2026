@@ -21,7 +21,7 @@ _slots = threading.BoundedSemaphore(int(os.environ.get("AI_CONCURRENCY", "16")))
 _state: dict = {
     "project": None,
     "project_resolved": False,
-    "client": None,
+    "client": None,  # default-location client (legacy name); others live in _clients
     "mode": "adc",  # "adc" | "gcloud"
     "client_at": 0.0,
     "broken_until": 0.0,
@@ -70,6 +70,32 @@ def _model() -> str:
     return os.environ.get("VERTEX_MODEL", "gemini-2.5-flash")
 
 
+_clients: dict[tuple[str, int], object] = {}
+
+
+def parse_model(spec: str) -> tuple[str, str]:
+    """'gemini-3.1-pro-preview@global' -> (model, location); no '@' = default location."""
+    model, _, loc = spec.partition("@")
+    return model.strip(), (loc.strip() or _location())
+
+
+def fast_model() -> str:
+    """Cheap model for extraction / classification (ICF_FAST_MODEL, default VERTEX_MODEL)."""
+    return os.environ.get("ICF_FAST_MODEL") or _model()
+
+
+def fill_models() -> list[str]:
+    """Model specs for the strong ICF writing step, best first, falling back to the fast model.
+
+    ICF_FILL_MODEL may be a comma separated list of 'model[@location]'.
+    """
+    raw = os.environ.get("ICF_FILL_MODEL") or "gemini-3.1-pro-preview@global,gemini-2.5-pro"
+    specs = [x.strip() for x in raw.split(",") if x.strip()]
+    if fast_model() not in specs:
+        specs.append(fast_model())
+    return specs
+
+
 def ai_status() -> dict:
     project = _project()
     enabled = bool(project) and time.time() >= _state["broken_until"]
@@ -81,15 +107,15 @@ def ai_status() -> dict:
     }
 
 
-def _make_client():
+def _make_client(location: str | None = None, timeout_ms: int = 75_000):
     from google import genai
     from google.genai import types
 
     kwargs: dict = {
         "vertexai": True,
         "project": _project(),
-        "location": _location(),
-        "http_options": types.HttpOptions(timeout=75_000),
+        "location": location or _location(),
+        "http_options": types.HttpOptions(timeout=timeout_ms),
     }
     if _state["mode"] == "gcloud":
         from google.oauth2.credentials import Credentials
@@ -101,13 +127,20 @@ def _make_client():
     return genai.Client(**kwargs)
 
 
-def _get_client(force: bool = False):
+def _get_client(force: bool = False, location: str | None = None, timeout_ms: int = 75_000):
     with _lock:
         stale = _state["mode"] == "gcloud" and time.time() - _state["client_at"] > 1800
         if force or stale or _state["client"] is None:
+            _clients.clear()
             _state["client"] = _make_client()
             _state["client_at"] = time.time()
-        return _state["client"]
+        loc = location or _location()
+        if loc == _location() and timeout_ms == 75_000:
+            return _state["client"]
+        key = (loc, timeout_ms)
+        if key not in _clients:
+            _clients[key] = _make_client(loc, timeout_ms)
+        return _clients[key]
 
 
 def _is_auth_error(e: Exception) -> bool:
@@ -119,48 +152,78 @@ def _is_rate_limit(e: Exception) -> bool:
     return getattr(e, "code", None) == 429 or "RESOURCE_EXHAUSTED" in str(e)
 
 
+_unavailable: set[tuple[str, str]] = set()  # (model, location) that answered 404 NOT_FOUND
+
+
+def _is_model_missing(e: Exception) -> bool:
+    return getattr(e, "code", None) == 404 or "NOT_FOUND" in str(e)
+
+
+def _thinking_config(model: str, thinking):
+    """thinking: int budget (2.x models) or 'LOW'/'MEDIUM'/'HIGH' level (3.x models)."""
+    from google.genai import types
+
+    if isinstance(thinking, str) and not thinking.lstrip("-").isdigit():
+        return types.ThinkingConfig(thinking_level=thinking.upper())
+    if thinking is None:
+        if "flash" not in model:
+            return None
+        thinking = os.environ.get("AI_THINKING_BUDGET", "0")
+    # extraction/translation needs no reasoning; thinking made each call 5-20 s slower
+    if model.startswith("gemini-3"):
+        return types.ThinkingConfig(thinking_level="LOW" if int(thinking) else "MINIMAL")
+    return types.ThinkingConfig(thinking_budget=int(thinking))
+
+
 def _generate(
     contents: str,
     system: str | None = None,
     json_output: bool = False,
-    thinking_budget: int | None = None,
+    thinking_budget=None,
+    model: str | None = None,
+    location: str | None = None,
+    timeout_ms: int = 75_000,
+    temperature: float = 0.2,
 ) -> str | None:
     """One Gemini call with credential fallback (ADC first, then gcloud's active account)."""
     if not ai_status()["enabled"]:
         return None
     from google.genai import types
 
-    cfg: dict = {"temperature": 0.2}
+    model = model or _model()
+    loc = location or _location()
+    if (model, loc) in _unavailable:
+        return None
+    cfg: dict = {"temperature": temperature}
     if system:
         cfg["system_instruction"] = system
     if json_output:
         cfg["response_mime_type"] = "application/json"
-    budget = str(
-        thinking_budget
-        if thinking_budget is not None
-        else os.environ.get("AI_THINKING_BUDGET", "0")
-    )
-    if "flash" in _model() and budget.lstrip("-").isdigit():
-        # extraction/translation needs no reasoning; thinking made each call 5-20 s slower
-        cfg["thinking_config"] = types.ThinkingConfig(thinking_budget=int(budget))
+    tc = _thinking_config(model, thinking_budget)
+    if tc is not None:
+        cfg["thinking_config"] = tc
     config = types.GenerateContentConfig(**cfg)
     throttled = 0
     attempt = -1
     while attempt < 2:
         attempt += 1
         try:
-            client = _get_client(force=attempt > 0 and _state["client"] is None)
+            client = _get_client(
+                force=attempt > 0 and _state["client"] is None, location=loc, timeout_ms=timeout_ms
+            )
             with _slots:
-                resp = client.models.generate_content(
-                    model=_model(), contents=contents, config=config
-                )
+                resp = client.models.generate_content(model=model, contents=contents, config=config)
             return resp.text
         except Exception as e:  # noqa: BLE001 - never raise
-            if _is_rate_limit(e) and throttled < 4:
+            if _is_rate_limit(e) and throttled < 5:
                 throttled += 1
                 attempt -= 1  # rate limits don't use up a credential attempt
-                time.sleep(2**throttled)  # 2, 4, 8, 16 s
+                time.sleep(min(2**throttled, 30))  # 2, 4, 8, 16, 30 s
                 continue
+            if _is_model_missing(e):
+                log.warning("Vertex model %s@%s not available: %s", model, loc, str(e)[:120])
+                _unavailable.add((model, loc))
+                return None
             if attempt == 0 and _is_auth_error(e) and _state["mode"] == "adc":
                 log.warning("Vertex ADC denied, falling back to gcloud account token: %s", e)
                 _state["mode"] = "gcloud"
@@ -169,9 +232,10 @@ def _generate(
             if attempt < 2 and _is_auth_error(e) and _state["mode"] == "gcloud":
                 _state["client"] = None
                 continue
-            log.error("Vertex call failed: %s", e)
+            log.error("Vertex call failed (%s): %s", model, e)
             _state["client"] = None
-            _state["broken_until"] = time.time() + 20
+            if timeout_ms <= 75_000:  # long strong-model calls must not disable the whole AI
+                _state["broken_until"] = time.time() + 20
             return None
     return None
 
@@ -196,6 +260,40 @@ def generate_json(prompt: str, system: str | None = None, thinking_budget: int |
     except Exception as e:  # noqa: BLE001
         log.error("generate_json failed: %s", e)
         return None
+
+
+def generate_json_models(
+    prompt: str,
+    system: str | None,
+    specs: list[str],
+    thinking=None,
+    timeout_ms: int = 240_000,
+    temperature: float = 0.2,
+):
+    """Try each 'model[@location]' spec in order until one returns parseable JSON.
+
+    Returns (data, spec) or (None, None). A model that is not available (404) is skipped for good.
+    """
+    for spec in specs:
+        model, loc = parse_model(spec)
+        try:
+            text = _generate(
+                prompt,
+                system,
+                json_output=True,
+                thinking_budget=thinking,
+                model=model,
+                location=loc,
+                timeout_ms=timeout_ms,
+                temperature=temperature,
+            )
+            if not text:
+                continue
+            text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text.strip())
+            return json.loads(text), spec
+        except Exception as e:  # noqa: BLE001
+            log.error("generate_json_models(%s) failed: %s", spec, e)
+    return None, None
 
 
 # -- language detection ------------------------------------------------------------------------
