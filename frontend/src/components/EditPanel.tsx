@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   type ApplyResult,
   api,
@@ -11,13 +12,6 @@ import {
 import { CommentBody } from './CommentPanel';
 import { errMsg } from './Dialog';
 import EditCard from './EditCard';
-
-const AUDIENCE: Record<IcfType, string> = {
-  adult: 'Adult (18+)',
-  parent: 'Parents',
-  adolescent: 'Adolescent 12–17',
-  child: 'Child 8–11',
-};
 
 interface Turn extends ChatMessage {
   edits?: EditProposal[];
@@ -41,6 +35,7 @@ export default function EditPanel({
   onClearComment: () => void;
   onApplied: (r: ApplyResult) => void;
 }) {
+  const { t } = useTranslation();
   const [turns, setTurns] = useState<Turn[]>([]);
   const [input, setInput] = useState('');
   const [busy, setBusy] = useState<'chat' | 'apply' | null>(null);
@@ -51,8 +46,8 @@ export default function EditPanel({
   const listRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (comment) setInput('Address this Ethics Committee comment.');
-  }, [comment]);
+    if (comment) setInput(t('edit.defaultPrompt'));
+  }, [comment, t]);
 
   // biome-ignore lint/correctness/useExhaustiveDependencies: scroll on new turns
   useEffect(() => {
@@ -67,7 +62,7 @@ export default function EditPanel({
       role,
       text,
     }));
-    setTurns((t) => [...t, { role: 'user', text: message }]);
+    setTurns((prev) => [...prev, { role: 'user', text: message }]);
     setInput('');
     setBusy('chat');
     setError('');
@@ -77,11 +72,11 @@ export default function EditPanel({
         history,
         comment_id: comment?.id,
       });
-      setTurns((t) => [
-        ...t,
+      setTurns((prev) => [
+        ...prev,
         {
           role: 'assistant',
-          text: r.reply || 'Here is my proposal.',
+          text: r.reply || t('edit.defaultReply'),
           edits: r.edits,
         },
       ]);
@@ -127,29 +122,28 @@ export default function EditPanel({
   const chosen = edits.filter((x) => on[x.idx]).length;
 
   return (
-    <aside className="rv-panel ed-panel" aria-label="Edit with AI">
+    <aside className="rv-panel ed-panel" aria-label={t('edit.title')}>
       <div className="rv-panel-head">
-        <h2>Edit with AI</h2>
+        <h2>{t('edit.title')}</h2>
         <div className="chips">
-          {icfType && <span className="chip">{AUDIENCE[icfType]}</span>}
+          {icfType && (
+            <span className="chip">{t(`matrix.rows.${icfType}`)}</span>
+          )}
           {language && (
             <span className="chip lang">{language.toUpperCase()}</span>
           )}
         </div>
-        <p className="muted ed-hint">
-          Describe a change. Edits are saved as Word tracked changes in a new
-          version, and can then be carried over to the other forms.
-        </p>
+        <p className="muted ed-hint">{t('edit.hint')}</p>
         {comment && (
           <div className="ed-ctx">
             <div className="ed-ctx-head">
-              <b>Working on comment</b>
+              <b>{t('edit.workingOn')}</b>
               <button
                 type="button"
                 className="rv-undo"
                 onClick={onClearComment}
               >
-                Clear
+                {t('edit.clear')}
               </button>
             </div>
             <CommentBody c={comment} lang={lang} />
@@ -159,32 +153,29 @@ export default function EditPanel({
 
       <div className="ed-chat" ref={listRef}>
         {turns.length === 0 && (
-          <div className="muted ed-empty">
-            Try: “Explain HSCT in plain words where it is first used” or pick a
-            comment and click “Fix with AI”.
-          </div>
+          <div className="muted ed-empty">{t('edit.empty')}</div>
         )}
-        {turns.map((t, i) => (
+        {turns.map((turn, i) => (
           // biome-ignore lint/suspicious/noArrayIndexKey: append-only log
-          <div key={i} className={`ed-msg ${t.role}`}>
-            {t.text}
-            {t.role === 'assistant' && t.edits && (
+          <div key={i} className={`ed-msg ${turn.role}`}>
+            {turn.text}
+            {turn.role === 'assistant' && turn.edits && (
               <div className="ed-msg-meta">
-                {t.edits.length
-                  ? `${t.edits.length} proposed edit${t.edits.length > 1 ? 's' : ''}`
-                  : 'No edits proposed'}
+                {turn.edits.length
+                  ? t('edit.proposedCount', { count: turn.edits.length })
+                  : t('edit.noEdits')}
               </div>
             )}
           </div>
         ))}
         {busy === 'chat' && (
-          <div className="ed-msg assistant muted">Reading the form…</div>
+          <div className="ed-msg assistant muted">{t('edit.reading')}</div>
         )}
       </div>
 
       {edits.length > 0 && (
         <div className="ed-proposals">
-          <h3>Proposed edits</h3>
+          <h3>{t('edit.proposed')}</h3>
           {edits.map((x) => (
             <EditCard
               key={x.idx}
@@ -206,15 +197,15 @@ export default function EditPanel({
               onClick={apply}
             >
               {busy === 'apply'
-                ? 'Saving…'
-                : `Apply ${chosen} edit${chosen === 1 ? '' : 's'} as tracked changes`}
+                ? t('edit.saving')
+                : t('edit.apply', { count: chosen })}
             </button>
             <button
               type="button"
               className="btn ghost"
               onClick={() => setEdits([])}
             >
-              Discard
+              {t('edit.discard')}
             </button>
           </div>
         </div>
@@ -224,7 +215,7 @@ export default function EditPanel({
       <form className="ed-input" onSubmit={send}>
         <textarea
           rows={2}
-          placeholder="Ask for a change…"
+          placeholder={t('edit.placeholder')}
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => {
@@ -239,7 +230,7 @@ export default function EditPanel({
           className="btn primary"
           disabled={!input.trim() || !!busy}
         >
-          Send
+          {t('edit.send')}
         </button>
       </form>
     </aside>

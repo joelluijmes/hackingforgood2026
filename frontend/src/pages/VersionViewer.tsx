@@ -190,7 +190,7 @@ export default function VersionViewer() {
         )}
         {comments.length > 0 && (
           <a className="btn" href={api.ecResponseUrl(vid, lang)}>
-            EC response table
+            {t('versionViewer.ecResponse')}
           </a>
         )}
       </div>
@@ -237,7 +237,7 @@ export default function VersionViewer() {
               aria-selected={tab === 'comments'}
               onClick={() => setTab('comments')}
             >
-              Comments
+              {t('versionViewer.tabComments')}
               {comments.length > 0 && ` (${comments.length})`}
             </button>
             <button
@@ -247,7 +247,7 @@ export default function VersionViewer() {
               disabled={version.preview !== 'docx'}
               onClick={() => setTab('edit')}
             >
-              Edit with AI
+              {t('versionViewer.tabEdit')}
             </button>
           </div>
           {tab === 'comments' ? (

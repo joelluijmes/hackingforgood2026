@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import {
   api,
@@ -9,12 +10,6 @@ import {
 import Dialog, { errMsg } from './Dialog';
 import EditCard from './EditCard';
 
-const STATUS: Record<PropagationTarget['status'], string> = {
-  proposed: 'Change proposed',
-  not_applicable: 'Not applicable',
-  error: 'Failed',
-};
-
 /** Carry an applied change over to the project's other ICFs (audiences × languages). */
 export default function PropagateDialog({
   changeId,
@@ -23,6 +18,7 @@ export default function PropagateDialog({
   changeId: number;
   onClose: () => void;
 }) {
+  const { t } = useTranslation();
   const [targets, setTargets] = useState<PropagationTarget[] | null>(null);
   const [on, setOn] = useState<Record<string, boolean>>({});
   const [busy, setBusy] = useState(false);
@@ -32,11 +28,11 @@ export default function PropagateDialog({
   useEffect(() => {
     let live = true;
     api.propagatePreview(changeId).then(
-      (t) => {
+      (list) => {
         if (!live) return;
-        setTargets(t);
+        setTargets(list);
         const init: Record<string, boolean> = {};
-        for (const x of t)
+        for (const x of list)
           for (const e of x.edits) init[`${x.version_id}:${e.idx}`] = true;
         setOn(init);
       },
@@ -49,21 +45,21 @@ export default function PropagateDialog({
 
   const setEdit = (vid: number, idx: number, text: string) =>
     setTargets((all) =>
-      (all ?? []).map((t) =>
-        t.version_id !== vid
-          ? t
+      (all ?? []).map((x) =>
+        x.version_id !== vid
+          ? x
           : {
-              ...t,
-              edits: t.edits.map((e) =>
+              ...x,
+              edits: x.edits.map((e) =>
                 e.idx === idx ? { ...e, new: text } : e,
               ),
             },
       ),
     );
 
-  const chosen = (t: PropagationTarget): EditProposal[] =>
-    t.edits.filter((e) => on[`${t.version_id}:${e.idx}`]);
-  const forms = (targets ?? []).filter((t) => chosen(t).length).length;
+  const chosen = (x: PropagationTarget): EditProposal[] =>
+    x.edits.filter((e) => on[`${x.version_id}:${e.idx}`]);
+  const forms = (targets ?? []).filter((x) => chosen(x).length).length;
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
@@ -76,8 +72,8 @@ export default function PropagateDialog({
         await api.propagateApply(
           changeId,
           targets
-            .map((t) => ({ version_id: t.version_id, edits: chosen(t) }))
-            .filter((t) => t.edits.length),
+            .map((x) => ({ version_id: x.version_id, edits: chosen(x) }))
+            .filter((x) => x.edits.length),
         ),
       );
     } catch (err) {
@@ -88,27 +84,22 @@ export default function PropagateDialog({
   }
 
   const titleOf = (vid: number) =>
-    targets?.find((t) => t.version_id === vid)?.doc.title ?? `#${vid}`;
+    targets?.find((x) => x.version_id === vid)?.doc.title ?? `#${vid}`;
 
   return (
     <Dialog
-      title="Apply this change to the other forms"
+      title={t('propagate.title')}
       onClose={onClose}
       onSubmit={submit}
       submitLabel={
-        results ? 'Done' : `Apply to ${forms} form${forms === 1 ? '' : 's'}`
+        results ? t('propagate.done') : t('propagate.apply', { count: forms })
       }
       disabled={!results && (!targets || !forms)}
       busy={busy}
       error={error}
       wide
     >
-      {!targets && !error && (
-        <p className="muted">
-          Asking Vertex AI to adapt the change for each audience and language…
-          this takes about half a minute.
-        </p>
-      )}
+      {!targets && !error && <p className="muted">{t('propagate.loading')}</p>}
       {results && (
         <ul className="pg-results">
           {results.map((r) => (
@@ -116,7 +107,7 @@ export default function PropagateDialog({
               <b>{titleOf(r.version_id)}</b>{' '}
               {r.version ? (
                 <Link to={`/versions/${r.version.id}`} onClick={onClose}>
-                  v{r.version.number} created
+                  {t('propagate.created', { number: r.version.number })}
                 </Link>
               ) : (
                 <span className="rv-err">{r.error}</span>
@@ -127,27 +118,27 @@ export default function PropagateDialog({
       )}
       {targets && !results && (
         <div className="pg-list">
-          {targets.map((t) => (
-            <section key={t.version_id} className={`pg-target ${t.status}`}>
+          {targets.map((x) => (
+            <section key={x.version_id} className={`pg-target ${x.status}`}>
               <div className="pg-head">
-                <b>{t.doc.title}</b>
-                <span className="muted">v{t.version_number}</span>
+                <b>{x.doc.title}</b>
+                <span className="muted">v{x.version_number}</span>
                 <span
-                  className={`chip ${t.status === 'proposed' ? 'ok' : t.status === 'error' ? 'bad' : ''}`}
+                  className={`chip ${x.status === 'proposed' ? 'ok' : x.status === 'error' ? 'bad' : ''}`}
                 >
-                  {STATUS[t.status]}
+                  {t(`propagate.status.${x.status}`)}
                 </span>
               </div>
-              {t.reason && <div className="rv-note">{t.reason}</div>}
-              {t.edits.map((e) => (
+              {x.reason && <div className="rv-note">{x.reason}</div>}
+              {x.edits.map((e) => (
                 <EditCard
                   key={e.idx}
                   edit={e}
-                  included={!!on[`${t.version_id}:${e.idx}`]}
+                  included={!!on[`${x.version_id}:${e.idx}`]}
                   onToggle={(v) =>
-                    setOn((o) => ({ ...o, [`${t.version_id}:${e.idx}`]: v }))
+                    setOn((o) => ({ ...o, [`${x.version_id}:${e.idx}`]: v }))
                   }
-                  onChange={(text) => setEdit(t.version_id, e.idx, text)}
+                  onChange={(text) => setEdit(x.version_id, e.idx, text)}
                 />
               ))}
             </section>

@@ -171,7 +171,7 @@ function Decide({
             onFix(c);
           }}
         >
-          Fix with AI
+          {t('comments.fixWithAi')}
         </button>
       )}
     </div>

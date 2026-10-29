@@ -1,23 +1,20 @@
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import type { IcfType, Language, ProjectDoc } from '../api';
 
-const ROWS: { type: IcfType; label: string }[] = [
-  { type: 'adult', label: 'Adult 18+' },
-  { type: 'parent', label: 'Parents' },
-  { type: 'adolescent', label: 'Adolescent 12–17' },
-  { type: 'child', label: 'Child 8–11' },
-];
+const ROWS: IcfType[] = ['adult', 'parent', 'adolescent', 'child'];
 const COLS: Language[] = ['en', 'nl', 'fr'];
 
 /** The ICF set at a glance: 4 audiences × 3 languages, latest version of each. */
 export default function IcfMatrix({ docs }: { docs: ProjectDoc[] }) {
+  const { t } = useTranslation();
   const icfs = docs.filter((d) => d.role === 'icf');
   if (!icfs.length) return null;
   const find = (t: IcfType, l: Language) =>
     icfs.filter((d) => d.icf_type === t && d.language === l);
   return (
     <section className="group">
-      <h2>ICF set</h2>
+      <h2>{t('matrix.title')}</h2>
       <table className="mx">
         <thead>
           <tr>
@@ -29,10 +26,10 @@ export default function IcfMatrix({ docs }: { docs: ProjectDoc[] }) {
         </thead>
         <tbody>
           {ROWS.map((r) => (
-            <tr key={r.type}>
-              <th scope="row">{r.label}</th>
+            <tr key={r}>
+              <th scope="row">{t(`matrix.rows.${r}`)}</th>
               {COLS.map((l) => {
-                const list = find(r.type, l);
+                const list = find(r, l);
                 if (!list.length)
                   return (
                     <td key={l} className="mx-empty">
@@ -51,11 +48,11 @@ export default function IcfMatrix({ docs }: { docs: ProjectDoc[] }) {
                         >
                           <span className="mx-ver">v{v.number}</span>
                           <span className={`chip src-${v.source}`}>
-                            {v.source}
+                            {t(`sources.${v.source}`)}
                           </span>
                           {v.comments_open > 0 && (
                             <span className="chip warn">
-                              {v.comments_open} open
+                              {t('matrix.open', { count: v.comments_open })}
                             </span>
                           )}
                         </Link>

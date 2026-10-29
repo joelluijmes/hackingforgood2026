@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import type { EditProposal } from '../api';
 
 type Op = { op: 'eq' | 'ins' | 'del'; text: string };
@@ -70,6 +71,7 @@ export default function EditCard({
   onToggle: (v: boolean) => void;
   onChange: (text: string) => void;
 }) {
+  const { t } = useTranslation();
   const [editing, setEditing] = useState(false);
   return (
     <div className={`ed-card ${included ? '' : 'off'}`}>
@@ -80,21 +82,23 @@ export default function EditCard({
             checked={included}
             onChange={(e) => onToggle(e.target.checked)}
           />
-          <span className="ed-section">{edit.section || 'Paragraph'}</span>
+          <span className="ed-section">
+            {edit.section || t('edit.paragraph')}
+          </span>
         </label>
         <button
           type="button"
           className="rv-undo"
           onClick={() => setEditing(!editing)}
         >
-          {editing ? 'Show changes' : 'Edit text'}
+          {editing ? t('edit.showChanges') : t('edit.editText')}
         </button>
       </div>
       {edit.mandatory && (
         <div className="ed-mandatory" title={edit.mandatory.template_text}>
-          Changes mandatory template wording (
-          {Math.round(edit.mandatory.score * 100)}% match with the national
-          template). Justify this deviation for the Ethics Committee.
+          {t('edit.mandatory', {
+            score: Math.round(edit.mandatory.score * 100),
+          })}
         </div>
       )}
       {editing ? (
