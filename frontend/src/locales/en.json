@@ -340,7 +340,15 @@
     "aiOff": "Disabled",
     "storage": "Storage",
     "counts": "Counts",
-    "countsLine": "{{projects}} projects, {{docs}} project documents, {{templates}} templates, {{users}} users"
+    "countsLine": "{{projects}} projects, {{docs}} project documents, {{templates}} templates, {{users}} users",
+    "resetTitle": "Reset",
+    "resetEmpty": "Reset to empty",
+    "resetSamples": "Reset + import samples",
+    "resetting": "Resetting...",
+    "resetConfirm": "This permanently deletes ALL projects, project documents, versions, comments, tasks and the template library from this app{{local}}. The demo user and your login stay. Files in the GCS bucket are NOT deleted.{{samples}}",
+    "resetLocal": " and all locally stored files",
+    "resetSamplesNote": " Afterwards the bucket samples are imported again.",
+    "resetExplain": "Resets the app to its initial state: removes all projects, documents, versions and the template library. The demo user stays. Use 'Reset + import samples' to get the state right after the first sample import."
   },
   "req": {
     "has_sponsor_docs": "Upload at least one sponsor document",
