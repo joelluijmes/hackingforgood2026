@@ -17,7 +17,7 @@ LANG_NAMES = {"en": "English", "nl": "Dutch", "fr": "French"}
 
 _lock = threading.Lock()
 # parallel generate/translate tasks share Vertex quota: cap in-flight calls
-_slots = threading.BoundedSemaphore(int(os.environ.get("AI_CONCURRENCY", "6")))
+_slots = threading.BoundedSemaphore(int(os.environ.get("AI_CONCURRENCY", "16")))
 _state: dict = {
     "project": None,
     "project_resolved": False,
@@ -119,7 +119,12 @@ def _is_rate_limit(e: Exception) -> bool:
     return getattr(e, "code", None) == 429 or "RESOURCE_EXHAUSTED" in str(e)
 
 
-def _generate(contents: str, system: str | None = None, json_output: bool = False) -> str | None:
+def _generate(
+    contents: str,
+    system: str | None = None,
+    json_output: bool = False,
+    thinking_budget: int | None = None,
+) -> str | None:
     """One Gemini call with credential fallback (ADC first, then gcloud's active account)."""
     if not ai_status()["enabled"]:
         return None
@@ -130,6 +135,14 @@ def _generate(contents: str, system: str | None = None, json_output: bool = Fals
         cfg["system_instruction"] = system
     if json_output:
         cfg["response_mime_type"] = "application/json"
+    budget = str(
+        thinking_budget
+        if thinking_budget is not None
+        else os.environ.get("AI_THINKING_BUDGET", "0")
+    )
+    if "flash" in _model() and budget.lstrip("-").isdigit():
+        # extraction/translation needs no reasoning; thinking made each call 5-20 s slower
+        cfg["thinking_config"] = types.ThinkingConfig(thinking_budget=int(budget))
     config = types.GenerateContentConfig(**cfg)
     throttled = 0
     attempt = -1
@@ -172,10 +185,10 @@ def generate_text(prompt: str, system: str | None = None) -> str | None:
         return None
 
 
-def generate_json(prompt: str, system: str | None = None):
+def generate_json(prompt: str, system: str | None = None, thinking_budget: int | None = None):
     """Gemini call with JSON output parsed to Python; None on failure."""
     try:
-        text = _generate(prompt, system, json_output=True)
+        text = _generate(prompt, system, json_output=True, thinking_budget=thinking_budget)
         if not text:
             return None
         text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text.strip())

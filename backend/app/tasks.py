@@ -43,6 +43,28 @@ class Reporter:
             t["step"], t["done"], t["total"] = step, done, total
             t["progress"] = round(self.base + self.span * (lo + (hi - lo) * frac), 4)
 
+    def parallel(self, languages: list[str]) -> list[Callable[[str, int, int], None]]:
+        """One independent reporter per language running concurrently; progress is their mean."""
+        n = len(languages)
+        fracs = [0.0] * n
+
+        def make(i: int):
+            def child(step: str, done: int, total: int) -> None:
+                lo, hi = _RANGE.get(step, (0.0, 0.0))
+                frac = min(1.0, done / total) if total else 1.0
+                with _lock:
+                    fracs[i] = max(fracs[i], lo + (hi - lo) * frac)
+                    t = self.task
+                    t["progress"] = round(sum(fracs) / n, 4)
+                    # show the language that is furthest behind
+                    j = min(range(n), key=lambda k: fracs[k])
+                    t["language"] = languages[j]
+                    t["step"], t["done"], t["total"] = step, done, total
+
+            return child
+
+        return [make(i) for i in range(n)]
+
 
 def start_task(kind: str, fn: Callable[[Reporter], dict], language: str | None = None) -> str:
     task = {
