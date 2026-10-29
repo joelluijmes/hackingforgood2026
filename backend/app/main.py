@@ -16,7 +16,7 @@ from .routers import (
     review,
 )
 
-app = FastAPI(title="ICF Studio API")
+app = FastAPI(title="BLOOM Studio API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],

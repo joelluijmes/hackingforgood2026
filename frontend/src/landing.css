@@ -73,3 +73,19 @@
     grid-template-columns: 1fr;
   }
 }
+
+.landing-hero .bloom-mark {
+  filter: drop-shadow(0 8px 16px rgba(40, 117, 159, 0.25));
+}
+.landing-hero .wordmark {
+  margin: 8px 0 0;
+  font: 500 44px / 1 var(--font-heading);
+  letter-spacing: 0.28em;
+  text-indent: 0.28em;
+  color: var(--primary-1100);
+}
+.landing-hero .expansion {
+  margin: 8px 0 40px;
+  font-size: 14px;
+  color: var(--neutral-500);
+}

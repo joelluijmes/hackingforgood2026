@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Navigate, NavLink, Outlet, Route, Routes } from 'react-router-dom';
 import type { Language } from './api';
 import { useAuth } from './components/AuthContext';
+import BloomMark from './components/BloomMark';
 import About from './pages/About';
 import Admin from './pages/Admin';
 import DiffView from './pages/DiffView';
@@ -41,9 +42,7 @@ function Shell() {
     <>
       <header className="topbar" ref={header}>
         <NavLink to="/" className="brand">
-          <span className="brand-mark" aria-hidden="true">
-            §
-          </span>
+          <BloomMark size={30} />
           {t('common.appName')}
         </NavLink>
         <nav>

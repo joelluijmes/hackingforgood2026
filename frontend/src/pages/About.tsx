@@ -209,7 +209,7 @@ export default function About() {
     <div className="page home about">
       <section className="hero">
         <p className="eyebrow">Guide and inventory</p>
-        <h1>What is inside {t('common.appName')}</h1>
+        <h1>What is inside BLOOM Studio</h1>
         <p className="lead">
           Turns sponsor documents into Belgian-compliant informed consent forms
           for paediatric haemato-oncology trials. Four ICF types, three
