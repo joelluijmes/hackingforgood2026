@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Navigate, NavLink, Outlet, Route, Routes } from 'react-router-dom';
 import type { Language } from './api';
 import { useAuth } from './components/AuthContext';
+import About from './pages/About';
 import Admin from './pages/Admin';
 import DiffView from './pages/DiffView';
 import Home from './pages/Home';
@@ -70,6 +71,7 @@ export default function App() {
       <Route element={<Shell />}>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
         <Route path="/projects/:id" element={<Project />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/templates" element={<Templates />} />
