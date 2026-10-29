@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import '../about.css';
 
@@ -201,7 +200,6 @@ const LABEL: Record<Status, string> = {
 };
 
 export default function About() {
-  const { t } = useTranslation();
   const all = INVENTORY.flatMap((g) => g.items);
   const count = (s: Status) => all.filter((i) => i[1] === s).length;
 
